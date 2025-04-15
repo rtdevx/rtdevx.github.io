@@ -968,7 +968,7 @@ pre {
 
 .box-error {
   background-color: #f4dddb;
-  border-left-color: #c0392b;
+  border-left-color: c0392b;
 }
 
 .box-success {
@@ -1004,7 +1004,7 @@ pre {
   border-radius: 0.1875rem;
   border-color: var(--mid-col);
 }
-
+#
 .blog-post blockquote {
   padding: 0.625rem 1.25rem;
   margin: 0 0 1.25rem;
