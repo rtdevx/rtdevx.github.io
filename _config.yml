@@ -20,7 +20,7 @@ author: rtdevx
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About: "aboutme"
   Resources:
     - GitHub: "https://github.com/rtdevx"
     - Learn markdown: "https://www.markdowntutorial.com/"
