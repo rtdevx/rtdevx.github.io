@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: tdevx
+name: rtdevx
 
 # Name of the author
 author: rtdevx
@@ -21,7 +21,7 @@ avatar: /images/reverie.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: amit.d.merchant@gmail.com
+  email: 
   facebook:
   flickr:
   github: rtdevx
