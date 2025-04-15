@@ -1,34 +1,39 @@
 ---
-layout : default
+layout: default
 ---
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto block shadow mb-5">
-        <h2>{{ page.title }}</h2>
-        <div class="mb-3 post-meta">
-          {% if page.author %}
-          <a href="{{ 'author/' | relative_url }}{{ page.author | slugify }}">{{ page.author | capitalize }}</a>{%endif%},
-          {{ page.date | date: '%b %d, %Y' }},
-          {% if page.tags.size >= 1 %}
-          {% for tag in page.tags %}
-          <a href="{{ '/tag/' | relative_url }}{{ tag | slugify }}">{{ tag | capitalize }}</a>
-          {% endfor %}
-          {% endif %}
-        </div>
-        {% if page.image %}
-        <img src="{{ page.image | relative_url }}" class="img-fluid w-100 mb-4" alt="{{ page.title }}">
-        {% endif %}
-        <div class="content mb-5">
-          {{ page.content }}
-        </div>
-        <!-- comments -->
-        {% if site.disqus_shortname %}
-          {% include disqus-comments.html %}
-        {% endif %}
-        <!-- /comments -->
-      </div>
+<article class="post detailed">
+  <h1>{{ page.title }}</h1>
+
+  <div>
+    <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
+    {% if page.last_modified_at %}
+    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
+    {% endif %}
+    <div class="post-tags">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+        {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
     </div>
   </div>
-</section>
+    
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div>
+    <p><span class="share-box">Share:</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a></p>
+  </div>
+
+  <!--<div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>-->
+
+  {% include disqus.html %}
+</article>

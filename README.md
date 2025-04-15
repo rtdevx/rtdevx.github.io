@@ -1,53 +1,145 @@
-# Northendlab Jekyll
+<div align="center">
+  <br>
+  <img src="/images/reverie-text.png" alt="Reverie" width="200"/>
+  <br>  
+  <p align="center">
+    <i>Support my work via <a href="https://paypal.me/AmitMerchant">Paypal</a> or <a href="https://buymeacoffee.com/amitmerchant">Buy me a coffee</a></i>
+  </p>
+</div>
 
-![northendlab](https://demo.themefisher.com/thumbnails/northendlab-jekyll.png)
+---
 
-[live demo](https://demo.themefisher.com/northendlab-jekyll/)
+Reverie is a [Jekyll](https://jekyllrb.com/)-powered theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for my blog.
 
-### Jekyll Install
+> [Theme demo](https://reverie.pages.dev/)
 
-First of all, you need to install Jekyll on your PC. If you don't know how to install Jekyll on your PC, here is great [documentation](https://jekyllrb.com/docs/installation/) for beginners.
+This is a plug-and-play Jekyll theme best suited to use on [GitHub Pages](https://pages.github.com) (or [Cloudflare Pages](https://pages.cloudflare.com/) if you want to have your repository private) without even setting up a local environment.
 
-### Theme Install
+![](/images/reverie-demo.png)
 
-After installing Jekyll on your pc, [download](https://github.com/themefisher/northendlab-jekyll) the theme from this repository. Unzip it and run `bundle exec jekyll server` to run this template on your localhost.
+|  Responsiveness            |  Search | Categories |
+|---------------------|----------------------|----------------------|
+|![Responsiveness](/images/mobile-demo.png) | ![search](/images/search.png) | ![categories](/images/categories.png) |
 
-### Main Configuration
+# Table of Contents
+  - [Features overview](#features-overview)
+  - [Using Reverie on GitHub Pages](#using-reverie-on-github-pages)
+    - [1. Fork Reverie to your User Repository](#1-fork-reverie-to-your-user-repository)
+    - [2. Customize and view your site](#2-customize-and-view-your-site)
+    - [3. Publish your first blog post](#3-publish-your-first-blog-post)
+  - [Using Categories in Reverie](#using-categories-in-reverie)
+  - [Pagination](#pagination)
+  - [RSS](#rss)
+  - [Sitemap](#sitemap)
+  - [Troubleshooting](#troubleshooting)
+  - [Emailware](#emailware)
+  - [The name?](#the-name)
+  - [License](#license)
 
-You don't need to change anything in the main configuration (`_config.yml`), just you need to change the `baseURL` when you host this template.
+{:toc}
 
-You will find every parameter in `_data/parameters.yml`` this file.
+## Features overview
 
-#### Navigation Menu
+- Clean and minimal design
+- Single column post layout
+- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
+- Fully responsive and mobile optimized theme
+- Sass/Coffeescript support using Jekyll 2.0
+- Free hosting on your GitHub Pages user site
+- All the SEO goodies come built-in
+- Markdown blogging
+- Supports [Pullquotes](https://reverie-jekyll.netlify.app/pullquotes/)
+- Syntax highlighting using Pygments
+    - [Dracula syntax theme](https://draculatheme.com/) included
+- Disqus commenting
+- Social media icons
+- Google Analytics integration
+- Supports [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en)
+- Fuzzy search across blog posts
+- Blog with pagination
+- Categorize posts out-of-the box
+- RSS Feed
+- Built-in sitemap
 
-You can set the main menu and footer menu also from `_data/parameters.yml`, just follow the existing loop for creating a new menu item. This theme also supports the dropdown menu.
+> <p><i>Like this theme?</i> If so, consider donating a small amount that will help my maintaining this project further.<p>
+> You can support me via <a href="https://paypal.me/AmitMerchant">Paypal</a>.
 
-### Creating New Post
+## Using Reverie on GitHub Pages
 
-For creating a new blog post, you need to go to the `_posts` folder and create a new file. Make sure you are creating this file name with the existing post name structure which is `year-month-date-post-name.md`. (i.e `2020-02-06-my-awesome-blog.md`). Then follow the existing post front-matter to configure it. Or you can simply copy an existing post and replace its content.
+Setting up Reverie on GitHub Pages is as simple as it gets!
 
-### Creating a New Author
+### 1. Fork Reverie to your User Repository
 
-This is the same process for the blog post. Copy an existing author file, and replace your content and file name.
+Fork this repository, then rename the repository to `yourgithubusername.github.io`.
 
-### Customize Other Pages
+Alternatively, you can click the [`Use this template`](https://github.com/amitmerchant1990/reverie/generate) button if you want to create a repository with a clean commit history which will use Reverie as a template.
 
-Another page customization (like about, contact) is very easy. You can see the other page in the `_pages/` folder. Find the page that you want to customize, and change the content from it. If this page has any loop item, then follow the existing loop to create a new one.
+Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2).
 
-### Reporting Issues
+### 2. Customize and view your site
 
-We use GitHub Issues as the official bug tracker for the **Northendlab Jekyll Theme**. Please Search [existing issues](https://github.com/themefisher/northendlab-jekyll/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/northendlab-jekyll/issues/new)
+Enter your site name, description, avatar and many other options by editing the `_config.yml` file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here.
 
-### Technical Support or Questions (Paid)
+Making a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with Jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon.
 
-If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.
+### 3. Publish your first blog post
 
-<!-- licence -->
+Delete all files from `_posts`directory and create a new file called `/_posts/2019-2-13-Hello-World.md` to publish your first blog post. That's all you need to do to publish your first blog post! This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy while writing the posts.
+
+> You can add additional posts in the browser on GitHub.com too! Just hit the <kbd>Create new file</kbd> button in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
+
+## Using Categories in Reverie
+
+You can categorize your content based on `categories` in Reverie. For this, you just need to add `categories` in front matter like below:
+
+For adding single category:
+
+```md
+categories: JavaScript
+```
+
+For adding multiple categories:
+
+```md
+categories: [PHP, Laravel]
+```
+
+The categorized content can be shown over this URL: <https://yourgithubusername.github.io/categories/>
+
+## Pagination
+
+Pagination of posts in Reverie works out-of-the-box. You only need to specify the number of posts you want on a single page in `_config.yml` and Reverie will take care of the rest.
+
+```yml
+paginate: 6
+```
+
+## RSS
+
+Reverie comes with a [RSS feed](https://en.wikipedia.org/wiki/RSS) in-built. The generated RSS Feed of your blog can be found at <https://yourgithubusername.github.io/feed>. You can see the example RSS feed over [here](https://reverie-jekyll.netlify.app/feed.xml).
+
+## Sitemap
+
+The generated sitemap of your blog can be found at <https://yourgithubusername.github.io/sitemap.xml>. You can see the example sitemap feed over [here](https://reverie-jekyll.netlify.app/sitemap.xml).
+
+## Troubleshooting
+
+There might be instances where your site based on Reverie won't have the styling working as expected. 
+
+The common reason for this issue is the incorrect `baseurl` set in the `_config.yml` file. You need to use the `baseurl` according to where you're hosting it.
+
+So, for instance, if you're hosting your site at a Project repository on GitHub pages (http://yourusername.github.io/repository-name) and NOT your user repository (http://yourusername.github.io) then the `baseurl` will be `/repository-name`.
+
+Otherwise the `baseurl` will be `/`.
+
+## Emailware
+Reverie is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this theme or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+
+## The name?
+
+reverie - _a state of being pleasantly lost in one's thoughts; a daydream._<br><sup>/ˈrɛv(ə)ri/</sup> 
+
+
 ## License
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
-
-**Code License:** Released under the [MIT](https://github.com/themefisher/northendlab-jekyll/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+MIT
