@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - GitHub: "https://github.com/rtdevx"
     - Learn markdown: "https://www.markdowntutorial.com/"
-#  Author's home: "https://rtdevx.github.io/"
+  Author's home: ""
 
 ################
 # --- Logo --- #
