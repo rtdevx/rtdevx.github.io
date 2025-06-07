@@ -6,9 +6,9 @@
     - Welcome to...
     - My DevOps Log.
   typed: true
-#- key: CV
-#  value: cv.pdf
-#  url: /cv.pdf
+- key: CV
+  value: cv.pdf
+  url: /cv.pdf
 - key: Address
   value:
     - United Kingdom
