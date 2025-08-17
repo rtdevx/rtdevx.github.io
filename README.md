@@ -1,2 +1,0 @@
-# rtdevx-www
-www
