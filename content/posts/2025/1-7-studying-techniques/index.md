@@ -1,6 +1,6 @@
 ---
 title: 7 Chinese and Japanese studying techniques
-date: 2025-08-17
+date: 2025-07-17
 description: 7 Chinese and Japanese learning techniques.
 summary: Pomodoro, Kanji, Rewrite notes, Empty cup mindset, Chain learning, Study like a sensei, The forbidden night school...
 draft: false
@@ -11,7 +11,8 @@ tags:
 ---
 {{< youtube BszXLBKWscA >}}
 
-### 1. <font color=#84cc16>Pomodoro ritual</font>
+
+## 1. <font color=#84cc16>Pomodoro ritual</font>
 
 **25** minutes <font color=#f43f5e>focus</font>, **5** minutes <font color=#10b981>break.</font>
 
@@ -19,14 +20,14 @@ tags:
 - filters distractions
 - sharpens attention
 - mentally commits completion
-### 2. <font color=#84cc16>The Kanji Recall method</font>
+## 2. <font color=#84cc16>The Kanji Recall method</font>
 
 <font color=#10b981>Kanji</font> = visual memory / mental map.
 
 - Grid Recall (repetition)
 - Visualizing
 	- Drawing along with saying / reading / writing words
-### 3. <font color=#84cc16>Rewrite notes</font>
+## 3. <font color=#84cc16>Rewrite notes</font>
 
 <font color=#10b981>Rewriting notes stimulates active recall.</font>
 
@@ -35,7 +36,7 @@ tags:
 - Diagram
 - Story or metaphor
 - In their own words like teaching a friend
-### 4. <font color=#84cc16>Empty cup mindset</font>
+## 4. <font color=#84cc16>Empty cup mindset</font>
 
 <font color=#10b981>Originates from Zen Buddhism.</font>
 
@@ -43,11 +44,11 @@ tags:
 
 Approach learning with humility and curiosity, not pressure and ego (i.e. grades, etc...). Value is not in your score but in your growth.
 
-### 5. <font color=#84cc16>Chain learning</font>
+## 5. <font color=#84cc16>Chain learning</font>
 
 <font color=#10b981>Study like everything is connected.</font> Because in real world ...it is.
 
-### 6. <font color=#84cc16>Study like a Sensei</font> that is teaching others
+## 6. <font color=#84cc16>Study like a Sensei</font> that is teaching others
 
 <font color=#10b981>Mastery is shown in clarity</font>, when you can explain the subject. When you teach something, you truly learn it. <font color=#f43f5e>Explain it like you were explaining it to a 10 year old.</font>
 
@@ -58,6 +59,6 @@ This approach was first avowed by Richard Feynman, a Nobel winning physicist.
 > _Richard Feynman_ 
 > *\*although according to many sources this quote is attributed to Albert Einstein*
 
-### 7. <font color=#84cc16>The forbidden night school</font>
+## 7. <font color=#84cc16>The forbidden night school</font>
 
 From **7pm to 9pm** - <font color=#f43f5e>no phones, no distractions, no background noise.</font> Collaborate on reviewing, revising if and where possible. Mostly for students.
