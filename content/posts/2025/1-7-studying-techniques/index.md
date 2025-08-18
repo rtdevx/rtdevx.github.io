@@ -6,6 +6,7 @@ summary: Pomodoro ritual, Kanji Recall, Rewrite notes, Empty cup mindset, Chain 
 tags:
   - productivity
   - learning
+  - zettelkasten
 ---
 {{< youtube BszXLBKWscA >}}
 
