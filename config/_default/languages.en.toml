@@ -10,12 +10,12 @@ copyright = "No rights reserved."
   dateFormat = "2 January 2006"
 
   # mainSections = ["section1", "section2"]
-  # description = "My awesome website"
+  description = "My awesome website"
 
 [params.author]
    name = "Rob"
    image = "img/author.jpg"
-   headline = "I'm only human"
+   headline = "Welcome to my personal blog... Page under construction."
    bio = "A little bit about you"
    links = [
   #   { email = "mailto:hello@your_domain.com" },
@@ -40,7 +40,7 @@ copyright = "No rights reserved."
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
   #   { kofi = "https://ko-fi.com/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
-     { linkedin = "https://linkedin.com/in/username" }
+     { linkedin = "https://linkedin.com/in/robertkls" }
   #   { mastodon = "https://mastodon.instance/@username" },
   #   { medium = "https://medium.com/username" },
   #   { mendeley = "https://www.mendeley.com/" },
