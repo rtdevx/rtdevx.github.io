@@ -10,7 +10,7 @@ copyright = "No rights reserved."
   dateFormat = "2 January 2006"
 
   # mainSections = ["section1", "section2"]
-  description = "My awesome website"
+  description = "My personal blog..."
 
 [params.author]
    name = "Rob"
