@@ -23,7 +23,7 @@ tags:
 - mentally commits completion
 ## 2. The Kanji Recall method
 
-**<font color=#78716c>Kanji</font>** = visual memory / mental map.
+**Kanji** = visual memory / mental map.
 
 - Grid Recall (repetition)
 - Visualizing
@@ -39,7 +39,7 @@ tags:
 - In their own words like teaching a friend
 ## 4. Empty cup mindset
 
-This method originates from **<font color=#78716c>Zen Buddhism</font>**.
+This method originates from **Zen Buddhism**.
 
 >You can't pour tea into a cup. Idea of dropping ego while learning and discover what student doesn't know yet.
 
@@ -56,9 +56,9 @@ Approach learning with humility and curiosity, not pressure and ego (i.e. grades
 This approach was first avowed by Richard Feynman, a Nobel winning physicist.
 
 > If you can't explain it simply, you don't understand it well enough.
-> 
-> _Richard Feynman_ 
-> *\*although according to many sources this quote is attributed to Albert Einstein*
+
+_Richard Feynman_<br />
+*\*although according to many sources this quote is attributed to Albert Einstein*
 
 ## 7. The forbidden night school
 
