@@ -11,7 +11,7 @@ tags:
 ---
 {{< youtube BszXLBKWscA >}}
 
-### 1. <font color=#f43f5e>Pomodoro ritual</font>
+### 1. <font color=#84cc16>Pomodoro ritual</font>
 
 25 minutes focus, 5 minutes break.
 
@@ -19,14 +19,14 @@ tags:
 - filters distractions
 - sharpens attention
 - mentally commits completion
-### 2. <font color=#f43f5e>The Kanji Recall method</font>
+### 2. <font color=#84cc16>The Kanji Recall method</font>
 
 Kanji = visual memory / mental map.
 
 - Grid Recall (repetition)
 - Visualizing
 	- Drawing along with saying / reading / writing words
-### 3. <font color=#f43f5e>Rewrite notes</font>
+### 3. <font color=#84cc16>Rewrite notes</font>
 
 Rewriting notes stimulates active recall.
 
@@ -35,7 +35,7 @@ Rewriting notes stimulates active recall.
 - Diagram
 - Story or metaphor
 - In their own words like teaching a friend
-### 4. <font color=#f43f5e>Empty cup mindset</font>
+### 4. <font color=#84cc16>Empty cup mindset</font>
 
 Originates from Zen Buddhism.
 
@@ -43,11 +43,11 @@ Originates from Zen Buddhism.
 
 Approach learning with humility and curiosity, not pressure and ego (i.e. grades, etc...). Value is not in your score but in your growth.
 
-### 5. <font color=#f43f5e>Chain learning</font>
+### 5. <font color=#84cc16>Chain learning</font>
 
 Study like everything is connected. Because in real world ...it is.
 
-### 6. <font color=#f43f5e>Study like a Sensei</font> that is teaching others
+### 6. <font color=#84cc16>Study like a Sensei</font> that is teaching others
 
 Mastery is shown in clarity, when you can explain the subject. When you teach something, you truly learn it. Explain it like you were explaining it to a 10 year old.
 
@@ -58,6 +58,6 @@ This approach was first avowed by Richard Feynman, a Nobel winning physicist.
 > _Richard Feynman_ 
 > *\*although according to many sources this quote is attributed to Albert Einstein*
 
-### 7. <font color=#f43f5e>The forbidden night school</font>
+### 7. <font color=#84cc16>The forbidden night school</font>
 
 From 7pm to 9pm - no phones, no distractions, no background noise. Collaborate on reviewing, revising if and where possible. Mostly for students.
