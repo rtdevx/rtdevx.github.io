@@ -9,31 +9,41 @@ tags:
 ---
 {{< youtube BszXLBKWscA >}}
 
-### 1. <font color=yellow>Pomodoro ritual</font> - 25 minutes focus, 5 minutes break
+### 1. <font color=yellow>Pomodoro ritual</font> 
+
+25 minutes focus, 5 minutes break.
 
 - Close your eyes, take a breath and make a focus statement (what to accomplish in those 25 minutes). <font color=green>Declare out loud</font> OR <font color=green>write down</font>.
 - filters distractions
 - sharpens attention
 - mentally commits completion
-### 2. <font color=yellow>The Kanji Recall method</font> - Kanji = visual memory / mental map
+### 2. <font color=yellow>The Kanji Recall method</font>
+
+Kanji = visual memory / mental map.
 
 - Grid Recall (repetition)
 - Visualizing
 	- Drawing along with saying / reading / writing words
-### 3. <font color=yellow>Rewrite notes</font> - stimulates active recall
+### 3. <font color=yellow>Rewrite notes</font>
+
+Rewriting notes stimulates active recall.
 
 - The basic definition
 - Reworded version
 - Diagram
 - Story or metaphor
 - In their own words like teaching a friend
-### 4. <font color=yellow>Empty cup mindset</font> - from Zen Buddhism
+### 4. <font color=yellow>Empty cup mindset</font>
+
+Originates from Zen Buddhism.
 
 >You can't pour tea into a cup. Idea of dropping ego while learning and discover what student doesn't know yet.
 
 Approach learning with humility and curiosity, not pressure and ego (i.e. grades, etc...). Value is not in your score but in your growth.
 
-### 5. <font color=yellow>Chain learning</font> - study like everything is connected. Because in real world ...it is.
+### 5. <font color=yellow>Chain learning</font>
+
+Study like everything is connected. Because in real world ...it is.
 
 ### 6. <font color=yellow>Study like a Sensei</font> that is teaching others
 
