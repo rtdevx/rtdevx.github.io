@@ -15,7 +15,7 @@ tags:
 
 25 minutes focus, 5 minutes break.
 
-- Close your eyes, take a breath and make a focus statement (what to accomplish in those 25 minutes). <font color=green>Declare out loud</font> OR <font color=green>write down</font>.
+- Close your eyes, take a breath and make a focus statement (what to accomplish in those 25 minutes). <font color=#10b981>Declare out loud</font> OR <font color=#10b981>write down</font>.
 - filters distractions
 - sharpens attention
 - mentally commits completion
