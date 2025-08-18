@@ -23,7 +23,7 @@ tags:
 - mentally commits completion
 ## 2. The Kanji Recall method
 
-<font color=#10b981>Kanji</font> = visual memory / mental map.
+**<font color=#78716c>Kanji</font>** = visual memory / mental map.
 
 - Grid Recall (repetition)
 - Visualizing
@@ -39,7 +39,7 @@ tags:
 - In their own words like teaching a friend
 ## 4. Empty cup mindset
 
-<font color=#10b981>Originates from Zen Buddhism.</font>
+This method originates from **<font color=#78716c>Zen Buddhism</font>**.
 
 >You can't pour tea into a cup. Idea of dropping ego while learning and discover what student doesn't know yet.
 
