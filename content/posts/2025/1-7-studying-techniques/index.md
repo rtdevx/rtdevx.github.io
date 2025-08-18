@@ -13,7 +13,7 @@ tags:
 
 ### 1. <font color=#84cc16>Pomodoro ritual</font>
 
-25 minutes focus, 5 minutes break.
+**25** minutes <font color=#f43f5e>focus</font>, **5** minutes <font color=#10b981>break.</font>
 
 - Close your eyes, take a breath and make a focus statement (what to accomplish in those 25 minutes). <font color=#10b981>Declare out loud</font> OR <font color=#10b981>write down</font>.
 - filters distractions
@@ -21,14 +21,14 @@ tags:
 - mentally commits completion
 ### 2. <font color=#84cc16>The Kanji Recall method</font>
 
-Kanji = visual memory / mental map.
+<font color=#10b981>Kanji</font> = visual memory / mental map.
 
 - Grid Recall (repetition)
 - Visualizing
 	- Drawing along with saying / reading / writing words
 ### 3. <font color=#84cc16>Rewrite notes</font>
 
-Rewriting notes stimulates active recall.
+<font color=#10b981>Rewriting notes stimulates active recall.</font>
 
 - The basic definition
 - Reworded version
@@ -37,7 +37,7 @@ Rewriting notes stimulates active recall.
 - In their own words like teaching a friend
 ### 4. <font color=#84cc16>Empty cup mindset</font>
 
-Originates from Zen Buddhism.
+<font color=#10b981>Originates from Zen Buddhism.</font>
 
 >You can't pour tea into a cup. Idea of dropping ego while learning and discover what student doesn't know yet.
 
@@ -45,11 +45,11 @@ Approach learning with humility and curiosity, not pressure and ego (i.e. grades
 
 ### 5. <font color=#84cc16>Chain learning</font>
 
-Study like everything is connected. Because in real world ...it is.
+<font color=#10b981>Study like everything is connected.</font> Because in real world ...it is.
 
 ### 6. <font color=#84cc16>Study like a Sensei</font> that is teaching others
 
-Mastery is shown in clarity, when you can explain the subject. When you teach something, you truly learn it. Explain it like you were explaining it to a 10 year old.
+<font color=#10b981>Mastery is shown in clarity</font>, when you can explain the subject. When you teach something, you truly learn it. <font color=#f43f5e>Explain it like you were explaining it to a 10 year old.</font>
 
 This approach was first avowed by Richard Feynman, a Nobel winning physicist.
 
@@ -60,4 +60,4 @@ This approach was first avowed by Richard Feynman, a Nobel winning physicist.
 
 ### 7. <font color=#84cc16>The forbidden night school</font>
 
-From 7pm to 9pm - no phones, no distractions, no background noise. Collaborate on reviewing, revising if and where possible. Mostly for students.
+From **7pm to 9pm** - <font color=#f43f5e>no phones, no distractions, no background noise.</font> Collaborate on reviewing, revising if and where possible. Mostly for students.
