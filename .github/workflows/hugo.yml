@@ -1,4 +1,4 @@
-# .github/workflows/gh-pages.yml
+# .github/workflows/hugo.yml
 
 name: GitHub Pages
 
@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - main
+permissions:
+  contents: write
 
 jobs:
   build-deploy:
