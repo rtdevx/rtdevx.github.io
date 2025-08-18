@@ -12,7 +12,3 @@ This blog contains my personal learning experiences...
 {{< alert >}}
 No rights reserved. Content for educational purposes only.
 {{< /alert >}}
-
-{{< profile align="center" >}}
-
-
