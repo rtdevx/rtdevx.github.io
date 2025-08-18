@@ -13,3 +13,5 @@ I’m also very interested in anything that increases my _productivity_, so you 
 {{< alert >}}
 No rights reserved. Content for educational purposes only.
 {{< /alert >}}
+
+![DevOps](main.jpg "DevOps")
