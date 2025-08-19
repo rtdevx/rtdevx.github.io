@@ -27,7 +27,7 @@
 
 #[[main]]
 #  name = "My Learning"
-#  pageRef = "posts/training"
+#  pageRef = "training"
 #  weight = 40
 
 [[main]]
