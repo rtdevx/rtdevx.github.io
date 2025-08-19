@@ -3,7 +3,7 @@ title: AWS Certified Cloud Practitioner
 date: 2025-08-18
 description: AWS Certified Cloud Practitioner
 summary: AWS Certified Cloud Practitioner documentation. My path to certification.
-draft: false
+draft: true
 tags:
   - AWS
   - Cloud
