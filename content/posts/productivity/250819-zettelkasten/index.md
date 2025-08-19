@@ -54,6 +54,7 @@ _www:_ https://obsidian.md/
 ---
 
 {{< youtube ziE6UExsOrs >}}
+_Zettelkasten Smart Notes: Step by Step with Obsidian_
 
 ---
 ### Note Taking
