@@ -10,10 +10,24 @@
     <lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AWS</title>
+      <link>http://localhost:1313/tags/aws/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Learning</title>
       <link>http://localhost:1313/tags/learning/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practitioner</title>
+      <link>http://localhost:1313/tags/practitioner/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/practitioner/</guid>
       <description></description>
     </item>
   </channel>

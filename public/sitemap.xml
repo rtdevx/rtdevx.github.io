@@ -18,7 +18,16 @@
   
     
       <url>
-            <loc>http://localhost:1313/posts/productivity/2025/07-7-studying-techniques/</loc>
+            <loc>http://localhost:1313/posts/productivity/250717-7-studying-techniques/</loc>
+            <lastmod>2025-07-17T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/practitioner/</loc>
             <lastmod>2025-07-17T00:00:00+00:00</lastmod>
           </url>
     
@@ -32,6 +41,10 @@
             <loc>http://localhost:1313/posts/</loc>
             <lastmod>2025-07-17T00:00:00+00:00</lastmod>
           </url>
+    
+  
+    
+  
     
   
     
