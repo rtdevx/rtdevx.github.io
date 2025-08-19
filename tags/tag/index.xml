@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TAG on rtdevx</title>
+    <link>http://localhost:1313/tags/tag/</link>
+    <description>Recent content in TAG on rtdevx</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copy, _right_? 🤔 </copyright>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Certified Cloud Practitioner</title>
+      <link>http://localhost:1313/posts/_template/yymmdd-postname/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/_template/yymmdd-postname/</guid>
+      <description>AWS Certified Cloud Practitioner documentation. My path to certification.</description>
+    </item>
+    <item>
+      <title>AWS Certified Cloud Practitioner</title>
+      <link>http://localhost:1313/posts/training/20250819-aws-cloud-practitioner/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/training/20250819-aws-cloud-practitioner/</guid>
+      <description>AWS Certified Cloud Practitioner documentation. My path to certification.</description>
+    </item>
+  </channel>
+</rss>
