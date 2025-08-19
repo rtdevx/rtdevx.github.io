@@ -32,6 +32,19 @@ A good system removes the need for remembering everything.
 > Niklas Luhmann
 
 <font color=#10b981>Highly productive people deflect resistance</font> like judo champions. Having a flexible workflow allows doing this. This is known as "_effortless productivity_".
+## Content Consumption
+
+- Intentionality for content consumption
+- 80% of content consumed scheduled and aligned with goals
+	- articles reading, YouTube videos watching are all scheduled beforehand with a clear purpose
+	- each act of content consumption should align with one of the goals set
+- 20% of content consumption used for relaxing
+### Intentionality
+
+- Consume the content with an intention of writing
+	- increased focus
+	- allows adapting more observant and analytical perspective
+- Being intentional about content consumption will limit the content consumption
 ## <font color=#10b981>Obsidian</font> - markdown-based, multi-platform note taking app
 
 **Obsidian** is a note-taking app that lets you link notes together. Learn how to download, create, and organize your notes with Obsidian in this comprehensive guide.
@@ -78,20 +91,6 @@ Consistency in transferring Fleeting notes to Permanent notes should be frequent
 
 ![](assets/png_zettelkasten_steps.png)
 _Don't collect information. Gather knowledge instead. Linking leads to surprises..._
-## Content Consumption
-
-- Intentionality for content consumption
-- 80% of content consumed scheduled and aligned with goals
-	- articles reading, YouTube videos watching are all scheduled beforehand with a clear purpose
-	- each act of content consumption should align with one of the goals set
-- 20% of content consumption used for relaxing
-### Intentionality
-
-- Consume the content with an intention of writing
-	- increased focus
-	- allows adapting more observant and analytical perspective
-- Being intentional about content consumption will limit the content consumption
-
 ## Tags vs Folders
 
 Folders are for separating, tags are for uniting
