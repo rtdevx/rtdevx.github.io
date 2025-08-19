@@ -16,12 +16,5 @@
       <guid>http://localhost:1313/posts/productivity/250717-7-studying-techniques/</guid>
       <description>Pomodoro, Kanji, Rewrite notes, Empty cup mindset, Chain learning, Study like a sensei, The forbidden night school&amp;hellip;</description>
     </item>
-    <item>
-      <title>AWS Certified Cloud Practitioner</title>
-      <link>http://localhost:1313/posts/training/aws/practitioner/</link>
-      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/training/aws/practitioner/</guid>
-      <description>AWS Cert Roadmap.</description>
-    </item>
   </channel>
 </rss>

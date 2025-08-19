@@ -1,6 +1,6 @@
 ---
 title: AWS Certified Cloud Practitioner
-date: 2025-07-17
+date: 2025-07-29
 description: AWS Certified Cloud Practitioner
 summary: AWS Cert Roadmap.
 draft: true
