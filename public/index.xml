@@ -16,12 +16,5 @@
       <guid>http://localhost:1313/about/</guid>
       <description>Learn more about me and why I am starting this blog.</description>
     </item>
-    <item>
-      <title>7 Chinese and Japanese studying techniques</title>
-      <link>http://localhost:1313/posts/productivity/250717-7-studying-techniques/</link>
-      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/productivity/250717-7-studying-techniques/</guid>
-      <description>Pomodoro, Kanji, Rewrite notes, Empty cup mindset, Chain learning, Study like a sensei, The forbidden night school&amp;hellip;</description>
-    </item>
   </channel>
 </rss>
