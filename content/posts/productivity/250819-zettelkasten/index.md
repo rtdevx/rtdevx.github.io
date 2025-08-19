@@ -35,8 +35,8 @@ A good system removes the need for remembering everything.
 ## Content Consumption
 
 - Intentionality for content consumption
-- 80% of content consumed scheduled and aligned with goals
-	- articles reading, YouTube videos watching are all scheduled beforehand with a clear purpose
+- **80% of content consumed scheduled and aligned with goals**
+	- articles reading, YouTube videos watching are **all scheduled beforehand with a clear purpose**
 	- each act of content consumption should align with one of the goals set
 - 20% of content consumption used for relaxing
 ### Intentionality
