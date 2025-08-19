@@ -92,7 +92,7 @@ Consistency in transferring Fleeting notes to Permanent notes should be frequent
 
 ![](assets/png_zettelkasten_steps.png)
 _Don't collect information. Gather knowledge instead. Linking leads to surprises..._
-## Tags vs Folders
+### Tags vs Folders
 
 Folders are for separating, tags are for uniting
 
