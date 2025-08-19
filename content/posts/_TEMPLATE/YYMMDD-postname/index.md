@@ -1,8 +1,8 @@
 ---
-title: AWS Certified Cloud Practitioner
+title: Post title
 date: 2025-08-19
-description: AWS Certified Cloud Practitioner
-summary: AWS Certified Cloud Practitioner documentation. My path to certification.
+description: Post description
+summary: Post summary...
 draft: true
 tags:
   - TAG
@@ -42,6 +42,10 @@ Congo theme documentation: https://jpanther.github.io/congo/docs/
 Organizing content: https://jpanther.github.io/congo/docs/getting-started/#organising-content
 Shortcodes: https://jpanther.github.io/congo/docs/shortcodes
 Content examples: https://jpanther.github.io/congo/docs/content-examples/
+
+**Emojis:**
+
+https://emojipedia.org/
 ### Highlight 1a
 
 Starting Hugo:
