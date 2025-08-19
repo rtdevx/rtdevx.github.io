@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>7 Chinese and Japanese studying techniques</title>
-      <link>http://localhost:1313/posts/learning/2025/07-7-studying-techniques/</link>
+      <link>http://localhost:1313/categories/learning/07-7-studying-techniques/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/learning/2025/07-7-studying-techniques/</guid>
+      <guid>http://localhost:1313/categories/learning/07-7-studying-techniques/</guid>
       <description>Pomodoro, Kanji, Rewrite notes, Empty cup mindset, Chain learning, Study like a sensei, The forbidden night school&amp;hellip;</description>
     </item>
   </channel>
