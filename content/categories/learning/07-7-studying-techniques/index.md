@@ -7,6 +7,7 @@ draft: false
 tags:
   - productivity
   - learning
+categories: learning
 ---
 ---
 {{< youtube BszXLBKWscA >}}
