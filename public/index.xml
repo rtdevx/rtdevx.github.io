@@ -17,6 +17,13 @@
       <description>Learn more about me and why I am starting this blog.</description>
     </item>
     <item>
+      <title>AWS Certified Cloud Practitioner</title>
+      <link>http://localhost:1313/posts/training/20250819-aws-cloud-practitioner/</link>
+      <pubDate>Mon, 18 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/training/20250819-aws-cloud-practitioner/</guid>
+      <description>AWS Certified Cloud Practitioner documentation. My path to certification.</description>
+    </item>
+    <item>
       <title>7 Chinese and Japanese studying techniques</title>
       <link>http://localhost:1313/posts/productivity/250717-7-studying-techniques/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
