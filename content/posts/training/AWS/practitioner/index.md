@@ -7,7 +7,8 @@ draft: false
 tags:
   - AWS
   - practitioner
-categories: Training Courses
+  - training
+categories: AWS Certified Cloud Practitioner
 ---
 ---
 
