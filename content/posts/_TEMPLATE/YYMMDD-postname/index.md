@@ -22,7 +22,7 @@ Disclaimer: _Content for educational purposes only, no rights reserved._
 **Workflow:**
 
 1. Replace thumb.jpg
-2. 
+2. Upload cover.jpg (if applicable)
 
 **Colors:** 
 
