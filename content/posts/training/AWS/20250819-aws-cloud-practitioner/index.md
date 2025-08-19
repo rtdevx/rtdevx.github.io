@@ -3,7 +3,7 @@ title: AWS Certified Cloud Practitioner
 date: 2025-08-18
 description: AWS Certified Cloud Practitioner
 summary: AWS Certified Cloud Practitioner documentation. My path to certification.
-draft: true
+draft: false
 tags:
   - AWS
   - Cloud
@@ -86,8 +86,8 @@ Below YouTube video is yet another source of information and has been recommende
 - Software as a Service (SaaS)
 	- Completed product that is run and managed by the service provider
 
-![](AWS_Cloud_Computing_Types.png)
-![](AWS_Cloud_Computing_Types_2.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_Cloud_Computing_Types.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_Cloud_Computing_Types_2.png)
 ### AWS Global Infrastructure
 
 - AWS Regions
@@ -96,7 +96,7 @@ Below YouTube video is yet another source of information and has been recommende
 - AWS Edge Locations / Points of Presence
 ### Shared Responsibility Model
 
-![](AWS_Shared_Responsibility_Model.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_Shared_Responsibility_Model.png)
 ## IAM
 
 IAM = Identity and Access management, Global service
@@ -114,16 +114,16 @@ In AWS you apply the **least privilege principle:** don't give user more permiss
 IAM console > Users
 ```
 
-![](AWS_IAM_Create_User.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_IAM_Create_User.png)
 
 Create Group Admin:
 
-![](AWS_IAM_Create_Group.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_IAM_Create_Group.png)
 
-![](AWS_IAM_Create_User_Tags.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_IAM_Create_User_Tags.png)
 ### IAM policies structure
 
-![](AWS_IAM_Policies_Structure.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_IAM_Policies_Structure.png)
 
 IAM policies structure consists of:
 
@@ -141,7 +141,7 @@ Statements consists of:
 - Condition: conditions for when the policy is applied (optional)
 ### MFA
 
-![](AWS_IAM_MFA.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_IAM_MFA.png)
 ### Accessing AWS
 
 - AWS Management Console - protected by password + MFA
@@ -154,7 +154,7 @@ Users manage their own access keys
 Access Key ID = username
 Secret Access Key = password
 
-![](AWS_IAM_Fake_Access_Keys_Example.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_IAM_Fake_Access_Keys_Example.png)
 #### Creating Access Key
 
 ```CLI
@@ -187,11 +187,11 @@ IAM > Roles > Create role > AWS service
 ```
 
 
-![](AWS_IAM_Role_Create.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_IAM_Role_Create.png)
 
 Add permissions:
 
-![](AWS_IAM_Role_Add_Permissions.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_IAM_Role_Add_Permissions.png)
 ### IAM Security Tools
 
 - IAM Credentials Report (account-level)
@@ -244,7 +244,7 @@ IAM > Users > Username > Last Accessed
 
 This will allow access to billing information for IAM users that are in Administrators group.
 
-![](AWS_IAM_Activate_access_to_billing_info.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_IAM_Activate_access_to_billing_info.png)
 
 #### 2. Create a budget
 
@@ -252,7 +252,7 @@ This will allow access to billing information for IAM users that are in Administ
 Billing and Cost Management > Budgets > Create a budget
 ```
 
-![](AWS_Budget_setup.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_Budget_setup.png)
 ## EC2
 
 ### EC2 sizing and configuration options
@@ -279,12 +279,12 @@ Billing and Cost Management > Budgets > Create a budget
 - **Storage Optimized** (I, Dx, H1) - High, sequential read and write access to very large data sets on local storage. Low-latency, random I/O operations per second (IOPS)
 - **HPC Optimized** (Hpc) - High Performance Computing - complex simulations and deep learning workloads
 
-![](AWS_EC2_Instance_Types.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_EC2_Instance_Types.png)
 ### Instance type naming conventions
 
 *More info:* [Amazon EC2 Instance type naming conventions](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html)
 
-![](AWS_EC2_Naming_Conventions.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_EC2_Naming_Conventions.png)
 
 #### Example
 
@@ -389,11 +389,11 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 	- May share hardware with other instances in the same account
 	- No control over instance placement
 
-![](AWS_EC2_dedicated.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_EC2_dedicated.png)
 
 - **Capacity Reservations** - reserve capacity in a specific AZ for any duration
 
-![](AWS_EC2_Purchasing_Options.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/AWS/20250819-aws-cloud-practitioner/AWS_EC2_Purchasing_Options.png)
 ## Security Groups
 
 - Security Groups are the fundamental of network security in AWS
