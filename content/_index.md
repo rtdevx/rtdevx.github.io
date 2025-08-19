@@ -11,6 +11,6 @@ On this blog I share thoughts and learnings about technical topics such as _DevO
 I am also interested in tools and techniques that help me increasing my _productivity_, so you will also find writings on _Zettelkasten_, _learning techniques_ and other, less related subjects.
 
 {{< alert >}}
-No rights reserved. Content for educational purposes only. 👨🏼‍🎓
+No rights reserved. This is my personal content for educational and informational purposes only. <br />👨🏻‍💻
 {{< /alert >}}
 
