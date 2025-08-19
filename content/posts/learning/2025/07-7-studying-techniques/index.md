@@ -7,7 +7,6 @@ draft: false
 tags:
   - productivity
   - learning
-  - zettelkasten
 ---
 ---
 {{< youtube BszXLBKWscA >}}
