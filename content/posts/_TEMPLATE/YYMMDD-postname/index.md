@@ -1,8 +1,8 @@
 ---
-title: Post title
+title: POST TITLE
 date: 2025-08-19
-description: Post description
-summary: Post summary...
+description: POST DESCRIPTION
+summary: POST SUMMARY...
 draft: true
 tags:
   - TAG
@@ -69,3 +69,10 @@ Other Hugo examples: https://softwarewitchcraft.com/
 
 ## Highlight 2
 
+
+---
+## Sources
+
+
+
+---
