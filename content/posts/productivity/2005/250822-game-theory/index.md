@@ -8,9 +8,6 @@ tags:
   - strategy
 categories: productivity
 ---
-{{< alert >}}
-Disclaimer: _Content for educational purposes only, no rights reserved._
-{{< /alert >}}
 ## What is Game Theory?
 
 **Game Theory**, branch of applied mathematics that provides tools for analyzing situations in which <font color=#10b981>parties, called players, make decisions that are interdependent</font>. 
