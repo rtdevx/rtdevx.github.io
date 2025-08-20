@@ -5,7 +5,7 @@ description: 7 Chinese and Japanese learning techniques.
 summary: Pomodoro, Kanji, Rewrite notes, Empty cup mindset, Chain learning, Study like a sensei, The forbidden night school...
 draft: false
 tags:
-  - learning
+  - zettelkasten
 categories: productivity
 ---
 ---

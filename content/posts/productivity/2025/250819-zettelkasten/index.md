@@ -5,7 +5,6 @@ description: Increase your productivity with zettelkasten, highly effective note
 summary: Increase your productivity with zettelkasten, highly effective note taking method...
 draft: false
 tags:
-  - learning
   - zettelkasten
 categories: productivity
 ---

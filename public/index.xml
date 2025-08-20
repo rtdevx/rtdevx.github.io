@@ -17,6 +17,13 @@
       <description>Learn more about me and why I am starting this blog.</description>
     </item>
     <item>
+      <title>2 - Identity and Access management</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/iam/</link>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/iam/</guid>
+      <description>Identity and Access management&amp;hellip;</description>
+    </item>
+    <item>
       <title>1 - What is Cloud Computing</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/what-is-cloud-computing/</link>
       <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>

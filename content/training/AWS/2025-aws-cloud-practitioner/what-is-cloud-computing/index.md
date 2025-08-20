@@ -69,20 +69,21 @@ categories: AWS Cloud Practitioner
 - Software as a Service (SaaS)
 	- Completed product that is run and managed by the service provider
 
-![](assets/AWS_Cloud_Computing_Types.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/what-is-cloud-computing/assets/AWS_Cloud_Computing_Types.png)
 
-![](assets/AWS_Cloud_Computing_Types_2.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/what-is-cloud-computing/assets/AWS_Cloud_Computing_Types_2.png)
 ## AWS Global Infrastructure
 
 - AWS Regions
 - AWS Availability Zones
 - AWS Data Centers
 - AWS Edge Locations / Points of Presence
+
+_AWS Global Infrastructure:_ [AWS Global Infrastructure](https://infrastructure.aws)
 ## Shared Responsibility Model
 
 ![](assets/AWS_Shared_Responsibility_Model.png)
-
-
+_Shared Responsibility Model:_ [Shared Responsibility Model - Amazon Web Services (AWS)](https://aws.amazon.com/compliance/shared-responsibility-model/)
 
 ---
 ## Sources
