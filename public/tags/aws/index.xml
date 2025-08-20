@@ -7,21 +7,28 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
-    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 - Security Groups</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/security-groups/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/security-groups/</guid>
+      <description>AWS Security Groups&amp;hellip;</description>
+    </item>
+    <item>
+      <title>4 - EC2</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ec2/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ec2/</guid>
+      <description>Amazon EC2&amp;hellip;</description>
+    </item>
     <item>
       <title>3 - Budget</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/budget/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/budget/</guid>
       <description>AWS Budget&amp;hellip;</description>
-    </item>
-    <item>
-      <title>4 - EC2</title>
-      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ec2/</link>
-      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ec2/</guid>
-      <description>Amazon EC2&amp;hellip;</description>
     </item>
     <item>
       <title>2 - Identity and Access management</title>

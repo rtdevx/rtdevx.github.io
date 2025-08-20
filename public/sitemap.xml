@@ -25,15 +25,8 @@
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/budget/</loc>
-            <lastmod>2025-08-03T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ec2/</loc>
-            <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/security-groups/</loc>
+            <lastmod>2025-08-05T00:00:00+00:00</lastmod>
           </url>
     
   
@@ -50,6 +43,20 @@
     
       <url>
             <loc>http://localhost:1313/training/</loc>
+            <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ec2/</loc>
+            <lastmod>2025-08-04T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/budget/</loc>
             <lastmod>2025-08-03T00:00:00+00:00</lastmod>
           </url>
     
