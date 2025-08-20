@@ -69,9 +69,9 @@ categories: AWS Cloud Practitioner
 - Software as a Service (SaaS)
 	- Completed product that is run and managed by the service provider
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/what-is-cloud-computing/assets/AWS_Cloud_Computing_Types.png)
+![](assets/AWS_Cloud_Computing_Types.png)
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/what-is-cloud-computing/assets/AWS_Cloud_Computing_Types_2.png)
+![](assets/AWS_Cloud_Computing_Types_2.png)
 ## AWS Global Infrastructure
 
 - AWS Regions

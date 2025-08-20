@@ -17,6 +17,13 @@
       <description>Learn more about me and why I am starting this blog.</description>
     </item>
     <item>
+      <title>7 - Amazon Machine Image (AMI)</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ami/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ami/</guid>
+      <description>AMI are a customization of an EC2 instance&amp;hellip;</description>
+    </item>
+    <item>
       <title>6 - Storage</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/storage/</link>
       <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>

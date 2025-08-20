@@ -42,12 +42,12 @@ An Amazon EC2 instance is a virtual server in the AWS Cloud. When you launch an 
 - **Storage Optimized** (I, Dx, H1) - High, sequential read and write access to very large data sets on local storage. Low-latency, random I/O operations per second (IOPS)
 - **HPC Optimized** (Hpc) - High Performance Computing - complex simulations and deep learning workloads
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/ec2/assets/AWS_EC2_Instance_Types.png)
+![](assets/AWS_EC2_Instance_Types.png)
 ## Instance type naming conventions
 
 *More info:* [Amazon EC2 Instance type naming conventions](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html)
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/ec2/assets/AWS_EC2_Naming_Conventions.png)
+![](assets/AWS_EC2_Naming_Conventions.png)
 ### Example
 
 *More info:* [Amazon EC2 Instance type naming conventions](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html)
@@ -148,11 +148,11 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 	- May share hardware with other instances in the same account
 	- No control over instance placement
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/ec2/assets/AWS_EC2_dedicated.png)
+![](assets/AWS_EC2_dedicated.png)
 
 - **Capacity Reservations** - reserve capacity in a specific AZ for any duration
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/ec2/assets/AWS_EC2_Purchasing_Options.png)
+![](assets/AWS_EC2_Purchasing_Options.png)
 
 ---
 ## Sources

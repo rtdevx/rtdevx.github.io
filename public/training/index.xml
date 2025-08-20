@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/training/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>7 - Amazon Machine Image (AMI)</title>
-      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ec2/ami/</link>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ami/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ec2/ami/</guid>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ami/</guid>
       <description>AMI are a customization of an EC2 instance&amp;hellip;</description>
     </item>
     <item>
