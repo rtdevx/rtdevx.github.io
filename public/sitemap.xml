@@ -25,8 +25,15 @@
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/what-is-cloud-computing/</loc>
-            <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/budget/</loc>
+            <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/ec2/</loc>
+            <lastmod>2025-08-03T00:00:00+00:00</lastmod>
           </url>
     
   
@@ -43,6 +50,20 @@
     
       <url>
             <loc>http://localhost:1313/training/</loc>
+            <lastmod>2025-08-03T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/iam/</loc>
+            <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/what-is-cloud-computing/</loc>
             <lastmod>2025-08-01T00:00:00+00:00</lastmod>
           </url>
     
@@ -52,8 +73,6 @@
             <loc>http://localhost:1313/posts/productivity/2025/250822-game-theory/</loc>
             <lastmod>2025-07-22T00:00:00+00:00</lastmod>
           </url>
-    
-  
     
   
     
