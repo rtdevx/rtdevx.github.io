@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Trainings on rtdevx</title>
-    <link>http://localhost:1313/training/</link>
-    <description>Recent content in Trainings on rtdevx</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>Copy, _right_? 🤔 </copyright>
-    <atom:link href="http://localhost:1313/training/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Trainings on rtdevx</title><link>https://rtdevx.github.io/training/</link><description>Recent content in Trainings on rtdevx</description><generator>Hugo</generator><language>en</language><copyright>Copy, _right_? 🤔</copyright><lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rtdevx.github.io/training/index.xml" rel="self" type="application/rss+xml"/><item><title>1 - What is Cloud Computing</title><link>https://rtdevx.github.io/training/aws/2025-aws-cloud-practitioner/what-is-cloud-computing/</link><pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate><guid>https://rtdevx.github.io/training/aws/2025-aws-cloud-practitioner/what-is-cloud-computing/</guid><description>What is Cloud Computing&amp;hellip;</description></item></channel></rss>
