@@ -7,14 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
-    <lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/training/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AWS Certified Cloud Practitioner</title>
-      <link>http://localhost:1313/posts/training/aws/practitioner/</link>
-      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/training/aws/practitioner/</guid>
-      <description>AWS Cert Roadmap.</description>
+      <title>1 - What is Cloud Computing</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/what-is-cloud-computing/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/what-is-cloud-computing/</guid>
+      <description>What is Cloud Computing&amp;hellip;</description>
     </item>
   </channel>
 </rss>

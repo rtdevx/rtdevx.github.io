@@ -90,7 +90,7 @@ Consistency in transferring Fleeting notes to Permanent notes should be frequent
 - Allows to see connection between notes
 - Makes easier to recall and apply knowledge
 
-![](assets/png_zettelkasten_steps.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/productivity/2025/250819-zettelkasten/assets/png_zettelkasten_steps.png)
 _Don't collect information. Gather knowledge instead. Linking leads to surprises..._
 ### Tags vs Folders
 

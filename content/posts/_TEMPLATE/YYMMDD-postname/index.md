@@ -21,14 +21,19 @@ Disclaimer: _Content for educational purposes only, no rights reserved._
 
 **Workflow:**
 
-1. Replace thumb.jpg
-2. Upload cover.jpg (if applicable)
+1. Folder name: YYMMDD-postname
+2. Folder location:
+	1. /content/posts
+	2. /content/training
+3. Replace thumb.jpg
+4. Replace cover.jpg (if applicable)
 
 **Colors:** 
 
 <font color=#f43f5e>Red:</font> `#f43f5e`
 <font color=#f4e40b>Yellow:</font> `#f4e40b`
 <font color=#10b981>Green:</font> `#10b981`
+<font color=#27D3F5>Blue:</font> `#27D3F5` # Color used for content to be corrected later (i.e. new links to not-yet existing content, etc...)
 
 Congo theme documentation: https://jpanther.github.io/congo/docs/
 

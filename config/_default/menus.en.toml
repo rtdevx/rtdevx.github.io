@@ -25,10 +25,10 @@
   pageRef = "tags"
   weight = 30
 
-#[[main]]
-#  name = "My Learning"
-#  pageRef = "training"
-#  weight = 40
+[[main]]
+  name = "My Learning"
+  pageRef = "training"
+  weight = 40
 
 [[main]]
   name = "About"
