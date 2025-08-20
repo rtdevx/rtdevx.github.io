@@ -9,7 +9,7 @@ tags:
   - Training
 categories: AWS Cloud Practitioner
 ---
-## **IAM** = Identity and Access management.
+## **IAM** = Identity and Access management
 
 **IAM** is AWS Global service.
 
@@ -28,20 +28,20 @@ In AWS you apply the <font color=#f43f5e>least privilege principle:</font> don't
 ---
 ## Creating user in AWS CLI
 
-```CLI
+```AWSConsole
 IAM console > Users
 ```
 
 ### Create user
 
-![](assets/AWS_IAM_Create_User.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/iam/assets/AWS_IAM_Create_User.png)
 ### Create group "admin"
 
-![](assets/AWS_IAM_Create_Group.png)
-![](assets/AWS_IAM_Create_User_Tags.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/iam/assets/AWS_IAM_Create_Group.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/iam/assets/AWS_IAM_Create_User_Tags.png)
 ## IAM policies structure
 
-![](assets/AWS_IAM_Policies_Structure.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/iam/assets/AWS_IAM_Policies_Structure.png)
 
 IAM policies structure includes:
 
@@ -59,7 +59,7 @@ Statement consist of:
 - **Condition:** conditions for when the policy is applied (optional)
 ## MFA
 
-![](assets/AWS_IAM_MFA.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/iam/assets/AWS_IAM_MFA.png)
 ## Accessing AWS
 
 - AWS Management Console - protected by password + MFA
@@ -72,10 +72,10 @@ Users manage their own access keys.
 Access Key ID = username
 Secret Access Key = password
 
-![](assets/AWS_IAM_Fake_Access_Keys_Example.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/iam/assets/AWS_IAM_Fake_Access_Keys_Example.png)
 ### Creating Access Key
 
-```CLI
+```AWSConsole
 IAM > Users > Username > Security Credentials > Access Keys > Create Access Key > Command Line Interface (CLI)
 ```
 
@@ -101,28 +101,28 @@ aws iam list-users
 - Roles for CloudFormation
 #### Create AWS Service Role
 
-```CLI
+```AWSConsole
 IAM > Roles > Create role > AWS service
 ```
 
-![](assets/AWS_IAM_Role_Create.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/iam/assets/AWS_IAM_Role_Create.png)
 
 Add permissions:
 
-![](assets/AWS_IAM_Role_Add_Permissions.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/iam/assets/AWS_IAM_Role_Add_Permissions.png)
 ## IAM Security Tools
 
 - **IAM Credentials Report** (account-level)
 	- Report that lists all users and status of their credentials
 
-```CLI
+```AWSConsole
 IAM > Credentials Report
 ```
 
 - **IAM Access Advisor** (user-level)
 	- Access Advisor shows the service permissions granted to a user and when those services were last accessed
 
-```CLI
+```AWSConsole
 IAM > Users > Username > Last Accessed
 ```
 
@@ -147,13 +147,6 @@ IAM > Users > Username > Last Accessed
 | Compliance validation                    | Rotating keys                                            |
 |                                          | Using IAM tools to apply appropriate permissions         |
 |                                          | Analyze access patterns and review permissions           |
-
-
-
-
-
-
-
 
 ---
 ## Sources

@@ -17,6 +17,13 @@
       <description>Learn more about me and why I am starting this blog.</description>
     </item>
     <item>
+      <title>3 - Budget</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/budget/</link>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/budget/</guid>
+      <description>AWS Budget&amp;hellip;</description>
+    </item>
+    <item>
       <title>2 - Identity and Access management</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/iam/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
