@@ -1,6 +1,6 @@
 ---
 title: Game theory
-date: 2025-08-22
+date: 2025-07-22
 description: The best Game Theory video I've ever watched.
 summary: The best video about Game Theory I've ever watched...
 draft: false

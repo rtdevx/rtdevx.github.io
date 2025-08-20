@@ -1,6 +1,6 @@
 ---
 title: Zettelkasten note taking method
-date: 2025-08-19
+date: 2025-07-19
 description: Increase your productivity with zettelkasten, highly effective note taking method...
 summary: Increase your productivity with zettelkasten, highly effective note taking method...
 draft: false
