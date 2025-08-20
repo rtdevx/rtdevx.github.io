@@ -160,6 +160,9 @@ IAM > Users > Username > Last Accessed
 
 - _AWS Global Infrastructure:_ [AWS Global Infrastructure](https://infrastructure.aws)
 - _Shared Responsibility Model:_ [Shared Responsibility Model - Amazon Web Services (AWS)](https://aws.amazon.com/compliance/shared-responsibility-model/)
+## References
+
+- <font color=#27D3F5>Account Management and Billing</font>
 ---
 ### Disclaimer
 
