@@ -17,6 +17,13 @@
       <description>Learn more about me and why I am starting this blog.</description>
     </item>
     <item>
+      <title>6 - Storage</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/storage/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/storage/</guid>
+      <description>Storage in AWS&amp;hellip;</description>
+    </item>
+    <item>
       <title>5 - Security Groups</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/security-groups/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
