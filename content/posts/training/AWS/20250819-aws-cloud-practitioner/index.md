@@ -438,13 +438,13 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 	- you get billed for a provisioned capacity
 	- you can increase the capacity of the drive over time
 
-![](AWS_EC2_EBS_Volume1.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/public/training/aws/2025-aws-cloud-practitioner/storage/assets/AWS_EC2_EBS_Volume1.png)
 
 ==EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them.==
 
 ##### EBS - Delete on Termination
 
-![](AWS_EC2_EBS_Delete_on_Termination.png)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/public/training/aws/2025-aws-cloud-practitioner/storage/assets/AWS_EC2_EBS_Delete_on_Termination.png)
 
 - Controls the EBS behavior when EC2 instance terminates
 	- by default the root EBS volume is deleted (attribute enabled)
