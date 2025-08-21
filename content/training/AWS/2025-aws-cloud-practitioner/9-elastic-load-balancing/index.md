@@ -2,7 +2,7 @@
 title: 9 - Elastic Load Balancing
 date: 2025-08-09
 description: Elastic Load Balancing
-summary: Elastic Load Balancing automatically distributes your incoming traffic across multiple targets (EC2 instances, containers, IP addresses) in *one or more Availability Zones...
+summary: Elastic Load Balancing automatically distributes your incoming traffic across multiple targets...
 draft: false
 tags:
   - AWS
