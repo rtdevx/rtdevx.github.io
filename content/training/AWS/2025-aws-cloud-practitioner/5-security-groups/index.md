@@ -2,7 +2,7 @@
 title: 5 - Security Groups
 date: 2025-08-05
 description: AWS Security Groups
-summary: AWS Security Groups...
+summary: AWS Security Groups are the fundamental of network security in AWS. They control how traffic is allowed in or out of our EC2 instances...
 draft: false
 tags:
   - AWS

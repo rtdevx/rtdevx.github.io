@@ -2,7 +2,7 @@
 title: 8 - Scalability & High Availability
 date: 2025-08-08
 description: Scalability & High Availability in AWS Cloud
-summary: Scalability & High Availability in AWS cloud...
+summary: Scalability means that an application / infrastructure can handle greater loads by adapting. High Availability means running application / infrastructure in at least 2 Availability Zones...
 draft: false
 tags:
   - AWS

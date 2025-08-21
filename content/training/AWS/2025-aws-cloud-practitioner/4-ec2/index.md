@@ -2,7 +2,7 @@
 title: 4 - EC2
 date: 2025-08-04
 description: EC2
-summary: Amazon EC2...
+summary: An Amazon EC2 instance is a virtual server in the AWS Cloud...
 draft: false
 tags:
   - AWS
@@ -11,7 +11,7 @@ categories: AWS Cloud Practitioner
 ---
 ## What is Amazon EC2
 
-An Amazon EC2 instance is a virtual server in the AWS Cloud. When you launch an EC2 instance, the instance type that you specify determines the hardware available to your instance. Each instance type offers a different balance of compute, memory, network, and storage resources. 
+An **Amazon EC2** instance is a virtual server in the AWS Cloud. When you launch an EC2 instance, the instance type that you specify determines the hardware available to your instance. Each instance type offers a different balance of compute, memory, network, and storage resources. 
 
 ---
 

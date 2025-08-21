@@ -14,10 +14,10 @@ categories: AWS Cloud Practitioner
 <font color=#f43f5e>Billing and Cost Management is only available for the root user (or user with the right privileges).</font>
 ### 1. Enabling Billing and Cost Management for IAM user
 
-	- Log in as root to AWS Console
-	- Click on your user in the top right corner, select an account
-	- Scroll down to "_IAM user and role access to Billing information_"
-	- Activate IAM access
+- Log in as root to AWS Console
+- Click on your user in the top right corner, select an account
+- Scroll down to "_IAM user and role access to Billing information_"
+- Activate IAM access
 
 This will allow access to billing information for IAM users that are in _Administrators_ group.
 
