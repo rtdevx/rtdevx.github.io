@@ -55,7 +55,7 @@ Automate the creation, maintain, validate the build of EC2 AMI's. Can run on a s
 
 - [What is Image Builder](https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html)
 
-- _Stephane Maarek's AWS playlists on YouTube:_ https://www.youtube.com/@StephaneMaarek/playlists
+{{< icon "youtube" >}} _Stephane Maarek's AWS playlists on YouTube:_ https://www.youtube.com/@StephaneMaarek/playlists
 ## References
 
 - <font color=#27D3F5>EC2</font>

@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
-    <lastBuildDate>Sun, 10 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/training/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>11 - Amazon S3</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/11---s3/</link>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/11---s3/</guid>
+      <description>Amazon S3&amp;hellip;</description>
+    </item>
     <item>
       <title>10 - Auto Scaling Group</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/</link>

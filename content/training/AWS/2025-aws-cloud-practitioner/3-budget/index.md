@@ -21,14 +21,14 @@ categories: AWS Cloud Practitioner
 
 This will allow access to billing information for IAM users that are in _Administrators_ group.
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/3-budget/assets/AWS_IAM_Activate_access_to_billing_info.png)
+![](assets/AWS_IAM_Activate_access_to_billing_info.png)
 ### 2. Create a budget
 
 ```AWSConsole
 Billing and Cost Management > Budgets > Create a budget
 ```
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/training/AWS/2025-aws-cloud-practitioner/3-budget/assets/AWS_Budget_setup.png)
+![](assets/AWS_Budget_setup.png)
 
 ## Disclaimer
 

@@ -62,7 +62,7 @@ _AWS EC2 Auto Scaling : Step By Step Tutorial_
 
 - https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html
 
-- _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
+{{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## References
 
 - <font color=#27D3F5>Scalability & High Availability</font>

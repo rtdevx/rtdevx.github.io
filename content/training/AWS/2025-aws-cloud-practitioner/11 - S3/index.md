@@ -3,63 +3,58 @@ title: 11 - Amazon S3
 date: 2025-08-11
 description: Amazon S3
 summary: Amazon S3...
-draft: true
+draft: false
 tags:
   - AWS
   - Training
 categories: AWS Cloud Practitioner
 ---
-## What is Amazon EC2 AMI
+## What is Amazon S3
 
-AMI are a customization of an EC2 instance.
+**Amazon S3** is <font color=red>one of the main building blocks of AWS.</font>
 
-- Custom software, configuration, etc. can be added
-- Faster boot / configuration time because all your software is pre-packaged
+It is advertised as "**infinitely scaling**" storage.
 
----
-
-{{< youtube ocMOyJ9Tlyk >}}
-_AWS EC2 AMI Introduction_
-<br /><br />
-{{< youtube DOpx2C5F7cs >}}
-_AWS EC2 AMI Tutorial_
+- Many websites use Amazon S3 as a backbone
+- Many AWS services use Amazon S3 as an integration
 
 ---
 
-<font color=#f43f5e>AMI are build for a specific AWS region</font> but can be copied across regions.
-### AMI can be launched from
+{{< youtube A2N9OIun9dU >}}
+_AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS_
 
-- Public AMI - AWS provided
-- Own AMI - managed by an organization
-- AWS Marketplace - created by a vendor or another 3rd party (can be sold / bought)
-## Steps to build an AMI
 
-- Start EC2 Instance and customize it
-- Stop the instance (for data integrity)
-- Build AMI - this will also create <font color=#27D3F5>EBS snapshots</font>
-- Launch instances from other AMI's
+---
+## Amazon S3 Use Cases
 
-```AWSConsole
-EC2 > Instances > Select an EC2 instance > Actions > Image and Templates > Create image
-```
-## EC2 Image Builder
+- Backup and Storage
+- Disaster Recovery
+- Archive
+- Hybrid Cloud storage
+- Application hosting
+- Media hosting
+- Data lakes & big data analytics
+- Software delivery
+- Static Website
+## Amazon S3 - Buckets
 
-EC2 Image Builder is a fully managed AWS service that helps you to automate the creation, management and deployment of customized, secure and up-to-date server images.
 
-Custom images can be created via AWS Console, AWS CLI or API.
-
-Automate the creation, maintain, validate the build of EC2 AMI's. Can run on a schedule and can be distributed to multiple AWS Regions.
 
 ---
 ## Sources
 
-- [What is Image Builder](https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html)
+- S3 Documentation: https://docs.aws.amazon.com/s3/
+- S3 Availability and Durability: https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html
+- S3 Storage Classes: https://aws.amazon.com/s3/storage-classes/
+- S3 Pricing: https://aws.amazon.com/s3/pricing/
+- S3 AWS Snowball: https://aws.amazon.com/snowball/
+- S3 File Gateway: https://aws.amazon.com/storagegateway/file/s3/
 
-- _Stephane Maarek's AWS playlists on YouTube:_ https://www.youtube.com/@StephaneMaarek/playlists
+{{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## References
 
-- <font color=#27D3F5>EC2</font>
 - <font color=#27D3F5>Storage</font>
+- <font color=#27D3F5>Security and Compliance</font>
 ---
 ### Disclaimer
 
