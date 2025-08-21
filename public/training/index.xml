@@ -7,35 +7,42 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
-    <lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/training/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>12 - Databases</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/12-databases/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/12-databases/</guid>
+      <description>AWS oﬀers a growing number of database options (15+) with diverse data models to support a variety of workloads. These include relational, key-value, document, in-memory, graph, time series, vector, and wide-column&amp;hellip;</description>
+    </item>
+    <item>
       <title>11 - Amazon S3</title>
-      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/11---s3/</link>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/11-s3/</link>
       <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/11---s3/</guid>
-      <description>Amazon S3&amp;hellip;</description>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/11-s3/</guid>
+      <description>Amazon S3 is one of the main building blocks of AWS. It is advertised as &amp;ldquo;infinitely scaling&amp;rdquo; storage&amp;hellip;</description>
     </item>
     <item>
       <title>10 - Auto Scaling Group</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/</guid>
-      <description>Auto Scaling Group&amp;hellip;</description>
+      <description>Auto Scaling Group contains a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management&amp;hellip;</description>
     </item>
     <item>
       <title>9 - Elastic Load Balancing</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/</link>
       <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/</guid>
-      <description>Elastic Load Balancing&amp;hellip;</description>
+      <description>Elastic Load Balancing automatically distributes your incoming traffic across multiple targets&amp;hellip;</description>
     </item>
     <item>
       <title>8 - Scalability &amp; High Availability</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/8-scalability-high-availability/</link>
       <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/8-scalability-high-availability/</guid>
-      <description>Scalability &amp;amp; High Availability in AWS cloud&amp;hellip;</description>
+      <description>Scalability means that an application / infrastructure can handle greater loads by adapting&amp;hellip;</description>
     </item>
     <item>
       <title>7 - Amazon Machine Image (AMI)</title>
@@ -56,14 +63,14 @@
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/5-security-groups/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/5-security-groups/</guid>
-      <description>AWS Security Groups&amp;hellip;</description>
+      <description>AWS Security Groups are the fundamental of network security in AWS. They control how traffic is allowed in or out of our EC2 instances&amp;hellip;</description>
     </item>
     <item>
       <title>4 - EC2</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/4-ec2/</link>
       <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/4-ec2/</guid>
-      <description>Amazon EC2&amp;hellip;</description>
+      <description>An Amazon EC2 instance is a virtual server in the AWS Cloud&amp;hellip;</description>
     </item>
     <item>
       <title>3 - Budget</title>

@@ -142,7 +142,7 @@ S3 > General purpose buckets (or other) > your-bucket > Properties > Static webs
 
 ![](assets/AWS_S3_Enable_Static_Website.png)
 
-Voila!
+##### <font color=#f4e40b>Voila!</font>
 
 ![](assets/AWS_S3_Static_Website_Hosting.png)
 
