@@ -13,7 +13,7 @@
 [[main]]
   name = "Journal"
   pageRef = "posts"
-  weight = 5
+  weight = 10
 
 [[main]]
   name = "Categories"
