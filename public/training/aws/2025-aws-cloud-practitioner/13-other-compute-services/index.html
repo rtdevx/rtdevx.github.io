@@ -139,7 +139,7 @@
     "keywords": ["AWS","Training"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "743"
+    "wordCount": "749"
   }
   </script>
     
@@ -565,7 +565,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-13 00:00:00 &#43;0000 UTC">13 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>743 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+      <time datetime="2025-08-13 00:00:00 &#43;0000 UTC">13 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>749 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
     
 
     
@@ -672,7 +672,8 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="docker" class="relative group">Docker <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#docker" aria-label="Anchor">#</a></span></h2><p>Docker is a software development platform to deploy apps.</p>
+        <h2 id="docker" class="relative group">Docker <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#docker" aria-label="Anchor">#</a></span></h2>
+<p>Docker is a software development platform to deploy apps.</p>
 <p>Apps are packaged in containers that can be run on any OS.</p>
 <ul>
 <li>Applications function in the same way, no matter where they&rsquo;re run
@@ -688,10 +689,13 @@
 </ul>
 <p>Docker images are stored in Docker Repositories.</p>
 <ul>
-<li>Public: Docker Hub (<a href="https://hubl.docker.com" target="_blank" rel="noreferrer">https://hubl.docker.com</a>)</li>
+<li>Public: Docker Hub (<a href="https://hubl.docker.com" target="_blank" rel="noreferrer">https://hubl.docker.com</a>
+)</li>
 <li>Private: Amazon ECR (<font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>R</font>egistry)</li>
 </ul>
-<h2 id="ecs-elastic-container-service" class="relative group">ECS (Elastic Container Service) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ecs-elastic-container-service" aria-label="Anchor">#</a></span></h2><h5 id="amazon-ecs--elastic-container-service" class="relative group">Amazon ECS = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervice. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-ecs--elastic-container-service" aria-label="Anchor">#</a></span></h5><p>ECS allows launching Docker containers on AWS. It is an orchestrator.</p>
+<h2 id="ecs-elastic-container-service" class="relative group">ECS (Elastic Container Service) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ecs-elastic-container-service" aria-label="Anchor">#</a></span></h2>
+<h5 id="amazon-ecs--elastic-container-service" class="relative group">Amazon ECS = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervice. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-ecs--elastic-container-service" aria-label="Anchor">#</a></span></h5>
+<p>ECS allows launching Docker containers on AWS. It is an orchestrator.</p>
 <ul>
 <li>You must provision and maintain the infrastructure (EC2 instances)</li>
 <li>AWS takes care of starting / stopping containers</li>
@@ -760,16 +764,19 @@
 
 </figure>
 </p>
-<h2 id="fargate" class="relative group">Fargate <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#fargate" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="fargate" class="relative group">Fargate <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#fargate" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Launch Docker containers on AWS</li>
 <li><font color=#10b981>Serverless</font>. No need to provision the infrastructure (no EC2 instances to manage)</li>
 <li>AWS runs the containers based on CPU / RAM needed</li>
 </ul>
-<h2 id="ecr" class="relative group">ECR <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ecr" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="ecr" class="relative group">ECR <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ecr" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li><font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>R</font>egistry</li>
 <li>Private Docker Registry on AWS</li>
 </ul>
-<h2 id="amazon-eks" class="relative group">Amazon EKS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-eks" aria-label="Anchor">#</a></span></h2><p>Amazon EKS = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>K</font>ubernetes <font color=#f43f5e>S</font>ervice.</p>
+<h2 id="amazon-eks" class="relative group">Amazon EKS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-eks" aria-label="Anchor">#</a></span></h2>
+<p>Amazon EKS = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>K</font>ubernetes <font color=#f43f5e>S</font>ervice.</p>
 <p>Allows launching and managing Kubernetes clusters on AWS.</p>
 <p>Kubernetes is an open-source system for management, deployment and scaling of containerized apps (Docker, Containerd).</p>
 <p><strong>Containers can be hosted on:</strong></p>
@@ -777,13 +784,15 @@
 <li>EC2 instances</li>
 <li>Fargate</li>
 </ul>
-<h2 id="lambda" class="relative group">Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#lambda" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="lambda" class="relative group">Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#lambda" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li><font color=#10b981>Virtual functions</font> - no servers to manage</li>
 <li>Limited by time - <font color=#10b981>short executions</font></li>
 <li>Run <font color=#10b981>on-demand</font></li>
 <li><font color=#10b981>Scaling is automated</font></li>
 </ul>
-<h3 id="benefits-of-lambda" class="relative group">Benefits of Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#benefits-of-lambda" aria-label="Anchor">#</a></span></h3><ul>
+<h3 id="benefits-of-lambda" class="relative group">Benefits of Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#benefits-of-lambda" aria-label="Anchor">#</a></span></h3>
+<ul>
 <li>Easy pricing:
 <ul>
 <li>Pay per request and compute time</li>
@@ -807,23 +816,27 @@
 </ul>
 <p>Lambda Container Image - although ECS / Fargate is preferred for running Docker images.</p>
 <p><font color=#10b981>Lambda pricing</font> is based on <font color=#f43f5e>calls</font> and <font color=#f43f5e>duration</font>.</p>
-<h2 id="amazon-api-gateway" class="relative group">Amazon API Gateway <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-api-gateway" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="amazon-api-gateway" class="relative group">Amazon API Gateway <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-api-gateway" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Fully managed service for developers to easily create, publish, maintain, monitor and secure APIs</li>
 <li><font color=#10b981>Serverless</font> and scalable</li>
 <li>Supports RESTful APIs and WebSocket APIs</li>
 <li>Support for security, user authentication, API throttling, API keys, monitoring</li>
 </ul>
-<h5 id="creating-serverless-api--api-gateway--lambda-expose-lambda-functions-as-http-api" class="relative group"><font color=#f43f5e>Creating Serverless API</font> = API Gateway + Lambda. <font color=#f43f5e>Expose Lambda functions as HTTP API</font>. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-serverless-api--api-gateway--lambda-expose-lambda-functions-as-http-api" aria-label="Anchor">#</a></span></h5><h2 id="aws-batch" class="relative group">AWS Batch <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-batch" aria-label="Anchor">#</a></span></h2><ul>
+<h5 id="creating-serverless-api--api-gateway--lambda-expose-lambda-functions-as-http-api" class="relative group"><font color=#f43f5e>Creating Serverless API</font> = API Gateway + Lambda. <font color=#f43f5e>Expose Lambda functions as HTTP API</font>. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-serverless-api--api-gateway--lambda-expose-lambda-functions-as-http-api" aria-label="Anchor">#</a></span></h5>
+<h2 id="aws-batch" class="relative group">AWS Batch <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-batch" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Fully managed batch processing at any scale</li>
 <li>Efficiently run 100,000s of computing batch jobs on AWS</li>
 <li>A &ldquo;<em>batch</em>&rdquo; job is a job with start and and end (opposed to continuous)</li>
-<li><font color=#f4e40b>Batch will dynamically launch EC2 instances or Spot instances</font></li>
+<li><font color=#f1ef63>Batch will dynamically launch EC2 instances or Spot instances</font></li>
 <li>AWS batch provisions the right amount of compute / memory</li>
 <li>You submit or schedule batch jobs and AWS Batch does the rest</li>
-<li><font color=#f4e40b>Batch jobs are defined as Docker images and run on ECS</font></li>
+<li><font color=#f1ef63>Batch jobs are defined as Docker images and run on ECS</font></li>
 <li><font color=#f43f5e>Helpful for cost optimizations and focusing less on the infrastructure</font></li>
 </ul>
-<h3 id="batch-vs-lambda" class="relative group">Batch vs Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#batch-vs-lambda" aria-label="Anchor">#</a></span></h3><ul>
+<h3 id="batch-vs-lambda" class="relative group">Batch vs Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#batch-vs-lambda" aria-label="Anchor">#</a></span></h3>
+<ul>
 <li>Lambda
 <ul>
 <li>Time limit</li>
@@ -841,13 +854,14 @@
 </ul>
 </li>
 </ul>
-<h2 id="lightsail" class="relative group">Lightsail <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#lightsail" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="lightsail" class="relative group">Lightsail <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#lightsail" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Virtual servers, storage, databases and networking</li>
 <li>Low &amp; predictable pricing</li>
 <li>Simpler alternative to using EC2, RDS, ELB, EBS, Route53</li>
 <li>Great for people with <font color=#10b981>little cloud experience</font></li>
 <li>Can setup notifications and monitoring of your Lightsail resources</li>
-<li><font color=#f4e40b>Use cases:</font>
+<li><font color=#f1ef63>Use cases:</font>
 <ul>
 <li>Simple web applications</li>
 <li>Websites</li>
@@ -856,19 +870,20 @@
 </li>
 <li>Has High Availability but no auto scaling, limited AWS integrations</li>
 </ul>
-<h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2><ul>
-<li><font color=#f4e40b>Docker:</font> container technology to run applications</li>
-<li><font color=#f4e40b>ECS:</font> run Docker container on EC2 instances</li>
-<li><font color=#f4e40b>Fargate:</font>
+<h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
+<ul>
+<li><font color=#f1ef63>Docker:</font> container technology to run applications</li>
+<li><font color=#f1ef63>ECS:</font> run Docker container on EC2 instances</li>
+<li><font color=#f1ef63>Fargate:</font>
 <ul>
 <li>Run Docker containers without provisioning the infrastructure</li>
 <li>Serverless offering (no EC2 instances)</li>
 </ul>
 </li>
-<li><font color=#f4e40b>ECR:</font> Private Docker Images Repository</li>
-<li><font color=#f4e40b>Batch:</font> run batch jobs on AWS across managed EC2 instances</li>
-<li><font color=#f4e40b>Lightsail:</font> predictable &amp; low pricing for simple application &amp; DB stacks</li>
-<li><font color=#f4e40b>Lambda:</font>
+<li><font color=#f1ef63>ECR:</font> Private Docker Images Repository</li>
+<li><font color=#f1ef63>Batch:</font> run batch jobs on AWS across managed EC2 instances</li>
+<li><font color=#f1ef63>Lightsail:</font> predictable &amp; low pricing for simple application &amp; DB stacks</li>
+<li><font color=#f1ef63>Lambda:</font>
 <ul>
 <li>Serverless, Function as a Service, seamless scaling, reactive</li>
 <li>Lambda Billing:
@@ -881,28 +896,36 @@
 <li>Invocation time: up to 15 minutes</li>
 </ul>
 </li>
-<li><font color=#f4e40b>API Gateway:</font> expose Lambda functions as HTTP API</li>
+<li><font color=#f1ef63>API Gateway:</font> expose Lambda functions as HTTP API</li>
 </ul>
 <hr>
-<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2><ul>
-<li>ECS Documentation: <a href="https://docs.aws.amazon.com/ecs/" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/ecs/</a></li>
+<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2>
+<ul>
+<li>ECS Documentation: <a href="https://docs.aws.amazon.com/ecs/" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/ecs/</a>
+</li>
 </ul>
-<h2 id="references" class="relative group">References <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#references" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="references" class="relative group">References <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#references" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li><font color=#27D3F5>EC2</font></li>
 </ul>
 <hr>
-<h3 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h3><div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+<h3 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h3>
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
 </span>
   </span>
   <span class="dark:text-neutral-300"><p><em>Disclaimer: Content for educational purposes only, no rights reserved.</em></p>
-<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a> course on Udemy.</p>
-<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a> as they are awesome and really help understanding the subject.</p>
+<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a>
+ course on Udemy.</p>
+<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a>
+ as they are awesome and really help understanding the subject.</p>
 <p><em>More about Stephane Maarek:</em></p>
 <ul>
-<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a></li>
-<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a></li>
+<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a>
+</li>
+<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a>
+</li>
 </ul>
 <p><strong>This article is just a summary and has been published to help me learning and passing the practitioner exam.</strong></p>
 </span>

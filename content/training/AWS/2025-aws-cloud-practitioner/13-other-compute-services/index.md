@@ -97,10 +97,10 @@ Lambda Container Image - although ECS / Fargate is preferred for running Docker 
 - Fully managed batch processing at any scale
 - Efficiently run 100,000s of computing batch jobs on AWS
 - A "_batch_" job is a job with start and and end (opposed to continuous)
-- <font color=#f4e40b>Batch will dynamically launch EC2 instances or Spot instances</font>
+- <font color=#f1ef63>Batch will dynamically launch EC2 instances or Spot instances</font>
 - AWS batch provisions the right amount of compute / memory
 - You submit or schedule batch jobs and AWS Batch does the rest
-- <font color=#f4e40b>Batch jobs are defined as Docker images and run on ECS</font>
+- <font color=#f1ef63>Batch jobs are defined as Docker images and run on ECS</font>
 - <font color=#f43f5e>Helpful for cost optimizations and focusing less on the infrastructure</font>
 ### Batch vs Lambda
 
@@ -121,29 +121,29 @@ Lambda Container Image - although ECS / Fargate is preferred for running Docker 
 - Simpler alternative to using EC2, RDS, ELB, EBS, Route53
 - Great for people with <font color=#10b981>little cloud experience</font>
 - Can setup notifications and monitoring of your Lightsail resources
-- <font color=#f4e40b>Use cases:</font>
+- <font color=#f1ef63>Use cases:</font>
 	- Simple web applications
 	- Websites
 	- Dev / Test environment
 - Has High Availability but no auto scaling, limited AWS integrations
 ## Summary
 
-- <font color=#f4e40b>Docker:</font> container technology to run applications
-- <font color=#f4e40b>ECS:</font> run Docker container on EC2 instances
-- <font color=#f4e40b>Fargate:</font>
+- <font color=#f1ef63>Docker:</font> container technology to run applications
+- <font color=#f1ef63>ECS:</font> run Docker container on EC2 instances
+- <font color=#f1ef63>Fargate:</font>
 	- Run Docker containers without provisioning the infrastructure
 	- Serverless offering (no EC2 instances)
-- <font color=#f4e40b>ECR:</font> Private Docker Images Repository
-- <font color=#f4e40b>Batch:</font> run batch jobs on AWS across managed EC2 instances
-- <font color=#f4e40b>Lightsail:</font> predictable & low pricing for simple application & DB stacks
-- <font color=#f4e40b>Lambda:</font>
+- <font color=#f1ef63>ECR:</font> Private Docker Images Repository
+- <font color=#f1ef63>Batch:</font> run batch jobs on AWS across managed EC2 instances
+- <font color=#f1ef63>Lightsail:</font> predictable & low pricing for simple application & DB stacks
+- <font color=#f1ef63>Lambda:</font>
 	- Serverless, Function as a Service, seamless scaling, reactive
 	- Lambda Billing:
 		- By the time run x by the RAM provisioned
 		- By the number of invocations
 	- Language support: many programming languages except (arbitrary) Docker
 	- Invocation time: up to 15 minutes
-- <font color=#f4e40b>API Gateway:</font> expose Lambda functions as HTTP API
+- <font color=#f1ef63>API Gateway:</font> expose Lambda functions as HTTP API
 
 ---
 ## Sources

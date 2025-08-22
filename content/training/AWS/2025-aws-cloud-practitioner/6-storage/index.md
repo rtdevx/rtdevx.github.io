@@ -35,7 +35,7 @@ _<font color=#f43f5e>EBS Volumes can be attached to only 1 EC2 instance at a tim
 	- by default the root EBS volume is deleted (attribute enabled)
 	- by default any other attached EBS volume is not deleted (attribute disabled)
 - This can be controlled by both, AWS Console and AWS CLI
-- <font color=#f4e40b>Use case:</font> preserve root volume when instance is terminated
+- <font color=#f1ef63>Use case:</font> preserve root volume when instance is terminated
 ## EBS Snapshots
 
 - Make a backup (snapshot) of EBS volume at a point in time
@@ -63,12 +63,12 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 
 - Better I/O performance
 - EC2 Instance Store is ephemeral (data is lost after stopping EC2 instance)
-- <font color=#f4e40b>Use case:</font> buffer, cache, scratch data, temporary content
+- <font color=#f1ef63>Use case:</font> buffer, cache, scratch data, temporary content
 
 <font color=#f43f5e>Risk of data loss if hardware fails.</font>
 ## EFS - Elastic File System
 
-- <font color=#f4e40b>Managed NFS</font> (Network File System) that can be mounted on 100s of EC2 instances
+- <font color=#f1ef63>Managed NFS</font> (Network File System) that can be mounted on 100s of EC2 instances
 - <font color=#f43f5e>EFS works with Linux EC2 instances only</font> and is <font color=#10b981>multi-AZ.</font>
 - Highly-available, scalable, <font color=#f43f5e>expensive</font> (3x gp2 EBS), pay per use, no capacity planning
 ### EFS Infrequent Access (EFS-IA)
@@ -99,7 +99,7 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 3rd party with high-performance file system on AWS.
 
 - **FSx for Lustre** - fully managed, high-performance, scalable <font color=green>file storage for High Performance Computing (HPC)</font>. 
-	- <font color=#f4e40b>Use cases:</font> Machine Learning, Analytics, Video processing, Financial Modelling
+	- <font color=#f1ef63>Use cases:</font> Machine Learning, Analytics, Video processing, Financial Modelling
 	- Scales up to 100s GB/s, millions of IOPS, sub-ms latencies
 - **FSx for Windows File Server** - fully managed, highly reliable and scalable Windows native shared file system built on Windows File Server. <font color=green>Supports SMB and NTFS file systems. Integrated with AD for security. Can be accessed from AWS or from On-Premise.</font>
 - **FSx for NetApp ONTAP** - 

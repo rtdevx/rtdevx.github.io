@@ -141,7 +141,7 @@
     "keywords": ["AWS","Training"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "294"
+    "wordCount": "296"
   }
   </script>
     
@@ -567,7 +567,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-07 00:00:00 &#43;0000 UTC">7 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>294 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+      <time datetime="2025-08-07 00:00:00 &#43;0000 UTC">7 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>296 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
     
 
     
@@ -709,7 +709,8 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="what-is-amazon-ec2-ami" class="relative group">What is Amazon EC2 AMI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-is-amazon-ec2-ami" aria-label="Anchor">#</a></span></h2><p>AMI are a customization of an EC2 instance.</p>
+        <h2 id="what-is-amazon-ec2-ami" class="relative group">What is Amazon EC2 AMI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-is-amazon-ec2-ami" aria-label="Anchor">#</a></span></h2>
+<p>AMI are a customization of an EC2 instance.</p>
 <ul>
 <li>Custom software, configuration, etc. can be added</li>
 <li>Faster boot / configuration time because all your software is pre-packaged</li>
@@ -728,24 +729,29 @@
 <em>AWS EC2 AMI Tutorial</em></p>
 <hr>
 <p><font color=#f43f5e>AMI are build for a specific AWS region</font> but can be copied across regions.</p>
-<h3 id="ami-can-be-launched-from" class="relative group">AMI can be launched from <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ami-can-be-launched-from" aria-label="Anchor">#</a></span></h3><ul>
+<h3 id="ami-can-be-launched-from" class="relative group">AMI can be launched from <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ami-can-be-launched-from" aria-label="Anchor">#</a></span></h3>
+<ul>
 <li>Public AMI - AWS provided</li>
 <li>Own AMI - managed by an organization</li>
 <li>AWS Marketplace - created by a vendor or another 3rd party (can be sold / bought)</li>
 </ul>
-<h2 id="steps-to-build-an-ami" class="relative group">Steps to build an AMI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#steps-to-build-an-ami" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="steps-to-build-an-ami" class="relative group">Steps to build an AMI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#steps-to-build-an-ami" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Start EC2 Instance and customize it</li>
 <li>Stop the instance (for data integrity)</li>
 <li>Build AMI - this will also create <font color=#27D3F5>EBS snapshots</font></li>
 <li>Launch instances from other AMI&rsquo;s</li>
 </ul>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">EC2 &gt; Instances &gt; Select an EC2 instance &gt; Actions &gt; Image and Templates &gt; Create image
-</code></pre><h2 id="ec2-image-builder" class="relative group">EC2 Image Builder <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ec2-image-builder" aria-label="Anchor">#</a></span></h2><p>EC2 Image Builder is a fully managed AWS service that helps you to automate the creation, management and deployment of customized, secure and up-to-date server images.</p>
+</code></pre><h2 id="ec2-image-builder" class="relative group">EC2 Image Builder <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ec2-image-builder" aria-label="Anchor">#</a></span></h2>
+<p>EC2 Image Builder is a fully managed AWS service that helps you to automate the creation, management and deployment of customized, secure and up-to-date server images.</p>
 <p>Custom images can be created via AWS Console, AWS CLI or API.</p>
 <p>Automate the creation, maintain, validate the build of EC2 AMI&rsquo;s. Can run on a schedule and can be distributed to multiple AWS Regions.</p>
 <hr>
-<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2><ul>
-<li><a href="https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html" target="_blank" rel="noreferrer">What is Image Builder</a></li>
+<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2>
+<ul>
+<li><a href="https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html" target="_blank" rel="noreferrer">What is Image Builder</a>
+</li>
 </ul>
 <p>
 
@@ -754,24 +760,31 @@
 
   </span>
 
- <em>Stephane Maarek&rsquo;s AWS playlists on YouTube:</em> <a href="https://www.youtube.com/@StephaneMaarek/playlists" target="_blank" rel="noreferrer">https://www.youtube.com/@StephaneMaarek/playlists</a></p>
-<h2 id="references" class="relative group">References <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#references" aria-label="Anchor">#</a></span></h2><ul>
+ <em>Stephane Maarek&rsquo;s AWS playlists on YouTube:</em> <a href="https://www.youtube.com/@StephaneMaarek/playlists" target="_blank" rel="noreferrer">https://www.youtube.com/@StephaneMaarek/playlists</a>
+</p>
+<h2 id="references" class="relative group">References <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#references" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li><font color=#27D3F5>EC2</font></li>
 <li><font color=#27D3F5>Storage</font></li>
 </ul>
 <hr>
-<h3 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h3><div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+<h3 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h3>
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
 </span>
   </span>
   <span class="dark:text-neutral-300"><p><em>Disclaimer: Content for educational purposes only, no rights reserved.</em></p>
-<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a> course on Udemy.</p>
-<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a> as they are awesome and really help understanding the subject.</p>
+<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a>
+ course on Udemy.</p>
+<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a>
+ as they are awesome and really help understanding the subject.</p>
 <p><em>More about Stephane Maarek:</em></p>
 <ul>
-<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a></li>
-<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a></li>
+<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a>
+</li>
+<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a>
+</li>
 </ul>
 <p><strong>This article is just a summary and has been published to help me learning and passing the practitioner exam.</strong></p>
 </span>

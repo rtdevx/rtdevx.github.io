@@ -66,7 +66,7 @@ Statement consist of:
 - AWS Command Line (CLI) - protected by access keys
 - AWS Software Development Kit (SDK) - for code - protected by access keys
 
-<font color=#f4e40b>Access Keys</font> can be generated through AWS Console.
+<font color=#f1ef63>Access Keys</font> can be generated through AWS Console.
 Users manage their own access keys.
 
 Access Key ID = username

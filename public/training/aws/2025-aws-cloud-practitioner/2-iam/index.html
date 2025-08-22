@@ -141,7 +141,7 @@
     "keywords": ["AWS","Training"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "612"
+    "wordCount": "617"
   }
   </script>
     
@@ -567,7 +567,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-02 00:00:00 &#43;0000 UTC">2 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>612 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+      <time datetime="2025-08-02 00:00:00 &#43;0000 UTC">2 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>617 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
     
 
     
@@ -723,7 +723,8 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="iam--identity-and-access-management" class="relative group"><strong>IAM</strong> = Identity and Access management <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam--identity-and-access-management" aria-label="Anchor">#</a></span></h2><p><strong>IAM</strong> is AWS Global service.</p>
+        <h2 id="iam--identity-and-access-management" class="relative group"><strong>IAM</strong> = Identity and Access management <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam--identity-and-access-management" aria-label="Anchor">#</a></span></h2>
+<p><strong>IAM</strong> is AWS Global service.</p>
 <p><font color=#f43f5e>Groups only contain users, NOT other groups.</font></p>
 <p>Users don&rsquo;t have to belong to a group and user can belong to multiple groups.</p>
 <p>Users or Groups can me assigned JSON documents called policies. Those policies define permissions for the users / groups.</p>
@@ -734,8 +735,10 @@
     </div>
 
 <hr>
-<h2 id="creating-user-in-aws-cli" class="relative group">Creating user in AWS CLI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-user-in-aws-cli" aria-label="Anchor">#</a></span></h2><pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM console &gt; Users
-</code></pre><h3 id="create-user" class="relative group">Create user <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#create-user" aria-label="Anchor">#</a></span></h3><p>
+<h2 id="creating-user-in-aws-cli" class="relative group">Creating user in AWS CLI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-user-in-aws-cli" aria-label="Anchor">#</a></span></h2>
+<pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM console &gt; Users
+</code></pre><h3 id="create-user" class="relative group">Create user <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#create-user" aria-label="Anchor">#</a></span></h3>
+<p>
 
 
 
@@ -798,7 +801,8 @@
 
 </figure>
 </p>
-<h3 id="create-group-admin" class="relative group">Create group &ldquo;admin&rdquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#create-group-admin" aria-label="Anchor">#</a></span></h3><p>
+<h3 id="create-group-admin" class="relative group">Create group &ldquo;admin&rdquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#create-group-admin" aria-label="Anchor">#</a></span></h3>
+<p>
 
 
 
@@ -928,7 +932,8 @@
 
 </figure>
 </p>
-<h2 id="iam-policies-structure" class="relative group">IAM policies structure <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-policies-structure" aria-label="Anchor">#</a></span></h2><p>
+<h2 id="iam-policies-structure" class="relative group">IAM policies structure <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-policies-structure" aria-label="Anchor">#</a></span></h2>
+<p>
 
 
 
@@ -1008,7 +1013,8 @@
 <li><strong>Resource:</strong> list of resources to which the action is applied to</li>
 <li><strong>Condition:</strong> conditions for when the policy is applied (optional)</li>
 </ul>
-<h2 id="mfa" class="relative group">MFA <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#mfa" aria-label="Anchor">#</a></span></h2><p>
+<h2 id="mfa" class="relative group">MFA <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#mfa" aria-label="Anchor">#</a></span></h2>
+<p>
 
 
 
@@ -1073,12 +1079,13 @@
 
 </figure>
 </p>
-<h2 id="accessing-aws" class="relative group">Accessing AWS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#accessing-aws" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="accessing-aws" class="relative group">Accessing AWS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#accessing-aws" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>AWS Management Console - protected by password + MFA</li>
 <li>AWS Command Line (CLI) - protected by access keys</li>
 <li>AWS Software Development Kit (SDK) - for code - protected by access keys</li>
 </ul>
-<p><font color=#f4e40b>Access Keys</font> can be generated through AWS Console.
+<p><font color=#f1ef63>Access Keys</font> can be generated through AWS Console.
 Users manage their own access keys.</p>
 <p>Access Key ID = username
 Secret Access Key = password</p>
@@ -1147,13 +1154,16 @@ Secret Access Key = password</p>
 
 </figure>
 </p>
-<h3 id="creating-access-key" class="relative group">Creating Access Key <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-access-key" aria-label="Anchor">#</a></span></h3><pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Users &gt; Username &gt; Security Credentials &gt; Access Keys &gt; Create Access Key &gt; Command Line Interface (CLI)
-</code></pre><h3 id="configuring-aws-cli-with-the-new-access-key" class="relative group">Configuring AWS CLI with the new access key <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configuring-aws-cli-with-the-new-access-key" aria-label="Anchor">#</a></span></h3><pre tabindex="0"><code class="language-CMD" data-lang="CMD"># Configure AWS CLI
+<h3 id="creating-access-key" class="relative group">Creating Access Key <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-access-key" aria-label="Anchor">#</a></span></h3>
+<pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Users &gt; Username &gt; Security Credentials &gt; Access Keys &gt; Create Access Key &gt; Command Line Interface (CLI)
+</code></pre><h3 id="configuring-aws-cli-with-the-new-access-key" class="relative group">Configuring AWS CLI with the new access key <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configuring-aws-cli-with-the-new-access-key" aria-label="Anchor">#</a></span></h3>
+<pre tabindex="0"><code class="language-CMD" data-lang="CMD"># Configure AWS CLI
 aws configure
 
 # Test
 aws iam list-users
-</code></pre><h3 id="iam-roles-for-services" class="relative group">IAM roles for Services <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-roles-for-services" aria-label="Anchor">#</a></span></h3><ul>
+</code></pre><h3 id="iam-roles-for-services" class="relative group">IAM roles for Services <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-roles-for-services" aria-label="Anchor">#</a></span></h3>
+<ul>
 <li>Some AWS services will need to perform actions on your behalf</li>
 <li>Those AWS services will need permissions to be assigned with IAM Roles</li>
 </ul>
@@ -1163,7 +1173,8 @@ aws iam list-users
 <li>Lambda Function Roles</li>
 <li>Roles for CloudFormation</li>
 </ul>
-<h4 id="create-aws-service-role" class="relative group">Create AWS Service Role <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#create-aws-service-role" aria-label="Anchor">#</a></span></h4><pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Roles &gt; Create role &gt; AWS service
+<h4 id="create-aws-service-role" class="relative group">Create AWS Service Role <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#create-aws-service-role" aria-label="Anchor">#</a></span></h4>
+<pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Roles &gt; Create role &gt; AWS service
 </code></pre><p>
 
 
@@ -1299,7 +1310,8 @@ aws iam list-users
 
 </figure>
 </p>
-<h2 id="iam-security-tools" class="relative group">IAM Security Tools <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-security-tools" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="iam-security-tools" class="relative group">IAM Security Tools <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-security-tools" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li><strong>IAM Credentials Report</strong> (account-level)
 <ul>
 <li>Report that lists all users and status of their credentials</li>
@@ -1316,7 +1328,8 @@ aws iam list-users
 </ul>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Users &gt; Username &gt; Last Accessed
 </code></pre><p><font color=#f43f5e>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the &ldquo;Least Privilege Principle&rdquo;</font></p>
-<h2 id="iam-beset-practices" class="relative group">IAM Beset Practices <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-beset-practices" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="iam-beset-practices" class="relative group">IAM Beset Practices <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-beset-practices" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Don&rsquo;t use root account</li>
 <li>One physical user = One AWS user</li>
 <li><strong>Assign users to groups</strong> and assign permissions (policies) to groups</li>
@@ -1327,7 +1340,8 @@ aws iam list-users
 <li>Audit permissions using <strong>IAM Credentials Report</strong> and <strong>IAM Access Advisor</strong></li>
 <li><font color=#f43f5e>Never share IAM users &amp; Access Keys</font></li>
 </ul>
-<h2 id="shared-responsibility-model-for-iam" class="relative group">Shared Responsibility Model for IAM <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#shared-responsibility-model-for-iam" aria-label="Anchor">#</a></span></h2><table>
+<h2 id="shared-responsibility-model-for-iam" class="relative group">Shared Responsibility Model for IAM <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#shared-responsibility-model-for-iam" aria-label="Anchor">#</a></span></h2>
+<table>
   <thead>
       <tr>
           <th><strong>AWS</strong></th>
@@ -1358,9 +1372,12 @@ aws iam list-users
   </tbody>
 </table>
 <hr>
-<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2><ul>
-<li><em>AWS Global Infrastructure:</em> <a href="https://infrastructure.aws" target="_blank" rel="noreferrer">AWS Global Infrastructure</a></li>
-<li><em>Shared Responsibility Model:</em> <a href="https://aws.amazon.com/compliance/shared-responsibility-model/" target="_blank" rel="noreferrer">Shared Responsibility Model - Amazon Web Services (AWS)</a></li>
+<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2>
+<ul>
+<li><em>AWS Global Infrastructure:</em> <a href="https://infrastructure.aws" target="_blank" rel="noreferrer">AWS Global Infrastructure</a>
+</li>
+<li><em>Shared Responsibility Model:</em> <a href="https://aws.amazon.com/compliance/shared-responsibility-model/" target="_blank" rel="noreferrer">Shared Responsibility Model - Amazon Web Services (AWS)</a>
+</li>
 </ul>
 <p>
 
@@ -1369,23 +1386,30 @@ aws iam list-users
 
   </span>
 
- <em>Full YouTube Rahul&rsquo;s AWS Course:</em> <a href="https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP" target="_blank" rel="noreferrer">https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP</a></p>
-<h2 id="references" class="relative group">References <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#references" aria-label="Anchor">#</a></span></h2><ul>
+ <em>Full YouTube Rahul&rsquo;s AWS Course:</em> <a href="https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP" target="_blank" rel="noreferrer">https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP</a>
+</p>
+<h2 id="references" class="relative group">References <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#references" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li><font color=#27D3F5>Account Management and Billing</font></li>
 </ul>
 <hr>
-<h3 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h3><div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+<h3 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h3>
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
 </span>
   </span>
   <span class="dark:text-neutral-300"><p><em>Disclaimer: Content for educational purposes only, no rights reserved.</em></p>
-<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a> course on Udemy.</p>
-<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a> as they are awesome and really help understanding the subject.</p>
+<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a>
+ course on Udemy.</p>
+<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a>
+ as they are awesome and really help understanding the subject.</p>
 <p><em>More about Stephane Maarek:</em></p>
 <ul>
-<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a></li>
-<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a></li>
+<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a>
+</li>
+<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a>
+</li>
 </ul>
 <p><strong>This article is just a summary and has been published to help me learning and passing the practitioner exam.</strong></p>
 </span>

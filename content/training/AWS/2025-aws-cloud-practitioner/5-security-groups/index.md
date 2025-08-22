@@ -30,12 +30,12 @@ categories: AWS Cloud Practitioner
 - Control outbound network
 ## Security Groups principals
 
-- <font color=#f4e40b>Can be attached to multiple instances</font>
-- <font color=#f4e40b>Locked down to a region / VPC combination</font>
+- <font color=#f1ef63>Can be attached to multiple instances</font>
+- <font color=#f1ef63>Locked down to a region / VPC combination</font>
 - Lives "outside" of an EC2 instance - if traffic is blocked, EC2 won't see it
 - It's a good practice to maintain one separate SG for SSH access
-- <font color=#f4e40b>If application is not accessible (time out) then it's a Security Group issue</font>
-- <font color=#f4e40b>If application gives a "connection refused" error then it's an application error or it's not launched</font>
+- <font color=#f1ef63>If application is not accessible (time out) then it's a Security Group issue</font>
+- <font color=#f1ef63>If application gives a "connection refused" error then it's an application error or it's not launched</font>
 - All inbound traffic is <font color=#f43f5e>blocked</font> by default
 - All outbound traffic is <font color=#10b981>allowed</font> by default
 

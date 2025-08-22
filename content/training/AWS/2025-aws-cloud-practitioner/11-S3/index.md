@@ -56,8 +56,8 @@ _AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS
 - The <font color=#10b981>key</font> is the FULL path:
 	- s3://my-bucket/my_file.txt
 	- s3://my-bucket/my_folder/another_folder/my_file.txt
-- The <font color=#10b981>key</font> is composed of <font color=#f4e40b>prefix</font> + <font color=orange>object name</font>
-	- s3://my-bucket/<font color=#f4e40b>my_folder/another_folder/</font><font color=orange>my_file.txt</font>
+- The <font color=#10b981>key</font> is composed of <font color=#f1ef63>prefix</font> + <font color=orange>object name</font>
+	- s3://my-bucket/<font color=#f1ef63>my_folder/another_folder/</font><font color=orange>my_file.txt</font>
 - There is no concept of "_directories_" within S3 buckets (although UI will suggest there is)
 	- <font color=#f43f5e>Just keys with very long names that contain slashes ("/")</font>
 
@@ -142,7 +142,7 @@ S3 > General purpose buckets (or other) > your-bucket > Properties > Static webs
 
 ![](assets/AWS_S3_Enable_Static_Website.png)
 
-##### <font color=#f4e40b>Voila!</font>
+##### <font color=#f1ef63>Voila!</font>
 
 ![](assets/AWS_S3_Static_Website_Hosting.png)
 
@@ -153,7 +153,7 @@ S3 > General purpose buckets (or other) > your-bucket > Properties > Static webs
 - Versioning buckets:
 	- Protect against unintended deletes (ability to restore the version)
 	- Easy roll back to previous version
-- <font color=#f4e40b>Notes:</font>
+- <font color=#f1ef63>Notes:</font>
 	- Any file that is not versioned prior to enabling versioning will have version "_null_"
 	- Suspending versioning does not delete the previous versions
 ### Enable S3 Versioning
@@ -174,7 +174,7 @@ In order to <font color=#10b981>restore the file</font>, toggle "_Show Versions_
 <font color=#f43f5e>For S3 replication to work, Versioning must be enabled</font> on both - source and destination buckets. Buckets can be different AWS Accounts.
 
 Copying is asynchronous, proper IAM permissions must be applied to S3.
-##### <font color=#f4e40b>Use Cases:</font>
+##### <font color=#f1ef63>Use Cases:</font>
 
 - **CRR** - compliance, lower latency access, replication across accounts
 - **SRR** - log aggregation, live replication between production and test accounts
@@ -193,27 +193,27 @@ Copying is asynchronous, proper IAM permissions must be applied to S3.
 	- Select any other options (encryption, destination storage class, delete marker replication and so on)
 ## S3 Storage Classes
 
-### <font color=#f4e40b>Standard</font>
+### <font color=#f1ef63>Standard</font>
 
 - Amazon S3 Standard - General Purpose
 	- 99.99% Availability
 	- Used for frequently accessed data
 	- Low latency and high throughput
 	- Sustain 2 concurrent facility failures
-	- <font color=#f4e40b>Use cases:</font> Big Data analytics, mobile & gaming applications, content distribution
-### <font color=#f4e40b>Infrequent access</font>
+	- <font color=#f1ef63>Use cases:</font> Big Data analytics, mobile & gaming applications, content distribution
+### <font color=#f1ef63>Infrequent access</font>
 
-For data that is less frequently accessed but requires rapid access when needed. Lower cost than <font color=#f4e40b>S3 Standard</font>.
+For data that is less frequently accessed but requires rapid access when needed. Lower cost than <font color=#f1ef63>S3 Standard</font>.
 
 - Amazon S3 Standard-Infrequent Access (IA)
 	- 99.9% Availability
-	- <font color=#f4e40b>Use cases:</font> Disaster Recovery, backups
+	- <font color=#f1ef63>Use cases:</font> Disaster Recovery, backups
 - Amazon S3 One Zone-Infrequent Access
 	- For data that is less frequently accessed but requires rapid access when needed
 	- High Durability (99.999999999% Availability in a single AZ)
 	- 99.5% Availability
-	- <font color=#f4e40b>Use cases:</font> Secondary backup copies of on-prem data, data can be recreated
-### <font color=#f4e40b>Glacier</font>
+	- <font color=#f1ef63>Use cases:</font> Secondary backup copies of on-prem data, data can be recreated
+### <font color=#f1ef63>Glacier</font>
 
 **Low-cost** object storage for archiving / backup.
 

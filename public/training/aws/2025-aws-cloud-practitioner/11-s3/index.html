@@ -139,7 +139,7 @@
     "keywords": ["AWS","Training"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1524"
+    "wordCount": "1535"
   }
   </script>
     
@@ -565,7 +565,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-11 00:00:00 &#43;0000 UTC">11 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1524 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span>
+      <time datetime="2025-08-11 00:00:00 &#43;0000 UTC">11 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1535 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span>
     
 
     
@@ -672,9 +672,9 @@
     </li>
     <li><a href="#s3-storage-classes">S3 Storage Classes</a>
       <ul>
-        <li><a href="#standard"><font color=#f4e40b>Standard</font></a></li>
-        <li><a href="#infrequent-access"><font color=#f4e40b>Infrequent access</font></a></li>
-        <li><a href="#glacier"><font color=#f4e40b>Glacier</font></a></li>
+        <li><a href="#standard"><font color=#f1ef63>Standard</font></a></li>
+        <li><a href="#infrequent-access"><font color=#f1ef63>Infrequent access</font></a></li>
+        <li><a href="#glacier"><font color=#f1ef63>Glacier</font></a></li>
       </ul>
     </li>
     <li><a href="#intelligent-tiering">Intelligent tiering</a></li>
@@ -714,7 +714,8 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="what-is-amazon-s3" class="relative group">What is Amazon S3 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-is-amazon-s3" aria-label="Anchor">#</a></span></h2><p><strong>Amazon S3</strong> is <font color=#f43f5e>one of the main building blocks of AWS.</font></p>
+        <h2 id="what-is-amazon-s3" class="relative group">What is Amazon S3 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-is-amazon-s3" aria-label="Anchor">#</a></span></h2>
+<p><strong>Amazon S3</strong> is <font color=#f43f5e>one of the main building blocks of AWS.</font></p>
 <p>It is advertised as &ldquo;<strong>infinitely scaling</strong>&rdquo; storage.</p>
 <ul>
 <li>Many websites use Amazon S3 as a backbone</li>
@@ -727,7 +728,8 @@
 
 <em>AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS</em></p>
 <hr>
-<h2 id="amazon-s3-use-cases" class="relative group">Amazon S3 Use Cases <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3-use-cases" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="amazon-s3-use-cases" class="relative group">Amazon S3 Use Cases <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3-use-cases" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Backup and Storage</li>
 <li>Disaster Recovery</li>
 <li>Archive</li>
@@ -738,13 +740,15 @@
 <li>Software delivery</li>
 <li>Static Website</li>
 </ul>
-<h2 id="amazon-s3---buckets" class="relative group">Amazon S3 - Buckets <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3---buckets" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="amazon-s3---buckets" class="relative group">Amazon S3 - Buckets <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3---buckets" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Amazon S3 allows people to store objects (files) in &ldquo;<em>buckets</em>&rdquo; (folders)</li>
 <li>Buckets must have a <font color=#f43f5e>globally unique name</font> (across <strong>all regions</strong> and <strong>all accounts</strong>)</li>
 <li>Buckets are defined at the <font color=#f43f5e>region level</font></li>
 <li><font color=#f43f5e>S3 looks like a global service but buckets are created in a region</font></li>
 </ul>
-<h3 id="s3-bucket-naming-convention" class="relative group">S3 Bucket naming convention <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-bucket-naming-convention" aria-label="Anchor">#</a></span></h3><ul>
+<h3 id="s3-bucket-naming-convention" class="relative group">S3 Bucket naming convention <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-bucket-naming-convention" aria-label="Anchor">#</a></span></h3>
+<ul>
 <li>No uppercase</li>
 <li>No underscore</li>
 <li>3-63 characters long</li>
@@ -753,7 +757,8 @@
 <li>Must NOT start with the prefix &ldquo;<em>xn&ndash;</em>&rdquo;</li>
 <li>Must NOT start with the suffix &ldquo;<em>s3alias</em>&rdquo;</li>
 </ul>
-<h2 id="amazon-s3---objects" class="relative group">Amazon S3 - Objects <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3---objects" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="amazon-s3---objects" class="relative group">Amazon S3 - Objects <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3---objects" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>
 <p>Objects (files) have a Key</p>
 </li>
@@ -765,9 +770,9 @@
 </ul>
 </li>
 <li>
-<p>The <font color=#10b981>key</font> is composed of <font color=#f4e40b>prefix</font> + <font color=orange>object name</font></p>
+<p>The <font color=#10b981>key</font> is composed of <font color=#f1ef63>prefix</font> + <font color=orange>object name</font></p>
 <ul>
-<li>s3://my-bucket/<font color=#f4e40b>my_folder/another_folder/</font><font color=orange>my_file.txt</font></li>
+<li>s3://my-bucket/<font color=#f1ef63>my_folder/another_folder/</font><font color=orange>my_file.txt</font></li>
 </ul>
 </li>
 <li>
@@ -786,7 +791,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="amazon-s3---security" class="relative group">Amazon S3 - Security <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3---security" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="amazon-s3---security" class="relative group">Amazon S3 - Security <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3---security" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>User-based
 <ul>
 <li>IAM Policies - which API calls should be allowed for a specific user from IAM</li>
@@ -806,7 +812,8 @@
 </li>
 <li>Encryption - encrypt objects in Amazon S3 using encryption keys</li>
 </ul>
-<h2 id="s3-bucket-policies" class="relative group">S3 Bucket Policies <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-bucket-policies" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="s3-bucket-policies" class="relative group">S3 Bucket Policies <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-bucket-policies" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>
 <p>JSON based policies</p>
 <ul>
@@ -877,7 +884,8 @@
 
 </figure>
 </p>
-<h3 id="examples" class="relative group"><font color=#f43f5e>Examples</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#examples" aria-label="Anchor">#</a></span></h3><ul>
+<h3 id="examples" class="relative group"><font color=#f43f5e>Examples</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#examples" aria-label="Anchor">#</a></span></h3>
+<ul>
 <li><strong>Public access</strong> - Bucket Policy</li>
 <li><strong>User access to S3</strong> - IAM permissions</li>
 <li><strong>EC2 instance access</strong> - IAM Roles</li>
@@ -888,7 +896,8 @@
 <li><font color=#f43f5e>Those settings were created to prevent company data leaks</font></li>
 <li>If you know your bucket should never be public, leave them</li>
 </ul>
-<h3 id="applying-bucket-policy" class="relative group">Applying Bucket Policy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#applying-bucket-policy" aria-label="Anchor">#</a></span></h3><pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">S3 &gt; General purpose buckets (or other) &gt; your-bucket &gt; Permissions &gt; Ensure Allow public access is enabled
+<h3 id="applying-bucket-policy" class="relative group">Applying Bucket Policy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#applying-bucket-policy" aria-label="Anchor">#</a></span></h3>
+<pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">S3 &gt; General purpose buckets (or other) &gt; your-bucket &gt; Permissions &gt; Ensure Allow public access is enabled
 </code></pre><p>
 
 
@@ -1091,7 +1100,8 @@
 
 </figure>
 </p>
-<h4 id="policy-generator" class="relative group">Policy Generator <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#policy-generator" aria-label="Anchor">#</a></span></h4><ul>
+<h4 id="policy-generator" class="relative group">Policy Generator <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#policy-generator" aria-label="Anchor">#</a></span></h4>
+<ul>
 <li>&ldquo;arn&rdquo; can  be found in the bucket settings itself</li>
 <li>&ldquo;/*&rdquo; can / should be added to propagate to all objects in the bucket</li>
 </ul>
@@ -1296,8 +1306,10 @@
 
 </figure>
 </p>
-<h2 id="s3---static-website-hosting" class="relative group">S3 - Static Website Hosting <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3---static-website-hosting" aria-label="Anchor">#</a></span></h2><p><font color=#f43f5e>Bucket must be made public (S3 Bucket policy, see above) in order for the static website to work. If it isn&rsquo;t then 403 Forbidden error appears.</font></p>
-<h3 id="enable-static-website-hosting" class="relative group">Enable static website hosting <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#enable-static-website-hosting" aria-label="Anchor">#</a></span></h3><pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">S3 &gt; General purpose buckets (or other) &gt; your-bucket &gt; Properties &gt; Static website hosting
+<h2 id="s3---static-website-hosting" class="relative group">S3 - Static Website Hosting <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3---static-website-hosting" aria-label="Anchor">#</a></span></h2>
+<p><font color=#f43f5e>Bucket must be made public (S3 Bucket policy, see above) in order for the static website to work. If it isn&rsquo;t then 403 Forbidden error appears.</font></p>
+<h3 id="enable-static-website-hosting" class="relative group">Enable static website hosting <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#enable-static-website-hosting" aria-label="Anchor">#</a></span></h3>
+<pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">S3 &gt; General purpose buckets (or other) &gt; your-bucket &gt; Properties &gt; Static website hosting
 </code></pre><p>
 
 
@@ -1363,7 +1375,8 @@
 
 </figure>
 </p>
-<h5 id="voila" class="relative group"><font color=#f4e40b>Voila!</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#voila" aria-label="Anchor">#</a></span></h5><p>
+<h5 id="voila" class="relative group"><font color=#f1ef63>Voila!</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#voila" aria-label="Anchor">#</a></span></h5>
+<p>
 
 
 
@@ -1429,7 +1442,8 @@
 </figure>
 </p>
 <p><font color=#f43f5e>Although no HTTPS enabled!</font> - check &ldquo;<font color=#27D3F5>AWS Certificate Manager (ACM)</font>&rdquo; section in Security and Compliance on how to use ACM for SSL / TLS certificate management.</p>
-<h2 id="amazon-s3---versioning" class="relative group">Amazon S3 - Versioning <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3---versioning" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="amazon-s3---versioning" class="relative group">Amazon S3 - Versioning <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3---versioning" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Versioning can be enabled at the bucket level</li>
 <li>Versioning buckets:
 <ul>
@@ -1437,14 +1451,15 @@
 <li>Easy roll back to previous version</li>
 </ul>
 </li>
-<li><font color=#f4e40b>Notes:</font>
+<li><font color=#f1ef63>Notes:</font>
 <ul>
 <li>Any file that is not versioned prior to enabling versioning will have version &ldquo;<em>null</em>&rdquo;</li>
 <li>Suspending versioning does not delete the previous versions</li>
 </ul>
 </li>
 </ul>
-<h3 id="enable-s3-versioning" class="relative group">Enable S3 Versioning <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#enable-s3-versioning" aria-label="Anchor">#</a></span></h3><pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">S3 &gt; General purpose buckets (or other) &gt; your-bucket &gt; Properties &gt; Bucket Versioning &gt; Edit &gt; Enable
+<h3 id="enable-s3-versioning" class="relative group">Enable S3 Versioning <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#enable-s3-versioning" aria-label="Anchor">#</a></span></h3>
+<pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">S3 &gt; General purpose buckets (or other) &gt; your-bucket &gt; Properties &gt; Bucket Versioning &gt; Edit &gt; Enable
 </code></pre><p>
 
 
@@ -1513,17 +1528,21 @@
 </figure>
 </p>
 <p>In order to <font color=#10b981>restore the file</font>, toggle &ldquo;<em>Show Versions</em>&rdquo; switch and <font color=#f43f5e>DELETE</font> unwanted object (destructive, will permanently delete).</p>
-<h5 id="if-show-versions-toggle-is-off-object-can-be-safely-deleted-it-will-not-be-permanently-deleted-only-delete-marker-will-be-applied-object-can-be-easily-restored-when-show-versions-is-on" class="relative group"><font color=#f43f5e>If &ldquo;show versions&rdquo; toggle is off, object can be safely deleted. It will NOT be permanently deleted, only &ldquo;Delete marker&rdquo; will be applied. Object can be easily restored when &ldquo;Show versions&rdquo; is ON.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#if-show-versions-toggle-is-off-object-can-be-safely-deleted-it-will-not-be-permanently-deleted-only-delete-marker-will-be-applied-object-can-be-easily-restored-when-show-versions-is-on" aria-label="Anchor">#</a></span></h5><h2 id="s3---replication" class="relative group">S3 - Replication <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3---replication" aria-label="Anchor">#</a></span></h2><ul>
+<h5 id="if-show-versions-toggle-is-off-object-can-be-safely-deleted-it-will-not-be-permanently-deleted-only-delete-marker-will-be-applied-object-can-be-easily-restored-when-show-versions-is-on" class="relative group"><font color=#f43f5e>If &ldquo;show versions&rdquo; toggle is off, object can be safely deleted. It will NOT be permanently deleted, only &ldquo;Delete marker&rdquo; will be applied. Object can be easily restored when &ldquo;Show versions&rdquo; is ON.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#if-show-versions-toggle-is-off-object-can-be-safely-deleted-it-will-not-be-permanently-deleted-only-delete-marker-will-be-applied-object-can-be-easily-restored-when-show-versions-is-on" aria-label="Anchor">#</a></span></h5>
+<h2 id="s3---replication" class="relative group">S3 - Replication <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3---replication" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li><strong>CRR</strong> - Cross Region Replication</li>
 <li><strong>SRR</strong> - Same Region Replication</li>
 </ul>
 <p><font color=#f43f5e>For S3 replication to work, Versioning must be enabled</font> on both - source and destination buckets. Buckets can be different AWS Accounts.</p>
 <p>Copying is asynchronous, proper IAM permissions must be applied to S3.</p>
-<h5 id="use-cases" class="relative group"><font color=#f4e40b>Use Cases:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#use-cases" aria-label="Anchor">#</a></span></h5><ul>
+<h5 id="use-cases" class="relative group"><font color=#f1ef63>Use Cases:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#use-cases" aria-label="Anchor">#</a></span></h5>
+<ul>
 <li><strong>CRR</strong> - compliance, lower latency access, replication across accounts</li>
 <li><strong>SRR</strong> - log aggregation, live replication between production and test accounts</li>
 </ul>
-<h3 id="enabling-s3-replication" class="relative group">Enabling S3 Replication <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#enabling-s3-replication" aria-label="Anchor">#</a></span></h3><ol>
+<h3 id="enabling-s3-replication" class="relative group">Enabling S3 Replication <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#enabling-s3-replication" aria-label="Anchor">#</a></span></h3>
+<ol>
 <li>
 <p>Create 2 new buckets and <font color=#10b981>enable Versioning in both</font></p>
 <ul>
@@ -1541,23 +1560,26 @@
 </ul>
 </li>
 </ol>
-<h2 id="s3-storage-classes" class="relative group">S3 Storage Classes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-storage-classes" aria-label="Anchor">#</a></span></h2><h3 id="standard" class="relative group"><font color=#f4e40b>Standard</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#standard" aria-label="Anchor">#</a></span></h3><ul>
+<h2 id="s3-storage-classes" class="relative group">S3 Storage Classes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-storage-classes" aria-label="Anchor">#</a></span></h2>
+<h3 id="standard" class="relative group"><font color=#f1ef63>Standard</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#standard" aria-label="Anchor">#</a></span></h3>
+<ul>
 <li>Amazon S3 Standard - General Purpose
 <ul>
 <li>99.99% Availability</li>
 <li>Used for frequently accessed data</li>
 <li>Low latency and high throughput</li>
 <li>Sustain 2 concurrent facility failures</li>
-<li><font color=#f4e40b>Use cases:</font> Big Data analytics, mobile &amp; gaming applications, content distribution</li>
+<li><font color=#f1ef63>Use cases:</font> Big Data analytics, mobile &amp; gaming applications, content distribution</li>
 </ul>
 </li>
 </ul>
-<h3 id="infrequent-access" class="relative group"><font color=#f4e40b>Infrequent access</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#infrequent-access" aria-label="Anchor">#</a></span></h3><p>For data that is less frequently accessed but requires rapid access when needed. Lower cost than <font color=#f4e40b>S3 Standard</font>.</p>
+<h3 id="infrequent-access" class="relative group"><font color=#f1ef63>Infrequent access</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#infrequent-access" aria-label="Anchor">#</a></span></h3>
+<p>For data that is less frequently accessed but requires rapid access when needed. Lower cost than <font color=#f1ef63>S3 Standard</font>.</p>
 <ul>
 <li>Amazon S3 Standard-Infrequent Access (IA)
 <ul>
 <li>99.9% Availability</li>
-<li><font color=#f4e40b>Use cases:</font> Disaster Recovery, backups</li>
+<li><font color=#f1ef63>Use cases:</font> Disaster Recovery, backups</li>
 </ul>
 </li>
 <li>Amazon S3 One Zone-Infrequent Access
@@ -1565,11 +1587,12 @@
 <li>For data that is less frequently accessed but requires rapid access when needed</li>
 <li>High Durability (99.999999999% Availability in a single AZ)</li>
 <li>99.5% Availability</li>
-<li><font color=#f4e40b>Use cases:</font> Secondary backup copies of on-prem data, data can be recreated</li>
+<li><font color=#f1ef63>Use cases:</font> Secondary backup copies of on-prem data, data can be recreated</li>
 </ul>
 </li>
 </ul>
-<h3 id="glacier" class="relative group"><font color=#f4e40b>Glacier</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#glacier" aria-label="Anchor">#</a></span></h3><p><strong>Low-cost</strong> object storage for archiving / backup.</p>
+<h3 id="glacier" class="relative group"><font color=#f1ef63>Glacier</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#glacier" aria-label="Anchor">#</a></span></h3>
+<p><strong>Low-cost</strong> object storage for archiving / backup.</p>
 <p><strong>Pricing includes storage price + retrieval cost.</strong></p>
 <ul>
 <li>Amazon S3 Glacier Instant Retrieval
@@ -1591,7 +1614,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="intelligent-tiering" class="relative group">Intelligent tiering <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#intelligent-tiering" aria-label="Anchor">#</a></span></h2><p>Moves objects automatically between Storage Tiers based on usage for a small monthly monitoring and auto-tiering fee.</p>
+<h2 id="intelligent-tiering" class="relative group">Intelligent tiering <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#intelligent-tiering" aria-label="Anchor">#</a></span></h2>
+<p>Moves objects automatically between Storage Tiers based on usage for a small monthly monitoring and auto-tiering fee.</p>
 <p><font color=#10b981>There is no retrieval charges in S3 Intelligent Tiering.</font></p>
 <ul>
 <li><strong>Frequent Access tier</strong> (automatic): default tier</li>
@@ -1666,10 +1690,13 @@
 </p>
 <p><em>More:</em></p>
 <ul>
-<li>S3 Storage classes: <a href="https://aws.amazon.com/s3/storage-classes/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/storage-classes/</a></li>
-<li>S3 Pricing: <a href="https://aws.amazon.com/s3/pricing/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/pricing/</a></li>
+<li>S3 Storage classes: <a href="https://aws.amazon.com/s3/storage-classes/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/storage-classes/</a>
+</li>
+<li>S3 Pricing: <a href="https://aws.amazon.com/s3/pricing/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/pricing/</a>
+</li>
 </ul>
-<h2 id="s3-durability-and-availability" class="relative group">S3 Durability and Availability <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-durability-and-availability" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="s3-durability-and-availability" class="relative group">S3 Durability and Availability <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-durability-and-availability" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li><strong>Durability</strong>
 <ul>
 <li>High durability (99.999999999, 11 9&rsquo;s) of objects across multiple AZ</li>
@@ -1687,24 +1714,30 @@
 </ul>
 <p><em>More:</em></p>
 <ul>
-<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html</a></li>
-<li><a href="https://aws.amazon.com/s3/storage-classes/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/storage-classes/</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html</a>
+</li>
+<li><a href="https://aws.amazon.com/s3/storage-classes/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/storage-classes/</a>
+</li>
 </ul>
-<h2 id="s3-encryption" class="relative group">S3 Encryption <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-encryption" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="s3-encryption" class="relative group">S3 Encryption <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-encryption" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Server-Side Encryption (Default)</li>
 <li>Client-Side Encryption (Encrypted by user at the client side)</li>
 </ul>
-<h2 id="iam-access-analyzer-for-s3" class="relative group">IAM Access Analyzer for S3 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-access-analyzer-for-s3" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="iam-access-analyzer-for-s3" class="relative group">IAM Access Analyzer for S3 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-access-analyzer-for-s3" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Ensures that only intended people have access to your S3 buckets</li>
 <li>Example: publicly accessible bucket, bucket shared with other AWS account</li>
 <li>Evaluates S3 Bucket Policies, S3 ACLs, S3 Access Point Policies</li>
 <li>Powered by IAM Access Analyzer</li>
 </ul>
-<h2 id="aws-snowball" class="relative group">AWS Snowball <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-snowball" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="aws-snowball" class="relative group">AWS Snowball <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-snowball" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Highly-secure, portable devices to collect and process data at the edge and / or migrate data in and out of AWS</li>
 <li>Helps to migrate up to Petabytes of data</li>
 </ul>
-<h5 id="it-is-recommended-to-use-aws-snowball-devices-if-it-would-take-more-than-a-week-to-transfer-over-the-network" class="relative group"><font color=#f43f5e>It is recommended to use AWS Snowball devices if it would take more than a week to transfer over the network.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#it-is-recommended-to-use-aws-snowball-devices-if-it-would-take-more-than-a-week-to-transfer-over-the-network" aria-label="Anchor">#</a></span></h5><p>
+<h5 id="it-is-recommended-to-use-aws-snowball-devices-if-it-would-take-more-than-a-week-to-transfer-over-the-network" class="relative group"><font color=#f43f5e>It is recommended to use AWS Snowball devices if it would take more than a week to transfer over the network.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#it-is-recommended-to-use-aws-snowball-devices-if-it-would-take-more-than-a-week-to-transfer-over-the-network" aria-label="Anchor">#</a></span></h5>
+<p>
 
 
 
@@ -1773,25 +1806,37 @@
 </p>
 <p><em>More:</em></p>
 <ul>
-<li><a href="https://aws.amazon.com/snowball/" target="_blank" rel="noreferrer">https://aws.amazon.com/snowball/</a></li>
-<li><a href="https://aws.amazon.com/snowball/pricing/" target="_blank" rel="noreferrer">https://aws.amazon.com/snowball/pricing/</a></li>
+<li><a href="https://aws.amazon.com/snowball/" target="_blank" rel="noreferrer">https://aws.amazon.com/snowball/</a>
+</li>
+<li><a href="https://aws.amazon.com/snowball/pricing/" target="_blank" rel="noreferrer">https://aws.amazon.com/snowball/pricing/</a>
+</li>
 </ul>
-<h2 id="aws-storage-gateway" class="relative group">AWS Storage Gateway <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-storage-gateway" aria-label="Anchor">#</a></span></h2><p>Amazon S3 File Gateway connects on-premises applications to the cloud to store and access archive repositories, application data, database backups and so on.</p>
+<h2 id="aws-storage-gateway" class="relative group">AWS Storage Gateway <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-storage-gateway" aria-label="Anchor">#</a></span></h2>
+<p>Amazon S3 File Gateway connects on-premises applications to the cloud to store and access archive repositories, application data, database backups and so on.</p>
 <p>S3 File Gateway is used for on-premises data intensive applications that need file protocol access to objects in S3.</p>
-<p><em>More:</em> <a href="https://aws.amazon.com/storagegateway/file/s3/" target="_blank" rel="noreferrer">https://aws.amazon.com/storagegateway/file/s3/</a></p>
-<h5 id="types-of-storage-gateway" class="relative group">Types of Storage Gateway: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#types-of-storage-gateway" aria-label="Anchor">#</a></span></h5><ul>
+<p><em>More:</em> <a href="https://aws.amazon.com/storagegateway/file/s3/" target="_blank" rel="noreferrer">https://aws.amazon.com/storagegateway/file/s3/</a>
+</p>
+<h5 id="types-of-storage-gateway" class="relative group">Types of Storage Gateway: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#types-of-storage-gateway" aria-label="Anchor">#</a></span></h5>
+<ul>
 <li>File Gateway</li>
 <li>Volume Gateway</li>
 <li>Tape Gateway</li>
 </ul>
 <hr>
-<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2><ul>
-<li>S3 Documentation: <a href="https://docs.aws.amazon.com/s3/" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/s3/</a></li>
-<li>S3 Availability and Durability: <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html</a></li>
-<li>S3 Storage Classes: <a href="https://aws.amazon.com/s3/storage-classes/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/storage-classes/</a></li>
-<li>S3 Pricing: <a href="https://aws.amazon.com/s3/pricing/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/pricing/</a></li>
-<li>S3 AWS Snowball: <a href="https://aws.amazon.com/snowball/" target="_blank" rel="noreferrer">https://aws.amazon.com/snowball/</a></li>
-<li>S3 File Gateway: <a href="https://aws.amazon.com/storagegateway/file/s3/" target="_blank" rel="noreferrer">https://aws.amazon.com/storagegateway/file/s3/</a></li>
+<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2>
+<ul>
+<li>S3 Documentation: <a href="https://docs.aws.amazon.com/s3/" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/s3/</a>
+</li>
+<li>S3 Availability and Durability: <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html</a>
+</li>
+<li>S3 Storage Classes: <a href="https://aws.amazon.com/s3/storage-classes/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/storage-classes/</a>
+</li>
+<li>S3 Pricing: <a href="https://aws.amazon.com/s3/pricing/" target="_blank" rel="noreferrer">https://aws.amazon.com/s3/pricing/</a>
+</li>
+<li>S3 AWS Snowball: <a href="https://aws.amazon.com/snowball/" target="_blank" rel="noreferrer">https://aws.amazon.com/snowball/</a>
+</li>
+<li>S3 File Gateway: <a href="https://aws.amazon.com/storagegateway/file/s3/" target="_blank" rel="noreferrer">https://aws.amazon.com/storagegateway/file/s3/</a>
+</li>
 </ul>
 <p>
 
@@ -1800,24 +1845,31 @@
 
   </span>
 
- <em>Full YouTube Rahul&rsquo;s AWS Course:</em> <a href="https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP" target="_blank" rel="noreferrer">https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP</a></p>
-<h2 id="references" class="relative group">References <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#references" aria-label="Anchor">#</a></span></h2><ul>
+ <em>Full YouTube Rahul&rsquo;s AWS Course:</em> <a href="https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP" target="_blank" rel="noreferrer">https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP</a>
+</p>
+<h2 id="references" class="relative group">References <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#references" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li><font color=#27D3F5>Storage</font></li>
 <li><font color=#27D3F5>Security and Compliance</font></li>
 </ul>
 <hr>
-<h3 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h3><div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+<h3 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h3>
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
 </span>
   </span>
   <span class="dark:text-neutral-300"><p><em>Disclaimer: Content for educational purposes only, no rights reserved.</em></p>
-<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a> course on Udemy.</p>
-<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a> as they are awesome and really help understanding the subject.</p>
+<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a>
+ course on Udemy.</p>
+<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a>
+ as they are awesome and really help understanding the subject.</p>
 <p><em>More about Stephane Maarek:</em></p>
 <ul>
-<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a></li>
-<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a></li>
+<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a>
+</li>
+<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a>
+</li>
 </ul>
 <p><strong>This article is just a summary and has been published to help me learning and passing the practitioner exam.</strong></p>
 </span>

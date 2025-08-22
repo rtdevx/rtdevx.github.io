@@ -108,14 +108,14 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 		- All other operating systems - billing per hour
 	- Highest cost but no upfront payment
 	- No long-term commitment
-	- <font color=#f4e40b>Recommended for</font> short-term and un-interrupted workloads
+	- <font color=#f1ef63>Recommended for</font> short-term and un-interrupted workloads
 - **Reserved** (1 & 3 years)
 	- Up to <font color=#f43f5e>72%</font> discount compared to On-demand
 	- You reserve a specific instance attributes (Instance Type, Region, Tenancy, OS)
 	- Reserved Instances - long workloads
 	- Payment options - No upfront, Partial Upfront, All Upfront
 	- Scope: Regional or Zonal
-	- <font color=#f4e40b>Recommended for</font> steady-state usage applications (think database)
+	- <font color=#f1ef63>Recommended for</font> steady-state usage applications (think database)
 	- Can be bought and sold in the Reserved Instance Market place
 	- Convertible Reserved Instances - long workload with flexible instances
 		- Can change the EC2 instance type, instance family, OS, scope and tenancy
@@ -132,13 +132,13 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 - **Spot Instances** - short workloads, cheap, can lose instances
 	- Up to <font color=#f43f5e>90%</font> discount
 	- Instances can be "lost" at any point if max price is less than current spot price
-	- <font color=#f4e40b>Recommended for</font> workloads that are resilient to failure
+	- <font color=#f1ef63>Recommended for</font> workloads that are resilient to failure
 		- Batch jobs
 		- Data analysis
 		- Image processing
 - **Dedicated Hosts** - book an entire physical server, control instance placement
 	- A physical server with EC2 instance capacity fully dedicated to your use
-	- <font color=#f4e40b>Recommended for</font> for companies with strong compliance requirements OR server-bound software licenses (per-socket, per-core)
+	- <font color=#f1ef63>Recommended for</font> for companies with strong compliance requirements OR server-bound software licenses (per-socket, per-core)
 	- Purchasing Options:
 		- On-demand
 		- Reserved

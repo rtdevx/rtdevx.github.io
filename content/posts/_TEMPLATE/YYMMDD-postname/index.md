@@ -31,7 +31,7 @@ Disclaimer: _Content for educational purposes only, no rights reserved._
 **Colors:** 
 
 <font color=#f43f5e>Red:</font> `#f43f5e`
-<font color=#f4e40b>Yellow:</font> `#f4e40b`
+<font color=#f1ef63>Yellow:</font> `#f1ef63`
 <font color=#10b981>Green:</font> `#10b981`
 <font color=#27D3F5>Blue:</font> `#27D3F5` # Color used for content to be corrected later (i.e. new links to not-yet existing content, etc...)
 

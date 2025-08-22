@@ -38,9 +38,9 @@ categories: AWS Cloud Practitioner
 	- Usage is measured, users pay for what they used
 ## Six advantages of Cloud Computing
 
-1. Trade capital expense (<font color=#f4e40b>CAPEX</font>) for operational expense (<font color=#f4e40b>OPEX</font>)
+1. Trade capital expense (<font color=#f1ef63>CAPEX</font>) for operational expense (<font color=#f1ef63>OPEX</font>)
 	- Pay On-Demand: don't own the hardware
-	- Reduced Total Cost of Ownership (<font color=#f4e40b>TCO</font>) & Operational Expense (<font color=#f4e40b>OPEX</font>)
+	- Reduced Total Cost of Ownership (<font color=#f1ef63>TCO</font>) & Operational Expense (<font color=#f1ef63>OPEX</font>)
 2. Benefit from massive economies of scale
 	- Prices are reduced as AWS is more efficient due to a large scale
 3. Stop guessing the capacity
@@ -50,12 +50,12 @@ categories: AWS Cloud Practitioner
 6. Go global in minutes: leverage the <font color=#27D3F5>AWS Global Infrastructure</font>
 ## Problems solved by the cloud
 
-- <font color=#f4e40b>Flexibility:</font> change resources when needed
-- <font color=#f4e40b>Cost-Effectiveness:</font> pay as you go and for what you use
+- <font color=#f1ef63>Flexibility:</font> change resources when needed
+- <font color=#f1ef63>Cost-Effectiveness:</font> pay as you go and for what you use
 - <font color=#27D3F5>Scalability:</font> accommodate larger loads by making hardware stronger or adding additional nodes
 - <font color=#27D3F5>Elasticity:</font> ability to scale out and scale in when needed
 - <font color=#27D3F5>High-Availability and Fault-Tolerance:</font> build across data centers
-- <font color=#f4e40b>Agility:</font> rapidly develop, test and launch software applications
+- <font color=#f1ef63>Agility:</font> rapidly develop, test and launch software applications
 ## Types of Cloud Computing
 
 - Infrastructure as a Service (IaaS)

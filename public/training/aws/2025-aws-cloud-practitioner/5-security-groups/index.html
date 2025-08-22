@@ -688,7 +688,8 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="amazon-security-groups" class="relative group">Amazon Security Groups <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-security-groups" aria-label="Anchor">#</a></span></h2><ul>
+        <h2 id="amazon-security-groups" class="relative group">Amazon Security Groups <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-security-groups" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Security Groups are the fundamental of network security in AWS</li>
 <li>They control how traffic is allowed in or out of our EC2 instances</li>
 <li>Security Groups <strong>only contain allow rules</strong></li>
@@ -701,44 +702,53 @@
     </div>
 
 <hr>
-<h2 id="security-groups-scope" class="relative group">Security Groups scope <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#security-groups-scope" aria-label="Anchor">#</a></span></h2><ul>
+<h2 id="security-groups-scope" class="relative group">Security Groups scope <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#security-groups-scope" aria-label="Anchor">#</a></span></h2>
+<ul>
 <li>Access to Ports</li>
 <li>Authorized IP ranges - IPv4 and IPv6</li>
 <li>Control inbound network</li>
 <li>Control outbound network</li>
 </ul>
-<h2 id="security-groups-principals" class="relative group">Security Groups principals <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#security-groups-principals" aria-label="Anchor">#</a></span></h2><ul>
-<li><font color=#f4e40b>Can be attached to multiple instances</font></li>
-<li><font color=#f4e40b>Locked down to a region / VPC combination</font></li>
+<h2 id="security-groups-principals" class="relative group">Security Groups principals <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#security-groups-principals" aria-label="Anchor">#</a></span></h2>
+<ul>
+<li><font color=#f1ef63>Can be attached to multiple instances</font></li>
+<li><font color=#f1ef63>Locked down to a region / VPC combination</font></li>
 <li>Lives &ldquo;outside&rdquo; of an EC2 instance - if traffic is blocked, EC2 won&rsquo;t see it</li>
 <li>It&rsquo;s a good practice to maintain one separate SG for SSH access</li>
-<li><font color=#f4e40b>If application is not accessible (time out) then it&rsquo;s a Security Group issue</font></li>
-<li><font color=#f4e40b>If application gives a &ldquo;connection refused&rdquo; error then it&rsquo;s an application error or it&rsquo;s not launched</font></li>
+<li><font color=#f1ef63>If application is not accessible (time out) then it&rsquo;s a Security Group issue</font></li>
+<li><font color=#f1ef63>If application gives a &ldquo;connection refused&rdquo; error then it&rsquo;s an application error or it&rsquo;s not launched</font></li>
 <li>All inbound traffic is <font color=#f43f5e>blocked</font> by default</li>
 <li>All outbound traffic is <font color=#10b981>allowed</font> by default</li>
 </ul>
 <hr>
-<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2><p>
+<h2 id="sources" class="relative group">Sources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#sources" aria-label="Anchor">#</a></span></h2>
+<p>
 
   <span class="icon relative inline-block align-text-bottom">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
 
   </span>
 
- <em>Full YouTube Rahul&rsquo;s AWS Course:</em> <a href="https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP" target="_blank" rel="noreferrer">https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP</a></p>
+ <em>Full YouTube Rahul&rsquo;s AWS Course:</em> <a href="https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP" target="_blank" rel="noreferrer">https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP</a>
+</p>
 <hr>
-<h2 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h2><div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
+<h2 id="disclaimer" class="relative group">Disclaimer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#disclaimer" aria-label="Anchor">#</a></span></h2>
+<div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
 </span>
   </span>
   <span class="dark:text-neutral-300"><p><em>Disclaimer: Content for educational purposes only, no rights reserved.</em></p>
-<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a> course on Udemy.</p>
-<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a> as they are awesome and really help understanding the subject.</p>
+<p>Most of the content in this series is coming from <strong>Stephane Maarek&rsquo;s</strong> <a href="https://www.udemy.com/course/aws-certified-cloud-practitioner-new/" target="_blank" rel="noreferrer">Ultimate AWS Certified Cloud Practitioner CLF-C02 2025</a>
+ course on Udemy.</p>
+<p>I highly encourage you to take the <a href="https://www.udemy.com/user/stephane-maarek/" target="_blank" rel="noreferrer">Stephane&rsquo;s courses</a>
+ as they are awesome and really help understanding the subject.</p>
 <p><em>More about Stephane Maarek:</em></p>
 <ul>
-<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a></li>
-<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a></li>
+<li><a href="https://www.linkedin.com/in/stephanemaarek" target="_blank" rel="noreferrer">https://www.linkedin.com/in/stephanemaarek</a>
+</li>
+<li><a href="https://x.com/stephanemaarek" target="_blank" rel="noreferrer">https://x.com/stephanemaarek</a>
+</li>
 </ul>
 <p><strong>This article is just a summary and has been published to help me learning and passing the practitioner exam.</strong></p>
 </span>
