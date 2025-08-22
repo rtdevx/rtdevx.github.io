@@ -61,7 +61,7 @@
   pageRef = "tags"
   weight = 20
 
-[[footer]]
-  name = "About"
-  pageRef = "about"
-  weight = 30
+#[[footer]]
+#  name = "About"
+#  pageRef = "about"
+#  weight = 30
