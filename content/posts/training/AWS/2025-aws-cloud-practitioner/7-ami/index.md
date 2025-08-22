@@ -18,9 +18,6 @@ AMI are a customization of an EC2 instance.
 
 ---
 
-{{< youtube ocMOyJ9Tlyk >}}
-_AWS EC2 AMI Introduction_
-<br /><br />
 {{< youtube DOpx2C5F7cs >}}
 _AWS EC2 AMI Tutorial_
 

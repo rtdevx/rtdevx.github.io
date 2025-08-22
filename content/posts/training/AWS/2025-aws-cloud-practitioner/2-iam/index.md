@@ -34,14 +34,15 @@ IAM console > Users
 
 ### Create user
 
-![](assets/AWS_IAM_Create_User.png)
+![](./assets/AWS_IAM_Create_User.png)
 ### Create group "admin"
 
-![](assets/AWS_IAM_Create_Group.png)
-![](assets/AWS_IAM_Create_User_Tags.png)
+![](./assets/AWS_IAM_Create_Group.png)
+
+![](./assets/AWS_IAM_Create_User_Tags.png)
 ## IAM policies structure
 
-![](assets/AWS_IAM_Policies_Structure.png)
+![](./assets/AWS_IAM_Policies_Structure.png)
 
 IAM policies structure includes:
 
@@ -59,7 +60,7 @@ Statement consist of:
 - **Condition:** conditions for when the policy is applied (optional)
 ## MFA
 
-![](assets/AWS_IAM_MFA.png)
+![](./assets/AWS_IAM_MFA.png)
 ## Accessing AWS
 
 - AWS Management Console - protected by password + MFA
@@ -72,7 +73,7 @@ Users manage their own access keys.
 Access Key ID = username
 Secret Access Key = password
 
-![](assets/AWS_IAM_Fake_Access_Keys_Example.png)
+![](./assets/AWS_IAM_Fake_Access_Keys_Example.png)
 ### Creating Access Key
 
 ```AWSConsole
@@ -105,11 +106,11 @@ aws iam list-users
 IAM > Roles > Create role > AWS service
 ```
 
-![](assets/AWS_IAM_Role_Create.png)
+![](./assets/AWS_IAM_Role_Create.png)
 
 Add permissions:
 
-![](assets/AWS_IAM_Role_Add_Permissions.png)
+![](./assets/AWS_IAM_Role_Add_Permissions.png)
 ## IAM Security Tools
 
 - **IAM Credentials Report** (account-level)

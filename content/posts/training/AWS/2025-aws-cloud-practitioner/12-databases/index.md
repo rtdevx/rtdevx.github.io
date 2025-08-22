@@ -55,7 +55,7 @@ It allows creating databases in the cloud that are managed by AWS:
 - Not possible to SSH into DB instances (managed service)
 #### Example RDS application architecture
 
-![](assets/AWS_RDS_Example_Arch1.png)
+![](./assets/AWS_RDS_Example_Arch1.png)
 _Source:_ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
 ### Amazon Aurora
 
@@ -212,7 +212,7 @@ Managed <font color=#f43f5e>E</font>xtract, <font color=#f43f5e>T</font>ransform
 - Useful to prepare and transform data for analytics
 - Fully <font color=#10b981>serverless</font> service
 
-![](assets/AWS_RDS_Glue1.png)
+![](./assets/AWS_RDS_Glue1.png)
 ### <font color=#f1ef63>DMS</font>
 
 **DMS** - <font color=#f43f5e>D</font>atabase <font color=#f43f5e>M</font>igration <font color=#f43f5e>S</font>ervice

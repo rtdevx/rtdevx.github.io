@@ -71,7 +71,7 @@ _More:_ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/infrastru
 It uses all the components mentioned earlier (EC2, ASG, ELB, RDS, etc...)
 ##### <font color=#f1ef63>Beanstalk = Platform as a Service (PaaS)</font>
 
-![](assets/AWS_3tier_Web_App1.png)
+![](./assets/AWS_3tier_Web_App1.png)
 
 - Managed service
 	- Instance configuration / OS is handled by  Beanstalk
@@ -136,7 +136,7 @@ Developers and CodeBuild can retrieve dependencies straight from CodeArtifact.
 
 SSM helps managing EC2 and On-Premises systems at scale.
 
-![](assets/AWS_SSM2.png)
+![](./assets/AWS_SSM2.png)
 
 - Another <font color=#10b981>Hybrid</font> AWS service
 - Get operational insights about the state of the infrastructure
@@ -151,7 +151,7 @@ SSM helps managing EC2 and On-Premises systems at scale.
 	- No port 22 needed
 	- Send session log data to S3 or CloudWatch
 
-![](assets/AWS_SSM1.png)
+![](./assets/AWS_SSM1.png)
 ### Systems Manager Parameter Store
 
 - <font color=#10b981>Secure storage for configuration and secrets</font>

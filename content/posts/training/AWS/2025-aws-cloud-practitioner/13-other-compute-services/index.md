@@ -37,7 +37,7 @@ ECS allows launching Docker containers on AWS. It is an orchestrator.
 - AWS takes care of starting / stopping containers
 - Has integrations with the <font color=#27D3F5>Application Load Balancer</font>
 
-![](assets/AWS_ECS_Solution.png)
+![](./assets/AWS_ECS_Solution.png)
 ## Fargate
 
 - Launch Docker containers on AWS

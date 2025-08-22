@@ -25,11 +25,11 @@ categories: Training Courses
 	- you will get billed for a provisioned capacity
 	- You can increase the capacity of the drive
 
-![](assets/AWS_EC2_EBS_Volume1.png)
+![](./assets/AWS_EC2_EBS_Volume1.png)
 _<font color=#f43f5e>EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them</font>_
 ### EBS Delete on Termination
 
-![](assets/AWS_EC2_EBS_Delete_on_Termination.png)
+![](./assets/AWS_EC2_EBS_Delete_on_Termination.png)
 
 - Controls the EBS behavior when EC2 instance terminates
 	- by default the root EBS volume is deleted (attribute enabled)

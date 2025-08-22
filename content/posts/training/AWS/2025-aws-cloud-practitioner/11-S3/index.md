@@ -90,7 +90,7 @@ _AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS
 	- Force objects to be encrypted at upload
 	- Grant access to another account (Cross Account)
 
-![](assets/AWS_S3_bucket_policy.png)
+![](./assets/AWS_S3_bucket_policy.png)
 
 ### <font color=#f43f5e>Examples</font>
 
@@ -109,28 +109,28 @@ Bucket settings for Block Public Access
 S3 > General purpose buckets (or other) > your-bucket > Permissions > Ensure Allow public access is enabled
 ```
 
-![](assets/AWS_S3_Enable_public_access.png)
+![](./assets/AWS_S3_Enable_public_access.png)
 
-![](assets/AWS_S3_Enable_public_access_edit.png)
+![](./assets/AWS_S3_Enable_public_access_edit.png)
 
 Edit Bucket policy (follow Policy examples OR Policy Generator)
 
-![](assets/AWS_S3_Edit_bucket_policy.png)
+![](./assets/AWS_S3_Edit_bucket_policy.png)
 
 #### Policy Generator
 
 - "arn" can  be found in the bucket settings itself
 - "/\*" can / should be added to propagate to all objects in the bucket
 
-![](assets/AWS_S3_Policy_Generator.png)
+![](./assets/AWS_S3_Policy_Generator.png)
 
 Add Statement and copy the generated policy to Bucket policy
 
-![](assets/AWS_S3_Bucket_Policy_Generated.png)
+![](./assets/AWS_S3_Bucket_Policy_Generated.png)
 
 Object(s) in that bucket should now be available from the internet via URL
 
-![](assets/AWS_S3_Object_URL.png)
+![](./assets/AWS_S3_Object_URL.png)
 ## S3 - Static Website Hosting
 
 <font color=#f43f5e>Bucket must be made public (S3 Bucket policy, see above) in order for the static website to work. If it isn't then 403 Forbidden error appears.</font>
@@ -140,11 +140,11 @@ Object(s) in that bucket should now be available from the internet via URL
 S3 > General purpose buckets (or other) > your-bucket > Properties > Static website hosting
 ```
 
-![](assets/AWS_S3_Enable_Static_Website.png)
+![](./assets/AWS_S3_Enable_Static_Website.png)
 
 ##### <font color=#f1ef63>Voila!</font>
 
-![](assets/AWS_S3_Static_Website_Hosting.png)
+![](./assets/AWS_S3_Static_Website_Hosting.png)
 
 <font color=#f43f5e>Although no HTTPS enabled!</font> - check "<font color=#27D3F5>AWS Certificate Manager (ACM)</font>" section in Security and Compliance on how to use ACM for SSL / TLS certificate management.
 ## Amazon S3 - Versioning
@@ -162,7 +162,7 @@ S3 > General purpose buckets (or other) > your-bucket > Properties > Static webs
 S3 > General purpose buckets (or other) > your-bucket > Properties > Bucket Versioning > Edit > Enable
 ```
 
-![](assets/AWS_S3_Version_Enabled.png)
+![](./assets/AWS_S3_Version_Enabled.png)
 
 In order to <font color=#10b981>restore the file</font>, toggle "_Show Versions_" switch and <font color=#f43f5e>DELETE</font> unwanted object (destructive, will permanently delete).
 ##### <font color=#f43f5e>If "show versions" toggle is off, object can be safely deleted. It will NOT be permanently deleted, only "Delete marker" will be applied. Object can be easily restored when "Show versions" is ON.</font>
@@ -242,7 +242,7 @@ Moves objects automatically between Storage Tiers based on usage for a small mon
 
 Objects can be moved between classes manually or using S3 Lifecycle policies.
 
-![](assets/AWS_S3_Storage_Classes.png)
+![](./assets/AWS_S3_Storage_Classes.png)
 
 _More:_ 
 - S3 Storage classes: https://aws.amazon.com/s3/storage-classes/
@@ -277,7 +277,7 @@ _More:_
 - Helps to migrate up to Petabytes of data
 ##### <font color=#f43f5e>It is recommended to use AWS Snowball devices if it would take more than a week to transfer over the network.</font>
 
-![](assets/AWS_S3_Snowball1.png)
+![](./assets/AWS_S3_Snowball1.png)
 
 _More:_
 - https://aws.amazon.com/snowball/

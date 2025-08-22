@@ -28,7 +28,7 @@ _AWS EC2 Auto Scaling : Step By Step Tutorial_
 - Replace unhealthy instances
 - Cost Saving (only run at optimal capacity)
 
-![](assets/AWS_ASG1.png)
+![](./assets/AWS_ASG1.png)
 ## Creating an Auto Scaling Group
 
 - Create Launch Template
