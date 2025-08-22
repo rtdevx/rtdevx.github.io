@@ -5,7 +5,6 @@ description: The best Game Theory video I've ever watched.
 summary: The best video about Game Theory I've ever watched...
 draft: false
 tags:
-  - strategy
 categories: productivity
 ---
 ## What is Game Theory?
