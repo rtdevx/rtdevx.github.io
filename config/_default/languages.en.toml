@@ -15,8 +15,8 @@ copyright = "Copy, _right_? 🤔 "
 [params.author]
    name = "Rob"
    image = "img/author.jpg"
-   headline = "..."
-   bio = "DevOps Engineer | Agile | AWS | Windows | Linux | Ansible | PowerShell | Git"
+   headline = "DevOps | Agile | AWS | Ansible | Terraform | PowerShell | Windows | Linux | Git"
+   bio = "DevOps Engineer | Agile | AWS | Ansible | Terraform | PowerShell | Windows | Linux | Git"
    links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },
