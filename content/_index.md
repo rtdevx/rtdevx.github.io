@@ -8,7 +8,7 @@ My name is Rob and I am an experienced IT professional.
 
 On this blog I share thoughts and learnings about technical topics such as ***DevOps***, ***Agile***, ***Cloud***, ***Windows***, ***Linux***, ***Ansible***, ***Terraform***, ***PowerShell***.
 
-I am also interested in tools and techniques that help me increasing my _productivity_, so you will also find writings on _Zettelkasten_, _learning techniques_ and on occasion other, less related subjects.
+I am also interested in tools and techniques that help me increasing my ***productivity***, so you will also find writings on ***Zettelkasten***, ***learning techniques*** and on occasion other, less related subjects.
 
 {{< alert >}}
 No rights reserved. Content for educational and informational purposes only. <br />👨🏻‍💻
