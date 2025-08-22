@@ -74,6 +74,13 @@ Other Hugo examples: https://softwarewitchcraft.com/
 
 ## Highlight 2
 
+## PowerShell string replace
+
+```PowerShell
+Get-ChildItem -Path "C:\Users\robk\Documents\Documents\Notes\Obsidian\Zettelkasten\4 - Content Creation\Git\rtdevx.github.io" -Recurse -Filter *.md | ForEach-Object {
+    (Get-Content $_.FullName) -replace '<font color=#f4e40b>', '<font color=#f1ef63>' | Set-Content $_.FullName
+}
+```
 
 ---
 ## Sources

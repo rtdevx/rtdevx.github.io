@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
-    <lastBuildDate>Wed, 13 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>16 - Cloud Integrations</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/16-cloud-integrations/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/16-cloud-integrations/</guid>
+      <description>Cloud Integrations / decoupling. This section is about multiple applications communicating with each other. SNS, SQS, MQ&amp;hellip;.</description>
+    </item>
+    <item>
+      <title>15 - AWS Global Infrastructure</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/</guid>
+      <description>A Global Application is an application deployed in multiple geographies. On AWS this could be Regions and / or Edge Locations&amp;hellip;.</description>
+    </item>
+    <item>
+      <title>14 - Deployments</title>
+      <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/14-deployments/</link>
+      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/14-deployments/</guid>
+      <description>Deploying and Managing Infrastructure at scale in AWS&amp;hellip;</description>
+    </item>
     <item>
       <title>13 - Other Compute Services</title>
       <link>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/</link>
