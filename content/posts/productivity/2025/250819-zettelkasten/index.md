@@ -6,7 +6,7 @@ summary: Increase your productivity with zettelkasten, highly effective note tak
 draft: false
 tags:
   - zettelkasten
-categories: productivity
+categories: Productivity
 ---
 ## What is the Zettelkasten method?
 

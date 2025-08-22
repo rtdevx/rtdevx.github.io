@@ -6,7 +6,7 @@ summary: Pomodoro, Kanji, Rewrite notes, Empty cup mindset, Chain learning, Stud
 draft: false
 tags:
   - zettelkasten
-categories: productivity
+categories: Productivity
 ---
 ---
 
