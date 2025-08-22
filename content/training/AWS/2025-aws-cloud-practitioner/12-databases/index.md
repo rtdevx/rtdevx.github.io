@@ -11,8 +11,9 @@ categories: AWS Cloud Practitioner
 ---
 ## Relational Databases
 
-- Looks like Excel spreadsheets with links between them
-- Can use SQL language to perform queries / lookups
+A **relational database** is a type of database that organizes data into **rows** and **columns**, which **collectively form a table where the data points are related to each other**.
+
+Data is typically structured across multiple tables, which can be joined together via a primary key or a foreign key. **These unique identifiers demonstrate the different relationships which exist between tables, and these relationships are usually illustrated through different types of data models**.
 ## No-SQL Databases
 
 - No-SQL = non-relational databases
