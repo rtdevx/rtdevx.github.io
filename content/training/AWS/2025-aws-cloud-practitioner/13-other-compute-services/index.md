@@ -1,13 +1,13 @@
 ---
-title: 13 - Other Compute Services
+title: Other Compute Services
 date: 2025-08-13
 description: Other Compute Services in AWS
 summary: Other Compute Services in AWS cloud...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 ## Docker
 

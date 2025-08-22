@@ -1,13 +1,13 @@
 ---
-title: 9 - Elastic Load Balancing
+title: Elastic Load Balancing
 date: 2025-08-09
 description: Elastic Load Balancing
 summary: Elastic Load Balancing automatically distributes your incoming traffic across multiple targets...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 **Elastic Load Balancing** automatically **distributes your incoming traffic** across multiple targets (<font color=#10b981>EC2 instances, containers, IP addresses</font>) in **one or more Availability Zones**.
 

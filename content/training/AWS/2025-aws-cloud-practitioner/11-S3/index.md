@@ -1,13 +1,13 @@
 ---
-title: 11 - Amazon S3
+title: Amazon S3
 date: 2025-08-11
 description: Amazon S3
 summary: Amazon S3 is one of the main building blocks of AWS. It is advertised as "infinitely scaling" storage...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 ## What is Amazon S3
 

@@ -1,13 +1,13 @@
 ---
-title: 3 - Budget
+title: Budget
 date: 2025-08-03
 description: AWS Budget
 summary: AWS Budget...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 ## Setting up a budget
 

@@ -1,13 +1,13 @@
 ---
-title: 6 - Storage
+title: Storage
 date: 2025-08-06
 description: Storage in AWS
 summary: Storage in AWS...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 ## EBS Volume
 

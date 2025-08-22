@@ -1,13 +1,13 @@
 ---
-title: 15 - AWS Global Infrastructure
+title: AWS Global Infrastructure
 date: 2025-08-15
 description: AWS Global Infrastructure
 summary: A Global Application is an application deployed in multiple geographies. On AWS this could be Regions and / or Edge Locations....
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 A Global Application is an application deployed in multiple geographies.
 On AWS this could be Regions and / or Edge Locations.

@@ -1,13 +1,13 @@
 ---
-title: 8 - Scalability & High Availability
+title: Scalability & High Availability
 date: 2025-08-08
 description: Scalability & High Availability in AWS Cloud
 summary: Scalability means that an application / infrastructure can handle greater loads by adapting...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 ## Scalability
 

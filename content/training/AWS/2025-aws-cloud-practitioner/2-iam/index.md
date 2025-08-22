@@ -1,13 +1,13 @@
 ---
-title: 2 - Identity and Access management
+title: Identity and Access management
 date: 2025-08-02
 description: Identity and Access management
 summary: Identity and Access management...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 ## **IAM** = Identity and Access management
 

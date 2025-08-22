@@ -1,13 +1,13 @@
 ---
-title: 10 - Auto Scaling Group
+title: Auto Scaling Group
 date: 2025-08-10
 description: Auto Scaling Group
 summary: Auto Scaling Group contains a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 **Auto Scaling Group** contains a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management.
 

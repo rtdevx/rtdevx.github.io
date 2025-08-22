@@ -1,13 +1,13 @@
 ---
-title: 14 - Deployments
+title: Deployments
 date: 2025-08-14
 description: Deploying and Managing Infrastructure at scale in AWS
 summary: Deploying and Managing Infrastructure at scale in AWS...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 # Deploying and Managing Infrastructure at scale
 

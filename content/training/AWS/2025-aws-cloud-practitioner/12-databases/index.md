@@ -1,13 +1,13 @@
 ---
-title: 12 - Databases
+title: Databases
 date: 2025-08-12
 description: AWS Databases
 summary: AWS oﬀers a growing number of database options (15+) with diverse data models to support a variety of workloads. These include relational, key-value, document, in-memory, graph, time series, vector, and wide-column...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 ## Relational Databases
 

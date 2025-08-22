@@ -1,13 +1,13 @@
 ---
-title: 16 - Cloud Integrations
+title: Cloud Integrations
 date: 2025-08-16
 description: Cloud Integrations. This section is about multiple applications communicating with each other.
 summary: Cloud Integrations / decoupling. This section is about multiple applications communicating with each other. SNS, SQS, MQ....
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 This section is about multiple applications communicating with each other.
 

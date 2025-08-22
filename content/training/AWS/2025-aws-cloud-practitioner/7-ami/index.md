@@ -1,13 +1,13 @@
 ---
-title: 7 - Amazon Machine Image (AMI)
+title: Amazon Machine Image (AMI)
 date: 2025-08-07
 description: AMI are a customization of an EC2 instance...
 summary: AMI are a customization of an EC2 instance...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 ## What is Amazon EC2 AMI
 

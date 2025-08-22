@@ -1,13 +1,13 @@
 ---
-title: 4 - EC2
+title: EC2
 date: 2025-08-04
 description: EC2
 summary: An Amazon EC2 instance is a virtual server in the AWS Cloud...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 ## What is Amazon EC2
 

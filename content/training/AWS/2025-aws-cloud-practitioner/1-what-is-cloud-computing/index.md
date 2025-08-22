@@ -1,13 +1,13 @@
 ---
-title: 1 - What is Cloud Computing
+title: What is Cloud Computing
 date: 2025-08-01
 description: What is Cloud Computing
 summary: What is Cloud Computing...
 draft: false
 tags:
   - AWS
-  - Training
-categories: AWS Cloud Practitioner
+  - CLF-C02
+categories: Training Courses
 ---
 
 | **Private Cloud**                                                       | **Public Cloud**                                                                                       | **Hybrid Cloud**                                                        |
