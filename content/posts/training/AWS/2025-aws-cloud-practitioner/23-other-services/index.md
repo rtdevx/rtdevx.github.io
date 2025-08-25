@@ -6,7 +6,6 @@ summary: Other AWS Services...
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 # Other AWS Services that don't fit in other categories.

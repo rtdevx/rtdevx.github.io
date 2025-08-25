@@ -6,7 +6,6 @@ summary: Security and Compliance, Shared Responsibility Model...
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Shared Responsibility Model

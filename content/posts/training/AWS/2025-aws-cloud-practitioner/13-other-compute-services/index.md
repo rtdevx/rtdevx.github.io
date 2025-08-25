@@ -6,7 +6,6 @@ summary: Other Compute Services in AWS cloud...
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Docker

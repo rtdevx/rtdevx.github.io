@@ -6,7 +6,6 @@ summary: Machine Learning in Amazon AWS...
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Amazon Rekognition

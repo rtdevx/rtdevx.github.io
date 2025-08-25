@@ -6,7 +6,6 @@ summary: Deploying and Managing Infrastructure at scale in AWS...
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 # Deploying and Managing Infrastructure at scale

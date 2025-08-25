@@ -6,7 +6,6 @@ summary: AWS Architecting & Ecosystem...
 draft: true
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Practitioner Template

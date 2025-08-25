@@ -6,7 +6,6 @@ summary: Preparing for the exam...
 draft: true
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Practitioner Template

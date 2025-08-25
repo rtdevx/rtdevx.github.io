@@ -6,7 +6,6 @@ summary: AWS Practitioner (CLF-C02) - Table of Contents
 draft: true
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Practitioner Template

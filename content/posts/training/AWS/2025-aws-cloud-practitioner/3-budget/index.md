@@ -6,7 +6,6 @@ summary: AWS Budget...
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Setting up a budget

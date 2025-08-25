@@ -6,7 +6,6 @@ summary: Account Management and Billing...
 draft: true
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Practitioner Template

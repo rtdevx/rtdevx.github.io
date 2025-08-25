@@ -6,7 +6,6 @@ summary: Practitioner Template...
 draft: true
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Practitioner Template

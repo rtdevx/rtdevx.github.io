@@ -6,7 +6,6 @@ summary: Cloud Integrations / decoupling. This section is about multiple applica
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 This section is about multiple applications communicating with each other.

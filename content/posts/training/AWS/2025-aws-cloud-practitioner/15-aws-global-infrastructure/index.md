@@ -6,7 +6,6 @@ summary: A Global Application is an application deployed in multiple geographies
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 A Global Application is an application deployed in multiple geographies.

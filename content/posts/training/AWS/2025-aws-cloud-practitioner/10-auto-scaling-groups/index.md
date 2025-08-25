@@ -6,7 +6,6 @@ summary: Auto Scaling Group contains a collection of EC2 instances that are trea
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 **Auto Scaling Group** contains a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management.

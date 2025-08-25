@@ -6,7 +6,6 @@ summary: AWS oﬀers a growing number of database options (15+) with diverse dat
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Relational Databases

@@ -6,7 +6,6 @@ summary: An Amazon EC2 instance is a virtual server in the AWS Cloud...
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## What is Amazon EC2

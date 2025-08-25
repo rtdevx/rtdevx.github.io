@@ -6,7 +6,6 @@ summary: CloudWatch, EventBridge, CloudTrail, X-Ray, CodeGuru, Health Dashboard.
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## CloudWatch Metrics

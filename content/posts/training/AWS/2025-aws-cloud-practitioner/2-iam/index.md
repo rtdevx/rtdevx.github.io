@@ -6,7 +6,6 @@ summary: Identity and Access management...
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## **IAM** = Identity and Access management

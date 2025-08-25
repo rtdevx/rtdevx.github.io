@@ -6,7 +6,6 @@ summary: AWS Security Groups are the fundamental of network security in AWS. The
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 ## Amazon Security Groups

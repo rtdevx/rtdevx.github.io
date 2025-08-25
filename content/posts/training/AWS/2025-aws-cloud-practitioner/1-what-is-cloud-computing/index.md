@@ -6,7 +6,6 @@ summary: What is Cloud Computing...
 draft: false
 tags:
   - CLF-C02
-  - Curriculum
 categories: AWS
 ---
 
