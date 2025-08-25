@@ -59,12 +59,12 @@ Fully-managed service to centrally manage and automate backups across AWS servic
 - Cross-region and cross-account (AWS Organizations) backups
 
 ![](./assets/AWS_Backup.png)
-## Disaster Recovery Strategies
+## <font color=#f43f5e>Disaster Recovery Strategies</font>
 
-- Backup and Restore - cheapest method
-- Pilot Light - core functions are there (e.g. database) but it's not scaled up
-- Warm Standby - full version of the app but at minimum size (databases, webs, api, ...)
-- Multi-Site / Hot-Site - full version, full size active-active DR
+- <font color=#f1ef63>Backup and Restore</font> - cheapest method
+- <font color=#f1ef63>Pilot Light</font> - core functions are there (e.g. database) but it's not scaled up
+- <font color=#f1ef63>Warm Standby</font> - full version of the app but at minimum size (databases, webs, api, ...)
+- <font color=#f1ef63>Multi-Site / Hot-Site</font> - full version, full size active-active DR
 ### AWS Elastic Disaster Recovery (DRS)
 
 Quickly and easily recover physical, virtual and cloud-based servers into AWS.
