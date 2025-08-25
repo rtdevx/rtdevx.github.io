@@ -5,9 +5,9 @@ description: Storage in AWS
 summary: Storage in AWS...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## EBS Volume
 

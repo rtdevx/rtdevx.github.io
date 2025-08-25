@@ -5,9 +5,9 @@ description: Security and Compliance, Shared Responsibility Model
 summary: Security and Compliance, Shared Responsibility Model...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## Shared Responsibility Model
 

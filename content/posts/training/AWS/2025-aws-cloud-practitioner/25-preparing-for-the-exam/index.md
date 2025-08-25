@@ -5,9 +5,9 @@ description: Preparing for the exam
 summary: Preparing for the exam...
 draft: true
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## Practitioner Template
 

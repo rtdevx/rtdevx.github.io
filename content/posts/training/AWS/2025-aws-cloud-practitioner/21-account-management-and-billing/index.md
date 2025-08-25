@@ -5,9 +5,9 @@ description: Account Management and Billing
 summary: Account Management and Billing...
 draft: true
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## Practitioner Template
 

@@ -5,9 +5,9 @@ description: Advanced Identity
 summary: Advanced Identity...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## AWS STS (Security Token Service)
 

@@ -5,9 +5,9 @@ description: Other AWS Services
 summary: Other AWS Services...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 # Other AWS Services that don't fit in other categories.
 

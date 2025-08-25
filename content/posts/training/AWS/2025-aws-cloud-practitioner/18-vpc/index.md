@@ -5,9 +5,9 @@ description: VPC - Virtual Private Cloud
 summary: VPC - Virtual Private Cloud...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## VPC - Virtual Private Cloud
 

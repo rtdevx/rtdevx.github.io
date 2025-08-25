@@ -5,9 +5,9 @@ description: Cloud Integrations. This section is about multiple applications com
 summary: Cloud Integrations / decoupling. This section is about multiple applications communicating with each other. SNS, SQS, MQ....
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 This section is about multiple applications communicating with each other.
 

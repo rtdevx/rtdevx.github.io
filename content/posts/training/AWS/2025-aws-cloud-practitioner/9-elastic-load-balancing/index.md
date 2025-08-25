@@ -5,9 +5,9 @@ description: Elastic Load Balancing
 summary: Elastic Load Balancing automatically distributes your incoming traffic across multiple targets...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 **Elastic Load Balancing** automatically **distributes your incoming traffic** across multiple targets (<font color=#10b981>EC2 instances, containers, IP addresses</font>) in **one or more Availability Zones**.
 

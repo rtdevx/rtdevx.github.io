@@ -5,9 +5,9 @@ description: AWS Architecting & Ecosystem
 summary: AWS Architecting & Ecosystem...
 draft: true
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## Practitioner Template
 

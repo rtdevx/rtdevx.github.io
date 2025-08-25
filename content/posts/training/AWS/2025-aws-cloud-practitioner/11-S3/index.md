@@ -5,9 +5,9 @@ description: Amazon S3
 summary: Amazon S3 is one of the main building blocks of AWS. It is advertised as "infinitely scaling" storage...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## What is Amazon S3
 

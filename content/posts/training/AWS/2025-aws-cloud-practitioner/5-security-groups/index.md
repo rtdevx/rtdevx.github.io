@@ -5,9 +5,9 @@ description: AWS Security Groups
 summary: AWS Security Groups are the fundamental of network security in AWS. They control how traffic is allowed in or out of our EC2 instances...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## Amazon Security Groups
 

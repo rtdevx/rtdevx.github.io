@@ -5,9 +5,9 @@ description: Other Compute Services in AWS
 summary: Other Compute Services in AWS cloud...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## Docker
 

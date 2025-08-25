@@ -5,9 +5,9 @@ description: Cloud Monitoring
 summary: CloudWatch, EventBridge, CloudTrail, X-Ray, CodeGuru, Health Dashboard...
 draft: false
 tags:
-  - AWS
   - CLF-C02
-categories: Training Courses
+  - Curriculum
+categories: AWS
 ---
 ## CloudWatch Metrics
 
