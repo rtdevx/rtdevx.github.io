@@ -204,26 +204,6 @@ Works with Direct Connect Gateway, VPN connections.
 - <font color=#f1ef63>Direct Connect:</font> Direct private connection to AWS
 - <font color=#f1ef63>Transit Gateway:</font> Connect thousands of VPC and on-premises networks together
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 ## Sources
 
