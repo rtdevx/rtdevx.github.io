@@ -10,7 +10,7 @@ categories: AWS
 ---
 ## Well-Architected Framework
 
-- Stop guessing capacity 
+- Stop guessing capacity (use [Auto Scaling]({{< ref "10-auto-scaling-groups" >}}))
 - Test systems at production scale
 - Automate!
 - Allow for evolutionary architectures
