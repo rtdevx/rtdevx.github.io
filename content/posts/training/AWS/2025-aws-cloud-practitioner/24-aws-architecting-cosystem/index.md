@@ -33,7 +33,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 
 ##### **Operational excellence** includes the ability to run and monitor systems to deliver business value and continually improve supporting processes and procedures.
 
-##### <font color=#f1ef63>Design Principles:</font>
+<font color=#f1ef63>Design Principles:</font>
 
 - Perform Operations as Code - IaS
 - Frequent, small, reversible changes - reverse in case of failure
@@ -45,7 +45,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 ### 2. Security
 ##### **Security** includes an ability to protect information, systems and assets while delivering business value through risk assessments and mitigation strategies.
 
-##### <font color=#f1ef63>Design Principles:</font>
+<font color=#f1ef63>Design Principles:</font>
 
 - Implement a strong identity foundation - centralize privilege management and reduce (or eliminate) reliance on long-term credentials - _Principle of least privilege_ - [IAM]({{< ref "2-iam" >}})
 - Enable traceability - integrate logs and metrics with systems to automatically respond and take action
@@ -58,7 +58,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 
 ##### **Reliability** is an ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand and mitigate disruptions such as misconfigurations or transient network issues.
 
-##### <font color=#f1ef63>Design Principles:</font>
+<font color=#f1ef63>Design Principles:</font>
 
 - Test recovery procedures - use automation to simulate different failures or to recreate scenarios that led to failures before
 - Automatically recover from failure - anticipate and remediate failures before they occur
@@ -67,7 +67,8 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 - Manage change in automation - use automation to make changes to infrastructure
 ### 4. Performance Efficiency
 ##### **Performance Efficiency** includes ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
-##### <font color=#f1ef63>Design Principles:</font>
+
+<font color=#f1ef63>Design Principles:</font>
 
 - Democratize advanced technologies - advance technologies become services and hence you can focus more on product development
 - <font color=#10b981>Go Global in minutes</font> - easy deployment in multiple regions
@@ -78,7 +79,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 
 ##### **Cost Optimization** includes ability to run systems to deliver business value at the lowest price point.
 
-##### <font color=#f1ef63>Design Principles:</font>
+<font color=#f1ef63>Design Principles:</font>
 
 - Adopt a consumption mode - pay only for what you use
 - Measure overall efficiency - use CloudWatch
@@ -87,7 +88,8 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 - Use managed and application level services to reduce cost of ownership - as managed services operate at cloud scale then can offer a lower cost per transaction or service
 ### 6. Sustainability
 ##### **Sustainability** focuses on minimizing the environmental impact of running cloud workloads.
-##### <font color=#f1ef63>Design Principles:</font>
+
+<font color=#f1ef63>Design Principles:</font>
 
 - Understand your impact - establish performance indicators, evaluate improvements
 - Establish sustainability goals - set long-term goals for each workload, model Return on Investment (ROI)
