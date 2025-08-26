@@ -15,9 +15,9 @@ categories: AWS
 - Automate!
 - Allow for evolutionary architectures
 
-<font color=#f1ef63>Scalability:</font> vertical & horizontal
-<font color=#f1ef63>Disposable Resources:</font> servers should be disposable & easily configured
-<font color=#f1ef63>Automation:</font> serverless, Infrastructure as a Service, Auto Scaling...
+<font color=#f1ef63>Scalability:</font> vertical & horizontal<br />
+<font color=#f1ef63>Disposable Resources:</font> servers should be disposable & easily configured<br />
+<font color=#f1ef63>Automation:</font> serverless, Infrastructure as a Service, Auto Scaling...<br />
 
 <font color=#f1ef63>Loose coupling:</font>
 - _Monolith applications_ that do more and more over time become bigger
@@ -31,7 +31,7 @@ categories: AWS
 _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 ### 1. Operational Excellence
 
-##### **Operational excellence** includes the ability to run and monitor systems to deliver business value and continually improve supporting processes and procedures.<br />
+##### **Operational excellence** includes the ability to run and monitor systems to deliver business value and continually improve supporting processes and procedures.<br /><br />
 
 ##### <font color=#f1ef63>Design Principles:</font>
 
@@ -43,7 +43,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 - Use managed services - to reduce operational burden
 - Implement observability for actionable insights - performance, reliability, cost, ...
 ### 2. Security
-##### **Security** includes an ability to protect information, systems and assets while delivering business value through risk assessments and mitigation strategies.
+##### **Security** includes an ability to protect information, systems and assets while delivering business value through risk assessments and mitigation strategies.<br /><br />
 
 ##### <font color=#f1ef63>Design Principles:</font>
 
@@ -56,7 +56,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 - Prepare for security events - run incident response simulations and use tools with automation to increase your speed of detection, investigation and recovery
 ### 3. Reliability
 
-##### **Reliability** is an ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand and mitigate disruptions such as misconfigurations or transient network issues.
+##### **Reliability** is an ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand and mitigate disruptions such as misconfigurations or transient network issues.<br /><br />
 
 ##### <font color=#f1ef63>Design Principles:</font>
 
@@ -66,7 +66,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 - Stop guessing capacity - maintain the optimal level to satisfy demand without over or under provisioning
 - Manage change in automation - use automation to make changes to infrastructure
 ### 4. Performance Efficiency
-##### **Performance Efficiency** includes ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
+##### **Performance Efficiency** includes ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.<br /><br />
 ##### <font color=#f1ef63>Design Principles:</font>
 
 - Democratize advanced technologies - advance technologies become services and hence you can focus more on product development
@@ -76,7 +76,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 - Mechanical sympathy - be aware of all AWS services
 ### Cost Optimization
 
-##### **Cost Optimization** includes ability to run systems to deliver business value at the lowest price point.
+##### **Cost Optimization** includes ability to run systems to deliver business value at the lowest price point.<br /><br />
 
 ##### <font color=#f1ef63>Design Principles:</font>
 
@@ -86,7 +86,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 - Analyze and attribute expenditure - accurate identification of system usage and costs helps to measure <font color=#10b981>Return on Investment (ROI)</font> - <font color=#f43f5e>make sure to use tags!</font>
 - Use managed and application level services to reduce cost of ownership - as managed services operate at cloud scale then can offer a lower cost per transaction or service
 ### 6. Sustainability
-##### **Sustainability** focuses on minimizing the environmental impact of running cloud workloads.
+##### **Sustainability** focuses on minimizing the environmental impact of running cloud workloads.<br /><br />
 ##### <font color=#f1ef63>Design Principles:</font>
 
 - Understand your impact - establish performance indicators, evaluate improvements
