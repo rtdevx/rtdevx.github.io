@@ -147,9 +147,9 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - https://www.cloudzero.com/blog/ebs-vs-efs/
 ## >> References <<
 
-- <font color=#27D3F5>S3</font>
-- <font color=#27D3F5>EC2</font>
-- <font color=#27D3F5>AMI</font>
+- [S3]({{< ref "11-s3" >}})
+- [EC2]({{< ref "4-ec2" >}})
+- [AMI]({{< ref "7-ami" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

@@ -74,9 +74,8 @@ _Mastering AWS Network Load Balancer | ALB vs NLB | Step by Step Tutorial_
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## >> References <<
 
-- <font color=#27D3F5>Scalability & High Availability</font>
-- <font color=#27D3F5>Auto Scaling Groups</font>
-
+- [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
+- [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

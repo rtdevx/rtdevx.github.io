@@ -157,7 +157,7 @@ IAM > Users > Username > Last Accessed
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## >> References << 
 
-- <font color=#27D3F5>Account Management and Billing</font>
+- [Account Management and Billing]({{< ref "21-account-management-and-billing" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

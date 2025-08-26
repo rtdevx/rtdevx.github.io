@@ -69,8 +69,7 @@ _Amazon Cognito for web and mobile applications. <font color=#10b981>It can also
 ---
 ## >> References <<
 
-- <font color=#27D3F5>IAM</font>
-
+- [Identity and Access management (IAM)]({{< ref "2-iam" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

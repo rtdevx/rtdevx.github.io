@@ -46,14 +46,14 @@ categories: AWS
 	- Scale based on actual measured usage
 4. Increase speed and agility
 5. Stop spending money running and maintaining data centers
-6. Go global in minutes: leverage the <font color=#27D3F5>AWS Global Infrastructure</font>
+6. Go global in minutes: leverage the [AWS Global Infrastructure]({{< ref "15-aws-global-infrastructure" >}})
 ## Problems solved by the cloud
 
 - <font color=#f1ef63>Flexibility:</font> change resources when needed
 - <font color=#f1ef63>Cost-Effectiveness:</font> pay as you go and for what you use
-- <font color=#27D3F5>Scalability:</font> accommodate larger loads by making hardware stronger or adding additional nodes
-- <font color=#27D3F5>Elasticity:</font> ability to scale out and scale in when needed
-- <font color=#27D3F5>High-Availability and Fault-Tolerance:</font> build across data centers
+- [Scalability:]({{< ref "8-scalability-high-availability/#scalability" >}}) accommodate larger loads by making hardware stronger or adding additional nodes
+- [Elasticity:]({{< ref "8-scalability-high-availability/#two-kinds-of-scalability" >}}) ability to scale out and scale in when needed
+- [High-Availability]({{< ref "8-scalability-high-availability/#high-availability" >}}) and Fault-Tolerance: build across data centers
 - <font color=#f1ef63>Agility:</font> rapidly develop, test and launch software applications
 ## Types of Cloud Computing
 
@@ -78,7 +78,7 @@ categories: AWS
 - AWS Data Centers
 - AWS Edge Locations / Points of Presence
 
-_AWS Global Infrastructure:_ [AWS Global Infrastructure](https://infrastructure.aws)
+_More about AWS Global Infrastructure:_ [AWS Global Infrastructure](https://infrastructure.aws)
 ## Shared Responsibility Model
 
 ![](./assets/AWS_Shared_Responsibility_Model.png)

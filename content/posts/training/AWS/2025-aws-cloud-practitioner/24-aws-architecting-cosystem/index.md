@@ -10,7 +10,7 @@ categories: AWS
 ---
 ## Well-Architected Framework
 
-- Stop guessing capacity (use <font color=#27D3F5>Auto Scaling</font>)
+- Stop guessing capacity (use [Auto Scaling]({{< ref "10-auto-scaling-groups" >}}))
 - Test systems at production scale
 - Automate!
 - Allow for evolutionary architectures
@@ -47,7 +47,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 
 ##### <font color=#f1ef63>Design Principles:</font>
 
-- Implement a strong identity foundation - centralize privilege management and reduce (or eliminate) reliance on long-term credentials - _Principle of least privilege_ - <font color=#27D3F5>IAM</font>
+- Implement a strong identity foundation - centralize privilege management and reduce (or eliminate) reliance on long-term credentials - _Principle of least privilege_ - [IAM]({{< ref "2-iam" >}})
 - Enable traceability - integrate logs and metrics with systems to automatically respond and take action
 - <font color=#f43f5e>Apply security at all layers</font> - edge network, VPC, subnet, load balancer, (every) EC2 instance, operating system, application
 - Automate security best practices

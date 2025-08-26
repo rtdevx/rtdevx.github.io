@@ -23,7 +23,7 @@ An **Amazon EC2** instance is a virtual server in the AWS Cloud. When you launch
 - How much compute power & CPU cores
 - How much RAM
 - How much storage space
-	- Network-attached (<font color=#27D3F5>EBS</font> & <font color=#27D3F5>EFS</font>)
+	- Network-attached ([EBS]({{< ref "6-storage/#ebs-volume" >}}) & [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}}))
 	- Hardware (EC2 Instance Store)
 - Network card: speed of the card, Public IP address
 - Firewall rules: security group
@@ -36,7 +36,7 @@ An **Amazon EC2** instance is a virtual server in the AWS Cloud. When you launch
 
 - **General Purpose** (M, T) - General
 - **Compute Optimized** (C) - Compute bound applications that benefit from thigh performance processors
-- **Memory Optimized** (R, X) - Optimized to deliver fast performance for workloads that process large data sets in memory (i.e. <font color=#27D3F5>Elastic Cache</font>)
+- **Memory Optimized** (R, X) - Optimized to deliver fast performance for workloads that process large data sets in memory (i.e. ElastiCache)
 - **Accelerated Computing** (P, G, Trn, Inf, DL, F, VT1) - Calculations, graphics processing or data pattern matching
 - **Storage Optimized** (I, Dx, H1) - High, sequential read and write access to very large data sets on local storage. Low-latency, random I/O operations per second (IOPS)
 - **HPC Optimized** (Hpc) - High Performance Computing - complex simulations and deep learning workloads
@@ -163,7 +163,7 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## >> References <<
 
-- <font color=#27D3F5>Security Groups</font>
+- [Security Groups]({{< ref "5-security-groups" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

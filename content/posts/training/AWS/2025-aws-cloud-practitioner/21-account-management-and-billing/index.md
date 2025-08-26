@@ -372,8 +372,7 @@ Response times:
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## >> References <<
 
-- <font color=#27D3F5>IAM</font>
-
+- [Identity and Access management (IAM)]({{< ref "2-iam" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

@@ -210,8 +210,8 @@ Works with Direct Connect Gateway, VPN connections.
 - Internetwork traffic privacy in VPC: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html
 ## >> References <<
 
-- <font color=#27D3F5>Elastic Load Balancing</font>
-- <font color=#27D3F5>S3</font>
+- [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
+- [S3]({{< ref "11-s3" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

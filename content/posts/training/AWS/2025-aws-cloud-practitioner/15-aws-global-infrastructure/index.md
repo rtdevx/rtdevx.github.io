@@ -79,15 +79,15 @@ _More about Route 53:_ https://docs.aws.amazon.com/route53/
 	- For uploading files to S3 through CloudFront
 	- Secured using Origin Access Control (OAC)
 - VPC Origin
-	- For applications hosted in <font color=#27D3F5>VPC</font> private subnets
-	- <font color=#27D3F5>Application Load Balancer</font> / <font color=#27D3F5>Network Load Balancer</font> / <font color=#27D3F5>EC2</font> Instances
+	- For applications hosted in [VPC]({{< ref "18-vpc" >}}) private subnets
+	- [Application Load Balancer]({{< ref "9-elastic-load-balancing/#1-application-load-balancer" >}}) / [Network Load Balancer]({{< ref "9-elastic-load-balancing/#2-network-load-balancer" >}}) / [EC2]({{< ref "4-ec2" >}}) Instances
 - Custom Origin (HTTP)
 	- S3 website (must first enable the bucket as a static S3 website)
 	- Any public HTTP backend
 
 ![](./assets/AWS_CloudFront1.png)
 _[How CloudFront delivers content](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowCloudFrontWorks.html)_
-### CloudFront vs <font color=#27D3F5>S3 Cross Region Replication</font>
+### CloudFront vs [S3 Cross Region Replication]({{< ref "11-s3/#s3---replication" >}})
 
 #### CloudFront
 
@@ -236,8 +236,8 @@ https://speedtest.globalaccelerator.aws
 https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html
 ## >> References <<
 
-- <font color=#27D3F5>S3</font>
-- <font color=#27D3F5>Security and Compliance</font>
+- [S3]({{< ref "11-s3" >}})
+- [Security and Compliance]({{< ref "19-security-and-compliance" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

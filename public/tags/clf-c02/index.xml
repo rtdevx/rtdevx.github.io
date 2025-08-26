@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
-    <lastBuildDate>Sun, 24 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/clf-c02/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CLF-C02 - Table of Contents</title>
+      <link>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/26-clf-c02-table-of-contents/</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/26-clf-c02-table-of-contents/</guid>
+      <description>AWS Practitioner (CLF-C02) - Table of Contents</description>
+    </item>
     <item>
       <title>AWS Architecting &amp; Ecosystem</title>
       <link>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/24-aws-architecting-cosystem/</link>

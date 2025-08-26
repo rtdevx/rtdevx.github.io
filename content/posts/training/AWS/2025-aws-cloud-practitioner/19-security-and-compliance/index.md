@@ -60,17 +60,17 @@ _More about Shared Responsibility Model:_ https://aws.amazon.com/compliance/shar
 	- Availability protection using global edge network
 	- Combined with AWS Shield provides attach mitigation at the edge
 
-Be ready to scale - use <font color=#27D3F5>AWS Auto Scaling</font>.
+Be ready to scale - use [AWS Auto Scaling]({{< ref "10-auto-scaling-groups" >}}).
 
 ![](./assets/AWS_Shield.png)
 _Sample Reference Architecture for DDOS Protection in AWS_
 ##### <font color=#10b981>DDoS components on above picture:</font>
 
-- <font color=#27D3F5>Route53</font> - Latency / Geolocation routing policies
-- <font color=#27D3F5>CloudFront</font> - to ensure data is cached at the edge
+- [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}}) - Latency / Geolocation routing policies
+- [CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}}) - to ensure data is cached at the edge
 - Shield - see below section
-- <font color=#27D3F5>WAF</font> - optionally
-- <font color=#27D3F5>LB and Auto Scaling</font>
+- [WAF]({{< ref "19-security-and-compliance/#aws-waf" >}}) - optionally
+- [Load Balancer]({{< ref "9-elastic-load-balancing" >}}) and [Auto Scaling]({{< ref "10-auto-scaling-groups" >}})
 
 _More about DDOS protection:_ https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.html
 ### AWS Shield
@@ -231,14 +231,14 @@ Uses Machine Learning algorithms, <font color=#f43f5e>anomaly detection.</font>
 Enabled with 1-click, no need to install any software.
 ##### Input data includes:
 
-- <font color=#27D3F5>CloudTrail Event Logs</font> - unusual API calls, unauthorized deployments
+- [CloudTrail Event Logs]({{< ref "17-cloud-monitoring/#aws-cloudtrail" >}}) - unusual API calls, unauthorized deployments
 	- CloudTrail Management Events - create VPC subnet, create trail, ...
 	- CloudTrail S3 Data Events - get object, list object, delete object, ...
-- <font color=#27D3F5>VPC Flow Logs</font> - unusual internal traffic, unusual IP addresses
+- [VPC Flow Logs]({{< ref "18-vpc/#vpc-flow-logs" >}}) - unusual internal traffic, unusual IP addresses
 - DNS Logs - compromised EC2 instances sending encoded data within DNS queries
 - Optional Features
 
-EventBridge <font color=#27D3F5>Cloud Monitoring</font> can be set up to be notified in case of any findings. Rules can target AWS Lambda or SNS.
+EventBridge [Cloud Monitoring]({{< ref "17-cloud-monitoring" >}}) can be set up to be notified in case of any findings. Rules can target AWS Lambda or SNS.
 
 GuardDuty has a dedicated finding for Crypto Currency (mining?) attacks.
 
@@ -266,14 +266,14 @@ A risk score is associated with all vulnerabilities for prioritization.
 
 **AWS Config** helps with auditing and recording compliance of your AWS resources. It is recording configurations and changes over time.
 
-It can store the configuration data into S3 (then analyzed by <font color=#27D3F5>Athena</font>).
+It can store the configuration data into S3 (then analyzed by [Athena]({{< ref "12-databases/#athena" >}})).
 ##### What AWS Config can record (examples):
 
 - Unrestricted SSH access to the Security Groups (i.e. port open for everyone)
 - Public access to S3 buckets
 - ELB configuration changes over time
 
-It is using <font color=#27D3F5>SNS</font> (_check:_ <font color=#27D3F5>Cloud Integrations</font>) for sending notifications.
+It is using [SNS]({{< ref "16-cloud-integrations/#amazon-sns" >}}) (_check:_ [Cloud Integrations]({{< ref "16-cloud-integrations" >}})) for sending notifications.
 
 **AWS Config** is a per-region service but can be aggregated across regions and accounts.
 
@@ -309,13 +309,13 @@ Integrated dashboards showing current security and compliance status to quickly 
 _AWS Security Hub_
 ## Amazon Detective
 
-<font color=#27D3F5>GuardDuty</font>, <font color=#27D3F5>Macie</font> and <font color=#27D3F5>Security Hub</font> are used to identify potential security issues of findings.
+[GuardDuty]({{< ref "19-security-and-compliance/#guardduty" >}}), [Macie]({{< ref "19-security-and-compliance/#aws-macie" >}}) and [Security Hub]({{< ref "19-security-and-compliance/#aws-security-hub" >}}) are used to identify potential security issues of findings.
 
 Often security findings require deeper analysis to isolate the root cause and take action - it can be a complex process.
 
 **Amazon Detective** <font color=#f43f5e>analyzes, investigates and identifies the root cause of security issues or suspicious activities</font> (using Machine Learning).
 
-It is automatically collecting and processing events from <font color=#27D3F5>VPC Flow Logs</font>, <font color=#27D3F5>CloudTrail</font>, and <font color=#27D3F5>GuardDuty</font> and creating an unified view. It can produce visualizations with details and context to help <font color=#f43f5e>getting to the root cause.</font>
+It is automatically collecting and processing events from [VPC Flow Logs]({{< ref "18-vpc/#vpc-flow-logs" >}}), [CloudTrail]({{< ref "17-cloud-monitoring/#aws-cloudtrail" >}}), and [GuardDuty]({{< ref "19-security-and-compliance/#guardduty" >}}) and creating an unified view. It can produce visualizations with details and context to help <font color=#f43f5e>getting to the root cause.</font>
 ## AWS Abuse
 
 Report suspected AWS resources used to abusive or illegal purposes.
@@ -392,14 +392,14 @@ Access outside zone of trusts = findings.
 - Penetration Testing: https://aws.amazon.com/security/penetration-testing/
 ## >> References <<
 
-- <font color=#27D3F5>EC2</font>
-- <font color=#27D3F5>S3</font>
-- <font color=#27D3F5>Storage</font>
-- <font color=#27D3F5>Elastic Load Balancing</font>
-- <font color=#27D3F5>Cloud Monitoring</font>
-- <font color=#27D3F5>Databases</font>
-- <font color=#27D3F5>Other Compute Services</font>
-- <font color=#27D3F5>AWS Global Infrastructure</font>
+- [EC2]({{< ref "4-ec2" >}})
+- [S3]({{< ref "11-s3" >}})
+- [Storage]({{< ref "6-storage" >}})
+- [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
+- [Cloud Monitoring]({{< ref "17-cloud-monitoring" >}})
+- [Databases]({{< ref "12-databases" >}})
+- [Other Compute Services]({{< ref "13-other-compute-services" >}})
+- [AWS Global Infrastructure]({{< ref "15-aws-global-infrastructure" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

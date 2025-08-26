@@ -19,6 +19,10 @@ Disclaimer: _Content for educational purposes only, no rights reserved._
 ---
 ## Highlight 1
 
+**Internal Links:**
+
+[1. What is Cloud Computing]({{< ref "1-what-is-cloud-computing" >}})
+
 **Workflow:**
 
 1. Folder name: YYMMDD-postname

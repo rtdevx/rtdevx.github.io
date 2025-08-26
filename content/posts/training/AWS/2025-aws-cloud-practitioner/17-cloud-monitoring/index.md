@@ -58,7 +58,7 @@ CloudWatch Logs can collect logs from:
 - AWS Lambda - collection of logs from functions
 - CloudTrail based on filter
 - <font color=#10b981>CloudWatch log agents</font> - on EC2 machines or on-premises servers
-- <font color=#27D3F5>Route53</font> - DNS logs
+- [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}}) - DNS logs
 ### CloudWatch Logs for EC2 / on-premise
 
 <font color=#f43f5e>CloudWatch agent is required to be installed (and configured?) on EC2 instance 
@@ -164,8 +164,8 @@ Has an RSS feed that can be subscribed to.
 
 - <font color=#f1ef63>CloudWatch</font>
 	- Metrics - monitor the performance of AWS services and billing metrics
-	- Alarms - automate notification, perform <font color=#27D3F5>EC2</font> action, notify to <font color=#27D3F5>SNS</font> based on metric
-	- Logs - collects log files from EC2 instances, servers, <font color=#27D3F5>Lambda</font> functions
+	- Alarms - automate notification, perform [EC2]({{< ref "4-ec2" >}}) action, notify to [SNS]({{< ref "16-cloud-integrations/#amazon-sns" >}}) based on metric
+	- Logs - collects log files from EC2 instances, servers, [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) functions
 - <font color=#f1ef63>Events (EventBridge)</font> - react to events in AWS or trigger a rule on a schedule
 - <font color=#f1ef63>CloudTrail</font> - audit API calls made within your AWS account
 	- CloudTrail Insights - automated analysis of your CloudTrail Events

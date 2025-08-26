@@ -15,10 +15,10 @@ categories: AWS
 CloudFormation is a declarative way of outlining an AWS infrastructure.
 
 <font color=#f1ef63>Example:</font>
-- <font color=#27D3F5>Security Group</font>
-- Two <font color=#27D3F5>EC2</font> instances using this Security Group
-- <font color=#27D3F5>S3</font> Bucket
-- <font color=#27D3F5>Load Balancer</font> (ELB) in front
+- [Security Group]({{< ref "5-security-groups" >}})
+- Two [EC2]({{< ref "4-ec2" >}}) instances using this Security Group
+- [S3]({{< ref "11-s3" >}}) Bucket
+- [Load Balancer]({{< ref "9-elastic-load-balancing" >}}) (ELB) in front
 
 Then CloudFormation creates those resources <font color=#10b981>in the right order</font> and with the exact configuration that was specified (declared).
 

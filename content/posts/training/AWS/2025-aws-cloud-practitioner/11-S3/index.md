@@ -145,7 +145,7 @@ S3 > General purpose buckets (or other) > your-bucket > Properties > Static webs
 
 ![](./assets/AWS_S3_Static_Website_Hosting.png)
 
-<font color=#f43f5e>Although no HTTPS enabled!</font> - check "<font color=#27D3F5>AWS Certificate Manager (ACM)</font>" section in Security and Compliance on how to use ACM for SSL / TLS certificate management.
+<font color=#f43f5e>Although no HTTPS enabled!</font> - check "[AWS Certificate Manager (ACM)]({{< ref "19-security-and-compliance/#aws-certificate-manager-acm" >}})" section in Security and Compliance on how to use ACM for SSL / TLS certificate management.
 ## Amazon S3 - Versioning
 
 - Versioning can be enabled at the bucket level
@@ -307,8 +307,8 @@ _More:_ https://aws.amazon.com/storagegateway/file/s3/
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## >> References <<
 
-- <font color=#27D3F5>Storage</font>
-- <font color=#27D3F5>Security and Compliance</font>
+- [Storage]({{< ref "6-storage" >}})
+- [Security and Compliance]({{< ref "19-security-and-compliance" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

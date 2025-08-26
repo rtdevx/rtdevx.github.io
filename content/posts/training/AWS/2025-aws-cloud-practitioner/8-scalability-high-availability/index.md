@@ -21,8 +21,8 @@ categories: AWS
 	- Increasing the number of instances
 	- Implies Distributed Systems
 	- Very common for web applications or modern applications
-	- <font color=#27D3F5>Auto Scaling Groups</font>
-	- For Horizontal Scaling (increasing the number of instances) we use <font color=#27D3F5>Auto Scaling Group</font> and a <font color=#27D3F5>Load Balancer</font>
+	- [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
+	- For Horizontal Scaling (increasing the number of instances) we use [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}}) and a [Load Balancer]({{< ref "9-elastic-load-balancing" >}})
 ## High Availability
 
 - High Availability usually goes hand in hand with <font color=#f1ef63>horizontal scaling</font>
@@ -33,9 +33,8 @@ categories: AWS
 ---
 ## >> References <<
 
-- <font color=#27D3F5>Elastic Load Balancing</font>
-- <font color=#27D3F5>Auto Scaling Groups</font>
-
+- [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
+- [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

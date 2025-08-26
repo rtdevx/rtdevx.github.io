@@ -23,7 +23,7 @@ _AWS EC2 Auto Scaling : Step By Step Tutorial_
 - Scale out (add EC2 instances) to match an increased load
 - Scale in (remove EC2 instances) to match a decreased load
 - Ensure we have a minimum and maximum number of instances running
-- Automatically register new instances to the <font color=#27D3F5>Load Balancer</font>
+- Automatically register new instances to the [Load Balancer]({{< ref "9-elastic-load-balancing" >}})
 - Replace unhealthy instances
 - Cost Saving (only run at optimal capacity)
 
@@ -64,9 +64,8 @@ _AWS EC2 Auto Scaling : Step By Step Tutorial_
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## >> References <<
 
-- <font color=#27D3F5>Scalability & High Availability</font>
-- <font color=#27D3F5>Elastic Load Balancing</font>
-
+- [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
+- [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

@@ -138,7 +138,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2274"
+    "wordCount": "2281"
   }
   </script>
     
@@ -531,7 +531,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-19 00:00:00 &#43;0000 UTC">19 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2274 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
+      <time datetime="2025-08-19 00:00:00 &#43;0000 UTC">19 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2281 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
     
 
     
@@ -809,7 +809,8 @@
 </ul>
 </li>
 </ul>
-<p>Be ready to scale - use <font color=#27D3F5>AWS Auto Scaling</font>.</p>
+<p>Be ready to scale - use <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/">AWS Auto Scaling</a>
+.</p>
 <p>
 
 
@@ -825,11 +826,16 @@
 <em>Sample Reference Architecture for DDOS Protection in AWS</em></p>
 <h5 id="ddos-components-on-above-picture" class="relative group"><font color=#10b981>DDoS components on above picture:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ddos-components-on-above-picture" aria-label="Anchor">#</a></span></h5>
 <ul>
-<li><font color=#27D3F5>Route53</font> - Latency / Geolocation routing policies</li>
-<li><font color=#27D3F5>CloudFront</font> - to ensure data is cached at the edge</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/#route53">Route53</a>
+ - Latency / Geolocation routing policies</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/#amazon-cloudfront">CloudFront</a>
+ - to ensure data is cached at the edge</li>
 <li>Shield - see below section</li>
-<li><font color=#27D3F5>WAF</font> - optionally</li>
-<li><font color=#27D3F5>LB and Auto Scaling</font></li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#aws-waf">WAF</a>
+ - optionally</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/">Load Balancer</a>
+ and <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/">Auto Scaling</a>
+</li>
 </ul>
 <p><em>More about DDOS protection:</em> <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.html</a>
 </p>
@@ -1038,17 +1044,20 @@
 <p>Enabled with 1-click, no need to install any software.</p>
 <h5 id="input-data-includes" class="relative group">Input data includes: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#input-data-includes" aria-label="Anchor">#</a></span></h5>
 <ul>
-<li><font color=#27D3F5>CloudTrail Event Logs</font> - unusual API calls, unauthorized deployments
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#aws-cloudtrail">CloudTrail Event Logs</a>
+ - unusual API calls, unauthorized deployments
 <ul>
 <li>CloudTrail Management Events - create VPC subnet, create trail, &hellip;</li>
 <li>CloudTrail S3 Data Events - get object, list object, delete object, &hellip;</li>
 </ul>
 </li>
-<li><font color=#27D3F5>VPC Flow Logs</font> - unusual internal traffic, unusual IP addresses</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/#vpc-flow-logs">VPC Flow Logs</a>
+ - unusual internal traffic, unusual IP addresses</li>
 <li>DNS Logs - compromised EC2 instances sending encoded data within DNS queries</li>
 <li>Optional Features</li>
 </ul>
-<p>EventBridge <font color=#27D3F5>Cloud Monitoring</font> can be set up to be notified in case of any findings. Rules can target AWS Lambda or SNS.</p>
+<p>EventBridge <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/">Cloud Monitoring</a>
+ can be set up to be notified in case of any findings. Rules can target AWS Lambda or SNS.</p>
 <p>GuardDuty has a dedicated finding for Crypto Currency (mining?) attacks.</p>
 <p>
 
@@ -1090,14 +1099,17 @@
 <p>A risk score is associated with all vulnerabilities for prioritization.</p>
 <h2 id="aws-config" class="relative group">AWS Config <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-config" aria-label="Anchor">#</a></span></h2>
 <p><strong>AWS Config</strong> helps with auditing and recording compliance of your AWS resources. It is recording configurations and changes over time.</p>
-<p>It can store the configuration data into S3 (then analyzed by <font color=#27D3F5>Athena</font>).</p>
+<p>It can store the configuration data into S3 (then analyzed by <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#athena">Athena</a>
+).</p>
 <h5 id="what-aws-config-can-record-examples" class="relative group">What AWS Config can record (examples): <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-aws-config-can-record-examples" aria-label="Anchor">#</a></span></h5>
 <ul>
 <li>Unrestricted SSH access to the Security Groups (i.e. port open for everyone)</li>
 <li>Public access to S3 buckets</li>
 <li>ELB configuration changes over time</li>
 </ul>
-<p>It is using <font color=#27D3F5>SNS</font> (<em>check:</em> <font color=#27D3F5>Cloud Integrations</font>) for sending notifications.</p>
+<p>It is using <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/16-cloud-integrations/#amazon-sns">SNS</a>
+ (<em>check:</em> <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/16-cloud-integrations/">Cloud Integrations</a>
+) for sending notifications.</p>
 <p><strong>AWS Config</strong> is a per-region service but can be aggregated across regions and accounts.</p>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">AWS Config &gt; 1-click setup
 </code></pre><h2 id="aws-macie" class="relative group">AWS Macie <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-macie" aria-label="Anchor">#</a></span></h2>
@@ -1133,10 +1145,16 @@
 
 <em>AWS Security Hub</em></p>
 <h2 id="amazon-detective" class="relative group">Amazon Detective <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-detective" aria-label="Anchor">#</a></span></h2>
-<p><font color=#27D3F5>GuardDuty</font>, <font color=#27D3F5>Macie</font> and <font color=#27D3F5>Security Hub</font> are used to identify potential security issues of findings.</p>
+<p><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#guardduty">GuardDuty</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#aws-macie">Macie</a>
+ and <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#aws-security-hub">Security Hub</a>
+ are used to identify potential security issues of findings.</p>
 <p>Often security findings require deeper analysis to isolate the root cause and take action - it can be a complex process.</p>
 <p><strong>Amazon Detective</strong> <font color=#f43f5e>analyzes, investigates and identifies the root cause of security issues or suspicious activities</font> (using Machine Learning).</p>
-<p>It is automatically collecting and processing events from <font color=#27D3F5>VPC Flow Logs</font>, <font color=#27D3F5>CloudTrail</font>, and <font color=#27D3F5>GuardDuty</font> and creating an unified view. It can produce visualizations with details and context to help <font color=#f43f5e>getting to the root cause.</font></p>
+<p>It is automatically collecting and processing events from <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/#vpc-flow-logs">VPC Flow Logs</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#aws-cloudtrail">CloudTrail</a>
+, and <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#guardduty">GuardDuty</a>
+ and creating an unified view. It can produce visualizations with details and context to help <font color=#f43f5e>getting to the root cause.</font></p>
 <h2 id="aws-abuse" class="relative group">AWS Abuse <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-abuse" aria-label="Anchor">#</a></span></h2>
 <p>Report suspected AWS resources used to abusive or illegal purposes.</p>
 <ul>
@@ -1222,14 +1240,22 @@
 </ul>
 <h2 id="-references-" class="relative group">&raquo; References &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-references-" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#27D3F5>EC2</font></li>
-<li><font color=#27D3F5>S3</font></li>
-<li><font color=#27D3F5>Storage</font></li>
-<li><font color=#27D3F5>Elastic Load Balancing</font></li>
-<li><font color=#27D3F5>Cloud Monitoring</font></li>
-<li><font color=#27D3F5>Databases</font></li>
-<li><font color=#27D3F5>Other Compute Services</font></li>
-<li><font color=#27D3F5>AWS Global Infrastructure</font></li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/">Storage</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/">Elastic Load Balancing</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/">Cloud Monitoring</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/">Databases</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/">Other Compute Services</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/">AWS Global Infrastructure</a>
+</li>
 </ul>
 <h2 id="-table-of-contents-clf-c02-" class="relative group">&raquo; Table of contents (CLF-C02) &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-table-of-contents-clf-c02-" aria-label="Anchor">#</a></span></h2>
 <table>

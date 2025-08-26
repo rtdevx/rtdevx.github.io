@@ -32,7 +32,7 @@ _AWS EC2 AMI Tutorial_
 
 - Start EC2 Instance and customize it
 - Stop the instance (for data integrity)
-- Build AMI - this will also create <font color=#27D3F5>EBS snapshots</font>
+- Build AMI - this will also create [EBS Sapshots]({{< ref "6-storage/#ebs-snapshots" >}})
 - Launch instances from other AMI's
 
 ```AWSConsole
@@ -54,8 +54,8 @@ Automate the creation, maintain, validate the build of EC2 AMI's. Can run on a s
 {{< icon "youtube" >}} _Stephane Maarek's AWS playlists on YouTube:_ https://www.youtube.com/@StephaneMaarek/playlists
 ## >> References <<
 
-- <font color=#27D3F5>EC2</font>
-- <font color=#27D3F5>Storage</font>
+- [EC2]({{< ref "4-ec2" >}})
+- [Storage]({{< ref "6-storage" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

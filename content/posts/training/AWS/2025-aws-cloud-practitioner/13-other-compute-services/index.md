@@ -34,7 +34,7 @@ ECS allows launching Docker containers on AWS. It is an orchestrator.
 
 - You must provision and maintain the infrastructure (EC2 instances)
 - AWS takes care of starting / stopping containers
-- Has integrations with the <font color=#27D3F5>Application Load Balancer</font>
+- Has integrations with the [Application Load Balancer]({{< ref "9-elastic-load-balancing/#3-kinds-of-load-balancers-offered-by-aws" >}})
 
 ![](./assets/AWS_ECS_Solution.png)
 ## Fargate
@@ -77,7 +77,7 @@ Kubernetes is an open-source system for management, deployment and scaling of co
 	- C# (.NET Core) / PowerShell
 	- Ruby
 	- Custom Runtime API (community supported, example Rust or Golang)
-- Easy monitoring through <font color=#27D3F5>AWS CloudWatch</font>
+- Easy monitoring through [AWS CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}})
 - Easy to get more resources per functions (up to 10 GB of RAM)
 - Increasing RAM will also improve CPU and Network
 
@@ -150,7 +150,7 @@ Lambda Container Image - although ECS / Fargate is preferred for running Docker 
 - ECS Documentation: https://docs.aws.amazon.com/ecs/
 ## >> References <<
 
-- <font color=#27D3F5>EC2</font>
+- [EC2]({{< ref "4-ec2" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

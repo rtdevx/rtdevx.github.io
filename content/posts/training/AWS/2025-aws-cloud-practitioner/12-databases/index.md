@@ -85,7 +85,7 @@ Aurora and RDS > Create a database
 	- Can create up to 15 replicas
 	- Data is only written to the main DB
 - Multi-AZ
-	- Failover in case of AZ outage (<font color=#27D3F5>High Availability</font>)
+	- Failover in case of AZ outage ([High-Availability]({{< ref "8-scalability-high-availability/#high-availability" >}}))
 	- Data only read/written to the main DB
 	- Can only have 1 AZ as a failover
 - Multi-Region
@@ -106,7 +106,7 @@ Aurora and RDS > Create a database
 _More:_ https://docs.aws.amazon.com/elasticache/
 ### <font color=#f1ef63>DynamoDB</font>
 
-- Fully managed, <font color=#27D3F5>Highly Available</font> with replication across 3AZ
+- Fully managed, [Highly Available]({{< ref "8-scalability-high-availability/#high-availability" >}}) with replication across 3AZ
 - <font color=#10b981>No-SQL database</font> - not a relational DB
 - <font color=#10b981>Scales to massive workloads, distributed, "serverless"</font>
 - Millions of requests per second, trillions of row, 100s TB of storage
@@ -152,7 +152,7 @@ DAX is only used for DynamoDB where Elasticache can be used for other databases.
 - <font color=#f1ef63>Use cases:</font> data processing, machine learning, web indexing, big data
 ### <font color=#f1ef63>Athena</font>
 
-- <font color=#10b981>Serverless</font> query service to perform analytics against <font color=#27D3F5>S3</font> objects
+- <font color=#10b981>Serverless</font> query service to perform analytics against [S3]({{< ref "11-s3" >}}) objects
 - <font color=#10b981>Uses standard SQL language</font> to query the files
 - Supports CSV, JSON, ORD, Avro, Parquet
 - Pricing: $5 per TB of data scanned
