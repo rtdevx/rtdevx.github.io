@@ -5,149 +5,189 @@
     
       <url>
             <loc>http://localhost:1313/posts/</loc>
-            <lastmod>2025-08-19T00:00:00+00:00</lastmod>
+            <lastmod>2025-08-26T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
             <loc>http://localhost:1313/</loc>
+            <lastmod>2025-08-26T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/24-aws-architecting-cosystem/</loc>
+            <lastmod>2025-08-24T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/23-other-services/</loc>
+            <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/22-advanced-identity/</loc>
+            <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/21-account-management-and-billing/</loc>
+            <lastmod>2025-08-21T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/20-machine-learning/</loc>
+            <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/</loc>
             <lastmod>2025-08-19T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/about/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/</loc>
             <lastmod>2025-08-18T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/16-cloud-integrations/</loc>
-            <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/</loc>
+            <lastmod>2025-08-17T00:00:00+00:00</lastmod>
           </url>
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       <url>
-            <loc>http://localhost:1313/training/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/16-cloud-integrations/</loc>
             <lastmod>2025-08-16T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/</loc>
             <lastmod>2025-08-15T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/14-deployments/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/14-deployments/</loc>
             <lastmod>2025-08-14T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/</loc>
             <lastmod>2025-08-13T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/12-databases/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/</loc>
             <lastmod>2025-08-12T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/11-s3/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/</loc>
             <lastmod>2025-08-11T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/</loc>
             <lastmod>2025-08-10T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/</loc>
             <lastmod>2025-08-09T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/8-scalability-high-availability/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/8-scalability-high-availability/</loc>
             <lastmod>2025-08-08T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/7-ami/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/7-ami/</loc>
             <lastmod>2025-08-07T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/6-storage/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/</loc>
             <lastmod>2025-08-06T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/5-security-groups/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/5-security-groups/</loc>
             <lastmod>2025-08-05T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/4-ec2/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/</loc>
             <lastmod>2025-08-04T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/3-budget/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/3-budget/</loc>
             <lastmod>2025-08-03T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/2-iam/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/</loc>
             <lastmod>2025-08-02T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/training/aws/2025-aws-cloud-practitioner/1-what-is-cloud-computing/</loc>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/1-what-is-cloud-computing/</loc>
             <lastmod>2025-08-01T00:00:00+00:00</lastmod>
           </url>
     
@@ -175,6 +215,13 @@
     
       <url>
             <loc>http://localhost:1313/posts/productivity/2025/250717-7-studying-techniques/</loc>
+            <lastmod>2025-07-17T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/about/</loc>
             <lastmod>2025-07-17T00:00:00+00:00</lastmod>
           </url>
     

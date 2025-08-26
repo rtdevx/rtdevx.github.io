@@ -361,7 +361,7 @@ Response times:
 - <font color=#f1ef63>Service Quotas:</font> notify you when you're close to service quota threshold
 
 ---
-## Sources
+## >> Sources <<
 
 - AWS Organizations: https://docs.aws.amazon.com/organizations
 - Best Practices for Organizational Units with AWS Organizations: https://aws.amazon.com/blogs/mt/best-practices-for-organizational-units-with-aws-organizations/
@@ -370,12 +370,23 @@ Response times:
 - AWS Pricing Calculator: https://calculator.aws
 
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
-## References
+## >> References <<
 
 - <font color=#27D3F5>IAM</font>
 
----
-### Disclaimer
+## >> Table of contents (CLF-C02) <<
+
+|                                                                         |                                                                                     |                                                                                       |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [1. What is Cloud Computing]({{< ref "1-what-is-cloud-computing" >}})   | [2. IAM]({{< ref "2-iam" >}})                                                       | [3. Budget]({{< ref "3-budget" >}})                                                   |
+| [4. Ec2]({{< ref "4-ec2" >}})                                           | [5. Security Groups]({{< ref "5-security-groups" >}})                               | [6. Storage]({{< ref "6-storage" >}})                                                 |
+| [7. AMI]({{< ref "7-ami" >}})                                           | [8. Scalability & High Availability]({{< ref "8-scalability-high-availability" >}}) | [9. Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})                   |
+| [10. Auto Scaling Group]({{< ref "10-auto-scaling-groups" >}})          | [11. S3]({{< ref "11-s3" >}})                                                       | [12. Databases]({{< ref "12-databases" >}})                                           |
+| [13. Other Compute Services]({{< ref "13-other-compute-services" >}})   | [14. Deployments]({{< ref "14-deployments" >}})                                     | [15. AWS Global Infrastructure]({{< ref "15-aws-global-infrastructure" >}})           |
+| [16. Cloud Integrations]({{< ref "16-cloud-integrations" >}})           | [17. Cloud Monitoring]({{< ref "17-cloud-monitoring" >}})                           | [18. VPC]({{< ref "18-vpc" >}})                                                       |
+| [19. Security and Compliance]({{< ref "19-security-and-compliance" >}}) | [20. Machine Learning]({{< ref "20-machine-learning" >}})                           | [21. Account Management and Billing]({{< ref "21-account-management-and-billing" >}}) |
+| [22. Advanced Identity]({{< ref "22-advanced-identity" >}})             | [23. Other Services]({{< ref "23-other-services" >}})                               | [24. AWS Architecting & Ecosystem]({{< ref "24-aws-architecting-cosystem" >}})        |
+## >> Disclaimer <<
 
 {{< alert >}}
 _Disclaimer: Content for educational purposes only, no rights reserved._
