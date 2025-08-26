@@ -31,7 +31,7 @@ categories: AWS
 _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 ### 1. Operational Excellence
 
-##### **Operational excellence** includes the ability to run and monitor systems to deliver business value and continually improve supporting processes and procedures.
+##### **Operational excellence** includes the ability to run and monitor systems to deliver business value and continually improve supporting processes and procedures.<br />
 
 ##### <font color=#f1ef63>Design Principles:</font>
 
