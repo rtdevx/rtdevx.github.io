@@ -2,39 +2,181 @@
 title: AWS Architecting & Ecosystem
 date: 2025-08-24
 description: AWS Architecting & Ecosystem
-summary: AWS Architecting & Ecosystem...
-draft: true
+summary: AWS Architecting & Ecosystem, Well-Architected Framework, Cloud Adoption Framework...
+draft: false
 tags:
   - CLF-C02
 categories: AWS
 ---
-## Practitioner Template
+## Well-Architected Framework
 
-xxx
+- Stop guessing capacity (use <font color=#27D3F5>Auto Scaling</font>)
+- Test systems at production scale
+- Automate!
+- Allow for evolutionary architectures
 
----
+<font color=#f1ef63>Scalability:</font> vertical & horizontal
+<font color=#f1ef63>Disposable Resources:</font> servers should be disposable & easily configured
+<font color=#f1ef63>Automation:</font> serverless, Infrastructure as a Service, Auto Scaling...
 
-{{< youtube DOpx2C5F7cs >}}
-_AWS EC2 AMI Tutorial_
+<font color=#f1ef63>Loose coupling:</font>
+- _Monolith applications_ that do more and more over time become bigger
+- Break it down into smaller, "_loosely coupled_" components
+- <font color=#f43f5e>A change or failure in one component should not cascade to other components</font>
 
----
+<font color=#f1ef63>Services, not Servers:</font>
+- Don't just use EC2
+- Use managed services, databases, serverless, etc...
 
-## Practitioner Template
+_AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
+### 1. Operational Excellence
 
-```AWSConsole
-EC2 > Instances > Select an EC2 instance > Actions > Image and Templates > Create image
-```
+##### **Operational excellence** includes the ability to run and monitor systems to deliver business value and continually improve supporting processes and procedures.
+
+##### <font color=#f1ef63>Design Principles:</font>
+
+- Perform Operations as Code - IaS
+- Frequent, small, reversible changes - reverse in case of failure
+- Refine operations procedures frequently - ensure team members are familiar with it
+- Anticipate failure
+- Learn from the failures
+- Use managed services - to reduce operational burden
+- Implement observability for actionable insights - performance, reliability, cost, ...
+### 2. Security
+##### **Security** includes an ability to protect information, systems and assets while delivering business value through risk assessments and mitigation strategies.
+
+##### <font color=#f1ef63>Design Principles:</font>
+
+- Implement a strong identity foundation - centralize privilege management and reduce (or eliminate) reliance on long-term credentials - _Principle of least privilege_ - <font color=#27D3F5>IAM</font>
+- Enable traceability - integrate logs and metrics with systems to automatically respond and take action
+- <font color=#f43f5e>Apply security at all layers</font> - edge network, VPC, subnet, load balancer, (every) EC2 instance, operating system, application
+- Automate security best practices
+- Protect data in transit and at rest - encryption, tokenization and access control
+- Keep people away from data - reduce or eliminate the need for direct access or manual processing of data
+- Prepare for security events - run incident response simulations and use tools with automation to increase your speed of detection, investigation and recovery
+### 3. Reliability
+
+##### **Reliability** is an ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand and mitigate disruptions such as misconfigurations or transient network issues.
+
+##### <font color=#f1ef63>Design Principles:</font>
+
+- Test recovery procedures - use automation to simulate different failures or to recreate scenarios that led to failures before
+- Automatically recover from failure - anticipate and remediate failures before they occur
+- Scale horizontally to increase aggregate system availability - distribute requests across multiple, smaller resources to ensure that they don't share a common point of failure
+- Stop guessing capacity - maintain the optimal level to satisfy demand without over or under provisioning
+- Manage change in automation - use automation to make changes to infrastructure
+### 4. Performance Efficiency
+##### **Performance Efficiency** includes ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
+##### <font color=#f1ef63>Design Principles:</font>
+
+- Democratize advanced technologies - advance technologies become services and hence you can focus more on product development
+- <font color=#10b981>Go Global in minutes</font> - easy deployment in multiple regions
+- Use <font color=#10b981>serverless</font> architecture - avoid the burden of managing servers
+- Experiment more often - easy to carry out comparative testing
+- Mechanical sympathy - be aware of all AWS services
+### Cost Optimization
+
+##### **Cost Optimization** includes ability to run systems to deliver business value at the lowest price point.
+
+##### <font color=#f1ef63>Design Principles:</font>
+
+- Adopt a consumption mode - pay only for what you use
+- Measure overall efficiency - use CloudWatch
+- Stop spending money on data center operations - AWS does the infrastructure part and enables customer to focus on organization projects
+- Analyze and attribute expenditure - accurate identification of system usage and costs helps to measure <font color=#10b981>Return on Investment (ROI)</font> - <font color=#f43f5e>make sure to use tags!</font>
+- Use managed and application level services to reduce cost of ownership - as managed services operate at cloud scale then can offer a lower cost per transaction or service
+### 6. Sustainability
+##### **Sustainability** focuses on minimizing the environmental impact of running cloud workloads.
+##### <font color=#f1ef63>Design Principles:</font>
+
+- Understand your impact - establish performance indicators, evaluate improvements
+- Establish sustainability goals - set long-term goals for each workload, model Return on Investment (ROI)
+- Maximize utilization = right size each workload to maximize the energy efficiency of the underlying hardware and minimize idle resources
+- Anticipate and adopt new, more efficient hardware and software offerings - and design for flexibility to adopt new technologies over time
+- Use managed services - shared services reduce the amount of infrastructure
+## AWS Well-Architected Tool
+
+Free tool to review your architecture against the 6 pillars of Well-Architected Framework and adopt architectural best practices.
+## AWS Customer Carbon Footprint Tool
+
+Tool to track, measure, review and forecast the <font color=#10b981>carbon emissions</font> generated from your AWS usage.
+## <font color=#f43f5e>AWS Cloud Adoption Framework</font> (CAF)
+
+Helps you build and then execute a comprehensive plan for your digital transformation through innovative use of AWS.
+
+Created by AWS Professionals by taking advantage of AWS Best Practices and lessons learned from 1000s of customers.
+##### **AWS CAF** groups it's capabilities in six perspectives:
+
+- <font color=#10b981>Business</font>
+	- Business perspective helps to ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes
+- <font color=#10b981>People</font>
+	- Servers a **bridge between technology and business**, accelerating the cloud journey to help organizations more rapidly evolve to a culture of continuous growth, learning and where change becomes BAU
+- <font color=#10b981>Governance</font>
+	- Helps orchestrating cloud initiatives while maximizing organizational benefits and minimizing transformation related risks
+- <font color=#10b981>Platform</font>
+	- Helps building an enterprise-grade, scalable, hybrid cloud platform and modernize existing workloads
+- <font color=#10b981>Security</font>
+	- Helps achieving the confidentiality, integrity and availability of the data and cloud workflows
+- <font color=#10b981>Operations</font>
+	- Helps ensuring that your cloud services are delivered at a level that meets the needs of your business
+
+	![](./assets/AWS_CAF.png)
+	_AWS Cloud Adoption Framework (CAF)_
+### AWS CAF - Transformation Domains
+
+- <font color=#10b981>Technology</font> - using the cloud to migrate and modernize legacy infrastructure, applications, data and analytics platforms
+- <font color=#10b981>Process</font> - digitizing, automating and optimizing your business operations
+- <font color=#10b981>Organization</font> - reimagining your operating model
+### AWS CAF - Transformation Phases
+
+- <font color=#10b981>Envision</font> - demonstrate how the Cloud will accelerate business outcomes
+- <font color=#10b981>Align</font> - identify capability gaps across the 6 AWS CAF Perspectives which results in an Action Plan
+- <font color=#10b981>Launch</font> - build and deliver pilot initiatives in production and demonstrate incremental business value
+- <font color=#10b981>Scale</font> - expand pilot initiatives to the desired scale while realizing the desired business benefits
+## AWS Right Sizing
+
+EC2 has many instance types. Right sizing is the process of matching instance types and sizes to your workload.
+
+**Scaling up is easy so always start small...**
+## AWS Ecosystem - Free resources
+
+- AWS Blogs: https://aws.amazon.com/blogs/aws/ 
+- AWS Forums (community): https://forums.aws.amazon.com/index.jspa
+- AWS Whitepapers & Guides: https://aws.amazon.com/whitepapers
+- AWS Solutions Library (formerly Quick Starts): https://aws.amazon.com/solutions/
+	- Vetted Technology Solutions for the AWS Cloud
+	- Example: live streaming on AWS https://aws.amazon.com/solutions/implementations/live-streaming-on-aw
+## AWS Professional Services and Partner Network
+
+##### **APN:** AWS Partner Network.
+
+- <font color=#f1ef63>APN Technology Partners:</font> providing hardware, connectivity, software
+- <font color=#f1ef63>APN Consulting Partners:</font> professional services firm to help build on AWS
+- <font color=#f1ef63>APN Training Partners:</font> learning AWS
+## AWS IQ
+
+Engage and pay AWS Certified 3rd party experts for on-demand project work.
+## AWS re:Post
+
+AWS Forums.
+
+AWS re:Post is not intended to be used for questions that are time-sensitive.
+
+[Discover AWS Official Knowledge Center Articles | AWS re:Post](https://repost.aws/knowledge-center)
 
 ---
 ## Sources
 
-- [What is Image Builder](https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html)
+- AWS Well-Architected: https://aws.amazon.com/architecture/well-architected/
+- AWS re:Post forums: https://repost.aws/knowledge-center
 
-{{< icon "youtube" >}} _Stephane Maarek's AWS playlists on YouTube:_ https://www.youtube.com/@StephaneMaarek/playlists
-## References
+- AWS Blogs: https://aws.amazon.com/blogs/aws/ 
+- AWS Forums (community): https://forums.aws.amazon.com/index.jspa
+- AWS Whitepapers & Guides: https://aws.amazon.com/whitepapers
+- AWS Solutions Library (formerly Quick Starts): https://aws.amazon.com/solutions/
+	- Vetted Technology Solutions for the AWS Cloud
+	- Example: live streaming on AWS https://aws.amazon.com/solutions/implementations/live-streaming-on-aw
 
-- <font color=#27D3F5>EC2</font>
-- <font color=#27D3F5>Storage</font>
 ---
 ### Disclaimer
 
