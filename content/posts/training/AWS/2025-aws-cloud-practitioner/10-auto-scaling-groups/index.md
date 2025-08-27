@@ -46,8 +46,8 @@ _AWS EC2 Auto Scaling : Step By Step Tutorial_
 - **Manual Scaling** - update the size of an ASG manually
 - **Dynamic Scaling** - respond to changing demand
 	- **Simple / Step Scaling**
-		- When a CloudWatch alarm is triggered (i.e. CPU > 70%) then add 2 instances
-		- When a Cloud Watch alarm is triggered (i.e. CPU < 30%) then remove 1 instance
+		- When a [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}}) alarm is triggered (i.e. CPU > 70%) then add 2 instances
+		- When a [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}}) alarm is triggered (i.e. CPU < 30%) then remove 1 instance
 	- **Target Tracking Scaling**
 		- Example: Average ASG CPU to stay around 40%
 	- **Scheduled Scaling**
