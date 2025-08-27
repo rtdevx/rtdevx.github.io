@@ -8,7 +8,7 @@ tags:
   - CLF-C02
 categories: AWS
 ---
-**Auto Scaling Group** contains a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management.
+**Auto Scaling Group** contains a collection of [EC2 instances]({{< ref "4-ec2" >}}) that are treated as a logical grouping for the purposes of automatic scaling and management.
 
 **Auto Scaling Group** uses **Auto Scaling** features such as **health check replacements** and **scaling policies**.
 

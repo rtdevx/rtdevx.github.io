@@ -25,9 +25,9 @@ _AWS Elastic Load Balancing Introduction_
 - Seamlessly handle failures of downstream instances
 - Do regular health checks to the instances
 - SSL termination
-- High Availability across Availability Zones
+- [High Availability]({{< ref "8-scalability-high-availability/#high-availability" >}}) across Availability Zones
 
-- ELB is a managed Load Balancer
+- [ELB]({{< ref "9-elastic-load-balancing" >}}) is a managed Load Balancer
 	- AWS is responsible for upgrades, maintenance and High Availability
 	- AWS provides only a few configuration items
 ## 3 kinds of Load Balancers offered by AWS
