@@ -10,17 +10,17 @@ categories: AWS
 ---
 ## AWS Certified Cloud Practitioner
 
-The AWS Certified Cloud Practitioner validates foundational, high-level understanding of AWS Cloud, services, and terminology.  This is a good starting point on the AWS Certification journey...
+The **AWS Certified Cloud Practitioner** validates foundational, high-level understanding of AWS Cloud, services, and terminology.  This is a good starting point on the AWS Certification journey...
 
-Official website for AWS Certified Cloud Practitioner: [AWS Certified Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)
+_Official website for AWS Certified Cloud Practitioner:_ [AWS Certified Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)
 
 _Exam guide:_ https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf
 ### Content domains and weightings
 
-- Domain 1: Cloud Concepts (24% of scored content)
-- Domain 2: Security and Compliance (30% of scored content)
-- Domain 3: Cloud Technology and Services (34% of scored content)
-- Domain 4: Billing, Pricing, and Support (12% of scored content)
+- Domain 1: **Cloud Concepts** (<font color=#10b981>24%</font> of scored content)
+- Domain 2: **Security and Compliance** (<font color=#10b981>30%</font> of scored content)
+- Domain 3: **Cloud Technology and Services** (<font color=#10b981>34%</font> of scored content)
+- Domain 4: **Billing, Pricing, and Support** (<font color=#10b981>12%</font> of scored content)
 ### Exam Prep Official Questions Set
 
 - https://skillbuilder.aws/
