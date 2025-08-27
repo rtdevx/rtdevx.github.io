@@ -25,9 +25,9 @@ categories: AWS
 	- For Horizontal Scaling (increasing the number of instances) we use [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}}) and a [Load Balancer]({{< ref "9-elastic-load-balancing" >}})
 ## High Availability
 
-- High Availability usually goes hand in hand with <font color=#f1ef63>horizontal scaling</font>
+- **High Availability** usually goes hand in hand with <font color=#f1ef63>horizontal scaling</font>
 - <font color=#f1ef63>High Availability means running application / infrastructure in at least 2 Availability Zones</font>
-- Goal of High Availability is to survive a data center loss / disaster
+- Goal of **High Availability** is to survive a data center loss / disaster
 ##### <font color=#10b981>High Availability is achieved by running Auto Scaling Groups (ASG) as well as Load Balancer in multi-AZ mode.</font>
 
 ---

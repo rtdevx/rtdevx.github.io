@@ -655,7 +655,8 @@
 <li>They control how traffic is allowed in or out of our EC2 instances</li>
 <li>Security Groups <strong>only contain allow rules</strong></li>
 <li>Security Groups rules <font color=#10b981>can reference an IP or another Security Group</font></li>
-<li>Security Groups are acting as a &ldquo;<em>firewall</em>&rdquo; for EC2 instances</li>
+<li>Security Groups are acting as a &ldquo;<em>firewall</em>&rdquo; for <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
+ instances</li>
 </ul>
 <hr>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -675,7 +676,7 @@
 <li><font color=#f1ef63>Can be attached to multiple instances</font></li>
 <li><font color=#f1ef63>Locked down to a region / VPC combination</font></li>
 <li>Lives &ldquo;outside&rdquo; of an EC2 instance - if traffic is blocked, EC2 won&rsquo;t see it</li>
-<li>It&rsquo;s a good practice to maintain one separate SG for SSH access</li>
+<li><font color=#10b981>It&rsquo;s a good practice to maintain one separate SG for SSH access</font></li>
 <li><font color=#f1ef63>If application is not accessible (time out) then it&rsquo;s a Security Group issue</font></li>
 <li><font color=#f1ef63>If application gives a &ldquo;connection refused&rdquo; error then it&rsquo;s an application error or it&rsquo;s not launched</font></li>
 <li>All inbound traffic is <font color=#f43f5e>blocked</font> by default</li>

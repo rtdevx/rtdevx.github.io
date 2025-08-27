@@ -140,7 +140,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "387"
+    "wordCount": "409"
   }
   </script>
     
@@ -533,7 +533,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-07 00:00:00 &#43;0000 UTC">7 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>387 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+      <time datetime="2025-08-07 00:00:00 &#43;0000 UTC">7 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>409 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
     
 
     
@@ -654,6 +654,15 @@
     </li>
     <li><a href="#steps-to-build-an-ami">Steps to build an AMI</a></li>
     <li><a href="#ec2-image-builder">EC2 Image Builder</a></li>
+    <li><a href="#summary">Summary</a>
+      <ul>
+        <li>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#-sources-">&raquo; Sources &laquo;</a></li>
     <li><a href="#-references-">&raquo; References &laquo;</a></li>
     <li><a href="#-table-of-contents-clf-c02-">&raquo; Table of contents (CLF-C02) &laquo;</a></li>
@@ -668,7 +677,8 @@
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <h2 id="what-is-amazon-ec2-ami" class="relative group">What is Amazon EC2 AMI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-is-amazon-ec2-ami" aria-label="Anchor">#</a></span></h2>
-<p>AMI are a customization of an EC2 instance.</p>
+<p>AMI are a customization of an <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2 instance</a>
+.</p>
 <ul>
 <li>Custom software, configuration, etc. can be added</li>
 <li>Faster boot / configuration time because all your software is pre-packaged</li>
@@ -697,9 +707,18 @@
 </ul>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">EC2 &gt; Instances &gt; Select an EC2 instance &gt; Actions &gt; Image and Templates &gt; Create image
 </code></pre><h2 id="ec2-image-builder" class="relative group">EC2 Image Builder <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ec2-image-builder" aria-label="Anchor">#</a></span></h2>
-<p>EC2 Image Builder is a fully managed AWS service that helps you to automate the creation, management and deployment of customized, secure and up-to-date server images.</p>
+<p><strong>EC2 Image Builder</strong> is a fully managed AWS service that helps you to automate the creation, management and deployment of customized, secure and up-to-date server images.</p>
 <p>Custom images can be created via AWS Console, AWS CLI or API.</p>
 <p>Automate the creation, maintain, validate the build of EC2 AMI&rsquo;s. Can run on a schedule and can be distributed to multiple AWS Regions.</p>
+<h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
+<h5 id="ami" class="relative group">AMI <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ami" aria-label="Anchor">#</a></span></h5>
+<ul>
+<li>Create ready-to-use EC2 instances with own customizations</li>
+</ul>
+<h5 id="ec2-image-builder-1" class="relative group">EC2 Image Builder <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ec2-image-builder-1" aria-label="Anchor">#</a></span></h5>
+<ul>
+<li>automatically build, test and distribute AMI&rsquo;s</li>
+</ul>
 <hr>
 <h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>
 <ul>

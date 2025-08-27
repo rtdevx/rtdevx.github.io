@@ -14,7 +14,7 @@ categories: AWS
 - They control how traffic is allowed in or out of our EC2 instances
 - Security Groups **only contain allow rules**
 - Security Groups rules <font color=#10b981>can reference an IP or another Security Group</font>
-- Security Groups are acting as a "_firewall_" for EC2 instances
+- Security Groups are acting as a "_firewall_" for [EC2]({{< ref "4-ec2" >}}) instances
 
 ---
 
@@ -32,7 +32,7 @@ categories: AWS
 - <font color=#f1ef63>Can be attached to multiple instances</font>
 - <font color=#f1ef63>Locked down to a region / VPC combination</font>
 - Lives "outside" of an EC2 instance - if traffic is blocked, EC2 won't see it
-- It's a good practice to maintain one separate SG for SSH access
+- <font color=#10b981>It's a good practice to maintain one separate SG for SSH access</font>
 - <font color=#f1ef63>If application is not accessible (time out) then it's a Security Group issue</font>
 - <font color=#f1ef63>If application gives a "connection refused" error then it's an application error or it's not launched</font>
 - All inbound traffic is <font color=#f43f5e>blocked</font> by default

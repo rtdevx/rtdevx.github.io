@@ -16,7 +16,7 @@ categories: AWS
 - Log in as root to AWS Console
 - Click on your user in the top right corner, select an account
 - Scroll down to "_IAM user and role access to Billing information_"
-- Activate IAM access
+- Activate [IAM]({{< ref "2-iam" >}}) access
 
 This will allow access to billing information for IAM users that are in _Administrators_ group.
 

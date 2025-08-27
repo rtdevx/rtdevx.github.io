@@ -107,11 +107,9 @@
     <meta property="article:published_time" content="2025-08-02T00:00:00+00:00">
     <meta property="article:modified_time" content="2025-08-02T00:00:00+00:00">
     <meta property="article:tag" content="CLF-C02">
-    <meta property="og:image" content="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover.jpg">
 
   
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover.jpg">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Identity and Access management">
   <meta name="twitter:description" content="Identity and Access management">
 
@@ -571,66 +569,6 @@
         </div>
       
       
-        <div class="prose">
-          
-          
-          
-          
-
-
-
-
-
-
-
-
-  
-    <picture
-      class="mb-6 rounded-md"
-      
-    >
-      
-      
-      
-      
-        <source
-          
-            srcset="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover_hu_cc6ece466e64da09.webp 330w,http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover_hu_e5274fd1bb701293.webp 660w
-            
-              ,http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover_hu_8ed43a7e4ca6b3ce.webp 1024w
-            
-            
-              ,http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover_hu_7fa500a82775c738.webp 1320w
-            "
-          
-          sizes="100vw"
-          type="image/webp"
-        />
-      
-      <img
-        width="4365"
-        height="2549"
-        class="mb-6 rounded-md"
-        
-        
-        
-          src="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover_hu_3800e623921bcbb.jpg" srcset="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover_hu_3a726d17f3378b50.jpg 330w,http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover_hu_3800e623921bcbb.jpg 660w
-          
-            ,http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover_hu_6a32d2662e0ab1ac.jpg 1024w
-          
-          
-            ,http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/cover_hu_48905416c28cb322.jpg 1320w
-          "
-          sizes="100vw"
-        
-      />
-    </picture>
-  
-
-
-          
-        </div>
-      
     </header>
     <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
       
@@ -656,8 +594,13 @@
     <li><a href="#mfa">MFA</a></li>
     <li><a href="#accessing-aws">Accessing AWS</a>
       <ul>
+        <li>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
         <li><a href="#creating-access-key">Creating Access Key</a></li>
-        <li><a href="#configuring-aws-cli-with-the-new-access-key">Configuring AWS CLI with the new access key</a></li>
+        <li><a href="#configuring-aws-cli-with-the-new-access-key"><font color=#f1ef63>Configuring AWS CLI with the new access key</font></a></li>
         <li><a href="#iam-roles-for-services">IAM roles for Services</a>
           <ul>
             <li><a href="#create-aws-service-role">Create AWS Service Role</a></li>
@@ -665,8 +608,13 @@
         </li>
       </ul>
     </li>
-    <li><a href="#iam-security-tools">IAM Security Tools</a></li>
-    <li><a href="#iam-beset-practices">IAM Beset Practices</a></li>
+    <li><a href="#iam-security-tools"><font color=#f1ef63>IAM Security Tools</font></a>
+      <ul>
+        <li><a href="#iam-credentials-report-account-level">IAM Credentials Report (account-level)</a></li>
+        <li><a href="#iam-access-advisor-user-level">IAM Access Advisor (user-level)</a></li>
+      </ul>
+    </li>
+    <li><a href="#iam-beset-practices"><font color=#f1ef63>IAM Beset Practices</font></a></li>
     <li><a href="#shared-responsibility-model-for-iam">Shared Responsibility Model for IAM</a></li>
     <li><a href="#-sources-">&raquo; Sources &laquo;</a></li>
     <li><a href="#-references-">&raquo; References &laquo;</a></li>
@@ -746,13 +694,11 @@
 <figure><img src="./assets/AWS_IAM_Policies_Structure.png" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 </p>
-<p>IAM policies structure includes:</p>
+<p><strong>IAM policies structure includes:</strong></p>
 <ul>
 <li><strong>Version:</strong> policy version</li>
 <li><strong>ID</strong> (Optional): identifier</li>
-<li><strong>Statement:</strong> one or more statements (<font color=#f43f5e>required</font>)</li>
-</ul>
-<p>Statement consist of:</p>
+<li><strong>Statement:</strong> one or more statements (<font color=#f43f5e>required</font>)
 <ul>
 <li><strong>SID:</strong> identifier (optional)</li>
 <li><strong>Effect:</strong> <font color=#10b981>Allow</font> or <font color=#f43f5e>Deny</font></li>
@@ -760,6 +706,8 @@
 <li><strong>Action:</strong> list of allowed or denied actions</li>
 <li><strong>Resource:</strong> list of resources to which the action is applied to</li>
 <li><strong>Condition:</strong> conditions for when the policy is applied (optional)</li>
+</ul>
+</li>
 </ul>
 <h2 id="mfa" class="relative group">MFA <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#mfa" aria-label="Anchor">#</a></span></h2>
 <p>
@@ -776,14 +724,13 @@
 </p>
 <h2 id="accessing-aws" class="relative group">Accessing AWS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#accessing-aws" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li>AWS Management Console - protected by password + MFA</li>
-<li>AWS Command Line (CLI) - protected by access keys</li>
-<li>AWS Software Development Kit (SDK) - for code - protected by access keys</li>
+<li><strong>AWS Management Console</strong> - protected by <font color=#f1ef63>password + MFA</font></li>
+<li><strong>AWS Command Line</strong> (CLI) - protected by <font color=#f1ef63>access keys</font></li>
+<li><strong>AWS Software Development Kit</strong> (SDK) - for code - protected by <font color=#f1ef63>access keys</font></li>
 </ul>
-<p><font color=#f1ef63>Access Keys</font> can be generated through AWS Console.
-Users manage their own access keys.</p>
-<p>Access Key ID = username
-Secret Access Key = password</p>
+<h5 id="access-keys-can-be-generated-through-aws-console-users-manage-their-own-access-keys" class="relative group"><font color=#10b981>Access Keys can be generated through AWS Console. Users manage their own access keys.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#access-keys-can-be-generated-through-aws-console-users-manage-their-own-access-keys" aria-label="Anchor">#</a></span></h5>
+<p><strong>Access Key ID</strong> = username<br />
+<strong>Secret Access Key</strong> = password</p>
 <p>
 
 
@@ -798,7 +745,7 @@ Secret Access Key = password</p>
 </p>
 <h3 id="creating-access-key" class="relative group">Creating Access Key <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-access-key" aria-label="Anchor">#</a></span></h3>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Users &gt; Username &gt; Security Credentials &gt; Access Keys &gt; Create Access Key &gt; Command Line Interface (CLI)
-</code></pre><h3 id="configuring-aws-cli-with-the-new-access-key" class="relative group">Configuring AWS CLI with the new access key <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configuring-aws-cli-with-the-new-access-key" aria-label="Anchor">#</a></span></h3>
+</code></pre><h3 id="configuring-aws-cli-with-the-new-access-key" class="relative group"><font color=#f1ef63>Configuring AWS CLI with the new access key</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configuring-aws-cli-with-the-new-access-key" aria-label="Anchor">#</a></span></h3>
 <pre tabindex="0"><code class="language-CMD" data-lang="CMD"># Configure AWS CLI
 aws configure
 
@@ -811,9 +758,12 @@ aws iam list-users
 </ul>
 <p><strong>Common Roles for Services:</strong></p>
 <ul>
-<li>EC2 Instance Roles</li>
-<li>Lambda Function Roles</li>
-<li>Roles for CloudFormation</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
+ Instance Roles</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#lambda">Lambda Function</a>
+ Roles</li>
+<li>Roles for <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/14-deployments/#cloudformation">CloudFormation</a>
+</li>
 </ul>
 <h4 id="create-aws-service-role" class="relative group">Create AWS Service Role <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#create-aws-service-role" aria-label="Anchor">#</a></span></h4>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Roles &gt; Create role &gt; AWS service
@@ -842,25 +792,19 @@ aws iam list-users
 <figure><img src="./assets/AWS_IAM_Role_Add_Permissions.png" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 </p>
-<h2 id="iam-security-tools" class="relative group">IAM Security Tools <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-security-tools" aria-label="Anchor">#</a></span></h2>
-<ul>
-<li><strong>IAM Credentials Report</strong> (account-level)
+<h2 id="iam-security-tools" class="relative group"><font color=#f1ef63>IAM Security Tools</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-security-tools" aria-label="Anchor">#</a></span></h2>
+<h3 id="iam-credentials-report-account-level" class="relative group">IAM Credentials Report (account-level) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-credentials-report-account-level" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Report that lists all users and status of their credentials</li>
 </ul>
-</li>
-</ul>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Credentials Report
-</code></pre><ul>
-<li><strong>IAM Access Advisor</strong> (user-level)
+</code></pre><h3 id="iam-access-advisor-user-level" class="relative group">IAM Access Advisor (user-level) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-access-advisor-user-level" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Access Advisor shows the service permissions granted to a user and when those services were last accessed</li>
 </ul>
-</li>
-</ul>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Users &gt; Username &gt; Last Accessed
-</code></pre><p><font color=#f43f5e>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the &ldquo;Least Privilege Principle&rdquo;</font></p>
-<h2 id="iam-beset-practices" class="relative group">IAM Beset Practices <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-beset-practices" aria-label="Anchor">#</a></span></h2>
+</code></pre><p><font color=#f43f5e>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the &ldquo;Least Privilege Principle&rdquo;.</font></p>
+<h2 id="iam-beset-practices" class="relative group"><font color=#f1ef63>IAM Beset Practices</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-beset-practices" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>Don&rsquo;t use root account</li>
 <li>One physical user = One AWS user</li>

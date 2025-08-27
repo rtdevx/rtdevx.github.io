@@ -10,7 +10,7 @@ categories: AWS
 ---
 ## What is Amazon EC2 AMI
 
-AMI are a customization of an EC2 instance.
+AMI are a customization of an [EC2 instance]({{< ref "4-ec2" >}}).
 
 - Custom software, configuration, etc. can be added
 - Faster boot / configuration time because all your software is pre-packaged
@@ -40,11 +40,19 @@ EC2 > Instances > Select an EC2 instance > Actions > Image and Templates > Creat
 ```
 ## EC2 Image Builder
 
-EC2 Image Builder is a fully managed AWS service that helps you to automate the creation, management and deployment of customized, secure and up-to-date server images.
+**EC2 Image Builder** is a fully managed AWS service that helps you to automate the creation, management and deployment of customized, secure and up-to-date server images.
 
 Custom images can be created via AWS Console, AWS CLI or API.
 
 Automate the creation, maintain, validate the build of EC2 AMI's. Can run on a schedule and can be distributed to multiple AWS Regions.
+## Summary
+
+##### AMI
+
+- Create ready-to-use EC2 instances with own customizations
+##### EC2 Image Builder
+
+- automatically build, test and distribute AMI's
 
 ---
 ## >> Sources <<

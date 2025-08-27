@@ -140,7 +140,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "990"
+    "wordCount": "1004"
   }
   </script>
     
@@ -533,7 +533,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-04 00:00:00 &#43;0000 UTC">4 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>990 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <time datetime="2025-08-04 00:00:00 &#43;0000 UTC">4 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1004 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -682,7 +682,8 @@
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <h2 id="what-is-amazon-ec2" class="relative group">What is Amazon EC2 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-is-amazon-ec2" aria-label="Anchor">#</a></span></h2>
-<p>An <strong>Amazon EC2</strong> instance is a virtual server in the AWS Cloud. When you launch an EC2 instance, the instance type that you specify determines the hardware available to your instance. Each instance type offers a different balance of compute, memory, network, and storage resources.</p>
+<p>An <strong>Amazon EC2</strong> instance is a virtual server in the <a href="http://localhost:1313/categories/aws/">AWS</a>
+ Cloud. When you launch an EC2 instance, the instance type that you specify determines the hardware available to your instance. Each instance type offers a different balance of compute, memory, network, and storage resources.</p>
 <hr>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/2zeoNC4cdTA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
@@ -699,18 +700,20 @@
 <li>Network-attached (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/#ebs-volume">EBS</a>
  &amp; <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/#efs---elastic-file-system">EFS</a>
 )</li>
-<li>Hardware (EC2 Instance Store)</li>
+<li>Hardware (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/#ec2-instance-store">EC2 Instance Store</a>
+)</li>
 </ul>
 </li>
 <li>Network card: speed of the card, Public IP address</li>
-<li>Firewall rules: security group</li>
-<li>Bootstrap script (configure at first launch): EC2 User Data</li>
+<li>Firewall rules: <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/5-security-groups/">security group</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/#example-user-data">Bootstrap script</a>
+ (configure at first launch): EC2 User Data</li>
 </ul>
 <h2 id="amazon-ec2-instance-types" class="relative group">Amazon EC2 Instance Types <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-ec2-instance-types" aria-label="Anchor">#</a></span></h2>
 <p><em>More info:</em>
 <a href="https://aws.amazon.com/ec2/instance-types/" target="_blank" rel="noreferrer">EC2 Instance Types</a>
-
-<a href="https://ec2instances.info" target="_blank" rel="noreferrer">EC2Instances.info</a>
+, <a href="https://ec2instances.info" target="_blank" rel="noreferrer">EC2Instances.info</a>
 </p>
 <ul>
 <li><strong>General Purpose</strong> (M, T) - General</li>
@@ -768,11 +771,14 @@
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">EC2 &gt; Launch Instance
 </code></pre><ul>
 <li>Name and Tags</li>
-<li>AMI</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/7-ami/">AMI</a>
+</li>
 <li>Instance Type (t3.micro,t3.large,etc.)</li>
 <li>Key Pair</li>
-<li>Network Settings (Security Group)</li>
-<li>Storage</li>
+<li>Network Settings (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/5-security-groups/">Security Group</a>
+)</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/">Storage</a>
+</li>
 <li>Advanced Settings
 <ul>
 <li>Domain Join</li>
@@ -782,15 +788,18 @@
 <li>Shutdown behavior</li>
 <li>Termination protection</li>
 <li>Placement group</li>
-<li>Purchasing option
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/#ec2-instances-purchasing-options">Purchasing option</a>
+
 <ul>
 <li>None</li>
 <li>Capacity Blocks</li>
 <li>Spot Instances</li>
 </ul>
 </li>
-<li>Capacity reservation</li>
-<li>User data</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/21-account-management-and-billing/#savings-plan">Capacity reservation</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/#example-user-data">User data</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -824,7 +833,7 @@
 <li><strong>Reserved</strong> (1 &amp; 3 years)
 <ul>
 <li>Up to <font color=#f43f5e>72%</font> discount compared to On-demand</li>
-<li>You reserve a specific instance attributes (Instance Type, Region, Tenancy, OS)</li>
+<li>You reserve a specific instance attributes (<strong>Instance Type</strong>, <strong>Region</strong>, <strong>Tenancy</strong>, <strong>OS</strong>)</li>
 <li>Reserved Instances - long workloads</li>
 <li>Payment options - No upfront, Partial Upfront, All Upfront</li>
 <li>Scope: Regional or Zonal</li>
@@ -838,7 +847,8 @@
 </li>
 </ul>
 </li>
-<li><strong>Saving plans</strong> (1 &amp; 3 years) - commitment to an amount of usage, long workloads
+<li><strong><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/21-account-management-and-billing/#savings-plan">Saving plans</a>
+</strong> (1 &amp; 3 years) - commitment to an amount of usage, long workloads
 <ul>
 <li>Get discount based on long-term usage</li>
 <li>Commit to a certain type of usage ($10/hour for 1 or 3 years)</li>
@@ -899,6 +909,8 @@
 <figure><img src="./assets/AWS_EC2_dedicated.png" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 </p>
+<p><em>Dedicated Host vs Dedicated Instance:</em> <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html</a>
+</p>
 <ul>
 <li><strong>Capacity Reservations</strong> - reserve capacity in a specific AZ for any duration</li>
 </ul>
@@ -922,6 +934,8 @@
 <li><a href="https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html" target="_blank" rel="noreferrer">Amazon EC2 Instance type naming conventions</a>
 </li>
 <li><a href="https://ec2instances.info" target="_blank" rel="noreferrer">EC2Instances.info</a>
+</li>
+<li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html" target="_blank" rel="noreferrer">Dedicated Host vs Dedicated Instance:</a>
 </li>
 </ul>
 <p>

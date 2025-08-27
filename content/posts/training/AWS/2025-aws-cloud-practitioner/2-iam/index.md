@@ -43,34 +43,29 @@ IAM console > Users
 
 ![](./assets/AWS_IAM_Policies_Structure.png)
 
-IAM policies structure includes:
+**IAM policies structure includes:**
 
 - **Version:** policy version
 - **ID** (Optional): identifier
-- **Statement:** one or more statements (<font color=#f43f5e>required</font>)
-
-Statement consist of:
-
-- **SID:** identifier (optional)
-- **Effect:** <font color=#10b981>Allow</font> or <font color=#f43f5e>Deny</font>
-- **Principal:** account / user / role to which policy is applied to
-- **Action:** list of allowed or denied actions
-- **Resource:** list of resources to which the action is applied to
-- **Condition:** conditions for when the policy is applied (optional)
+- **Statement:** one or more statements (<font color=#f43f5e>required</font>)	
+	- **SID:** identifier (optional)
+	- **Effect:** <font color=#10b981>Allow</font> or <font color=#f43f5e>Deny</font>
+	- **Principal:** account / user / role to which policy is applied to
+	- **Action:** list of allowed or denied actions
+	- **Resource:** list of resources to which the action is applied to
+	- **Condition:** conditions for when the policy is applied (optional)
 ## MFA
 
 ![](./assets/AWS_IAM_MFA.png)
 ## Accessing AWS
 
-- AWS Management Console - protected by password + MFA
-- AWS Command Line (CLI) - protected by access keys
-- AWS Software Development Kit (SDK) - for code - protected by access keys
+- **AWS Management Console** - protected by <font color=#f1ef63>password + MFA</font>
+- **AWS Command Line** (CLI) - protected by <font color=#f1ef63>access keys</font>
+- **AWS Software Development Kit** (SDK) - for code - protected by <font color=#f1ef63>access keys</font>
+##### <font color=#10b981>Access Keys can be generated through AWS Console. Users manage their own access keys.</font>
 
-<font color=#f1ef63>Access Keys</font> can be generated through AWS Console.
-Users manage their own access keys.
-
-Access Key ID = username
-Secret Access Key = password
+**Access Key ID** = username<br />
+**Secret Access Key** = password
 
 ![](./assets/AWS_IAM_Fake_Access_Keys_Example.png)
 ### Creating Access Key
@@ -78,8 +73,7 @@ Secret Access Key = password
 ```AWSConsole
 IAM > Users > Username > Security Credentials > Access Keys > Create Access Key > Command Line Interface (CLI)
 ```
-
-### Configuring AWS CLI with the new access key
+### <font color=#f1ef63>Configuring AWS CLI with the new access key</font>
 
 ```CMD
 # Configure AWS CLI
@@ -96,9 +90,9 @@ aws iam list-users
 
 **Common Roles for Services:**
 
-- EC2 Instance Roles
-- Lambda Function Roles
-- Roles for CloudFormation
+- [EC2]({{< ref "4-ec2" >}}) Instance Roles
+- [Lambda Function]({{< ref "13-other-compute-services/#lambda" >}}) Roles
+- Roles for [CloudFormation]({{< ref "14-deployments/#cloudformation" >}})
 #### Create AWS Service Role
 
 ```AWSConsole
@@ -110,24 +104,25 @@ IAM > Roles > Create role > AWS service
 Add permissions:
 
 ![](./assets/AWS_IAM_Role_Add_Permissions.png)
-## IAM Security Tools
+## <font color=#f1ef63>IAM Security Tools</font>
 
-- **IAM Credentials Report** (account-level)
-	- Report that lists all users and status of their credentials
+### IAM Credentials Report (account-level)
+
+- Report that lists all users and status of their credentials
 
 ```AWSConsole
 IAM > Credentials Report
 ```
+### IAM Access Advisor (user-level)
 
-- **IAM Access Advisor** (user-level)
-	- Access Advisor shows the service permissions granted to a user and when those services were last accessed
+- Access Advisor shows the service permissions granted to a user and when those services were last accessed
 
 ```AWSConsole
 IAM > Users > Username > Last Accessed
 ```
 
-<font color=#f43f5e>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the "Least Privilege Principle"</font>
-## IAM Beset Practices
+<font color=#f43f5e>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the "Least Privilege Principle".</font>
+## <font color=#f1ef63>IAM Beset Practices</font>
 
 - Don't use root account
 - One physical user = One AWS user

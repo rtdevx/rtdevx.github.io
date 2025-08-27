@@ -30,7 +30,7 @@ _<font color=#f43f5e>EBS Volumes can be attached to only 1 EC2 instance at a tim
 
 ![](./assets/AWS_EC2_EBS_Delete_on_Termination.png)
 
-- Controls the EBS behavior when EC2 instance terminates
+- Controls the EBS behavior when [EC2 instance]({{< ref "4-ec2" >}}) terminates
 	- by default the root EBS volume is deleted (attribute enabled)
 	- by default any other attached EBS volume is not deleted (attribute disabled)
 - This can be controlled by both, AWS Console and AWS CLI
@@ -104,37 +104,36 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - **FSx for NetApp ONTAP** - 
 ## Summary
 
-##### EBS Volumes
+**EBS Volumes**
 
-- network drives attached to one EC2 instance at a time
+- network drives attached to one [EC2 instance]({{< ref "4-ec2" >}}) at a time
 - Mapped to an Availability Zones
 - Can use EBS snapshots for backups and then transferring across AZ's
-##### AMI
 
-- Create ready-to-use EC2 instances with own customizations
-##### EC2 Image Builder
-
-- automatically build, test and distribute AMI's
-##### EC2 Instance Store
+**EC2 Instance Store**
 
 - high performance hardware disk attached to our EC2 instance
 - ephemeral (data lost if instance stopped or terminated)
-##### EFS
+
+**EFS**
 
 - Network File System
 - Can be attached to 100s of EC2 instances
 - spans through a region
 - expensive compared to EBS
-##### EFS-IA
+
+**EFS-IA**
 
 - Cost-optimized storage class for infrequently accessed files
 - Lifecycle Policy for automatically moving files between tiers
-##### FSx for Windows
+
+**FSx for Windows**
 
 - Network File System for Windows servers
 - SMB and NTFS
 - Can be accessed from on-prem and the cloud
-##### FSx for Lustre
+
+**FSx for Lustre**
 
 - High Performance (HPC) Linux file system
 

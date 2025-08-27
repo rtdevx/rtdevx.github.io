@@ -10,7 +10,7 @@ categories: AWS
 ---
 ## What is Amazon EC2
 
-An **Amazon EC2** instance is a virtual server in the AWS Cloud. When you launch an EC2 instance, the instance type that you specify determines the hardware available to your instance. Each instance type offers a different balance of compute, memory, network, and storage resources. 
+An **Amazon EC2** instance is a virtual server in the [AWS]({{< ref "categories/aws" >}}) Cloud. When you launch an EC2 instance, the instance type that you specify determines the hardware available to your instance. Each instance type offers a different balance of compute, memory, network, and storage resources. 
 
 ---
 
@@ -24,15 +24,14 @@ An **Amazon EC2** instance is a virtual server in the AWS Cloud. When you launch
 - How much RAM
 - How much storage space
 	- Network-attached ([EBS]({{< ref "6-storage/#ebs-volume" >}}) & [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}}))
-	- Hardware (EC2 Instance Store)
+	- Hardware ([EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}}))
 - Network card: speed of the card, Public IP address
-- Firewall rules: security group
-- Bootstrap script (configure at first launch): EC2 User Data
+- Firewall rules: [security group]({{< ref "5-security-groups" >}})
+- [Bootstrap script]({{< ref "4-ec2/#example-user-data" >}}) (configure at first launch): EC2 User Data
 ## Amazon EC2 Instance Types
 
 *More info:* 
-[EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/)
-[EC2Instances.info](https://ec2instances.info)
+[EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/), [EC2Instances.info](https://ec2instances.info)
 
 - **General Purpose** (M, T) - General
 - **Compute Optimized** (C) - Compute bound applications that benefit from thigh performance processors
@@ -61,11 +60,11 @@ EC2 > Launch Instance
 ```
 
 - Name and Tags
-- AMI
+- [AMI]({{< ref "7-ami" >}})
 - Instance Type (t3.micro,t3.large,etc.)
 - Key Pair
-- Network Settings (Security Group)
-- Storage
+- Network Settings ([Security Group]({{< ref "5-security-groups" >}}))
+- [Storage]({{< ref "6-storage" >}})
 - Advanced Settings
 	- Domain Join
 	- IAM Instance Profile
@@ -74,12 +73,12 @@ EC2 > Launch Instance
 	- Shutdown behavior
 	- Termination protection
 	- Placement group
-	- Purchasing option
+	- [Purchasing option]({{< ref "4-ec2/#ec2-instances-purchasing-options" >}})
 		- None
 		- Capacity Blocks
 		- Spot Instances
-	- Capacity reservation
-	- User data
+	- [Capacity reservation]({{< ref "21-account-management-and-billing/#savings-plan" >}})
+	- [User data]({{< ref "4-ec2/#example-user-data" >}})
 #### Example user data
 
 <font color=#10b981>User data is only **bootstrap** script and **only starts once** during the machine creation.</font>
@@ -110,7 +109,7 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 	- <font color=#f1ef63>Recommended for</font> short-term and un-interrupted workloads
 - **Reserved** (1 & 3 years)
 	- Up to <font color=#f43f5e>72%</font> discount compared to On-demand
-	- You reserve a specific instance attributes (Instance Type, Region, Tenancy, OS)
+	- You reserve a specific instance attributes (**Instance Type**, **Region**, **Tenancy**, **OS**)
 	- Reserved Instances - long workloads
 	- Payment options - No upfront, Partial Upfront, All Upfront
 	- Scope: Regional or Zonal
@@ -119,7 +118,7 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 	- Convertible Reserved Instances - long workload with flexible instances
 		- Can change the EC2 instance type, instance family, OS, scope and tenancy
 		- Up to <font color=#f43f5e>66%</font> discount
-- **Saving plans** (1 & 3 years) - commitment to an amount of usage, long workloads
+- **[Saving plans]({{< ref "21-account-management-and-billing/#savings-plan" >}})** (1 & 3 years) - commitment to an amount of usage, long workloads
 	- Get discount based on long-term usage
 	- Commit to a certain type of usage ($10/hour for 1 or 3 years)
 	- Usage beyond EC2 Savings Plans is billed at the On-Demand price
@@ -149,6 +148,8 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 
 ![](./assets/AWS_EC2_dedicated.png)
 
+_Dedicated Host vs Dedicated Instance:_ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html
+
 - **Capacity Reservations** - reserve capacity in a specific AZ for any duration
 
 ![](./assets/AWS_EC2_Purchasing_Options.png)
@@ -159,6 +160,7 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 - [EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/)
 - [Amazon EC2 Instance type naming conventions](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html)
 - [EC2Instances.info](https://ec2instances.info)
+- [Dedicated Host vs Dedicated Instance:](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html)
 
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## >> References <<
