@@ -16,7 +16,7 @@ _How AWS Organizations work_
 ![](./assets/AWS_Organizations_1.png)
 _Diagram of basic Organization_
 
-_More about Organizations terminology and structure:_ : https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html_
+_More about Organizations terminology and structure:_ https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html_
 
 _Best Practices for Organizational Units with AWS Organizations:_ https://aws.amazon.com/blogs/mt/best-practices-for-organizational-units-with-aws-organizations/
 ### Creating Organizations and Accounts
