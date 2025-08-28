@@ -52,8 +52,14 @@ _Introduction to AWS CloudFormation_
 - We can see all the resources
 - We can see the relations between components
 
+
+<video id="AWS_Infrastructure_Composer" autoplay>  
+  <source src="./assets/AWS_Infrastructure_Composer.webm" type="video/webm">  
+Your browser does not support the video tag.  
+</video>
+
 <!--
-![](assets/AWS_Infrastructure_Composer.webm)
+![](./assets/AWS_Infrastructure_Composer.webm)
 -->
 
 _More:_ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/infrastructure-composer-for-cloudformation.html
