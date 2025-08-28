@@ -41,8 +41,8 @@ _Introduction to AWS CloudFormation_
 	- Ability to destroy and re-create and infrastructure in the cloud on the fly
 	- _Declarative programming_ (no need to figure out ordering and orchestration)
 - **Don't re-invent the wheel**
-	- Leverage existing templates on the web
-	- Leverage the documentation
+	- Adopt existing templates on the web
+	- Use extensive documentation
 - **Supports (almost) all AWS resources**
 	- "_Custom resources_" can be used for resources that are not supported
 ### CloudFormation + <font color=#f1ef63>Infrastructure Composer</font>
@@ -67,7 +67,7 @@ _More:_ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/infrastru
 - Define your cloud infrastructure using a familiar language:
 	- JavaScript/TypeScript, Python, Java, .NET
 	- For that reason infrastructure and application can be deployed "together" - <font color=#10b981>they share the runtime</font>
-- The infrastructure code is converted into a CloudFormation template (JSON / YAML)
+- The infrastructure code is converted into a **CloudFormation template** (JSON / YAML)
 ## Beanstalk
 
 <font color=#f1ef63>Elastic Beanstalk is a developer-centric view of deploying an application on AWS.</font>
