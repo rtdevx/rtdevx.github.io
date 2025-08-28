@@ -650,15 +650,7 @@
         </li>
       </ul>
     </li>
-    <li><a href="#aws-storage-gateway">AWS Storage Gateway</a>
-      <ul>
-        <li>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#aws-storage-gateway">AWS Storage Gateway</a></li>
     <li><a href="#-sources-">&raquo; Sources &laquo;</a></li>
     <li><a href="#-references-">&raquo; References &laquo;</a></li>
     <li><a href="#-table-of-contents-clf-c02-">&raquo; Table of contents (CLF-C02) &laquo;</a></li>
@@ -674,7 +666,8 @@
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <h2 id="what-is-amazon-s3" class="relative group">What is Amazon S3 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-is-amazon-s3" aria-label="Anchor">#</a></span></h2>
 <p><strong>Amazon S3</strong> is <font color=#f43f5e>one of the main building blocks of AWS.</font></p>
-<p>It is advertised as &ldquo;<strong>infinitely scaling</strong>&rdquo; storage.</p>
+<p>It is advertised as &ldquo;<strong>infinitely scaling</strong>&rdquo; <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/">storage</a>
+.</p>
 <ul>
 <li>Many websites use Amazon S3 as a backbone</li>
 <li>Many AWS services use Amazon S3 as an integration</li>
@@ -753,7 +746,8 @@
 <ul>
 <li>User-based
 <ul>
-<li>IAM Policies - which API calls should be allowed for a specific user from IAM</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/#iam-policies-structure">IAM Policies</a>
+ - which API calls should be allowed for a specific user from IAM</li>
 </ul>
 </li>
 <li>Resource-based
@@ -763,12 +757,14 @@
 <li>Bucket Access Control List (ACL) - less common (can be disabled)</li>
 </ul>
 </li>
-<li>IAM Principal can access an S3 object if
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/">IAM</a>
+ Principal can access an S3 object if
 <ul>
 <li>The user IAM permissions ALLOW it OR the resource policy ALLOWS it AND there is no explicit DENY</li>
 </ul>
 </li>
-<li>Encryption - encrypt objects in Amazon S3 using encryption keys</li>
+<li>Encryption - encrypt objects in Amazon S3 using <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#aws-kms-key-management-service">encryption keys</a>
+</li>
 </ul>
 <h2 id="s3-bucket-policies" class="relative group">S3 Bucket Policies <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-bucket-policies" aria-label="Anchor">#</a></span></h2>
 <ul>
@@ -776,7 +772,7 @@
 <p>JSON based policies</p>
 <ul>
 <li>Resources: buckets and objects</li>
-<li>Effect: Allow / Deny</li>
+<li>Effect: <font color=#10b981>Allow</font> / <font color=#f43f5e>Deny</font></li>
 <li>Actions: Set of API to Allow or Deny</li>
 <li>Principal: The account or user to apply the policy to</li>
 </ul>
@@ -785,7 +781,8 @@
 <p>Use S3 bucket policy to:</p>
 <ul>
 <li>Grant public access to the bucket</li>
-<li>Force objects to be encrypted at upload</li>
+<li>Force objects to be <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#aws-kms-key-management-service">encrypted</a>
+ at upload</li>
 <li>Grant access to another account (Cross Account)</li>
 </ul>
 </li>
@@ -926,7 +923,8 @@
 </figure>
 </p>
 <p><font color=#f43f5e>Although no HTTPS enabled!</font> - check &ldquo;<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#aws-certificate-manager-acm">AWS Certificate Manager (ACM)</a>
-&rdquo; section in Security and Compliance on how to use ACM for SSL / TLS certificate management.</p>
+&rdquo; section in <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/">Security and Compliance</a>
+ on how to use ACM for SSL / TLS certificate management.</p>
 <h2 id="amazon-s3---versioning" class="relative group">Amazon S3 - Versioning <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-s3---versioning" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>Versioning can be enabled at the bucket level</li>
@@ -964,7 +962,8 @@
 <li><strong>CRR</strong> - Cross Region Replication</li>
 <li><strong>SRR</strong> - Same Region Replication</li>
 </ul>
-<p><font color=#f43f5e>For S3 replication to work, Versioning must be enabled</font> on both - source and destination buckets. Buckets can be different AWS Accounts.</p>
+<p><font color=#f43f5e>For S3 replication to work,</font> <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/#amazon-s3---versioning">versioning</a>
+  <font color=#f43f5e>must be enabled</font> on both - source and destination buckets. Buckets can be different AWS Accounts.</p>
 <p>Copying is asynchronous, proper IAM permissions must be applied to S3.</p>
 <h5 id="use-cases" class="relative group"><font color=#f1ef63>Use Cases:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#use-cases" aria-label="Anchor">#</a></span></h5>
 <ul>
@@ -974,7 +973,8 @@
 <h3 id="enabling-s3-replication" class="relative group">Enabling S3 Replication <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#enabling-s3-replication" aria-label="Anchor">#</a></span></h3>
 <ol>
 <li>
-<p>Create 2 new buckets and <font color=#10b981>enable Versioning in both</font></p>
+<p>Create 2 new buckets and <font color=#f43f5e>enable</font> <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/#amazon-s3---versioning">versioning</a>
+ <font color=#f43f5e>in both</font></p>
 <ul>
 <li>rk-test-replica-london-origin</li>
 <li>rk-test-replica-irl-dest</li>
@@ -1108,7 +1108,8 @@
 <li>Ensures that only intended people have access to your S3 buckets</li>
 <li>Example: publicly accessible bucket, bucket shared with other AWS account</li>
 <li>Evaluates S3 Bucket Policies, S3 ACLs, S3 Access Point Policies</li>
-<li>Powered by IAM Access Analyzer</li>
+<li>Powered by <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#iam-access-analyzer">IAM Access Analyzer</a>
+</li>
 </ul>
 <h2 id="aws-snowball" class="relative group">AWS Snowball <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-snowball" aria-label="Anchor">#</a></span></h2>
 <ul>
@@ -1140,7 +1141,7 @@
 <p>S3 File Gateway is used for on-premises data intensive applications that need file protocol access to objects in S3.</p>
 <p><em>More:</em> <a href="https://aws.amazon.com/storagegateway/file/s3/" target="_blank" rel="noreferrer">https://aws.amazon.com/storagegateway/file/s3/</a>
 </p>
-<h5 id="types-of-storage-gateway" class="relative group">Types of Storage Gateway: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#types-of-storage-gateway" aria-label="Anchor">#</a></span></h5>
+<p><strong>Types of Storage Gateway:</strong></p>
 <ul>
 <li>File Gateway</li>
 <li>Volume Gateway</li>

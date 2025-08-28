@@ -12,7 +12,7 @@ categories: AWS
 
 **Amazon S3** is <font color=#f43f5e>one of the main building blocks of AWS.</font>
 
-It is advertised as "**infinitely scaling**" storage.
+It is advertised as "**infinitely scaling**" [storage]({{< ref "6-storage" >}}).
 
 - Many websites use Amazon S3 as a backbone
 - Many AWS services use Amazon S3 as an integration
@@ -68,25 +68,25 @@ _AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS
 ## Amazon S3 - Security
 
 - User-based
-	- IAM Policies - which API calls should be allowed for a specific user from IAM
+	- [IAM Policies]({{< ref "2-iam/#iam-policies-structure" >}}) - which API calls should be allowed for a specific user from IAM
 - Resource-based
 	- Bucket policies - bucket-wide rules from the S3 console - allows cross account
 	- Object Access Control List (ACL) - finer grain (can be disabled)
 	- Bucket Access Control List (ACL) - less common (can be disabled)
-- IAM Principal can access an S3 object if
+- [IAM]({{< ref "2-iam" >}}) Principal can access an S3 object if
 	- The user IAM permissions ALLOW it OR the resource policy ALLOWS it AND there is no explicit DENY
-- Encryption - encrypt objects in Amazon S3 using encryption keys
+- Encryption - encrypt objects in Amazon S3 using [encryption keys]({{< ref "19-security-and-compliance/#aws-kms-key-management-service" >}})
 ## S3 Bucket Policies
 
 - JSON based policies
 	- Resources: buckets and objects
-	- Effect: Allow / Deny
+	- Effect: <font color=#10b981>Allow</font> / <font color=#f43f5e>Deny</font>
 	- Actions: Set of API to Allow or Deny
 	- Principal: The account or user to apply the policy to
 
 - Use S3 bucket policy to:
 	- Grant public access to the bucket
-	- Force objects to be encrypted at upload
+	- Force objects to be [encrypted]({{< ref "19-security-and-compliance/#aws-kms-key-management-service" >}}) at upload
 	- Grant access to another account (Cross Account)
 
 ![](./assets/AWS_S3_bucket_policy.png)
@@ -145,7 +145,7 @@ S3 > General purpose buckets (or other) > your-bucket > Properties > Static webs
 
 ![](./assets/AWS_S3_Static_Website_Hosting.png)
 
-<font color=#f43f5e>Although no HTTPS enabled!</font> - check "[AWS Certificate Manager (ACM)]({{< ref "19-security-and-compliance/#aws-certificate-manager-acm" >}})" section in Security and Compliance on how to use ACM for SSL / TLS certificate management.
+<font color=#f43f5e>Although no HTTPS enabled!</font> - check "[AWS Certificate Manager (ACM)]({{< ref "19-security-and-compliance/#aws-certificate-manager-acm" >}})" section in [Security and Compliance]({{< ref "19-security-and-compliance" >}}) on how to use ACM for SSL / TLS certificate management.
 ## Amazon S3 - Versioning
 
 - Versioning can be enabled at the bucket level
@@ -170,7 +170,7 @@ In order to <font color=#10b981>restore the file</font>, toggle "_Show Versions_
 - **CRR** - Cross Region Replication
 - **SRR** - Same Region Replication
 
-<font color=#f43f5e>For S3 replication to work, Versioning must be enabled</font> on both - source and destination buckets. Buckets can be different AWS Accounts.
+<font color=#f43f5e>For S3 replication to work,</font> [versioning]({{< ref "11-s3/#amazon-s3---versioning" >}})  <font color=#f43f5e>must be enabled</font> on both - source and destination buckets. Buckets can be different AWS Accounts.
 
 Copying is asynchronous, proper IAM permissions must be applied to S3.
 ##### <font color=#f1ef63>Use Cases:</font>
@@ -179,7 +179,7 @@ Copying is asynchronous, proper IAM permissions must be applied to S3.
 - **SRR** - log aggregation, live replication between production and test accounts
 ### Enabling S3 Replication
 
-1. Create 2 new buckets and <font color=#10b981>enable Versioning in both</font>
+1. Create 2 new buckets and <font color=#f43f5e>enable</font> [versioning]({{< ref "11-s3/#amazon-s3---versioning" >}}) <font color=#f43f5e>in both</font>
 
 	- rk-test-replica-london-origin
 	- rk-test-replica-irl-dest	
@@ -269,7 +269,7 @@ _More:_
 - Ensures that only intended people have access to your S3 buckets
 - Example: publicly accessible bucket, bucket shared with other AWS account
 - Evaluates S3 Bucket Policies, S3 ACLs, S3 Access Point Policies
-- Powered by IAM Access Analyzer
+- Powered by [IAM Access Analyzer]({{< ref "19-security-and-compliance/#iam-access-analyzer" >}})
 ## AWS Snowball
 
 - Highly-secure, portable devices to collect and process data at the edge and / or migrate data in and out of AWS
@@ -288,7 +288,8 @@ Amazon S3 File Gateway connects on-premises applications to the cloud to store a
 S3 File Gateway is used for on-premises data intensive applications that need file protocol access to objects in S3.
 
 _More:_ https://aws.amazon.com/storagegateway/file/s3/
-##### Types of Storage Gateway:
+
+**Types of Storage Gateway:**
 
 - File Gateway
 - Volume Gateway
