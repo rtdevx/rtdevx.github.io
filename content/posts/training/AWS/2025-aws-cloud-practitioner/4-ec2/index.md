@@ -35,7 +35,7 @@ An **Amazon EC2** instance is a virtual server in the [AWS]({{< ref "categories/
 
 - **General Purpose** (M, T) - General
 - **Compute Optimized** (C) - Compute bound applications that benefit from thigh performance processors
-- **Memory Optimized** (R, X) - Optimized to deliver fast performance for workloads that process large data sets in memory (i.e. ElastiCache)
+- **Memory Optimized** (R, X) - Optimized to deliver fast performance for workloads that process large data sets in memory (i.e. [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}}))
 - **Accelerated Computing** (P, G, Trn, Inf, DL, F, VT1) - Calculations, graphics processing or data pattern matching
 - **Storage Optimized** (I, Dx, H1) - High, sequential read and write access to very large data sets on local storage. Low-latency, random I/O operations per second (IOPS)
 - **HPC Optimized** (Hpc) - High Performance Computing - complex simulations and deep learning workloads

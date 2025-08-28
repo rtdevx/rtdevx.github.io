@@ -10,7 +10,7 @@ categories: AWS
 ---
 ## Docker
 
-Docker is a software development platform to deploy apps.
+**Docker** is a software development platform to deploy apps.
 
 Apps are packaged in containers that can be run on any OS.
 
@@ -28,11 +28,11 @@ Docker images are stored in Docker Repositories.
 - Private: Amazon ECR (<font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>R</font>egistry)
 ## ECS (Elastic Container Service)
 
-##### Amazon ECS = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervice.
+**Amazon ECS** = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervice.
 
 ECS allows launching Docker containers on AWS. It is an orchestrator.
 
-- You must provision and maintain the infrastructure (EC2 instances)
+- You must provision and maintain the infrastructure ([EC2]({{< ref "4-ec2" >}}) instances)
 - AWS takes care of starting / stopping containers
 - Has integrations with the [Application Load Balancer]({{< ref "9-elastic-load-balancing/#3-kinds-of-load-balancers-offered-by-aws" >}})
 
@@ -103,19 +103,19 @@ Lambda Container Image - although ECS / Fargate is preferred for running Docker 
 - <font color=#f43f5e>Helpful for cost optimizations and focusing less on the infrastructure</font>
 ### Batch vs Lambda
 
-- Lambda
+- **Lambda**
 	- Time limit
 	- Limited runtimes
 	- Limited temporary disk space
 	- Serverless
-- Batch
+- **Batch**
 	- No time limit
 	- Any runtime as long as it's packaged as a Docker image (no programming language dependency)
-	- Rely on EBS / instance store for disk space
-	- Relies on EC2 (can be managed by AWS)
+	- Rely on [EBS]({{< ref "6-storage/#ebs-volume" >}}) / instance store for disk space
+	- Relies on [EC2]({{< ref "4-ec2" >}}) (can be managed by AWS)
 ## Lightsail
 
-- Virtual servers, storage, databases and networking
+- Virtual servers, [storage]({{< ref "6-storage" >}}), [databases]({{< ref "12-databases" >}}) and networking
 - Low & predictable pricing
 - Simpler alternative to using EC2, RDS, ELB, EBS, Route53
 - Great for people with <font color=#10b981>little cloud experience</font>
@@ -133,6 +133,7 @@ Lambda Container Image - although ECS / Fargate is preferred for running Docker 
 	- Run Docker containers without provisioning the infrastructure
 	- Serverless offering (no EC2 instances)
 - <font color=#f1ef63>ECR:</font> Private Docker Images Repository
+- <font color=#f1ef63>EKS:</font> Allows launching and managing Kubernetes clusters on AWS (hosted on: EC2 instances OR Fargate)
 - <font color=#f1ef63>Batch:</font> run batch jobs on AWS across managed EC2 instances
 - <font color=#f1ef63>Lightsail:</font> predictable & low pricing for simple application & DB stacks
 - <font color=#f1ef63>Lambda:</font>

@@ -269,7 +269,7 @@ _More:_
 - Ensures that only intended people have access to your S3 buckets
 - Example: publicly accessible bucket, bucket shared with other AWS account
 - Evaluates S3 Bucket Policies, S3 ACLs, S3 Access Point Policies
-- Powered by [IAM Access Analyzer]({{< ref "19-security-and-compliance/#iam-access-analyzer" >}})
+- Powered by [IAM Access Analyzer]({{< ref "19-security-and-compliance/#iam-access-analyzer" >}}), ([Security and Compliance section]({{< ref "19-security-and-compliance" >}}))
 ## AWS Snowball
 
 - Highly-secure, portable devices to collect and process data at the edge and / or migrate data in and out of AWS

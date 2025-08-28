@@ -81,6 +81,10 @@ categories: AWS
 - AWS Data Centers
 - AWS Edge Locations / Points of Presence
 
+![](./assets/AWS_AZ2.jpeg)
+
+![](./assets/AWS_AZ1.png)
+
 _More about AWS Global Infrastructure:_ [AWS Global Infrastructure](https://infrastructure.aws)
 ## Shared Responsibility Model
 

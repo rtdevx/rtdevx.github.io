@@ -138,7 +138,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "844"
+    "wordCount": "859"
   }
   </script>
     
@@ -531,7 +531,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-13 00:00:00 &#43;0000 UTC">13 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>844 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+      <time datetime="2025-08-13 00:00:00 &#43;0000 UTC">13 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>859 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -584,15 +584,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#docker">Docker</a></li>
-    <li><a href="#ecs-elastic-container-service">ECS (Elastic Container Service)</a>
-      <ul>
-        <li>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#ecs-elastic-container-service">ECS (Elastic Container Service)</a></li>
     <li><a href="#fargate">Fargate</a></li>
     <li><a href="#ecr">ECR</a></li>
     <li><a href="#amazon-eks">Amazon EKS</a></li>
@@ -631,7 +623,7 @@
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <h2 id="docker" class="relative group">Docker <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#docker" aria-label="Anchor">#</a></span></h2>
-<p>Docker is a software development platform to deploy apps.</p>
+<p><strong>Docker</strong> is a software development platform to deploy apps.</p>
 <p>Apps are packaged in containers that can be run on any OS.</p>
 <ul>
 <li>Applications function in the same way, no matter where they&rsquo;re run
@@ -652,10 +644,11 @@
 <li>Private: Amazon ECR (<font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>R</font>egistry)</li>
 </ul>
 <h2 id="ecs-elastic-container-service" class="relative group">ECS (Elastic Container Service) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ecs-elastic-container-service" aria-label="Anchor">#</a></span></h2>
-<h5 id="amazon-ecs--elastic-container-service" class="relative group">Amazon ECS = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervice. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-ecs--elastic-container-service" aria-label="Anchor">#</a></span></h5>
+<p><strong>Amazon ECS</strong> = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervice.</p>
 <p>ECS allows launching Docker containers on AWS. It is an orchestrator.</p>
 <ul>
-<li>You must provision and maintain the infrastructure (EC2 instances)</li>
+<li>You must provision and maintain the infrastructure (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
+ instances)</li>
 <li>AWS takes care of starting / stopping containers</li>
 <li>Has integrations with the <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/#3-kinds-of-load-balancers-offered-by-aws">Application Load Balancer</a>
 </li>
@@ -746,7 +739,7 @@
 </ul>
 <h3 id="batch-vs-lambda" class="relative group">Batch vs Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#batch-vs-lambda" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>Lambda
+<li><strong>Lambda</strong>
 <ul>
 <li>Time limit</li>
 <li>Limited runtimes</li>
@@ -754,18 +747,22 @@
 <li>Serverless</li>
 </ul>
 </li>
-<li>Batch
+<li><strong>Batch</strong>
 <ul>
 <li>No time limit</li>
 <li>Any runtime as long as it&rsquo;s packaged as a Docker image (no programming language dependency)</li>
-<li>Rely on EBS / instance store for disk space</li>
-<li>Relies on EC2 (can be managed by AWS)</li>
+<li>Rely on <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/#ebs-volume">EBS</a>
+ / instance store for disk space</li>
+<li>Relies on <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
+ (can be managed by AWS)</li>
 </ul>
 </li>
 </ul>
 <h2 id="lightsail" class="relative group">Lightsail <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#lightsail" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li>Virtual servers, storage, databases and networking</li>
+<li>Virtual servers, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/">storage</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/">databases</a>
+ and networking</li>
 <li>Low &amp; predictable pricing</li>
 <li>Simpler alternative to using EC2, RDS, ELB, EBS, Route53</li>
 <li>Great for people with <font color=#10b981>little cloud experience</font></li>
@@ -790,6 +787,7 @@
 </ul>
 </li>
 <li><font color=#f1ef63>ECR:</font> Private Docker Images Repository</li>
+<li><font color=#f1ef63>EKS:</font> Allows launching and managing Kubernetes clusters on AWS (hosted on: EC2 instances OR Fargate)</li>
 <li><font color=#f1ef63>Batch:</font> run batch jobs on AWS across managed EC2 instances</li>
 <li><font color=#f1ef63>Lightsail:</font> predictable &amp; low pricing for simple application &amp; DB stacks</li>
 <li><font color=#f1ef63>Lambda:</font>

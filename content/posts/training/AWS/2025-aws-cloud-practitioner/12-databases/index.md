@@ -24,7 +24,7 @@ Data is typically structured across multiple tables, which can be joined togethe
 - High-Performance (optimized for a specific data model)
 - Highly functional (types optimized for the data model)
 
-<font color=#f1ef63>Use cases:</font> Key-value, document, graph, in-memory, search datamases
+<font color=#f1ef63>Use cases:</font> Key-value, document, graph, in-memory, search databases
 ## RDS and Aurora
 ### Amazon RDS
 
@@ -47,10 +47,10 @@ It allows creating databases in the cloud that are managed by AWS:
 	- Continuous backups and restore to specific timestamp (Point in Time Restore)
 	- Monitoring dashboards
 	- Read replicas for improved read performance
-	- Multi-AZ setup for DR
+	- [Multi-AZ setup]({{< ref "12-databases/#rds-deployment-options" >}}) for DR
 	- Maintenance windows for upgrades
-	- Scaling capability (both, vertical and horizontal)
-	- Storage backed by EBS
+	- [Scaling]({{< ref "8-scalability-high-availability/#scalability" >}}) capability (both, vertical and horizontal)
+	- Storage backed by [EBS]({{< ref "6-storage/#ebs-volume" >}})
 - Not possible to SSH into DB instances (managed service)
 #### Example RDS application architecture
 
@@ -60,7 +60,7 @@ _Source:_ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
 
 - Aurora is proprietary technology from AWS (not open sourced)
 - PostgreSQL and MySQL are both supported
-- Aurora is "**AWS Optimized**" and claims to be **5x performance improved** over MySQL on RDS and **3x the performance of Postgres on RDS**
+- Aurora is "**AWS Optimized**" and claims to be **5x performance improved over MySQL on RDS** and **3x the performance of Postgres on RDS**
 - Aurora storage automatically grows and increments of 10GB (up to 128 TB)
 - Aurora costs about 20% more than RDS
 #### Amazon Aurora Serverless
@@ -87,7 +87,7 @@ Aurora and RDS > Create a database
 - Multi-AZ
 	- Failover in case of AZ outage ([High-Availability]({{< ref "8-scalability-high-availability/#high-availability" >}}))
 	- Data only read/written to the main DB
-	- Can only have 1 AZ as a failover
+	- Can only have 1 [AZ]({{< ref "1-what-is-cloud-computing/#aws-global-infrastructure" >}}) as a failover
 - Multi-Region
 	- Multi-Region (Read Replicas)
 	- Writes only to the main database
@@ -97,7 +97,7 @@ Aurora and RDS > Create a database
 ## Other Database Types
 ### <font color=#f1ef63>Amazon ElastiCache</font>
 
-- The same way RDS is to get managed Relational Databases, ElastiCache is to get managed <font color=#f1ef63>Redis</font> or <font color=#f1ef63>Memcached</font>.
+- The same way **RDS** is to get **managed Relational Databases**, **ElastiCache** is to get managed <font color=#f1ef63>Redis</font> or <font color=#f1ef63>Memcached</font>.
 - Caches are <font color=#10b981>in-memory databases</font> with high performance and low latency
 - Helps <font color=#10b981>reducing load</font> from <font color=#10b981>databases with read-intensive workloads</font>
 
@@ -112,7 +112,7 @@ _More:_ https://docs.aws.amazon.com/elasticache/
 - Millions of requests per second, trillions of row, 100s TB of storage
 - Fast and consistent performance
 - <font color=#10b981>Single-digit millisecond latency</font>
-- Integrated with IAM for security, authorization and administration
+- Integrated with [IAM]({{< ref "2-iam" >}}) for security, authorization and administration
 - Low cost and auto scaling capabilities
 - Standard & Infrequent Access (IA) Table Class
 #### DynamoDB Accelerator (DAX)
@@ -120,7 +120,7 @@ _More:_ https://docs.aws.amazon.com/elasticache/
 - Fully Managed in-memory cache for DynamoDB
 - 10x performance improvement when accessing DynamoDB tables
 
-DAX is only used for DynamoDB where Elasticache can be used for other databases.
+DAX is only used for DynamoDB where [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}}) can be used for other databases.
 #### DynamoDB Global Tables
 
 - Makes DynamoDB table accessible with low latency in multiple-regions
@@ -227,7 +227,7 @@ Managed <font color=#f43f5e>E</font>xtract, <font color=#f43f5e>T</font>ransform
 - Differences between Multi-AZ, Read Replicas, Multi-Region
 - **In-memory Database:** ElastiCache
 - **Key/Value Database:** DynamoDB (serverless) & DAX (cache for DynamoDB)
-- **Warehouse** - OLAP: Redshift (SQL)
+- **Warehouse** - OLAP: **Redshift** (SQL)
 - **Hadoop Cluster:** EMR
 - **Athena:** query data on Amazon S3 (serverless & SQL)
 - **QuickSight:** dashboards on your data (serverless)

@@ -138,7 +138,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "860"
+    "wordCount": "863"
   }
   </script>
     
@@ -531,7 +531,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-14 00:00:00 &#43;0000 UTC">14 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>860 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <time datetime="2025-08-14 00:00:00 &#43;0000 UTC">14 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>863 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -623,7 +623,7 @@
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <h1 id="deploying-and-managing-infrastructure-at-scale" class="relative group">Deploying and Managing Infrastructure at scale <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#deploying-and-managing-infrastructure-at-scale" aria-label="Anchor">#</a></span></h1>
 <h2 id="cloudformation" class="relative group">CloudFormation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudformation" aria-label="Anchor">#</a></span></h2>
-<p>CloudFormation is a declarative way of outlining an AWS infrastructure.</p>
+<p><strong>CloudFormation</strong> is a <em>declarative way of outlining an AWS infrastructure</em>.</p>
 <p><font color=#f1ef63>Example:</font></p>
 <ul>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/5-security-groups/">Security Group</a>
@@ -635,7 +635,7 @@
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/">Load Balancer</a>
  (ELB) in front</li>
 </ul>
-<p>Then CloudFormation creates those resources <font color=#10b981>in the right order</font> and with the exact configuration that was specified (declared).</p>
+<p>Then <strong>CloudFormation</strong> creates those resources <font color=#10b981>in the right order</font> and with the exact configuration that was specified (declared).</p>
 <hr>
 <p><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/Omppm_YUG2g?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
@@ -645,32 +645,32 @@
 <hr>
 <h3 id="benefits-of-cloudformation" class="relative group">Benefits of CloudFormation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#benefits-of-cloudformation" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>Infrastructure as Code
+<li><strong>Infrastructure as Code</strong>
 <ul>
 <li>No resources are manually created</li>
 <li>Changes to the infrastructure are reviewed through code</li>
 </ul>
 </li>
-<li>Cost
+<li><strong>Cost</strong>
 <ul>
 <li>Each resource within the stack is tagged with an identifier so you can easily see how much a stack costs</li>
-<li>Cost can be estimated by using CloudFormation template</li>
+<li><font color=#f1ef63>Cost can be estimated by using CloudFormation template</font></li>
 <li><font color=#f1ef63>Cost savings strategy:</font> in Dev, automation can delete resources at 5pm and recreate at 8am automatically</li>
 </ul>
 </li>
-<li>Productivity
+<li><strong>Productivity</strong>
 <ul>
 <li>Ability to destroy and re-create and infrastructure in the cloud on the fly</li>
-<li>Declarative programming (no need to figure out ordering and orchestration)</li>
+<li><em>Declarative programming</em> (no need to figure out ordering and orchestration)</li>
 </ul>
 </li>
-<li>Don&rsquo;t re-invent the wheel
+<li><strong>Don&rsquo;t re-invent the wheel</strong>
 <ul>
 <li>Leverage existing templates on the web</li>
 <li>Leverage the documentation</li>
 </ul>
 </li>
-<li>Supports (almost) all AWS resources
+<li><strong>Supports (almost) all AWS resources</strong>
 <ul>
 <li>&ldquo;<em>Custom resources</em>&rdquo; can be used for resources that are not supported</li>
 </ul>
@@ -692,7 +692,7 @@
 <li>Define your cloud infrastructure using a familiar language:
 <ul>
 <li>JavaScript/TypeScript, Python, Java, .NET</li>
-<li>For that reason infrastructure and application can be deployed &ldquo;together&rdquo; - they share the runtime</li>
+<li>For that reason infrastructure and application can be deployed &ldquo;together&rdquo; - <font color=#10b981>they share the runtime</font></li>
 </ul>
 </li>
 <li>The infrastructure code is converted into a CloudFormation template (JSON / YAML)</li>
@@ -719,7 +719,9 @@
 <li>Instance configuration / OS is handled by  Beanstalk</li>
 <li>Deployment strategy is configurable but performed by Elastic Beanstalk</li>
 <li>Capacity provisioning</li>
-<li>Load Balancing and Auto-Scaling</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/">Load Balancing</a>
+ and <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/">Auto Scaling</a>
+</li>
 <li>Application health-monitoring and responsiveness</li>
 </ul>
 </li>
@@ -727,8 +729,11 @@
 <li>Three architecture models:
 <ul>
 <li>Single instance deployment: for DEV environments</li>
-<li>LB + ASG: for prod or pre-prod web apps</li>
-<li>ASG only: for non-web apps in production (workers, etc&hellip;)</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/">LB</a>
+ + <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/">ASG</a>
+: for prod or pre-prod web apps</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/10-auto-scaling-groups/">ASG</a>
+ only: for non-web apps in production (workers, etc&hellip;)</li>
 </ul>
 </li>
 </ul>
@@ -747,7 +752,8 @@
 <li>Multi-Container Docker</li>
 <li>Preconfigured Docker</li>
 </ul>
-<p><font color=#f1ef63>Beanstalk Health Agent pushes metrics to CloudWatch, checks for app health and publishes health events.</font></p>
+<p><font color=#f1ef63>Beanstalk Health Agent pushes metrics to</font> <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#cloudwatch-metrics">CloudWatch</a>
+, <font color=#f1ef63>checks for app health and publishes health events.</font></p>
 <h2 id="aws-codedeploy" class="relative group">AWS CodeDeploy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-codedeploy" aria-label="Anchor">#</a></span></h2>
 <p>AWS CodeDeploy is a deployment service that automates application deployments to:</p>
 <ul>
@@ -763,12 +769,12 @@
 <p>CodePipeline orchestrates the different steps to have the code automatically pushed to production.</p>
 <pre tabindex="0"><code class="language-Code" data-lang="Code">Code &gt; Build &gt; Test &gt; Provision &gt; Deploy
 </code></pre><h2 id="aws-codeartifact" class="relative group">AWS CodeArtifact <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-codeartifact" aria-label="Anchor">#</a></span></h2>
-<p>Software packages depends on each other to be built (also called code dependencies).
+<p>Software packages depends on each other to be built (also called <em>code dependencies</em>).
 Storing and retrieving those dependencies is called artifact management.
 Traditionally you need to setup your own artifact management system.</p>
-<p>CodeArtifact works with common dependency management tools such as:</p>
+<p><strong>CodeArtifact</strong> works with common dependency management tools such as:</p>
 <p>Maven, Gradle, npm, yarn, twine, pip, NuGet.</p>
-<p>Developers and CodeBuild can retrieve dependencies straight from CodeArtifact.</p>
+<p><strong>Developers and CodeBuild can retrieve dependencies straight from CodeArtifact.</strong></p>
 <h2 id="systems-manager-ssm" class="relative group"><font color=#f1ef63>Systems Manager (SSM)</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#systems-manager-ssm" aria-label="Anchor">#</a></span></h2>
 <p>SSM helps managing EC2 and On-Premises systems at scale.</p>
 <p>
@@ -796,10 +802,13 @@ Traditionally you need to setup your own artifact management system.</p>
 </li>
 <li>Works with Linux, Windows, MacOS and Raspberry Pi OS (Raspbian)
 <ul>
-<li>Allows starting SSH session on EC2 and On-Premise servers</li>
+<li>Allows starting SSH session on <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
+ and On-Premise servers</li>
 <li>No SSH access, bastion hosts or SSH keys needed</li>
 <li>No port 22 needed</li>
-<li>Send session log data to S3 or CloudWatch</li>
+<li>Send session log data to <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
+ or <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#cloudwatch-metrics">CloudWatch</a>
+</li>
 </ul>
 </li>
 </ul>

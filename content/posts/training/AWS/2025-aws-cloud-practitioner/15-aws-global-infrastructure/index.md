@@ -184,7 +184,7 @@ _[How AWS Local Zones work](https://docs.aws.amazon.com/local-zones/latest/ug/wh
 - RDS
 - ECS
 - EBS
-- ElastiCache
+- [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
 - Direct Connect
 - More...
 

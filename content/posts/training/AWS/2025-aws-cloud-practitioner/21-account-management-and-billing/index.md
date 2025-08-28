@@ -75,7 +75,7 @@ Service offering with standards how the company is building their services.
 
 - <font color=#f1ef63>Pay as you go:</font> pay for what you use, remain agile, responsive, meet scale demands
 - <font color=#f1ef63>Save when you reserve:</font> minimize risks, predictably manage budgets, comply with long-term requirements
-	- Reservations are available for EC2 Reserved Instances, DynamoDB Reserved Capacity, ElastiCache Reserved Nodes, RDS Reserved Instance, Redshift Reserved Nodes
+	- Reservations are available for EC2 Reserved Instances, DynamoDB Reserved Capacity, [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}}) Reserved Nodes, RDS Reserved Instance, Redshift Reserved Nodes
 - <font color=#f1ef63>Pay less by using more:</font> volume-based discounts
 - <font color=#f1ef63>Pay less as AWS grows</font>
 ### Free Services & Free Plan in AWS

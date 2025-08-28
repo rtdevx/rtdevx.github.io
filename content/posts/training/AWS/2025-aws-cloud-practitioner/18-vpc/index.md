@@ -113,7 +113,7 @@ _Default ACLs associated with the Default Subnets allow all traffic IN and OUT._
 
 - <font color=#f43f5e>Captures network information from AWS managed interfaces too:</font>
 	- Elastic Load Balancers
-	- ElastiCache
+	- [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
 	- RDS
 	- Aurora
 	- etc...

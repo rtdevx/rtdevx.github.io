@@ -724,7 +724,7 @@
 <li>High-Performance (optimized for a specific data model)</li>
 <li>Highly functional (types optimized for the data model)</li>
 </ul>
-<p><font color=#f1ef63>Use cases:</font> Key-value, document, graph, in-memory, search datamases</p>
+<p><font color=#f1ef63>Use cases:</font> Key-value, document, graph, in-memory, search databases</p>
 <h2 id="rds-and-aurora" class="relative group">RDS and Aurora <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#rds-and-aurora" aria-label="Anchor">#</a></span></h2>
 <h3 id="amazon-rds" class="relative group">Amazon RDS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-rds" aria-label="Anchor">#</a></span></h3>
 <p><font color=#f1ef63>RDS</font> stands for <font color=#f1ef63>Relational Database Service</font>. It is a managed DB service.</p>
@@ -746,10 +746,13 @@
 <li>Continuous backups and restore to specific timestamp (Point in Time Restore)</li>
 <li>Monitoring dashboards</li>
 <li>Read replicas for improved read performance</li>
-<li>Multi-AZ setup for DR</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#rds-deployment-options">Multi-AZ setup</a>
+ for DR</li>
 <li>Maintenance windows for upgrades</li>
-<li>Scaling capability (both, vertical and horizontal)</li>
-<li>Storage backed by EBS</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/8-scalability-high-availability/#scalability">Scaling</a>
+ capability (both, vertical and horizontal)</li>
+<li>Storage backed by <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/#ebs-volume">EBS</a>
+</li>
 </ul>
 </li>
 <li>Not possible to SSH into DB instances (managed service)</li>
@@ -773,7 +776,7 @@
 <ul>
 <li>Aurora is proprietary technology from AWS (not open sourced)</li>
 <li>PostgreSQL and MySQL are both supported</li>
-<li>Aurora is &ldquo;<strong>AWS Optimized</strong>&rdquo; and claims to be <strong>5x performance improved</strong> over MySQL on RDS and <strong>3x the performance of Postgres on RDS</strong></li>
+<li>Aurora is &ldquo;<strong>AWS Optimized</strong>&rdquo; and claims to be <strong>5x performance improved over MySQL on RDS</strong> and <strong>3x the performance of Postgres on RDS</strong></li>
 <li>Aurora storage automatically grows and increments of 10GB (up to 128 TB)</li>
 <li>Aurora costs about 20% more than RDS</li>
 </ul>
@@ -803,7 +806,8 @@
 <li>Failover in case of AZ outage (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/8-scalability-high-availability/#high-availability">High-Availability</a>
 )</li>
 <li>Data only read/written to the main DB</li>
-<li>Can only have 1 AZ as a failover</li>
+<li>Can only have 1 <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/1-what-is-cloud-computing/#aws-global-infrastructure">AZ</a>
+ as a failover</li>
 </ul>
 </li>
 <li>Multi-Region
@@ -820,7 +824,7 @@
 <h3 id="amazon-elasticache" class="relative group"><font color=#f1ef63>Amazon ElastiCache</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-elasticache" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>
-<p>The same way RDS is to get managed Relational Databases, ElastiCache is to get managed <font color=#f1ef63>Redis</font> or <font color=#f1ef63>Memcached</font>.</p>
+<p>The same way <strong>RDS</strong> is to get <strong>managed Relational Databases</strong>, <strong>ElastiCache</strong> is to get managed <font color=#f1ef63>Redis</font> or <font color=#f1ef63>Memcached</font>.</p>
 </li>
 <li>
 <p>Caches are <font color=#10b981>in-memory databases</font> with high performance and low latency</p>
@@ -843,7 +847,8 @@
 <li>Millions of requests per second, trillions of row, 100s TB of storage</li>
 <li>Fast and consistent performance</li>
 <li><font color=#10b981>Single-digit millisecond latency</font></li>
-<li>Integrated with IAM for security, authorization and administration</li>
+<li>Integrated with <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/">IAM</a>
+ for security, authorization and administration</li>
 <li>Low cost and auto scaling capabilities</li>
 <li>Standard &amp; Infrequent Access (IA) Table Class</li>
 </ul>
@@ -852,7 +857,8 @@
 <li>Fully Managed in-memory cache for DynamoDB</li>
 <li>10x performance improvement when accessing DynamoDB tables</li>
 </ul>
-<p>DAX is only used for DynamoDB where Elasticache can be used for other databases.</p>
+<p>DAX is only used for DynamoDB where <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#amazon-elasticache">ElastiCache</a>
+ can be used for other databases.</p>
 <h4 id="dynamodb-global-tables" class="relative group">DynamoDB Global Tables <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#dynamodb-global-tables" aria-label="Anchor">#</a></span></h4>
 <ul>
 <li>Makes DynamoDB table accessible with low latency in multiple-regions</li>
@@ -997,7 +1003,7 @@
 <li>Differences between Multi-AZ, Read Replicas, Multi-Region</li>
 <li><strong>In-memory Database:</strong> ElastiCache</li>
 <li><strong>Key/Value Database:</strong> DynamoDB (serverless) &amp; DAX (cache for DynamoDB)</li>
-<li><strong>Warehouse</strong> - OLAP: Redshift (SQL)</li>
+<li><strong>Warehouse</strong> - OLAP: <strong>Redshift</strong> (SQL)</li>
 <li><strong>Hadoop Cluster:</strong> EMR</li>
 <li><strong>Athena:</strong> query data on Amazon S3 (serverless &amp; SQL)</li>
 <li><strong>QuickSight:</strong> dashboards on your data (serverless)</li>

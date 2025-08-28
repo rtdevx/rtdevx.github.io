@@ -12,7 +12,7 @@ categories: AWS
 
 ## CloudFormation
 
-CloudFormation is a declarative way of outlining an AWS infrastructure.
+**CloudFormation** is a _declarative way of outlining an AWS infrastructure_.
 
 <font color=#f1ef63>Example:</font>
 - [Security Group]({{< ref "5-security-groups" >}})
@@ -20,7 +20,7 @@ CloudFormation is a declarative way of outlining an AWS infrastructure.
 - [S3]({{< ref "11-s3" >}}) Bucket
 - [Load Balancer]({{< ref "9-elastic-load-balancing" >}}) (ELB) in front
 
-Then CloudFormation creates those resources <font color=#10b981>in the right order</font> and with the exact configuration that was specified (declared).
+Then **CloudFormation** creates those resources <font color=#10b981>in the right order</font> and with the exact configuration that was specified (declared).
 
 ---
 
@@ -30,20 +30,20 @@ _Introduction to AWS CloudFormation_
 ---
 ### Benefits of CloudFormation
 
-- Infrastructure as Code
+- **Infrastructure as Code**
 	- No resources are manually created
 	- Changes to the infrastructure are reviewed through code
-- Cost
+- **Cost**
 	- Each resource within the stack is tagged with an identifier so you can easily see how much a stack costs
-	- Cost can be estimated by using CloudFormation template
+	- <font color=#f1ef63>Cost can be estimated by using CloudFormation template</font>
 	- <font color=#f1ef63>Cost savings strategy:</font> in Dev, automation can delete resources at 5pm and recreate at 8am automatically
-- Productivity
+- **Productivity**
 	- Ability to destroy and re-create and infrastructure in the cloud on the fly
-	- Declarative programming (no need to figure out ordering and orchestration)
-- Don't re-invent the wheel
+	- _Declarative programming_ (no need to figure out ordering and orchestration)
+- **Don't re-invent the wheel**
 	- Leverage existing templates on the web
 	- Leverage the documentation
-- Supports (almost) all AWS resources
+- **Supports (almost) all AWS resources**
 	- "_Custom resources_" can be used for resources that are not supported
 ### CloudFormation + <font color=#f1ef63>Infrastructure Composer</font>
 
@@ -61,7 +61,7 @@ _More:_ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/infrastru
 
 - Define your cloud infrastructure using a familiar language:
 	- JavaScript/TypeScript, Python, Java, .NET
-	- For that reason infrastructure and application can be deployed "together" - they share the runtime
+	- For that reason infrastructure and application can be deployed "together" - <font color=#10b981>they share the runtime</font>
 - The infrastructure code is converted into a CloudFormation template (JSON / YAML)
 ## Beanstalk
 
@@ -76,13 +76,13 @@ It uses all the components mentioned earlier (EC2, ASG, ELB, RDS, etc...)
 	- Instance configuration / OS is handled by  Beanstalk
 	- Deployment strategy is configurable but performed by Elastic Beanstalk
 	- Capacity provisioning
-	- Load Balancing and Auto-Scaling
+	- [Load Balancing]({{< ref "9-elastic-load-balancing" >}}) and [Auto Scaling]({{< ref "10-auto-scaling-groups" >}})
 	- Application health-monitoring and responsiveness
 - Just the application code is the responsibility of the developer
 - Three architecture models:
 	- Single instance deployment: for DEV environments
-	- LB + ASG: for prod or pre-prod web apps
-	- ASG only: for non-web apps in production (workers, etc...)
+	- [LB]({{< ref "9-elastic-load-balancing" >}}) + [ASG]({{< ref "10-auto-scaling-groups" >}}): for prod or pre-prod web apps
+	- [ASG]({{< ref "10-auto-scaling-groups" >}}) only: for non-web apps in production (workers, etc...)
 ##### <font color=#f1ef63>Beanstalk supports many platforms:</font>
 
 - Go
@@ -98,7 +98,7 @@ It uses all the components mentioned earlier (EC2, ASG, ELB, RDS, etc...)
 - Multi-Container Docker
 - Preconfigured Docker
 
-<font color=#f1ef63>Beanstalk Health Agent pushes metrics to CloudWatch, checks for app health and publishes health events.</font>
+<font color=#f1ef63>Beanstalk Health Agent pushes metrics to</font> [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}}), <font color=#f1ef63>checks for app health and publishes health events.</font>
 ## AWS CodeDeploy
 
 AWS CodeDeploy is a deployment service that automates application deployments to:
@@ -122,15 +122,15 @@ Code > Build > Test > Provision > Deploy
 ```
 ## AWS CodeArtifact
 
-Software packages depends on each other to be built (also called code dependencies).
+Software packages depends on each other to be built (also called _code dependencies_).
 Storing and retrieving those dependencies is called artifact management.
 Traditionally you need to setup your own artifact management system.
 
-CodeArtifact works with common dependency management tools such as:
+**CodeArtifact** works with common dependency management tools such as:
 
 Maven, Gradle, npm, yarn, twine, pip, NuGet.
 
-Developers and CodeBuild can retrieve dependencies straight from CodeArtifact.
+**Developers and CodeBuild can retrieve dependencies straight from CodeArtifact.**
 ## <font color=#f1ef63>Systems Manager (SSM)</font>
 
 SSM helps managing EC2 and On-Premises systems at scale.
@@ -145,10 +145,10 @@ SSM helps managing EC2 and On-Premises systems at scale.
 	- <font color=#f43f5e>Run commands across entire fleet of servers</font>
 	- <font color=#f43f5e>Store parameter configuration</font> with the SSM Parameter Store
 - Works with Linux, Windows, MacOS and Raspberry Pi OS (Raspbian)
-	- Allows starting SSH session on EC2 and On-Premise servers
+	- Allows starting SSH session on [EC2]({{< ref "4-ec2" >}}) and On-Premise servers
 	- No SSH access, bastion hosts or SSH keys needed
 	- No port 22 needed
-	- Send session log data to S3 or CloudWatch
+	- Send session log data to [S3]({{< ref "11-s3" >}}) or [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}})
 
 ![](./assets/AWS_SSM1.png)
 ### Systems Manager Parameter Store
