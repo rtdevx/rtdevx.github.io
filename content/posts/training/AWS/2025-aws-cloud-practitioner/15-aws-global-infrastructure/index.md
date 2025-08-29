@@ -36,7 +36,7 @@ _AWS Global Infrastructure Overview - Regions, Availability Zones, Edge Location
 _[How Route 53 routes traffic for your domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html#welcome-dns-service-how-route-53-routes-traffic)_
 ### Route53 Routing Policies
 
-- <font color=#10b981>Simple</font> Routing Policy - <font color=#f43f5e>No health checks,</font>, just DNS check
+- <font color=#10b981>Simple</font> Routing Policy - <font color=#f43f5e>No health checks,</font> just DNS check
 - <font color=#10b981>Weighted</font> Routing Policy - <font color=#f43f5e>Specify what amount of traffic goes where</font> (i.e. 70% = Server1, 20% = Server2, 10% = Server3. Simple form of Load Balancing)
 - <font color=#10b981>Latency</font> Routing Policy - <font color=#f43f5e>Based on latency</font> - minimizing the latency between user and the server sending the traffic that is geographically (latency-based) closer to the user
 - <font color=#10b981>Failover</font> Routing Policy - <font color=#f43f5e>Disaster Recovery</font> (DR) - based on Health Checks
