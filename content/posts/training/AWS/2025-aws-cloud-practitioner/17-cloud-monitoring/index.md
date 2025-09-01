@@ -53,10 +53,10 @@ CloudWatch > Alarms > All alarms
 
 CloudWatch Logs can collect logs from:
 
-- Elastic Beanstalk - collection of logs from application
-- ECS - collection of logs from containers
-- AWS Lambda - collection of logs from functions
-- CloudTrail based on filter
+- [Elastic Beanstalk]({{< ref "14-deployments/#beanstalk" >}}) - collection of logs from application
+- [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) - collection of logs from containers
+- AWS [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) - collection of logs from functions
+- [CloudTrail]({{< ref "17-cloud-monitoring/#aws-cloudtrail" >}}) based on filter
 - <font color=#10b981>CloudWatch log agents</font> - on EC2 machines or on-premises servers
 - [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}}) - DNS logs
 ### CloudWatch Logs for EC2 / on-premise
@@ -70,7 +70,7 @@ IAM permissions must be set for CloudWatch Logs to function correctly.
 ## Amazon EventBridge
 
 - Schedule - cron jobs (scheduled scripts)
-- Event Pattern -Event rules to react to a service doing something
+- Event Pattern - Event rules to react to a service doing something
 - Trigger Lambda functions, send SQS / SNS messages
 
 ![](./assets/AWS_CW_EventBridge1.png)

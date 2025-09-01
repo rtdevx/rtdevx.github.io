@@ -138,7 +138,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1358"
+    "wordCount": "1360"
   }
   </script>
     
@@ -531,7 +531,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-18 00:00:00 &#43;0000 UTC">18 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1358 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
+      <time datetime="2025-08-18 00:00:00 &#43;0000 UTC">18 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1360 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
     
 
     
@@ -638,10 +638,16 @@
 <p>Amazon <strong>Virtual Private Cloud</strong> (VPC) enables you to provision logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you defined.</p>
 <ul>
 <li>VPC, Subnets, Internet Gateways, NAT Gateways</li>
-<li>Security Groups, Network ACS (NACL), VPC Flow Logs</li>
-<li>VPC Peering, VPC Endpoints</li>
-<li>Site to Site VPN and Direct Connect</li>
-<li>Transit Gateway</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/5-security-groups/">Security Groups</a>
+, Network ACL (NACL), <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/#vpc-flow-logs">VPC Flow Logs</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/#vpc-peering">VPC Peering</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/#vpc-endpoints">VPC Endpoints</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/#site-to-site-vpn--direct-connect">Site to Site VPN and Direct Connect</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/#transit-gateway">Transit Gateway</a>
+</li>
 </ul>
 <h2 id="ip-addresses-in-aws" class="relative group">IP Addresses in AWS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ip-addresses-in-aws" aria-label="Anchor">#</a></span></h2>
 <ul>
@@ -820,11 +826,14 @@ VPC &gt; Security &gt; Network ACLs
 <li>
 <p><font color=#f43f5e>Captures network information from AWS managed interfaces too:</font></p>
 <ul>
-<li>Elastic Load Balancers</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/">Elastic Load Balancers</a>
+</li>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#amazon-elasticache">ElastiCache</a>
 </li>
-<li>RDS</li>
-<li>Aurora</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#rds-and-aurora">RDS</a>
+</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#rds-and-aurora">Aurora</a>
+</li>
 <li>etc&hellip;</li>
 </ul>
 </li>
@@ -854,7 +863,9 @@ VPC &gt; Security &gt; Network ACLs
 <p>Endpoints allow connecting to AWS Services using a private network instead of the public www network.</p>
 <p>This gives enhanced security and lower latency to access AWS services.</p>
 <ul>
-<li>VPC <font color=#f43f5e>Endpoint Gateway</font> - for Amazon S3 and DynamoDB only</li>
+<li>VPC <font color=#f43f5e>Endpoint Gateway</font> - for Amazon <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
+ and <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#dynamodb">DynamoDB</a>
+ only</li>
 <li>VPC <font color=#f43f5e>Endpoint Interface</font> - most services (including S3 and DynamoDB)</li>
 </ul>
 <h2 id="private-link" class="relative group">Private Link <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#private-link" aria-label="Anchor">#</a></span></h2>

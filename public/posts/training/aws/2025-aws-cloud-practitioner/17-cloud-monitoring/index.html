@@ -138,7 +138,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1015"
+    "wordCount": "1016"
   }
   </script>
     
@@ -531,7 +531,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-17 00:00:00 &#43;0000 UTC">17 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1015 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <time datetime="2025-08-17 00:00:00 &#43;0000 UTC">17 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1016 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -699,10 +699,14 @@ CloudWatch &gt; Alarms &gt; All alarms
 <h3 id="cloudwatch-logs" class="relative group">CloudWatch Logs <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudwatch-logs" aria-label="Anchor">#</a></span></h3>
 <p>CloudWatch Logs can collect logs from:</p>
 <ul>
-<li>Elastic Beanstalk - collection of logs from application</li>
-<li>ECS - collection of logs from containers</li>
-<li>AWS Lambda - collection of logs from functions</li>
-<li>CloudTrail based on filter</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/14-deployments/#beanstalk">Elastic Beanstalk</a>
+ - collection of logs from application</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#ecs-elastic-container-service">ECS</a>
+ - collection of logs from containers</li>
+<li>AWS <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#lambda">Lambda</a>
+ - collection of logs from functions</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#aws-cloudtrail">CloudTrail</a>
+ based on filter</li>
 <li><font color=#10b981>CloudWatch log agents</font> - on EC2 machines or on-premises servers</li>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/#route53">Route53</a>
  - DNS logs</li>
@@ -715,7 +719,7 @@ to push the logs that are needed.</font></p>
 <h2 id="amazon-eventbridge" class="relative group">Amazon EventBridge <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-eventbridge" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>Schedule - cron jobs (scheduled scripts)</li>
-<li>Event Pattern -Event rules to react to a service doing something</li>
+<li>Event Pattern - Event rules to react to a service doing something</li>
 <li>Trigger Lambda functions, send SQS / SNS messages</li>
 </ul>
 <p>

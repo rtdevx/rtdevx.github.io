@@ -13,10 +13,10 @@ categories: AWS
 Amazon **Virtual Private Cloud** (VPC) enables you to provision logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you defined.
 
 - VPC, Subnets, Internet Gateways, NAT Gateways
-- Security Groups, Network ACS (NACL), VPC Flow Logs
-- VPC Peering, VPC Endpoints
-- Site to Site VPN and Direct Connect
-- Transit Gateway
+- [Security Groups]({{< ref "5-security-groups" >}}), Network ACL (NACL), [VPC Flow Logs]({{< ref "18-vpc/#vpc-flow-logs" >}})
+- [VPC Peering]({{< ref "18-vpc/#vpc-peering" >}}), [VPC Endpoints]({{< ref "18-vpc/#vpc-endpoints" >}})
+- [Site to Site VPN and Direct Connect]({{< ref "18-vpc/#site-to-site-vpn--direct-connect" >}})
+- [Transit Gateway]({{< ref "18-vpc/#transit-gateway" >}})
 ## IP Addresses in AWS
 
 - IPv4 (4.3 Billion Addresses)
@@ -112,10 +112,10 @@ _Default ACLs associated with the Default Subnets allow all traffic IN and OUT._
 	- Internet to subnets
 
 - <font color=#f43f5e>Captures network information from AWS managed interfaces too:</font>
-	- Elastic Load Balancers
+	- [Elastic Load Balancers]({{< ref "9-elastic-load-balancing" >}})
 	- [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
-	- RDS
-	- Aurora
+	- [RDS]({{< ref "12-databases/#rds-and-aurora" >}})
+	- [Aurora]({{< ref "12-databases/#rds-and-aurora" >}})
 	- etc...
 ##### <font color=#f43f5e>VPC Flow Logs must first be created for each VPC</font>
 
@@ -140,7 +140,7 @@ Endpoints allow connecting to AWS Services using a private network instead of th
 
 This gives enhanced security and lower latency to access AWS services.
 
-- VPC <font color=#f43f5e>Endpoint Gateway</font> - for Amazon S3 and DynamoDB only
+- VPC <font color=#f43f5e>Endpoint Gateway</font> - for Amazon [S3]({{< ref "11-s3" >}}) and [DynamoDB]({{< ref "12-databases/#dynamodb" >}}) only
 - VPC <font color=#f43f5e>Endpoint Interface</font> - most services (including S3 and DynamoDB)
 ## Private Link
 
