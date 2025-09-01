@@ -143,13 +143,13 @@ Outposts are "server racks" that offer the same AWS infrastructure, services, AP
 - Easier migration from on-premises to the cloud
 - Fully managed service
 - Some example services that work on Outposts:
-	- EC2
-	- EBS
-	- S3
-	- EKS
-	- ECS
-	- RDS
-	- EMR
+	- [EC2]({{< ref "4-ec2" >}})
+	- [EBS]({{< ref "6-storage/#ebs-volume" >}})
+	- [S3]({{< ref "11-s3" >}})
+	- [EKS]({{< ref "13-other-compute-services/#amazon-eks" >}})
+	- [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}})
+	- [RDS]({{< ref "12-databases/#rds-and-aurora" >}})
+	- [EMR]({{< ref "12-databases/#amazon-emr" >}})
 ## Wavelength
 
 Wavelength Zones are infrastructure deployments embedded within the telecommunication providers datacenters <font color=#10b981>at the edge of the 5G networks</font>.
@@ -180,12 +180,12 @@ _[How AWS Local Zones work](https://docs.aws.amazon.com/local-zones/latest/ug/wh
 
 ##### <font color=#f1ef63>Compatible with:</font>
 
-- EC2
-- RDS
-- ECS
-- EBS
+- [EC2]({{< ref "4-ec2" >}})
+- [RDS]({{< ref "12-databases/#rds-and-aurora" >}})
+- [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}})
+- [EBS]({{< ref "6-storage/#ebs-volume" >}})
 - [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
-- Direct Connect
+- [Direct Connect]({{< ref "18-vpc/#site-to-site-vpn--direct-connect" >}})
 - More...
 
 _More about AWS Local Zones:_ https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html
