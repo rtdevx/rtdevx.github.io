@@ -252,9 +252,9 @@ _Amazon GuardDuty input data example_
 	- Using [AWS System Manager (SSM)]({{< ref "14-deployments/#systems-manager-ssm" >}}) agent
 	- Analyze against <font color=#f43f5e>unintended network accessibility</font>
 	- Analyze the <font color=#f43f5e>running OS against known vulnerabilities</font>
-- For Container Images pushed to ECR
-	- Assessment of Container Images as they are pushed
-- For Lambda Functions
+- For Container Images pushed to [ECR]({{< ref "13-other-compute-services/#ecr" >}})
+	- Assessment of [Container Images]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) as they are being pushed
+- For [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) Functions
 	- Identifies software vulnerabilities in function code and package dependencies
 	- Assessment of functions as they are deployed
 ##### <font color=#f1ef63>Reporting and integration with</font> [AWS Security Hub]({{< ref "19-security-and-compliance/#aws-security-hub" >}}).
