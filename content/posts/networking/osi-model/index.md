@@ -86,7 +86,9 @@ The Data Link Layer is divided into two sublayers:
 
 The **Physical Layer** refers to the physical communication medium and technologies to transmit data across that medium.
 
-The **physical layer** contains information in the form of bits. **Physical Layer** is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the **Data Link layer**, which will put the frame back together. Common physical layer devices are <font color=#f1ef63>Hub</font>, <font color=#f1ef63>Repeater</font>, <font color=#f1ef63>Modem</font>, and <font color=#f1ef63>Cables</font>.
+The **physical layer** contains information in the form of bits. **Physical Layer** is responsible for transmitting individual bits from one node to the next. 
+
+When receiving data, this layer will get the signal received and convert it into **0s** and **1s** and send them to the **Data Link layer**, which will put the frame back together. Common physical layer devices are <font color=#f1ef63>Hub</font>, <font color=#f1ef63>Repeater</font>, <font color=#f1ef63>Modem</font>, and <font color=#f1ef63>Cables</font>.
 
 ![](./assets/physical-layer.png)
 _More:_ https://www.geeksforgeeks.org/computer-networks/open-systems-interconnection-model-osi/
