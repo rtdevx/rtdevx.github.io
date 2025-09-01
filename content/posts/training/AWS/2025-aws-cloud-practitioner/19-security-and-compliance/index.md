@@ -175,7 +175,7 @@ _Read More about Penetration Testing: _ https://aws.amazon.com/security/penetrat
 	- Possibility of rotation policy (new key generated every year, old key preserved)
 	- Possibility to bring-your-own-key
 - **AWS Managed Key:**
-	- Created, managed and used on the customer's behalf by AWS
+	- Created and managed by AWS and used by the customer
 	- Used by AWS services (S3, EBS, Redshift, etc.)
 - **AWS Owned Key:**
 	- Collection of CMDs that an AWS service owns and manages to use in multiple accounts
