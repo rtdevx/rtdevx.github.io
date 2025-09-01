@@ -77,7 +77,7 @@ _More about DDOS protection:_ https://docs.aws.amazon.com/whitepapers/latest/aws
 
 - <font color=#f1ef63>AWS Shield Standard</font>
 	- Free service that is activated for every AWS customer
-	- Provides protection from attacks such as SYN / UDP Floods, Reflection attacks and other [layer 3]({{< ref "osi-model/#3-network-layer" >}}) / [layer 4]({{< ref "osi-model/#4-transport-layer" >}}) attacks
+	- Provides protection from attacks such as SYN / UDP Floods, Reflection attacks and other [layer 3]({{< ref "osi-model/#3-network-layer" >}}) / [layer 4]({{< ref "osi-model/#4-transport-layer" >}}) attacks (read more about [ISO OSI Model]({{< ref "osi-model" >}}))
 - <font color=#f1ef63>AWS Shield Advanced</font>
 	- Optional DDoS mitigation service (<font color=#f43f5e>$3000</font> per month per organization)
 	- Protecting against more sophisticated attacks on <font color=#f43f5e>Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator and Route53</font>
