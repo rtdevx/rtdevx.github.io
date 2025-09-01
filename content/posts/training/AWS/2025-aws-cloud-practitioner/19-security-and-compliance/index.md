@@ -68,7 +68,7 @@ _Sample Reference Architecture for DDOS Protection in AWS_
 
 - [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}}) - Latency / Geolocation routing policies
 - [CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}}) - to ensure data is cached at the edge
-- Shield - see below section
+- [Shield]({{< ref "19-security-and-compliance/#aws-shield" >}}) - see below section
 - [WAF]({{< ref "19-security-and-compliance/#aws-waf" >}}) - optionally
 - [Load Balancer]({{< ref "9-elastic-load-balancing" >}}) and [Auto Scaling]({{< ref "10-auto-scaling-groups" >}})
 
@@ -123,14 +123,14 @@ _More about Network Firewall:_ https://docs.aws.amazon.com/network-firewall/
 
 ##### AWS Customers <font color=#10b981>are allowed to carry out security assessment or penetration tests against their AWS infrastructure without prior approval for 8 services:</font>
 
-- Amazon EC2 instances, NAT Gateways and Elastic Load Balancers
-- Amazon RDS
-- Amazon CloudFront
-- Amazon Aurora
-- Amazon API Gateways
-- AWS Lambda and Lambda Edge functions
-- Amazon Lightsail resources
-- Amazon Elastic Beanstalk environments
+- Amazon [EC2]({{< ref "4-ec2" >}}) instances, [NAT Gateways]({{< ref "18-vpc/#internet-gateway--nat-gateways" >}}) and [Elastic Load Balancers]({{< ref "9-elastic-load-balancing" >}})
+- [Amazon RDS]({{< ref "12-databases/#rds-and-aurora" >}})
+- [Amazon CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}})
+- [Amazon Aurora]({{< ref "12-databases/#rds-and-aurora" >}})
+- [Amazon API Gateways]({{< ref "13-other-compute-services/#amazon-api-gateway" >}})
+- [AWS Lambda]({{< ref "13-other-compute-services/#lambda" >}}) and Lambda Edge functions
+- [Amazon Lightsail]({{< ref "13-other-compute-services/#lightsail" >}}) resources
+- Amazon [Elastic Beanstalk]({{< ref "14-deployments/#beanstalk" >}}) environments
 ### <font color=#f43f5e>Prohibited activities</font>
 
 - DNS zone walking via Amazon Route53 and Hosted Zones
