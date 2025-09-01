@@ -390,6 +390,8 @@ Access outside zone of trusts = findings.
 - DDOS: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.html
 - Network Firewall: https://docs.aws.amazon.com/network-firewall/
 - Penetration Testing: https://aws.amazon.com/security/penetration-testing/
+
+- OSI Model: [ISO OSI Model]({{< ref "osi-model" >}})
 ## >> References <<
 
 - [EC2]({{< ref "4-ec2" >}})
