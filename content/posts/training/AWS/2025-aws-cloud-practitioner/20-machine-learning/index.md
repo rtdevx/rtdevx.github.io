@@ -86,7 +86,7 @@ Fully managed Machine Learning service to build apps with <font color=#10b981>re
 Same tech used by amazon.com
 
 <font color=#f1ef63>Use Cases:</font> retail stores, media, entertainment...
-# Textract
+## Textract
 
 Automatically <font color=#10b981>extracts text, handwriting and data from scanned documents</font> using AI and ML.
 
