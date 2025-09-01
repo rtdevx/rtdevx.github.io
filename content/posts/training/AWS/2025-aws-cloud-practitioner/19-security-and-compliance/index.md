@@ -55,8 +55,8 @@ _More about Shared Responsibility Model:_ https://aws.amazon.com/compliance/shar
 
 - <font color=#f1ef63>AWS Shield Standard</font> - protects against DDoS attack for website and applications - <font color=#10b981>for all customers at no additional cost</font>
 - <font color=#f1ef63>AWS Shield Advanced</font> - 24/7 premium DDoS protection and support
-- <font color=#f1ef63>AWS WAF</font> - filter specific requests based on predefined rules
-- <font color=#f1ef63>CloudFront and Route53</font>
+- [AWS WAF]({{< ref "19-security-and-compliance/#aws-waf" >}}) - filter specific requests based on predefined rules
+- [CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}}) and [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}})
 	- Availability protection using global edge network
 	- Combined with AWS Shield provides attach mitigation at the edge
 
