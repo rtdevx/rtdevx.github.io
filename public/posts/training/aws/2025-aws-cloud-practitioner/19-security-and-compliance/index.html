@@ -138,7 +138,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2287"
+    "wordCount": "2291"
   }
   </script>
     
@@ -531,7 +531,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-19 00:00:00 &#43;0000 UTC">19 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2287 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
+      <time datetime="2025-08-19 00:00:00 &#43;0000 UTC">19 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2291 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
     
 
     
@@ -635,7 +635,7 @@
             <li></li>
           </ul>
         </li>
-        <li><a href="#prohibited-activities"><font color=#f43f5e>Prohibited activities:</font></a></li>
+        <li><a href="#prohibited-activities"><font color=#f43f5e>Prohibited activities</font></a></li>
       </ul>
     </li>
     <li><a href="#data-at-rest-vs-data-in-transit">Data at rest vs Data in Transit</a>
@@ -732,11 +732,15 @@
 <h3 id="aws-responsibility---security-of-the-cloud" class="relative group">AWS responsibility - Security <font color=#f43f5e>of</font> the Cloud <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-responsibility---security-of-the-cloud" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Protecting infrastructure( hardware, software, facilities, networking) that runs the AWS services</li>
-<li>Managed services, like S3, DynamoDB, RDS, etc.</li>
+<li>Managed services, like <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#dynamodb">DynamoDB</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#rds-and-aurora">RDS</a>
+, etc.</li>
 </ul>
 <h3 id="customer-responsibility---security-in-the-cloud" class="relative group">Customer responsibility - Security <font color=#f43f5e>in</font> the cloud <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#customer-responsibility---security-in-the-cloud" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>For EC2 instance, customer is responsible to the management of the guest OS (including the security patches and updates), firewall and network configuration, IAM</li>
+<li>For <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
+ instance, customer is responsible to the management of the guest OS (including the security patches and updates), firewall and network configuration, IAM</li>
 <li>Encrypting application data</li>
 </ul>
 <h3 id="shared-controls" class="relative group">Shared controls <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#shared-controls" aria-label="Anchor">#</a></span></h3>
@@ -844,7 +848,7 @@
 <li><font color=#f1ef63>AWS Shield Standard</font>
 <ul>
 <li>Free service that is activated for every AWS customer</li>
-<li>Provides protection from attacks such as SYN / UDP Floods, Reflection attacks and other layer 3 / layer 4 attacks</li>
+<li>Provides protection from attacks such as SYN / UDP Floods, Reflection attacks and other <font color=#27D3F5>layer 3</font> / <font color=#27D3F5>layer 4</font> attacks</li>
 </ul>
 </li>
 <li><font color=#f1ef63>AWS Shield Advanced</font>
@@ -922,7 +926,7 @@
 <li>Amazon Lightsail resources</li>
 <li>Amazon Elastic Beanstalk environments</li>
 </ul>
-<h3 id="prohibited-activities" class="relative group"><font color=#f43f5e>Prohibited activities:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#prohibited-activities" aria-label="Anchor">#</a></span></h3>
+<h3 id="prohibited-activities" class="relative group"><font color=#f43f5e>Prohibited activities</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#prohibited-activities" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>DNS zone walking via Amazon Route53 and Hosted Zones</li>
 <li>Denial of Service (DoS), Distributed Denial of Service (DDoS), Simulated DoS, Simulated DDoS</li>
@@ -1077,7 +1081,8 @@
 <ul>
 <li>For EC2 instances
 <ul>
-<li><font color=#10b981>Using AWS System Manager (SSM) agent</font></li>
+<li>Using <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/14-deployments/#systems-manager-ssm">AWS System Manager (SSM)</a>
+ agent</li>
 <li>Analyze against <font color=#f43f5e>unintended network accessibility</font></li>
 <li>Analyze the <font color=#f43f5e>running OS against known vulnerabilities</font></li>
 </ul>
@@ -1094,7 +1099,8 @@
 </ul>
 </li>
 </ul>
-<h5 id="reporting-and-integration-with-aws-security-hub" class="relative group"><font color=#f1ef63>Reporting and integration with AWS Security Hub.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#reporting-and-integration-with-aws-security-hub" aria-label="Anchor">#</a></span></h5>
+<h5 id="reporting-and-integration-with-aws-security-hub" class="relative group"><font color=#f1ef63>Reporting and integration with</font> <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#aws-security-hub">AWS Security Hub</a>
+. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#reporting-and-integration-with-aws-security-hub" aria-label="Anchor">#</a></span></h5>
 <p><strong>Amazon Inspector</strong> <font color=#f43f5e>evaluates vulnerabilities (against CVE database)</font> only running EC2 instances, Container Images and Lambda Functions.</p>
 <p>A risk score is associated with all vulnerabilities for prioritization.</p>
 <h2 id="aws-config" class="relative group">AWS Config <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-config" aria-label="Anchor">#</a></span></h2>

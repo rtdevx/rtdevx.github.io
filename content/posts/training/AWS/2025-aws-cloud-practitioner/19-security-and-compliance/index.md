@@ -13,10 +13,10 @@ categories: AWS
 ### AWS responsibility - Security <font color=#f43f5e>of</font> the Cloud
 
 - Protecting infrastructure( hardware, software, facilities, networking) that runs the AWS services
-- Managed services, like S3, DynamoDB, RDS, etc.
+- Managed services, like [S3]({{< ref "11-s3" >}}), [DynamoDB]({{< ref "12-databases/#dynamodb" >}}), [RDS]({{< ref "12-databases/#rds-and-aurora" >}}), etc.
 ### Customer responsibility - Security <font color=#f43f5e>in</font> the cloud
 
-- For EC2 instance, customer is responsible to the management of the guest OS (including the security patches and updates), firewall and network configuration, IAM
+- For [EC2]({{< ref "4-ec2" >}}) instance, customer is responsible to the management of the guest OS (including the security patches and updates), firewall and network configuration, IAM
 - Encrypting application data
 ### Shared controls
 
@@ -77,7 +77,7 @@ _More about DDOS protection:_ https://docs.aws.amazon.com/whitepapers/latest/aws
 
 - <font color=#f1ef63>AWS Shield Standard</font>
 	- Free service that is activated for every AWS customer
-	- Provides protection from attacks such as SYN / UDP Floods, Reflection attacks and other layer 3 / layer 4 attacks
+	- Provides protection from attacks such as SYN / UDP Floods, Reflection attacks and other <font color=#27D3F5>layer 3</font> / <font color=#27D3F5>layer 4</font> attacks
 - <font color=#f1ef63>AWS Shield Advanced</font>
 	- Optional DDoS mitigation service (<font color=#f43f5e>$3000</font> per month per organization)
 	- Protecting against more sophisticated attacks on <font color=#f43f5e>Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator and Route53</font>
@@ -131,7 +131,7 @@ _More about Network Firewall:_ https://docs.aws.amazon.com/network-firewall/
 - AWS Lambda and Lambda Edge functions
 - Amazon Lightsail resources
 - Amazon Elastic Beanstalk environments
-### <font color=#f43f5e>Prohibited activities:</font>
+### <font color=#f43f5e>Prohibited activities</font>
 
 - DNS zone walking via Amazon Route53 and Hosted Zones
 - Denial of Service (DoS), Distributed Denial of Service (DDoS), Simulated DoS, Simulated DDoS
@@ -249,7 +249,7 @@ _Amazon GuardDuty input data example_
 ##### <font color=#f1ef63>Automated Security Assessment.</font>
 
 - For EC2 instances
-	- <font color=#10b981>Using AWS System Manager (SSM) agent</font>
+	- Using [AWS System Manager (SSM)]({{< ref "14-deployments/#systems-manager-ssm" >}}) agent
 	- Analyze against <font color=#f43f5e>unintended network accessibility</font>
 	- Analyze the <font color=#f43f5e>running OS against known vulnerabilities</font>
 - For Container Images pushed to ECR
@@ -257,7 +257,7 @@ _Amazon GuardDuty input data example_
 - For Lambda Functions
 	- Identifies software vulnerabilities in function code and package dependencies
 	- Assessment of functions as they are deployed
-##### <font color=#f1ef63>Reporting and integration with AWS Security Hub.</font>
+##### <font color=#f1ef63>Reporting and integration with</font> [AWS Security Hub]({{< ref "19-security-and-compliance/#aws-security-hub" >}}).
 
 **Amazon Inspector** <font color=#f43f5e>evaluates vulnerabilities (against CVE database)</font> only running EC2 instances, Container Images and Lambda Functions.
 
