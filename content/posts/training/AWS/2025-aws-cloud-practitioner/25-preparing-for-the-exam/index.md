@@ -37,7 +37,9 @@ https://www.aws.training/certification
 
 ![](./assets/AWS_Certification_paths.png)
 
-
+{{< alert >}}
+Take look at [Stephane Maarek's courses](https://www.udemy.com/user/stephane-maarek/)on [Udemy](https://www.udemy.com/) if you want to prepare for **AWS certifications** or just **learn AWS**. <font color=#f1ef63>Top quality content</font>, highly recommended.
+{{< /alert >}}
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |
