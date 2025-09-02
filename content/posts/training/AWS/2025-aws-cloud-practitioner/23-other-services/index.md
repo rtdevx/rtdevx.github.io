@@ -40,7 +40,7 @@ Visually design and build serverless applications quickly on AWS.
 
 Deploy AWS infrastructure code without needing to be an expert in AWS.
 
-**Generates Infrastructure as Code (IaC) using CloudFormation**
+**Generates Infrastructure as Code (IaC) using** [CloudFormation]({{< ref "14-deployments/#cloudformation--infrastructure-composer" >}})
 
 ```AWSConsole
 CLI > Infrastructure Composer
@@ -68,7 +68,7 @@ Fully-managed service to centrally manage and automate backups across AWS servic
 
 Quickly and easily recover physical, virtual and cloud-based servers into AWS.
 
-- Continuous block-level replication of servers to the cloud
+- Continuous **block-level replication** of servers to the cloud
 
 ![](./assets/AWS_DRS.png)
 ## AWS DataSync
@@ -103,19 +103,19 @@ Central location to collect servers and applications inventory data for the asse
 
 A fully-managed service for running fault injection experiments on AWS workloads. Based on <font color=#f43f5e>Chaos Enginneering</font>.
 
-Supports the following services: EC2, ECS, EKS, RDS, ...
+Supports the following services: [EC2]({{< ref "4-ec2" >}}), [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}), [EKS]({{< ref "13-other-compute-services/#amazon-eks" >}}), [RDS]({{< ref "12-databases/#rds-and-aurora" >}}), ...
 ## Step Functions
 
-Build serverless visual workflow to orchestrate your Lambda functions.
+Build serverless visual workflow to orchestrate your [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) functions.
 
 ![](./assets/AWS_Step_Functions.png)
 ## Ground Station
 
-Fully managed service to control satellite communications, process data and scale your satellite operations.
+Fully managed service to **control satellite communications**, process data and scale your satellite operations.
 
 Provides a global network of satellite ground stations near AWS regions.
 
-Send satellite data to S3 or EC2 instance.
+Send satellite data to [S3]({{< ref "11-s3" >}}) or [EC2]({{< ref "4-ec2" >}}) instance.
 
 <font color=#f1ef63>Use Cases:</font>
 - Weather forecasting

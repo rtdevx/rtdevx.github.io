@@ -48,15 +48,15 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 <font color=#f1ef63>Design Principles:</font>
 
 - Implement a strong identity foundation - centralize privilege management and reduce (or eliminate) reliance on long-term credentials - _Principle of least privilege_ - [IAM]({{< ref "2-iam" >}})
-- Enable traceability - integrate logs and metrics with systems to automatically respond and take action
+- Enable traceability - integrate logs and metrics with systems to automatically respond and take action - [Cloud Monitoring]({{< ref "17-cloud-monitoring" >}})
 - <font color=#f43f5e>Apply security at all layers</font> - edge network, VPC, subnet, load balancer, (every) EC2 instance, operating system, application
 - Automate security best practices
-- Protect data in transit and at rest - encryption, tokenization and access control
+- Protect data in transit and at rest - [encryption]({{< ref "19-security-and-compliance/#aws-kms-key-management-service" >}}), [tokenization]({{< ref "22-advanced-identity/#aws-sts-security-token-service" >}}) and [access control]({{< ref "22-advanced-identity" >}})
 - Keep people away from data - reduce or eliminate the need for direct access or manual processing of data
 - Prepare for security events - run incident response simulations and use tools with automation to increase your speed of detection, investigation and recovery
 ### 3. Reliability
 
-##### **Reliability** is an ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand and mitigate disruptions such as misconfigurations or transient network issues.
+##### **Reliability** is an **ability of a system to recover from infrastructure or service disruptions**, dynamically acquire computing resources to meet demand and mitigate disruptions such as misconfigurations or transient network issues.
 
 <font color=#f1ef63>Design Principles:</font>
 
@@ -66,7 +66,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 - Stop guessing capacity - maintain the optimal level to satisfy demand without over or under provisioning
 - Manage change in automation - use automation to make changes to infrastructure
 ### 4. Performance Efficiency
-##### **Performance Efficiency** includes ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
+##### **Performance Efficiency** includes **ability to use computing resources efficiently** to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
 
 <font color=#f1ef63>Design Principles:</font>
 
@@ -112,7 +112,7 @@ Created by AWS Professionals by taking advantage of AWS Best Practices and lesso
 - <font color=#10b981>Business</font>
 	- Business perspective helps to ensure that your cloud investments accelerate your digital transformation ambitions and business outcomes
 - <font color=#10b981>People</font>
-	- Servers a **bridge between technology and business**, accelerating the cloud journey to help organizations more rapidly evolve to a culture of continuous growth, learning and where change becomes BAU
+	- Serves a **bridge between technology and business**, accelerating the cloud journey to help organizations more rapidly evolve to a culture of continuous growth, learning and where change becomes BAU
 - <font color=#10b981>Governance</font>
 	- Helps orchestrating cloud initiatives while maximizing organizational benefits and minimizing transformation related risks
 - <font color=#10b981>Platform</font>
@@ -137,7 +137,7 @@ Created by AWS Professionals by taking advantage of AWS Best Practices and lesso
 - <font color=#10b981>Scale</font> - expand pilot initiatives to the desired scale while realizing the desired business benefits
 ## AWS Right Sizing
 
-EC2 has many instance types. Right sizing is the process of matching instance types and sizes to your workload.
+[EC2]({{< ref "4-ec2" >}}) has many [instance types]({{< ref "4-ec2/#amazon-ec2-instance-types" >}}). Right sizing is the process of matching instance types and sizes to your workload.
 
 **Scaling up is easy so always start small...**
 ## AWS Ecosystem - Free resources

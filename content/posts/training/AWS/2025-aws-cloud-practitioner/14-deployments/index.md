@@ -52,6 +52,8 @@ _Introduction to AWS CloudFormation_
 - We can see all the resources
 - We can see the relations between components
 
+_More:_ [Infrastructure Composer]({{< ref "23-other-services/#aws-infrastructure-composer" >}})
+
 <video id="AWS_Infrastructure_Composer" autoplay loop>  
   <source src="./assets/AWS_Infrastructure_Composer.webm" type="video/webm">  
 Your browser does not support the video tag.  
