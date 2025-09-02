@@ -42,7 +42,7 @@ _AWS Elastic Load Balancing Introduction_
 
 ### 1. Application Load Balancer 
 
-- HTTP / HTTPS only (Layer 7)
+- HTTP / HTTPS only ([layer 7]({{< ref "osi-model/#7-application-layer" >}}))
 
 {{< youtube cuJTmBvFCS0 >}}
 _AWS ALB (Application Load Balancer) - Step By Step Tutorial_
@@ -50,7 +50,7 @@ _AWS ALB (Application Load Balancer) - Step By Step Tutorial_
 ---
 ### 2. Network Load Balancer 
 
-- <font color=red>ultra high performance</font>, allows for TCP (Layer 4)
+- <font color=red>ultra high performance</font>, allows for TCP ([layer 4]({{< ref "osi-model/#4-transport-layer" >}}))
 
 {{< youtube _d8xGNKAqeo >}}
 _Mastering AWS Network Load Balancer | ALB vs NLB | Step by Step Tutorial_
@@ -59,7 +59,7 @@ _Mastering AWS Network Load Balancer | ALB vs NLB | Step by Step Tutorial_
 
 ### 3. Gateway Load Balancer
 
-- Supports GENEVE protocol. Built for extra security (Layer 3)
+- Supports GENEVE protocol. Built for extra security ([layer 3]({{< ref "osi-model/#3-network-layer" >}}))
 
 
 ---
