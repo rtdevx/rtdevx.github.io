@@ -138,7 +138,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2145"
+    "wordCount": "2160"
   }
   </script>
     
@@ -531,7 +531,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-21 00:00:00 &#43;0000 UTC">21 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2145 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
+      <time datetime="2025-08-21 00:00:00 &#43;0000 UTC">21 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>2160 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">11 mins</span>
     
 
     
@@ -620,18 +620,18 @@
         </li>
         <li><a href="#storage-pricing">Storage Pricing</a>
           <ul>
-            <li><a href="#s3">S3</a></li>
-            <li><a href="#ebs">EBS</a></li>
+            <li><a href="#s3"><a href="HAHAHUGOSHORTCODE125s11HBHB">S3</a></a></li>
+            <li><a href="#ebs"><a href="HAHAHUGOSHORTCODE125s15HBHB">EBS</a></a></li>
           </ul>
         </li>
         <li><a href="#database-pricing">Database Pricing</a>
           <ul>
-            <li><a href="#rds">RDS</a></li>
+            <li><a href="#rds"><a href="HAHAHUGOSHORTCODE125s16HBHB">RDS</a></a></li>
           </ul>
         </li>
         <li><a href="#content-delivery">Content Delivery</a>
           <ul>
-            <li><a href="#cloudfront">CloudFront</a></li>
+            <li><a href="#cloudfront"><a href="HAHAHUGOSHORTCODE125s17HBHB">CloudFront</a></a></li>
           </ul>
         </li>
         <li><a href="#networking-costs-in-aws-per-gb---simplified">Networking costs in AWS per GB - Simplified</a></li>
@@ -646,7 +646,7 @@
         </li>
       </ul>
     </li>
-    <li><a href="#compute-optimizer">Compute Optimizer</a>
+    <li><a href="#compute-optimizer"><font color=#f43f5e>Compute Optimizer</font></a>
       <ul>
         <li>
           <ul>
@@ -804,8 +804,12 @@ _</p>
 <li><font color=#f1ef63>Pay as you go:</font> pay for what you use, remain agile, responsive, meet scale demands</li>
 <li><font color=#f1ef63>Save when you reserve:</font> minimize risks, predictably manage budgets, comply with long-term requirements
 <ul>
-<li>Reservations are available for EC2 Reserved Instances, DynamoDB Reserved Capacity, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#amazon-elasticache">ElastiCache</a>
- Reserved Nodes, RDS Reserved Instance, Redshift Reserved Nodes</li>
+<li>Reservations are available for <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/#ec2-instances-purchasing-options">EC2 Reserved Instances</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#dynamodb">DynamoDB</a>
+ Reserved Capacity, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#amazon-elasticache">ElastiCache</a>
+ Reserved Nodes, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#rds-and-aurora">RDS</a>
+ Reserved Instance, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#redshift">Redshift</a>
+ Reserved Nodes</li>
 </ul>
 </li>
 <li><font color=#f1ef63>Pay less by using more:</font> volume-based discounts</li>
@@ -822,8 +826,10 @@ _</p>
 </li>
 <li>Both plans have access to <strong>Always Free</strong> services (monthly free usage limits)
 <ul>
-<li>Lambda - 1,000,000 requests / month and 400,000 GB-seconds compute / month</li>
-<li>DynamoDB - 25 GB of storage and 200M requests / monty</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#lambda">Lambda</a>
+ - 1,000,000 requests / month and 400,000 GB-seconds compute / month</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#dynamodb">DynamoDB</a>
+ - 25 GB of storage and 200M requests / month</li>
 </ul>
 </li>
 </ul>
@@ -840,14 +846,14 @@ _</p>
 </li>
 <li><font color=#f1ef63>Reserved instances</font>
 <ul>
-<li>Up to 75% discount compared to On-demand on hourly rate</li>
+<li>Up to <font color=#f43f5e>75%</font> discount compared to On-demand on hourly rate</li>
 <li>1 or 3 years commitment</li>
 <li>All upfront, partial upfront, no upfront</li>
 </ul>
 </li>
 <li><font color=#f1ef63>Spot instances</font>
 <ul>
-<li>Up to 90% discount compared to On-demand on hourly rate</li>
+<li>Up to <font color=#f43f5e>90%</font> discount compared to On-demand on hourly rate</li>
 <li>Bid for unused capacity</li>
 </ul>
 </li>
@@ -861,35 +867,43 @@ _</p>
 </ul>
 <h4 id="lambda--ecs" class="relative group">Lambda &amp; ECS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#lambda--ecs" aria-label="Anchor">#</a></span></h4>
 <ul>
-<li><font color=#f1ef63>Lambda</font>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#lambda">Lambda</a>
+
 <ul>
 <li>Pay per call</li>
 <li>Pay per duration</li>
 </ul>
 </li>
-<li><font color=#f1ef63>ECS</font>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#ecs-elastic-container-service">ECS</a>
+
 <ul>
 <li>EC2 Launch Type Model: No additional fees, you pay for AWS resources stored and created in the application</li>
 </ul>
 </li>
-<li><font color=#f1ef63>Fargate</font>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#fargate">Fargate</a>
+
 <ul>
 <li>Pay for vCPU and memory resources allocated to the applications running in your containers</li>
 </ul>
 </li>
 </ul>
 <h3 id="storage-pricing" class="relative group">Storage Pricing <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#storage-pricing" aria-label="Anchor">#</a></span></h3>
-<h4 id="s3" class="relative group">S3 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3" aria-label="Anchor">#</a></span></h4>
+<h4 id="s3" class="relative group"><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
+ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3" aria-label="Anchor">#</a></span></h4>
 <ul>
-<li>Storage class (S3 Standard, S3 Infrequent Access, S3 One-Zone IA, S3 Intelligent Tiering, S3 Glacier and S3 Glacier Deep Archive)</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/#s3-storage-classes">Storage class</a>
+ (S3 Standard, S3 Infrequent Access, S3 One-Zone IA, S3 Intelligent Tiering, S3 Glacier and S3 Glacier Deep Archive)</li>
 <li>Number and size of objects: Price can be tiered (based on volume)</li>
 <li>Number and type of requests</li>
 <li>Data transfer OUT of S3 region</li>
-<li>S3 Transfer Acceleration</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/#s3-transfer-acceleration">S3 Transfer Acceleration</a>
+</li>
 <li>Lifecycle transitions</li>
 </ul>
-<p>Similar service: EFS (pay per use, has infrequent access and lifecycle rules).</p>
-<h4 id="ebs" class="relative group">EBS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs" aria-label="Anchor">#</a></span></h4>
+<p>Similar service: <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/#efs---elastic-file-system">EFS</a>
+ (pay per use, has infrequent access and lifecycle rules).</p>
+<h4 id="ebs" class="relative group"><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/#ebs-volume">EBS</a>
+ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs" aria-label="Anchor">#</a></span></h4>
 <ul>
 <li>Volume type (based on performance)</li>
 <li>Storage volume in GB per month (<strong>provisioned!</strong>)</li>
@@ -913,7 +927,8 @@ _</p>
 </li>
 </ul>
 <h3 id="database-pricing" class="relative group">Database Pricing <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#database-pricing" aria-label="Anchor">#</a></span></h3>
-<h4 id="rds" class="relative group">RDS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#rds" aria-label="Anchor">#</a></span></h4>
+<h4 id="rds" class="relative group"><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#rds-and-aurora">RDS</a>
+ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#rds" aria-label="Anchor">#</a></span></h4>
 <ul>
 <li>Per hour billing</li>
 <li>Database characteristics:
@@ -946,7 +961,8 @@ _</p>
 </li>
 </ul>
 <h3 id="content-delivery" class="relative group">Content Delivery <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#content-delivery" aria-label="Anchor">#</a></span></h3>
-<h4 id="cloudfront" class="relative group">CloudFront <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudfront" aria-label="Anchor">#</a></span></h4>
+<h4 id="cloudfront" class="relative group"><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/#amazon-cloudfront">CloudFront</a>
+ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudfront" aria-label="Anchor">#</a></span></h4>
 <ul>
 <li>Pricing is different across different geographic regions</li>
 <li>Aggregated for each edge location, then applied to the bill</li>
@@ -976,7 +992,7 @@ _</p>
 <li>Easiest way to setup long-term commitment on AWS</li>
 <li><strong>EC2 Savings plan</strong>
 <ul>
-<li>Up to 72% discount compared to On-demand</li>
+<li>Up to <font color=#f43f5e>72%</font> discount compared to On-demand</li>
 <li><strong>Commit to usage of individual instance families</strong> (e.g. C5 or M5)</li>
 <li>Regardless of AZ, size, OS or tenancy</li>
 <li>All upfront, partial upfront, no upfront</li>
@@ -984,18 +1000,23 @@ _</p>
 </li>
 <li><strong>Compute Savings plan</strong>
 <ul>
-<li>Up to 66% discount compared to On-demand</li>
+<li>Up to <font color=#f43f5e>66%</font> discount compared to On-demand</li>
 <li><strong>Regardless of Family, Region, size, OS, tenancy, compute options</strong></li>
-<li>Compute Options: EC2, Fargate, Lambda</li>
+<li>Compute Options: <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#fargate">Fargate</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#lambda">Lambda</a>
+</li>
 </ul>
 </li>
-<li>Machine learning Savings plan: Sage Maker&hellip;</li>
+<li>Machine learning Savings plan: <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/20-machine-learning/#sagemaker">SageMaker</a>
+&hellip;</li>
 </ul>
 <h5 id="savings-plans-can-be-set-up-from-aws-cost-explorer-console" class="relative group"><font color=#f1ef63>Savings plans can be set up from AWS Cost Explorer console.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#savings-plans-can-be-set-up-from-aws-cost-explorer-console" aria-label="Anchor">#</a></span></h5>
-<h2 id="compute-optimizer" class="relative group">Compute Optimizer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#compute-optimizer" aria-label="Anchor">#</a></span></h2>
+<h2 id="compute-optimizer" class="relative group"><font color=#f43f5e>Compute Optimizer</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#compute-optimizer" aria-label="Anchor">#</a></span></h2>
 <p><strong>Reduce costs</strong> and <strong>improve performance</strong> by recommending optimal AWS resources for your workloads.</p>
 <p>Helps you choose optimal configurations and right-size your workloads (over / under provisioned).</p>
-<p>Uses Machine Learning to analyze your resources configurations and their utilization (CloudWatch metrics).</p>
+<p>Uses Machine Learning to analyze your resources configurations and their utilization (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#cloudwatch-metrics">CloudWatch</a>
+ metrics).</p>
 <p>Supported resources:</p>
 <ul>
 <li>EC2 Instances</li>
@@ -1058,7 +1079,10 @@ _</p>
 <ul>
 <li><font color=#f43f5e>The most comprehensive set on AWS cost and usage data available</font>, including additional metadate about AWS services, pricing and reservations (e.g. EC2 Reserved Instances)</li>
 <li>Lists AWS usage for each service category used by an account and it&rsquo;s IAM users in hourly or daily line items as well as any tags associated / created for cost allocation purposes</li>
-<li>Can be integrated with Athena, RedShift or QuickSight</li>
+<li>Can be integrated with <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#athena">Athena</a>
+, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#redshift">Redshift</a>
+ or <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#quicksight">QuickSight</a>
+</li>
 </ul>
 </li>
 <li>
@@ -1111,7 +1135,8 @@ _</p>
 <p><code>AWSConsole &gt; Billing &gt; Cost and Usage Analysis &gt; Cost Anomaly Detection</code></p>
 <h2 id="aws-service-quotas" class="relative group">AWS Service Quotas <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-service-quotas" aria-label="Anchor">#</a></span></h2>
 <p>Notify when you&rsquo;re close to a service quota (e.g. Lambda concurrent connections).</p>
-<p>Create CloudWatch Alarms on the Service Quotas console.</p>
+<p>Create <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#cloudwatch-metrics">CloudWatch</a>
+ Alarms on the Service Quotas console.</p>
 <p><code>AWSConsole &gt; Service Quotas</code></p>
 <h2 id="aws-trusted-advisor" class="relative group">AWS Trusted Advisor <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-trusted-advisor" aria-label="Anchor">#</a></span></h2>
 <p>Built in, no need to install anything. <font color=#f43f5e>High level AWS account assessment.</font></p>
@@ -1190,15 +1215,18 @@ _</p>
 <li><strong>Config</strong> to record all resources configurations and compliance over time</li>
 <li><strong>CloudFormation</strong> to deploy stacks across accounts and regions</li>
 <li><strong>Trusted Advisor</strong> to get insights, Support Plan adapted to your needs</li>
-<li>Send Service Logs and Access Logs to S3 or CloudWatch Logs</li>
+<li>Send Service Logs and Access Logs to <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
+ or <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#cloudwatch-metrics">CloudWatch</a>
+
+Logs</li>
 <li><strong>CloudTrail</strong> to record API calls made within your account</li>
 <li>Use <strong>AWS Service Catalog</strong> to define pre-defined stacks that are used by your organization</li>
 </ul>
 <h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li><font color=#f1ef63>Compute Optimizer:</font> recommends resources configurations to reduce cost</li>
-<li><font color=#f1ef63>Pricing Calculator:</font> cost of services on AWS</li>
-<li><font color=#f1ef63>Billing Dashboard:</font> high-level overview</li>
+<li><font color=#f1ef63>Pricing Calculator:</font> cost of services on AWS (estimate the cost of your solution)</li>
+<li><font color=#f1ef63>Billing Dashboard:</font> high-level overview (cost, forecast, month to date)</li>
 <li><font color=#f1ef63>Cost Allocation Tags:</font> tag resources to create detailed reports</li>
 <li><font color=#f1ef63>Cost and Usage Reports:</font> <font color=#f43f5e>most comprehensive billing dataset</font></li>
 <li><font color=#f1ef63>Cost Explorer:</font> View current usage (detailed) and <font color=#10b981>forecast usage</font></li>

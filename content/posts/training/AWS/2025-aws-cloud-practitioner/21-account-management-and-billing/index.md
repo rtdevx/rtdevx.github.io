@@ -75,7 +75,7 @@ Service offering with standards how the company is building their services.
 
 - <font color=#f1ef63>Pay as you go:</font> pay for what you use, remain agile, responsive, meet scale demands
 - <font color=#f1ef63>Save when you reserve:</font> minimize risks, predictably manage budgets, comply with long-term requirements
-	- Reservations are available for EC2 Reserved Instances, DynamoDB Reserved Capacity, [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}}) Reserved Nodes, RDS Reserved Instance, Redshift Reserved Nodes
+	- Reservations are available for [EC2 Reserved Instances]({{< ref "4-ec2/#ec2-instances-purchasing-options" >}}), [DynamoDB]({{< ref "12-databases/#dynamodb" >}}) Reserved Capacity, [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}}) Reserved Nodes, [RDS]({{< ref "12-databases/#rds-and-aurora" >}}) Reserved Instance, [Redshift]({{< ref "12-databases/#redshift" >}}) Reserved Nodes
 - <font color=#f1ef63>Pay less by using more:</font> volume-based discounts
 - <font color=#f1ef63>Pay less as AWS grows</font>
 ### Free Services & Free Plan in AWS
@@ -85,8 +85,8 @@ Service offering with standards how the company is building their services.
 	- **Free Plan** expires in 6 months or when credits are consumed
 	- **Paid Plan** charged after you consume your credits
 - Both plans have access to **Always Free** services (monthly free usage limits)
-	- Lambda - 1,000,000 requests / month and 400,000 GB-seconds compute / month
-	- DynamoDB - 25 GB of storage and 200M requests / monty
+	- [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) - 1,000,000 requests / month and 400,000 GB-seconds compute / month
+	- [DynamoDB]({{< ref "12-databases/#dynamodb" >}}) - 25 GB of storage and 200M requests / month
 
 _More about free services in AWS:_ https://aws.amazon.com/free/
 ### Compute pricing
@@ -96,11 +96,11 @@ _More about free services in AWS:_ https://aws.amazon.com/free/
 	- Minimum of 60 seconds
 	- Pay per second (Linux / Windows) or per hour (Other)
 - <font color=#f1ef63>Reserved instances</font>
-	- Up to 75% discount compared to On-demand on hourly rate
+	- Up to <font color=#f43f5e>75%</font> discount compared to On-demand on hourly rate
 	- 1 or 3 years commitment
 	- All upfront, partial upfront, no upfront
 - <font color=#f1ef63>Spot instances</font>
-	- Up to 90% discount compared to On-demand on hourly rate
+	- Up to <font color=#f43f5e>90%</font> discount compared to On-demand on hourly rate
 	- Bid for unused capacity
 - <font color=#f1ef63>Dedicated host</font>
 	- On-demand
@@ -108,25 +108,25 @@ _More about free services in AWS:_ https://aws.amazon.com/free/
 - <font color=#f43f5e>Saving plans as an alternative to save on sustained usage</font>
 #### Lambda & ECS
 
-- <font color=#f1ef63>Lambda</font>
+- [Lambda]({{< ref "13-other-compute-services/#lambda" >}})
 	- Pay per call
 	- Pay per duration
-- <font color=#f1ef63>ECS</font>
+- [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}})
 	- EC2 Launch Type Model: No additional fees, you pay for AWS resources stored and created in the application
-- <font color=#f1ef63>Fargate</font>
+- [Fargate]({{< ref "13-other-compute-services/#fargate" >}})
 	- Pay for vCPU and memory resources allocated to the applications running in your containers
 ### Storage Pricing
-#### S3
+#### [S3]({{< ref "11-s3" >}})
 
-- Storage class (S3 Standard, S3 Infrequent Access, S3 One-Zone IA, S3 Intelligent Tiering, S3 Glacier and S3 Glacier Deep Archive)
+- [Storage class]({{< ref "11-s3/#s3-storage-classes" >}}) (S3 Standard, S3 Infrequent Access, S3 One-Zone IA, S3 Intelligent Tiering, S3 Glacier and S3 Glacier Deep Archive)
 - Number and size of objects: Price can be tiered (based on volume)
 - Number and type of requests
 - Data transfer OUT of S3 region
-- S3 Transfer Acceleration
+- [S3 Transfer Acceleration]({{< ref "15-aws-global-infrastructure/#s3-transfer-acceleration" >}})
 - Lifecycle transitions
 
-Similar service: EFS (pay per use, has infrequent access and lifecycle rules).
-#### EBS
+Similar service: [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}}) (pay per use, has infrequent access and lifecycle rules).
+#### [EBS]({{< ref "6-storage/#ebs-volume" >}})
 
 - Volume type (based on performance)
 - Storage volume in GB per month (**provisioned!**)
@@ -140,7 +140,7 @@ Similar service: EFS (pay per use, has infrequent access and lifecycle rules).
 	- Outbound data transfer are tiered for volume discounts
 	- Inbound is free
 ### Database Pricing
-#### RDS
+#### [RDS]({{< ref "12-databases/#rds-and-aurora" >}})
 
 - Per hour billing
 - Database characteristics:
@@ -160,7 +160,7 @@ Similar service: EFS (pay per use, has infrequent access and lifecycle rules).
 	- Outbound data transfer are tiered for volume discounts
 	- Inbound is free
 ### Content Delivery
-#### CloudFront
+#### [CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}})
 
 - Pricing is different across different geographic regions
 - Aggregated for each edge location, then applied to the bill
@@ -177,23 +177,23 @@ Similar service: EFS (pay per use, has infrequent access and lifecycle rules).
 - Commit a certain $ amount per hours for 1 or 3 years
 - Easiest way to setup long-term commitment on AWS
 - **EC2 Savings plan**
-	- Up to 72% discount compared to On-demand
+	- Up to <font color=#f43f5e>72%</font> discount compared to On-demand
 	- **Commit to usage of individual instance families** (e.g. C5 or M5)
 	- Regardless of AZ, size, OS or tenancy
 	- All upfront, partial upfront, no upfront
 - **Compute Savings plan**
-	- Up to 66% discount compared to On-demand
+	- Up to <font color=#f43f5e>66%</font> discount compared to On-demand
 	- **Regardless of Family, Region, size, OS, tenancy, compute options**
-	- Compute Options: EC2, Fargate, Lambda
-- Machine learning Savings plan: Sage Maker...
+	- Compute Options: [EC2]({{< ref "4-ec2" >}}), [Fargate]({{< ref "13-other-compute-services/#fargate" >}}), [Lambda]({{< ref "13-other-compute-services/#lambda" >}})
+- Machine learning Savings plan: [SageMaker]({{< ref "20-machine-learning/#sagemaker" >}})...
 ##### <font color=#f1ef63>Savings plans can be set up from AWS Cost Explorer console.</font>
-## Compute Optimizer
+## <font color=#f43f5e>Compute Optimizer</font>
 
 **Reduce costs** and **improve performance** by recommending optimal AWS resources for your workloads.
 
 Helps you choose optimal configurations and right-size your workloads (over / under provisioned).
 
-Uses Machine Learning to analyze your resources configurations and their utilization (CloudWatch metrics).
+Uses Machine Learning to analyze your resources configurations and their utilization ([CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}}) metrics).
 
 Supported resources:
 
@@ -229,7 +229,7 @@ Recommendations can be exported to S3.
 - Cost and Usage Reports (`AWSConsole > Billing`)
 	- <font color=#f43f5e>The most comprehensive set on AWS cost and usage data available</font>, including additional metadate about AWS services, pricing and reservations (e.g. EC2 Reserved Instances)
 	- Lists AWS usage for each service category used by an account and it's IAM users in hourly or daily line items as well as any tags associated / created for cost allocation purposes
-	- Can be integrated with Athena, RedShift or QuickSight
+	- Can be integrated with [Athena]({{< ref "12-databases/#athena" >}}), [Redshift]({{< ref "12-databases/#redshift" >}}) or [QuickSight]({{< ref "12-databases/#quicksight" >}})
 
 - Cost Explorer (`AWSConsole > Billing > Cost Explorer`)
 	- Visualize, understand and manage your AWS costs and usage over time
@@ -265,7 +265,7 @@ It will send the anomaly detection report with root-cause analysis.
 
 Notify when you're close to a service quota (e.g. Lambda concurrent connections).
 
-Create CloudWatch Alarms on the Service Quotas console.
+Create [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}}) Alarms on the Service Quotas console.
 
 `AWSConsole > Service Quotas`
 ## AWS Trusted Advisor
@@ -343,14 +343,15 @@ Response times:
 - **Config** to record all resources configurations and compliance over time
 - **CloudFormation** to deploy stacks across accounts and regions
 - **Trusted Advisor** to get insights, Support Plan adapted to your needs
-- Send Service Logs and Access Logs to S3 or CloudWatch Logs
+- Send Service Logs and Access Logs to [S3]({{< ref "11-s3" >}}) or [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}})
+ Logs
 - **CloudTrail** to record API calls made within your account
 - Use **AWS Service Catalog** to define pre-defined stacks that are used by your organization
 ## Summary
 
 - <font color=#f1ef63>Compute Optimizer:</font> recommends resources configurations to reduce cost
-- <font color=#f1ef63>Pricing Calculator:</font> cost of services on AWS
-- <font color=#f1ef63>Billing Dashboard:</font> high-level overview
+- <font color=#f1ef63>Pricing Calculator:</font> cost of services on AWS (estimate the cost of your solution)
+- <font color=#f1ef63>Billing Dashboard:</font> high-level overview (cost, forecast, month to date)
 - <font color=#f1ef63>Cost Allocation Tags:</font> tag resources to create detailed reports
 - <font color=#f1ef63>Cost and Usage Reports:</font> <font color=#f43f5e>most comprehensive billing dataset</font>
 - <font color=#f1ef63>Cost Explorer:</font> View current usage (detailed) and <font color=#10b981>forecast usage</font>
