@@ -32,11 +32,11 @@ _AWS Elastic Load Balancing Introduction_
 	- AWS provides only a few configuration items
 ## 3 kinds of Load Balancers offered by AWS
 
-| Application Load Balancer               | Network Load Balancer                              | Gateway Load Balancer                                       |
-| --------------------------------------- | -------------------------------------------------- | ----------------------------------------------------------- |
-| HTTP / HTTPS / gRPC protocols (Layer 7) | TCP / UDP protocols (Layer 4)                      | Geneve Protocol on IP Packets (Layer 3)                     |
-| HTTP Routing features                   | High Performance (millions or requests per second) | Route Traffic to Firewalls that you manage on EC2 instances |
-| Static DNS (URL)                        | Static IP through Elastic IP                       | Intrusion Detection                                         |
+| Application Load Balancer                                                               | Network Load Balancer                                                       | Gateway Load Balancer                                                               |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| HTTP / HTTPS / gRPC protocols ([layer 7]({{< ref "osi-model/#7-application-layer" >}})) | TCP / UDP protocols ([layer 4]({{< ref "osi-model/#4-transport-layer" >}})) | Geneve Protocol on IP Packets ([layer 3]({{< ref "osi-model/#3-network-layer" >}})) |
+| HTTP Routing features                                                                   | High Performance (millions or requests per second)                          | Route Traffic to Firewalls that you manage on EC2 instances                         |
+| Static DNS (URL)                                                                        | Static IP through Elastic IP                                                | Intrusion Detection                                                                 |
 
 ![](./assets/AWS_ALB_NLB_GLB.png)
 
