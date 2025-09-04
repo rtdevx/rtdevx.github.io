@@ -50,7 +50,7 @@ _Best Practices for Organizational Units with AWS Organizations:_ https://aws.am
 - **Avoid resource duplication**
 - Supported resources include:
 	- [Aurora]({{< ref "12-databases/#rds-and-aurora" >}})
-	- [VPC]({{< ref "18-vpc" >}}) Subnets
+	- [VPC Subnets]({{< ref "18-vpc/#vpc-and-subnets-primer" >}})
 	- [Transit Gateway]({{< ref "18-vpc/#transit-gateway" >}})
 	- [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}})
 	- [EC2 Dedicated Hosts]({{< ref "4-ec2/#ec2-instances-purchasing-options" >}})
