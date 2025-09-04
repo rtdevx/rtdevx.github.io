@@ -204,7 +204,7 @@ Supported resources:
 ##### <font color=#10b981>Compute Optimized can lower costs by up to 25%.</font>
 
 Recommendations can be exported to S3.
-## Billing and Costing Tools
+## <font color=#f43f5e>Billing and Costing Tools</font>
 ### <font color=#f1ef63>Estimating costs in the cloud</font>
 
 - Pricing Calculator
