@@ -47,7 +47,9 @@ Approach learning with humility and curiosity, not pressure and ego (i.e. grades
 
 ## 5. Chain learning
 
-<font color=#10b981>Study like everything is connected.</font> Because in real world ...it is.
+<font color=#10b981>Study like everything is connected.</font> Because in real world ...it is. 
+
+_Read more:_ [Zettelkasten]({{< ref "tags/zettelkasten/" >}}) {{< icon "triangle-exclamation" >}}
 
 ## 6. Study like a Sensei that is teaching others
 
