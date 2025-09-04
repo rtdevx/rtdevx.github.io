@@ -374,9 +374,9 @@ Response times:
 ## >> References <<
 
 - [Identity and Access management (IAM)]({{< ref "2-iam" >}})
-##### AWS Cost optimization services:
+##### **AWS Cost optimization services:**
 
-- AWS Cost Explorer (_More: [Tracking costs in the cloud]({{< ref "21-account-management-and-billing/#tracking-costs-in-the-cloud" >}}))
+- AWS Cost Explorer (_More:_ [Tracking costs in the cloud]({{< ref "21-account-management-and-billing/#tracking-costs-in-the-cloud" >}}))
 - [AWS budgets]({{< ref "21-account-management-and-billing/#monitoring-against-cost-plans" >}})
 - [Cost and Usage Reports]({{< ref "21-account-management-and-billing/#most-granular-aws-cost-report" >}})
 - [AWS Trusted Advisor]({{< ref "21-account-management-and-billing/#aws-trusted-advisor" >}})
