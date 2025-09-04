@@ -150,6 +150,12 @@ IAM > Users > Username > Last Accessed
 - _Shared Responsibility Model:_ [Shared Responsibility Model - Amazon Web Services (AWS)](https://aws.amazon.com/compliance/shared-responsibility-model/)
 
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
+
+- [Security and compliance](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security-and-compliance.html)    
+- [What is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)    
+- [What is AWS IAM Identity Center?](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)    
+- [IAM identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)    
+- [AWS security documentation](https://docs.aws.amazon.com/security/)
 ## >> References << 
 
 - [Account Management and Billing]({{< ref "21-account-management-and-billing" >}})

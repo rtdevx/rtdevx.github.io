@@ -49,11 +49,11 @@ _Best Practices for Organizational Units with AWS Organizations:_ https://aws.am
 - **Share with any account or withing your organization**
 - **Avoid resource duplication**
 - Supported resources include:
-	- Aurora
-	- VPC Subnets
-	- Transit Gateway
-	- Route53
-	- EC2 Dedicated Hosts
+	- [Aurora]({{< ref "12-databases/#rds-and-aurora" >}})
+	- [VPC]({{< ref "18-vpc" >}}) Subnets
+	- [Transit Gateway]({{< ref "18-vpc/#transit-gateway" >}})
+	- [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}})
+	- [EC2 Dedicated Hosts]({{< ref "4-ec2/#ec2-instances-purchasing-options" >}})
 	- License Manager Configurations
 
 ![](./assets/AWS_Organizations_ARM.png)

@@ -99,6 +99,12 @@ _Shared Responsibility Model:_ [Shared Responsibility Model - Amazon Web Service
 - _AWS Global Infrastructure:_ [AWS Global Infrastructure](https://infrastructure.aws)
 - _Shared Responsibility Model:_ [Shared Responsibility Model - Amazon Web Services (AWS)](https://aws.amazon.com/compliance/shared-responsibility-model/)
 
+- [Cloud computing with AWS](https://aws.amazon.com/what-is-aws/)    
+- [What is cloud computing?](https://en.wikipedia.org/wiki/Cloud_computing)    
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)    
+- [High availability and scalability in AWS](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html)    
+- [Migration and transfer](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html)    
+- [Cloud economics in AWS resources](https://aws.amazon.com/economics/resources/)
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |
