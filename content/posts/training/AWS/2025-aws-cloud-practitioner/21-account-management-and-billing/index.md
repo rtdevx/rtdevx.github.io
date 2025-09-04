@@ -347,6 +347,13 @@ Response times:
  Logs
 - **CloudTrail** to record API calls made within your account
 - Use **AWS Service Catalog** to define pre-defined stacks that are used by your organization
+## Cost Optimization best practices
+
+- Define and enforce cost allocation tags
+- Define effective account and organization structure
+- Define and use metrics - give access to the team to access costs and billing
+- Share ownership
+- <font color=#10b981>Cloud Center of Excellence (CCoE)</font> - team who stays up to date with AWS best practices, new releases, products and services, etc., in order to ensure that you are using AWS in the most efficient and effective ways
 ## Summary
 
 - <font color=#f1ef63>Compute Optimizer:</font> recommends resources configurations to reduce cost
