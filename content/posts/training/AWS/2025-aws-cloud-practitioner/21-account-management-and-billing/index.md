@@ -58,7 +58,7 @@ _Best Practices for Organizational Units with AWS Organizations:_ https://aws.am
 
 ![](./assets/AWS_Organizations_ARM.png)
 _AWS Resource Access Manager (RAM)_
-## AWS Service Catalog
+## <font color=#f43f5e>AWS Service Catalog</font>
 
 **AWS Service Catalog** is a **self-service portal** that allows users to launch a set of <font color=#10b981>authorized products</font> predefined by admins.
 ##### <font color=#f43f5e>Users that are new to the organization could create stacks that are not compliant / not in line with the rest of the organization.</font>
