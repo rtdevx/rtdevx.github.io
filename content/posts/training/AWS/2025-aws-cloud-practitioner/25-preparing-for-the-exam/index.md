@@ -36,6 +36,15 @@ https://www.aws.training/certification
 ## AWS Certification Paths - Operations
 
 ![](./assets/AWS_Certification_paths.png)
+## >> Sources <<
+
+**Amazon Whitepapers:**
+
+- [Overview of Amazon Web Services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)    
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)    
+- [AWS Shared Responsibility Model](https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html)    
+- [AWS Pricing](https://aws.amazon.com/pricing/?aws-products-pricing.sort-by=item.additionalFields.productNameLowercase&aws-products-pricing.sort-order=asc&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all)    
+- [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/)
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |
