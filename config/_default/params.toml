@@ -52,12 +52,12 @@ fingerprintAlgorithm = "sha256"
   showTableOfContents = true
   showTaxonomies = true
   showWordCount = true
-  showComments = true
+  showComments = false
   # sharingLinks = ["facebook", "x-twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "threads", "telegram", "line", "weibo", "xing", "bluesky"]
   # sharingLinks = ["facebook", "x-twitter", "linkedin"]
 
 [list]
-  showBreadcrumbs = true
+  showBreadcrumbs = false
   showSummary = true
   showTableOfContents = true
   showTaxonomies = true
