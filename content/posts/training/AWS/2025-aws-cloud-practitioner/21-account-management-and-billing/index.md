@@ -374,6 +374,18 @@ Response times:
 ## >> References <<
 
 - [Identity and Access management (IAM)]({{< ref "2-iam" >}})
+##### AWS Cost optimization services:
+
+- AWS Cost Explorer (_More: [Tracking costs in the cloud]({{< ref "21-account-management-and-billing/#tracking-costs-in-the-cloud" >}}))
+- [AWS budgets]({{< ref "21-account-management-and-billing/#monitoring-against-cost-plans" >}})
+- [Cost and Usage Reports]({{< ref "21-account-management-and-billing/#most-granular-aws-cost-report" >}})
+- [AWS Trusted Advisor]({{< ref "21-account-management-and-billing/#aws-trusted-advisor" >}})
+- [Reserved Instance]({{< ref "4-ec2/#ec2-instances-purchasing-options" >}}) Reporting
+- [Auto Scaling]({{< ref "10-auto-scaling-groups" >}})
+- [Spot Instance]({{< ref "4-ec2/#ec2-instances-purchasing-options" >}})
+- [Amazon Simple Storage Service]({{< ref "11-s3" >}})
+- [Amazon S3 Glacier]({{< ref "11-s3/#glacier" >}})
+- [Lambda]({{< ref "13-other-compute-services/#lambda" >}})
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |
