@@ -14,16 +14,25 @@
   name = "Journal"
   pageRef = "posts"
   weight = 10
+  [main.params]
+    icon = "bars"
+    showName = false
 
 [[main]]
   name = "Categories"
   pageRef = "categories"
   weight = 20
+  [main.params]
+    icon = "globe"
+    showName = false
 
 [[main]]
   name = "Tags"
   pageRef = "tags"
   weight = 30
+  [main.params]
+    icon = "tag"
+    showName = false  
 
 #[[main]]
 #  name = "My Learning"
@@ -33,7 +42,10 @@
 [[main]]
   name = "About"
   pageRef = "about"
-  weight = 50  
+  weight = 50
+  [main.params]
+    icon = "circle-info"
+    showName = false    
 
 [[main]]
   identifier = "search"
