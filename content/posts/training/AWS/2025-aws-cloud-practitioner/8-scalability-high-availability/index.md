@@ -18,7 +18,7 @@ categories: AWS
 	- Very common for non-distributed systems, i.e. Databases
 	- Hardware limits apply
 - **Horizontal Scalability (Elasticity)**
-	- Increasing the number of instances
+	- <font color=#f1ef63>Increasing the number of instances</font>
 	- Implies Distributed Systems
 	- Very common for web applications or modern applications
 	- [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
