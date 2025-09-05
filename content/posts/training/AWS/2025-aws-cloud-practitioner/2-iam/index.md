@@ -122,7 +122,7 @@ IAM > Users > Username > Last Accessed
 ```
 
 <font color=#f43f5e>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the "Least Privilege Principle".</font>
-## <font color=#f1ef63>IAM Beset Practices</font>
+## <font color=#f1ef63>IAM Best Practices</font>
 
 - Don't use root account
 - One physical user = One AWS user
