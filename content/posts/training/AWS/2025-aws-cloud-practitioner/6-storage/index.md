@@ -50,7 +50,7 @@ _<font color=#f43f5e>EBS Volumes can be attached to only 1 EC2 instance at a tim
 EC2 > Snapshots > Recycle Bin > Create retention rule
 ```
 
-When Snapshot Archive is enabled, it is possible to Archive it from a drop-down box in AWS Console. Archived Snapshot appears in the Recycle Bin
+When Snapshot Archive is enabled, it is possible to Archive it from a drop-down box in AWS Console. Archived Snapshots appear in the Recycle Bin.
 
 - Recycle Bin for EBS Snapshots
 	- Setup rules to retain deleted snapshots so you can recover them after an accidental deletion
