@@ -16,7 +16,7 @@ categories: AWS
 
 Users don't have to belong to a group and user can belong to multiple groups.
 
-Users or Groups can me assigned JSON documents called policies. Those policies define permissions for the users / groups.
+Users or Groups can have assigned JSON documents called <font color=#f43f5e>policies</font>. Those <font color=#f43f5e>policies define permissions</font> for the users / groups.
 
 In AWS you apply the <font color=#f43f5e>least privilege principle:</font> don't give user more permission than they need.
 
