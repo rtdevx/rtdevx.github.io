@@ -15,7 +15,7 @@ copyright = "Copy, _right_? 🤔 "
 [params.author]
    name = "Rob"
    image = "img/author.jpg"
-   headline = "..."
+   headline = "-_-"
    bio = "DevOps | Agile | AWS | Ansible | Terraform | PowerShell | Windows | Linux | Git"
    links = [
   #   { email = "mailto:hello@your_domain.com" },
@@ -40,7 +40,7 @@ copyright = "Copy, _right_? 🤔 "
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
   #   { kofi = "https://ko-fi.com/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
-     { linkedin = "https://linkedin.com/in/robertkls" }
+     { linkedin = "https://linkedin.com/in/robertkls" },
   #   { mastodon = "https://mastodon.instance/@username" },
   #   { medium = "https://medium.com/username" },
   #   { mendeley = "https://www.mendeley.com/" },
@@ -64,4 +64,5 @@ copyright = "Copy, _right_? 🤔 "
   #   { x-twitter = "https://twitter.com/username" },
   #   { youtube = "https://youtube.com/username" },
   #   { xing = "https://xing.com/profile/username" },
+      { rss = "hhttps://rtdevx.github.io/index.xml" }
 ]
