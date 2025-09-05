@@ -81,7 +81,7 @@ categories: AWS
 - AWS Data Centers
 - AWS Edge Locations / Points of Presence
 
-![](./assets/AWS_AZ2.jpeg)
+![](./assets/AWS_AZ2.jpg)
 
 ![](./assets/AWS_AZ1.png)
 
