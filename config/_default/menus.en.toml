@@ -39,13 +39,13 @@
 #  pageRef = "training"
 #  weight = 40
 
-[[main]]
-  name = "About"
-  pageRef = "about"
-  weight = 50
-  [main.params]
-    icon = "circle-info"
-    showName = false    
+#[[main]]
+#  name = "About"
+#  pageRef = "about"
+#  weight = 50
+#  [main.params]
+#    icon = "circle-info"
+#    showName = false    
 
 [[main]]
   identifier = "search"
