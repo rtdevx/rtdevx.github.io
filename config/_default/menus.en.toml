@@ -88,7 +88,7 @@
 
 [[footer]]
   name = "RSS"
-  url = "https://rtdevx.github.io/index.xml"
+  url = "./index.xml"
   weight = 40
   [footer.params]
     icon = "rss"
