@@ -77,3 +77,19 @@
   name = "About"
   pageRef = "about"
   weight = 30
+#  [footer.params]
+#    icon = "circle-info"
+#    showName = false  
+
+#[[footer]]
+#  name = "|"
+#  pageRef = "|"
+#  weight = 35
+
+[[footer]]
+  name = "RSS"
+  url = "https://rtdevx.github.io/index.xml"
+  weight = 40
+  [footer.params]
+    icon = "rss"
+    showName = false
