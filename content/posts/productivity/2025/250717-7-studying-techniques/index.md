@@ -65,3 +65,15 @@ _Richard Feynman_<br />
 ## 7. The forbidden night school
 
 From **7pm to 9pm** - <font color=#f43f5e>no phones, no distractions, no background noise.</font> Collaborate on reviewing, revising if and where possible. Mostly for students.
+
+## More Videos
+
+---
+
+{{< youtube HC2IaW3DAfQ >}}
+
+---
+## Sources
+
+- - {{< icon "youtube" >}} _7 FAST Chinese and Japanese SECRETS for students to EASILY become TOPPERS:_ https://www.youtube.com/watch?v=BszXLBKWscA
+- {{< icon "youtube" >}} _The Japanese Student Routine That Helps You Remember EVERYTHING:_ https://www.youtube.com/watch?v=HC2IaW3DAfQ
