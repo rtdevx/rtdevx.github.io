@@ -12,7 +12,7 @@ categories: AWS
 
 ### AWS responsibility - Security <font color=#f43f5e>of</font> the Cloud
 
-- Protecting infrastructure( hardware, software, facilities, networking) that runs the AWS services
+- Protecting infrastructure (hardware, software, facilities, networking) that runs the AWS services
 - Managed services, like [S3]({{< ref "11-s3" >}}), [DynamoDB]({{< ref "12-databases/#dynamodb" >}}), [RDS]({{< ref "12-databases/#rds-and-aurora" >}}), etc.
 ### Customer responsibility - Security <font color=#f43f5e>in</font> the cloud
 
@@ -141,7 +141,7 @@ _More about Network Firewall:_ https://docs.aws.amazon.com/network-firewall/
 
 For any simulated events, contact aws-security-simulated-event@amazon.com
 
-_Read More about Penetration Testing: _ https://aws.amazon.com/security/penetration-testing/ _
+_Read More about Penetration Testing:_ https://aws.amazon.com/security/penetration-testing/ 
 ## Data at rest vs Data in Transit
 
 - <font color=#f1ef63>At rest:</font> data stored or archived on a device
