@@ -35,7 +35,6 @@ Amazon **Virtual Private Cloud** (VPC) enables you to provision logically isolat
 VPC - Virtual Private Cloud - private network to deploy resources (regional resource)
 
 - Subnets allow to partition the network inside of VPC (Availability Zone Resource)
-- Subnets allow to partition the network inside of VPC (Availability Zone resource)
 - A <font color=#10b981>public subnet</font> is a subnet that is <font color=#10b981>accessible</font> from the internet
 - A <font color=#f43f5e>private subnet</font> is a subnet that is <font color=#f43f5e>not accessible</font> from the internet
 - <font color=#10b981>To define access to the internet and between subnets, we use Route Tables</font>
