@@ -75,7 +75,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 - Use <font color=#10b981>serverless</font> architecture - avoid the burden of managing servers
 - Experiment more often - easy to carry out comparative testing
 - Mechanical sympathy - be aware of all AWS services
-### Cost Optimization
+### 5. Cost Optimization
 
 ##### **Cost Optimization** includes ability to run systems to deliver business value at the lowest price point.
 
