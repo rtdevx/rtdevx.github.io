@@ -10,9 +10,10 @@ My name is Rob and I am an experienced IT professional.
 
 My thoughts and learnings about:<br /> ***DevOps***, ***Agile***, [Cloud]({{< ref "categories/aws" >}}), ***Windows***, ***Linux***, ***Ansible***, ***Terraform***, ***PowerShell***.
 
-I am also interested in tools and techniques that help me increasing my [productivity]({{< ref "categories/productivity" >}}) so you will also find writings on [zettelkasten]({{< ref "tags/zettelkasten" >}}), _learning techniques_ and more...
+I am also interested in tools and techniques that help me increasing my [productivity]({{< ref "categories/productivity" >}}) so you will also find writings on [zettelkasten]({{< ref "tags/zettelkasten" >}}), _learning techniques_...
 
-{{< alert >}}
-No rights reserved. For educational and informational purposes only. <br />👨🏻‍💻
-{{< /alert >}}
+{{< button href="about" target="_self" >}}
+Learn more 👈
+{{< /button >}}
+
 

@@ -17,7 +17,17 @@ A strong advocate of _DevOps_ and _Agile_ methodologies, I bring end-to-end tran
 • SharePoint and Confluence (collaboration and documentation)  
 • Deep experience administering Microsoft server technologies
 
-I am currently learning: **DevOps**, **GitOps**, **Ansible**, **AWS**, **Terraform** and **Kubernetes**.
+I am currently learning: **DevOps**, **Ansible**, [AWS]({{< ref "categories/aws" >}}) and **Terraform**.
+{{< alert "github">}}
+Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page for more details.
+{{< /alert >}}
 
-Feel free to take look at [{{< icon "github" >}} my homelab](https://github.com/rtdevx) GitHub page for more details.
+{{< alert "circle-info">}}
+This website does not use cookies, analytics, trackers, or any form of data collection. Additionally, web crawlers are explicitly disallowed from indexing or scanning this site.
+
+External links may lead elsewhere - I can't vouch for what happens beyond this page.
+
+_*No rights reserved. For educational and informational purposes only._
+<center>👨🏻‍💻</center>
+{{< /alert >}}
 
