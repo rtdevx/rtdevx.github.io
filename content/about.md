@@ -11,7 +11,7 @@ summary: Learn more about me and why I am starting this blog.
 A strong advocate of _DevOps_ and _Agile_ methodologies, I bring end-to-end transparency and _automation_ to infrastructure delivery. Skilled across _Linux_ and _Windows Server_ environments, I leverage tools like _Ansible_ and _PowerShell_ to streamline provisioning, hardening, and support of critical systems.  
 
 {{< lead >}}
-My toolkit includes
+My toolkit includes:
 {{< /lead >}}  
 
 - AWS Cloud
