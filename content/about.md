@@ -4,7 +4,7 @@ description: About me.
 date: 2025-07-17
 summary: Learn more about me and why I am starting this blog.
 ---
-![](./assets/Kentemere2.jpg)
+![](../assets/Kentemere2.jpg)
 
 **Experienced IT professional** accomplished in supporting and delivering secure, resilient, and PCI-compliant infrastructure solutions across international payment ecosystems. I specialize in building and automating high-stakes platforms for credit and debit card transaction processing and fraud detection systems (3D-Secure). Resilient platforms and infrastructures trusted by global banks and financial institutions.  
   
