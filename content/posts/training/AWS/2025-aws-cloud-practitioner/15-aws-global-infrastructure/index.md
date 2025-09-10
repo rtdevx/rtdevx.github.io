@@ -192,28 +192,34 @@ _More about AWS Local Zones:_ https://docs.aws.amazon.com/local-zones/latest/ug/
 
 ## Summary
 
-### Route 53 - Global DNS
+<font color=#f1ef63>Route 53 - Global DNS</font>
 
 - Great to route users to the closest deployment with least latency
 - Great for Disaster Recovery - DR - Strategies
-### CloudFront - Global CDN - Content Delivery Network
+
+<font color=#f1ef63>CloudFront - Global CDN - Content Delivery Network</font>
 
 - Replicate part of your application to AWS Edge Locations - decreased latency
 - Cache common requests - improved user experience and decreased latency
-### S3 Transfer Acceleration
+
+<font color=#f1ef63>S3 Transfer Acceleration</font>
 
 - Accelerate global uploads & downloads into Amazon S3 
-### AWS Global Accelerator
+
+<font color=#f1ef63>AWS Global Accelerator</font>
 
 - Improve global application availability and performance using the AWS global network
-### AWS Outposts
+
+<font color=#f1ef63>AWS Outposts</font>
 
 - Deploy Outposts racks in an on-premises datacenter to extend some AWS services and for easier migration
-### AWS Wavelength
+
+<font color=#f1ef63>AWS Wavelength</font>
 
 - Brings AWS services to the edge of the 5G networks
 - Ultra-low latency applications
-### AWS Local Zones
+
+<font color=#f1ef63>AWS Local Zones</font>
 
 - Bring AWS resources (compute, database, storage, ...) closer to your users
 - Good for latency-sensitive applications
