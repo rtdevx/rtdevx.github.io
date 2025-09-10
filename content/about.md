@@ -36,6 +36,7 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 - Knowledge transfer to other teams / team members - very well received and recognized
 #### DevOps
 
+- AWS Cloud
 - Agile methodology with 100% workload transparency
 - Jira project design and administration
 - Git, Bitbucket, GitHub as version control system
