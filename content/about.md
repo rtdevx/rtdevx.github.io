@@ -118,19 +118,32 @@ September 2009 – July 2025
 	- Highly complex end-to-end management software tool that integrates network, server, application and business transaction monitoring
 	- BSM enabled us to have a single screen to collate data from multiple collectors to monitor all hardware and software components in the datacenter
 	- Extraordinary team effort was required due to the complexity of this solution that resulted in enabling very good relationships between multiple teams and team members
+<br /><br />
 <center>
 {{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}
 Download CV 👈
 {{< /button >}}
 </center>
 
+## » Disclaimer «
+
+{{< alert "circle-info">}}
+_\*This website does not use cookies, analytics, trackers, or any form of data collection. Additionally, web crawlers are explicitly disallowed from indexing or scanning this site._
+_External links may lead elsewhere - I can't vouch for what happens beyond this page._
+
+_\*\*No rights reserved. For educational and informational purposes only._
+<!-- <center>👨🏻‍💻</center> -->
+{{< /alert >}}
+
+<!--
 ---
 
 _\*This website does not use cookies, analytics, trackers, or any form of data collection. Additionally, web crawlers are explicitly disallowed from indexing or scanning this site._
 _External links may lead elsewhere - I can't vouch for what happens beyond this page._
 
 _\*\*No rights reserved. For educational and informational purposes only._
-<!-- <center>👨🏻‍💻</center> -->
+<center>👨🏻‍💻</center>
 
 ---
 
+-->
