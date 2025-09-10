@@ -58,6 +58,6 @@ https://www.aws.training/certification
 - [AWS Pricing](https://aws.amazon.com/pricing/?aws-products-pricing.sort-by=item.additionalFields.productNameLowercase&aws-products-pricing.sort-order=asc&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all)    
 - [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/)
 
-{{< alert >}}
+{{< alert "circle-info" >}}
 Take look at [Stephane Maarek's courses](https://www.udemy.com/user/stephane-maarek/) on [Udemy](https://www.udemy.com/) if you want to prepare for **AWS certifications** or just **learn AWS**. <font color=#f1ef63>Top quality content</font>, highly recommended.
 {{< /alert >}}
