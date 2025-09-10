@@ -54,9 +54,9 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 - Virtual User Generator (LoadRunner VuGen) for creating testing scripts that emulate behavior of real users for testing the application as well as Load Testing
 ## Career History
 
-September 2009 – July 2025
 ### Systems Administrator Senior – TSYS (Global Payments)
 
+September 2009 – July 2025
 #### Responsibilities
 
 - Building, Maintaining and Automating TSYS credit card payment and fraud detection platforms using Ansible and PowerShell
