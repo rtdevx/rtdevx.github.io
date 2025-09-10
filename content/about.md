@@ -124,6 +124,7 @@ Download CV 👈
 </center>
 
 ---
+
 _\*This website does not use cookies, analytics, trackers, or any form of data collection. Additionally, web crawlers are explicitly disallowed from indexing or scanning this site._
 _External links may lead elsewhere - I can't vouch for what happens beyond this page._
 
