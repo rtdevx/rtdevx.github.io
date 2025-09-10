@@ -130,7 +130,7 @@ _\*This website does not use cookies, analytics, trackers, or any form of data c
 _External links may lead elsewhere - I can't vouch for what happens beyond this page._
 
 _\*\*No rights reserved. For educational and informational purposes only._
-<center>👨🏻‍💻</center>
+<!-- <center>👨🏻‍💻</center> -->
 
 ---
 
