@@ -17,10 +17,10 @@ On AWS this could be Regions and / or Edge Locations.
 
 _More:_ https://aws.amazon.com/about-aws/global-infrastructure/
 
-- Route53
-- CloudFront (Global CDN)
-- S3 Transfer Acceleration
-- AWS Global Accelerator
+- [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}})
+- [CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}}) (Global CDN)
+- [S3 Transfer Acceleration]({{< ref "15-aws-global-infrastructure/#s3-transfer-acceleration" >}})
+- [AWS Global Accelerator]({{< ref "15-aws-global-infrastructure/#aws-global-accelerator" >}})
 
 ---
 

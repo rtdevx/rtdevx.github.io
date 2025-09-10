@@ -156,7 +156,7 @@ DAX is only used for DynamoDB where [ElastiCache]({{< ref "12-databases/#amazon-
 - <font color=#10b981>Uses standard SQL language</font> to query the files
 - Supports CSV, JSON, ORD, Avro, Parquet
 - Pricing: $5 per TB of data scanned
-- <font color=#f1ef63>Use cases:</font> Business intelligence, analytics, reporting, analyze & query VPC Flow Logs, ELB Logs, CloudTrail logs, etc.
+- <font color=#f1ef63>Use cases:</font> Business intelligence, analytics, reporting, analyze & query [VPC Flow Logs]({{< ref "18-vpc/#vpc-flow-logs" >}}), [ELB]({{< ref "9-elastic-load-balancing" >}}) Logs, [CloudTrail]({{< ref "17-cloud-monitoring/#aws-cloudtrail" >}}) logs, etc.
 ##### <font color=#f43f5e>Exam tip:</font> analyze data in S3 using serverless SQL = <font color=#f1ef63>Athena</font>
 ### <font color=#f1ef63>QuickSight</font>
 
