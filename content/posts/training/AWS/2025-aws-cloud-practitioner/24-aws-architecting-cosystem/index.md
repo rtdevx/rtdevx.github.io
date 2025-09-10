@@ -135,6 +135,8 @@ Created by AWS Professionals by taking advantage of AWS Best Practices and lesso
 - <font color=#10b981>Align</font> - identify capability gaps across the 6 AWS CAF Perspectives which results in an Action Plan
 - <font color=#10b981>Launch</font> - build and deliver pilot initiatives in production and demonstrate incremental business value
 - <font color=#10b981>Scale</font> - expand pilot initiatives to the desired scale while realizing the desired business benefits
+
+_More:_ [AWS Cloud Adoption Framework (AWS CAF)](https://aws.amazon.com/cloud-adoption-framework/)
 ## AWS Right Sizing
 
 [EC2]({{< ref "4-ec2" >}}) has many [instance types]({{< ref "4-ec2/#amazon-ec2-instance-types" >}}). Right sizing is the process of matching instance types and sizes to your workload.
@@ -170,6 +172,7 @@ AWS re:Post is not intended to be used for questions that are time-sensitive.
 ## >> Sources <<
 
 - AWS Well-Architected: https://aws.amazon.com/architecture/well-architected/
+- AWS Cloud Adoption Framework (CAF): https://aws.amazon.com/cloud-adoption-framework
 - AWS re:Post forums: https://repost.aws/knowledge-center
 
 - AWS Blogs: https://aws.amazon.com/blogs/aws/ 

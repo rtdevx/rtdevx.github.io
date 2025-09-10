@@ -20,3 +20,4 @@ A strong advocate of _DevOps_ and _Agile_ methodologies, I bring end-to-end tran
 I am currently learning: **DevOps**, **GitOps**, **Ansible**, **AWS**, **Terraform** and **Kubernetes**.
 
 Feel free to take look at [{{< icon "github" >}} my homelab](https://github.com/rtdevx) GitHub page for more details.
+

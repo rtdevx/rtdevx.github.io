@@ -1,5 +1,5 @@
 ---
-title: Preparing for AWS Practitioner exam
+title: Preparing for AWS Practitioner exam ✨
 date: 2025-08-25
 description: Preparing for AWS Practitioner (CLF-C02) exam
 summary: Preparing for AWS Practitioner (CLF-C02) exam...
