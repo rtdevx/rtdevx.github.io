@@ -38,9 +38,9 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 - AWS Cloud
 - Agile methodology with 100% workload transparency
-- Jira project design and administration
+	- Jira project design and administration
+	- SharePoint, Confluence as collaboration and documentation tools
 - Git, Bitbucket, GitHub as version control system
-- SharePoint, Confluence as collaboration and documentation tools
 - Windows
 - Linux
 - PowerShell
