@@ -95,7 +95,7 @@ _More about DDOS protection:_ https://docs.aws.amazon.com/whitepapers/latest/aws
 ## AWS Network Firewall
 
 - Protects entire Amazon VPC
-- From Layer 3 to Layer 7 protection
+- From [Layer 3]({{< ref "osi-model/#3-network-layer" >}}) to [Layer 7]({{< ref "osi-model/#7-application-layer" >}}) protection
 - Any direction, you can inspect
 	- VPC to VPC traffic
 	- Outbound to the internet
