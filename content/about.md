@@ -48,7 +48,7 @@ _\*\*No rights reserved. For educational and informational purposes only._
 
 
 {{< badge >}}
-*This website does not use cookies, analytics, trackers, or any form of data collection. External links (including YouTube embeds) may have different policies - I can't vouch for what happens beyond this page. Web crawlers are explicitly disallowed from indexing or scanning this site.<br /><br />
+*This website does not use cookies, analytics, trackers, or any form of data collection. External links (including YouTube embeds) may have different policies - I can't vouch for what happens on other sites. Web crawlers are explicitly disallowed from indexing or scanning this site.<br /><br />
 
 **No rights reserved. For educational and informational purposes only.
 {{< /badge >}}
