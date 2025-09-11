@@ -239,7 +239,7 @@ Enabled with 1-click, no need to install any software.
 - DNS Logs - compromised EC2 instances sending encoded data within DNS queries
 - Optional Features
 
-EventBridge [Cloud Monitoring]({{< ref "17-cloud-monitoring" >}}) can be set up to be notified in case of any findings. Rules can target AWS Lambda or SNS.
+EventBridge [Cloud Monitoring]({{< ref "17-cloud-monitoring" >}}) can be set up to be notified in case of any findings. Rules can target [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) or [SNS]({{< ref "16-cloud-integrations/#amazon-sns" >}}).
 
 GuardDuty has a dedicated finding for Crypto Currency (mining?) attacks.
 
