@@ -13,7 +13,7 @@ On AWS this could be Regions and / or Edge Locations.
 
 - Decreased Latency
 - [Disaster Recovery]({{< ref "23-other-services/#disaster-recovery-strategies" >}}) 
-- (DOS / [DDOS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}})) Attack protection (distributed global infrastructure is harder to attack)
+- (DOS / [DDoS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}})) Attack protection (distributed global infrastructure is harder to attack)
 
 _More:_ https://aws.amazon.com/about-aws/global-infrastructure/
 
@@ -70,7 +70,7 @@ _More about Route 53:_ https://docs.aws.amazon.com/route53/
 - Improves read performance, content cached at the edge
 - Improves users experience
 - Many Points of Presence globally (Edge Locations, Edge Caches)
-- <font color=#10b981>DDoS protection</font> (because it's distributed globally)
+- [DDoS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}}) protection (because it's distributed globally)
 - <font color=#10b981>Integrated with Shield and AWS WAF</font> (Web Application Firewall)
 ### CloudFront - Origins
 
@@ -118,7 +118,7 @@ _More about AWS Global Accelerator:_
 ## AWS Global Accelerator vs CloudFront
 
 - They both use AWS global network and it's edge locations
-- Both services integrate with AWS Shield for DDoS protection
+- Both services integrate with AWS Shield for [DDoS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}}) protection
 - **CloudFront** - Content Delivery Network
 	- Improves performance for cacheable content (images, videos, etc.)
 	- Content is served at the edge

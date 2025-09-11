@@ -324,7 +324,7 @@ Report suspected AWS resources used to abusive or illegal purposes.
 - Abusive and prohibited behaviors:
 	- SPAM
 	- Port scannint
-	- DoS or DDoS
+	- DoS or [DDoS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}})
 	- Intrusion attempts
 	- Hosting illegal or copyrighted content
 	- Distributing malware

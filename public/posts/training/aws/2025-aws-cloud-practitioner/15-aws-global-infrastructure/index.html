@@ -690,7 +690,7 @@ On AWS this could be Regions and / or Edge Locations.</p>
 <li>Decreased Latency</li>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/23-other-services/#disaster-recovery-strategies">Disaster Recovery</a>
 </li>
-<li>(DOS / <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#ddos-protection-on-aws">DDOS</a>
+<li>(DOS / <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#ddos-protection-on-aws">DDoS</a>
 ) Attack protection (distributed global infrastructure is harder to attack)</li>
 </ul>
 <p><em>More:</em> <a href="https://aws.amazon.com/about-aws/global-infrastructure/" target="_blank" rel="noreferrer">https://aws.amazon.com/about-aws/global-infrastructure/</a>
@@ -763,7 +763,8 @@ Route 53 &gt; Hosted zones &gt; select &#34;CHOOSEADOMAIN.COM&#34; &gt; Update t
 <li>Improves read performance, content cached at the edge</li>
 <li>Improves users experience</li>
 <li>Many Points of Presence globally (Edge Locations, Edge Caches)</li>
-<li><font color=#10b981>DDoS protection</font> (because it&rsquo;s distributed globally)</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#ddos-protection-on-aws">DDoS</a>
+ protection (because it&rsquo;s distributed globally)</li>
 <li><font color=#10b981>Integrated with Shield and AWS WAF</font> (Web Application Firewall)</li>
 </ul>
 <h3 id="cloudfront---origins" class="relative group">CloudFront - Origins <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudfront---origins" aria-label="Anchor">#</a></span></h3>
@@ -850,7 +851,8 @@ Route 53 &gt; Hosted zones &gt; select &#34;CHOOSEADOMAIN.COM&#34; &gt; Update t
 <h2 id="aws-global-accelerator-vs-cloudfront" class="relative group">AWS Global Accelerator vs CloudFront <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-global-accelerator-vs-cloudfront" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>They both use AWS global network and it&rsquo;s edge locations</li>
-<li>Both services integrate with AWS Shield for DDoS protection</li>
+<li>Both services integrate with AWS Shield for <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#ddos-protection-on-aws">DDoS</a>
+ protection</li>
 <li><strong>CloudFront</strong> - Content Delivery Network
 <ul>
 <li>Improves performance for cacheable content (images, videos, etc.)</li>
