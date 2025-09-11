@@ -287,13 +287,19 @@ Amazon S3 File Gateway connects on-premises applications to the cloud to store a
 
 S3 File Gateway is used for on-premises data intensive applications that need file protocol access to objects in S3.
 
+![](./assets/AWS_S3_File_Gateway.png)
+
 _More:_ https://aws.amazon.com/storagegateway/file/s3/
+### Types of Storage Gateway
 
-**Types of Storage Gateway:**
+- <font color=#f1ef63>File Gateway</font>
+	- [S3 File Gateway]({{< ref "11-s3/#aws-storage-gateway" >}}) presents Server Message Block (**SMB**) or Network File System (**NFS**) based access to data in Amazon [S3]({{< ref "11-s3" >}})
+- <font color=#f1ef63>Volume Gateway</font>
+	- **iSCSI block storage** volumes to your on-premises applications that you can store in Amazon [S3]({{< ref "11-s3" >}}) or migrate to [EBS]({{< ref "6-storage/#ebs-volume" >}})
+- <font color=#f1ef63>Tape Gateway</font>
+	- virtual tapes to leading to backup application that can be stored in [S3]({{< ref "11-s3" >}}) or [S3 Glacier]({{< ref "11-s3/#glacier" >}})
 
-- File Gateway
-- Volume Gateway
-- Tape Gateway
+_More about Storage Gateway types:_ https://aws.amazon.com/storagegateway/
 
 ---
 ## >> Sources <<
@@ -304,6 +310,7 @@ _More:_ https://aws.amazon.com/storagegateway/file/s3/
 - S3 Pricing: https://aws.amazon.com/s3/pricing/
 - S3 AWS Snowball: https://aws.amazon.com/snowball/
 - S3 File Gateway: https://aws.amazon.com/storagegateway/file/s3/
+- AWS Storage Gateway types: https://aws.amazon.com/storagegateway/
 
 {{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## >> References <<
