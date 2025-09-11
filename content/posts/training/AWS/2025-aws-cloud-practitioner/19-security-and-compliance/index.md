@@ -195,9 +195,9 @@ KMS > AWS managed keys
 - Free of charge for public TLS certificates
 - Automatic TLS certificate renewal
 - Integrations with AWS Services, such as:
-	- Elastic Load Balancers (ELB)
-	- CloudFront Distributions
-	- APIs on API Gateway
+	- [Elastic Load Balancers]({{< ref "9-elastic-load-balancing" >}}) (ELB)
+	- [CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}}) Distributions
+	- APIs on [API Gateway]({{< ref "13-other-compute-services/#amazon-api-gateway" >}})
 ### AWS Secrets Manager
 
 - Capability to force rotation of secrets every X days
