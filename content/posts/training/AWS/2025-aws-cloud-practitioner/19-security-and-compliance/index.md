@@ -267,7 +267,7 @@ A risk score is associated with all vulnerabilities for prioritization.
 
 **AWS Config** helps with auditing and recording compliance of your AWS resources. It is recording configurations and changes over time.
 
-It can store the configuration data into S3 (then analyzed by [Athena]({{< ref "12-databases/#athena" >}})).
+It can store the configuration data into [S3]({{< ref "11-s3" >}}) (then analyzed by [Athena]({{< ref "12-databases/#athena" >}})).
 ##### What AWS Config can record (examples):
 
 - Unrestricted SSH access to the Security Groups (i.e. port open for everyone)
