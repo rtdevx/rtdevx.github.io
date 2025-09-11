@@ -35,7 +35,7 @@ copyright = "Copy, _right_? 🤔 "
   #   { google = "https://www.google.com/" },
   #   { google-scholar = "https://scholar.google.com/citations?user=user-id" },
   #   { hashnode = "https://username.hashnode.dev" },
-     { instagram = "https://instagram.com/robkpix" },
+  #   { instagram = "https://instagram.com/robkpix" },
   #   { keybase = "https://keybase.io/username" },
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
   #   { kofi = "https://ko-fi.com/username" },
