@@ -10,7 +10,7 @@ copyright = "Copy, _right_? 🤔 "
   dateFormat = "2 January 2006"
 
   # mainSections = ["section1", "section2"]
-  description = "My personal blog..."
+  #description = "My personal blog..."
 
 [params.author]
    name = "RobK"

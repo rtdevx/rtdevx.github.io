@@ -61,7 +61,7 @@ CloudWatch Logs can collect logs from:
 - [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}}) - DNS logs
 ### CloudWatch Logs for EC2 / on-premise
 
-<font color=#f43f5e>CloudWatch agent is required to be installed (and configured?) on EC2 instance 
+<font color=#f43f5e>CloudWatch agent is required to be installed on EC2 instance 
 to push the logs that are needed.</font>
 
 <font color=#f43f5e>CloudWatch agent can also be installed on on-premise servers too.</font>
@@ -114,7 +114,7 @@ CloudTrail > Event history
 ##### <font color=#f43f5e>Visual analysis of our applications.</font> Common view of entire architecture.
 
 - **Troubleshooting performance**
-- Understanding dependencies in a microservices architecture
+- **Understanding dependencies in a microservices architecture**
 - Pinpoint service issues
 - Review request behavior
 - **Find Errors** and **Exceptions**

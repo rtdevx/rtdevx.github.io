@@ -140,7 +140,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1173"
+    "wordCount": "1175"
   }
   </script>
     
@@ -505,7 +505,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-15 00:00:00 &#43;0000 UTC">15 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1173 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
+      <time datetime="2025-08-15 00:00:00 &#43;0000 UTC">15 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>1175 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
     
 
     
@@ -688,8 +688,10 @@
 On AWS this could be Regions and / or Edge Locations.</p>
 <ul>
 <li>Decreased Latency</li>
-<li>Disaster Recovery</li>
-<li>(DOS / DDOS) Attack protection (distributed global infrastructure is harder to attack)</li>
+<li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/23-other-services/#disaster-recovery-strategies">Disaster Recovery</a>
+</li>
+<li>(DOS / <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#ddos-protection-on-aws">DDOS</a>
+) Attack protection (distributed global infrastructure is harder to attack)</li>
 </ul>
 <p><em>More:</em> <a href="https://aws.amazon.com/about-aws/global-infrastructure/" target="_blank" rel="noreferrer">https://aws.amazon.com/about-aws/global-infrastructure/</a>
 </p>
@@ -731,7 +733,8 @@ On AWS this could be Regions and / or Edge Locations.</p>
 <li><font color=#10b981>Simple</font> Routing Policy - <font color=#f43f5e>No health checks,</font> just DNS check</li>
 <li><font color=#10b981>Weighted</font> Routing Policy - <font color=#f43f5e>Specify what amount of traffic goes where</font> (i.e. 70% = Server1, 20% = Server2, 10% = Server3. Simple form of Load Balancing)</li>
 <li><font color=#10b981>Latency</font> Routing Policy - <font color=#f43f5e>Based on latency</font> - minimizing the latency between user and the server sending the traffic that is geographically (latency-based) closer to the user</li>
-<li><font color=#10b981>Failover</font> Routing Policy - <font color=#f43f5e>Disaster Recovery</font> (DR) - based on Health Checks</li>
+<li><font color=#10b981>Failover</font> Routing Policy - <font color=#f43f5e>Disaster Recovery</font> (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/23-other-services/#disaster-recovery-strategies">DR</a>
+) - based on Health Checks</li>
 <li><font color=#10b981>Geolocation</font> Routing Policy - <font color=#f43f5e>Routing based specifically on Geolocation</font></li>
 <li><font color=#10b981>IP-based</font> Routing Policy - <font color=#f43f5e>Route the traffic based on the IP address originates from</font></li>
 </ul>
