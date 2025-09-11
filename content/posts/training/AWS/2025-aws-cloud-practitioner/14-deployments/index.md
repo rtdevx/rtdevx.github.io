@@ -111,8 +111,8 @@ It uses all the components mentioned earlier (EC2, ASG, ELB, RDS, etc...)
 AWS CodeDeploy is a deployment service that automates application deployments to:
 
 - <font color=#10b981>EC2 instances</font> as well as <font color=#10b981>on-premise</font> instances - it is a <font color=#f43f5e>Hybrid</font> service
-- serverless Lambda functions
-- Amazon ECS (<font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervices)
+- serverless [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) functions
+- Amazon [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) (<font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervices)
 
 Servers / Instances must be provisioned and configured ahead of time with the CodeDeploy Agent.
 ## AWS CodeBuild

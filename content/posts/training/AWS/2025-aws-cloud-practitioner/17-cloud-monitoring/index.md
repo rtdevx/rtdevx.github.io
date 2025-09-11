@@ -40,9 +40,9 @@ CloudWatch > Alarms > All alarms
 
 - Alarms are used to trigger notifications for any metric
 - Alarms actions
-	- Auto Scaling - increase or decrease EC2 instances "desired" count
-	- EC2 Actions - stop, terminate, reboot or recover and EC2 instance
-	- SNS notifications - send a notification into an SNS topic
+	- [Auto Scaling]({{< ref "10-auto-scaling-groups" >}}) - increase or decrease EC2 instances "desired" count
+	- [EC2]({{< ref "4-ec2" >}}) Actions - stop, terminate, reboot or recover and EC2 instance
+	- [SNS]({{< ref "16-cloud-integrations/#amazon-sns" >}}) notifications - send a notification into an SNS topic
 - Various options (sampling, %, max, min, etc...)
 - Can choose the period on which to evaluate an alarm
 - **Example:** create a billing alarm on the CloudWatch Billing metric
@@ -66,7 +66,7 @@ to push the logs that are needed.</font>
 
 <font color=#f43f5e>CloudWatch agent can also be installed on on-premise servers too.</font>
 
-IAM permissions must be set for CloudWatch Logs to function correctly.
+[IAM]({{< ref "2-iam" >}}) permissions must be set for CloudWatch Logs to function correctly.
 ## Amazon EventBridge
 
 - Schedule - cron jobs (scheduled scripts)

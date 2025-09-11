@@ -111,13 +111,13 @@ Lambda Container Image - although ECS / Fargate is preferred for running Docker 
 - **Batch**
 	- No time limit
 	- Any runtime as long as it's packaged as a Docker image (no programming language dependency)
-	- Rely on [EBS]({{< ref "6-storage/#ebs-volume" >}}) / instance store for disk space
+	- Rely on [EBS]({{< ref "6-storage/#ebs-volume" >}}) / [Instance Store]({{< ref "6-storage/#ec2-instance-store" >}}) for disk space
 	- Relies on [EC2]({{< ref "4-ec2" >}}) (can be managed by AWS)
 ## Lightsail
 
 - Virtual servers, [storage]({{< ref "6-storage" >}}), [databases]({{< ref "12-databases" >}}) and networking
 - Low & predictable pricing
-- Simpler alternative to using EC2, RDS, ELB, EBS, Route53
+- Simpler alternative to using [EC2]({{< ref "4-ec2" >}}), [RDS]({{< ref "12-databases/#rds-and-aurora" >}}), [ELB]({{< ref "9-elastic-load-balancing" >}}), [EBS]({{< ref "6-storage/#ebs-volume" >}}), [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}})
 - Great for people with <font color=#10b981>little cloud experience</font>
 - Can setup notifications and monitoring of your Lightsail resources
 - <font color=#f1ef63>Use cases:</font>

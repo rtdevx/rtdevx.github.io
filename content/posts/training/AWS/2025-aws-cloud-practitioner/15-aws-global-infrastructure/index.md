@@ -12,8 +12,8 @@ A Global Application is an application deployed in multiple geographies.
 On AWS this could be Regions and / or Edge Locations.
 
 - Decreased Latency
-- Disaster Recovery 
-- (DOS / DDOS) Attack protection (distributed global infrastructure is harder to attack)
+- [Disaster Recovery]({{< ref "23-other-services/#disaster-recovery-strategies" >}}) 
+- (DOS / [DDOS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}})) Attack protection (distributed global infrastructure is harder to attack)
 
 _More:_ https://aws.amazon.com/about-aws/global-infrastructure/
 
@@ -39,7 +39,7 @@ _[How Route 53 routes traffic for your domain](https://docs.aws.amazon.com/Route
 - <font color=#10b981>Simple</font> Routing Policy - <font color=#f43f5e>No health checks,</font> just DNS check
 - <font color=#10b981>Weighted</font> Routing Policy - <font color=#f43f5e>Specify what amount of traffic goes where</font> (i.e. 70% = Server1, 20% = Server2, 10% = Server3. Simple form of Load Balancing)
 - <font color=#10b981>Latency</font> Routing Policy - <font color=#f43f5e>Based on latency</font> - minimizing the latency between user and the server sending the traffic that is geographically (latency-based) closer to the user
-- <font color=#10b981>Failover</font> Routing Policy - <font color=#f43f5e>Disaster Recovery</font> (DR) - based on Health Checks
+- <font color=#10b981>Failover</font> Routing Policy - <font color=#f43f5e>Disaster Recovery</font> ([DR]({{< ref "23-other-services/#disaster-recovery-strategies" >}})) - based on Health Checks
 - <font color=#10b981>Geolocation</font> Routing Policy - <font color=#f43f5e>Routing based specifically on Geolocation</font>
 - <font color=#10b981>IP-based</font> Routing Policy - <font color=#f43f5e>Route the traffic based on the IP address originates from</font>
 

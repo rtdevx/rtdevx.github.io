@@ -94,6 +94,8 @@ Aurora and RDS > Create a database
 	- Local performance for global reads
 	- Additional replication cost
 	- <font color=#f1ef63>Use case:</font> DR in another region
+
+_More:_ [Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
 ## Other Database Types
 ### <font color=#f1ef63>Amazon ElastiCache</font>
 
@@ -186,7 +188,7 @@ Aurora version for MongoDB (NoSQL database).
 	- Posts have comments
 	- Comments have likes from users
 	- Users share and like posts
-- Highly Available across 3AZ with up to 15 replicas
+- [Highly Available]({{< ref "8-scalability-high-availability/#high-availability" >}}) across 3AZ with up to 15 replicas
 - Build and run applications working with highly connected datasets = optimized for those complex queries
 - Can store up to billions of relations and query the graph with milliseconds latency
 - <font color=#f1ef63>Use cases:</font> knowledge graphs (Wikipedia), fraud detection, recommendation engines, social networking
@@ -245,6 +247,7 @@ Managed <font color=#f43f5e>E</font>xtract, <font color=#f43f5e>T</font>ransform
 - Amazon RDS and Aurora Documentation: https://docs.aws.amazon.com/rds/
 - ElastiCache: https://docs.aws.amazon.com/elasticache/
 - QuickSight: https://docs.aws.amazon.com/quicksight/
+- [Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
 
 ## >> Table of contents (CLF-C02) <<
 
