@@ -103,8 +103,8 @@ _More about DDOS protection:_ https://docs.aws.amazon.com/whitepapers/latest/aws
 	- To / From Direct Connect & Site-to-Site VPN
 
 ![](./assets/AWS_Network_Firewall.png)
-_AWS Network Firewall is protecting entire VPC from Layer 3 to Layer 7_
-##### <font color=#f43f5e>AWS Network Firewall offers much better protection than NACL that only operates at the subnet level. AWS Network Firewall operates at VPC level.</font>
+_AWS Network Firewall is protecting entire VPC from [Layer 3]({{< ref "osi-model/#3-network-layer" >}}) to [Layer 7]({{< ref "osi-model/#7-application-layer" >}})_
+##### <font color=#f43f5e>AWS Network Firewall offers much better protection than</font> [NACL]({{< ref "18-vpc/#nacl-network-acl" >}}) <font color=#f43f5e>that only operates at the subnet level. AWS Network Firewall operates at VPC level.</font>
 
 _More about Network Firewall:_ https://docs.aws.amazon.com/network-firewall/
 ## AWS Firewall Manager
@@ -152,16 +152,17 @@ _Read More about Penetration Testing:_ https://aws.amazon.com/security/penetrati
 
 ##### <font color=#10b981>AWS is managing encryption keys for the customers using KMS.</font>
 
-- Encryption Opt-in:
+- **Encryption Opt-in:**
 	- <font color=#f1ef63>EBS Volumes:</font> encrypt volumes
 	- <font color=#f1ef63>S3 buckets:</font> server-side encryption of objects (SSE-S3 enabled by default, SSE-KMS opt-in)
 	- <font color=#f1ef63>Redshift Database</font>
 	- <font color=#f1ef63>RDS database</font>
 	- <font color=#f1ef63>EFS drives:</font> encryption of data
-- Encryption Automatically enabled:
-	- CloudTrail Logs
-	- S3 Glacier
-	- Storage Gateway
+
+- **Encryption Automatically enabled:**
+	- [CloudTrail]({{< ref "17-cloud-monitoring/#aws-cloudtrail" >}}) Logs
+	- [S3 Glacier]({{< ref "11-s3/#glacier" >}})
+	- [Storage Gateway]({{< ref "11-s3/#aws-storage-gateway" >}})
 ### Cloud HSM
 
 - **KMS** = <font color=#f43f5e>AWS manages the software for encryption</font>

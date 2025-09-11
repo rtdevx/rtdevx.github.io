@@ -70,15 +70,18 @@ VPC > Virtual Private Cloud > Subnets > Create subnet
 ```
 ## Security Groups & Network ACL
 
-- **Security Groups**
-	- <font color=#f43f5e>A firewall that controls traffic to and from an EC2 Instance</font>
-	- Can only have <font color=#f43f5e>allow rules</font>
-	- Rules include <font color=#f43f5e>IP addresses and other security groups</font>
-- **NACL** (Network ACL)
-	- <font color=#f43f5e>A firewall that controls traffic to and from a SUBNET</font>
-	- Can have <font color=#10b981>allow</font> and <font color=#f43f5e>deny</font> rules
-	- Are attached at the <font color=#f43f5e>Subnet level</font>
-	- Rules only include IP addresses
+### Security Groups
+
+- <font color=#f43f5e>A firewall that controls traffic to and from an EC2 Instance</font>
+- Can only have <font color=#f43f5e>allow rules</font>
+- Rules include <font color=#f43f5e>IP addresses and other security groups</font>
+
+### NACL (Network ACL)
+
+- <font color=#f43f5e>A firewall that controls traffic to and from a SUBNET</font>
+- Can have <font color=#10b981>allow</font> and <font color=#f43f5e>deny</font> rules
+- Are attached at the <font color=#f43f5e>Subnet level</font>
+- Rules only include IP addresses
 
 ```AWSConsole
 VPC > Security > Security Groups
