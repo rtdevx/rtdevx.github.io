@@ -59,13 +59,6 @@
       <description>Machine Learning in Amazon AWS&amp;hellip;</description>
     </item>
     <item>
-      <title>Installing Hugo with Congo</title>
-      <link>http://localhost:1313/posts/blogging/installing-congo-with-hugo/</link>
-      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/blogging/installing-congo-with-hugo/</guid>
-      <description>Installing Hugo - The world’s fastest framework for building websites - with Congo theme</description>
-    </item>
-    <item>
       <title>Security and Compliance</title>
       <link>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
@@ -215,7 +208,7 @@
     <item>
       <title>7 Chinese and Japanese studying techniques</title>
       <link>http://localhost:1313/posts/productivity/2025/250717-7-studying-techniques/</link>
-      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/productivity/2025/250717-7-studying-techniques/</guid>
       <description>Pomodoro, Kanji, Rewrite notes, Empty cup mindset, Chain learning, Study like a sensei, The forbidden night school&amp;hellip;</description>
     </item>
@@ -225,6 +218,13 @@
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description>Learn more about me and why I am starting this blog.</description>
+    </item>
+    <item>
+      <title>Installing Hugo with Congo</title>
+      <link>http://localhost:1313/posts/blogging/installing-congo-hugo/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/blogging/installing-congo-hugo/</guid>
+      <description>Installing Hugo - The worlds fastest framework for building websites - with Congo theme</description>
     </item>
   </channel>
 </rss>

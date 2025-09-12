@@ -1,8 +1,8 @@
 ---
 title: Installing Hugo with Congo
-date: 2025-08-19
-description: Installing Hugo - The world’s fastest framework for building websites - with Congo theme
-summary: Installing Hugo - The world’s fastest framework for building websites - with Congo theme
+date: 2025-07-17
+description: Installing Hugo - The worlds fastest framework for building websites
+summary: Installing Hugo - The worlds fastest framework for building websites - with Congo theme
 draft: false
 tags:
   - Hugo

@@ -1,6 +1,6 @@
 ---
 title: 7 Chinese and Japanese studying techniques
-date: 2025-07-17
+date: 2025-07-18
 description: 7 Chinese and Japanese learning techniques.
 summary: Pomodoro, Kanji, Rewrite notes, Empty cup mindset, Chain learning, Study like a sensei, The forbidden night school...
 draft: false
