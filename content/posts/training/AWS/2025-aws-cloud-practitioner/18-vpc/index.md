@@ -43,7 +43,7 @@ VPC - Virtual Private Cloud - private network to deploy resources (regional reso
 - **Internet Gateways** help our VPC instances connecting with the internet
 	- Public Subnets will have a route to the internet gateway
 
-- **NAT Gateways** (AWS Managed) & **NAT Instances** (self managed) allow instances in Private Subnets to access the internet while remaining private
+- **NAT Gateways** (<font color=#f43f5e>AWS Managed</font>) & **NAT Instances** (<font color=#f43f5e>self managed</font>) allow instances in Private Subnets to access the internet while remaining private
 
 ![](./assets/AWS_VPC_Gateways1.png)
 _Internet Gateway & NAT Gateways._
