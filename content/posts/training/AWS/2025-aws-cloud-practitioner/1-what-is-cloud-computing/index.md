@@ -7,7 +7,6 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
-series: AWS Cloud Practitioner
 ---
 
 | **Private Cloud**                                                       | **Public Cloud**                                                                                       | **Hybrid Cloud**                                                        |
