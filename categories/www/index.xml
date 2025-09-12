@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WWW on rtdevx</title>
+    <link>http://localhost:1313/categories/www/</link>
+    <description>Recent content in WWW on rtdevx</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copy, _right_? 🤔 </copyright>
+    <atom:link href="http://localhost:1313/categories/www/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
