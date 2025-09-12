@@ -76,7 +76,7 @@ Fully managed service for developers / data scientists to <font color=#f43f5e>bu
 
 Fully managed <font color=#10b981>document search service</font> powered by Machine Learning.
 
-- Can extract answers from withing a document (text, pdf, HTML, Power Point, MS Word, FAQs, etc.).
+- Can extract answers from within a document (text, pdf, HTML, Power Point, MS Word, FAQs, etc.).
 - Can learn from user interactions or feedback to promote preferred results (Incremental Learning)
 - Has an ability to manually fine-tune search results (importance of data, freshness, custom, etc.)
 ## Personalize
