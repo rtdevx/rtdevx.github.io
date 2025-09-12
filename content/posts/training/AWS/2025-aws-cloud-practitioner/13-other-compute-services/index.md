@@ -25,10 +25,10 @@ Apps are packaged in containers that can be run on any OS.
 Docker images are stored in Docker Repositories.
 
 - Public: Docker Hub (https://hubl.docker.com)
-- Private: Amazon ECR (<font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>R</font>egistry)
+- Private: Amazon ECR (<font color=#EB4925>E</font>lastic <font color=#EB4925>C</font>ontainer <font color=#EB4925>R</font>egistry)
 ## ECS (Elastic Container Service)
 
-**Amazon ECS** = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervice.
+**Amazon ECS** = <font color=#EB4925>E</font>lastic <font color=#EB4925>C</font>ontainer <font color=#EB4925>S</font>ervice.
 
 ECS allows launching Docker containers on AWS. It is an orchestrator.
 
@@ -40,15 +40,15 @@ ECS allows launching Docker containers on AWS. It is an orchestrator.
 ## Fargate
 
 - Launch Docker containers on AWS
-- <font color=#10b981>Serverless</font>. No need to provision the infrastructure (no EC2 instances to manage)
+- <font color=#C7EB25>Serverless</font>. No need to provision the infrastructure (no EC2 instances to manage)
 - AWS runs the containers based on CPU / RAM needed
 ## ECR
 
-- <font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>R</font>egistry
+- <font color=#EB4925>E</font>lastic <font color=#EB4925>C</font>ontainer <font color=#EB4925>R</font>egistry
 - Private Docker Registry on AWS
 ## Amazon EKS
 
-Amazon EKS = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>K</font>ubernetes <font color=#f43f5e>S</font>ervice.
+Amazon EKS = <font color=#EB4925>E</font>lastic <font color=#EB4925>K</font>ubernetes <font color=#EB4925>S</font>ervice.
 
 Allows launching and managing Kubernetes clusters on AWS.
 
@@ -60,16 +60,16 @@ Kubernetes is an open-source system for management, deployment and scaling of co
 - Fargate
 ## Lambda
 
-- <font color=#10b981>Virtual functions</font> - no servers to manage
-- Limited by time - <font color=#10b981>short executions</font>
-- Run <font color=#10b981>on-demand</font>
-- <font color=#10b981>Scaling is automated</font>
+- <font color=#C7EB25>Virtual functions</font> - no servers to manage
+- Limited by time - <font color=#C7EB25>short executions</font>
+- Run <font color=#C7EB25>on-demand</font>
+- <font color=#C7EB25>Scaling is automated</font>
 ### Benefits of Lambda
 
 - Easy pricing:
 	- Pay per request and compute time
 - Integrated with the whole AWS suite of services
-- <font color=#10b981>Event-Driven:</font> functions get invoked by AWS when needed
+- <font color=#C7EB25>Event-Driven:</font> functions get invoked by AWS when needed
 - Integrated with many programming languages
 	- Node.js (JavaScript)
 	- Python
@@ -83,24 +83,24 @@ Kubernetes is an open-source system for management, deployment and scaling of co
 
 Lambda Container Image - although ECS / Fargate is preferred for running Docker images.
 
-<font color=#10b981>Lambda pricing</font> is based on <font color=#f43f5e>calls</font> and <font color=#f43f5e>duration</font>.
+<font color=#C7EB25>Lambda pricing</font> is based on <font color=#EB4925>calls</font> and <font color=#EB4925>duration</font>.
 ## Amazon API Gateway
 
 - Fully managed service for developers to easily create, publish, maintain, monitor and secure APIs
-- <font color=#10b981>Serverless</font> and scalable
+- <font color=#C7EB25>Serverless</font> and scalable
 - Supports RESTful APIs and WebSocket APIs
 - Support for security, user authentication, API throttling, API keys, monitoring
-##### <font color=#f43f5e>Creating Serverless API</font> = API Gateway + Lambda. <font color=#f43f5e>Expose Lambda functions as HTTP API</font>.
+##### <font color=#EB4925>Creating Serverless API</font> = API Gateway + Lambda. <font color=#EB4925>Expose Lambda functions as HTTP API</font>.
 ## AWS Batch
 
 - Fully managed batch processing at any scale
 - Efficiently run 100,000s of computing batch jobs on AWS
 - A "_batch_" job is a job with start and and end (opposed to continuous)
-- <font color=#f1ef63>Batch will dynamically launch EC2 instances or Spot instances</font>
+- <font color=#EBAC25>Batch will dynamically launch EC2 instances or Spot instances</font>
 - AWS batch provisions the right amount of compute / memory
 - You submit or schedule batch jobs and AWS Batch does the rest
-- <font color=#f1ef63>Batch jobs are defined as Docker images and run on ECS</font>
-- <font color=#f43f5e>Helpful for cost optimizations and focusing less on the infrastructure</font>
+- <font color=#EBAC25>Batch jobs are defined as Docker images and run on ECS</font>
+- <font color=#EB4925>Helpful for cost optimizations and focusing less on the infrastructure</font>
 ### Batch vs Lambda
 
 - **Lambda**
@@ -118,32 +118,32 @@ Lambda Container Image - although ECS / Fargate is preferred for running Docker 
 - Virtual servers, [storage]({{< ref "6-storage" >}}), [databases]({{< ref "12-databases" >}}) and networking
 - Low & predictable pricing
 - Simpler alternative to using [EC2]({{< ref "4-ec2" >}}), [RDS]({{< ref "12-databases/#rds-and-aurora" >}}), [ELB]({{< ref "9-elastic-load-balancing" >}}), [EBS]({{< ref "6-storage/#ebs-volume" >}}), [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}})
-- Great for people with <font color=#10b981>little cloud experience</font>
+- Great for people with <font color=#C7EB25>little cloud experience</font>
 - Can setup notifications and monitoring of your Lightsail resources
-- <font color=#f1ef63>Use cases:</font>
+- <font color=#EBAC25>Use cases:</font>
 	- Simple web applications
 	- Websites
 	- Dev / Test environment
 - Has High Availability but no auto scaling, limited AWS integrations
 ## Summary
 
-- <font color=#f1ef63>Docker:</font> container technology to run applications
-- <font color=#f1ef63>ECS:</font> run Docker container on EC2 instances
-- <font color=#f1ef63>Fargate:</font>
+- <font color=#EBAC25>Docker:</font> container technology to run applications
+- <font color=#EBAC25>ECS:</font> run Docker container on EC2 instances
+- <font color=#EBAC25>Fargate:</font>
 	- Run Docker containers without provisioning the infrastructure
 	- Serverless offering (no EC2 instances)
-- <font color=#f1ef63>ECR:</font> Private Docker Images Repository
-- <font color=#f1ef63>EKS:</font> Allows launching and managing Kubernetes clusters on AWS (hosted on: EC2 instances OR Fargate)
-- <font color=#f1ef63>Batch:</font> run batch jobs on AWS across managed EC2 instances
-- <font color=#f1ef63>Lightsail:</font> predictable & low pricing for simple application & DB stacks
-- <font color=#f1ef63>Lambda:</font>
+- <font color=#EBAC25>ECR:</font> Private Docker Images Repository
+- <font color=#EBAC25>EKS:</font> Allows launching and managing Kubernetes clusters on AWS (hosted on: EC2 instances OR Fargate)
+- <font color=#EBAC25>Batch:</font> run batch jobs on AWS across managed EC2 instances
+- <font color=#EBAC25>Lightsail:</font> predictable & low pricing for simple application & DB stacks
+- <font color=#EBAC25>Lambda:</font>
 	- Serverless, Function as a Service, seamless scaling, reactive
 	- Lambda Billing:
 		- By the time run x by the RAM provisioned
 		- By the number of invocations
 	- Language support: many programming languages except (arbitrary) Docker
 	- Invocation time: up to 15 minutes
-- <font color=#f1ef63>API Gateway:</font> expose Lambda functions as HTTP API
+- <font color=#EBAC25>API Gateway:</font> expose Lambda functions as HTTP API
 
 ---
 ## >> Sources <<

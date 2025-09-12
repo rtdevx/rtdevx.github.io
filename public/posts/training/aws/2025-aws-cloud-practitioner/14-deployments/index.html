@@ -596,7 +596,7 @@
         <h1 id="deploying-and-managing-infrastructure-at-scale" class="relative group">Deploying and Managing Infrastructure at scale <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#deploying-and-managing-infrastructure-at-scale" aria-label="Anchor">#</a></span></h1>
 <h2 id="cloudformation" class="relative group">CloudFormation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudformation" aria-label="Anchor">#</a></span></h2>
 <p><strong>CloudFormation</strong> is a <em>declarative way of outlining an AWS infrastructure</em>.</p>
-<p><font color=#f1ef63>Example:</font></p>
+<p><font color=#EBAC25>Example:</font></p>
 <ul>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/5-security-groups/">Security Group</a>
 </li>
@@ -607,7 +607,7 @@
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/">Load Balancer</a>
  (ELB) in front</li>
 </ul>
-<p>Then <strong>CloudFormation</strong> creates those resources <font color=#10b981>in the right order</font> and with the exact configuration that was specified (declared).</p>
+<p>Then <strong>CloudFormation</strong> creates those resources <font color=#C7EB25>in the right order</font> and with the exact configuration that was specified (declared).</p>
 <hr>
 <p><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/Omppm_YUG2g?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
@@ -626,8 +626,8 @@
 <li><strong>Cost</strong>
 <ul>
 <li>Each resource within the stack is tagged with an identifier so you can easily see how much a stack costs</li>
-<li><font color=#f1ef63>Cost can be estimated by using CloudFormation template</font></li>
-<li><font color=#f1ef63>Cost savings strategy:</font> in Dev, automation can delete resources at 5pm and recreate at 8am automatically</li>
+<li><font color=#EBAC25>Cost can be estimated by using CloudFormation template</font></li>
+<li><font color=#EBAC25>Cost savings strategy:</font> in Dev, automation can delete resources at 5pm and recreate at 8am automatically</li>
 </ul>
 </li>
 <li><strong>Productivity</strong>
@@ -648,8 +648,8 @@
 </ul>
 </li>
 </ul>
-<h3 id="cloudformation--infrastructure-composer" class="relative group">CloudFormation + <font color=#f1ef63>Infrastructure Composer</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudformation--infrastructure-composer" aria-label="Anchor">#</a></span></h3>
-<p><font color=#f1ef63>Example:</font> Wordpress CloudFormation Stack</p>
+<h3 id="cloudformation--infrastructure-composer" class="relative group">CloudFormation + <font color=#EBAC25>Infrastructure Composer</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudformation--infrastructure-composer" aria-label="Anchor">#</a></span></h3>
+<p><font color=#EBAC25>Example:</font> Wordpress CloudFormation Stack</p>
 <ul>
 <li>We can see all the resources</li>
 <li>We can see the relations between components</li>
@@ -670,15 +670,15 @@ Your browser does not support the video tag.
 <li>Define your cloud infrastructure using a familiar language:
 <ul>
 <li>JavaScript/TypeScript, Python, Java, .NET</li>
-<li>For that reason infrastructure and application can be deployed &ldquo;together&rdquo; - <font color=#10b981>they share the runtime</font></li>
+<li>For that reason infrastructure and application can be deployed &ldquo;together&rdquo; - <font color=#C7EB25>they share the runtime</font></li>
 </ul>
 </li>
 <li>The infrastructure code is converted into a <strong>CloudFormation template</strong> (JSON / YAML)</li>
 </ul>
 <h2 id="beanstalk" class="relative group">Beanstalk <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#beanstalk" aria-label="Anchor">#</a></span></h2>
-<p><font color=#f1ef63>Elastic Beanstalk is a developer-centric view of deploying an application on AWS.</font></p>
+<p><font color=#EBAC25>Elastic Beanstalk is a developer-centric view of deploying an application on AWS.</font></p>
 <p>It uses all the components mentioned earlier (EC2, ASG, ELB, RDS, etc&hellip;)</p>
-<h5 id="beanstalk--platform-as-a-service-paas" class="relative group"><font color=#f1ef63>Beanstalk = Platform as a Service (PaaS)</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#beanstalk--platform-as-a-service-paas" aria-label="Anchor">#</a></span></h5>
+<h5 id="beanstalk--platform-as-a-service-paas" class="relative group"><font color=#EBAC25>Beanstalk = Platform as a Service (PaaS)</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#beanstalk--platform-as-a-service-paas" aria-label="Anchor">#</a></span></h5>
 <p>
 
 
@@ -715,7 +715,7 @@ Your browser does not support the video tag.
 </ul>
 </li>
 </ul>
-<h5 id="beanstalk-supports-many-platforms" class="relative group"><font color=#f1ef63>Beanstalk supports many platforms:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#beanstalk-supports-many-platforms" aria-label="Anchor">#</a></span></h5>
+<h5 id="beanstalk-supports-many-platforms" class="relative group"><font color=#EBAC25>Beanstalk supports many platforms:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#beanstalk-supports-many-platforms" aria-label="Anchor">#</a></span></h5>
 <ul>
 <li>Go</li>
 <li>Java SE</li>
@@ -730,16 +730,16 @@ Your browser does not support the video tag.
 <li>Multi-Container Docker</li>
 <li>Preconfigured Docker</li>
 </ul>
-<p><font color=#f1ef63>Beanstalk Health Agent pushes metrics to</font> <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#cloudwatch-metrics">CloudWatch</a>
-, <font color=#f1ef63>checks for app health and publishes health events.</font></p>
+<p><font color=#EBAC25>Beanstalk Health Agent pushes metrics to</font> <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#cloudwatch-metrics">CloudWatch</a>
+, <font color=#EBAC25>checks for app health and publishes health events.</font></p>
 <h2 id="aws-codedeploy" class="relative group">AWS CodeDeploy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-codedeploy" aria-label="Anchor">#</a></span></h2>
 <p>AWS CodeDeploy is a deployment service that automates application deployments to:</p>
 <ul>
-<li><font color=#10b981>EC2 instances</font> as well as <font color=#10b981>on-premise</font> instances - it is a <font color=#f43f5e>Hybrid</font> service</li>
+<li><font color=#C7EB25>EC2 instances</font> as well as <font color=#C7EB25>on-premise</font> instances - it is a <font color=#EB4925>Hybrid</font> service</li>
 <li>serverless <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#lambda">Lambda</a>
  functions</li>
 <li>Amazon <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/13-other-compute-services/#ecs-elastic-container-service">ECS</a>
- (<font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervices)</li>
+ (<font color=#EB4925>E</font>lastic <font color=#EB4925>C</font>ontainer <font color=#EB4925>S</font>ervices)</li>
 </ul>
 <p>Servers / Instances must be provisioned and configured ahead of time with the CodeDeploy Agent.</p>
 <h2 id="aws-codebuild" class="relative group">AWS CodeBuild <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-codebuild" aria-label="Anchor">#</a></span></h2>
@@ -755,7 +755,7 @@ Traditionally you need to setup your own artifact management system.</p>
 <p><strong>CodeArtifact</strong> works with common dependency management tools such as:</p>
 <p>Maven, Gradle, npm, yarn, twine, pip, NuGet.</p>
 <p><strong>Developers and CodeBuild can retrieve dependencies straight from CodeArtifact.</strong></p>
-<h2 id="systems-manager-ssm" class="relative group"><font color=#f1ef63>Systems Manager (SSM)</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#systems-manager-ssm" aria-label="Anchor">#</a></span></h2>
+<h2 id="systems-manager-ssm" class="relative group"><font color=#EBAC25>Systems Manager (SSM)</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#systems-manager-ssm" aria-label="Anchor">#</a></span></h2>
 <p>SSM helps managing EC2 and On-Premises systems at scale.</p>
 <p>
 
@@ -770,14 +770,14 @@ Traditionally you need to setup your own artifact management system.</p>
 </figure>
 </p>
 <ul>
-<li>Another <font color=#10b981>Hybrid</font> AWS service</li>
+<li>Another <font color=#C7EB25>Hybrid</font> AWS service</li>
 <li>Get operational insights about the state of the infrastructure</li>
 <li>Suite of 10+ products</li>
-<li><font color=#f1ef63>Features:</font>
+<li><font color=#EBAC25>Features:</font>
 <ul>
-<li><font color=#f43f5e>Patching automation</font> for enhanced compliance</li>
-<li><font color=#f43f5e>Run commands across entire fleet of servers</font></li>
-<li><font color=#f43f5e>Store parameter configuration</font> with the SSM Parameter Store</li>
+<li><font color=#EB4925>Patching automation</font> for enhanced compliance</li>
+<li><font color=#EB4925>Run commands across entire fleet of servers</font></li>
+<li><font color=#EB4925>Store parameter configuration</font> with the SSM Parameter Store</li>
 </ul>
 </li>
 <li>Works with Linux, Windows, MacOS and Raspberry Pi OS (Raspbian)
@@ -806,7 +806,7 @@ Traditionally you need to setup your own artifact management system.</p>
 </p>
 <h3 id="systems-manager-parameter-store" class="relative group">Systems Manager Parameter Store <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#systems-manager-parameter-store" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li><font color=#10b981>Secure storage for configuration and secrets</font></li>
+<li><font color=#C7EB25>Secure storage for configuration and secrets</font></li>
 <li>API Keys, passwords, configurations</li>
 <li>Serverless, scalable, durable, easy SDK</li>
 <li>Control access permissions with IAM policies</li>
@@ -824,8 +824,8 @@ Traditionally you need to setup your own artifact management system.</p>
 </ul>
 <h2 id="-highlights-" class="relative group">&raquo; Highlights &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-highlights-" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#f1ef63>Infrastructure Composer</font></li>
-<li><font color=#f1ef63>Systems Manager (SSM)</font></li>
+<li><font color=#EBAC25>Infrastructure Composer</font></li>
+<li><font color=#EBAC25>Systems Manager (SSM)</font></li>
 </ul>
 <h2 id="-table-of-contents-clf-c02-" class="relative group">&raquo; Table of contents (CLF-C02) &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-table-of-contents-clf-c02-" aria-label="Anchor">#</a></span></h2>
 <table>

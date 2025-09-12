@@ -22,7 +22,7 @@ _AWS EC2 AMI Tutorial_
 
 ---
 
-<font color=#f43f5e>AMI are build for a specific AWS region</font> but can be copied across regions.
+<font color=#EB4925>AMI are build for a specific AWS region</font> but can be copied across regions.
 ### AMI can be launched from
 
 - Public AMI - AWS provided

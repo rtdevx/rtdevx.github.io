@@ -11,21 +11,21 @@ categories: AWS
 ## EBS Volume
 
 - **EBS** (Elastic Block Store) - Network drive that can be attached to instances while they run
-- <font color=#10b981>It allows instances to persist the data, even after their termination</font>
-- <font color=#10b981>Can be mounted to 1 instance at a time</font>
-- <font color=#10b981>Bound to an Availability Zone</font>
+- <font color=#C7EB25>It allows instances to persist the data, even after their termination</font>
+- <font color=#C7EB25>Can be mounted to 1 instance at a time</font>
+- <font color=#C7EB25>Bound to an Availability Zone</font>
 - It's a "**Network Drive**"
 	- it uses the network to communicate to the instance (there can be latency)
 	- it can be detached from an EC2 instance and attached to another one quickly
-- <font color=#10b981>It's locked to an Availability Zone (AZ)</font>
+- <font color=#C7EB25>It's locked to an Availability Zone (AZ)</font>
 	- an EBS Volume that is _us-east-1a_ can't be attached to _us-east-1b_
 	- to move a volume across AZ, snapshot has to be created first
-- <font color=#10b981>It has a provisioned capacity (size in GB and IOPS)</font>
+- <font color=#C7EB25>It has a provisioned capacity (size in GB and IOPS)</font>
 	- you will get billed for a provisioned capacity
 	- You can increase the capacity of the drive
 
 ![](./assets/AWS_EC2_EBS_Volume1.png)
-_<font color=#f43f5e>EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them</font>_
+_<font color=#EB4925>EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them</font>_
 ### EBS Delete on Termination
 
 ![](./assets/AWS_EC2_EBS_Delete_on_Termination.png)
@@ -34,7 +34,7 @@ _<font color=#f43f5e>EBS Volumes can be attached to only 1 EC2 instance at a tim
 	- by default the root EBS volume is deleted (attribute enabled)
 	- by default any other attached EBS volume is not deleted (attribute disabled)
 - This can be controlled by both, AWS Console and AWS CLI
-- <font color=#f1ef63>Use case:</font> preserve root volume when instance is terminated
+- <font color=#EBAC25>Use case:</font> preserve root volume when instance is terminated
 ## EBS Snapshots
 
 - Make a backup (snapshot) of EBS volume at a point in time
@@ -58,22 +58,22 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 ## EC2 Instance Store
 
 - EBS volumes are network drives with good but "limited" performance
-- <font color=#10b981>If high-performance hardware disk is required, EC2 Instance Store can be used</font>
+- <font color=#C7EB25>If high-performance hardware disk is required, EC2 Instance Store can be used</font>
 
 - Better I/O performance
 - EC2 Instance Store is ephemeral (data is lost after stopping EC2 instance)
-- <font color=#f1ef63>Use case:</font> buffer, cache, scratch data, temporary content
+- <font color=#EBAC25>Use case:</font> buffer, cache, scratch data, temporary content
 
-<font color=#f43f5e>Risk of data loss if hardware fails.</font>
+<font color=#EB4925>Risk of data loss if hardware fails.</font>
 ## EFS - Elastic File System
 
-- <font color=#f1ef63>Managed NFS</font> (Network File System) that can be mounted on 100s of EC2 instances
-- <font color=#f43f5e>EFS works with Linux EC2 instances only</font> and is <font color=#10b981>multi-AZ.</font>
-- Highly-available, scalable, <font color=#f43f5e>expensive</font> (3x gp2 EBS), pay per use, no capacity planning
+- <font color=#EBAC25>Managed NFS</font> (Network File System) that can be mounted on 100s of EC2 instances
+- <font color=#EB4925>EFS works with Linux EC2 instances only</font> and is <font color=#C7EB25>multi-AZ.</font>
+- Highly-available, scalable, <font color=#EB4925>expensive</font> (3x gp2 EBS), pay per use, no capacity planning
 ### EFS Infrequent Access (EFS-IA)
 
 - Storage class that is cost-optimized for files not accessed every day
-- up to <font color=#f43f5e>92% lower cost</font> compared to EFS Standard
+- up to <font color=#EB4925>92% lower cost</font> compared to EFS Standard
 - When enabled, EFS will automatically move your files to **EFS-IA** based on last time they were accessed
 - Enable **EFS-IA** with a **Lifecycle Policy**
 	- Example: move files that are not accessed for 60 days to **EFS-IA**
@@ -98,7 +98,7 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 3rd party with high-performance file system on AWS.
 
 - **FSx for Lustre** - fully managed, high-performance, scalable <font color=green>file storage for High Performance Computing (HPC)</font>. 
-	- <font color=#f1ef63>Use cases:</font> Machine Learning, Analytics, Video processing, Financial Modelling
+	- <font color=#EBAC25>Use cases:</font> Machine Learning, Analytics, Video processing, Financial Modelling
 	- Scales up to 100s GB/s, millions of IOPS, sub-ms latencies
 - **FSx for Windows File Server** - fully managed, highly reliable and scalable Windows native shared file system built on Windows File Server. <font color=green>Supports SMB and NTFS file systems. Integrated with AD for security. Can be accessed from AWS or from On-Premise.</font>
 - **FSx for NetApp ONTAP** - 

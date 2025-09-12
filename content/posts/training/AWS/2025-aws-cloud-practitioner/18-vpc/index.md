@@ -25,25 +25,25 @@ Amazon **Virtual Private Cloud** (VPC) enables you to provision logically isolat
 	- Private IPv4 - can be used on private networks (LAN) such as internal AWS networking
 		- Private IPv4 is fixed for EC2 instances even after stopping / starting
 - Elastic IP - allows to attach a fixed public IPv4 address to an EC2 instance
-- <font color=#f1ef63>Note:</font> Every public IPv4 address on AWS will be charged **$0.005 per hour** (including Elastic IP)
+- <font color=#EBAC25>Note:</font> Every public IPv4 address on AWS will be charged **$0.005 per hour** (including Elastic IP)
 
 - IPv6 - Number of addresses: 3.4 x 10^38
-	- Every IP address is public in AWS (no private range) (<font color=#f43f5e>??</font>)
+	- Every IP address is public in AWS (no private range) (<font color=#EB4925>??</font>)
 	- Free
 ## VPC and Subnets Primer
 
 VPC - Virtual Private Cloud - private network to deploy resources (regional resource)
 
 - Subnets allow to partition the network inside of VPC (Availability Zone Resource)
-- A <font color=#10b981>public subnet</font> is a subnet that is <font color=#10b981>accessible</font> from the internet
-- A <font color=#f43f5e>private subnet</font> is a subnet that is <font color=#f43f5e>not accessible</font> from the internet
-- <font color=#10b981>To define access to the internet and between subnets, we use Route Tables</font>
+- A <font color=#C7EB25>public subnet</font> is a subnet that is <font color=#C7EB25>accessible</font> from the internet
+- A <font color=#EB4925>private subnet</font> is a subnet that is <font color=#EB4925>not accessible</font> from the internet
+- <font color=#C7EB25>To define access to the internet and between subnets, we use Route Tables</font>
 ## Internet Gateway & NAT Gateways
 
 - **Internet Gateways** help our VPC instances connecting with the internet
 	- Public Subnets will have a route to the internet gateway
 
-- **NAT Gateways** (<font color=#f43f5e>AWS Managed</font>) & **NAT Instances** (<font color=#f43f5e>self managed</font>) allow instances in Private Subnets to access the internet while remaining private
+- **NAT Gateways** (<font color=#EB4925>AWS Managed</font>) & **NAT Instances** (<font color=#EB4925>self managed</font>) allow instances in Private Subnets to access the internet while remaining private
 
 ![](./assets/AWS_VPC_Gateways1.png)
 _Internet Gateway & NAT Gateways._
@@ -72,18 +72,18 @@ VPC > Virtual Private Cloud > Subnets > Create subnet
 
 ### Security Groups
 
-- <font color=#f43f5e>A firewall that controls traffic to and from an EC2 Instance</font>
-- Can only have <font color=#f43f5e>allow rules</font>
-- Rules include <font color=#f43f5e>IP addresses and other security groups</font>
+- <font color=#EB4925>A firewall that controls traffic to and from an EC2 Instance</font>
+- Can only have <font color=#EB4925>allow rules</font>
+- Rules include <font color=#EB4925>IP addresses and other security groups</font>
 
 ### NACL (Network ACL)
 
-- <font color=#f43f5e>A firewall that controls traffic to and from a SUBNET</font>
-- Can have <font color=#10b981>allow</font> and <font color=#f43f5e>deny</font> rules
-- Are attached at the <font color=#f43f5e>Subnet level</font>
+- <font color=#EB4925>A firewall that controls traffic to and from a SUBNET</font>
+- Can have <font color=#C7EB25>allow</font> and <font color=#EB4925>deny</font> rules
+- Are attached at the <font color=#EB4925>Subnet level</font>
 - Rules only include IP addresses
 
-_More:_ [AWS Network Firewall]({{< ref "19-security-and-compliance/#aws-network-firewall" >}}) that <font color=#f43f5e>protects entire VPC</font>.
+_More:_ [AWS Network Firewall]({{< ref "19-security-and-compliance/#aws-network-firewall" >}}) that <font color=#EB4925>protects entire VPC</font>.
 
 ```AWSConsole
 VPC > Security > Security Groups
@@ -103,25 +103,25 @@ _More info:_ https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html
 ![](./assets/AWS_VPC_ACL_Defaulf.png)
 _Default ACLs associated with the Default Subnets allow all traffic IN and OUT._
 ## VPC Flow Logs
-### <font color=#f43f5e>Helps to monitor and troubleshoot connectivity issues</font>
+### <font color=#EB4925>Helps to monitor and troubleshoot connectivity issues</font>
 
-- <font color=#f43f5e>Capture information about IP traffic going into your interfaces</font>
+- <font color=#EB4925>Capture information about IP traffic going into your interfaces</font>
 	- VPC Flow Logs
 	- Subnet Flow Logs
 	- Elastic Network Interface Flow Logs
 
-- <font color=#f43f5e>Helps to monitor and troubleshoot connectivity issues</font>
+- <font color=#EB4925>Helps to monitor and troubleshoot connectivity issues</font>
 	- Subnets to internet
 	- Subnets to subnets
 	- Internet to subnets
 
-- <font color=#f43f5e>Captures network information from AWS managed interfaces too:</font>
+- <font color=#EB4925>Captures network information from AWS managed interfaces too:</font>
 	- [Elastic Load Balancers]({{< ref "9-elastic-load-balancing" >}})
 	- [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
 	- [RDS]({{< ref "12-databases/#rds-and-aurora" >}})
 	- [Aurora]({{< ref "12-databases/#rds-and-aurora" >}})
 	- etc...
-##### <font color=#f43f5e>VPC Flow Logs must first be created for each VPC</font>
+##### <font color=#EB4925>VPC Flow Logs must first be created for each VPC</font>
 
 ```AWSConsole
 VPC > Virtual Private Cloud > Your VPCs > Flow Logs > Create flow log
@@ -144,8 +144,8 @@ Endpoints allow connecting to AWS Services using a private network instead of th
 
 This gives enhanced security and lower latency to access AWS services.
 
-- VPC <font color=#f43f5e>Endpoint Gateway</font> - for Amazon [S3]({{< ref "11-s3" >}}) and [DynamoDB]({{< ref "12-databases/#dynamodb" >}}) only
-- VPC <font color=#f43f5e>Endpoint Interface</font> - most services (including S3 and DynamoDB)
+- VPC <font color=#EB4925>Endpoint Gateway</font> - for Amazon [S3]({{< ref "11-s3" >}}) and [DynamoDB]({{< ref "12-databases/#dynamodb" >}}) only
+- VPC <font color=#EB4925>Endpoint Interface</font> - most services (including S3 and DynamoDB)
 ## Private Link
 
 Most secure and scalable way to expose a service to 1000s of VPCs. Using VPC Peering (see above) is not practical because of the management overhead.
@@ -160,25 +160,25 @@ _AWS Private Link_
 
 - Connect to an on-premises VPN to AWS
 - The connection is automatically encrypted
-- Goes over the <font color=#f43f5e>public internet</font> (cheaper and slower than Direct Connect)
+- Goes over the <font color=#EB4925>public internet</font> (cheaper and slower than Direct Connect)
 
 ![](./assets/AWS_VPC_Site_to_Site_VPN_1.png)
 _Site-to-Site VPN:_
-_- On-Premises - <font color=#f43f5e>must use Customer Gateway</font> (CGW)_
-_- AWS: <font color=#f43f5e>must use a Virtual Private Gateway</font> (VGW)_
+_- On-Premises - <font color=#EB4925>must use Customer Gateway</font> (CGW)_
+_- AWS: <font color=#EB4925>must use a Virtual Private Gateway</font> (VGW)_
 ### Direct Connect (DX)
 
 - Establish a physical connection between on-premises and AWS
 - The connection is private, secure and fast
-- Goes over a <font color=#f43f5e>private network</font> (more expensive but faster than Site to Site VPN)
+- Goes over a <font color=#EB4925>private network</font> (more expensive but faster than Site to Site VPN)
 - Takes at least a month to establish
 ## AWS Client VPN
 
 Connect from your computer using OpenVPN to your private network in AWS and on-premises.
 
-<font color=#10b981>Allows connecting to your EC2 instances over a private IP</font> (just as you were in the private VPC network).
+<font color=#C7EB25>Allows connecting to your EC2 instances over a private IP</font> (just as you were in the private VPC network).
 
-<font color=#f43f5e>Goes over the public Internet.</font>
+<font color=#EB4925>Goes over the public Internet.</font>
 
 ![](AWS_VPC_Client_VPN.png)
 ## Transit Gateway
@@ -191,21 +191,21 @@ Connect from your computer using OpenVPN to your private network in AWS and on-p
 Works with Direct Connect Gateway, VPN connections.
 ## Summary
 
-- <font color=#f1ef63>VPC:</font> Virtual Private Cloud
-- <font color=#f1ef63>Subnets:</font> Tied to and AZ, network partition of the VPC
-- <font color=#f1ef63>Internet Gateway:</font> at the VPC level, provide Internet Access
-- <font color=#f1ef63>NAT Gateway / Instances:</font> give internet access to private subnets
-- <font color=#f1ef63>Security Groups:</font> Stateful, operate at the EC2 instance level for ENI
-- <font color=#f1ef63>NACL:</font> Stateless, subnet rules for inbound and outbound
-- <font color=#f1ef63>VPC Peering:</font> Connect two VPC with non overlapping IP ranges, non-transitive (must be established for each VPC that needs to communicate with one another)
-- <font color=#f1ef63>Elastic IP:</font> Fixed public IPv4
-- <font color=#f1ef63>VPC Endpoints:</font> Provide private access to AWS Services within VPC
-- <font color=#f1ef63>Private Link:</font> Privately connect to a service in a 3rd party VPC
-- <font color=#f1ef63>VPC Flow Logs:</font> Network traffic logs
-- <font color=#f1ef63>Site to Site VPN:</font> VPN over public internet between on-premises DC and AWS
-- <font color=#f1ef63>Client VPN:</font> OpenVPN connection from your computer into your VPC
-- <font color=#f1ef63>Direct Connect:</font> Direct private connection to AWS
-- <font color=#f1ef63>Transit Gateway:</font> Connect thousands of VPC and on-premises networks together
+- <font color=#EBAC25>VPC:</font> Virtual Private Cloud
+- <font color=#EBAC25>Subnets:</font> Tied to and AZ, network partition of the VPC
+- <font color=#EBAC25>Internet Gateway:</font> at the VPC level, provide Internet Access
+- <font color=#EBAC25>NAT Gateway / Instances:</font> give internet access to private subnets
+- <font color=#EBAC25>Security Groups:</font> Stateful, operate at the EC2 instance level for ENI
+- <font color=#EBAC25>NACL:</font> Stateless, subnet rules for inbound and outbound
+- <font color=#EBAC25>VPC Peering:</font> Connect two VPC with non overlapping IP ranges, non-transitive (must be established for each VPC that needs to communicate with one another)
+- <font color=#EBAC25>Elastic IP:</font> Fixed public IPv4
+- <font color=#EBAC25>VPC Endpoints:</font> Provide private access to AWS Services within VPC
+- <font color=#EBAC25>Private Link:</font> Privately connect to a service in a 3rd party VPC
+- <font color=#EBAC25>VPC Flow Logs:</font> Network traffic logs
+- <font color=#EBAC25>Site to Site VPN:</font> VPN over public internet between on-premises DC and AWS
+- <font color=#EBAC25>Client VPN:</font> OpenVPN connection from your computer into your VPC
+- <font color=#EBAC25>Direct Connect:</font> Direct private connection to AWS
+- <font color=#EBAC25>Transit Gateway:</font> Connect thousands of VPC and on-premises networks together
 
 ---
 ## >> Sources <<

@@ -12,13 +12,13 @@ categories: AWS
 
 **IAM** is AWS Global service.
 
-<font color=#f43f5e>Groups only contain users, NOT other groups.</font>
+<font color=#EB4925>Groups only contain users, NOT other groups.</font>
 
 Users don't have to belong to a group and user can belong to multiple groups.
 
-Users or Groups can have assigned JSON documents called <font color=#f43f5e>policies</font>. Those <font color=#f43f5e>policies define permissions</font> for the users / groups.
+Users or Groups can have assigned JSON documents called <font color=#EB4925>policies</font>. Those <font color=#EB4925>policies define permissions</font> for the users / groups.
 
-In AWS you apply the <font color=#f43f5e>least privilege principle:</font> don't give user more permission than they need.
+In AWS you apply the <font color=#EB4925>least privilege principle:</font> don't give user more permission than they need.
 
 ---
 
@@ -47,9 +47,9 @@ IAM console > Users
 
 - **Version:** policy version
 - **ID** (Optional): identifier
-- **Statement:** one or more statements (<font color=#f43f5e>required</font>)	
+- **Statement:** one or more statements (<font color=#EB4925>required</font>)	
 	- **SID:** identifier (optional)
-	- **Effect:** <font color=#10b981>Allow</font> or <font color=#f43f5e>Deny</font>
+	- **Effect:** <font color=#C7EB25>Allow</font> or <font color=#EB4925>Deny</font>
 	- **Principal:** account / user / role to which policy is applied to
 	- **Action:** list of allowed or denied actions
 	- **Resource:** list of resources to which the action is applied to
@@ -59,10 +59,10 @@ IAM console > Users
 ![](./assets/AWS_IAM_MFA.png)
 ## Accessing AWS
 
-- **AWS Management Console** - protected by <font color=#f1ef63>password + MFA</font>
-- **AWS Command Line** (CLI) - protected by <font color=#f1ef63>access keys</font>
-- **AWS Software Development Kit** (SDK) - for code - protected by <font color=#f1ef63>access keys</font>
-##### <font color=#10b981>Access Keys can be generated through AWS Console. Users manage their own access keys.</font>
+- **AWS Management Console** - protected by <font color=#EBAC25>password + MFA</font>
+- **AWS Command Line** (CLI) - protected by <font color=#EBAC25>access keys</font>
+- **AWS Software Development Kit** (SDK) - for code - protected by <font color=#EBAC25>access keys</font>
+##### <font color=#C7EB25>Access Keys can be generated through AWS Console. Users manage their own access keys.</font>
 
 **Access Key ID** = username<br />
 **Secret Access Key** = password
@@ -73,7 +73,7 @@ IAM console > Users
 ```AWSConsole
 IAM > Users > Username > Security Credentials > Access Keys > Create Access Key > Command Line Interface (CLI)
 ```
-### <font color=#f1ef63>Configuring AWS CLI with the new access key</font>
+### <font color=#EBAC25>Configuring AWS CLI with the new access key</font>
 
 ```CMD
 # Configure AWS CLI
@@ -104,7 +104,7 @@ IAM > Roles > Create role > AWS service
 Add permissions:
 
 ![](./assets/AWS_IAM_Role_Add_Permissions.png)
-## <font color=#f1ef63>IAM Security Tools</font>
+## <font color=#EBAC25>IAM Security Tools</font>
 
 ### IAM Credentials Report (account-level)
 
@@ -121,8 +121,8 @@ IAM > Credentials Report
 IAM > Users > Username > Last Accessed
 ```
 
-<font color=#f43f5e>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the "Least Privilege Principle".</font>
-## <font color=#f1ef63>IAM Best Practices</font>
+<font color=#EB4925>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the "Least Privilege Principle".</font>
+## <font color=#EBAC25>IAM Best Practices</font>
 
 - Don't use root account
 - One physical user = One AWS user
@@ -132,7 +132,7 @@ IAM > Users > Username > Last Accessed
 - **Create and use Roles** for giving permissions to AWS services
 - Use Access Keys for Programmatic access (CLI / SDK)
 - Audit permissions using **IAM Credentials Report** and **IAM Access Advisor**
-- <font color=#f43f5e>Never share IAM users & Access Keys</font>
+- <font color=#EB4925>Never share IAM users & Access Keys</font>
 ## Shared Responsibility Model for IAM
 
 | **AWS**                                  | **Organization**                                         |

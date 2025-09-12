@@ -34,9 +34,9 @@ Disclaimer: _Content for educational purposes only, no rights reserved._
 
 **Colors:** 
 
-<font color=#f43f5e>Red:</font> `#f43f5e`
-<font color=#f1ef63>Yellow:</font> `#f1ef63`
-<font color=#10b981>Green:</font> `#10b981`
+<font color=#EB4925>Red:</font> `#f43f5e`
+<font color=#EBAC25>Yellow:</font> `#f1ef63`
+<font color=#C7EB25>Green:</font> `#10b981`
 <font color=#27D3F5>Blue:</font> `#27D3F5` # Color used for content to be corrected later (i.e. new links to not-yet existing content, etc...)
 
 Congo theme documentation: https://jpanther.github.io/congo/docs/
@@ -82,7 +82,7 @@ Other Hugo examples: https://softwarewitchcraft.com/
 
 ```PowerShell
 Get-ChildItem -Path "C:\Users\robk\Documents\Documents\Notes\Obsidian\Zettelkasten\4 - Content Creation\Git\rtdevx.github.io" -Recurse -Filter *.md | ForEach-Object {
-    (Get-Content $_.FullName) -replace '<font color=#f4e40b>', '<font color=#f1ef63>' | Set-Content $_.FullName
+    (Get-Content $_.FullName) -replace '<font color=#f4e40b>', '<font color=#EBAC25>' | Set-Content $_.FullName
 }
 ```
 

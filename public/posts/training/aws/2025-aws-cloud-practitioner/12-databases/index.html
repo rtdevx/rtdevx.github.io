@@ -696,10 +696,10 @@
 <li>High-Performance (optimized for a specific data model)</li>
 <li>Highly functional (types optimized for the data model)</li>
 </ul>
-<p><font color=#f1ef63>Use cases:</font> Key-value, document, graph, in-memory, search databases</p>
+<p><font color=#EBAC25>Use cases:</font> Key-value, document, graph, in-memory, search databases</p>
 <h2 id="rds-and-aurora" class="relative group">RDS and Aurora <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#rds-and-aurora" aria-label="Anchor">#</a></span></h2>
 <h3 id="amazon-rds" class="relative group">Amazon RDS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-rds" aria-label="Anchor">#</a></span></h3>
-<p><font color=#f1ef63>RDS</font> stands for <font color=#f1ef63>Relational Database Service</font>. It is a managed DB service.</p>
+<p><font color=#EBAC25>RDS</font> stands for <font color=#EBAC25>Relational Database Service</font>. It is a managed DB service.</p>
 <p>It allows creating databases in the cloud that are managed by AWS:</p>
 <ul>
 <li>Postgres</li>
@@ -760,8 +760,8 @@
 <li>Least management overhead</li>
 <li>Pay-per-second, COULD BE more effective</li>
 </ul>
-<p><font color=#f1ef63>Use cases:</font>  infrequent, intermittent or unpredictable workloads.</p>
-<h5 id="aurora-with-no-management-overhead--aurora-serverless" class="relative group"><font color=#10b981>Aurora with no management overhead = Aurora Serverless.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aurora-with-no-management-overhead--aurora-serverless" aria-label="Anchor">#</a></span></h5>
+<p><font color=#EBAC25>Use cases:</font>  infrequent, intermittent or unpredictable workloads.</p>
+<h5 id="aurora-with-no-management-overhead--aurora-serverless" class="relative group"><font color=#C7EB25>Aurora with no management overhead = Aurora Serverless.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aurora-with-no-management-overhead--aurora-serverless" aria-label="Anchor">#</a></span></h5>
 <h4 id="create-rds-database" class="relative group">Create RDS database <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#create-rds-database" aria-label="Anchor">#</a></span></h4>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">Aurora and RDS &gt; Create a database
 </code></pre><h4 id="rds-deployment-options" class="relative group">RDS Deployment options <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#rds-deployment-options" aria-label="Anchor">#</a></span></h4>
@@ -788,23 +788,23 @@
 <li>Writes only to the main database</li>
 <li>Local performance for global reads</li>
 <li>Additional replication cost</li>
-<li><font color=#f1ef63>Use case:</font> DR in another region</li>
+<li><font color=#EBAC25>Use case:</font> DR in another region</li>
 </ul>
 </li>
 </ul>
 <p><em>More:</em> <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html" target="_blank" rel="noreferrer">Configuring and managing a Multi-AZ deployment for Amazon RDS</a>
 </p>
 <h2 id="other-database-types" class="relative group">Other Database Types <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#other-database-types" aria-label="Anchor">#</a></span></h2>
-<h3 id="amazon-elasticache" class="relative group"><font color=#f1ef63>Amazon ElastiCache</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-elasticache" aria-label="Anchor">#</a></span></h3>
+<h3 id="amazon-elasticache" class="relative group"><font color=#EBAC25>Amazon ElastiCache</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-elasticache" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>
-<p>The same way <strong>RDS</strong> is to get <strong>managed Relational Databases</strong>, <strong>ElastiCache</strong> is to get managed <font color=#f1ef63>Redis</font> or <font color=#f1ef63>Memcached</font>.</p>
+<p>The same way <strong>RDS</strong> is to get <strong>managed Relational Databases</strong>, <strong>ElastiCache</strong> is to get managed <font color=#EBAC25>Redis</font> or <font color=#EBAC25>Memcached</font>.</p>
 </li>
 <li>
-<p>Caches are <font color=#10b981>in-memory databases</font> with high performance and low latency</p>
+<p>Caches are <font color=#C7EB25>in-memory databases</font> with high performance and low latency</p>
 </li>
 <li>
-<p>Helps <font color=#10b981>reducing load</font> from <font color=#10b981>databases with read-intensive workloads</font></p>
+<p>Helps <font color=#C7EB25>reducing load</font> from <font color=#C7EB25>databases with read-intensive workloads</font></p>
 </li>
 <li>
 <p>AWS taking care of OS maintenance, patching, optimizations, setup, configuration, monitoring, failure recovery and backups</p>
@@ -812,15 +812,15 @@
 </ul>
 <p><em>More:</em> <a href="https://docs.aws.amazon.com/elasticache/" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/elasticache/</a>
 </p>
-<h3 id="dynamodb" class="relative group"><font color=#f1ef63>DynamoDB</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#dynamodb" aria-label="Anchor">#</a></span></h3>
+<h3 id="dynamodb" class="relative group"><font color=#EBAC25>DynamoDB</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#dynamodb" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Fully managed, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/8-scalability-high-availability/#high-availability">Highly Available</a>
  with replication across 3AZ</li>
-<li><font color=#10b981>No-SQL database</font> - not a relational DB</li>
-<li><font color=#10b981>Scales to massive workloads, distributed, &ldquo;serverless&rdquo;</font></li>
+<li><font color=#C7EB25>No-SQL database</font> - not a relational DB</li>
+<li><font color=#C7EB25>Scales to massive workloads, distributed, &ldquo;serverless&rdquo;</font></li>
 <li>Millions of requests per second, trillions of row, 100s TB of storage</li>
 <li>Fast and consistent performance</li>
-<li><font color=#10b981>Single-digit millisecond latency</font></li>
+<li><font color=#C7EB25>Single-digit millisecond latency</font></li>
 <li>Integrated with <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/">IAM</a>
  for security, authorization and administration</li>
 <li>Low cost and auto scaling capabilities</li>
@@ -838,10 +838,10 @@
 <li>Makes DynamoDB table accessible with low latency in multiple-regions</li>
 <li>Active-Active replication (read/write to any AWS Region)</li>
 </ul>
-<h3 id="redshift" class="relative group"><font color=#f1ef63>Redshift</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#redshift" aria-label="Anchor">#</a></span></h3>
+<h3 id="redshift" class="relative group"><font color=#EBAC25>Redshift</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#redshift" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Redshift is based on PostgreSQL</li>
-<li>It&rsquo;s <font color=#10b981>OLAP - Online Analytical Processing (analytics and data warehousing)</font></li>
+<li>It&rsquo;s <font color=#C7EB25>OLAP - Online Analytical Processing (analytics and data warehousing)</font></li>
 <li>Load data once every hour, not every second</li>
 <li>10x better performance than other data warehouses</li>
 <li>Scales to PBs of data</li>
@@ -855,35 +855,35 @@
 <li>Auto Scaling</li>
 <li>Run analytics workload without managing data warehouse infrastructure</li>
 <li>Pay only for what you use</li>
-<li><font color=#f1ef63>Use cases:</font> Reporting, real-time analytics</li>
+<li><font color=#EBAC25>Use cases:</font> Reporting, real-time analytics</li>
 </ul>
-<h3 id="amazon-emr" class="relative group"><font color=#f1ef63>Amazon EMR</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-emr" aria-label="Anchor">#</a></span></h3>
+<h3 id="amazon-emr" class="relative group"><font color=#EBAC25>Amazon EMR</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-emr" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>EMR stands for &ldquo;<em>Elastic MapReduce</em>&rdquo;</li>
-<li>EMR helps creating <font color=#10b981>Hadoop clusters (Big Data)</font> to analyze and process vast amounts of data</li>
+<li>EMR helps creating <font color=#C7EB25>Hadoop clusters (Big Data)</font> to analyze and process vast amounts of data</li>
 <li>The clusters can be made of hundreds of EC2 instances</li>
 <li>EMR takes care of all the provisioning and configuration</li>
 <li>Auto-scaling and integrated with Spot instances</li>
-<li><font color=#f1ef63>Use cases:</font> data processing, machine learning, web indexing, big data</li>
+<li><font color=#EBAC25>Use cases:</font> data processing, machine learning, web indexing, big data</li>
 </ul>
-<h3 id="athena" class="relative group"><font color=#f1ef63>Athena</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#athena" aria-label="Anchor">#</a></span></h3>
+<h3 id="athena" class="relative group"><font color=#EBAC25>Athena</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#athena" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li><font color=#10b981>Serverless</font> query service to perform analytics against <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
+<li><font color=#C7EB25>Serverless</font> query service to perform analytics against <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
  objects</li>
-<li><font color=#10b981>Uses standard SQL language</font> to query the files</li>
+<li><font color=#C7EB25>Uses standard SQL language</font> to query the files</li>
 <li>Supports CSV, JSON, ORD, Avro, Parquet</li>
 <li>Pricing: $5 per TB of data scanned</li>
-<li><font color=#f1ef63>Use cases:</font> Business intelligence, analytics, reporting, analyze &amp; query <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/#vpc-flow-logs">VPC Flow Logs</a>
+<li><font color=#EBAC25>Use cases:</font> Business intelligence, analytics, reporting, analyze &amp; query <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/#vpc-flow-logs">VPC Flow Logs</a>
 , <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/">ELB</a>
  Logs, <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#aws-cloudtrail">CloudTrail</a>
  logs, etc.</li>
 </ul>
-<h5 id="exam-tip-analyze-data-in-s3-using-serverless-sql--athena" class="relative group"><font color=#f43f5e>Exam tip:</font> analyze data in S3 using serverless SQL = <font color=#f1ef63>Athena</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exam-tip-analyze-data-in-s3-using-serverless-sql--athena" aria-label="Anchor">#</a></span></h5>
-<h3 id="quicksight" class="relative group"><font color=#f1ef63>QuickSight</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#quicksight" aria-label="Anchor">#</a></span></h3>
+<h5 id="exam-tip-analyze-data-in-s3-using-serverless-sql--athena" class="relative group"><font color=#EB4925>Exam tip:</font> analyze data in S3 using serverless SQL = <font color=#EBAC25>Athena</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#exam-tip-analyze-data-in-s3-using-serverless-sql--athena" aria-label="Anchor">#</a></span></h5>
+<h3 id="quicksight" class="relative group"><font color=#EBAC25>QuickSight</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#quicksight" aria-label="Anchor">#</a></span></h3>
 <p>Allows creating dashboards for services used in AWS. Per-session pricing.</p>
 <ul>
-<li><font color=#10b981>Serverless machine-learning powered business intelligence service</font> to create <font color=#f1ef63>interactive dashboards</font></li>
-<li><font color=#f1ef63>Use cases:</font>
+<li><font color=#C7EB25>Serverless machine-learning powered business intelligence service</font> to create <font color=#EBAC25>interactive dashboards</font></li>
+<li><font color=#EBAC25>Use cases:</font>
 <ul>
 <li>Business analytics</li>
 <li>Building visualisations</li>
@@ -895,17 +895,17 @@
 </ul>
 <p><em>More:</em> <a href="https://docs.aws.amazon.com/quicksight/" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/quicksight/</a>
 </p>
-<h3 id="documentdb" class="relative group"><font color=#f1ef63>DocumentDB</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#documentdb" aria-label="Anchor">#</a></span></h3>
+<h3 id="documentdb" class="relative group"><font color=#EBAC25>DocumentDB</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#documentdb" aria-label="Anchor">#</a></span></h3>
 <p>Aurora version for MongoDB (NoSQL database).</p>
 <ul>
 <li>MongoDB is used to store, query and index JSON data</li>
 <li>Fully Managed, Highly Available with replication across 3AZ</li>
 <li>DocumentDB storage automatically grows in increments of 10 GB</li>
 </ul>
-<h3 id="neptune" class="relative group"><font color=#f1ef63>Neptune</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#neptune" aria-label="Anchor">#</a></span></h3>
+<h3 id="neptune" class="relative group"><font color=#EBAC25>Neptune</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#neptune" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>Fully managed <font color=#10b981>graph</font> database</li>
-<li>A popular graph dataset would be a <font color=#10b981>social network</font>
+<li>Fully managed <font color=#C7EB25>graph</font> database</li>
+<li>A popular graph dataset would be a <font color=#C7EB25>social network</font>
 <ul>
 <li>Users have friends</li>
 <li>Posts have comments</li>
@@ -917,15 +917,15 @@
  across 3AZ with up to 15 replicas</li>
 <li>Build and run applications working with highly connected datasets = optimized for those complex queries</li>
 <li>Can store up to billions of relations and query the graph with milliseconds latency</li>
-<li><font color=#f1ef63>Use cases:</font> knowledge graphs (Wikipedia), fraud detection, recommendation engines, social networking</li>
+<li><font color=#EBAC25>Use cases:</font> knowledge graphs (Wikipedia), fraud detection, recommendation engines, social networking</li>
 </ul>
-<h3 id="amazon-timestream" class="relative group"><font color=#f1ef63>Amazon Timestream</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-timestream" aria-label="Anchor">#</a></span></h3>
+<h3 id="amazon-timestream" class="relative group"><font color=#EBAC25>Amazon Timestream</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-timestream" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Serverless time series database</li>
 <li>Automatically scales up and down to adjust capacity</li>
 <li>Store and analyze trillions of events per day</li>
 </ul>
-<h3 id="amazon-managed-blockchain" class="relative group"><font color=#f1ef63>Amazon managed Blockchain</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-managed-blockchain" aria-label="Anchor">#</a></span></h3>
+<h3 id="amazon-managed-blockchain" class="relative group"><font color=#EBAC25>Amazon managed Blockchain</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-managed-blockchain" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Blockchain makes it possible to build applications where multiple parties can execute transactions without the need for a trusted, central authority</li>
 <li>Amazon managed Blockchain is a managed service that allows:
@@ -936,16 +936,16 @@
 </li>
 <li>Compatible with:
 <ul>
-<li><font color=#10b981>Hyperledger Fabric</font></li>
-<li><font color=#10b981>Ethereum</font></li>
+<li><font color=#C7EB25>Hyperledger Fabric</font></li>
+<li><font color=#C7EB25>Ethereum</font></li>
 </ul>
 </li>
 </ul>
-<h3 id="aws-glue" class="relative group"><font color=#f1ef63>AWS Glue</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-glue" aria-label="Anchor">#</a></span></h3>
-<p>Managed <font color=#f43f5e>E</font>xtract, <font color=#f43f5e>T</font>ransform and <font color=#f43f5e>L</font>oad (<font color=#f43f5e>ETL</font>) service.</p>
+<h3 id="aws-glue" class="relative group"><font color=#EBAC25>AWS Glue</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-glue" aria-label="Anchor">#</a></span></h3>
+<p>Managed <font color=#EB4925>E</font>xtract, <font color=#EB4925>T</font>ransform and <font color=#EB4925>L</font>oad (<font color=#EB4925>ETL</font>) service.</p>
 <ul>
 <li>Useful to prepare and transform data for analytics</li>
-<li>Fully <font color=#10b981>serverless</font> service</li>
+<li>Fully <font color=#C7EB25>serverless</font> service</li>
 </ul>
 <p>
 
@@ -959,8 +959,8 @@
 <figure><img src="./assets/AWS_RDS_Glue1.png" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 </p>
-<h3 id="dms" class="relative group"><font color=#f1ef63>DMS</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#dms" aria-label="Anchor">#</a></span></h3>
-<p><strong>DMS</strong> - <font color=#f43f5e>D</font>atabase <font color=#f43f5e>M</font>igration <font color=#f43f5e>S</font>ervice</p>
+<h3 id="dms" class="relative group"><font color=#EBAC25>DMS</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#dms" aria-label="Anchor">#</a></span></h3>
+<p><strong>DMS</strong> - <font color=#EB4925>D</font>atabase <font color=#EB4925>M</font>igration <font color=#EB4925>S</font>ervice</p>
 <ul>
 <li>
 <p>Quick and secure migrate databases to AWS</p>

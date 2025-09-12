@@ -626,7 +626,7 @@
 <li>Security Groups are the fundamental of network security in AWS</li>
 <li>They control how traffic is allowed in or out of our EC2 instances</li>
 <li>Security Groups <strong>only contain allow rules</strong></li>
-<li>Security Groups rules <font color=#10b981>can reference an IP or another Security Group</font></li>
+<li>Security Groups rules <font color=#C7EB25>can reference an IP or another Security Group</font></li>
 <li>Security Groups are acting as a &ldquo;<em>firewall</em>&rdquo; for <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
  instances</li>
 </ul>
@@ -645,14 +645,14 @@
 </ul>
 <h2 id="security-groups-principals" class="relative group">Security Groups principals <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#security-groups-principals" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#f1ef63>Can be attached to multiple instances</font></li>
-<li><font color=#f1ef63>Locked down to a region / VPC combination</font></li>
+<li><font color=#EBAC25>Can be attached to multiple instances</font></li>
+<li><font color=#EBAC25>Locked down to a region / VPC combination</font></li>
 <li>Lives &ldquo;outside&rdquo; of an EC2 instance - if traffic is blocked, EC2 won&rsquo;t see it</li>
-<li><font color=#10b981>It&rsquo;s a good practice to maintain one separate SG for SSH access</font></li>
-<li><font color=#f1ef63>If application is not accessible (time out) then it&rsquo;s a Security Group issue</font></li>
-<li><font color=#f1ef63>If application gives a &ldquo;connection refused&rdquo; error then it&rsquo;s an application error or it&rsquo;s not launched</font></li>
-<li>All inbound traffic is <font color=#f43f5e>blocked</font> by default</li>
-<li>All outbound traffic is <font color=#10b981>allowed</font> by default</li>
+<li><font color=#C7EB25>It&rsquo;s a good practice to maintain one separate SG for SSH access</font></li>
+<li><font color=#EBAC25>If application is not accessible (time out) then it&rsquo;s a Security Group issue</font></li>
+<li><font color=#EBAC25>If application gives a &ldquo;connection refused&rdquo; error then it&rsquo;s an application error or it&rsquo;s not launched</font></li>
+<li>All inbound traffic is <font color=#EB4925>blocked</font> by default</li>
+<li>All outbound traffic is <font color=#C7EB25>allowed</font> by default</li>
 </ul>
 <hr>
 <h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>

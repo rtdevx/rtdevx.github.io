@@ -10,7 +10,7 @@ categories: AWS
 ---
 ## Setting up a budget
 
-<font color=#f43f5e>Billing and Cost Management is only available for the root user (or user with the right privileges).</font>
+<font color=#EB4925>Billing and Cost Management is only available for the root user (or user with the right privileges).</font>
 ### 1. Enabling Billing and Cost Management for IAM user
 
 - Log in as root to AWS Console

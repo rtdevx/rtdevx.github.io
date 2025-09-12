@@ -23,24 +23,24 @@ _Best Practices for Organizational Units with AWS Organizations:_ https://aws.am
 ---
 
 {{< youtube bQ2EtLnN6KQ >}}
-*Accessing newly created accounts to manage organizations wasn't clear. This video explains it in great details. <font color=#f43f5e>Please note it doesn't cover permissions / restrictions for that account to have in the organization.</font>
+*Accessing newly created accounts to manage organizations wasn't clear. This video explains it in great details. <font color=#EB4925>Please note it doesn't cover permissions / restrictions for that account to have in the organization.</font>
 
 ---
 ### AWS Organization - Consolidated Billing
 
-<font color=#f43f5e>Consolidated billing must first be enabled.</font>
+<font color=#EB4925>Consolidated billing must first be enabled.</font>
 
 - **Combined Usage** - combine the usage across all AWS accounts in the AWS Organization to **share the volume pricing, reserved instances and saving plans discounts**
 - **One bill** - get one bill for all AWS Accounts in the AWS Organization
 ## AWS Control Tower
 
-##### **AWS Control Tower** = easy way to set up and govern a secure and compliant <font color=#10b981>multi-account AWS environment</font> based on best practices.
+##### **AWS Control Tower** = easy way to set up and govern a secure and compliant <font color=#C7EB25>multi-account AWS environment</font> based on best practices.
 
 - Automate the setup of your environment in a few clicks
 - Automate ongoing policy management using guardrails
 - Detect policy violations and remediate them
 - Monitor compliance through an interactive dashboard
-##### <font color=#f1ef63>AWS Control Tower runs on top of AWS Organizations.</font>
+##### <font color=#EBAC25>AWS Control Tower runs on top of AWS Organizations.</font>
 
 - It automatically set up AWS Organizations to organize accounts and implement **SCPs** (Service Control Policies)
 ## AWS Resource Access Manager (RAM)
@@ -58,10 +58,10 @@ _Best Practices for Organizational Units with AWS Organizations:_ https://aws.am
 
 ![](./assets/AWS_Organizations_ARM.png)
 _AWS Resource Access Manager (RAM)_
-## <font color=#f43f5e>AWS Service Catalog</font>
+## <font color=#EB4925>AWS Service Catalog</font>
 
-**AWS Service Catalog** is a **self-service portal** that allows users to launch a set of <font color=#10b981>authorized products</font> predefined by admins.
-##### <font color=#f43f5e>Users that are new to the organization could create stacks that are not compliant / not in line with the rest of the organization.</font>
+**AWS Service Catalog** is a **self-service portal** that allows users to launch a set of <font color=#C7EB25>authorized products</font> predefined by admins.
+##### <font color=#EB4925>Users that are new to the organization could create stacks that are not compliant / not in line with the rest of the organization.</font>
 
 Includes: Virtual Machines, Databases, Storage options, etc.
 
@@ -73,11 +73,11 @@ Service offering with standards how the company is building their services.
 ## Pricing models in AWS
 ### 4 AWS pricing models
 
-- <font color=#f1ef63>Pay as you go:</font> pay for what you use, remain agile, responsive, meet scale demands
-- <font color=#f1ef63>Save when you reserve:</font> minimize risks, predictably manage budgets, comply with long-term requirements
+- <font color=#EBAC25>Pay as you go:</font> pay for what you use, remain agile, responsive, meet scale demands
+- <font color=#EBAC25>Save when you reserve:</font> minimize risks, predictably manage budgets, comply with long-term requirements
 	- Reservations are available for [EC2 Reserved Instances]({{< ref "4-ec2/#ec2-instances-purchasing-options" >}}), [DynamoDB]({{< ref "12-databases/#dynamodb" >}}) Reserved Capacity, [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}}) Reserved Nodes, [RDS]({{< ref "12-databases/#rds-and-aurora" >}}) Reserved Instance, [Redshift]({{< ref "12-databases/#redshift" >}}) Reserved Nodes
-- <font color=#f1ef63>Pay less by using more:</font> volume-based discounts
-- <font color=#f1ef63>Pay less as AWS grows</font>
+- <font color=#EBAC25>Pay less by using more:</font> volume-based discounts
+- <font color=#EBAC25>Pay less as AWS grows</font>
 ### Free Services & Free Plan in AWS
 
 - With a new AWS account, you get up to $200 in credits
@@ -92,20 +92,20 @@ _More about free services in AWS:_ https://aws.amazon.com/free/
 ### Compute pricing
 #### EC2
 
-- <font color=#f1ef63>On-demand instances</font>
+- <font color=#EBAC25>On-demand instances</font>
 	- Minimum of 60 seconds
 	- Pay per second (Linux / Windows) or per hour (Other)
-- <font color=#f1ef63>Reserved instances</font>
-	- Up to <font color=#f43f5e>75%</font> discount compared to On-demand on hourly rate
+- <font color=#EBAC25>Reserved instances</font>
+	- Up to <font color=#EB4925>75%</font> discount compared to On-demand on hourly rate
 	- 1 or 3 years commitment
 	- All upfront, partial upfront, no upfront
-- <font color=#f1ef63>Spot instances</font>
-	- Up to <font color=#f43f5e>90%</font> discount compared to On-demand on hourly rate
+- <font color=#EBAC25>Spot instances</font>
+	- Up to <font color=#EB4925>90%</font> discount compared to On-demand on hourly rate
 	- Bid for unused capacity
-- <font color=#f1ef63>Dedicated host</font>
+- <font color=#EBAC25>Dedicated host</font>
 	- On-demand
 	- Reservation for 1 or 3 years commitment
-- <font color=#f43f5e>Saving plans as an alternative to save on sustained usage</font>
+- <font color=#EB4925>Saving plans as an alternative to save on sustained usage</font>
 #### Lambda & ECS
 
 - [Lambda]({{< ref "13-other-compute-services/#lambda" >}})
@@ -177,17 +177,17 @@ Similar service: [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}}) (pay 
 - Commit a certain $ amount per hours for 1 or 3 years
 - Easiest way to setup long-term commitment on AWS
 - **EC2 Savings plan**
-	- Up to <font color=#f43f5e>72%</font> discount compared to On-demand
+	- Up to <font color=#EB4925>72%</font> discount compared to On-demand
 	- **Commit to usage of individual instance families** (e.g. C5 or M5)
 	- Regardless of AZ, size, OS or tenancy
 	- All upfront, partial upfront, no upfront
 - **Compute Savings plan**
-	- Up to <font color=#f43f5e>66%</font> discount compared to On-demand
+	- Up to <font color=#EB4925>66%</font> discount compared to On-demand
 	- **Regardless of Family, Region, size, OS, tenancy, compute options**
 	- Compute Options: [EC2]({{< ref "4-ec2" >}}), [Fargate]({{< ref "13-other-compute-services/#fargate" >}}), [Lambda]({{< ref "13-other-compute-services/#lambda" >}})
 - Machine learning Savings plan: [SageMaker]({{< ref "20-machine-learning/#sagemaker" >}})...
-##### <font color=#f1ef63>Savings plans can be set up from AWS Cost Explorer console.</font>
-## <font color=#f43f5e>Compute Optimizer</font>
+##### <font color=#EBAC25>Savings plans can be set up from AWS Cost Explorer console.</font>
+## <font color=#EB4925>Compute Optimizer</font>
 
 **Reduce costs** and **improve performance** by recommending optimal AWS resources for your workloads.
 
@@ -201,16 +201,16 @@ Supported resources:
 - EC2 Auto Scaling Groups
 - EBS Volumes
 - Lambda functions
-##### <font color=#10b981>Compute Optimized can lower costs by up to 25%.</font>
+##### <font color=#C7EB25>Compute Optimized can lower costs by up to 25%.</font>
 
 Recommendations can be exported to S3.
-## <font color=#f43f5e>Billing and Costing Tools</font>
-### <font color=#f1ef63>Estimating costs in the cloud</font>
+## <font color=#EB4925>Billing and Costing Tools</font>
+### <font color=#EBAC25>Estimating costs in the cloud</font>
 
 - Pricing Calculator
 	- Available at: https://calculator.aws
 	- Estimate the cost of your solution architecture
-### <font color=#f1ef63>Tracking costs in the cloud</font>
+### <font color=#EBAC25>Tracking costs in the cloud</font>
 
 - Billing Dashboard (`AWSConsole > Billing`)
 	- Cost
@@ -218,16 +218,16 @@ Recommendations can be exported to S3.
 	- Month to date
 - Cost Allocation Tags (`AWSConsole > Resource Groups & Tag Editor`)
 	- Allows tracking your AWS costs at a detailed level
-	- AWS generated tags (automatically applied to resources that are created, start with prefix <font color=#10b981>aws:</font>)
-	- User generated tags (defined by user, start with prefix <font color=#10b981>user:</font>)	
+	- AWS generated tags (automatically applied to resources that are created, start with prefix <font color=#C7EB25>aws:</font>)
+	- User generated tags (defined by user, start with prefix <font color=#C7EB25>user:</font>)	
 	![](./assets/AWS_Organizations_Cost_Allocation_Tags.png)
 	- Tags can be used for organizing resources:
 		- EC2: instances, images, load balancers, security groups...
 		- RDS, VPC resources, Route53, IAM users...
-#### <font color=#f43f5e>Most granular AWS cost report:</font>
+#### <font color=#EB4925>Most granular AWS cost report:</font>
 
 - Cost and Usage Reports (`AWSConsole > Billing`)
-	- <font color=#f43f5e>The most comprehensive set on AWS cost and usage data available</font>, including additional metadate about AWS services, pricing and reservations (e.g. EC2 Reserved Instances)
+	- <font color=#EB4925>The most comprehensive set on AWS cost and usage data available</font>, including additional metadate about AWS services, pricing and reservations (e.g. EC2 Reserved Instances)
 	- Lists AWS usage for each service category used by an account and it's IAM users in hourly or daily line items as well as any tags associated / created for cost allocation purposes
 	- Can be integrated with [Athena]({{< ref "12-databases/#athena" >}}), [Redshift]({{< ref "12-databases/#redshift" >}}) or [QuickSight]({{< ref "12-databases/#quicksight" >}})
 
@@ -237,16 +237,16 @@ Recommendations can be exported to S3.
 	- Analyze your data at higher level: total costs and usage across all accounts
 	- Monthly, hourly, resource-level granularity
 	- Choose optimal Savings Plan (to lover the prices)
-	- <font color=#10b981>Forecast usage up to 12 months based on previous usage</font>
+	- <font color=#C7EB25>Forecast usage up to 12 months based on previous usage</font>
 	- Monthly cost by AWS service
 	![](./assets/AWS_Organizations_Cost_Explorer.png)
 
-#### <font color=#f1ef63>Monitoring against cost plans:</font>
+#### <font color=#EBAC25>Monitoring against cost plans:</font>
 
 - Billing Alarms
 	- Billing data metric is stored in CloudWatch us-east-1
 	- Billing data are for overall worldwide AWS costs
-	- <font color=#10b981>It's for actual cost, not for projected costs</font>
+	- <font color=#C7EB25>It's for actual cost, not for projected costs</font>
 	- Intended a simple alarm (not as powerful as Budgets)
 - Budgets (`AWSConsole > Billing > Budgets and Planning`)
 	- Create budget and send alarms when cost (or forecast) exceeds the budget
@@ -256,7 +256,7 @@ Recommendations can be exported to S3.
 
 AWS Cost Anomaly Detection is continuously monitoring your cost and usage using Machine Learning to detect unusual activities.
 
-<font color=#f1ef63>It is learning your unique, historic spending patterns to detect on-time cost spike OR continuous cost increases.</font>
+<font color=#EBAC25>It is learning your unique, historic spending patterns to detect on-time cost spike OR continuous cost increases.</font>
 
 It will send the anomaly detection report with root-cause analysis.
 
@@ -270,7 +270,7 @@ Create [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}}) Alarm
 `AWSConsole > Service Quotas`
 ## AWS Trusted Advisor
 
-Built in, no need to install anything. <font color=#f43f5e>High level AWS account assessment.</font>
+Built in, no need to install anything. <font color=#EB4925>High level AWS account assessment.</font>
 
 Analyzes AWS accounts and provides recommendation in 6 categories:
 
@@ -284,12 +284,12 @@ Analyzes AWS accounts and provides recommendation in 6 categories:
 Business or Enterprise support plan for full set of checks.
 ## Support Plans for AWS
 
-### <font color=#f1ef63>Basic</font>
+### <font color=#EBAC25>Basic</font>
 
 - **Customer Service & Communities** - 24/7 access to customer service, documentation, whitepapers, support forums
 - **AWS Trusted Advisor** - Access to the 7 core Trusted Advisor checks and guidance to provision your resources following best practices to increase performance and improve security
 - **AWS Personal Health Dashboard** - A personalized view of the health of AWS services and alerts when your resources are impacted
-### <font color=#f1ef63>Developer</font>
+### <font color=#EBAC25>Developer</font>
 
 - **All Basic**
 - **Business hours email access to Cloud Support Associates**
@@ -299,7 +299,7 @@ Response times:
 
 - General guidance: < 24 business hours
 - System impaired: <12 business hours
-### <font color=#f1ef63>Business</font>
+### <font color=#EBAC25>Business</font>
 
 - **All Developer**
 - Intended for **production workloads**
@@ -312,7 +312,7 @@ Response times:
 - System impaired: <12 business hours
 - Production system impaired: < 4 hours
 - Production system down: < 1 hour
-### <font color=#f1ef63>Enterprise (On-Ramp)</font>
+### <font color=#EBAC25>Enterprise (On-Ramp)</font>
 
 - **All business**
 - Access to a pool of **Technical Account Managers (TAM)**
@@ -324,10 +324,10 @@ Response times:
 - Production system impaired: < 4 hours
 - Production system down: < 1 hour
 - **Business-critical system down:** < 30 minutes
-### <font color=#f1ef63>Enterprise</font>
+### <font color=#EBAC25>Enterprise</font>
 
 - **All Enterprise (On-Ramp)**
-- Access to a <font color=#f43f5e>designated</font> **Technical Account Manager (TAM)**
+- Access to a <font color=#EB4925>designated</font> **Technical Account Manager (TAM)**
 - Access to **AWS Incident Detection and Response** (for an additional fee)
 
 Response times:
@@ -352,20 +352,20 @@ Response times:
 - Define and enforce [cost allocation tags]({{< ref "21-account-management-and-billing/#tracking-costs-in-the-cloud" >}})
 - Define effective [account and organization]({{< ref "21-account-management-and-billing/#aws-organizations" >}}) structure
 - Define and use metrics - give access to the team to access [billing and costing tools]({{< ref "21-account-management-and-billing/#billing-and-costing-tools" >}}) in order to enable accountability and ownership
-- <font color=#10b981>Cloud Center of Excellence (CCoE)</font> - team who stays up to date with AWS best practices, new releases, products and services, etc., in order to ensure that you are using AWS in the most efficient and effective ways
+- <font color=#C7EB25>Cloud Center of Excellence (CCoE)</font> - team who stays up to date with AWS best practices, new releases, products and services, etc., in order to ensure that you are using AWS in the most efficient and effective ways
 ## Summary
 
-- <font color=#f1ef63>Compute Optimizer:</font> recommends resources configurations to reduce cost
-- <font color=#f1ef63>Pricing Calculator:</font> cost of services on AWS (estimate the cost of your solution)
-- <font color=#f1ef63>Billing Dashboard:</font> high-level overview (cost, forecast, month to date)
-- <font color=#f1ef63>Cost Allocation Tags:</font> tag resources to create detailed reports
-- <font color=#f1ef63>Cost and Usage Reports:</font> <font color=#f43f5e>most comprehensive billing dataset</font>
-- <font color=#f1ef63>Cost Explorer:</font> View current usage (detailed) and <font color=#10b981>forecast usage</font>
-- <font color=#f1ef63>Billing Alarms:</font> in us-east-1 - track overall and per-service billing
-- <font color=#f1ef63>Budgets:</font> more advanced - track usage, costs and get alerts
-- <font color=#f1ef63>Savings Plans:</font> easy way to save based on long-term usage of AWS
-- <font color=#f1ef63>Cost Anomaly Detection:</font> detect unusual spends using Machine Learning
-- <font color=#f1ef63>Service Quotas:</font> notify you when you're close to service quota threshold
+- <font color=#EBAC25>Compute Optimizer:</font> recommends resources configurations to reduce cost
+- <font color=#EBAC25>Pricing Calculator:</font> cost of services on AWS (estimate the cost of your solution)
+- <font color=#EBAC25>Billing Dashboard:</font> high-level overview (cost, forecast, month to date)
+- <font color=#EBAC25>Cost Allocation Tags:</font> tag resources to create detailed reports
+- <font color=#EBAC25>Cost and Usage Reports:</font> <font color=#EB4925>most comprehensive billing dataset</font>
+- <font color=#EBAC25>Cost Explorer:</font> View current usage (detailed) and <font color=#C7EB25>forecast usage</font>
+- <font color=#EBAC25>Billing Alarms:</font> in us-east-1 - track overall and per-service billing
+- <font color=#EBAC25>Budgets:</font> more advanced - track usage, costs and get alerts
+- <font color=#EBAC25>Savings Plans:</font> easy way to save based on long-term usage of AWS
+- <font color=#EBAC25>Cost Anomaly Detection:</font> detect unusual spends using Machine Learning
+- <font color=#EBAC25>Service Quotas:</font> notify you when you're close to service quota threshold
 
 ---
 ## >> Sources <<

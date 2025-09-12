@@ -37,9 +37,9 @@ categories: AWS
 	- Usage is measured, users pay for what they used
 ## Six advantages of Cloud Computing
 
-1. Trade capital expense (<font color=#f1ef63>CAPEX</font>) for operational expense (<font color=#f1ef63>OPEX</font>)
+1. Trade capital expense (<font color=#EBAC25>CAPEX</font>) for operational expense (<font color=#EBAC25>OPEX</font>)
 	- Pay on-demand: don't own the hardware
-	- Reduced Total Cost of Ownership (<font color=#f1ef63>TCO</font>) & Operational Expense (<font color=#f1ef63>OPEX</font>)
+	- Reduced Total Cost of Ownership (<font color=#EBAC25>TCO</font>) & Operational Expense (<font color=#EBAC25>OPEX</font>)
 2. Benefit from massive economies of scale
 	- Prices are reduced as AWS is more efficient due to a large scale
 3. Stop guessing the capacity
@@ -49,12 +49,12 @@ categories: AWS
 6. Go global in minutes: leverage the [AWS Global Infrastructure]({{< ref "15-aws-global-infrastructure" >}})
 ## Problems solved by the cloud
 
-- <font color=#f1ef63>Flexibility:</font> change resources when needed
-- <font color=#f1ef63>Cost-Effectiveness:</font> pay as you go and for what you use
+- <font color=#EBAC25>Flexibility:</font> change resources when needed
+- <font color=#EBAC25>Cost-Effectiveness:</font> pay as you go and for what you use
 - [Scalability:]({{< ref "8-scalability-high-availability/#scalability" >}}) accommodate larger loads by making hardware stronger or adding additional nodes
 - [Elasticity:]({{< ref "8-scalability-high-availability/#two-kinds-of-scalability" >}}) ability to scale out and scale in when needed
 - [High-Availability]({{< ref "8-scalability-high-availability/#high-availability" >}}) and Fault-Tolerance: build across data centers
-- <font color=#f1ef63>Agility:</font> rapidly develop, test and launch software applications
+- <font color=#EBAC25>Agility:</font> rapidly develop, test and launch software applications
 ## Types of Cloud Computing
 
 ### Infrastructure as a Service (IaaS)

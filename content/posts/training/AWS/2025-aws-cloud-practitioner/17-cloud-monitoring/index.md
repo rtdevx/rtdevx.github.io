@@ -48,7 +48,7 @@ CloudWatch > Alarms > All alarms
 - **Example:** create a billing alarm on the CloudWatch Billing metric
 - Alarm States: OK, INSUFFICIENT_DATA, ALARM
 
-<font color=#f43f5e>Billing alarms are only available in us-east-1</font>
+<font color=#EB4925>Billing alarms are only available in us-east-1</font>
 ### CloudWatch Logs
 
 CloudWatch Logs can collect logs from:
@@ -57,14 +57,14 @@ CloudWatch Logs can collect logs from:
 - [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) - collection of logs from containers
 - AWS [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) - collection of logs from functions
 - [CloudTrail]({{< ref "17-cloud-monitoring/#aws-cloudtrail" >}}) based on filter
-- <font color=#10b981>CloudWatch log agents</font> - on EC2 machines or on-premises servers
+- <font color=#C7EB25>CloudWatch log agents</font> - on EC2 machines or on-premises servers
 - [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}}) - DNS logs
 ### CloudWatch Logs for EC2 / on-premise
 
-<font color=#f43f5e>CloudWatch agent is required to be installed on EC2 instance 
+<font color=#EB4925>CloudWatch agent is required to be installed on EC2 instance 
 to push the logs that are needed.</font>
 
-<font color=#f43f5e>CloudWatch agent can also be installed on on-premise servers too.</font>
+<font color=#EB4925>CloudWatch agent can also be installed on on-premise servers too.</font>
 
 [IAM]({{< ref "2-iam" >}}) permissions must be set for CloudWatch Logs to function correctly.
 ## Amazon EventBridge
@@ -90,7 +90,7 @@ EventBridge > Create rule
 ![](./assets/AWS_CW_EventBridge4.png)
 ## AWS CloudTrail
 
-##### <font color=#f43f5e>AWS CloudTrail provides governance, compliance and audit your AWS Account and it is ENABLED BY DEFAULT.</font>
+##### <font color=#EB4925>AWS CloudTrail provides governance, compliance and audit your AWS Account and it is ENABLED BY DEFAULT.</font>
 
 It can get a history of events / API calls made within your AWS account by:
 
@@ -99,9 +99,9 @@ It can get a history of events / API calls made within your AWS account by:
 - CLI
 - AWS Services
 
-<font color=#10b981>Logs from CloudTrail can be stored in CloudWatch Logs or S3. Trail can be applied to All Regions (default) or a single region.</font>
+<font color=#C7EB25>Logs from CloudTrail can be stored in CloudWatch Logs or S3. Trail can be applied to All Regions (default) or a single region.</font>
 
-### <font color=#f43f5e>If a resource is deleted in AWS, investigate CloudTrail first!</font>
+### <font color=#EB4925>If a resource is deleted in AWS, investigate CloudTrail first!</font>
 
 ![](./assets/AWS_CW_CloudTrail1.png)
 
@@ -111,7 +111,7 @@ CloudTrail > Event history
 ```
 ## AWS X-Ray
 
-##### <font color=#f43f5e>Visual analysis of our applications.</font> Common view of entire architecture.
+##### <font color=#EB4925>Visual analysis of our applications.</font> Common view of entire architecture.
 
 - **Troubleshooting performance**
 - **Understanding dependencies in a microservices architecture**
@@ -157,22 +157,22 @@ Has an RSS feed that can be subscribed to.
 
 **AWS Account Health Dashboard** provides alerts and remediation guidance when AWS is experiencing events that may impact you.
 
-<font color=#f43f5e>While the **Service Health Dashboard** displays the general status of AWS services, **Account Health Dashboard** gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources.</font>
+<font color=#EB4925>While the **Service Health Dashboard** displays the general status of AWS services, **Account Health Dashboard** gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources.</font>
 
-<font color=#f43f5e>It can aggregate data from an entire AWS Organization.</font>
+<font color=#EB4925>It can aggregate data from an entire AWS Organization.</font>
 ## Summary
 
-- <font color=#f1ef63>CloudWatch</font>
+- <font color=#EBAC25>CloudWatch</font>
 	- Metrics - monitor the performance of AWS services and billing metrics
 	- Alarms - automate notification, perform [EC2]({{< ref "4-ec2" >}}) action, notify to [SNS]({{< ref "16-cloud-integrations/#amazon-sns" >}}) based on metric
 	- Logs - collects log files from EC2 instances, servers, [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) functions
-- <font color=#f1ef63>Events (EventBridge)</font> - react to events in AWS or trigger a rule on a schedule
-- <font color=#f1ef63>CloudTrail</font> - audit API calls made within your AWS account
+- <font color=#EBAC25>Events (EventBridge)</font> - react to events in AWS or trigger a rule on a schedule
+- <font color=#EBAC25>CloudTrail</font> - audit API calls made within your AWS account
 	- CloudTrail Insights - automated analysis of your CloudTrail Events
-- <font color=#f1ef63>X-Ray</font> - trace requests made through your distributed applications (analyze flow)
-- <font color=#f1ef63>AWS Health Dashboard</font> - general status of ALL AWS services across all regions
-- <font color=#f1ef63>AWS Account Health Dashboard</font> - AWS events that impact your infrastructure
-- <font color=#f1ef63>Amazon CodeGuru</font> - automated code reviews and application performance recommendations
+- <font color=#EBAC25>X-Ray</font> - trace requests made through your distributed applications (analyze flow)
+- <font color=#EBAC25>AWS Health Dashboard</font> - general status of ALL AWS services across all regions
+- <font color=#EBAC25>AWS Account Health Dashboard</font> - AWS events that impact your infrastructure
+- <font color=#EBAC25>Amazon CodeGuru</font> - automated code reviews and application performance recommendations
 
 ---
 ## >> Sources <<

@@ -613,10 +613,10 @@
 <ul>
 <li>Public: Docker Hub (<a href="https://hubl.docker.com" target="_blank" rel="noreferrer">https://hubl.docker.com</a>
 )</li>
-<li>Private: Amazon ECR (<font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>R</font>egistry)</li>
+<li>Private: Amazon ECR (<font color=#EB4925>E</font>lastic <font color=#EB4925>C</font>ontainer <font color=#EB4925>R</font>egistry)</li>
 </ul>
 <h2 id="ecs-elastic-container-service" class="relative group">ECS (Elastic Container Service) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ecs-elastic-container-service" aria-label="Anchor">#</a></span></h2>
-<p><strong>Amazon ECS</strong> = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervice.</p>
+<p><strong>Amazon ECS</strong> = <font color=#EB4925>E</font>lastic <font color=#EB4925>C</font>ontainer <font color=#EB4925>S</font>ervice.</p>
 <p>ECS allows launching Docker containers on AWS. It is an orchestrator.</p>
 <ul>
 <li>You must provision and maintain the infrastructure (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
@@ -640,16 +640,16 @@
 <h2 id="fargate" class="relative group">Fargate <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#fargate" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>Launch Docker containers on AWS</li>
-<li><font color=#10b981>Serverless</font>. No need to provision the infrastructure (no EC2 instances to manage)</li>
+<li><font color=#C7EB25>Serverless</font>. No need to provision the infrastructure (no EC2 instances to manage)</li>
 <li>AWS runs the containers based on CPU / RAM needed</li>
 </ul>
 <h2 id="ecr" class="relative group">ECR <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ecr" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>R</font>egistry</li>
+<li><font color=#EB4925>E</font>lastic <font color=#EB4925>C</font>ontainer <font color=#EB4925>R</font>egistry</li>
 <li>Private Docker Registry on AWS</li>
 </ul>
 <h2 id="amazon-eks" class="relative group">Amazon EKS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-eks" aria-label="Anchor">#</a></span></h2>
-<p>Amazon EKS = <font color=#f43f5e>E</font>lastic <font color=#f43f5e>K</font>ubernetes <font color=#f43f5e>S</font>ervice.</p>
+<p>Amazon EKS = <font color=#EB4925>E</font>lastic <font color=#EB4925>K</font>ubernetes <font color=#EB4925>S</font>ervice.</p>
 <p>Allows launching and managing Kubernetes clusters on AWS.</p>
 <p>Kubernetes is an open-source system for management, deployment and scaling of containerized apps (Docker, Containerd).</p>
 <p><strong>Containers can be hosted on:</strong></p>
@@ -659,10 +659,10 @@
 </ul>
 <h2 id="lambda" class="relative group">Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#lambda" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#10b981>Virtual functions</font> - no servers to manage</li>
-<li>Limited by time - <font color=#10b981>short executions</font></li>
-<li>Run <font color=#10b981>on-demand</font></li>
-<li><font color=#10b981>Scaling is automated</font></li>
+<li><font color=#C7EB25>Virtual functions</font> - no servers to manage</li>
+<li>Limited by time - <font color=#C7EB25>short executions</font></li>
+<li>Run <font color=#C7EB25>on-demand</font></li>
+<li><font color=#C7EB25>Scaling is automated</font></li>
 </ul>
 <h3 id="benefits-of-lambda" class="relative group">Benefits of Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#benefits-of-lambda" aria-label="Anchor">#</a></span></h3>
 <ul>
@@ -672,7 +672,7 @@
 </ul>
 </li>
 <li>Integrated with the whole AWS suite of services</li>
-<li><font color=#10b981>Event-Driven:</font> functions get invoked by AWS when needed</li>
+<li><font color=#C7EB25>Event-Driven:</font> functions get invoked by AWS when needed</li>
 <li>Integrated with many programming languages
 <ul>
 <li>Node.js (JavaScript)</li>
@@ -689,25 +689,25 @@
 <li>Increasing RAM will also improve CPU and Network</li>
 </ul>
 <p>Lambda Container Image - although ECS / Fargate is preferred for running Docker images.</p>
-<p><font color=#10b981>Lambda pricing</font> is based on <font color=#f43f5e>calls</font> and <font color=#f43f5e>duration</font>.</p>
+<p><font color=#C7EB25>Lambda pricing</font> is based on <font color=#EB4925>calls</font> and <font color=#EB4925>duration</font>.</p>
 <h2 id="amazon-api-gateway" class="relative group">Amazon API Gateway <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-api-gateway" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>Fully managed service for developers to easily create, publish, maintain, monitor and secure APIs</li>
-<li><font color=#10b981>Serverless</font> and scalable</li>
+<li><font color=#C7EB25>Serverless</font> and scalable</li>
 <li>Supports RESTful APIs and WebSocket APIs</li>
 <li>Support for security, user authentication, API throttling, API keys, monitoring</li>
 </ul>
-<h5 id="creating-serverless-api--api-gateway--lambda-expose-lambda-functions-as-http-api" class="relative group"><font color=#f43f5e>Creating Serverless API</font> = API Gateway + Lambda. <font color=#f43f5e>Expose Lambda functions as HTTP API</font>. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-serverless-api--api-gateway--lambda-expose-lambda-functions-as-http-api" aria-label="Anchor">#</a></span></h5>
+<h5 id="creating-serverless-api--api-gateway--lambda-expose-lambda-functions-as-http-api" class="relative group"><font color=#EB4925>Creating Serverless API</font> = API Gateway + Lambda. <font color=#EB4925>Expose Lambda functions as HTTP API</font>. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-serverless-api--api-gateway--lambda-expose-lambda-functions-as-http-api" aria-label="Anchor">#</a></span></h5>
 <h2 id="aws-batch" class="relative group">AWS Batch <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-batch" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>Fully managed batch processing at any scale</li>
 <li>Efficiently run 100,000s of computing batch jobs on AWS</li>
 <li>A &ldquo;<em>batch</em>&rdquo; job is a job with start and and end (opposed to continuous)</li>
-<li><font color=#f1ef63>Batch will dynamically launch EC2 instances or Spot instances</font></li>
+<li><font color=#EBAC25>Batch will dynamically launch EC2 instances or Spot instances</font></li>
 <li>AWS batch provisions the right amount of compute / memory</li>
 <li>You submit or schedule batch jobs and AWS Batch does the rest</li>
-<li><font color=#f1ef63>Batch jobs are defined as Docker images and run on ECS</font></li>
-<li><font color=#f43f5e>Helpful for cost optimizations and focusing less on the infrastructure</font></li>
+<li><font color=#EBAC25>Batch jobs are defined as Docker images and run on ECS</font></li>
+<li><font color=#EB4925>Helpful for cost optimizations and focusing less on the infrastructure</font></li>
 </ul>
 <h3 id="batch-vs-lambda" class="relative group">Batch vs Lambda <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#batch-vs-lambda" aria-label="Anchor">#</a></span></h3>
 <ul>
@@ -743,9 +743,9 @@
 , <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/6-storage/#ebs-volume">EBS</a>
 , <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/#route53">Route53</a>
 </li>
-<li>Great for people with <font color=#10b981>little cloud experience</font></li>
+<li>Great for people with <font color=#C7EB25>little cloud experience</font></li>
 <li>Can setup notifications and monitoring of your Lightsail resources</li>
-<li><font color=#f1ef63>Use cases:</font>
+<li><font color=#EBAC25>Use cases:</font>
 <ul>
 <li>Simple web applications</li>
 <li>Websites</li>
@@ -756,19 +756,19 @@
 </ul>
 <h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#f1ef63>Docker:</font> container technology to run applications</li>
-<li><font color=#f1ef63>ECS:</font> run Docker container on EC2 instances</li>
-<li><font color=#f1ef63>Fargate:</font>
+<li><font color=#EBAC25>Docker:</font> container technology to run applications</li>
+<li><font color=#EBAC25>ECS:</font> run Docker container on EC2 instances</li>
+<li><font color=#EBAC25>Fargate:</font>
 <ul>
 <li>Run Docker containers without provisioning the infrastructure</li>
 <li>Serverless offering (no EC2 instances)</li>
 </ul>
 </li>
-<li><font color=#f1ef63>ECR:</font> Private Docker Images Repository</li>
-<li><font color=#f1ef63>EKS:</font> Allows launching and managing Kubernetes clusters on AWS (hosted on: EC2 instances OR Fargate)</li>
-<li><font color=#f1ef63>Batch:</font> run batch jobs on AWS across managed EC2 instances</li>
-<li><font color=#f1ef63>Lightsail:</font> predictable &amp; low pricing for simple application &amp; DB stacks</li>
-<li><font color=#f1ef63>Lambda:</font>
+<li><font color=#EBAC25>ECR:</font> Private Docker Images Repository</li>
+<li><font color=#EBAC25>EKS:</font> Allows launching and managing Kubernetes clusters on AWS (hosted on: EC2 instances OR Fargate)</li>
+<li><font color=#EBAC25>Batch:</font> run batch jobs on AWS across managed EC2 instances</li>
+<li><font color=#EBAC25>Lightsail:</font> predictable &amp; low pricing for simple application &amp; DB stacks</li>
+<li><font color=#EBAC25>Lambda:</font>
 <ul>
 <li>Serverless, Function as a Service, seamless scaling, reactive</li>
 <li>Lambda Billing:
@@ -781,7 +781,7 @@
 <li>Invocation time: up to 15 minutes</li>
 </ul>
 </li>
-<li><font color=#f1ef63>API Gateway:</font> expose Lambda functions as HTTP API</li>
+<li><font color=#EBAC25>API Gateway:</font> expose Lambda functions as HTTP API</li>
 </ul>
 <hr>
 <h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>

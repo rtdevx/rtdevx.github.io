@@ -10,7 +10,7 @@ categories: Productivity
 ---
 ## What is the Zettelkasten method?
 
-**Zettelkasten** is a system of identifiers to link the notes and navigating between them. This methodology leads to <font color=#10b981>higher productivity</font>.
+**Zettelkasten** is a system of identifiers to link the notes and navigating between them. This methodology leads to <font color=#C7EB25>higher productivity</font>.
 
 **Zettelkasten** is not only a note taking system. It is a tool that is used for thinking since it brings a structure to note taking and "_connecting the dots_".
 
@@ -20,7 +20,7 @@ This method is often called a "_second brain_". And it is so for a reason...
 The **Zettelkasten** method was created in the 20th century by social scientist _Niklas Luhman_. He used this system to organize his thoughts and research, which **allowed him to publish more than 50 books and hundreds of articles**. Luhman used physical slip boxes for his Zettelkasten, adding notes and sub notes into the box as he created new ideas.
 ## Writing is understanding!
 
-Each note contains the thought or idea and should be **written in own words**. <font color=#10b981>This helps mapping the ideas in human brain</font>. Process similar to translation takes place which helps with understanding the topic.
+Each note contains the thought or idea and should be **written in own words**. <font color=#C7EB25>This helps mapping the ideas in human brain</font>. Process similar to translation takes place which helps with understanding the topic.
 
 Structuring, simplifying and linking ideas helping storing them outside of the brain and helping with solving complex problems.
 
@@ -30,7 +30,7 @@ A good system removes the need for remembering everything.
 > 
 > Niklas Luhmann
 
-<font color=#10b981>Highly productive people deflect resistance</font> like judo champions. Having a flexible workflow allows doing this. This is known as "_effortless productivity_".
+<font color=#C7EB25>Highly productive people deflect resistance</font> like judo champions. Having a flexible workflow allows doing this. This is known as "_effortless productivity_".
 ## Content Consumption
 
 - Intentionality for content consumption
@@ -44,7 +44,7 @@ A good system removes the need for remembering everything.
 	- increased focus
 	- allows adapting more observant and analytical perspective
 - Being intentional about content consumption will limit the content consumption
-## <font color=#10b981>Obsidian</font> - markdown-based, multi-platform note taking app
+## <font color=#C7EB25>Obsidian</font> - markdown-based, multi-platform note taking app
 
 **Obsidian** is a note-taking app that lets you link notes together. Learn how to download, create, and organize your notes with Obsidian in this comprehensive guide.
 
@@ -69,7 +69,7 @@ Notes being taken during content consumption are called Fleeting Notes. These ar
 - **Brief** - few words or ideas
 - **Quick capture**
 
-<font color=#f43f5e>This ability is a cornerstone of effective learning and productivity.</font>
+<font color=#EB4925>This ability is a cornerstone of effective learning and productivity.</font>
 #### Permanent notes
 
 - Articulated

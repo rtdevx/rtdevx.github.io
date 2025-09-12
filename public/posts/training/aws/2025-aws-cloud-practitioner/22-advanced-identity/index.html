@@ -596,18 +596,18 @@
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <h2 id="aws-sts-security-token-service" class="relative group">AWS STS (Security Token Service) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-sts-security-token-service" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li>Enables creating <font color=#f43f5e>temporary, limited-privileged credentials</font> to access AWS resources</li>
+<li>Enables creating <font color=#EB4925>temporary, limited-privileged credentials</font> to access AWS resources</li>
 <li>Short-term credentials (you configure the expiration period)</li>
-<li><font color=#f1ef63>Use cases:</font>
+<li><font color=#EBAC25>Use cases:</font>
 <ul>
-<li><font color=#f1ef63>Identify federation:</font> manage user identities in external systems and provide them STS tokens to access AWS resources</li>
+<li><font color=#EBAC25>Identify federation:</font> manage user identities in external systems and provide them STS tokens to access AWS resources</li>
 <li>IAM Roles for cross / same account access</li>
-<li><font color=#f1ef63>IAM Roles for Amazon EC2:</font> provide temporary credentials for EC2 instances to access AWS resources</li>
+<li><font color=#EBAC25>IAM Roles for Amazon EC2:</font> provide temporary credentials for EC2 instances to access AWS resources</li>
 </ul>
 </li>
 </ul>
 <h2 id="amazon-cognito" class="relative group">Amazon Cognito <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-cognito" aria-label="Anchor">#</a></span></h2>
-<h5 id="identity-for-web-and-mobile-application-users-potentially-millions" class="relative group"><font color=#f1ef63>Identity for Web and Mobile application users (potentially millions).</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#identity-for-web-and-mobile-application-users-potentially-millions" aria-label="Anchor">#</a></span></h5>
+<h5 id="identity-for-web-and-mobile-application-users-potentially-millions" class="relative group"><font color=#EBAC25>Identity for Web and Mobile application users (potentially millions).</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#identity-for-web-and-mobile-application-users-potentially-millions" aria-label="Anchor">#</a></span></h5>
 <p>Instead of creating users in IAM, web users can be created using Cognito</p>
 <p>
 
@@ -621,24 +621,24 @@
 <figure><img src="./assets/AWS_Cognito.png" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 
-<em>Amazon Cognito for web and mobile applications. <font color=#10b981>It can also integrate with Google and Facebook login.</font></em></p>
+<em>Amazon Cognito for web and mobile applications. <font color=#C7EB25>It can also integrate with Google and Facebook login.</font></em></p>
 <h2 id="directory-services" class="relative group">Directory Services <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#directory-services" aria-label="Anchor">#</a></span></h2>
-<h5 id="database-of-objects-user-accounts-computers-printers-file-shares-security-groups" class="relative group"><font color=#f1ef63>Database of objects:</font> User accounts, Computers, Printers, File Shares, Security Groups&hellip; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#database-of-objects-user-accounts-computers-printers-file-shares-security-groups" aria-label="Anchor">#</a></span></h5>
+<h5 id="database-of-objects-user-accounts-computers-printers-file-shares-security-groups" class="relative group"><font color=#EBAC25>Database of objects:</font> User accounts, Computers, Printers, File Shares, Security Groups&hellip; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#database-of-objects-user-accounts-computers-printers-file-shares-security-groups" aria-label="Anchor">#</a></span></h5>
 <h3 id="aws-directory-services" class="relative group">AWS Directory Services <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-directory-services" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li><font color=#f1ef63>AWS Managed Microsoft AD</font>
+<li><font color=#EBAC25>AWS Managed Microsoft AD</font>
 <ul>
 <li>Create our own AD in AWS, manage users locally, supports MFA</li>
 <li>Establish &ldquo;Trust&rdquo; connections with on-premise AD</li>
 </ul>
 </li>
-<li><font color=#f1ef63>AD Connector</font>
+<li><font color=#EBAC25>AD Connector</font>
 <ul>
 <li>Directory Gateway (proxy) to redirect to on-premise AD, supports MFA</li>
 <li>Users are managed on the on-premise AD</li>
 </ul>
 </li>
-<li><font color=#f1ef63>Simple AD</font>
+<li><font color=#EBAC25>Simple AD</font>
 <ul>
 <li>AD-compatible managed directory on AWS</li>
 <li>Cannot be joined with on-premise AD</li>
@@ -660,33 +660,33 @@
 </ul>
 <h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#f1ef63>IAM</font>
+<li><font color=#EBAC25>IAM</font>
 <ul>
 <li>Identity and Access Management inside your AWS account</li>
 <li>For users that you trust and belong to your company</li>
 </ul>
 </li>
-<li><font color=#f1ef63>Organizations</font>
+<li><font color=#EBAC25>Organizations</font>
 <ul>
 <li>Manage multiple accounts</li>
 </ul>
 </li>
-<li><font color=#f1ef63>Security Token Service (STS)</font>
+<li><font color=#EBAC25>Security Token Service (STS)</font>
 <ul>
 <li>Temporary, limited-privileges credentials to access AWS resources</li>
 </ul>
 </li>
-<li><font color=#f1ef63>Cognito</font>
+<li><font color=#EBAC25>Cognito</font>
 <ul>
 <li>Create a database of users for your web and mobile applications</li>
 </ul>
 </li>
-<li><font color=#f1ef63>Directory Services</font>
+<li><font color=#EBAC25>Directory Services</font>
 <ul>
 <li>Integrate Microsoft Active Directory in AWS</li>
 </ul>
 </li>
-<li><font color=#f1ef63>IAM Identity Center</font>
+<li><font color=#EBAC25>IAM Identity Center</font>
 <ul>
 <li>One login for multiple AWS accounts and applications</li>
 </ul>

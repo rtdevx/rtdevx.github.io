@@ -10,32 +10,32 @@ categories: AWS
 ---
 ## AWS STS (Security Token Service)
 
-- Enables creating <font color=#f43f5e>temporary, limited-privileged credentials</font> to access AWS resources
+- Enables creating <font color=#EB4925>temporary, limited-privileged credentials</font> to access AWS resources
 - Short-term credentials (you configure the expiration period)
-- <font color=#f1ef63>Use cases:</font>
-	- <font color=#f1ef63>Identify federation:</font> manage user identities in external systems and provide them STS tokens to access AWS resources
+- <font color=#EBAC25>Use cases:</font>
+	- <font color=#EBAC25>Identify federation:</font> manage user identities in external systems and provide them STS tokens to access AWS resources
 	- IAM Roles for cross / same account access
-	- <font color=#f1ef63>IAM Roles for Amazon EC2:</font> provide temporary credentials for EC2 instances to access AWS resources
+	- <font color=#EBAC25>IAM Roles for Amazon EC2:</font> provide temporary credentials for EC2 instances to access AWS resources
 ## Amazon Cognito
 
-##### <font color=#f1ef63>Identity for Web and Mobile application users (potentially millions).</font>
+##### <font color=#EBAC25>Identity for Web and Mobile application users (potentially millions).</font>
 
 Instead of creating users in IAM, web users can be created using Cognito
 
 ![](./assets/AWS_Cognito.png)
-_Amazon Cognito for web and mobile applications. <font color=#10b981>It can also integrate with Google and Facebook login.</font>_
+_Amazon Cognito for web and mobile applications. <font color=#C7EB25>It can also integrate with Google and Facebook login.</font>_
 ## Directory Services
 
-##### <font color=#f1ef63>Database of objects:</font> User accounts, Computers, Printers, File Shares, Security Groups...
+##### <font color=#EBAC25>Database of objects:</font> User accounts, Computers, Printers, File Shares, Security Groups...
 ### AWS Directory Services
 
-- <font color=#f1ef63>AWS Managed Microsoft AD</font>
+- <font color=#EBAC25>AWS Managed Microsoft AD</font>
 	- Create our own AD in AWS, manage users locally, supports MFA
 	- Establish "Trust" connections with on-premise AD
-- <font color=#f1ef63>AD Connector</font>
+- <font color=#EBAC25>AD Connector</font>
 	- Directory Gateway (proxy) to redirect to on-premise AD, supports MFA
 	- Users are managed on the on-premise AD
-- <font color=#f1ef63>Simple AD</font>
+- <font color=#EBAC25>Simple AD</font>
 	- AD-compatible managed directory on AWS
 	- Cannot be joined with on-premise AD
 ## AWS IAM Identity Center
@@ -52,18 +52,18 @@ _Amazon Cognito for web and mobile applications. <font color=#10b981>It can also
 - 3rd party: Active Directory, OneLogin, Okta, ...
 ## Summary
 
-- <font color=#f1ef63>IAM</font>
+- <font color=#EBAC25>IAM</font>
 	- Identity and Access Management inside your AWS account
 	- For users that you trust and belong to your company
-- <font color=#f1ef63>Organizations</font>
+- <font color=#EBAC25>Organizations</font>
 	- Manage multiple accounts
-- <font color=#f1ef63>Security Token Service (STS)</font>
+- <font color=#EBAC25>Security Token Service (STS)</font>
 	- Temporary, limited-privileges credentials to access AWS resources
-- <font color=#f1ef63>Cognito</font>
+- <font color=#EBAC25>Cognito</font>
 	- Create a database of users for your web and mobile applications
-- <font color=#f1ef63>Directory Services</font>
+- <font color=#EBAC25>Directory Services</font>
 	- Integrate Microsoft Active Directory in AWS
-- <font color=#f1ef63>IAM Identity Center</font>
+- <font color=#EBAC25>IAM Identity Center</font>
 	- One login for multiple AWS accounts and applications
 
 ---

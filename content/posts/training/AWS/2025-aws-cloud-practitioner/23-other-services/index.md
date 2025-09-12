@@ -58,12 +58,12 @@ Fully-managed service to centrally manage and automate backups across AWS servic
 - Cross-region and cross-account (AWS Organizations) backups
 
 ![](./assets/AWS_Backup.png)
-## <font color=#f43f5e>Disaster Recovery Strategies</font>
+## <font color=#EB4925>Disaster Recovery Strategies</font>
 
-- <font color=#f1ef63>Backup and Restore</font> - cheapest method
-- <font color=#f1ef63>Pilot Light</font> - core functions are there (e.g. database) but it's not scaled up
-- <font color=#f1ef63>Warm Standby</font> - full version of the app but at minimum size (databases, webs, api, ...)
-- <font color=#f1ef63>Multi-Site / Hot-Site</font> - full version, full size active-active DR
+- <font color=#EBAC25>Backup and Restore</font> - cheapest method
+- <font color=#EBAC25>Pilot Light</font> - core functions are there (e.g. database) but it's not scaled up
+- <font color=#EBAC25>Warm Standby</font> - full version of the app but at minimum size (databases, webs, api, ...)
+- <font color=#EBAC25>Multi-Site / Hot-Site</font> - full version, full size active-active DR
 ### AWS Elastic Disaster Recovery (DRS)
 
 Quickly and easily recover physical, virtual and cloud-based servers into AWS.
@@ -80,7 +80,7 @@ Move large amount of data from on-premises to AWS.
 	- Amazon EFS
 	- Amazon FSx for Windows
 - Replication tasks can be scheduled hourly, daily, weekly
-- The replication tasks are <font color=#f43f5e>incremental</font> after the first full load
+- The replication tasks are <font color=#EB4925>incremental</font> after the first full load
 ## Cloud Migration Strategies - the 7Rs
 
 ![](./assets/AWS_Cloud_Migration_Strategy.png)
@@ -101,7 +101,7 @@ Helps to build a data-driven business case for migration to AWS.
 Central location to collect servers and applications inventory data for the assessment, planning and tracking of migrations to AWS.
 ## AWS Fault Injection Service (FIS)
 
-A fully-managed service for running fault injection experiments on AWS workloads. Based on <font color=#f43f5e>Chaos Enginneering</font>.
+A fully-managed service for running fault injection experiments on AWS workloads. Based on <font color=#EB4925>Chaos Enginneering</font>.
 
 Supports the following services: [EC2]({{< ref "4-ec2" >}}), [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}), [EKS]({{< ref "13-other-compute-services/#amazon-eks" >}}), [RDS]({{< ref "12-databases/#rds-and-aurora" >}}), ...
 ## Step Functions
@@ -117,7 +117,7 @@ Provides a global network of satellite ground stations near AWS regions.
 
 Send satellite data to [S3]({{< ref "11-s3" >}}) or [EC2]({{< ref "4-ec2" >}}) instance.
 
-<font color=#f1ef63>Use Cases:</font>
+<font color=#EBAC25>Use Cases:</font>
 - Weather forecasting
 - Surface imaging
 - Communications

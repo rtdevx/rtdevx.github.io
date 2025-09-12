@@ -36,12 +36,12 @@ _AWS Global Infrastructure Overview - Regions, Availability Zones, Edge Location
 _[How Route 53 routes traffic for your domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html#welcome-dns-service-how-route-53-routes-traffic)_
 ### Route53 Routing Policies
 
-- <font color=#10b981>Simple</font> Routing Policy - <font color=#f43f5e>No health checks,</font> just DNS check
-- <font color=#10b981>Weighted</font> Routing Policy - <font color=#f43f5e>Specify what amount of traffic goes where</font> (i.e. 70% = Server1, 20% = Server2, 10% = Server3. Simple form of Load Balancing)
-- <font color=#10b981>Latency</font> Routing Policy - <font color=#f43f5e>Based on latency</font> - minimizing the latency between user and the server sending the traffic that is geographically (latency-based) closer to the user
-- <font color=#10b981>Failover</font> Routing Policy - <font color=#f43f5e>Disaster Recovery</font> ([DR]({{< ref "23-other-services/#disaster-recovery-strategies" >}})) - based on Health Checks
-- <font color=#10b981>Geolocation</font> Routing Policy - <font color=#f43f5e>Routing based specifically on Geolocation</font>
-- <font color=#10b981>IP-based</font> Routing Policy - <font color=#f43f5e>Route the traffic based on the IP address originates from</font>
+- <font color=#C7EB25>Simple</font> Routing Policy - <font color=#EB4925>No health checks,</font> just DNS check
+- <font color=#C7EB25>Weighted</font> Routing Policy - <font color=#EB4925>Specify what amount of traffic goes where</font> (i.e. 70% = Server1, 20% = Server2, 10% = Server3. Simple form of Load Balancing)
+- <font color=#C7EB25>Latency</font> Routing Policy - <font color=#EB4925>Based on latency</font> - minimizing the latency between user and the server sending the traffic that is geographically (latency-based) closer to the user
+- <font color=#C7EB25>Failover</font> Routing Policy - <font color=#EB4925>Disaster Recovery</font> ([DR]({{< ref "23-other-services/#disaster-recovery-strategies" >}})) - based on Health Checks
+- <font color=#C7EB25>Geolocation</font> Routing Policy - <font color=#EB4925>Routing based specifically on Geolocation</font>
+- <font color=#C7EB25>IP-based</font> Routing Policy - <font color=#EB4925>Route the traffic based on the IP address originates from</font>
 
 _More on Routing Policies:_ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
 
@@ -66,12 +66,12 @@ _More about Registering and managing domains:_ https://docs.aws.amazon.com/Route
 _More about Route 53:_ https://docs.aws.amazon.com/route53/
 ## Amazon CloudFront
 
-- <font color=#10b981>Content Delivery Network</font> (CDN)
+- <font color=#C7EB25>Content Delivery Network</font> (CDN)
 - Improves read performance, content cached at the edge
 - Improves users experience
 - Many Points of Presence globally (Edge Locations, Edge Caches)
 - [DDoS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}}) protection (because it's distributed globally)
-- <font color=#10b981>Integrated with Shield and AWS WAF</font> (Web Application Firewall)
+- <font color=#C7EB25>Integrated with Shield and AWS WAF</font> (Web Application Firewall)
 ### CloudFront - Origins
 
 - S3 Bucket
@@ -93,13 +93,13 @@ _[How CloudFront delivers content](https://docs.aws.amazon.com/AmazonCloudFront/
 
 - Global Edge Network
 - Files are cached for a TTL (day?)
-- <font color=#f1ef63>Use case:</font> static content that must be available everywhere
+- <font color=#EBAC25>Use case:</font> static content that must be available everywhere
 #### S3 Cross Region Replication
 
 - Must be setup for each region you want your replication to happen
 - Files are updated in near real-time
 - Read-only
-- <font color=#f1ef63>Use case:</font> dynamic content that needs to be available at low-latency in few regions only
+- <font color=#EBAC25>Use case:</font> dynamic content that needs to be available at low-latency in few regions only
 ## S3 Transfer Acceleration
 
 Increase transfer speed by transferring files to an AWS edge location which will forward the data to the S3 bucket in the target region.
@@ -130,10 +130,10 @@ _More about AWS Global Accelerator:_
 	- Good for HTTP use cases that require deterministic, fast, regional failover
 ## AWS Outposts
 
-##### <font color=#f1ef63>AWS Outposts</font> = Hybrid Cloud appliances.
+##### <font color=#EBAC25>AWS Outposts</font> = Hybrid Cloud appliances.
 
 Outposts are "server racks" that offer the same AWS infrastructure, services, API's & tools to build your own applications on-premises just as in the cloud.
-##### <font color=#10b981>AWS will setup and manage Outposts racks within your on-premises infrastructure.</font>
+##### <font color=#C7EB25>AWS will setup and manage Outposts racks within your on-premises infrastructure.</font>
 
 **Benefits**
 
@@ -152,13 +152,13 @@ Outposts are "server racks" that offer the same AWS infrastructure, services, AP
 	- [EMR]({{< ref "12-databases/#amazon-emr" >}})
 ## Wavelength
 
-Wavelength Zones are infrastructure deployments embedded within the telecommunication providers datacenters <font color=#10b981>at the edge of the 5G networks</font>.
+Wavelength Zones are infrastructure deployments embedded within the telecommunication providers datacenters <font color=#C7EB25>at the edge of the 5G networks</font>.
 
 - Ultra low latency applications through 5G networks
 - Traffic doesn't leave the **Communication Service Provider's (CSP)** network
 - High bandwidth and secure connection to the parent AWS Region
 - No additional charges or service agreements
-- <font color=#f1ef63>Use cases:</font>
+- <font color=#EBAC25>Use cases:</font>
 	- Smart Cities
 	- ML-assisted (Machine Learning) diagnostics
 	- Connected Vehicles
@@ -169,8 +169,8 @@ Wavelength Zones are infrastructure deployments embedded within the telecommunic
 
 **AWS Local Zones** allow placing compute, storage, database and other selected AWS services closer to the users to run latency-sensitive applications.
 
-It is an "<font color=#f1ef63>Extension of AWS Region</font>".
-##### <font color=#f1ef63>Example:</font>
+It is an "<font color=#EBAC25>Extension of AWS Region</font>".
+##### <font color=#EBAC25>Example:</font>
 
 - AWS Region: N. Virginia (us-east-1)
 	- AWS Local Zones: Boston, Chicago, Dallas, Houston, Miami, ...
@@ -178,7 +178,7 @@ It is an "<font color=#f1ef63>Extension of AWS Region</font>".
 ![](./assets/AWS_Local_Zones.png)
 _[How AWS Local Zones work](https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html)_
 
-##### <font color=#f1ef63>Compatible with:</font>
+##### <font color=#EBAC25>Compatible with:</font>
 
 - [EC2]({{< ref "4-ec2" >}})
 - [RDS]({{< ref "12-databases/#rds-and-aurora" >}})
@@ -192,34 +192,34 @@ _More about AWS Local Zones:_ https://docs.aws.amazon.com/local-zones/latest/ug/
 
 ## Summary
 
-<font color=#f1ef63>Route 53 - Global DNS</font>
+<font color=#EBAC25>Route 53 - Global DNS</font>
 
 - Great to route users to the closest deployment with least latency
 - Great for Disaster Recovery - DR - Strategies
 
-<font color=#f1ef63>CloudFront - Global CDN - Content Delivery Network</font>
+<font color=#EBAC25>CloudFront - Global CDN - Content Delivery Network</font>
 
 - Replicate part of your application to AWS Edge Locations - decreased latency
 - Cache common requests - improved user experience and decreased latency
 
-<font color=#f1ef63>S3 Transfer Acceleration</font>
+<font color=#EBAC25>S3 Transfer Acceleration</font>
 
 - Accelerate global uploads & downloads into Amazon S3 
 
-<font color=#f1ef63>AWS Global Accelerator</font>
+<font color=#EBAC25>AWS Global Accelerator</font>
 
 - Improve global application availability and performance using the AWS global network
 
-<font color=#f1ef63>AWS Outposts</font>
+<font color=#EBAC25>AWS Outposts</font>
 
 - Deploy Outposts racks in an on-premises datacenter to extend some AWS services and for easier migration
 
-<font color=#f1ef63>AWS Wavelength</font>
+<font color=#EBAC25>AWS Wavelength</font>
 
 - Brings AWS services to the edge of the 5G networks
 - Ultra-low latency applications
 
-<font color=#f1ef63>AWS Local Zones</font>
+<font color=#EBAC25>AWS Local Zones</font>
 
 - Bring AWS resources (compute, database, storage, ...) closer to your users
 - Good for latency-sensitive applications

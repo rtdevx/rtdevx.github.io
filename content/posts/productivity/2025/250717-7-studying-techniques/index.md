@@ -15,9 +15,9 @@ categories: Productivity
 ---
 ## 1. Pomodoro ritual
 
-**25** minutes <font color=#f43f5e>focus</font>, **5** minutes <font color=#10b981>break.</font>
+**25** minutes <font color=#EB4925>focus</font>, **5** minutes <font color=#C7EB25>break.</font>
 
-- Close your eyes, take a breath and make a focus statement (what to accomplish in those 25 minutes). <font color=#10b981>Declare out loud</font> OR <font color=#10b981>write down</font>.
+- Close your eyes, take a breath and make a focus statement (what to accomplish in those 25 minutes). <font color=#C7EB25>Declare out loud</font> OR <font color=#C7EB25>write down</font>.
 - filters distractions
 - sharpens attention
 - mentally commits completion
@@ -30,7 +30,7 @@ categories: Productivity
 	- Drawing along with saying / reading / writing words
 ## 3. Rewrite notes
 
-<font color=#10b981>Rewriting notes stimulates active recall.</font>
+<font color=#C7EB25>Rewriting notes stimulates active recall.</font>
 
 - The basic definition
 - Reworded version
@@ -47,13 +47,13 @@ Approach learning with humility and curiosity, not pressure and ego (i.e. grades
 
 ## 5. Chain learning
 
-<font color=#10b981>Study like everything is connected.</font> Because in real world ...it is. 
+<font color=#C7EB25>Study like everything is connected.</font> Because in real world ...it is. 
 
 _Read more:_ [Zettelkasten]({{< ref "tags/zettelkasten/" >}}) {{< icon "triangle-exclamation" >}}
 
 ## 6. Study like a Sensei that is teaching others
 
-<font color=#10b981>Mastery is shown in clarity</font>, when you can explain the subject. When you teach something, you truly learn it. <font color=#f43f5e>Explain it like you were explaining it to a 10 year old.</font>
+<font color=#C7EB25>Mastery is shown in clarity</font>, when you can explain the subject. When you teach something, you truly learn it. <font color=#EB4925>Explain it like you were explaining it to a 10 year old.</font>
 
 This approach was first avowed by Richard Feynman, a Nobel winning physicist.
 
@@ -64,7 +64,7 @@ _Richard Feynman_<br />
 
 ## 7. The forbidden night school
 
-From **7pm to 9pm** - <font color=#f43f5e>no phones, no distractions, no background noise.</font> Collaborate on reviewing, revising if and where possible. Mostly for students.
+From **7pm to 9pm** - <font color=#EB4925>no phones, no distractions, no background noise.</font> Collaborate on reviewing, revising if and where possible. Mostly for students.
 
 ## More Videos
 

@@ -603,10 +603,10 @@
       <div class="min-h-0 min-w-0 max-w-prose grow">
         <h2 id="iam--identity-and-access-management" class="relative group"><strong>IAM</strong> = Identity and Access management <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam--identity-and-access-management" aria-label="Anchor">#</a></span></h2>
 <p><strong>IAM</strong> is AWS Global service.</p>
-<p><font color=#f43f5e>Groups only contain users, NOT other groups.</font></p>
+<p><font color=#EB4925>Groups only contain users, NOT other groups.</font></p>
 <p>Users don&rsquo;t have to belong to a group and user can belong to multiple groups.</p>
-<p>Users or Groups can have assigned JSON documents called <font color=#f43f5e>policies</font>. Those <font color=#f43f5e>policies define permissions</font> for the users / groups.</p>
-<p>In AWS you apply the <font color=#f43f5e>least privilege principle:</font> don&rsquo;t give user more permission than they need.</p>
+<p>Users or Groups can have assigned JSON documents called <font color=#EB4925>policies</font>. Those <font color=#EB4925>policies define permissions</font> for the users / groups.</p>
+<p>In AWS you apply the <font color=#EB4925>least privilege principle:</font> don&rsquo;t give user more permission than they need.</p>
 <hr>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/bO25vbkoJlA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
@@ -670,10 +670,10 @@
 <ul>
 <li><strong>Version:</strong> policy version</li>
 <li><strong>ID</strong> (Optional): identifier</li>
-<li><strong>Statement:</strong> one or more statements (<font color=#f43f5e>required</font>)
+<li><strong>Statement:</strong> one or more statements (<font color=#EB4925>required</font>)
 <ul>
 <li><strong>SID:</strong> identifier (optional)</li>
-<li><strong>Effect:</strong> <font color=#10b981>Allow</font> or <font color=#f43f5e>Deny</font></li>
+<li><strong>Effect:</strong> <font color=#C7EB25>Allow</font> or <font color=#EB4925>Deny</font></li>
 <li><strong>Principal:</strong> account / user / role to which policy is applied to</li>
 <li><strong>Action:</strong> list of allowed or denied actions</li>
 <li><strong>Resource:</strong> list of resources to which the action is applied to</li>
@@ -696,11 +696,11 @@
 </p>
 <h2 id="accessing-aws" class="relative group">Accessing AWS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#accessing-aws" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><strong>AWS Management Console</strong> - protected by <font color=#f1ef63>password + MFA</font></li>
-<li><strong>AWS Command Line</strong> (CLI) - protected by <font color=#f1ef63>access keys</font></li>
-<li><strong>AWS Software Development Kit</strong> (SDK) - for code - protected by <font color=#f1ef63>access keys</font></li>
+<li><strong>AWS Management Console</strong> - protected by <font color=#EBAC25>password + MFA</font></li>
+<li><strong>AWS Command Line</strong> (CLI) - protected by <font color=#EBAC25>access keys</font></li>
+<li><strong>AWS Software Development Kit</strong> (SDK) - for code - protected by <font color=#EBAC25>access keys</font></li>
 </ul>
-<h5 id="access-keys-can-be-generated-through-aws-console-users-manage-their-own-access-keys" class="relative group"><font color=#10b981>Access Keys can be generated through AWS Console. Users manage their own access keys.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#access-keys-can-be-generated-through-aws-console-users-manage-their-own-access-keys" aria-label="Anchor">#</a></span></h5>
+<h5 id="access-keys-can-be-generated-through-aws-console-users-manage-their-own-access-keys" class="relative group"><font color=#C7EB25>Access Keys can be generated through AWS Console. Users manage their own access keys.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#access-keys-can-be-generated-through-aws-console-users-manage-their-own-access-keys" aria-label="Anchor">#</a></span></h5>
 <p><strong>Access Key ID</strong> = username<br />
 <strong>Secret Access Key</strong> = password</p>
 <p>
@@ -717,7 +717,7 @@
 </p>
 <h3 id="creating-access-key" class="relative group">Creating Access Key <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-access-key" aria-label="Anchor">#</a></span></h3>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Users &gt; Username &gt; Security Credentials &gt; Access Keys &gt; Create Access Key &gt; Command Line Interface (CLI)
-</code></pre><h3 id="configuring-aws-cli-with-the-new-access-key" class="relative group"><font color=#f1ef63>Configuring AWS CLI with the new access key</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configuring-aws-cli-with-the-new-access-key" aria-label="Anchor">#</a></span></h3>
+</code></pre><h3 id="configuring-aws-cli-with-the-new-access-key" class="relative group"><font color=#EBAC25>Configuring AWS CLI with the new access key</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#configuring-aws-cli-with-the-new-access-key" aria-label="Anchor">#</a></span></h3>
 <pre tabindex="0"><code class="language-CMD" data-lang="CMD"># Configure AWS CLI
 aws configure
 
@@ -764,7 +764,7 @@ aws iam list-users
 <figure><img src="./assets/AWS_IAM_Role_Add_Permissions.png" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 </p>
-<h2 id="iam-security-tools" class="relative group"><font color=#f1ef63>IAM Security Tools</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-security-tools" aria-label="Anchor">#</a></span></h2>
+<h2 id="iam-security-tools" class="relative group"><font color=#EBAC25>IAM Security Tools</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-security-tools" aria-label="Anchor">#</a></span></h2>
 <h3 id="iam-credentials-report-account-level" class="relative group">IAM Credentials Report (account-level) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-credentials-report-account-level" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Report that lists all users and status of their credentials</li>
@@ -775,8 +775,8 @@ aws iam list-users
 <li>Access Advisor shows the service permissions granted to a user and when those services were last accessed</li>
 </ul>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">IAM &gt; Users &gt; Username &gt; Last Accessed
-</code></pre><p><font color=#f43f5e>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the &ldquo;Least Privilege Principle&rdquo;.</font></p>
-<h2 id="iam-best-practices" class="relative group"><font color=#f1ef63>IAM Best Practices</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-best-practices" aria-label="Anchor">#</a></span></h2>
+</code></pre><p><font color=#EB4925>IAM Access Advisor (Last Accessed) can be used to determine what user is accessing and to adjust his / her role in line with the &ldquo;Least Privilege Principle&rdquo;.</font></p>
+<h2 id="iam-best-practices" class="relative group"><font color=#EBAC25>IAM Best Practices</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#iam-best-practices" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>Don&rsquo;t use root account</li>
 <li>One physical user = One AWS user</li>
@@ -786,7 +786,7 @@ aws iam list-users
 <li><strong>Create and use Roles</strong> for giving permissions to AWS services</li>
 <li>Use Access Keys for Programmatic access (CLI / SDK)</li>
 <li>Audit permissions using <strong>IAM Credentials Report</strong> and <strong>IAM Access Advisor</strong></li>
-<li><font color=#f43f5e>Never share IAM users &amp; Access Keys</font></li>
+<li><font color=#EB4925>Never share IAM users &amp; Access Keys</font></li>
 </ul>
 <h2 id="shared-responsibility-model-for-iam" class="relative group">Shared Responsibility Model for IAM <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#shared-responsibility-model-for-iam" aria-label="Anchor">#</a></span></h2>
 <table>

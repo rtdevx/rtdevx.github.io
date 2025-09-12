@@ -14,13 +14,13 @@ categories: AWS
 
 **CloudFormation** is a _declarative way of outlining an AWS infrastructure_.
 
-<font color=#f1ef63>Example:</font>
+<font color=#EBAC25>Example:</font>
 - [Security Group]({{< ref "5-security-groups" >}})
 - Two [EC2]({{< ref "4-ec2" >}}) instances using this Security Group
 - [S3]({{< ref "11-s3" >}}) Bucket
 - [Load Balancer]({{< ref "9-elastic-load-balancing" >}}) (ELB) in front
 
-Then **CloudFormation** creates those resources <font color=#10b981>in the right order</font> and with the exact configuration that was specified (declared).
+Then **CloudFormation** creates those resources <font color=#C7EB25>in the right order</font> and with the exact configuration that was specified (declared).
 
 ---
 
@@ -35,8 +35,8 @@ _Introduction to AWS CloudFormation_
 	- Changes to the infrastructure are reviewed through code
 - **Cost**
 	- Each resource within the stack is tagged with an identifier so you can easily see how much a stack costs
-	- <font color=#f1ef63>Cost can be estimated by using CloudFormation template</font>
-	- <font color=#f1ef63>Cost savings strategy:</font> in Dev, automation can delete resources at 5pm and recreate at 8am automatically
+	- <font color=#EBAC25>Cost can be estimated by using CloudFormation template</font>
+	- <font color=#EBAC25>Cost savings strategy:</font> in Dev, automation can delete resources at 5pm and recreate at 8am automatically
 - **Productivity**
 	- Ability to destroy and re-create and infrastructure in the cloud on the fly
 	- _Declarative programming_ (no need to figure out ordering and orchestration)
@@ -45,9 +45,9 @@ _Introduction to AWS CloudFormation_
 	- Use extensive documentation
 - **Supports (almost) all AWS resources**
 	- "_Custom resources_" can be used for resources that are not supported
-### CloudFormation + <font color=#f1ef63>Infrastructure Composer</font>
+### CloudFormation + <font color=#EBAC25>Infrastructure Composer</font>
 
-<font color=#f1ef63>Example:</font> Wordpress CloudFormation Stack
+<font color=#EBAC25>Example:</font> Wordpress CloudFormation Stack
 
 - We can see all the resources
 - We can see the relations between components
@@ -68,14 +68,14 @@ _More:_ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/infrastru
 
 - Define your cloud infrastructure using a familiar language:
 	- JavaScript/TypeScript, Python, Java, .NET
-	- For that reason infrastructure and application can be deployed "together" - <font color=#10b981>they share the runtime</font>
+	- For that reason infrastructure and application can be deployed "together" - <font color=#C7EB25>they share the runtime</font>
 - The infrastructure code is converted into a **CloudFormation template** (JSON / YAML)
 ## Beanstalk
 
-<font color=#f1ef63>Elastic Beanstalk is a developer-centric view of deploying an application on AWS.</font>
+<font color=#EBAC25>Elastic Beanstalk is a developer-centric view of deploying an application on AWS.</font>
 
 It uses all the components mentioned earlier (EC2, ASG, ELB, RDS, etc...)
-##### <font color=#f1ef63>Beanstalk = Platform as a Service (PaaS)</font>
+##### <font color=#EBAC25>Beanstalk = Platform as a Service (PaaS)</font>
 
 ![](./assets/AWS_3tier_Web_App1.png)
 
@@ -90,7 +90,7 @@ It uses all the components mentioned earlier (EC2, ASG, ELB, RDS, etc...)
 	- Single instance deployment: for DEV environments
 	- [LB]({{< ref "9-elastic-load-balancing" >}}) + [ASG]({{< ref "10-auto-scaling-groups" >}}): for prod or pre-prod web apps
 	- [ASG]({{< ref "10-auto-scaling-groups" >}}) only: for non-web apps in production (workers, etc...)
-##### <font color=#f1ef63>Beanstalk supports many platforms:</font>
+##### <font color=#EBAC25>Beanstalk supports many platforms:</font>
 
 - Go
 - Java SE
@@ -105,14 +105,14 @@ It uses all the components mentioned earlier (EC2, ASG, ELB, RDS, etc...)
 - Multi-Container Docker
 - Preconfigured Docker
 
-<font color=#f1ef63>Beanstalk Health Agent pushes metrics to</font> [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}}), <font color=#f1ef63>checks for app health and publishes health events.</font>
+<font color=#EBAC25>Beanstalk Health Agent pushes metrics to</font> [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}}), <font color=#EBAC25>checks for app health and publishes health events.</font>
 ## AWS CodeDeploy
 
 AWS CodeDeploy is a deployment service that automates application deployments to:
 
-- <font color=#10b981>EC2 instances</font> as well as <font color=#10b981>on-premise</font> instances - it is a <font color=#f43f5e>Hybrid</font> service
+- <font color=#C7EB25>EC2 instances</font> as well as <font color=#C7EB25>on-premise</font> instances - it is a <font color=#EB4925>Hybrid</font> service
 - serverless [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) functions
-- Amazon [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) (<font color=#f43f5e>E</font>lastic <font color=#f43f5e>C</font>ontainer <font color=#f43f5e>S</font>ervices)
+- Amazon [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) (<font color=#EB4925>E</font>lastic <font color=#EB4925>C</font>ontainer <font color=#EB4925>S</font>ervices)
 
 Servers / Instances must be provisioned and configured ahead of time with the CodeDeploy Agent.
 ## AWS CodeBuild
@@ -138,19 +138,19 @@ Traditionally you need to setup your own artifact management system.
 Maven, Gradle, npm, yarn, twine, pip, NuGet.
 
 **Developers and CodeBuild can retrieve dependencies straight from CodeArtifact.**
-## <font color=#f1ef63>Systems Manager (SSM)</font>
+## <font color=#EBAC25>Systems Manager (SSM)</font>
 
 SSM helps managing EC2 and On-Premises systems at scale.
 
 ![](./assets/AWS_SSM2.png)
 
-- Another <font color=#10b981>Hybrid</font> AWS service
+- Another <font color=#C7EB25>Hybrid</font> AWS service
 - Get operational insights about the state of the infrastructure
 - Suite of 10+ products
-- <font color=#f1ef63>Features:</font>
-	- <font color=#f43f5e>Patching automation</font> for enhanced compliance
-	- <font color=#f43f5e>Run commands across entire fleet of servers</font>
-	- <font color=#f43f5e>Store parameter configuration</font> with the SSM Parameter Store
+- <font color=#EBAC25>Features:</font>
+	- <font color=#EB4925>Patching automation</font> for enhanced compliance
+	- <font color=#EB4925>Run commands across entire fleet of servers</font>
+	- <font color=#EB4925>Store parameter configuration</font> with the SSM Parameter Store
 - Works with Linux, Windows, MacOS and Raspberry Pi OS (Raspbian)
 	- Allows starting SSH session on [EC2]({{< ref "4-ec2" >}}) and On-Premise servers
 	- No SSH access, bastion hosts or SSH keys needed
@@ -160,7 +160,7 @@ SSM helps managing EC2 and On-Premises systems at scale.
 ![](./assets/AWS_SSM1.png)
 ### Systems Manager Parameter Store
 
-- <font color=#10b981>Secure storage for configuration and secrets</font>
+- <font color=#C7EB25>Secure storage for configuration and secrets</font>
 - API Keys, passwords, configurations
 - Serverless, scalable, durable, easy SDK
 - Control access permissions with IAM policies
@@ -175,8 +175,8 @@ _More:_ https://docs.aws.amazon.com/systems-manager/
 - AWS Systems Manager (SSM): https://docs.aws.amazon.com/systems-manager/
 ## >> Highlights <<
 
-- <font color=#f1ef63>Infrastructure Composer</font>
-- <font color=#f1ef63>Systems Manager (SSM)</font>
+- <font color=#EBAC25>Infrastructure Composer</font>
+- <font color=#EBAC25>Systems Manager (SSM)</font>
 ## >> Table of contents (CLF-C02) <<
 
 |                                                                         |                                                                                     |                                                                                       |

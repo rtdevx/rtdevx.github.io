@@ -10,7 +10,7 @@ categories: AWS
 ---
 ## What is Amazon S3
 
-**Amazon S3** is <font color=#f43f5e>one of the main building blocks of AWS.</font>
+**Amazon S3** is <font color=#EB4925>one of the main building blocks of AWS.</font>
 
 It is advertised as "**infinitely scaling**" [storage]({{< ref "6-storage" >}}).
 
@@ -37,9 +37,9 @@ _AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS
 ## Amazon S3 - Buckets
 
 - Amazon S3 allows people to store objects (files) in "_buckets_" (folders)
-- Buckets must have a <font color=#f43f5e>globally unique name</font> (across **all regions** and **all accounts**)
-- Buckets are defined at the <font color=#f43f5e>region level</font>
-- <font color=#f43f5e>S3 looks like a global service but buckets are created in a region</font>
+- Buckets must have a <font color=#EB4925>globally unique name</font> (across **all regions** and **all accounts**)
+- Buckets are defined at the <font color=#EB4925>region level</font>
+- <font color=#EB4925>S3 looks like a global service but buckets are created in a region</font>
 ### S3 Bucket naming convention
 
 - No uppercase
@@ -52,17 +52,17 @@ _AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS
 ## Amazon S3 - Objects
 
 - Objects (files) have a Key
-- The <font color=#10b981>key</font> is the FULL path:
+- The <font color=#C7EB25>key</font> is the FULL path:
 	- s3://my-bucket/my_file.txt
 	- s3://my-bucket/my_folder/another_folder/my_file.txt
-- The <font color=#10b981>key</font> is composed of <font color=#f1ef63>prefix</font> + <font color=orange>object name</font>
-	- s3://my-bucket/<font color=#f1ef63>my_folder/another_folder/</font><font color=orange>my_file.txt</font>
+- The <font color=#C7EB25>key</font> is composed of <font color=#EBAC25>prefix</font> + <font color=orange>object name</font>
+	- s3://my-bucket/<font color=#EBAC25>my_folder/another_folder/</font><font color=orange>my_file.txt</font>
 - There is no concept of "_directories_" within S3 buckets (although UI will suggest there is)
-	- <font color=#f43f5e>Just keys with very long names that contain slashes ("/")</font>
+	- <font color=#EB4925>Just keys with very long names that contain slashes ("/")</font>
 
 - Object values are the content of the body
-	- Max Object size is <font color=#f43f5e>5TB</font>
-	- If uploading more than <font color=#f43f5e>5GB</font>, must be "<font color=#f43f5e>multi-part upload</font>"
+	- Max Object size is <font color=#EB4925>5TB</font>
+	- If uploading more than <font color=#EB4925>5GB</font>, must be "<font color=#EB4925>multi-part upload</font>"
 	- Metadata (list of text key / value pairs - system or user metadata)
 	- Tags (Unicode key / value pair - up to 10) - used for security / lifecycle
 ## Amazon S3 - Security
@@ -80,7 +80,7 @@ _AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS
 
 - JSON based policies
 	- Resources: buckets and objects
-	- Effect: <font color=#10b981>Allow</font> / <font color=#f43f5e>Deny</font>
+	- Effect: <font color=#C7EB25>Allow</font> / <font color=#EB4925>Deny</font>
 	- Actions: Set of API to Allow or Deny
 	- Principal: The account or user to apply the policy to
 
@@ -91,7 +91,7 @@ _AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS
 
 ![](./assets/AWS_S3_bucket_policy.png)
 
-### <font color=#f43f5e>Examples</font>
+### <font color=#EB4925>Examples</font>
 
 - **Public access** - Bucket Policy
 - **User access to S3** - IAM permissions
@@ -100,7 +100,7 @@ _AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS
 
 Bucket settings for Block Public Access
 
-- <font color=#f43f5e>Those settings were created to prevent company data leaks</font>
+- <font color=#EB4925>Those settings were created to prevent company data leaks</font>
 - If you know your bucket should never be public, leave them
 ### Applying Bucket Policy
 
@@ -132,7 +132,7 @@ Object(s) in that bucket should now be available from the internet via URL
 ![](./assets/AWS_S3_Object_URL.png)
 ## S3 - Static Website Hosting
 
-<font color=#f43f5e>Bucket must be made public (S3 Bucket policy, see above) in order for the static website to work. If it isn't then 403 Forbidden error appears.</font>
+<font color=#EB4925>Bucket must be made public (S3 Bucket policy, see above) in order for the static website to work. If it isn't then 403 Forbidden error appears.</font>
 ### Enable static website hosting
 
 ```AWSConsole
@@ -141,18 +141,18 @@ S3 > General purpose buckets (or other) > your-bucket > Properties > Static webs
 
 ![](./assets/AWS_S3_Enable_Static_Website.png)
 
-##### <font color=#f1ef63>Voila!</font>
+##### <font color=#EBAC25>Voila!</font>
 
 ![](./assets/AWS_S3_Static_Website_Hosting.png)
 
-<font color=#f43f5e>Although no HTTPS enabled!</font> - check "[AWS Certificate Manager (ACM)]({{< ref "19-security-and-compliance/#aws-certificate-manager-acm" >}})" section in [Security and Compliance]({{< ref "19-security-and-compliance" >}}) on how to use ACM for SSL / TLS certificate management.
+<font color=#EB4925>Although no HTTPS enabled!</font> - check "[AWS Certificate Manager (ACM)]({{< ref "19-security-and-compliance/#aws-certificate-manager-acm" >}})" section in [Security and Compliance]({{< ref "19-security-and-compliance" >}}) on how to use ACM for SSL / TLS certificate management.
 ## Amazon S3 - Versioning
 
 - Versioning can be enabled at the bucket level
 - Versioning buckets:
 	- Protect against unintended deletes (ability to restore the version)
 	- Easy roll back to previous version
-- <font color=#f1ef63>Notes:</font>
+- <font color=#EBAC25>Notes:</font>
 	- Any file that is not versioned prior to enabling versioning will have version "_null_"
 	- Suspending versioning does not delete the previous versions
 ### Enable S3 Versioning
@@ -163,23 +163,23 @@ S3 > General purpose buckets (or other) > your-bucket > Properties > Bucket Vers
 
 ![](./assets/AWS_S3_Version_Enabled.png)
 
-In order to <font color=#10b981>restore the file</font>, toggle "_Show Versions_" switch and <font color=#f43f5e>DELETE</font> unwanted object (destructive, will permanently delete).
-##### <font color=#f43f5e>If "show versions" toggle is off, object can be safely deleted. It will NOT be permanently deleted, only "Delete marker" will be applied. Object can be easily restored when "Show versions" is ON.</font>
+In order to <font color=#C7EB25>restore the file</font>, toggle "_Show Versions_" switch and <font color=#EB4925>DELETE</font> unwanted object (destructive, will permanently delete).
+##### <font color=#EB4925>If "show versions" toggle is off, object can be safely deleted. It will NOT be permanently deleted, only "Delete marker" will be applied. Object can be easily restored when "Show versions" is ON.</font>
 ## S3 - Replication
 
 - **CRR** - Cross Region Replication
 - **SRR** - Same Region Replication
 
-<font color=#f43f5e>For S3 replication to work,</font> [versioning]({{< ref "11-s3/#amazon-s3---versioning" >}})  <font color=#f43f5e>must be enabled</font> on both - source and destination buckets. Buckets can be different AWS Accounts.
+<font color=#EB4925>For S3 replication to work,</font> [versioning]({{< ref "11-s3/#amazon-s3---versioning" >}})  <font color=#EB4925>must be enabled</font> on both - source and destination buckets. Buckets can be different AWS Accounts.
 
 Copying is asynchronous, proper IAM permissions must be applied to S3.
-##### <font color=#f1ef63>Use Cases:</font>
+##### <font color=#EBAC25>Use Cases:</font>
 
 - **CRR** - compliance, lower latency access, replication across accounts
 - **SRR** - log aggregation, live replication between production and test accounts
 ### Enabling S3 Replication
 
-1. Create 2 new buckets and <font color=#f43f5e>enable</font> [versioning]({{< ref "11-s3/#amazon-s3---versioning" >}}) <font color=#f43f5e>in both</font>
+1. Create 2 new buckets and <font color=#EB4925>enable</font> [versioning]({{< ref "11-s3/#amazon-s3---versioning" >}}) <font color=#EB4925>in both</font>
 
 	- rk-test-replica-london-origin
 	- rk-test-replica-irl-dest	
@@ -192,27 +192,27 @@ Copying is asynchronous, proper IAM permissions must be applied to S3.
 	- Select any other options (encryption, destination storage class, delete marker replication and so on)
 ## S3 Storage Classes
 
-### <font color=#f1ef63>Standard</font>
+### <font color=#EBAC25>Standard</font>
 
 - Amazon S3 Standard - General Purpose
 	- 99.99% Availability
 	- Used for frequently accessed data
 	- Low latency and high throughput
 	- Sustain 2 concurrent facility failures
-	- <font color=#f1ef63>Use cases:</font> Big Data analytics, mobile & gaming applications, content distribution
-### <font color=#f1ef63>Infrequent access</font>
+	- <font color=#EBAC25>Use cases:</font> Big Data analytics, mobile & gaming applications, content distribution
+### <font color=#EBAC25>Infrequent access</font>
 
-For data that is less frequently accessed but requires rapid access when needed. Lower cost than <font color=#f1ef63>S3 Standard</font>.
+For data that is less frequently accessed but requires rapid access when needed. Lower cost than <font color=#EBAC25>S3 Standard</font>.
 
 - Amazon S3 Standard-Infrequent Access (IA)
 	- 99.9% Availability
-	- <font color=#f1ef63>Use cases:</font> Disaster Recovery, backups
+	- <font color=#EBAC25>Use cases:</font> Disaster Recovery, backups
 - Amazon S3 One Zone-Infrequent Access
 	- For data that is less frequently accessed but requires rapid access when needed
 	- High Durability (99.999999999% Availability in a single AZ)
 	- 99.5% Availability
-	- <font color=#f1ef63>Use cases:</font> Secondary backup copies of on-prem data, data can be recreated
-### <font color=#f1ef63>Glacier</font>
+	- <font color=#EBAC25>Use cases:</font> Secondary backup copies of on-prem data, data can be recreated
+### <font color=#EBAC25>Glacier</font>
 
 **Low-cost** object storage for archiving / backup.
 
@@ -231,7 +231,7 @@ For data that is less frequently accessed but requires rapid access when needed.
 
 Moves objects automatically between Storage Tiers based on usage for a small monthly monitoring and auto-tiering fee.
 
-<font color=#10b981>There is no retrieval charges in S3 Intelligent Tiering.</font>
+<font color=#C7EB25>There is no retrieval charges in S3 Intelligent Tiering.</font>
 
 - **Frequent Access tier** (automatic): default tier
 - **Infrequent Access tier** (automatic): objects not accessed for 30 days
@@ -274,7 +274,7 @@ _More:_
 
 - Highly-secure, portable devices to collect and process data at the edge and / or migrate data in and out of AWS
 - Helps to migrate up to Petabytes of data
-##### <font color=#f43f5e>It is recommended to use AWS Snowball devices if it would take more than a week to transfer over the network.</font>
+##### <font color=#EB4925>It is recommended to use AWS Snowball devices if it would take more than a week to transfer over the network.</font>
 
 ![](./assets/AWS_S3_Snowball1.png)
 
@@ -292,11 +292,11 @@ S3 File Gateway is used for on-premises data intensive applications that need fi
 _More:_ https://aws.amazon.com/storagegateway/file/s3/
 ### Types of Storage Gateway
 
-- <font color=#f1ef63>File Gateway</font>
+- <font color=#EBAC25>File Gateway</font>
 	- [S3 File Gateway]({{< ref "11-s3/#aws-storage-gateway" >}}) presents Server Message Block (**SMB**) or Network File System (**NFS**) based access to data in Amazon [S3]({{< ref "11-s3" >}})
-- <font color=#f1ef63>Volume Gateway</font>
+- <font color=#EBAC25>Volume Gateway</font>
 	- **iSCSI block storage** volumes to your on-premises applications that you can store in Amazon [S3]({{< ref "11-s3" >}}) or migrate to [EBS]({{< ref "6-storage/#ebs-volume" >}})
-- <font color=#f1ef63>Tape Gateway</font>
+- <font color=#EBAC25>Tape Gateway</font>
 	- virtual tapes to leading to backup application that can be stored in [S3]({{< ref "11-s3" >}}) or [S3 Glacier]({{< ref "11-s3/#glacier" >}})
 
 _More about Storage Gateway types:_ https://aws.amazon.com/storagegateway/

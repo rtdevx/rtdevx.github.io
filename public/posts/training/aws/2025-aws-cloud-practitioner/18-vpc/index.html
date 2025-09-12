@@ -647,12 +647,12 @@
 <p>Elastic IP - allows to attach a fixed public IPv4 address to an EC2 instance</p>
 </li>
 <li>
-<p><font color=#f1ef63>Note:</font> Every public IPv4 address on AWS will be charged <strong>$0.005 per hour</strong> (including Elastic IP)</p>
+<p><font color=#EBAC25>Note:</font> Every public IPv4 address on AWS will be charged <strong>$0.005 per hour</strong> (including Elastic IP)</p>
 </li>
 <li>
 <p>IPv6 - Number of addresses: 3.4 x 10^38</p>
 <ul>
-<li>Every IP address is public in AWS (no private range) (<font color=#f43f5e>??</font>)</li>
+<li>Every IP address is public in AWS (no private range) (<font color=#EB4925>??</font>)</li>
 <li>Free</li>
 </ul>
 </li>
@@ -661,9 +661,9 @@
 <p>VPC - Virtual Private Cloud - private network to deploy resources (regional resource)</p>
 <ul>
 <li>Subnets allow to partition the network inside of VPC (Availability Zone Resource)</li>
-<li>A <font color=#10b981>public subnet</font> is a subnet that is <font color=#10b981>accessible</font> from the internet</li>
-<li>A <font color=#f43f5e>private subnet</font> is a subnet that is <font color=#f43f5e>not accessible</font> from the internet</li>
-<li><font color=#10b981>To define access to the internet and between subnets, we use Route Tables</font></li>
+<li>A <font color=#C7EB25>public subnet</font> is a subnet that is <font color=#C7EB25>accessible</font> from the internet</li>
+<li>A <font color=#EB4925>private subnet</font> is a subnet that is <font color=#EB4925>not accessible</font> from the internet</li>
+<li><font color=#C7EB25>To define access to the internet and between subnets, we use Route Tables</font></li>
 </ul>
 <h2 id="internet-gateway--nat-gateways" class="relative group">Internet Gateway &amp; NAT Gateways <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#internet-gateway--nat-gateways" aria-label="Anchor">#</a></span></h2>
 <ul>
@@ -674,7 +674,7 @@
 </ul>
 </li>
 <li>
-<p><strong>NAT Gateways</strong> (<font color=#f43f5e>AWS Managed</font>) &amp; <strong>NAT Instances</strong> (<font color=#f43f5e>self managed</font>) allow instances in Private Subnets to access the internet while remaining private</p>
+<p><strong>NAT Gateways</strong> (<font color=#EB4925>AWS Managed</font>) &amp; <strong>NAT Instances</strong> (<font color=#EB4925>self managed</font>) allow instances in Private Subnets to access the internet while remaining private</p>
 </li>
 </ul>
 <p>
@@ -714,19 +714,19 @@ VPC &gt; Virtual Private Cloud &gt; Subnets &gt; Create subnet
 </code></pre><h2 id="security-groups--network-acl" class="relative group">Security Groups &amp; Network ACL <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#security-groups--network-acl" aria-label="Anchor">#</a></span></h2>
 <h3 id="security-groups" class="relative group">Security Groups <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#security-groups" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li><font color=#f43f5e>A firewall that controls traffic to and from an EC2 Instance</font></li>
-<li>Can only have <font color=#f43f5e>allow rules</font></li>
-<li>Rules include <font color=#f43f5e>IP addresses and other security groups</font></li>
+<li><font color=#EB4925>A firewall that controls traffic to and from an EC2 Instance</font></li>
+<li>Can only have <font color=#EB4925>allow rules</font></li>
+<li>Rules include <font color=#EB4925>IP addresses and other security groups</font></li>
 </ul>
 <h3 id="nacl-network-acl" class="relative group">NACL (Network ACL) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#nacl-network-acl" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li><font color=#f43f5e>A firewall that controls traffic to and from a SUBNET</font></li>
-<li>Can have <font color=#10b981>allow</font> and <font color=#f43f5e>deny</font> rules</li>
-<li>Are attached at the <font color=#f43f5e>Subnet level</font></li>
+<li><font color=#EB4925>A firewall that controls traffic to and from a SUBNET</font></li>
+<li>Can have <font color=#C7EB25>allow</font> and <font color=#EB4925>deny</font> rules</li>
+<li>Are attached at the <font color=#EB4925>Subnet level</font></li>
 <li>Rules only include IP addresses</li>
 </ul>
 <p><em>More:</em> <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#aws-network-firewall">AWS Network Firewall</a>
- that <font color=#f43f5e>protects entire VPC</font>.</p>
+ that <font color=#EB4925>protects entire VPC</font>.</p>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">VPC &gt; Security &gt; Security Groups
 
 VPC &gt; Security &gt; Network ACLs
@@ -779,10 +779,10 @@ VPC &gt; Security &gt; Network ACLs
 
 <em>Default ACLs associated with the Default Subnets allow all traffic IN and OUT.</em></p>
 <h2 id="vpc-flow-logs" class="relative group">VPC Flow Logs <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#vpc-flow-logs" aria-label="Anchor">#</a></span></h2>
-<h3 id="helps-to-monitor-and-troubleshoot-connectivity-issues" class="relative group"><font color=#f43f5e>Helps to monitor and troubleshoot connectivity issues</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#helps-to-monitor-and-troubleshoot-connectivity-issues" aria-label="Anchor">#</a></span></h3>
+<h3 id="helps-to-monitor-and-troubleshoot-connectivity-issues" class="relative group"><font color=#EB4925>Helps to monitor and troubleshoot connectivity issues</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#helps-to-monitor-and-troubleshoot-connectivity-issues" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>
-<p><font color=#f43f5e>Capture information about IP traffic going into your interfaces</font></p>
+<p><font color=#EB4925>Capture information about IP traffic going into your interfaces</font></p>
 <ul>
 <li>VPC Flow Logs</li>
 <li>Subnet Flow Logs</li>
@@ -790,7 +790,7 @@ VPC &gt; Security &gt; Network ACLs
 </ul>
 </li>
 <li>
-<p><font color=#f43f5e>Helps to monitor and troubleshoot connectivity issues</font></p>
+<p><font color=#EB4925>Helps to monitor and troubleshoot connectivity issues</font></p>
 <ul>
 <li>Subnets to internet</li>
 <li>Subnets to subnets</li>
@@ -798,7 +798,7 @@ VPC &gt; Security &gt; Network ACLs
 </ul>
 </li>
 <li>
-<p><font color=#f43f5e>Captures network information from AWS managed interfaces too:</font></p>
+<p><font color=#EB4925>Captures network information from AWS managed interfaces too:</font></p>
 <ul>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/9-elastic-load-balancing/">Elastic Load Balancers</a>
 </li>
@@ -812,7 +812,7 @@ VPC &gt; Security &gt; Network ACLs
 </ul>
 </li>
 </ul>
-<h5 id="vpc-flow-logs-must-first-be-created-for-each-vpc" class="relative group"><font color=#f43f5e>VPC Flow Logs must first be created for each VPC</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#vpc-flow-logs-must-first-be-created-for-each-vpc" aria-label="Anchor">#</a></span></h5>
+<h5 id="vpc-flow-logs-must-first-be-created-for-each-vpc" class="relative group"><font color=#EB4925>VPC Flow Logs must first be created for each VPC</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#vpc-flow-logs-must-first-be-created-for-each-vpc" aria-label="Anchor">#</a></span></h5>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole">VPC &gt; Virtual Private Cloud &gt; Your VPCs &gt; Flow Logs &gt; Create flow log
 </code></pre><h2 id="vpc-peering" class="relative group">VPC Peering <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#vpc-peering" aria-label="Anchor">#</a></span></h2>
 <p>Connect to VPC privately using AWS Network and make them behave as if they were in the same network.</p>
@@ -837,10 +837,10 @@ VPC &gt; Security &gt; Network ACLs
 <p>Endpoints allow connecting to AWS Services using a private network instead of the public www network.</p>
 <p>This gives enhanced security and lower latency to access AWS services.</p>
 <ul>
-<li>VPC <font color=#f43f5e>Endpoint Gateway</font> - for Amazon <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
+<li>VPC <font color=#EB4925>Endpoint Gateway</font> - for Amazon <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
  and <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/12-databases/#dynamodb">DynamoDB</a>
  only</li>
-<li>VPC <font color=#f43f5e>Endpoint Interface</font> - most services (including S3 and DynamoDB)</li>
+<li>VPC <font color=#EB4925>Endpoint Interface</font> - most services (including S3 and DynamoDB)</li>
 </ul>
 <h2 id="private-link" class="relative group">Private Link <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#private-link" aria-label="Anchor">#</a></span></h2>
 <p>Most secure and scalable way to expose a service to 1000s of VPCs. Using VPC Peering (see above) is not practical because of the management overhead.</p>
@@ -866,7 +866,7 @@ VPC &gt; Security &gt; Network ACLs
 <ul>
 <li>Connect to an on-premises VPN to AWS</li>
 <li>The connection is automatically encrypted</li>
-<li>Goes over the <font color=#f43f5e>public internet</font> (cheaper and slower than Direct Connect)</li>
+<li>Goes over the <font color=#EB4925>public internet</font> (cheaper and slower than Direct Connect)</li>
 </ul>
 <p>
 
@@ -881,19 +881,19 @@ VPC &gt; Security &gt; Network ACLs
 </figure>
 
 <em>Site-to-Site VPN:</em>
-<em>- On-Premises - <font color=#f43f5e>must use Customer Gateway</font> (CGW)</em>
-<em>- AWS: <font color=#f43f5e>must use a Virtual Private Gateway</font> (VGW)</em></p>
+<em>- On-Premises - <font color=#EB4925>must use Customer Gateway</font> (CGW)</em>
+<em>- AWS: <font color=#EB4925>must use a Virtual Private Gateway</font> (VGW)</em></p>
 <h3 id="direct-connect-dx" class="relative group">Direct Connect (DX) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#direct-connect-dx" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Establish a physical connection between on-premises and AWS</li>
 <li>The connection is private, secure and fast</li>
-<li>Goes over a <font color=#f43f5e>private network</font> (more expensive but faster than Site to Site VPN)</li>
+<li>Goes over a <font color=#EB4925>private network</font> (more expensive but faster than Site to Site VPN)</li>
 <li>Takes at least a month to establish</li>
 </ul>
 <h2 id="aws-client-vpn" class="relative group">AWS Client VPN <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-client-vpn" aria-label="Anchor">#</a></span></h2>
 <p>Connect from your computer using OpenVPN to your private network in AWS and on-premises.</p>
-<p><font color=#10b981>Allows connecting to your EC2 instances over a private IP</font> (just as you were in the private VPC network).</p>
-<p><font color=#f43f5e>Goes over the public Internet.</font></p>
+<p><font color=#C7EB25>Allows connecting to your EC2 instances over a private IP</font> (just as you were in the private VPC network).</p>
+<p><font color=#EB4925>Goes over the public Internet.</font></p>
 <p>
 
 
@@ -935,21 +935,21 @@ VPC &gt; Security &gt; Network ACLs
 <p>Works with Direct Connect Gateway, VPN connections.</p>
 <h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#f1ef63>VPC:</font> Virtual Private Cloud</li>
-<li><font color=#f1ef63>Subnets:</font> Tied to and AZ, network partition of the VPC</li>
-<li><font color=#f1ef63>Internet Gateway:</font> at the VPC level, provide Internet Access</li>
-<li><font color=#f1ef63>NAT Gateway / Instances:</font> give internet access to private subnets</li>
-<li><font color=#f1ef63>Security Groups:</font> Stateful, operate at the EC2 instance level for ENI</li>
-<li><font color=#f1ef63>NACL:</font> Stateless, subnet rules for inbound and outbound</li>
-<li><font color=#f1ef63>VPC Peering:</font> Connect two VPC with non overlapping IP ranges, non-transitive (must be established for each VPC that needs to communicate with one another)</li>
-<li><font color=#f1ef63>Elastic IP:</font> Fixed public IPv4</li>
-<li><font color=#f1ef63>VPC Endpoints:</font> Provide private access to AWS Services within VPC</li>
-<li><font color=#f1ef63>Private Link:</font> Privately connect to a service in a 3rd party VPC</li>
-<li><font color=#f1ef63>VPC Flow Logs:</font> Network traffic logs</li>
-<li><font color=#f1ef63>Site to Site VPN:</font> VPN over public internet between on-premises DC and AWS</li>
-<li><font color=#f1ef63>Client VPN:</font> OpenVPN connection from your computer into your VPC</li>
-<li><font color=#f1ef63>Direct Connect:</font> Direct private connection to AWS</li>
-<li><font color=#f1ef63>Transit Gateway:</font> Connect thousands of VPC and on-premises networks together</li>
+<li><font color=#EBAC25>VPC:</font> Virtual Private Cloud</li>
+<li><font color=#EBAC25>Subnets:</font> Tied to and AZ, network partition of the VPC</li>
+<li><font color=#EBAC25>Internet Gateway:</font> at the VPC level, provide Internet Access</li>
+<li><font color=#EBAC25>NAT Gateway / Instances:</font> give internet access to private subnets</li>
+<li><font color=#EBAC25>Security Groups:</font> Stateful, operate at the EC2 instance level for ENI</li>
+<li><font color=#EBAC25>NACL:</font> Stateless, subnet rules for inbound and outbound</li>
+<li><font color=#EBAC25>VPC Peering:</font> Connect two VPC with non overlapping IP ranges, non-transitive (must be established for each VPC that needs to communicate with one another)</li>
+<li><font color=#EBAC25>Elastic IP:</font> Fixed public IPv4</li>
+<li><font color=#EBAC25>VPC Endpoints:</font> Provide private access to AWS Services within VPC</li>
+<li><font color=#EBAC25>Private Link:</font> Privately connect to a service in a 3rd party VPC</li>
+<li><font color=#EBAC25>VPC Flow Logs:</font> Network traffic logs</li>
+<li><font color=#EBAC25>Site to Site VPN:</font> VPN over public internet between on-premises DC and AWS</li>
+<li><font color=#EBAC25>Client VPN:</font> OpenVPN connection from your computer into your VPC</li>
+<li><font color=#EBAC25>Direct Connect:</font> Direct private connection to AWS</li>
+<li><font color=#EBAC25>Transit Gateway:</font> Connect thousands of VPC and on-premises networks together</li>
 </ul>
 <hr>
 <h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>

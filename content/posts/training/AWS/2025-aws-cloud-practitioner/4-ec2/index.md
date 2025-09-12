@@ -81,7 +81,7 @@ EC2 > Launch Instance
 	- [User data]({{< ref "4-ec2/#example-user-data" >}})
 #### Example user data
 
-<font color=#10b981>User data is only **bootstrap** script and **only starts once** during the machine creation.</font>
+<font color=#C7EB25>User data is only **bootstrap** script and **only starts once** during the machine creation.</font>
 
 ```bash
 #!/bin/bash
@@ -106,18 +106,18 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 		- All other operating systems - billing per hour
 	- Highest cost but no upfront payment
 	- No long-term commitment
-	- <font color=#f1ef63>Recommended for</font> short-term and un-interrupted workloads
+	- <font color=#EBAC25>Recommended for</font> short-term and un-interrupted workloads
 - **Reserved** (1 & 3 years)
-	- Up to <font color=#f43f5e>72%</font> discount compared to On-demand
+	- Up to <font color=#EB4925>72%</font> discount compared to On-demand
 	- You reserve a specific instance attributes (**Instance Type**, **Region**, **Tenancy**, **OS**)
 	- Reserved Instances - long workloads
 	- Payment options - No upfront, Partial Upfront, All Upfront
 	- Scope: Regional or Zonal
-	- <font color=#f1ef63>Recommended for</font> steady-state usage applications (think database)
+	- <font color=#EBAC25>Recommended for</font> steady-state usage applications (think database)
 	- Can be bought and sold in the Reserved Instance Market place
 	- Convertible Reserved Instances - long workload with flexible instances
 		- Can change the EC2 instance type, instance family, OS, scope and tenancy
-		- Up to <font color=#f43f5e>66%</font> discount
+		- Up to <font color=#EB4925>66%</font> discount
 - **[Saving plans]({{< ref "21-account-management-and-billing/#savings-plan" >}})** (1 & 3 years) - commitment to an amount of usage, long workloads
 	- Get discount based on long-term usage
 	- Commit to a certain type of usage ($10/hour for 1 or 3 years)
@@ -128,15 +128,15 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 		- OS (e.g. Linux, Windows)
 		- Tenancy (Host, Dedicated, Default)
 - **Spot Instances** - short workloads, cheap, can lose instances
-	- Up to <font color=#f43f5e>90%</font> discount
+	- Up to <font color=#EB4925>90%</font> discount
 	- Instances can be "lost" at any point if max price is less than current spot price
-	- <font color=#f1ef63>Recommended for</font> workloads that are resilient to failure
+	- <font color=#EBAC25>Recommended for</font> workloads that are resilient to failure
 		- Batch jobs
 		- Data analysis
 		- Image processing
 - **Dedicated Hosts** - book an entire physical server, control instance placement
 	- A physical server with EC2 instance capacity fully dedicated to your use
-	- <font color=#f1ef63>Recommended for</font> for companies with strong compliance requirements OR server-bound software licenses (per-socket, per-core)
+	- <font color=#EBAC25>Recommended for</font> for companies with strong compliance requirements OR server-bound software licenses (per-socket, per-core)
 	- Purchasing Options:
 		- On-demand
 		- Reserved

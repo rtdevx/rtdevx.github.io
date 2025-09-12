@@ -8,9 +8,9 @@ tags:
   - CLF-C02
 categories: AWS
 ---
-**Elastic Load Balancing** automatically **distributes your incoming traffic** across multiple targets (<font color=#10b981>EC2 instances, containers, IP addresses</font>) in **one or more Availability Zones**.
+**Elastic Load Balancing** automatically **distributes your incoming traffic** across multiple targets (<font color=#C7EB25>EC2 instances, containers, IP addresses</font>) in **one or more Availability Zones**.
 
-<font color=#f43f5e>It monitors the health of its registered targets and routes the traffic only to healthy targets.</font>
+<font color=#EB4925>It monitors the health of its registered targets and routes the traffic only to healthy targets.</font>
 
 ---
 

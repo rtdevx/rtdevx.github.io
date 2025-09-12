@@ -670,7 +670,7 @@ CloudWatch &gt; Alarms &gt; All alarms
 <li><strong>Example:</strong> create a billing alarm on the CloudWatch Billing metric</li>
 <li>Alarm States: OK, INSUFFICIENT_DATA, ALARM</li>
 </ul>
-<p><font color=#f43f5e>Billing alarms are only available in us-east-1</font></p>
+<p><font color=#EB4925>Billing alarms are only available in us-east-1</font></p>
 <h3 id="cloudwatch-logs" class="relative group">CloudWatch Logs <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudwatch-logs" aria-label="Anchor">#</a></span></h3>
 <p>CloudWatch Logs can collect logs from:</p>
 <ul>
@@ -682,14 +682,14 @@ CloudWatch &gt; Alarms &gt; All alarms
  - collection of logs from functions</li>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/17-cloud-monitoring/#aws-cloudtrail">CloudTrail</a>
  based on filter</li>
-<li><font color=#10b981>CloudWatch log agents</font> - on EC2 machines or on-premises servers</li>
+<li><font color=#C7EB25>CloudWatch log agents</font> - on EC2 machines or on-premises servers</li>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/#route53">Route53</a>
  - DNS logs</li>
 </ul>
 <h3 id="cloudwatch-logs-for-ec2--on-premise" class="relative group">CloudWatch Logs for EC2 / on-premise <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudwatch-logs-for-ec2--on-premise" aria-label="Anchor">#</a></span></h3>
-<p><font color=#f43f5e>CloudWatch agent is required to be installed on EC2 instance
+<p><font color=#EB4925>CloudWatch agent is required to be installed on EC2 instance
 to push the logs that are needed.</font></p>
-<p><font color=#f43f5e>CloudWatch agent can also be installed on on-premise servers too.</font></p>
+<p><font color=#EB4925>CloudWatch agent can also be installed on on-premise servers too.</font></p>
 <p><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/">IAM</a>
  permissions must be set for CloudWatch Logs to function correctly.</p>
 <h2 id="amazon-eventbridge" class="relative group">Amazon EventBridge <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-eventbridge" aria-label="Anchor">#</a></span></h2>
@@ -753,7 +753,7 @@ to push the logs that are needed.</font></p>
 </figure>
 </p>
 <h2 id="aws-cloudtrail" class="relative group">AWS CloudTrail <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-cloudtrail" aria-label="Anchor">#</a></span></h2>
-<h5 id="aws-cloudtrail-provides-governance-compliance-and-audit-your-aws-account-and-it-is-enabled-by-default" class="relative group"><font color=#f43f5e>AWS CloudTrail provides governance, compliance and audit your AWS Account and it is ENABLED BY DEFAULT.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-cloudtrail-provides-governance-compliance-and-audit-your-aws-account-and-it-is-enabled-by-default" aria-label="Anchor">#</a></span></h5>
+<h5 id="aws-cloudtrail-provides-governance-compliance-and-audit-your-aws-account-and-it-is-enabled-by-default" class="relative group"><font color=#EB4925>AWS CloudTrail provides governance, compliance and audit your AWS Account and it is ENABLED BY DEFAULT.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-cloudtrail-provides-governance-compliance-and-audit-your-aws-account-and-it-is-enabled-by-default" aria-label="Anchor">#</a></span></h5>
 <p>It can get a history of events / API calls made within your AWS account by:</p>
 <ul>
 <li>Console</li>
@@ -761,8 +761,8 @@ to push the logs that are needed.</font></p>
 <li>CLI</li>
 <li>AWS Services</li>
 </ul>
-<p><font color=#10b981>Logs from CloudTrail can be stored in CloudWatch Logs or S3. Trail can be applied to All Regions (default) or a single region.</font></p>
-<h3 id="if-a-resource-is-deleted-in-aws-investigate-cloudtrail-first" class="relative group"><font color=#f43f5e>If a resource is deleted in AWS, investigate CloudTrail first!</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#if-a-resource-is-deleted-in-aws-investigate-cloudtrail-first" aria-label="Anchor">#</a></span></h3>
+<p><font color=#C7EB25>Logs from CloudTrail can be stored in CloudWatch Logs or S3. Trail can be applied to All Regions (default) or a single region.</font></p>
+<h3 id="if-a-resource-is-deleted-in-aws-investigate-cloudtrail-first" class="relative group"><font color=#EB4925>If a resource is deleted in AWS, investigate CloudTrail first!</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#if-a-resource-is-deleted-in-aws-investigate-cloudtrail-first" aria-label="Anchor">#</a></span></h3>
 <p>
 
 
@@ -778,7 +778,7 @@ to push the logs that are needed.</font></p>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole"># Check Events History
 CloudTrail &gt; Event history
 </code></pre><h2 id="aws-x-ray" class="relative group">AWS X-Ray <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-x-ray" aria-label="Anchor">#</a></span></h2>
-<h5 id="visual-analysis-of-our-applications-common-view-of-entire-architecture" class="relative group"><font color=#f43f5e>Visual analysis of our applications.</font> Common view of entire architecture. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#visual-analysis-of-our-applications-common-view-of-entire-architecture" aria-label="Anchor">#</a></span></h5>
+<h5 id="visual-analysis-of-our-applications-common-view-of-entire-architecture" class="relative group"><font color=#EB4925>Visual analysis of our applications.</font> Common view of entire architecture. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#visual-analysis-of-our-applications-common-view-of-entire-architecture" aria-label="Anchor">#</a></span></h5>
 <ul>
 <li><strong>Troubleshooting performance</strong></li>
 <li><strong>Understanding dependencies in a microservices architecture</strong></li>
@@ -838,11 +838,11 @@ CloudTrail &gt; Event history
 <p>Has an RSS feed that can be subscribed to.</p>
 <h3 id="aws-health-dashboard---your-account" class="relative group">AWS Health Dashboard - Your Account <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-health-dashboard---your-account" aria-label="Anchor">#</a></span></h3>
 <p><strong>AWS Account Health Dashboard</strong> provides alerts and remediation guidance when AWS is experiencing events that may impact you.</p>
-<p><font color=#f43f5e>While the <strong>Service Health Dashboard</strong> displays the general status of AWS services, <strong>Account Health Dashboard</strong> gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources.</font></p>
-<p><font color=#f43f5e>It can aggregate data from an entire AWS Organization.</font></p>
+<p><font color=#EB4925>While the <strong>Service Health Dashboard</strong> displays the general status of AWS services, <strong>Account Health Dashboard</strong> gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources.</font></p>
+<p><font color=#EB4925>It can aggregate data from an entire AWS Organization.</font></p>
 <h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#f1ef63>CloudWatch</font>
+<li><font color=#EBAC25>CloudWatch</font>
 <ul>
 <li>Metrics - monitor the performance of AWS services and billing metrics</li>
 <li>Alarms - automate notification, perform <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
@@ -852,16 +852,16 @@ CloudTrail &gt; Event history
  functions</li>
 </ul>
 </li>
-<li><font color=#f1ef63>Events (EventBridge)</font> - react to events in AWS or trigger a rule on a schedule</li>
-<li><font color=#f1ef63>CloudTrail</font> - audit API calls made within your AWS account
+<li><font color=#EBAC25>Events (EventBridge)</font> - react to events in AWS or trigger a rule on a schedule</li>
+<li><font color=#EBAC25>CloudTrail</font> - audit API calls made within your AWS account
 <ul>
 <li>CloudTrail Insights - automated analysis of your CloudTrail Events</li>
 </ul>
 </li>
-<li><font color=#f1ef63>X-Ray</font> - trace requests made through your distributed applications (analyze flow)</li>
-<li><font color=#f1ef63>AWS Health Dashboard</font> - general status of ALL AWS services across all regions</li>
-<li><font color=#f1ef63>AWS Account Health Dashboard</font> - AWS events that impact your infrastructure</li>
-<li><font color=#f1ef63>Amazon CodeGuru</font> - automated code reviews and application performance recommendations</li>
+<li><font color=#EBAC25>X-Ray</font> - trace requests made through your distributed applications (analyze flow)</li>
+<li><font color=#EBAC25>AWS Health Dashboard</font> - general status of ALL AWS services across all regions</li>
+<li><font color=#EBAC25>AWS Account Health Dashboard</font> - AWS events that impact your infrastructure</li>
+<li><font color=#EBAC25>Amazon CodeGuru</font> - automated code reviews and application performance recommendations</li>
 </ul>
 <hr>
 <h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>

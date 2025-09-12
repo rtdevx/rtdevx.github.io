@@ -21,7 +21,7 @@ _What is OSI Model | Real World Examples_
 ---
 ## Layers of the OSI Model
 
-Each OSI layer has it's own functions and responsibilities. Communication process entails both directions (<font color=#f1ef63>encapsulation</font> and <font color=#f1ef63>decapsulation</font>).
+Each OSI layer has it's own functions and responsibilities. Communication process entails both directions (<font color=#EBAC25>encapsulation</font> and <font color=#EBAC25>decapsulation</font>).
 
 Layers 5,6 and 7 can be grouped together. They are all responsible to produce the data (**Protocol Data Unit** - PDU) for the Transport layer.
 ### 7. Application Layer
@@ -61,22 +61,22 @@ The primary role of the **Transport Layer** is to ensure that data packets arriv
 - **UDP** - retaining packets is less critical (e.g. video streaming)
 	- faster than TCP but less reliable (no ACK)
 
-The data in the transport layer is referred to as <font color=#f1ef63>segments</font>. In this layer source and destination <font color=#f1ef63>port</font> is added in the header. Segmentation is essential for <font color=#f1ef63>multiplexing</font>.
+The data in the transport layer is referred to as <font color=#EBAC25>segments</font>. In this layer source and destination <font color=#EBAC25>port</font> is added in the header. Segmentation is essential for <font color=#EBAC25>multiplexing</font>.
 ### 3. Network Layer
 
-The **Network Layer** is responsible for the transmission of data (in this layer referred to as <font color=#f1ef63>packets</font>) from one host to another that is located in different networks.
+The **Network Layer** is responsible for the transmission of data (in this layer referred to as <font color=#EBAC25>packets</font>) from one host to another that is located in different networks.
 
-**Network Layer** also takes care of <font color=#10b981>routing</font> - finding the shortest path to transmit the <font color=#f1ef63>packet</font>, from a number of routes available.
+**Network Layer** also takes care of <font color=#C7EB25>routing</font> - finding the shortest path to transmit the <font color=#EBAC25>packet</font>, from a number of routes available.
 
-**Network Layer** is utilizing <font color=#f1ef63>IP</font> protocol in order to route. Network devices (routers and switches) are appending the source and destination **IP address** to the packet's header.
+**Network Layer** is utilizing <font color=#EBAC25>IP</font> protocol in order to route. Network devices (routers and switches) are appending the source and destination **IP address** to the packet's header.
 ### 2. Data Link Layer
 
 The **Data Link Layer** refers to technologies used to connect two machines across a network.
 
-Data in this layer is referred to as <font color=#f1ef63>frame</font>.
+Data in this layer is referred to as <font color=#EBAC25>frame</font>.
 
-- <font color=#f1ef63>Ethernet</font> is an example of a standard at this layer.
-- <font color=#f1ef63>Switches</font> and <font color=#f1ef63>Bridges</font> are **common Data Link Layer devices**.
+- <font color=#EBAC25>Ethernet</font> is an example of a standard at this layer.
+- <font color=#EBAC25>Switches</font> and <font color=#EBAC25>Bridges</font> are **common Data Link Layer devices**.
 
 The Data Link Layer is divided into two sublayers:
 
@@ -88,7 +88,7 @@ The **Physical Layer** refers to the physical communication medium and technolog
 
 The **physical layer** contains information in the form of bits. **Physical Layer** is responsible for transmitting individual bits from one node to the next. 
 
-When receiving data, this layer will get the signal received and convert it into **0s** and **1s** and send them to the **Data Link layer**, which will put the frame back together. Common physical layer devices are <font color=#f1ef63>Hub</font>, <font color=#f1ef63>Repeater</font>, <font color=#f1ef63>Modem</font>, and <font color=#f1ef63>Cables</font>.
+When receiving data, this layer will get the signal received and convert it into **0s** and **1s** and send them to the **Data Link layer**, which will put the frame back together. Common physical layer devices are <font color=#EBAC25>Hub</font>, <font color=#EBAC25>Repeater</font>, <font color=#EBAC25>Modem</font>, and <font color=#EBAC25>Cables</font>.
 
 ![](./assets/physical-layer.png)
 _More:_ https://www.geeksforgeeks.org/computer-networks/open-systems-interconnection-model-osi/

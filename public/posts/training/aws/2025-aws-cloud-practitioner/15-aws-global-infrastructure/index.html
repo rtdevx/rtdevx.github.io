@@ -730,13 +730,13 @@ On AWS this could be Regions and / or Edge Locations.</p>
 </em></p>
 <h3 id="route53-routing-policies" class="relative group">Route53 Routing Policies <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#route53-routing-policies" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li><font color=#10b981>Simple</font> Routing Policy - <font color=#f43f5e>No health checks,</font> just DNS check</li>
-<li><font color=#10b981>Weighted</font> Routing Policy - <font color=#f43f5e>Specify what amount of traffic goes where</font> (i.e. 70% = Server1, 20% = Server2, 10% = Server3. Simple form of Load Balancing)</li>
-<li><font color=#10b981>Latency</font> Routing Policy - <font color=#f43f5e>Based on latency</font> - minimizing the latency between user and the server sending the traffic that is geographically (latency-based) closer to the user</li>
-<li><font color=#10b981>Failover</font> Routing Policy - <font color=#f43f5e>Disaster Recovery</font> (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/23-other-services/#disaster-recovery-strategies">DR</a>
+<li><font color=#C7EB25>Simple</font> Routing Policy - <font color=#EB4925>No health checks,</font> just DNS check</li>
+<li><font color=#C7EB25>Weighted</font> Routing Policy - <font color=#EB4925>Specify what amount of traffic goes where</font> (i.e. 70% = Server1, 20% = Server2, 10% = Server3. Simple form of Load Balancing)</li>
+<li><font color=#C7EB25>Latency</font> Routing Policy - <font color=#EB4925>Based on latency</font> - minimizing the latency between user and the server sending the traffic that is geographically (latency-based) closer to the user</li>
+<li><font color=#C7EB25>Failover</font> Routing Policy - <font color=#EB4925>Disaster Recovery</font> (<a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/23-other-services/#disaster-recovery-strategies">DR</a>
 ) - based on Health Checks</li>
-<li><font color=#10b981>Geolocation</font> Routing Policy - <font color=#f43f5e>Routing based specifically on Geolocation</font></li>
-<li><font color=#10b981>IP-based</font> Routing Policy - <font color=#f43f5e>Route the traffic based on the IP address originates from</font></li>
+<li><font color=#C7EB25>Geolocation</font> Routing Policy - <font color=#EB4925>Routing based specifically on Geolocation</font></li>
+<li><font color=#C7EB25>IP-based</font> Routing Policy - <font color=#EB4925>Route the traffic based on the IP address originates from</font></li>
 </ul>
 <p><em>More on Routing Policies:</em> <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html</a>
 </p>
@@ -759,13 +759,13 @@ Route 53 &gt; Hosted zones &gt; select &#34;CHOOSEADOMAIN.COM&#34; &gt; Update t
 </p>
 <h2 id="amazon-cloudfront" class="relative group">Amazon CloudFront <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-cloudfront" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#10b981>Content Delivery Network</font> (CDN)</li>
+<li><font color=#C7EB25>Content Delivery Network</font> (CDN)</li>
 <li>Improves read performance, content cached at the edge</li>
 <li>Improves users experience</li>
 <li>Many Points of Presence globally (Edge Locations, Edge Caches)</li>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/#ddos-protection-on-aws">DDoS</a>
  protection (because it&rsquo;s distributed globally)</li>
-<li><font color=#10b981>Integrated with Shield and AWS WAF</font> (Web Application Firewall)</li>
+<li><font color=#C7EB25>Integrated with Shield and AWS WAF</font> (Web Application Firewall)</li>
 </ul>
 <h3 id="cloudfront---origins" class="relative group">CloudFront - Origins <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudfront---origins" aria-label="Anchor">#</a></span></h3>
 <ul>
@@ -813,14 +813,14 @@ Route 53 &gt; Hosted zones &gt; select &#34;CHOOSEADOMAIN.COM&#34; &gt; Update t
 <ul>
 <li>Global Edge Network</li>
 <li>Files are cached for a TTL (day?)</li>
-<li><font color=#f1ef63>Use case:</font> static content that must be available everywhere</li>
+<li><font color=#EBAC25>Use case:</font> static content that must be available everywhere</li>
 </ul>
 <h4 id="s3-cross-region-replication" class="relative group">S3 Cross Region Replication <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-cross-region-replication" aria-label="Anchor">#</a></span></h4>
 <ul>
 <li>Must be setup for each region you want your replication to happen</li>
 <li>Files are updated in near real-time</li>
 <li>Read-only</li>
-<li><font color=#f1ef63>Use case:</font> dynamic content that needs to be available at low-latency in few regions only</li>
+<li><font color=#EBAC25>Use case:</font> dynamic content that needs to be available at low-latency in few regions only</li>
 </ul>
 <h2 id="s3-transfer-acceleration" class="relative group">S3 Transfer Acceleration <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#s3-transfer-acceleration" aria-label="Anchor">#</a></span></h2>
 <p>Increase transfer speed by transferring files to an AWS edge location which will forward the data to the S3 bucket in the target region.</p>
@@ -870,9 +870,9 @@ Route 53 &gt; Hosted zones &gt; select &#34;CHOOSEADOMAIN.COM&#34; &gt; Update t
 </li>
 </ul>
 <h2 id="aws-outposts" class="relative group">AWS Outposts <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-outposts" aria-label="Anchor">#</a></span></h2>
-<h5 id="aws-outposts--hybrid-cloud-appliances" class="relative group"><font color=#f1ef63>AWS Outposts</font> = Hybrid Cloud appliances. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-outposts--hybrid-cloud-appliances" aria-label="Anchor">#</a></span></h5>
+<h5 id="aws-outposts--hybrid-cloud-appliances" class="relative group"><font color=#EBAC25>AWS Outposts</font> = Hybrid Cloud appliances. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-outposts--hybrid-cloud-appliances" aria-label="Anchor">#</a></span></h5>
 <p>Outposts are &ldquo;server racks&rdquo; that offer the same AWS infrastructure, services, API&rsquo;s &amp; tools to build your own applications on-premises just as in the cloud.</p>
-<h5 id="aws-will-setup-and-manage-outposts-racks-within-your-on-premises-infrastructure" class="relative group"><font color=#10b981>AWS will setup and manage Outposts racks within your on-premises infrastructure.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-will-setup-and-manage-outposts-racks-within-your-on-premises-infrastructure" aria-label="Anchor">#</a></span></h5>
+<h5 id="aws-will-setup-and-manage-outposts-racks-within-your-on-premises-infrastructure" class="relative group"><font color=#C7EB25>AWS will setup and manage Outposts racks within your on-premises infrastructure.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-will-setup-and-manage-outposts-racks-within-your-on-premises-infrastructure" aria-label="Anchor">#</a></span></h5>
 <p><strong>Benefits</strong></p>
 <ul>
 <li>Low latency access to on-premises system</li>
@@ -900,13 +900,13 @@ Route 53 &gt; Hosted zones &gt; select &#34;CHOOSEADOMAIN.COM&#34; &gt; Update t
 </li>
 </ul>
 <h2 id="wavelength" class="relative group">Wavelength <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#wavelength" aria-label="Anchor">#</a></span></h2>
-<p>Wavelength Zones are infrastructure deployments embedded within the telecommunication providers datacenters <font color=#10b981>at the edge of the 5G networks</font>.</p>
+<p>Wavelength Zones are infrastructure deployments embedded within the telecommunication providers datacenters <font color=#C7EB25>at the edge of the 5G networks</font>.</p>
 <ul>
 <li>Ultra low latency applications through 5G networks</li>
 <li>Traffic doesn&rsquo;t leave the <strong>Communication Service Provider&rsquo;s (CSP)</strong> network</li>
 <li>High bandwidth and secure connection to the parent AWS Region</li>
 <li>No additional charges or service agreements</li>
-<li><font color=#f1ef63>Use cases:</font>
+<li><font color=#EBAC25>Use cases:</font>
 <ul>
 <li>Smart Cities</li>
 <li>ML-assisted (Machine Learning) diagnostics</li>
@@ -919,8 +919,8 @@ Route 53 &gt; Hosted zones &gt; select &#34;CHOOSEADOMAIN.COM&#34; &gt; Update t
 </ul>
 <h2 id="aws-local-zones" class="relative group">AWS Local Zones <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-local-zones" aria-label="Anchor">#</a></span></h2>
 <p><strong>AWS Local Zones</strong> allow placing compute, storage, database and other selected AWS services closer to the users to run latency-sensitive applications.</p>
-<p>It is an &ldquo;<font color=#f1ef63>Extension of AWS Region</font>&rdquo;.</p>
-<h5 id="example" class="relative group"><font color=#f1ef63>Example:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#example" aria-label="Anchor">#</a></span></h5>
+<p>It is an &ldquo;<font color=#EBAC25>Extension of AWS Region</font>&rdquo;.</p>
+<h5 id="example" class="relative group"><font color=#EBAC25>Example:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#example" aria-label="Anchor">#</a></span></h5>
 <ul>
 <li>AWS Region: N. Virginia (us-east-1)
 <ul>
@@ -942,7 +942,7 @@ Route 53 &gt; Hosted zones &gt; select &#34;CHOOSEADOMAIN.COM&#34; &gt; Update t
 
 <em><a href="https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html" target="_blank" rel="noreferrer">How AWS Local Zones work</a>
 </em></p>
-<h5 id="compatible-with" class="relative group"><font color=#f1ef63>Compatible with:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#compatible-with" aria-label="Anchor">#</a></span></h5>
+<h5 id="compatible-with" class="relative group"><font color=#EBAC25>Compatible with:</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#compatible-with" aria-label="Anchor">#</a></span></h5>
 <ul>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2</a>
 </li>
@@ -961,34 +961,34 @@ Route 53 &gt; Hosted zones &gt; select &#34;CHOOSEADOMAIN.COM&#34; &gt; Update t
 <p><em>More about AWS Local Zones:</em> <a href="https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html</a>
 </p>
 <h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
-<p><font color=#f1ef63>Route 53 - Global DNS</font></p>
+<p><font color=#EBAC25>Route 53 - Global DNS</font></p>
 <ul>
 <li>Great to route users to the closest deployment with least latency</li>
 <li>Great for Disaster Recovery - DR - Strategies</li>
 </ul>
-<p><font color=#f1ef63>CloudFront - Global CDN - Content Delivery Network</font></p>
+<p><font color=#EBAC25>CloudFront - Global CDN - Content Delivery Network</font></p>
 <ul>
 <li>Replicate part of your application to AWS Edge Locations - decreased latency</li>
 <li>Cache common requests - improved user experience and decreased latency</li>
 </ul>
-<p><font color=#f1ef63>S3 Transfer Acceleration</font></p>
+<p><font color=#EBAC25>S3 Transfer Acceleration</font></p>
 <ul>
 <li>Accelerate global uploads &amp; downloads into Amazon S3</li>
 </ul>
-<p><font color=#f1ef63>AWS Global Accelerator</font></p>
+<p><font color=#EBAC25>AWS Global Accelerator</font></p>
 <ul>
 <li>Improve global application availability and performance using the AWS global network</li>
 </ul>
-<p><font color=#f1ef63>AWS Outposts</font></p>
+<p><font color=#EBAC25>AWS Outposts</font></p>
 <ul>
 <li>Deploy Outposts racks in an on-premises datacenter to extend some AWS services and for easier migration</li>
 </ul>
-<p><font color=#f1ef63>AWS Wavelength</font></p>
+<p><font color=#EBAC25>AWS Wavelength</font></p>
 <ul>
 <li>Brings AWS services to the edge of the 5G networks</li>
 <li>Ultra-low latency applications</li>
 </ul>
-<p><font color=#f1ef63>AWS Local Zones</font></p>
+<p><font color=#EBAC25>AWS Local Zones</font></p>
 <ul>
 <li>Bring AWS resources (compute, database, storage, &hellip;) closer to your users</li>
 <li>Good for latency-sensitive applications</li>

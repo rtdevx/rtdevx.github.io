@@ -652,22 +652,22 @@
         <h2 id="ebs-volume" class="relative group">EBS Volume <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs-volume" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li><strong>EBS</strong> (Elastic Block Store) - Network drive that can be attached to instances while they run</li>
-<li><font color=#10b981>It allows instances to persist the data, even after their termination</font></li>
-<li><font color=#10b981>Can be mounted to 1 instance at a time</font></li>
-<li><font color=#10b981>Bound to an Availability Zone</font></li>
+<li><font color=#C7EB25>It allows instances to persist the data, even after their termination</font></li>
+<li><font color=#C7EB25>Can be mounted to 1 instance at a time</font></li>
+<li><font color=#C7EB25>Bound to an Availability Zone</font></li>
 <li>It&rsquo;s a &ldquo;<strong>Network Drive</strong>&rdquo;
 <ul>
 <li>it uses the network to communicate to the instance (there can be latency)</li>
 <li>it can be detached from an EC2 instance and attached to another one quickly</li>
 </ul>
 </li>
-<li><font color=#10b981>It&rsquo;s locked to an Availability Zone (AZ)</font>
+<li><font color=#C7EB25>It&rsquo;s locked to an Availability Zone (AZ)</font>
 <ul>
 <li>an EBS Volume that is <em>us-east-1a</em> can&rsquo;t be attached to <em>us-east-1b</em></li>
 <li>to move a volume across AZ, snapshot has to be created first</li>
 </ul>
 </li>
-<li><font color=#10b981>It has a provisioned capacity (size in GB and IOPS)</font>
+<li><font color=#C7EB25>It has a provisioned capacity (size in GB and IOPS)</font>
 <ul>
 <li>you will get billed for a provisioned capacity</li>
 <li>You can increase the capacity of the drive</li>
@@ -686,7 +686,7 @@
 <figure><img src="./assets/AWS_EC2_EBS_Volume1.png" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 
-<em><font color=#f43f5e>EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them</font></em></p>
+<em><font color=#EB4925>EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them</font></em></p>
 <h3 id="ebs-delete-on-termination" class="relative group">EBS Delete on Termination <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs-delete-on-termination" aria-label="Anchor">#</a></span></h3>
 <p>
 
@@ -709,7 +709,7 @@
 </ul>
 </li>
 <li>This can be controlled by both, AWS Console and AWS CLI</li>
-<li><font color=#f1ef63>Use case:</font> preserve root volume when instance is terminated</li>
+<li><font color=#EBAC25>Use case:</font> preserve root volume when instance is terminated</li>
 </ul>
 <h2 id="ebs-snapshots" class="relative group">EBS Snapshots <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs-snapshots" aria-label="Anchor">#</a></span></h2>
 <ul>
@@ -742,7 +742,7 @@
 <p>EBS volumes are network drives with good but &ldquo;limited&rdquo; performance</p>
 </li>
 <li>
-<p><font color=#10b981>If high-performance hardware disk is required, EC2 Instance Store can be used</font></p>
+<p><font color=#C7EB25>If high-performance hardware disk is required, EC2 Instance Store can be used</font></p>
 </li>
 <li>
 <p>Better I/O performance</p>
@@ -751,20 +751,20 @@
 <p>EC2 Instance Store is ephemeral (data is lost after stopping EC2 instance)</p>
 </li>
 <li>
-<p><font color=#f1ef63>Use case:</font> buffer, cache, scratch data, temporary content</p>
+<p><font color=#EBAC25>Use case:</font> buffer, cache, scratch data, temporary content</p>
 </li>
 </ul>
-<p><font color=#f43f5e>Risk of data loss if hardware fails.</font></p>
+<p><font color=#EB4925>Risk of data loss if hardware fails.</font></p>
 <h2 id="efs---elastic-file-system" class="relative group">EFS - Elastic File System <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#efs---elastic-file-system" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li><font color=#f1ef63>Managed NFS</font> (Network File System) that can be mounted on 100s of EC2 instances</li>
-<li><font color=#f43f5e>EFS works with Linux EC2 instances only</font> and is <font color=#10b981>multi-AZ.</font></li>
-<li>Highly-available, scalable, <font color=#f43f5e>expensive</font> (3x gp2 EBS), pay per use, no capacity planning</li>
+<li><font color=#EBAC25>Managed NFS</font> (Network File System) that can be mounted on 100s of EC2 instances</li>
+<li><font color=#EB4925>EFS works with Linux EC2 instances only</font> and is <font color=#C7EB25>multi-AZ.</font></li>
+<li>Highly-available, scalable, <font color=#EB4925>expensive</font> (3x gp2 EBS), pay per use, no capacity planning</li>
 </ul>
 <h3 id="efs-infrequent-access-efs-ia" class="relative group">EFS Infrequent Access (EFS-IA) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#efs-infrequent-access-efs-ia" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Storage class that is cost-optimized for files not accessed every day</li>
-<li>up to <font color=#f43f5e>92% lower cost</font> compared to EFS Standard</li>
+<li>up to <font color=#EB4925>92% lower cost</font> compared to EFS Standard</li>
 <li>When enabled, EFS will automatically move your files to <strong>EFS-IA</strong> based on last time they were accessed</li>
 <li>Enable <strong>EFS-IA</strong> with a <strong>Lifecycle Policy</strong>
 <ul>
@@ -838,7 +838,7 @@
 <ul>
 <li><strong>FSx for Lustre</strong> - fully managed, high-performance, scalable <font color=green>file storage for High Performance Computing (HPC)</font>.
 <ul>
-<li><font color=#f1ef63>Use cases:</font> Machine Learning, Analytics, Video processing, Financial Modelling</li>
+<li><font color=#EBAC25>Use cases:</font> Machine Learning, Analytics, Video processing, Financial Modelling</li>
 <li>Scales up to 100s GB/s, millions of IOPS, sub-ms latencies</li>
 </ul>
 </li>

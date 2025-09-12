@@ -29,10 +29,10 @@ _Official website for AWS Certified Cloud Practitioner:_ [AWS Certified Cloud Pr
 _Exam guide:_ https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf
 ### Content domains and weightings
 
-- Domain 1: **Cloud Concepts** (<font color=#10b981>24%</font> of scored content)
-- Domain 2: **Security and Compliance** (<font color=#10b981>30%</font> of scored content)
-- Domain 3: **Cloud Technology and Services** (<font color=#10b981>34%</font> of scored content)
-- Domain 4: **Billing, Pricing, and Support** (<font color=#10b981>12%</font> of scored content)
+- Domain 1: **Cloud Concepts** (<font color=#C7EB25>24%</font> of scored content)
+- Domain 2: **Security and Compliance** (<font color=#C7EB25>30%</font> of scored content)
+- Domain 3: **Cloud Technology and Services** (<font color=#C7EB25>34%</font> of scored content)
+- Domain 4: **Billing, Pricing, and Support** (<font color=#C7EB25>12%</font> of scored content)
 ### Exam Prep Official Questions Set
 
 - https://skillbuilder.aws/
@@ -41,7 +41,7 @@ _Exam guide:_ https://d1.awsstatic.com/training-and-certification/docs-cloud-pra
 ![](./assets/AWS_Exam_Prep.png)
 _Official Practice Question Set for CLF-C02_
 
-\*<font color=#f43f5e>Loads more learning and exam preparation resources on</font> [AWS Skill Builder website](https://skillbuilder.aws/)
+\*<font color=#EB4925>Loads more learning and exam preparation resources on</font> [AWS Skill Builder website](https://skillbuilder.aws/)
 ## Registering for the exam
 
 https://www.aws.training/certification
@@ -59,5 +59,5 @@ https://www.aws.training/certification
 - [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/)
 
 {{< alert "circle-info" >}}
-Take look at [Stephane Maarek's courses](https://www.udemy.com/user/stephane-maarek/) on [Udemy](https://www.udemy.com/) if you want to prepare for **AWS certifications** or just **learn AWS**. <font color=#f1ef63>Top quality content</font>, highly recommended.
+Take look at [Stephane Maarek's courses](https://www.udemy.com/user/stephane-maarek/) on [Udemy](https://www.udemy.com/) if you want to prepare for **AWS certifications** or just **learn AWS**. <font color=#EBAC25>Top quality content</font>, highly recommended.
 {{< /alert >}}

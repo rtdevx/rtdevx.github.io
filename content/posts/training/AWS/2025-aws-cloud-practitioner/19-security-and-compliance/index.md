@@ -10,18 +10,18 @@ categories: AWS
 ---
 ## Shared Responsibility Model
 
-### AWS responsibility - Security <font color=#f43f5e>of</font> the Cloud
+### AWS responsibility - Security <font color=#EB4925>of</font> the Cloud
 
 - Protecting infrastructure (hardware, software, facilities, networking) that runs the AWS services
 - Managed services, like [S3]({{< ref "11-s3" >}}), [DynamoDB]({{< ref "12-databases/#dynamodb" >}}), [RDS]({{< ref "12-databases/#rds-and-aurora" >}}), etc.
-### Customer responsibility - Security <font color=#f43f5e>in</font> the cloud
+### Customer responsibility - Security <font color=#EB4925>in</font> the cloud
 
 - For [EC2]({{< ref "4-ec2" >}}) instance, customer is responsible to the management of the guest OS (including the security patches and updates), firewall and network configuration, IAM
 - Encrypting application data
 ### Shared controls
 
 - Patch Management, Configuration Management, Awareness & Training
-#### <font color=#f1ef63>Example</font> - RDS
+#### <font color=#EBAC25>Example</font> - RDS
 
 - **AWS responsibility**
 	- Manage underlying EC2 instance, disable SSH access
@@ -34,7 +34,7 @@ categories: AWS
 	- Creating a database with or without public access
 	- Ensure parameter groups or DB is configured to only allow SSL connections
 	- Database encryption setting
-#### <font color=#f1ef63>Example</font> - S3
+#### <font color=#EBAC25>Example</font> - S3
 
 - **AWS responsibility**
 	- Guarantee you get unlimited storage
@@ -53,7 +53,7 @@ _AWS Shared Responsibility Model_
 _More about Shared Responsibility Model:_ https://aws.amazon.com/compliance/shared-responsibility-model/
 ## DDoS Protection on AWS
 
-- [AWS Shield]({{< ref "19-security-and-compliance/#aws-shield" >}}) Standard - protects against DDoS attack for website and applications - <font color=#10b981>for all customers at no additional cost</font>
+- [AWS Shield]({{< ref "19-security-and-compliance/#aws-shield" >}}) Standard - protects against DDoS attack for website and applications - <font color=#C7EB25>for all customers at no additional cost</font>
 - [AWS Shield]({{< ref "19-security-and-compliance/#aws-shield" >}}) Advanced - 24/7 premium DDoS protection and support
 - [AWS WAF]({{< ref "19-security-and-compliance/#aws-waf" >}}) - filter specific requests based on predefined rules
 - [CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}}) and [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}})
@@ -64,7 +64,7 @@ Be ready to scale - use [AWS Auto Scaling]({{< ref "10-auto-scaling-groups" >}})
 
 ![](./assets/AWS_Shield.png)
 _Sample Reference Architecture for DDOS Protection in AWS_
-##### <font color=#10b981>DDoS components on above picture:</font>
+##### <font color=#C7EB25>DDoS components on above picture:</font>
 
 - [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}}) - Latency / Geolocation routing policies
 - [CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}}) - to ensure data is cached at the edge
@@ -75,23 +75,23 @@ _Sample Reference Architecture for DDOS Protection in AWS_
 _More about DDOS protection:_ https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.html
 ### AWS Shield
 
-- <font color=#f1ef63>AWS Shield Standard</font>
+- <font color=#EBAC25>AWS Shield Standard</font>
 	- Free service that is activated for every AWS customer
 	- Provides protection from attacks such as SYN / UDP Floods, Reflection attacks and other [layer 3]({{< ref "osi-model/#3-network-layer" >}}) / [layer 4]({{< ref "osi-model/#4-transport-layer" >}}) attacks (read more about [ISO OSI Model]({{< ref "osi-model" >}}))
-- <font color=#f1ef63>AWS Shield Advanced</font>
-	- Optional DDoS mitigation service (<font color=#f43f5e>$3000</font> per month per organization)
-	- Protecting against more sophisticated attacks on <font color=#f43f5e>Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator and Route53</font>
+- <font color=#EBAC25>AWS Shield Advanced</font>
+	- Optional DDoS mitigation service (<font color=#EB4925>$3000</font> per month per organization)
+	- Protecting against more sophisticated attacks on <font color=#EB4925>Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator and Route53</font>
 ## AWS WAF
 
 - Protecting web applications from common web exploits (Layer 7)
-- <font color=#10b981>Layer 7 is HTTP (vs Layer 4 is TCP)</font>
-- <font color=#10b981>Can be deployed on Application Load Balancer, API Gateway, CloudFront</font>
+- <font color=#C7EB25>Layer 7 is HTTP (vs Layer 4 is TCP)</font>
+- <font color=#C7EB25>Can be deployed on Application Load Balancer, API Gateway, CloudFront</font>
 ### Web Access Control List
 
-- Rules can include <font color=#f43f5e>filters for IP addresses, HTTP headers, HTTP body, URi strings</font>
-- Protecting from common attacks - <font color=#f43f5e>SQL injection, Cross-Site Scripting (XSS)</font>
+- Rules can include <font color=#EB4925>filters for IP addresses, HTTP headers, HTTP body, URi strings</font>
+- Protecting from common attacks - <font color=#EB4925>SQL injection, Cross-Site Scripting (XSS)</font>
 - Size constraints (to ensure request size) , geo match (block countries)
-- Rate-based rules - <font color=#f43f5e>to count occurrences of events, limit users to x requests per second</font>, etc. - for DDoS protection
+- Rate-based rules - <font color=#EB4925>to count occurrences of events, limit users to x requests per second</font>, etc. - for DDoS protection
 ## AWS Network Firewall
 
 - Protects entire Amazon VPC (as oppose to [Security Groups & Network ACL]({{< ref "18-vpc/#security-groups--network-acl" >}}))
@@ -104,7 +104,7 @@ _More about DDOS protection:_ https://docs.aws.amazon.com/whitepapers/latest/aws
 
 ![](./assets/AWS_Network_Firewall.png)
 _AWS Network Firewall is protecting entire VPC from [Layer 3]({{< ref "osi-model/#3-network-layer" >}}) to [Layer 7]({{< ref "osi-model/#7-application-layer" >}})_
-##### <font color=#f43f5e>AWS Network Firewall offers much better protection than</font> [NACL]({{< ref "18-vpc/#nacl-network-acl" >}}) <font color=#f43f5e>that only operates at the subnet level. AWS Network Firewall operates at VPC level.</font>
+##### <font color=#EB4925>AWS Network Firewall offers much better protection than</font> [NACL]({{< ref "18-vpc/#nacl-network-acl" >}}) <font color=#EB4925>that only operates at the subnet level. AWS Network Firewall operates at VPC level.</font>
 
 _More about Network Firewall:_ https://docs.aws.amazon.com/network-firewall/
 ## AWS Firewall Manager
@@ -116,12 +116,12 @@ _More about Network Firewall:_ https://docs.aws.amazon.com/network-firewall/
 	- WAF rules
 	- AWS Shield Advanced
 	- AWS Network Firewall
-##### <font color=#f43f5e>Rules are applied to new resources as they are created (good for compliance) across ALL EXISTING AND FUTURE accounts in all Organization.</font>
+##### <font color=#EB4925>Rules are applied to new resources as they are created (good for compliance) across ALL EXISTING AND FUTURE accounts in all Organization.</font>
 ## Penetration Testing on AWS Cloud
 
-##### <font color=#10b981>Allowed activities:</font>
+##### <font color=#C7EB25>Allowed activities:</font>
 
-##### AWS Customers <font color=#10b981>are allowed to carry out security assessment or penetration tests against their AWS infrastructure without prior approval for 8 services:</font>
+##### AWS Customers <font color=#C7EB25>are allowed to carry out security assessment or penetration tests against their AWS infrastructure without prior approval for 8 services:</font>
 
 - Amazon [EC2]({{< ref "4-ec2" >}}) instances, [NAT Gateways]({{< ref "18-vpc/#internet-gateway--nat-gateways" >}}) and [Elastic Load Balancers]({{< ref "9-elastic-load-balancing" >}})
 - [Amazon RDS]({{< ref "12-databases/#rds-and-aurora" >}})
@@ -131,7 +131,7 @@ _More about Network Firewall:_ https://docs.aws.amazon.com/network-firewall/
 - [AWS Lambda]({{< ref "13-other-compute-services/#lambda" >}}) and Lambda Edge functions
 - [Amazon Lightsail]({{< ref "13-other-compute-services/#lightsail" >}}) resources
 - Amazon [Elastic Beanstalk]({{< ref "14-deployments/#beanstalk" >}}) environments
-### <font color=#f43f5e>Prohibited activities</font>
+### <font color=#EB4925>Prohibited activities</font>
 
 - DNS zone walking via Amazon Route53 and Hosted Zones
 - Denial of Service (DoS), Distributed Denial of Service ([DDoS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}})), Simulated DoS, Simulated [DDoS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}})
@@ -144,20 +144,20 @@ For any simulated events, contact aws-security-simulated-event@amazon.com
 _Read More about Penetration Testing:_ https://aws.amazon.com/security/penetration-testing/ 
 ## Data at rest vs Data in Transit
 
-- <font color=#f1ef63>At rest:</font> data stored or archived on a device
+- <font color=#EBAC25>At rest:</font> data stored or archived on a device
 	- On a hard disk, in RDS, in S3 Glacier, etc.
-- <font color=#f1ef63>In transit (in motion):</font> data being transferred
-##### <font color=#f43f5e>Data in both states (at rest, in transit) should be encrypted as a best practice.</font>
+- <font color=#EBAC25>In transit (in motion):</font> data being transferred
+##### <font color=#EB4925>Data in both states (at rest, in transit) should be encrypted as a best practice.</font>
 ### AWS KMS (Key Management Service)
 
-##### <font color=#10b981>AWS is managing encryption keys for the customers using KMS.</font>
+##### <font color=#C7EB25>AWS is managing encryption keys for the customers using KMS.</font>
 
 - **Encryption Opt-in:**
-	- <font color=#f1ef63>EBS Volumes:</font> encrypt volumes
-	- <font color=#f1ef63>S3 buckets:</font> server-side encryption of objects (SSE-S3 enabled by default, SSE-KMS opt-in)
-	- <font color=#f1ef63>Redshift Database</font>
-	- <font color=#f1ef63>RDS database</font>
-	- <font color=#f1ef63>EFS drives:</font> encryption of data
+	- <font color=#EBAC25>EBS Volumes:</font> encrypt volumes
+	- <font color=#EBAC25>S3 buckets:</font> server-side encryption of objects (SSE-S3 enabled by default, SSE-KMS opt-in)
+	- <font color=#EBAC25>Redshift Database</font>
+	- <font color=#EBAC25>RDS database</font>
+	- <font color=#EBAC25>EFS drives:</font> encryption of data
 
 - **Encryption Automatically enabled:**
 	- [CloudTrail]({{< ref "17-cloud-monitoring/#aws-cloudtrail" >}}) Logs
@@ -165,11 +165,11 @@ _Read More about Penetration Testing:_ https://aws.amazon.com/security/penetrati
 	- [Storage Gateway]({{< ref "11-s3/#aws-storage-gateway" >}})
 ### Cloud HSM
 
-- **KMS** = <font color=#f43f5e>AWS manages the software for encryption</font>
-- **Cloud HSM** = <font color=#10b981>AWS is provisioning encryption hardware</font> (HSM = Hardware Security Module)
+- **KMS** = <font color=#EB4925>AWS manages the software for encryption</font>
+- **Cloud HSM** = <font color=#C7EB25>AWS is provisioning encryption hardware</font> (HSM = Hardware Security Module)
 	- Customer is managing their own encryption keys instead of AWS
 	- HSM devices are tamper resistant and FIPS compliant
-### <font color=#f1ef63>Types of KMS Keys</font>
+### <font color=#EBAC25>Types of KMS Keys</font>
 
 - **Customer Managed Key:**
 	- Created, managed and used by the customer
@@ -205,29 +205,29 @@ KMS > AWS managed keys
 - Integration with Amazon RDS (MySQL, PostgreSQL, Aurora)
 - Secrets are encrypted using KMS
 
-<font color=#f1ef63>Use case:</font> RDS integrations.
+<font color=#EBAC25>Use case:</font> RDS integrations.
 
 ```AWSConsole
 Secrets Manager > Store a new secret
 ```
 ## Artifact Overview
 
-**Artifact** is a portal that provides customers with on-demand access to <font color=#10b981>AWS compliance documentation</font> and <font color=#10b981>AWS agreements</font>.
+**Artifact** is a portal that provides customers with on-demand access to <font color=#C7EB25>AWS compliance documentation</font> and <font color=#C7EB25>AWS agreements</font>.
 
 - Artifact Reports - allows downloading AWS security and compliance documents from third-party auditors, like AWS ISO certifications, Payment Card Industry (PCI) and System and Organization Control (SOC) reports
 - Artifact Agreements - allows reviewing, accepting and tracking the status of AWS agreements, such as:
 	- Business Associate Addendum (BAA)
 	- Health Insurance Portability and Accountability Act (HIPAA) for an individual account in the organization
-##### <font color=#f1ef63>Can be used to support internal audit or compliance.</font>
+##### <font color=#EBAC25>Can be used to support internal audit or compliance.</font>
 
 ```CLI
 Artifact > View reports
 ```
 ## GuardDuty
 
-**GuardDuty** is an <font color=#f43f5e>Intelligent Threat Discovery</font> to protect AWS account.
+**GuardDuty** is an <font color=#EB4925>Intelligent Threat Discovery</font> to protect AWS account.
 
-Uses Machine Learning algorithms, <font color=#f43f5e>anomaly detection.</font>
+Uses Machine Learning algorithms, <font color=#EB4925>anomaly detection.</font>
 
 Enabled with 1-click, no need to install any software.
 ##### Input data includes:
@@ -247,20 +247,20 @@ GuardDuty has a dedicated finding for Crypto Currency (mining?) attacks.
 _Amazon GuardDuty input data example_
 ## Amazon Inspector
 
-##### <font color=#f1ef63>Automated Security Assessment.</font>
+##### <font color=#EBAC25>Automated Security Assessment.</font>
 
 - For EC2 instances
 	- Using [AWS System Manager (SSM)]({{< ref "14-deployments/#systems-manager-ssm" >}}) agent
-	- Analyze against <font color=#f43f5e>unintended network accessibility</font>
-	- Analyze the <font color=#f43f5e>running OS against known vulnerabilities</font>
+	- Analyze against <font color=#EB4925>unintended network accessibility</font>
+	- Analyze the <font color=#EB4925>running OS against known vulnerabilities</font>
 - For Container Images pushed to [ECR]({{< ref "13-other-compute-services/#ecr" >}})
 	- Assessment of [Container Images]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) as they are being pushed
 - For [Lambda]({{< ref "13-other-compute-services/#lambda" >}}) Functions
 	- Identifies software vulnerabilities in function code and package dependencies
 	- Assessment of functions as they are deployed
-##### <font color=#f1ef63>Reporting and integration with</font> [AWS Security Hub]({{< ref "19-security-and-compliance/#aws-security-hub" >}}).
+##### <font color=#EBAC25>Reporting and integration with</font> [AWS Security Hub]({{< ref "19-security-and-compliance/#aws-security-hub" >}}).
 
-**Amazon Inspector** <font color=#f43f5e>evaluates vulnerabilities (against CVE database)</font> only running EC2 instances, Container Images and Lambda Functions.
+**Amazon Inspector** <font color=#EB4925>evaluates vulnerabilities (against CVE database)</font> only running EC2 instances, Container Images and Lambda Functions.
 
 A risk score is associated with all vulnerabilities for prioritization.
 ## AWS Config
@@ -283,12 +283,12 @@ AWS Config > 1-click setup
 ```
 ## AWS Macie
 
-**Amazon Macie** is a fully managed data security and data privacy service that uses <font color=#10b981>machine learning and pattern matching</font> to discover <font color=#f43f5e>your sensitive data in AWS.</font>
+**Amazon Macie** is a fully managed data security and data privacy service that uses <font color=#C7EB25>machine learning and pattern matching</font> to discover <font color=#EB4925>your sensitive data in AWS.</font>
 
-**Macie** helps identifying and alerting <font color=#f43f5e>sensitive data</font>, such as e.g. <font color=#f43f5e>PII</font> (Personally Identifiable Information).
+**Macie** helps identifying and alerting <font color=#EB4925>sensitive data</font>, such as e.g. <font color=#EB4925>PII</font> (Personally Identifiable Information).
 ## AWS Security Hub
 
-**AWS Security Hub** is a <font color=#10b981>central security tool</font> to manage security across several AWS accounts and automate security checks.
+**AWS Security Hub** is a <font color=#C7EB25>central security tool</font> to manage security across several AWS accounts and automate security checks.
 
 Integrated dashboards showing current security and compliance status to quickly take actions.
 
@@ -304,7 +304,7 @@ Integrated dashboards showing current security and compliance status to quickly 
 - AWS Health
 - AWS Partner Network Solutions
 
-<font color=#f1ef63>AWS Config service is a dependency and must first be enabled to use Security Hub.</font>
+<font color=#EBAC25>AWS Config service is a dependency and must first be enabled to use Security Hub.</font>
 
 ![](./assets/AWS_Security_Hub.png)
 _AWS Security Hub_
@@ -314,9 +314,9 @@ _AWS Security Hub_
 
 Often security findings require deeper analysis to isolate the root cause and take action - it can be a complex process.
 
-**Amazon Detective** <font color=#f43f5e>analyzes, investigates and identifies the root cause of security issues or suspicious activities</font> (using Machine Learning).
+**Amazon Detective** <font color=#EB4925>analyzes, investigates and identifies the root cause of security issues or suspicious activities</font> (using Machine Learning).
 
-It is automatically collecting and processing events from [VPC Flow Logs]({{< ref "18-vpc/#vpc-flow-logs" >}}), [CloudTrail]({{< ref "17-cloud-monitoring/#aws-cloudtrail" >}}), and [GuardDuty]({{< ref "19-security-and-compliance/#guardduty" >}}) and creating an unified view. It can produce visualizations with details and context to help <font color=#f43f5e>getting to the root cause.</font>
+It is automatically collecting and processing events from [VPC Flow Logs]({{< ref "18-vpc/#vpc-flow-logs" >}}), [CloudTrail]({{< ref "17-cloud-monitoring/#aws-cloudtrail" >}}), and [GuardDuty]({{< ref "19-security-and-compliance/#guardduty" >}}) and creating an unified view. It can produce visualizations with details and context to help <font color=#EB4925>getting to the root cause.</font>
 ## AWS Abuse
 
 Report suspected AWS resources used to abusive or illegal purposes.
@@ -335,18 +335,18 @@ Contact the AWS Abuse team at abuse@amazonaws.com
 Root user = AWS Account Owner
 ##### Actions that can be performed only by the root user:
 
-- <font color=#f43f5e>Change account settings</font> (account name, email address, root user password, root user access keys)
+- <font color=#EB4925>Change account settings</font> (account name, email address, root user password, root user access keys)
 - View certain tax invoices
-- <font color=#f43f5e>Close AWS account</font>
+- <font color=#EB4925>Close AWS account</font>
 - Restore IAM user permissions
-- <font color=#f43f5e>Change or cancel your AWS Support plan</font>
-- <font color=#f43f5e>Register as a seller in the Reserved Instance Marketplace</font>
+- <font color=#EB4925>Change or cancel your AWS Support plan</font>
+- <font color=#EB4925>Register as a seller in the Reserved Instance Marketplace</font>
 - Configure an Amazon S3 bucket to enable MFA
 - Edit or delete an Amazon S3 bucket policy that includes an invalid VPC ID or VPC endpoint ID
 - Sign up for GovCloud
 ## IAM Access Analyzer
 
-##### <font color=#f1ef63>Find out which resources are shared externally with IAM Access Analyzer.</font>
+##### <font color=#EBAC25>Find out which resources are shared externally with IAM Access Analyzer.</font>
 
 - S3 Buckets
 - IAM Roles
@@ -355,34 +355,34 @@ Root user = AWS Account Owner
 - SQS queues
 - Secrets Manager Secrets
 
-Define <font color=#f43f5e>Zone of Trust</font> (AWS Account or AWS Organization).
+Define <font color=#EB4925>Zone of Trust</font> (AWS Account or AWS Organization).
 
 Access outside zone of trusts = findings.
 ## Summary
 
-- <font color=#f1ef63>Shared Responsibility Model</font> on AWS
-- <font color=#f1ef63>Shield:</font> Automatic DDoS Protection + 24/7 support for advanced
-- <font color=#f1ef63>WAF:</font> Web Application Firewall to filter incoming web requests based on rules
-- <font color=#f1ef63>KMS:</font> Encryption keys managed by AWS
-- <font color=#f1ef63>CloudHSM:</font> Hardware encryption (AWS Customer managing own keys)
-- <font color=#f1ef63>AWS Certificate manager:</font> Provision, manage and deploy TLS Certificates
-- <font color=#f1ef63>Artifact:</font> Get access to compliance reports such as PCI, ISO, etc.
-- <font color=#f1ef63>GuardDuty:</font> Find malicious behavior within VPC, DNS and CloudTrail Logs
-- <font color=#f1ef63>Inspector:</font> Find software vulnerabilities in EC2, ECR images and Lambda functions
-- <font color=#f1ef63>Network Firewall:</font> Protect VPC against network attacks
-- <font color=#f1ef63>Config:</font> Track config changes and compliance against rules
-- <font color=#f1ef63>Macie:</font> Find sensitive data (e.g. PII Personally Identifiable Information data) in Amazon S3 buckets
-- <font color=#f1ef63>CloudTrail:</font> Track API calls made by users within account
-- <font color=#f1ef63>AWS Security Hub:</font> gather security findings from multiple AWS accounts
-- <font color=#f1ef63>Amazon Detective:</font> Find the root cause of security issues or suspicious activities
-- <font color=#f1ef63>AWS Abuse:</font> Report AWS resources used for abusive or illegal purposes
-- <font color=#f1ef63>Root user privileges:</font>
+- <font color=#EBAC25>Shared Responsibility Model</font> on AWS
+- <font color=#EBAC25>Shield:</font> Automatic DDoS Protection + 24/7 support for advanced
+- <font color=#EBAC25>WAF:</font> Web Application Firewall to filter incoming web requests based on rules
+- <font color=#EBAC25>KMS:</font> Encryption keys managed by AWS
+- <font color=#EBAC25>CloudHSM:</font> Hardware encryption (AWS Customer managing own keys)
+- <font color=#EBAC25>AWS Certificate manager:</font> Provision, manage and deploy TLS Certificates
+- <font color=#EBAC25>Artifact:</font> Get access to compliance reports such as PCI, ISO, etc.
+- <font color=#EBAC25>GuardDuty:</font> Find malicious behavior within VPC, DNS and CloudTrail Logs
+- <font color=#EBAC25>Inspector:</font> Find software vulnerabilities in EC2, ECR images and Lambda functions
+- <font color=#EBAC25>Network Firewall:</font> Protect VPC against network attacks
+- <font color=#EBAC25>Config:</font> Track config changes and compliance against rules
+- <font color=#EBAC25>Macie:</font> Find sensitive data (e.g. PII Personally Identifiable Information data) in Amazon S3 buckets
+- <font color=#EBAC25>CloudTrail:</font> Track API calls made by users within account
+- <font color=#EBAC25>AWS Security Hub:</font> gather security findings from multiple AWS accounts
+- <font color=#EBAC25>Amazon Detective:</font> Find the root cause of security issues or suspicious activities
+- <font color=#EBAC25>AWS Abuse:</font> Report AWS resources used for abusive or illegal purposes
+- <font color=#EBAC25>Root user privileges:</font>
 	- Change account settings
 	- Close AWS account
 	- Change or cancel AWS Support plan
 	- Register as a seller in the Reserved Instance Marketplace
-- <font color=#f1ef63>IAM Access Analyzer:</font> Identify which resources are shared externally
-- <font color=#f1ef63>Firewall Manager:</font> Manage security rules across an Organization (WAF, Shield...)
+- <font color=#EBAC25>IAM Access Analyzer:</font> Identify which resources are shared externally
+- <font color=#EBAC25>Firewall Manager:</font> Manage security rules across an Organization (WAF, Shield...)
 
 ---
 ## >> Sources <<
