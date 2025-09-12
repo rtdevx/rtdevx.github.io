@@ -22,6 +22,19 @@ My toolkit includes:
 - SharePoint and Confluence (collaboration and documentation)  
 - Deep experience administering Microsoft server technologies
 
+<!--
+
+| **Tech Stack**                           | **Details**                                                                                                                                                                                                                                    |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **☁️ Cloud Platforms**                   | `AWS`  <br>Designing and managing scalable, high-performance cloud environments to support dynamic workloads.                                                                                                                                  |
+| **📦 Containers & Orchestration**        | **`Docker`, `Kubernetes`**  <br>Implementing container orchestration for seamless, reliable application deployment across diverse environments.                                                                                                |
+| **🔧 DevOps Tools**                      | **`Jenkins`, `GitHub Actions`, `Maven`,`SonarQube`, `Nexus`, `Trivy`, `Prometheus`, `Grafana`**  <br>Streamlining CI/CD pipelines by integrating testing, monitoring, and security tools to maintain high code quality and system performance. |
+| **📜 Infrastructure as Code (IaC)**      | **`Terraform`, `Ansible`**  <br>Automating the provisioning and management of infrastructure, ensuring consistency, reliability, and scalability across deployments.                                                                           |
+| **💻 Programming & Scripting Languages** | **`Python`, `Bash`,** `YAML`, `HCL`  <br>Crafting automation scripts and tools to optimize workflows, reduce manual interventions, and enhance system productivity.                                                                            |
+| **🖥️ Systems Administration**           | **`Linux`**  <br>Administering and securing high-availability Linux server environments to ensure robust and continuous operation of critical applications.                                                                                    |
+
+-->
+
 {{< alert "github">}}
 Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page for more details.
 {{< /alert >}}
