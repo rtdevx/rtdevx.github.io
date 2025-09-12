@@ -82,7 +82,7 @@ _AWS Well-Architected:_ https://aws.amazon.com/architecture/well-architected/
 <font color=#f1ef63>Design Principles:</font>
 
 - Adopt a consumption mode - pay only for what you use
-- Measure overall efficiency - use CloudWatch
+- Measure overall efficiency - use [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}})
 - Stop spending money on data center operations - AWS does the infrastructure part and enables customer to focus on organization projects
 - Analyze and attribute expenditure - accurate identification of system usage and costs helps to measure <font color=#10b981>Return on Investment (ROI)</font> - <font color=#f43f5e>make sure to use tags!</font>
 - Use managed and application level services to reduce cost of ownership - as managed services operate at cloud scale then can offer a lower cost per transaction or service
