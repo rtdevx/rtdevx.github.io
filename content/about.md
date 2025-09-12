@@ -30,8 +30,9 @@ My toolkit includes:
 | **📦 Containers & Orchestration**        | **`Docker`, `Kubernetes`**  <br>Implementing container orchestration for seamless, reliable application deployment across diverse environments.                                                                                                |
 | **🔧 DevOps Tools**                      | **`Jenkins`, `GitHub Actions`, `Maven`,`SonarQube`, `Nexus`, `Trivy`, `Prometheus`, `Grafana`**  <br>Streamlining CI/CD pipelines by integrating testing, monitoring, and security tools to maintain high code quality and system performance. |
 | **📜 Infrastructure as Code (IaC)**      | **`Terraform`, `Ansible`**  <br>Automating the provisioning and management of infrastructure, ensuring consistency, reliability, and scalability across deployments.                                                                           |
-| **💻 Programming & Scripting Languages** | **`Python`, `Bash`,** `YAML`, `HCL`  <br>Crafting automation scripts and tools to optimize workflows, reduce manual interventions, and enhance system productivity.                                                                            |
-| **🖥️ Systems Administration**           | **`Linux`**  <br>Administering and securing high-availability Linux server environments to ensure robust and continuous operation of critical applications.                                                                                    |
+| **💻 Programming & Scripting Languages** | `PowerShell` <br>Crafting automation scripts and tools to optimize workflows, reduce manual interventions, and enhance system productivity.                                                                                                    |
+| **🖥️ Systems Administration**           | **`Linux`**  `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                                                                                           |
+| **🧭 Agile**                             | `Jira`<br>Agile delivery and Jira project design and automation, SharePoint and Confluence (collaboration and documentation)<br>                                                                                                               |
 
 -->
 
