@@ -134,7 +134,7 @@ _More about Network Firewall:_ https://docs.aws.amazon.com/network-firewall/
 ### <font color=#f43f5e>Prohibited activities</font>
 
 - DNS zone walking via Amazon Route53 and Hosted Zones
-- Denial of Service (DoS), Distributed Denial of Service (DDoS), Simulated DoS, Simulated DDoS
+- Denial of Service (DoS), Distributed Denial of Service ([DDoS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}})), Simulated DoS, Simulated [DDoS]({{< ref "19-security-and-compliance/#ddos-protection-on-aws" >}})
 - Port flooding
 - Protocol flooding
 - Request flooding (login request flooding, API request flooding)
