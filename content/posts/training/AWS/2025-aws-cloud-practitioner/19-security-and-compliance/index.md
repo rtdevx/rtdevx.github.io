@@ -94,7 +94,7 @@ _More about DDOS protection:_ https://docs.aws.amazon.com/whitepapers/latest/aws
 - Rate-based rules - <font color=#f43f5e>to count occurrences of events, limit users to x requests per second</font>, etc. - for DDoS protection
 ## AWS Network Firewall
 
-- Protects entire Amazon VPC
+- Protects entire Amazon VPC (as oppose to [Security Groups & Network ACL]({{< ref "18-vpc/#security-groups--network-acl" >}}))
 - From [Layer 3]({{< ref "osi-model/#3-network-layer" >}}) to [Layer 7]({{< ref "osi-model/#7-application-layer" >}}) protection
 - Any direction, you can inspect
 	- VPC to VPC traffic

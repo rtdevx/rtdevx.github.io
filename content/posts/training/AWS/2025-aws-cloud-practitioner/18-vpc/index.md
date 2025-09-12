@@ -83,6 +83,8 @@ VPC > Virtual Private Cloud > Subnets > Create subnet
 - Are attached at the <font color=#f43f5e>Subnet level</font>
 - Rules only include IP addresses
 
+_More:_ [AWS Network Firewall]({{< ref "19-security-and-compliance/#aws-network-firewall" >}}) that <font color=#f43f5e>protects entire VPC</font>.
+
 ```AWSConsole
 VPC > Security > Security Groups
 
