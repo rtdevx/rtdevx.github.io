@@ -73,6 +73,7 @@ Insert an icon: `{ {< icon "circle-info" >}}`
 | 💡      | Idea                |
 | 👨🏻‍💻 | To Do / Reminder    |
 | 📺      | YouTube             |
+| 🗂️     | Series              |
 | 📄      | File / Code         |
 ## 🔥References
 
