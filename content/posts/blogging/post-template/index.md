@@ -27,13 +27,13 @@ Can be enhanced with [emojis]({{< ref "post-template/#emojis" >}}) or <font colo
 {{< youtube MX4yy1dTVYg >}}
 
 ---
-## 🔗Linking internal content
+## Linking internal content
 
 - [Installing Hugo with Congo]({{< ref "installing-congo-hugo" >}})
 - [Categories]({{< ref "categories" >}})
 - [Tags]({{< ref "tags" >}})
 - [CheatSheets]({{< ref "tags/cheatsheets" >}})
-### 🗁 Folders
+### Folders
 
 1. Folder location:
 	- content/posts<font color=#EBAC25>/category</font><font color=#C7EB25>/YYYY</font>
