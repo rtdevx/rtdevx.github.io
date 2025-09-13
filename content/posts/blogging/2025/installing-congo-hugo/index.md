@@ -55,7 +55,7 @@ Mode                LastWriteTime         Length Name
 _Source:_ [Set up the theme configuration files](https://jpanther.github.io/congo/docs/installation/#set-up-theme-configuration-files).
 ## 4. Update `hugo.toml`
 
-**<font color=#EB4925>Important:</font>** If you didn’t use Hugo Modules to install Congo, you must add the line `theme = "congo"` to the top of your `hugo.toml` file.
+‼️If you haven’t use `Hugo Modules` to install `Congo`, you must add the line `theme = "congo"` to the top of your `hugo.toml` file.
 
 ```PowerShell
 code .\config\_default\hugo.toml
@@ -64,7 +64,9 @@ code .\config\_default\hugo.toml
 theme = "congo"
 ```
 
-Make any other modifications as appropriate (baseURL at the minimum)
+ℹ️ You should also make any other modifications as appropriate (baseURL at the minimum)
+
+Example `.\config\_default\hugo.toml` file:
 
 {{< highlight html "linenos=table,hl_lines=5 7" >}}
 
@@ -105,9 +107,9 @@ summaryLength = 0
 hugo server
 ```
 
-<font color=#EBAC25>After Hugo server is started, website should be available under:</font>
+ℹ️ After `Hugo server` is started, website should be available under:
 
-http://localhost:1313/ 
+[http://localhost:1313/](http://localhost:1313/)
 ## 6. The basic Congo installation is now complete. 
 
 Continue to the [Getting Started](https://jpanther.github.io/congo/docs/getting-started/) section to learn more about configuring the theme.
@@ -128,8 +130,8 @@ code .\config\_default\params.toml
 colorScheme = "congo"
 ```
 
-**\*Valid color options:** congo, avocado, cherry, fire, ocean, sapphire, slate:
-https://jpanther.github.io/congo/docs/getting-started/#colour-schemes
+**\*Valid color options:** congo, avocado, cherry, fire, ocean, sapphire, slate.<br />
+_More:_ https://jpanther.github.io/congo/docs/getting-started/#colour-schemes
 ## 7. Organizing content
 
 https://jpanther.github.io/congo/docs/getting-started/#organising-content
@@ -138,7 +140,7 @@ https://jpanther.github.io/congo/docs/getting-started/#organising-content
 https://jpanther.github.io/congo/docs/configuration/
 ## 9. Pushing to GitHub pages
 
-\*<font color=#EB4925>only for the newly initialized repository:</font>
+‼️only for the newly initialized repository:
 
 ```PowerShell
 new-item -ItemType File .gitignore
