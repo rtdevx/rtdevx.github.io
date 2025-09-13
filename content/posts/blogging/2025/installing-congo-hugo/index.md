@@ -143,7 +143,7 @@ new-item -ItemType File .gitignore
 # git init # was already done
 git add .
 git commit -m "Initial commit"
-git remote add origin git@github.com:rtdevx-www/rtdevx-www.git
+git remote add origin git@github.com:rtdevx/rtdevx.github.io.git
 git push origin main
 ```
 
