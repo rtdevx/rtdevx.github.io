@@ -9,6 +9,7 @@ tags:
   - devops
   - tools
   - github
+  - PowerShell
 categories: DevOps Tools
 ---
 {{< lead >}}
