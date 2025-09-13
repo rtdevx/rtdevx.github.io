@@ -66,7 +66,8 @@ categories: DevOps Tools
   <source src="./assets/vscode-copilot.webm" type="video/webm">  
 Your browser does not support the video tag.  
 </video>
-### Installing (above) VSCode extensions with PowerShell
+
+### Installing (above) VSCode extensions using PowerShell
 
 ```PowerShell
 Write-Host `n"Installing VSCode extensions."`n -ForegroundColor Green
