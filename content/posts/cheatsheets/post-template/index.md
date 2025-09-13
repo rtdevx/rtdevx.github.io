@@ -71,7 +71,7 @@ Insert an icon: `{ {< icon "circle-info" >}}`
 | ✅       | Solution / Solved    |
 | ℹ️      | Info                 |
 | 💡      | Idea                 |
-| 👨🏻‍💻 | To Do / Reminder     |
+| 👨🏻‍💻 | To Do                |
 | 📺      | YouTube              |
 | ✨       | Post title highlight |
 | 🗂️     | Series               |
