@@ -89,10 +89,10 @@
 #    icon = "circle-info"
 #    showName = false  
 
-#[[footer]]
-#  name = "»"
-#  pageRef = "|"
-#  weight = 35
+[[footer]]
+  name = "»"
+  pageRef = "post-template"
+  weight = 35
 
 #[[footer]]
 #  name = "Links"
