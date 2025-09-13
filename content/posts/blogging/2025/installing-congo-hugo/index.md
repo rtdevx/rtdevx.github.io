@@ -154,6 +154,8 @@ git push origin main
 _Source:_ https://jpanther.github.io/congo/docs/hosting-deployment/#github-pages
 ## 10. GitHub Actions
 
+📄 `.github/workflows/hugo.yml`
+
 ```YAML
 # .github/workflows/hugo.yml
 
@@ -198,7 +200,7 @@ jobs:
 ```
 
 _Source:_ https://jpanther.github.io/congo/docs/hosting-deployment/#github-pages
-## 11. Update using Git
+## 11. Update Congo using Git
 
 Git submodules can be updated using the `git` command. Simply execute the following command and the latest version of the theme will be downloaded into your local repository:
 
@@ -241,4 +243,4 @@ permissions:
   contents: write
 ```
 
-section must be added in order to solve the problem
+section must be added to [10. GitHub Actions]({{< ref "installing-congo-hugo/#10-github-actions" >}}) in order to solve the problem
