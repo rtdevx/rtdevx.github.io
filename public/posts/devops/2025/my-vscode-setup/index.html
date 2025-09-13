@@ -619,7 +619,7 @@
     <li><a href="#manual-settings">Manual Settings</a></li>
     <li><a href="#my-vscode-extensions">My VSCode Extensions</a>
       <ul>
-        <li><a href="#installing-above-vscode-extensions-using-powershell">Installing (above) VSCode extensions using PowerShell</a></li>
+        <li><a href="#installing-listed-vscode-extensions-using-powershell">Installing listed VSCode extensions using PowerShell</a></li>
       </ul>
     </li>
     <li><a href="#screenshots">Screenshots</a></li>
@@ -816,7 +816,7 @@
   <source src="./assets/vscode-copilot.webm" type="video/webm">  
 Your browser does not support the video tag.  
 </video>
-<h3 id="installing-above-vscode-extensions-using-powershell" class="relative group">Installing (above) VSCode extensions using PowerShell <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#installing-above-vscode-extensions-using-powershell" aria-label="Anchor">#</a></span></h3>
+<h3 id="installing-listed-vscode-extensions-using-powershell" class="relative group">Installing listed VSCode extensions using PowerShell <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#installing-listed-vscode-extensions-using-powershell" aria-label="Anchor">#</a></span></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="nb">Write-Host</span> <span class="p">`</span><span class="n">n</span><span class="s2">&#34;Installing VSCode extensions.&#34;</span><span class="p">`</span><span class="n">n</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">start-process</span> <span class="n">code</span> <span class="n">-windowstyle</span> <span class="n">Hidden</span> <span class="n">-ArgumentList</span> <span class="s2">&#34;--install-extension ms-vscode.powershell --force&#34;</span> <span class="n">-PassThru</span> <span class="n">-Wait</span>

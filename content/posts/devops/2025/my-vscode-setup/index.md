@@ -70,7 +70,7 @@ categories: DevOps Tools
 Your browser does not support the video tag.  
 </video>
 
-### Installing (above) VSCode extensions using PowerShell
+### Installing listed VSCode extensions using PowerShell
 
 ```PowerShell
 Write-Host `n"Installing VSCode extensions."`n -ForegroundColor Green
