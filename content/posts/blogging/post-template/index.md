@@ -11,6 +11,11 @@ categories: Blogging
 ---
 {{< lead >}}
 Example how a new post can be structured. Header information, highlights, etc...
+# The world’s fastest framework for building websites
+
+Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+
+More about [Hugo]({{< ref "tags/hugo" >}})👈🏻
 {{< /lead >}}
 
 {{< alert "lightbulb" >}}
@@ -23,7 +28,7 @@ Can be enhanced with [emojis]({{< ref "post-template/#emojis" >}}) or <font colo
 
 ---
 
-{{< youtube BszXLBKWs >}}
+{{< youtube MX4yy1dTVYg >}}
 
 ---
 ## Linking internal content
