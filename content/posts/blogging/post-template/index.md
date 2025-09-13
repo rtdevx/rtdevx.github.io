@@ -33,7 +33,10 @@ Can be enhanced with [emojis]({{< ref "post-template/#emojis" >}}) or <font colo
 ---
 ## Linking internal content
 
-[Installing Hugo with Congo]({{< ref "installing-congo-hugo" >}})
+- [Installing Hugo with Congo]({{< ref "installing-congo-hugo" >}})
+- [Categories]({{< ref "categories" >}})
+- [Tags]({{< ref "tags" >}})
+- [CheatSheets]({{< ref "tags/cheatsheets" >}})
 ### Folders
 
 1. Folder location:
