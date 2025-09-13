@@ -141,7 +141,7 @@
     "keywords": ["hugo","cheatsheets"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "272"
+    "wordCount": "271"
   }
   </script>
     
@@ -539,7 +539,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-07-17 00:00:00 &#43;0000 UTC">17 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>272 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+      <time datetime="2025-07-17 00:00:00 &#43;0000 UTC">17 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>271 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
     
 
     
@@ -670,10 +670,9 @@
       <ul>
         <li><a href="#markdown">Markdown</a></li>
         <li><a href="#shortcodes">Shortcodes</a></li>
-        <li><a href="#buttons-and-badges">Buttons and Badges</a></li>
-        <li><a href="#congo">Congo</a></li>
       </ul>
     </li>
+    <li><a href="#-buttons-and-badges">🖰 Buttons and Badges</a></li>
     <li><a href="#-powershell-string-replace">🖫 PowerShell string replace</a></li>
     <li><a href="#-sources-">&raquo; Sources &laquo;</a></li>
     <li><a href="#-references-">&raquo; References &laquo;</a></li>
@@ -742,25 +741,25 @@
       <tr>
           <td><font color=#EB4925>Red</font></td>
           <td><code>#EB4925</code></td>
-          <td><code>&lt;font color=#EB4925&gt;Text&lt;/font&gt;</code></td>
+          <td><code>&lt;font color=#EB4925&gt;</code></td>
           <td>Warning, Important</td>
       </tr>
       <tr>
           <td><font color=#EBAC25>Yellow</font></td>
           <td><code>#EBAC25</code></td>
-          <td><code>&lt;font color=#EBAC25&gt;Text&lt;/font&gt;</code></td>
+          <td><code>&lt;font color=#EBAC25&gt;Text</code></td>
           <td>Highlights</td>
       </tr>
       <tr>
           <td><font color=#C7EB25>Green</font></td>
           <td><code>#C7EB25</code></td>
-          <td><code>&lt;font color=#C7EB25&gt;Text&lt;/font&gt;</code></td>
+          <td><code>&lt;font color=#C7EB25&gt;Text</code></td>
           <td>Highlights, interesting, etc.</td>
       </tr>
       <tr>
           <td><font color=#27D3F5>Blue</font></td>
           <td><code>#27D3F5</code></td>
-          <td><code>&lt;font color=#27D3F5&gt;Text&lt;/font&gt;</code></td>
+          <td><code>&lt;font color=#27D3F5&gt;</code></td>
           <td>Color used for content to be corrected later (i.e. new links to not-yet existing content, etc&hellip;)</td>
       </tr>
   </tbody>
@@ -808,7 +807,7 @@
 <li><a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes" target="_blank" rel="noreferrer">https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes</a>
 </li>
 </ul>
-<h3 id="buttons-and-badges" class="relative group">Buttons and Badges <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#buttons-and-badges" aria-label="Anchor">#</a></span></h3>
+<h2 id="-buttons-and-badges" class="relative group">🖰 Buttons and Badges <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-buttons-and-badges" aria-label="Anchor">#</a></span></h2>
 <table>
   <thead>
       <tr>
@@ -840,13 +839,6 @@
       </tr>
   </tbody>
 </table>
-<h3 id="congo" class="relative group">Congo <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#congo" aria-label="Anchor">#</a></span></h3>
-<ul>
-<li><a href="https://jpanther.github.io/congo/docs/" target="_blank" rel="noreferrer">Congo Docs</a>
-</li>
-<li><a href="https://jpanther.github.io/congo/samples/" target="_blank" rel="noreferrer">Congo Samples</a>
-</li>
-</ul>
 <h2 id="-powershell-string-replace" class="relative group">🖫 PowerShell string replace <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-powershell-string-replace" aria-label="Anchor">#</a></span></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="nb">Get-ChildItem</span> <span class="n">-Path</span> <span class="s2">&#34;C:\Users\robk\Documents\Documents\Notes\Obsidian\Zettelkasten\4 - Content Creation\Git\rtdevx.github.io&#34;</span> <span class="n">-Recurse</span> <span class="n">-Filter</span> <span class="p">*.</span><span class="nb">md </span><span class="p">|</span> <span class="nb">ForEach-Object</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="nb">Get-Content</span> <span class="nv">$_</span><span class="p">.</span><span class="n">FullName</span><span class="p">)</span> <span class="o">-replace</span> <span class="s1">&#39;&lt;font color=#f4e40b&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;font color=#EBAC25&gt;&#39;</span> <span class="p">|</span> <span class="nb">Set-Content</span> <span class="nv">$_</span><span class="p">.</span><span class="py">FullName</span>
@@ -854,6 +846,10 @@
 </span></span></code></pre></div><h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li><a href="https://jpanther.github.io/congo/" target="_blank" rel="noreferrer">Congo, a powerful, lightweight theme for Hugo built with Tailwind CSS</a>
+</li>
+<li><a href="https://jpanther.github.io/congo/docs/" target="_blank" rel="noreferrer">Congo Docs</a>
+</li>
+<li><a href="https://jpanther.github.io/congo/samples/" target="_blank" rel="noreferrer">Congo Samples</a>
 </li>
 <li>HTML Color Codes: <a href="https://htmlcolorcodes.com/" target="_blank" rel="noreferrer">https://htmlcolorcodes.com/</a>
 </li>

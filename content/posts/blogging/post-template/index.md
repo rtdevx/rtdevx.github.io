@@ -39,12 +39,12 @@ Can be enhanced with [emojis]({{< ref "post-template/#emojis" >}}) or <font colo
 \*<font color=#EBAC25>use `feature.jpg` if _thumb_ and _cover_ are the same</font> (_see:_ [#feature-cover-and-thumbnail-images](https://jpanther.github.io/congo/docs/getting-started/#feature-cover-and-thumbnail-images) for more information.)
 ## 🟢<font color=#EB4925>Colors</font>
 
-| Color                             | HEX       | HTML                              | Usage                                                                                             |
-| --------------------------------- | --------- | --------------------------------- | ------------------------------------------------------------------------------------------------- |
-| <font color=#EB4925>Red</font>    | `#EB4925` | `<font color=#EB4925>Text</font>` | Warning, Important                                                                                |
-| <font color=#EBAC25>Yellow</font> | `#EBAC25` | `<font color=#EBAC25>Text</font>` | Highlights                                                                                        |
-| <font color=#C7EB25>Green</font>  | `#C7EB25` | `<font color=#C7EB25>Text</font>` | Highlights, interesting, etc.                                                                     |
-| <font color=#27D3F5>Blue</font>   | `#27D3F5` | `<font color=#27D3F5>Text</font>` | Color used for content to be corrected later (i.e. new links to not-yet existing content, etc...) |
+| Color                             | HEX       | HTML                       | Usage                                                                                             |
+| --------------------------------- | --------- | -------------------------- | ------------------------------------------------------------------------------------------------- |
+| <font color=#EB4925>Red</font>    | `#EB4925` | `<font color=#EB4925>`     | Warning, Important                                                                                |
+| <font color=#EBAC25>Yellow</font> | `#EBAC25` | `<font color=#EBAC25>Text` | Highlights                                                                                        |
+| <font color=#C7EB25>Green</font>  | `#C7EB25` | `<font color=#C7EB25>Text` | Highlights, interesting, etc.                                                                     |
+| <font color=#27D3F5>Blue</font>   | `#27D3F5` | `<font color=#27D3F5>`     | Color used for content to be corrected later (i.e. new links to not-yet existing content, etc...) |
 
 _HTML Color Codes:_ https://htmlcolorcodes.com/
 ## 🏷️Icons
@@ -72,15 +72,11 @@ If anything requires further explanation, it can be referenced[^Reference1] like
 
 - https://jpanther.github.io/congo/samples/rich-content/
 - https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes
-### Buttons and Badges
+## 🖰 Buttons and Badges
 
 | Button                                                                            | Badge                                                 |
 | --------------------------------------------------------------------------------- | ----------------------------------------------------- |
 | {{< button href="../../../tags" target="_self" >}}<br>🏷️ Tags<br>{{< /button >}} | {{< badge >}}<br>Badge Shortcode...<br>{{< /badge >}} |
-### Congo
-
-- [Congo Docs](https://jpanther.github.io/congo/docs/)
-- [Congo Samples](https://jpanther.github.io/congo/samples/)
 ## 🖫 PowerShell string replace
 
 ```PowerShell
@@ -92,6 +88,8 @@ Get-ChildItem -Path "C:\Users\robk\Documents\Documents\Notes\Obsidian\Zettelkast
 ## >> Sources <<
 
 - [Congo, a powerful, lightweight theme for Hugo built with Tailwind CSS](https://jpanther.github.io/congo/)
+- [Congo Docs](https://jpanther.github.io/congo/docs/)
+- [Congo Samples](https://jpanther.github.io/congo/samples/)
 - HTML Color Codes: https://htmlcolorcodes.com/
 - Emojis: https://emojipedia.org/
 ## >> References <<
