@@ -214,7 +214,7 @@ _Source:_ https://jpanther.github.io/congo/docs/installation/#update-using-git
 - Congo Configuration: https://jpanther.github.io/congo/docs/configuration/
 ## >> References <<
 
-- TBC
+- [Hugo Post Template]({{< ref "post-template" >}})
 ## >> Issues <<
 
 ### 1. remote: Permission denied
