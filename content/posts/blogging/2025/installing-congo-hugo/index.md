@@ -16,7 +16,7 @@ Hugo is one of the most popular open-source static site generators. With its ama
 
 ## 📺 YouTube Tutorial
 
-💡Extensive but exceptionally good {{< icon "youtube" >}}  tutorial:
+💡Extensive but exceptionally good {{< icon "youtube" >}} `Hugo Static Site Generation Tutorial`:
 {{< youtube 6BRZ-yHjYwo >}}
 ## 1. Create site with Hugo
 
