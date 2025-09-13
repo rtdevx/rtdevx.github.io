@@ -64,7 +64,8 @@ theme = "congo"
 
 Make any other modifications as appropriate (baseURL at the minimum)
 
-```toml
+{{< highlight html "linenos=table,hl_lines=5 7" >}}
+
 # -- Site Configuration --
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/getting-started/
@@ -94,7 +95,8 @@ summaryLength = 0
 [services]
   [services.x]
     disableInlineCSS = true
-```
+
+{{< /highlight >}}
 ## 5. Test new website
 
 ```PowerShell
