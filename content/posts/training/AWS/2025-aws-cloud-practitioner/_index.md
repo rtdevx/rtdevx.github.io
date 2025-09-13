@@ -1,5 +1,5 @@
 +++
-date = '2025-09-13T16:57:03+01:00'
+date = '2025-08-26T16:57:03+01:00'
 draft = false
 title = 'AWS Certified Cloud Practitioner'
 +++
