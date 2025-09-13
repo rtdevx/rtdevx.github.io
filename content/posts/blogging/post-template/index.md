@@ -58,7 +58,7 @@ _HTML Color Codes:_ https://htmlcolorcodes.com/
 - https://jpanther.github.io/congo/samples/icons/
 - https://jpanther.github.io/congo/docs/shortcodes/#icon
 
-Insert an icon: `{{< icon "circle-info" >}} `
+Insert an icon: `{ {< icon "circle-info" >}}`
 ## ❤️Emojis
 
 🫶🏻 https://emojipedia.org/
