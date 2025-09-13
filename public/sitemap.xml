@@ -76,17 +76,6 @@
     
   
     
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/blogging/installing-congo-hugo/</loc>
-            <lastmod>2025-08-19T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
       <url>
             <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/19-security-and-compliance/</loc>
             <lastmod>2025-08-19T00:00:00+00:00</lastmod>
@@ -242,13 +231,33 @@
     
       <url>
             <loc>http://localhost:1313/posts/productivity/2025/250717-7-studying-techniques/</loc>
-            <lastmod>2025-07-17T00:00:00+00:00</lastmod>
+            <lastmod>2025-07-18T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
             <loc>http://localhost:1313/about/</loc>
+            <lastmod>2025-07-17T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/blogging/post-template/</loc>
+            <lastmod>2025-07-17T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/blogging/2025/installing-congo-hugo/</loc>
             <lastmod>2025-07-17T00:00:00+00:00</lastmod>
           </url>
     

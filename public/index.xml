@@ -220,10 +220,17 @@
       <description>Learn more about me and why I am starting this blog.</description>
     </item>
     <item>
-      <title>Installing Hugo with Congo</title>
-      <link>http://localhost:1313/posts/blogging/installing-congo-hugo/</link>
+      <title>Hugo Post Template</title>
+      <link>http://localhost:1313/posts/blogging/post-template/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/blogging/installing-congo-hugo/</guid>
+      <guid>http://localhost:1313/posts/blogging/post-template/</guid>
+      <description>Hugo Post Template</description>
+    </item>
+    <item>
+      <title>Installing Hugo with Congo</title>
+      <link>http://localhost:1313/posts/blogging/2025/installing-congo-hugo/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/blogging/2025/installing-congo-hugo/</guid>
       <description>Installing Hugo - The worlds fastest framework for building websites - with Congo theme</description>
     </item>
   </channel>

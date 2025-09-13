@@ -34,6 +34,14 @@
     icon = "tag"
     showName = false  
 
+[[main]]
+  name = "CheatSheets"
+  pageRef = "tags/cheatsheets"
+  weight = 40
+  [main.params]
+    icon = "skull-crossbones"
+    showName = false
+
 #[[main]]
 #  name = "My Learning"
 #  pageRef = "training"

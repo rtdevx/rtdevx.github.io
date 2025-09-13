@@ -17,13 +17,6 @@
       <description></description>
     </item>
     <item>
-      <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
-      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Other</title>
       <link>http://localhost:1313/tags/other/</link>
       <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
@@ -35,6 +28,20 @@
       <link>http://localhost:1313/tags/zettelkasten/</link>
       <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/zettelkasten/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cheatsheets</title>
+      <link>http://localhost:1313/tags/cheatsheets/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cheatsheets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
   </channel>

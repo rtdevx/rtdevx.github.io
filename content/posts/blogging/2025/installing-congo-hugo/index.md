@@ -192,12 +192,26 @@ jobs:
 ```
 
 _Source:_ https://jpanther.github.io/congo/docs/hosting-deployment/#github-pages
+## 11. Update using Git
+
+Git submodules can be updated using the `git` command. Simply execute the following command and the latest version of the theme will be downloaded into your local repository:
+
+```shell
+git submodule update --remote --merge
+```
+
+Once the submodule has been updated, rebuild your site and check everything works as expected.
+
+_Source:_ https://jpanther.github.io/congo/docs/installation/#update-using-git
 
 ---
 ## >> Sources <<
 
 - Hugo: https://gohugo.io/
 - Congo Theme: https://jpanther.github.io/congo/
+
+- Congo installation: https://jpanther.github.io/congo/docs/installation/
+- Congo Configuration: https://jpanther.github.io/congo/docs/configuration/
 ## >> References <<
 
 - TBC
