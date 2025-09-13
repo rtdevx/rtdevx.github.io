@@ -20,8 +20,6 @@ Hugo is one of the most popular open-source static site generators. With its ama
 Anything that requires attention.
 
 Can be enhanced with [emojis]({{< ref "post-template/#emojis" >}}) or <font color=#EB4925>colors</font>...
-
-- 👉🏻 https://emojipedia.org/
 {{< /alert >}}
 
 ---
