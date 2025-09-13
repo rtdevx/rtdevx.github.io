@@ -130,7 +130,8 @@ code .\config\_default\params.toml
 colorScheme = "congo"
 ```
 
-**\*Valid color options:** congo, avocado, cherry, fire, ocean, sapphire, slate.<br />
+ℹ️ Valid color options: `congo`, `avocado`, `cherry`, `fire`, `ocean`, `sapphire`, `slate`.<br />
+
 _More:_ https://jpanther.github.io/congo/docs/getting-started/#colour-schemes
 ## 7. Organizing content
 
