@@ -64,7 +64,7 @@ _HTML Color Codes:_ https://htmlcolorcodes.com/
 
 If anything requires further explanation, it can be referenced[^Reference1] like that...
 
-## 📇Organizing content
+## Organizing content
 
 - **Content:** https://jpanther.github.io/congo/docs/getting-started/#organising-content
 - **Shortcodes:** https://jpanther.github.io/congo/docs/shortcodes
