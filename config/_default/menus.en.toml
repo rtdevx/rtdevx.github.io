@@ -39,7 +39,7 @@
   pageRef = "tags/cheatsheets"
   weight = 40
   [main.params]
-    icon = "skull-crossbones"
+    icon = "translate"
     showName = false
 
 #[[main]]
@@ -90,14 +90,27 @@
 #    showName = false  
 
 #[[footer]]
-#  name = "|"
+#  name = "»"
 #  pageRef = "|"
 #  weight = 35
+
+#[[footer]]
+#  name = "Links"
+#  pageRef = "links"
+#  weight = 40
+#  [footer.params]
+#    icon = "link"
+#    showName = false
 
 [[footer]]
   name = "RSS"
   url = "https://rtdevx.github.io/index.xml"
-  weight = 40
+  weight = 50
   [footer.params]
     icon = "rss"
     showName = false
+
+#[[footer]]
+#  name = "«"
+#  pageRef = "|"
+#  weight = 55    
