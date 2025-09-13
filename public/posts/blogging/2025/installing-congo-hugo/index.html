@@ -138,7 +138,7 @@
     "keywords": ["Hugo"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "680"
+    "wordCount": "684"
   }
   </script>
     
@@ -542,7 +542,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-07-17 00:00:00 &#43;0000 UTC">17 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>680 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+      <time datetime="2025-07-17 00:00:00 &#43;0000 UTC">17 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>684 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
     
 
     
@@ -841,17 +841,14 @@
 </ul>
 <h2 id="-issues-" class="relative group">&raquo; Issues &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-issues-" aria-label="Anchor">#</a></span></h2>
 <h3 id="remote-permission-denied" class="relative group">🚩remote: Permission denied <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#remote-permission-denied" aria-label="Anchor">#</a></span></h3>
-<ol start="10">
-<li>GitHub Actions</li>
-</ol>
+<p>Issue when implementing <a href="http://localhost:1313/posts/blogging/2025/installing-congo-hugo/#10-github-actions">10. GitHub Actions</a>
+</p>
 <p>Following original instructions comes back with an error:</p>
 <blockquote>
-<p>remote: Permission to rtdevx/rtdevx.github.io.git denied to github-actions[bot].</p></blockquote>
+<p>remote: Permission to rtdevx/rtdevx.github.io.git denied to github-actions[bot].</p>
 <p>fatal: unable to access &lsquo;<a href="https://github.com/rtdevx/rtdevx.github.io.git/" target="_blank" rel="noreferrer">https://github.com/rtdevx/rtdevx.github.io.git/</a>
 &rsquo;: The requested URL returned error: 403</p>
-<blockquote>
-</blockquote>
-<p>Error: Action failed with &ldquo;The process &lsquo;/usr/bin/git&rsquo; failed with exit code 128&rdquo;</p>
+<p>Error: Action failed with &ldquo;The process &lsquo;/usr/bin/git&rsquo; failed with exit code 128&rdquo;</p></blockquote>
 <h4 id="solution" class="relative group">✅Solution <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#solution" aria-label="Anchor">#</a></span></h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-YAML" data-lang="YAML"><span class="line"><span class="cl"><span class="nt">permissions</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l">write</span><span class="w">

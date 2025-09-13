@@ -225,15 +225,15 @@ _Source:_ https://jpanther.github.io/congo/docs/installation/#update-using-git
 
 ### 🚩remote: Permission denied
 
-10. GitHub Actions
+Issue when implementing [10. GitHub Actions]({{< ref "installing-congo-hugo/#10-github-actions" >}})
 
 Following original instructions comes back with an error:
 
 >remote: Permission to rtdevx/rtdevx.github.io.git denied to github-actions[bot].
 >
-fatal: unable to access '[https://github.com/rtdevx/rtdevx.github.io.git/](https://github.com/rtdevx/rtdevx.github.io.git/)': The requested URL returned error: 403
+>fatal: unable to access '[https://github.com/rtdevx/rtdevx.github.io.git/](https://github.com/rtdevx/rtdevx.github.io.git/)': The requested URL returned error: 403
 >
-Error: Action failed with "The process '/usr/bin/git' failed with exit code 128"
+>Error: Action failed with "The process '/usr/bin/git' failed with exit code 128"
 #### ✅Solution
 
 ```YAML
