@@ -60,6 +60,17 @@ _HTML Color Codes:_ https://htmlcolorcodes.com/
 ## ❤️Emojis
 
 🫶🏻 https://emojipedia.org/
+
+| Emoji   | Usage               |
+| ------- | ------------------- |
+| ‼️      | Attention           |
+| 🚩      | Issue / Problem     |
+| 🔍      | Issue Investigation |
+| ✅       | Solution / Solved   |
+| ℹ️      | Info                |
+| 💡      | Idea                |
+| 👨🏻‍💻 | To Do / Reminder    |
+| 📄      | File / Code         |
 ## 🔥References
 
 If anything requires further explanation, it can be referenced[^Reference1] like that...

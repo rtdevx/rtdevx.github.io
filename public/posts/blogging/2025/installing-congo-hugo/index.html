@@ -138,7 +138,7 @@
     "keywords": ["Hugo"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "681"
+    "wordCount": "680"
   }
   </script>
     
@@ -542,7 +542,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-07-17 00:00:00 &#43;0000 UTC">17 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>681 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+      <time datetime="2025-07-17 00:00:00 &#43;0000 UTC">17 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>680 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
     
 
     
@@ -609,9 +609,9 @@
     <li><a href="#-references-">&raquo; References &laquo;</a></li>
     <li><a href="#-issues-">&raquo; Issues &laquo;</a>
       <ul>
-        <li><a href="#1-remote-permission-denied">1. remote: Permission denied</a>
+        <li><a href="#remote-permission-denied">🚩remote: Permission denied</a>
           <ul>
-            <li><a href="#solution">Solution</a></li>
+            <li><a href="#solution">✅Solution</a></li>
           </ul>
         </li>
       </ul>
@@ -628,7 +628,7 @@
         <h2 id="1-create-site-with-hugo" class="relative group">1. Create site with Hugo <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-create-site-with-hugo" aria-label="Anchor">#</a></span></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="nb">cd </span><span class="s2">&#34;C:\Git&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">new</span> <span class="n">site</span> <span class="n">rtdevx</span><span class="p">.</span><span class="py">github</span><span class="p">.</span><span class="py">io</span>
-</span></span></code></pre></div><p>💡Hugo framework must be installed on your system. For more details, go to: <a href="https://gohugo.io/" target="_blank" rel="noreferrer">gohugo.io</a>
+</span></span></code></pre></div><p>👨🏻‍💻<code>Hugo framework</code> must be installed on your system. For more details, go to: <a href="https://gohugo.io/" target="_blank" rel="noreferrer">gohugo.io</a>
 </p>
 <h2 id="2-installing-congo-theme-as-git-submodule" class="relative group">2. Installing Congo theme as Git submodule <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-installing-congo-theme-as-git-submodule" aria-label="Anchor">#</a></span></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-PowerShell" data-lang="PowerShell"><span class="line"><span class="cl"><span class="nb">cd </span><span class="n">rtdevx</span><span class="p">.</span><span class="py">github</span><span class="p">.</span><span class="py">io</span>
@@ -636,7 +636,7 @@
 </span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">-b</span> <span class="n">stable</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">jpanther</span><span class="p">/</span><span class="n">congo</span><span class="p">.</span><span class="py">git</span> <span class="n">themes</span><span class="p">/</span><span class="n">congo</span>
 </span></span></code></pre></div><p><em>Source:</em> <a href="https://jpanther.github.io/congo/docs/installation/#install-using-git" target="_blank" rel="noreferrer">https://jpanther.github.io/congo/docs/installation/#install-using-git</a>
 </p>
-<p>*<em>Other options available, check:</em> <a href="https://jpanther.github.io/congo/docs/installation/#installation" target="_blank" rel="noreferrer">https://jpanther.github.io/congo/docs/installation/#installation</a>
+<p>ℹ️ <em>Other options available, check:</em> <a href="https://jpanther.github.io/congo/docs/installation/#installation" target="_blank" rel="noreferrer">https://jpanther.github.io/congo/docs/installation/#installation</a>
 </p>
 <h2 id="3-set-up-the-theme-configuration-files" class="relative group">3. Set up the theme configuration files <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-set-up-the-theme-configuration-files" aria-label="Anchor">#</a></span></h2>
 <p>In the root folder of your website, delete the <code>hugo.toml</code> file that was generated by Hugo. Copy the <code>*.toml</code> config files from the theme into your <code>config/_default/</code> folder. This will ensure you have all the correct theme settings and will enable you to easily customize the theme to your needs.</p>
@@ -665,7 +665,7 @@
 </span></span><span class="line"><span class="cl"><span class="c"># Add line on top of the file:</span>
 </span></span><span class="line"><span class="cl"><span class="n">theme</span> <span class="p">=</span> <span class="s2">&#34;congo&#34;</span>
 </span></span></code></pre></div><p>ℹ️ You should also make any other modifications as appropriate (baseURL at the minimum)</p>
-<p>Example <code>.\config\_default\hugo.toml</code> file:</p>
+<p>📄 <code>.\config\_default\hugo.toml</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -840,7 +840,7 @@
 </li>
 </ul>
 <h2 id="-issues-" class="relative group">&raquo; Issues &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-issues-" aria-label="Anchor">#</a></span></h2>
-<h3 id="1-remote-permission-denied" class="relative group">1. remote: Permission denied <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-remote-permission-denied" aria-label="Anchor">#</a></span></h3>
+<h3 id="remote-permission-denied" class="relative group">🚩remote: Permission denied <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#remote-permission-denied" aria-label="Anchor">#</a></span></h3>
 <ol start="10">
 <li>GitHub Actions</li>
 </ol>
@@ -852,7 +852,7 @@
 <blockquote>
 </blockquote>
 <p>Error: Action failed with &ldquo;The process &lsquo;/usr/bin/git&rsquo; failed with exit code 128&rdquo;</p>
-<h4 id="solution" class="relative group">Solution <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#solution" aria-label="Anchor">#</a></span></h4>
+<h4 id="solution" class="relative group">✅Solution <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#solution" aria-label="Anchor">#</a></span></h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-YAML" data-lang="YAML"><span class="line"><span class="cl"><span class="nt">permissions</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l">write</span><span class="w">
 </span></span></span></code></pre></div><p>section must be added in order to solve the problem</p>
