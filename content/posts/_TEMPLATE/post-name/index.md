@@ -145,3 +145,8 @@ Following original instructions comes back with an error:
 #### ✅Solution
 
 1. What is the Solution?
+## >> Disclaimer <<
+
+{{< alert "circle-info" >}}
+Disclaimer: _Content for educational purposes only, no rights reserved._
+{{< /alert >}}
