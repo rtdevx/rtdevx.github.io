@@ -15,7 +15,7 @@ cd "C:\Git"
 hugo new site rtdevx.github.io
 ```
 
-👨🏻‍💻`Hugo framework` must be installed on your local system. For more details, visit: [gohugo.io/installation](https://gohugo.io/installation/)
+👨🏻‍💻`Hugo framework` and `Git` must be installed on the local system. For more details, visit: [gohugo.io/installation](https://gohugo.io/installation/) and [official Hugo website](https://gohugo.io/) for more information.
 ## 2. Installing Congo theme as Git submodule
 
 ```PowerShell
