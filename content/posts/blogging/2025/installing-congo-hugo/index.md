@@ -12,12 +12,14 @@ categories: Blogging
 ### The world’s fastest framework for building websites.
 
 Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+
 {{< /lead >}}
 
 ## 📺 YouTube Tutorial
 
-💡Extensive but exceptionally good {{< icon "youtube" >}} `Hugo Static Site Generation Tutorial`:
 {{< youtube 6BRZ-yHjYwo >}}
+
+💡Extensive but exceptionally good {{< icon "youtube" >}} `Hugo Static Site Generation Tutorial`
 ## 1. Create site with Hugo
 
 ```PowerShell
