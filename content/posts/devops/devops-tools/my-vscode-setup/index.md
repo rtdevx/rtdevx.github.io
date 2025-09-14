@@ -32,11 +32,11 @@ categories: DevOps Tools
 	- Night Owl
 3. Change cursor blinking (set to "expand")
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/devops/devops-tools/my-vscode-setup/assets/gh_settings_blink.png)
+![](./assets/gh_settings_blink.png)
 
 4. Cursor Smooth Caret Animation
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/devops/devops-tools/my-vscode-setup/assets/gh_settings_cursor_smooth.png)
+![](./assets/gh_settings_cursor_smooth.png)
 
 5. Enable Word Wrap in Settings (set to "on")
 6. Ensure Bracket Pair Colorization: Enabled
@@ -114,12 +114,12 @@ start-process code -windowstyle Hidden -ArgumentList "--install-extension hnw.vs
 ```
 ## Screenshots
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/devops/devops-tools/my-vscode-setup/assets/vscode_screenshot1.png)
+![](./assets/vscode_screenshot1.png)
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/devops/devops-tools/my-vscode-setup/assets/vscode_screenshot2.png)
+![](./assets/vscode_screenshot2.png)
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/devops/devops-tools/my-vscode-setup/assets/vscode_screenshot3.png)
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/devops/devops-tools/my-vscode-setup/assets/vscode_screenshot4.png)
+![](./assets/vscode_screenshot3.png)
+![](./assets/vscode_screenshot4.png)
 
 ---
 ## >> Sources <<
