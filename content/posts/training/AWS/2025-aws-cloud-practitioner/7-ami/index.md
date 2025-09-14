@@ -79,17 +79,5 @@ Automate the creation, maintain, validate the build of EC2 AMI's. Can run on a s
 |                                                                         | [25. Preparing for AWS Practitioner exam]({{< ref "25-preparing-for-the-exam" >}})  |                                                                                       |
 ## >> Disclaimer <<
 
-{{< alert >}}
-_Disclaimer: Content for educational purposes only, no rights reserved._
+{{< disclaimer_practitioner25 >}}
 
-Most of the content in this series is coming from **Stephane Maarek's** [Ultimate AWS Certified Cloud Practitioner CLF-C02 2025](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/) course on Udemy.
-
-I highly encourage you to take the [Stephane's courses](https://www.udemy.com/user/stephane-maarek/) as they are awesome and really help understanding the subject.
-
-_More about Stephane Maarek:_
-
-- https://www.linkedin.com/in/stephanemaarek
-- https://x.com/stephanemaarek
-
-**This article is just a summary and has been published to help me learning and passing the practitioner exam.**
-{{< /alert >}}
