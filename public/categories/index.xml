@@ -45,10 +45,10 @@
       <description></description>
     </item>
     <item>
-      <title>CATEGORY</title>
-      <link>http://localhost:1313/categories/category/</link>
+      <title>TEMPLATE_DRAFT</title>
+      <link>http://localhost:1313/categories/template_draft/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/category/</guid>
+      <guid>http://localhost:1313/categories/template_draft/</guid>
       <description></description>
     </item>
   </channel>

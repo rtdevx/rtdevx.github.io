@@ -54,6 +54,20 @@
     
   
     
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/</loc>
+            <lastmod>2025-08-26T16:57:03+01:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/</loc>
+            <lastmod>2025-08-26T16:57:03+01:00</lastmod>
+          </url>
+    
+  
+    
   
     
   
@@ -273,8 +287,6 @@
     
   
     
-  
-    
       <url>
             <loc>http://localhost:1313/posts/cheatsheets/hugo/post-template/</loc>
             <lastmod>2025-07-17T00:00:00+00:00</lastmod>
@@ -293,6 +305,8 @@
             <loc>http://localhost:1313/posts/_template/post-name/</loc>
             <lastmod>2025-07-17T00:00:00+00:00</lastmod>
           </url>
+    
+  
     
   
     

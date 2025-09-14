@@ -6,7 +6,7 @@ summary: POST SUMMARY...
 draft: true
 tags:
   - TAG
-categories: CATEGORY
+categories: TEMPLATE_DRAFT
 ---
 {{< lead >}}
 ### The world’s fastest framework for building websites.
