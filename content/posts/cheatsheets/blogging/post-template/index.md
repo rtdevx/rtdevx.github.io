@@ -6,7 +6,7 @@ summary: Hugo Post Template
 draft: false
 tags:
   - hugo
-categories: 
+categories:
   - Cheatsheets
   - Blogging
 ---
