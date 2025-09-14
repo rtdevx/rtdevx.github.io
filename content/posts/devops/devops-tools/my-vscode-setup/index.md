@@ -8,7 +8,6 @@ tags:
   - vscode
   - devops
   - tools
-  - github
   - git
 categories: DevOps Tools
 ---

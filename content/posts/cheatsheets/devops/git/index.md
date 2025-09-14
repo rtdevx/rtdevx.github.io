@@ -6,7 +6,6 @@ summary: Git Cheatsheet.
 draft: false
 tags:
   - devops
-  - github
   - git
 categories: Cheatsheets
 ---
