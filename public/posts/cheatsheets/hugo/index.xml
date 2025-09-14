@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on rtdevx</title>
+    <title>Blogging Cheatsheets on rtdevx</title>
     <link>http://localhost:1313/posts/cheatsheets/hugo/</link>
-    <description>Recent content in Hugo on rtdevx</description>
+    <description>Recent content in Blogging Cheatsheets on rtdevx</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
