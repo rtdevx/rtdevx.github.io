@@ -6,7 +6,6 @@ summary: Building Talos Linux Kubernetes Cluster...
 draft: false
 tags:
   - devops
-  - homelab
 categories:
   - Kubernetes
   - Homelab
