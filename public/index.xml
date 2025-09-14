@@ -7,13 +7,20 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
-    <lastBuildDate>Sat, 13 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Git Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/git/</guid>
+      <description>Git Cheatsheet.</description>
+    </item>
+    <item>
       <title>My VSCode setup</title>
-      <link>http://localhost:1313/posts/devops/2025/my-vscode-setup/</link>
+      <link>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</link>
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/devops/2025/my-vscode-setup/</guid>
+      <guid>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</guid>
       <description>My Visual Studio Code setup</description>
     </item>
     <item>
@@ -242,9 +249,9 @@
     </item>
     <item>
       <title>Installing Hugo with Congo</title>
-      <link>http://localhost:1313/posts/blogging/2025/installing-congo-hugo/</link>
+      <link>http://localhost:1313/posts/blogging/installing-congo-hugo/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/blogging/2025/installing-congo-hugo/</guid>
+      <guid>http://localhost:1313/posts/blogging/installing-congo-hugo/</guid>
       <description>Installing Hugo - The worlds fastest framework for building websites - with Congo theme</description>
     </item>
     <item>

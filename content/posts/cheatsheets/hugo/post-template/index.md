@@ -6,8 +6,7 @@ summary: Hugo Post Template
 draft: false
 tags:
   - hugo
-  - cheatsheets
-categories: Blogging
+categories: Cheatsheets
 ---
 {{< lead >}}
 Example how a new post can be structured. Header information, highlights, etc...
