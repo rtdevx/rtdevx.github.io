@@ -126,8 +126,3 @@ start-process code -windowstyle Hidden -ArgumentList "--install-extension hnw.vs
 
 - VSCode main site: https://code.visualstudio.com/
 - VSCode extensions marketplace: https://marketplace.visualstudio.com/VSCode
-## >> Disclaimer <<
-
-{{< alert "circle-info" >}}
-Disclaimer: _Content for educational purposes only, no rights reserved._
-{{< /alert >}}
