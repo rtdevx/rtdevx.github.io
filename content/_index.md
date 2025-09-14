@@ -8,7 +8,7 @@ My name is Rob and I am an experienced IT professional.
 {{< /lead >}}
  -->
 
-My thoughts and learnings about:<br /> ***DevOps***, ***Agile***, [Cloud,]({{< ref "categories/aws" >}}) ***Linux***, ***Ansible***, ***Terraform***, [Kubernetes]({{< ref "categories/kubernetes" >}}), [Network]({{< ref "categories/networking" >}})
+My thoughts and learnings about:<br /> ***DevOps***, ***Agile***, [Cloud,]({{< ref "categories/aws" >}}) [Linux,]({{< ref "categories/linux" >}}) ***Ansible***, ***Terraform***, [Kubernetes]({{< ref "categories/kubernetes" >}}), [Network]({{< ref "categories/networking" >}})
 
 I am also interested in tools and techniques that help me increasing my [productivity]({{< ref "categories/productivity" >}}) so you will also find writings on [zettelkasten,]({{< ref "tags/zettelkasten" >}}) _learning techniques_ and related topics...
 
