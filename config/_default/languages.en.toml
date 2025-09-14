@@ -9,7 +9,8 @@ copyright = "Copy, _right_? 🤔 "
 [params]
   dateFormat = "2 January 2006"
 
-  mainSections = ["posts"]
+   mainSections = ["posts"]
+  #mainSections = ["section1", "section2"]
   #description = "My personal blog..."
 
 [params.author]
