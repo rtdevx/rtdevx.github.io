@@ -7,14 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
-    <lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo Post Template</title>
-      <link>http://localhost:1313/posts/cheatsheets/hugo/post-template/</link>
-      <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/hugo/post-template/</guid>
-      <description>Hugo Post Template</description>
+      <title>Git Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/git/</guid>
+      <description>Git Cheatsheet.</description>
     </item>
   </channel>
 </rss>
