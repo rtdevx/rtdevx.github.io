@@ -36,7 +36,7 @@
 
 [[main]]
   name = "CheatSheets"
-  pageRef = "cheatsheets"
+  pageRef = "posts/cheatsheets"
   weight = 40
   [main.params]
     icon = "translate"

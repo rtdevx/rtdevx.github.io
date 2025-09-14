@@ -7,6 +7,7 @@ draft: false
 tags:
   - devops
   - proxmox
+  - homelab
 categories: Kubernetes
 ---
 {{< lead >}}
@@ -106,7 +107,7 @@ talosctl apply -f rendered/worker.yaml -n $WORKER_IP2 --insecure
 talosctl apply -f rendered/worker.yaml -n $WORKER_IP3 --insecure
 ```
 
-‼️Note `--insecure` is only used for the initial install. After cluster is installed with it's newly generated keys, this option should not be used.
+‼️Note: `--insecure` is only used for the initial install. After cluster is installed with it's newly generated keys, this option should not be used.
 #### 6. Configure talosctl
 
 ```bash
