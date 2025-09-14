@@ -7,7 +7,6 @@ draft: false
 tags:
   - vscode
   - devops
-  - tools
   - git
 categories: DevOps Tools
 ---
