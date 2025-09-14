@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'Cheat Sheets'
+title = '🗂️Cheat Sheets'
 summary = 'A set of useful cheat sheets...'
 +++
 
