@@ -7,8 +7,7 @@ draft: true
 tags:
   - TAG
 categories: 
-  - CATEGORY1
-  - CATEGORY2  
+  - CATEGORY
 ---
 {{< lead >}}
 ### The world’s fastest framework for building websites.
