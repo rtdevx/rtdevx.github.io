@@ -31,7 +31,6 @@ Can be enhanced with [emojis]({{< ref "post-template/#emojis" >}}) or <font colo
 - [Installing Hugo with Congo]({{< ref "installing-congo-hugo" >}})
 - [Categories]({{< ref "categories" >}})
 - [Tags]({{< ref "tags" >}})
-- [CheatSheets]({{< ref "tags/cheatsheets" >}})
 ### Folders
 
 1. Folder location:
@@ -172,7 +171,6 @@ Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and ot
 - [Installing Hugo with Congo]({{< ref "installing-congo-hugo" >}})
 - [Categories]({{< ref "categories" >}})
 - [Tags]({{< ref "tags" >}})
-- [CheatSheets]({{< ref "tags/cheatsheets" >}})
 ## >> Table of contents <<
 
 |                                                                         |                                                                                     |                                                                                       |

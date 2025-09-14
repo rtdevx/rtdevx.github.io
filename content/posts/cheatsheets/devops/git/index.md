@@ -150,7 +150,3 @@ It is often used to control source code by programmers who are developing softwa
 ## >> Sources <<
 
 - https://cheats.dhr.wtf/sheet/git/
-
-{{< alert "circle-info" >}}
-Disclaimer: _Content for educational purposes only, no rights reserved._
-{{< /alert >}}

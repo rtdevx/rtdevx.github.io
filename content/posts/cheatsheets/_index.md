@@ -4,8 +4,10 @@ title = 'Cheat Sheets'
 summary = 'A set of useful cheat sheets...'
 +++
 
-- **Cheat sheets for Developers**
-	- https://cheats.dhr.wtf/
-	- https://cheatsheets.zip/
-- **Markdown**
-	- https://www.markdownguide.org/basic-syntax/
+
+
+| Jump to Section        |                                                                                                                                                       |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **External Resources** | **Cheat sheets for Developers**<br>https://cheats.dhr.wtf/<br>https://cheatsheets.zip/<br>**Markdown**<br>https://www.markdownguide.org/basic-syntax/ |
+| **Blogging**           | [Hugo Cheatsheet]({{< ref "/posts/cheatsheets/hugo" >}})<br>                                                                                          |
+| **DevOps Tools**       | [Git]({{< ref "/posts/cheatsheets/devops/git" >}})                                                                                                    |

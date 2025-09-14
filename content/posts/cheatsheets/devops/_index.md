@@ -1,6 +1,6 @@
 +++
 draft = false
-title = 'DevOps Tools - Cheat sheets'
+title = 'DevOps Tools'
 summary = 'A set of useful DevOps cheat sheets...'
 +++
 
