@@ -61,20 +61,21 @@ Insert an icon: `{ {< icon "circle-info" >}}`
 
 🫶🏻 https://emojipedia.org/
 
-| Emoji   | Usage                |
-| ------- | -------------------- |
-| ‼️      | Attention            |
-| 🚩      | Issue / Problem      |
-| 🔍      | Issue Investigation  |
-| ✅       | Solution / Solved    |
-| ℹ️      | Info                 |
-| 💡      | Idea                 |
-| 👨🏻‍💻 | To Do                |
-| 💾      | Download             |
-| 📺      | YouTube              |
-| ✨/ 🔥   | Post title highlight |
-| 🗂️     | Series               |
-| 📄      | File / Code          |
+| Emoji        | Usage                |
+| ------------ | -------------------- |
+| ‼️           | Attention            |
+| 🚩           | Issue / Problem      |
+| 🚫 / ☢️ / ☣️ | Prohibited / Hazard  |
+| 🔍           | Issue Investigation  |
+| ✅            | Solution / Solved    |
+| ℹ️           | Info                 |
+| 💡           | Idea                 |
+| 👨🏻‍💻      | To Do                |
+| 💾           | Download             |
+| 📺           | YouTube              |
+| ✨/ 🔥        | Post title highlight |
+| 🗂️          | Series               |
+| 📄           | File / Code          |
 ## 🔥References
 
 If anything requires further explanation, it can be referenced[^Reference1] like that...
