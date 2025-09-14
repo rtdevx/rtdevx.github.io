@@ -26,7 +26,7 @@ categories:
 
 When downloading ISO image, ensure downloading one with QEMU guest agent support for Proxmox.
 {{< /lead >}}
-## Download Talos Linux
+## 💾 Download Talos Linux
 
 - If you need the `QEMU` guest agent so you can do guest VM shutdowns of your Talos VMs on `Proxmox`, then you will need a custom ISO
 - To get this, navigate to [https://factory.talos.dev/](https://factory.talos.dev/)
