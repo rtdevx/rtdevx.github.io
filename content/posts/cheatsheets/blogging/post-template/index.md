@@ -34,7 +34,7 @@ Can be enhanced with [emojis]({{< ref "post-template/#emojis" >}}) or <font colo
 ### Folders
 
 1. Folder location:
-	- content/posts<font color=#EBAC25>/category</font><font color=#C7EB25>/YYYY</font>
+	- content/posts<font color=#EBAC25>/category</font>
 2. Replace `thumb.jpg`
 3. Replace `cover.jpg` (if applicable)
 
@@ -56,10 +56,8 @@ _HTML Color Codes:_ https://htmlcolorcodes.com/
 - https://jpanther.github.io/congo/samples/icons/
 - https://jpanther.github.io/congo/docs/shortcodes/#icon
 
-Insert an icon: `{ {< icon "circle-info" >}}`
+**Insert an icon:** `{ {< icon "circle-info" >}}`
 ## ❤️Emojis
-
-🫶🏻 https://emojipedia.org/
 
 | Emoji        | Usage                |
 | ------------ | -------------------- |
@@ -76,9 +74,17 @@ Insert an icon: `{ {< icon "circle-info" >}}`
 | ✨/ 🔥        | Post title highlight |
 | 🗂️          | Series               |
 | 📄           | File / Code          |
+
+💾 https://emojipedia.org/
 ## 🔥References
 
 If anything requires further explanation, it can be referenced[^Reference1] like that...
+
+```
+Referenced text[^Ref1] (word!).
+
+[^Ref1]: This is the explanation of the referenced point 1.
+```
 
 ## Organizing content
 
@@ -94,9 +100,9 @@ If anything requires further explanation, it can be referenced[^Reference1] like
 - https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes
 ## 🖰 Buttons and Badges
 
-| Button                                                                            | Badge                                                 |
-| --------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| {{< button href="../../../tags" target="_self" >}}<br>🏷️ Tags<br>{{< /button >}} | {{< badge >}}<br>Badge Shortcode...<br>{{< /badge >}} |
+| Button                                                                              | Badge                                                   |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| { {< button href="../../../tags" target="_self" >}}<br>🏷️ Tags<br>{ {< /button >}} | { {< badge >}}<br>Badge Shortcode...<br>{ {< /badge >}} |
 ## ≥ Code Blocks
 
 ### Code block with backticks
@@ -152,15 +158,13 @@ Get-ChildItem -Path "C:\Users\robk\Documents\Documents\Notes\Obsidian\Zettelkast
 
 ## 🪎 Other Elements - abbr, sub, sup, kbd, mark
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+| Example                                                                                              | Code                                                                                                   |
+| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.                       | `<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.`                       |
+| H<sub>2</sub>O                                                                                       | `H<sub>2</sub>O`                                                                                       |
+| X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>                                                        | `X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>`                                                        |
+| Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.                           | `Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.`                           |
+| Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures. | `Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.` |
 ## >> Sources <<
 
 - [Congo, a powerful, lightweight theme for Hugo built with Tailwind CSS](https://jpanther.github.io/congo/)
