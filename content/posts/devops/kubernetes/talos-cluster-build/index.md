@@ -7,7 +7,9 @@ draft: false
 tags:
   - devops
   - homelab
-categories: Kubernetes
+categories:
+  - Kubernetes
+  - Homelab
 ---
 {{< lead >}}
 **Talos** **Linux** is a minimal, hardened and immutable **Linux** distribution designed for **Kubernetes**. It supports cloud platforms, bare metal and virtualization, and all system management is done via an API.
