@@ -77,7 +77,7 @@ It is often used to control source code by programmers who are developing softwa
 |`git log --graph`|View changes (graphical)|
 |`git log --graph --oneline`|View changes (graphical and brief)|
 |`git log --graph --oneline --all`|View changes (graphical, brief and all branches)|
-## Undoing Things
+## Undoing Things ✨
 
 |Command|Description|
 |---|---|
