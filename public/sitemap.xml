@@ -62,6 +62,24 @@
   
     
       <url>
+            <loc>http://localhost:1313/posts/cheatsheets/blogging/</loc>
+            <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/blogging/markdown/</loc>
+            <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
             <loc>http://localhost:1313/posts/networking/osi-model/</loc>
             <lastmod>2025-09-01T00:00:00+00:00</lastmod>
           </url>
@@ -317,11 +335,6 @@
     
   
     
-      <url>
-            <loc>http://localhost:1313/posts/cheatsheets/blogging/</loc>
-            <lastmod>2025-07-17T00:00:00+00:00</lastmod>
-          </url>
-    
   
     
   
@@ -344,8 +357,6 @@
             <loc>http://localhost:1313/posts/_template/post-name/</loc>
             <lastmod>2025-07-17T00:00:00+00:00</lastmod>
           </url>
-    
-  
     
   
     

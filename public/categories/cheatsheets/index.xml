@@ -17,6 +17,13 @@
       <description>Git Cheatsheet.</description>
     </item>
     <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/posts/cheatsheets/blogging/markdown/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/blogging/markdown/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Hugo Post Template</title>
       <link>http://localhost:1313/posts/cheatsheets/blogging/post-template/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>

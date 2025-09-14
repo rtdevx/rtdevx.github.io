@@ -24,6 +24,13 @@
       <description>My Visual Studio Code setup</description>
     </item>
     <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/posts/cheatsheets/blogging/markdown/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/blogging/markdown/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>OSI Model</title>
       <link>http://localhost:1313/posts/networking/osi-model/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
