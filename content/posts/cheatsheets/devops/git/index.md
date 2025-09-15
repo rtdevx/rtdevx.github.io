@@ -14,6 +14,10 @@ categories: Cheatsheets
 It is often used to control source code by programmers who are developing software collaboratively.
 
 {{< /lead >}}
+
+{{< alert "circle-info" >}}
+Check [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Better Comments extension]({{< ref "my-vscode-setup/#better-comments-options-" >}}) may help you creating more human-friendly comments in your code.
+{{< /alert >}}
 ## Basic Commands
 
 |Command|Description|
@@ -151,3 +155,4 @@ It is often used to control source code by programmers who are developing softwa
 - https://cheats.dhr.wtf/sheet/git/
 ## » References «
 
+[Better Comments Options]({{< ref "my-vscode-setup/#better-comments-options-" >}})
