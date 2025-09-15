@@ -11,9 +11,9 @@
     <atom:link href="http://localhost:1313/categories/category/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post Title</title>
-      <link>http://localhost:1313/posts/_template/post-name/</link>
+      <link>http://localhost:1313/posts/_template/</link>
       <pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/_template/post-name/</guid>
+      <guid>http://localhost:1313/posts/_template/</guid>
       <description>POST SUMMARY&amp;hellip;</description>
     </item>
   </channel>
