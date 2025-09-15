@@ -84,6 +84,120 @@ Your browser does not support the video tag.
 - @critical
 - @high
 - @low
+
+Here are the settings:
+
+📄settings.json
+
+```JSON
+{
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "remote.SSH.remotePlatform": {
+        "ux-ansp1": "linux",
+        "ux-anss1": "linux"
+    },
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.wordWrap": "on",
+    "application.shellEnvironmentResolutionTimeout": 60,
+    "redhat.telemetry.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.folders.color": "#98c379",
+    "material-icon-theme.activeIconPack": "none",
+
+"better-comments.tags": [  
+  
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "//",
+      "color": "#F0F2F5",
+      "strikethrough": true,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "todo:",
+      "color": "#000000",
+      "strikethrough": false,
+      "backgroundColor": "#F9E79F"
+    },
+    {
+      "tag": "note:",
+      "color": "#000000",
+      "strikethrough": false,
+      "backgroundColor": "#A9DFBF"
+    },
+    {
+      "tag": "info:",
+      "color": "#000000",
+      "strikethrough": false,
+      "backgroundColor": "#AED6F1"
+    },    
+    {
+      "tag": "hack:",
+      "color": "#000000",
+      "strikethrough": false,
+      "backgroundColor": "#FFC300"
+    },
+    {
+      "tag": "fix:",
+      "color": "#000000",
+      "strikethrough": false,
+      "backgroundColor": "#F65353"
+    },
+    {
+      "tag": "optimize:",
+      "color": "#000000",
+      "strikethrough": false,
+      "backgroundColor": "#98C379"
+    },
+    {
+      "tag": "@critical",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "@high",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "@low",
+      "color": "#98C379",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    }
+  ],
+  "material-icon-theme.logLevel": "error",
+  "material-icon-theme.opacity": 0.75,
+  "material-icon-theme.saturation": 0.75,
+  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.activityBar.location": "top",
+  "editor.overtypeCursorStyle": "line"
+}
+```
 ### Installing listed VSCode extensions using PowerShell
 
 💡Pick the ones you want / need or are interested in. You can install them with a single PowerShell command on a Windows machine.
