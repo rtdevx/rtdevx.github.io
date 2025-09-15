@@ -1,8 +1,8 @@
 ---
 title: My VSCode setup
 date: 2025-09-13
-description: My Visual Studio Code setup
-summary: My Visual Studio Code setup
+description: My Visual Studio Code setup.
+summary: My Visual Studio Code setup.
 draft: false
 tags:
   - vscode
