@@ -198,6 +198,8 @@ Your browser does not support the video tag.
   "editor.overtypeCursorStyle": "line"
 }
 ```
+
+{{< icon "github" >}} https://github.com/rtdevx/dotfiles/tree/main/vscode
 ### Installing listed VSCode extensions using PowerShell
 
 💡Pick the ones you want / need or are interested in. You can install them with a single PowerShell command on a Windows machine.
