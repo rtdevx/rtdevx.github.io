@@ -85,7 +85,7 @@ Your browser does not support the video tag.
 - @high
 - @low
 
-Here are the settings:
+ℹ️ Here are the settings:
 
 📄settings.json
 
