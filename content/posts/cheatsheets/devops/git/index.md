@@ -149,3 +149,5 @@ It is often used to control source code by programmers who are developing softwa
 ## >> Sources <<
 
 - https://cheats.dhr.wtf/sheet/git/
+## » References «
+

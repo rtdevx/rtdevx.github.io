@@ -69,6 +69,21 @@ categories: DevOps Tools
 Your browser does not support the video tag.  
 </video>
 
+## Better Comments options ✨
+
+- !
+- ?
+- //
+- *
+- todo:
+- note:
+- info:
+- hack:
+- fix:
+- optimize:
+- @critical
+- @high
+- @low
 ### Installing listed VSCode extensions using PowerShell
 
 💡Pick the ones you want / need or are interested in. You can install them with a single PowerShell command on a Windows machine.
