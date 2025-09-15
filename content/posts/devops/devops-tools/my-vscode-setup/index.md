@@ -144,4 +144,4 @@ start-process code -windowstyle Hidden -ArgumentList "--install-extension hnw.vs
 - VSCode extensions marketplace: https://marketplace.visualstudio.com/VSCode
 ## » References «
 
-[Git]({{< ref "cheatsheets/devops/git" >}})
+[Git]({{< ref "posts/cheatsheets/devops/git/" >}})
