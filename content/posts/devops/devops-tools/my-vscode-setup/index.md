@@ -74,7 +74,7 @@ Your browser does not support the video tag.
 - !
 - ?
 - //
-- *
+- \*
 - todo:
 - note:
 - info:
