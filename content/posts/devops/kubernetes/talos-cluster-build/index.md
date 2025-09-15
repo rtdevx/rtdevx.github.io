@@ -24,7 +24,7 @@ categories:
 {{< lead >}}
 ### This blog post describes Talos Linux installation on Proxmox Virtual Environment.
 
-When downloading ISO image, ensure downloading one with QEMU guest agent support for Proxmox.
+‼️When downloading ISO image, ensure downloading one with QEMU guest agent support for Proxmox.
 {{< /lead >}}
 ## 💾 Download Talos Linux
 
