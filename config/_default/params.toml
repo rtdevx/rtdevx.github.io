@@ -57,7 +57,7 @@ fingerprintAlgorithm = "sha256"
   # sharingLinks = ["facebook", "x-twitter", "linkedin"]
 
 [list]
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showSummary = true
   showTableOfContents = true
   showTaxonomies = true
