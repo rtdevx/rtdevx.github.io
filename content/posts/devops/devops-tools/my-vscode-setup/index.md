@@ -42,7 +42,6 @@ categories: DevOps Tools
 6. Ensure Bracket Pair Colorization: Enabled
 ## My VSCode Extensions
 
-
 | VSCode Extension                                                                                                         | Purpose                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [powershell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)                                   | This extension provides rich [PowerShell](https://github.com/PowerShell/PowerShell) language support for [Visual Studio Code](https://github.com/Microsoft/vscode) (VS Code). Now you can write and debug PowerShell scripts using the excellent IDE-like interface that VS Code provides.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -72,8 +71,9 @@ Your browser does not support the video tag.
 
 ### Installing listed VSCode extensions using PowerShell
 
+💡Pick the ones you want / need or are interested in. You can install them with a single PowerShell command on a Windows machine.
+
 ```PowerShell
-Write-Host `n"Installing VSCode extensions."`n -ForegroundColor Green
 
 start-process code -windowstyle Hidden -ArgumentList "--install-extension ms-vscode.powershell --force" -PassThru -Wait
 
