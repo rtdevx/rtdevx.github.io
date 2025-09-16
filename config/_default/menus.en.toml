@@ -118,7 +118,7 @@
     icon = "rss"
     showName = false
 
-#[[footer]]
-#  name = "«"
-#  pageRef = "|"
-#  weight = 55    
+[[footer]]
+  name = "«"
+  pageRef = "/"
+  weight = 5    
