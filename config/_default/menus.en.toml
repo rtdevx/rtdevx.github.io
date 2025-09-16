@@ -102,13 +102,13 @@
 #    icon = "link"
 #    showName = false
 
-#[[footer]]
-#  name = "Trainings and Certifications"
-#  pageRef = "posts/training"
-#  weight = 40
-#  [footer.params]
-#    icon = "google-scholar"
-#    showName = false
+[[footer]]
+  name = "Trainings and Certifications"
+  pageRef = "posts/training"
+  weight = 40
+  [footer.params]
+    icon = "google-scholar"
+    showName = false
 
 [[footer]]
   name = "RSS"
