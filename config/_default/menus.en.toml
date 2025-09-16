@@ -121,4 +121,7 @@
 [[footer]]
   name = "«"
   pageRef = "/"
-  weight = 5    
+  weight = 5
+#  [footer.params]
+#    icon = "chevron-up"
+#    showName = false
