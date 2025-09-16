@@ -33,6 +33,10 @@ Can be enhanced with [emojis]({{< ref "post-template/#emojis" >}}) or <font colo
 - [Installing Hugo with Congo]({{< ref "installing-congo-hugo" >}})
 - [Categories]({{< ref "categories" >}})
 - [Tags]({{< ref "tags" >}})
+
+```Markdown
+[Better Comments Options]({ {< ref "my-vscode-setup/#better-comments-options-"  >} })
+```
 ### Folders
 
 1. Folder location:
@@ -58,7 +62,7 @@ _HTML Color Codes:_ https://htmlcolorcodes.com/
 - https://jpanther.github.io/congo/samples/icons/
 - https://jpanther.github.io/congo/docs/shortcodes/#icon
 
-**Insert an icon:** `{ {< icon "circle-info" >}}`
+**Insert an icon:** `{ {< icon "circle-info" >} }`
 ## ❤️Emojis
 
 | Emoji        | Usage                |
