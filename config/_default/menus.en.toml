@@ -103,6 +103,14 @@
 #    showName = false
 
 [[footer]]
+  name = "Trainings and Certifications"
+  pageRef = "posts/training"
+  weight = 40
+  [footer.params]
+    icon = "google-scholar"
+    showName = false
+
+[[footer]]
   name = "RSS"
   url = "https://rtdevx.github.io/index.xml"
   weight = 50

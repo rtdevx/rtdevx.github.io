@@ -1,6 +1,6 @@
 +++
 draft = false
-title = '🗂️Training'
+title = '🗂️Trainings and Certifications'
 summary = 'This section of my blog highlights training in progress being documented at this moment and the trainings that I have completed in the past...'
 +++
 I treat training as an ongoing part of my professional journey - not just to keep up, but to dig deeper. Whether it's `automation`, `infrastructure`, or `security`, each course I take helps me build systems that are resilient, clear, and future-ready. 
