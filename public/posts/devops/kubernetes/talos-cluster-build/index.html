@@ -138,7 +138,7 @@
     "keywords": ["devops"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "433"
+    "wordCount": "470"
   }
   </script>
     
@@ -542,7 +542,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-07-20 00:00:00 &#43;0000 UTC">20 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>433 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+      <time datetime="2025-07-20 00:00:00 &#43;0000 UTC">20 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>470 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
     
 
     
@@ -610,7 +610,7 @@
     <li><a href="#-download-talos-linux">💾 Download Talos Linux</a></li>
     <li><a href="#building-talos-kubernetes-cluster-using-patches">Building Talos Kubernetes cluster using patches</a>
       <ul>
-        <li><a href="#install-talosctl-kubectl-and-k9s">Install talosctl, kubectl and k9s</a></li>
+        <li><a href="#install-talosctl-kubectl-and-k9s">Install talosctl, kubectl and k9s </a></li>
         <li><a href="#cluster-build">Cluster Build</a>
           <ul>
             <li><a href="#1-generate-secrets">1. Generate Secrets</a></li>
@@ -661,21 +661,35 @@
 <li>The lines we’re interested in are as follows</li>
 </ul>
 <h2 id="building-talos-kubernetes-cluster-using-patches" class="relative group">Building Talos Kubernetes cluster using patches <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#building-talos-kubernetes-cluster-using-patches" aria-label="Anchor">#</a></span></h2>
-<h3 id="install-talosctl-kubectl-and-k9s" class="relative group">Install talosctl, kubectl and k9s <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-talosctl-kubectl-and-k9s" aria-label="Anchor">#</a></span></h3>
-<p>On your <code>Jump Server</code> (Bastion Host), install <code>talosctl</code>, <code>kubectl</code> and <code>k9s</code>. I am using <code>Ubuntu Linux</code> in this example.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># talosctl</span>
-</span></span><span class="line"><span class="cl">curl -sL https://talos.dev/install <span class="p">|</span> sh
+<h3 id="install-talosctl-kubectl-and-k9s" class="relative group">Install talosctl, kubectl and k9s <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-talosctl-kubectl-and-k9s" aria-label="Anchor">#</a></span></h3>
+<p>On your <code>Jump Server</code>, install <code>talosctl</code>, <code>kubectl</code> and <code>k9s</code>. I am using <code>Ubuntu Linux</code> in this example.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="hl"><span class="lnt">10
+</span></span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"># talosctl
+</span></span><span class="line"><span class="cl">curl -sL https://talos.dev/install | sh
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># kubectl</span>
+</span></span><span class="line"><span class="cl"># kubectl
 </span></span><span class="line"><span class="cl">sudo snap install kubectl --classic
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># k9s</span>
+</span></span><span class="line"><span class="cl"># k9s
 </span></span><span class="line"><span class="cl">sudo snap install k9s
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># ERROR: k9s command not found after snap install issue in Ubuntu 24.04</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># https://github.com/derailed/k9s/issues/2128</span>
-</span></span><span class="line"><span class="cl">sudo ln -s /snap/k9s/current/bin/k9s /snap/bin/
-</span></span></code></pre></div><h3 id="cluster-build" class="relative group">Cluster Build <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cluster-build" aria-label="Anchor">#</a></span></h3>
+</span></span><span class="line hl"><span class="cl">sudo ln -s /snap/k9s/current/bin/k9s /snap/bin/</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="cluster-build" class="relative group">Cluster Build <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cluster-build" aria-label="Anchor">#</a></span></h3>
 <h4 id="1-generate-secrets" class="relative group">1. Generate Secrets <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-generate-secrets" aria-label="Anchor">#</a></span></h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~
 </span></span><span class="line"><span class="cl">
@@ -743,6 +757,24 @@
 <li>Building Cluster using patches: <a href="https://www.talos.dev/v1.10/talos-guides/configuration/patching/" target="_blank" rel="noreferrer">https://www.talos.dev/v1.10/talos-guides/configuration/patching/</a>
 </li>
 </ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>&ldquo;<a href="#install-talosctl-kubectl-and-k9s">Install talosctl, kubectl and k9s</a>
+&quot;🚩<br>
+<strong>ERROR:</strong><br>
+<em>k9s command not found after snap install issue in Ubuntu 24.04</em>
+<br><br>
+<strong>Solution:</strong><br>
+Command highlighted in &ldquo;<a href="#install-talosctl-kubectl-and-k9s">Install talosctl, kubectl and k9s</a>
+&rdquo; must be executed in order to solve the problem.
+<br><br>
+<em>More about the problem:</em> <a href="https://github.com/derailed/k9s/issues/2128" target="_blank" rel="noreferrer">https://github.com/derailed/k9s/issues/2128</a>
+&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
       </div>
     </section>

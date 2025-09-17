@@ -36,11 +36,12 @@ categories:
 - The lines we’re interested in are as follows
 ## Building Talos Kubernetes cluster using patches
 
-### Install talosctl, kubectl and k9s
+### Install talosctl, kubectl and k9s [^Issue1]
 
-On your `Jump Server` (Bastion Host), install `talosctl`, `kubectl` and `k9s`. I am using `Ubuntu Linux` in this example.
+On your `Jump Server`, install `talosctl`, `kubectl` and `k9s`. I am using `Ubuntu Linux` in this example.
 
-```bash
+{{< highlight html "linenos=table,hl_lines=10" >}}
+
 # talosctl
 curl -sL https://talos.dev/install | sh
 
@@ -50,10 +51,8 @@ sudo snap install kubectl --classic
 # k9s
 sudo snap install k9s
 
-# ERROR: k9s command not found after snap install issue in Ubuntu 24.04
-# https://github.com/derailed/k9s/issues/2128
 sudo ln -s /snap/k9s/current/bin/k9s /snap/bin/
-```
+{{< /highlight >}}
 ### Cluster Build
 
 #### 1. Generate Secrets
@@ -147,3 +146,11 @@ alias k='kubectl'
 - Proxmox Official Documentation: https://www.talos.dev/v1.10/talos-guides/install/virtualized-platforms/proxmox/
 - Building Cluster using patches: https://www.talos.dev/v1.10/talos-guides/configuration/patching/
 
+[^Issue1]: "[Install talosctl, kubectl and k9s]({{< ref "#install-talosctl-kubectl-and-k9s" >}})"🚩<br>
+**ERROR:**<br>
+_k9s command not found after snap install issue in Ubuntu 24.04_
+<br><br>
+**Solution:**<br>
+Command highlighted in "[Install talosctl, kubectl and k9s]({{< ref "#install-talosctl-kubectl-and-k9s" >}})" must be executed in order to solve the problem.
+<br><br>
+_More about the problem:_ https://github.com/derailed/k9s/issues/2128

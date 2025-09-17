@@ -165,11 +165,11 @@ git push origin main
 ```
 
 _Source:_ https://jpanther.github.io/congo/docs/hosting-deployment/#github-pages
-## 10. GitHub Actions
+## 10. GitHub Actions [^Issue1]
 
 📄 `.github/workflows/hugo.yml`
 
-```YAML
+{{< highlight html "linenos=table,hl_lines=9-10" >}}
 # .github/workflows/hugo.yml
 
 name: GitHub Pages
@@ -209,8 +209,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./public
-
-```
+{{< /highlight >}}
 
 _Source:_ https://jpanther.github.io/congo/docs/hosting-deployment/#github-pages
 ## 11. Update Congo using Git
@@ -236,24 +235,17 @@ _Source:_ https://jpanther.github.io/congo/docs/installation/#update-using-git
 ## >> References <<
 
 - [Hugo Post Template]({{< ref "post-template" >}})
-## >> Issues <<
 
-### 🚩remote: Permission denied
 
-Issue when implementing [10. GitHub Actions]({{< ref "installing-congo-hugo/#10-github-actions" >}})
+[^Issue1]: [10. GitHub Actions]({{< ref "installing-congo-hugo/#10-github-actions--" >}}) 🚩<br>
+**Issue:**<br>
+remote: Permission denied issue emerged when implemented by following original instructions.<br> 
+<br>
+**Error:**<br>
+_"remote: Permission to rtdevx/rtdevx.github.io.git denied to github-actions[bot].<br><br>
+fatal: unable to access '[https://github.com/rtdevx/rtdevx.github.io.git/](https://github.com/rtdevx/rtdevx.github.io.git/)': The requested URL returned error: 403.<br><br> Error: Action failed with "The process '/usr/bin/git' failed with exit code 128"_
+<br>
+<br>
+**Solution:**<br>
+Sections highlighted in [10. GitHub Actions]({{< ref "installing-congo-hugo/#10-github-actions" >}}) must be added in order to solve the permissions problem.
 
-Following original instructions comes back with an error:
-
->remote: Permission to rtdevx/rtdevx.github.io.git denied to github-actions[bot].
->
->fatal: unable to access '[https://github.com/rtdevx/rtdevx.github.io.git/](https://github.com/rtdevx/rtdevx.github.io.git/)': The requested URL returned error: 403
->
->Error: Action failed with "The process '/usr/bin/git' failed with exit code 128"
-#### ✅Solution
-
-```YAML
-permissions:
-  contents: write
-```
-
-section must be added to [10. GitHub Actions]({{< ref "installing-congo-hugo/#10-github-actions" >}}) in order to solve the problem
