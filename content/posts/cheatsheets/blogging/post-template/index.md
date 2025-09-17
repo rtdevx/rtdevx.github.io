@@ -79,6 +79,7 @@ _HTML Color Codes:_ https://htmlcolorcodes.com/
 | 📺           | YouTube              |
 | ✨/ 🔥        | Post title highlight |
 | 🗂️          | Series               |
+| 🏅           | Certified            |
 | 📄           | File / Code          |
 
 💾 https://emojipedia.org/
