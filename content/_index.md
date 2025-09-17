@@ -9,17 +9,13 @@ My name is Rob and I am an experienced IT professional.
  -->
 
 My thoughts and learnings about:<br /> ***DevOps***, ***Agile***, [Cloud,]({{< ref "categories/aws" >}}) [Linux,]({{< ref "categories/linux" >}}) ***Ansible***, ***Terraform***, [Kubernetes]({{< ref "categories/kubernetes" >}}), [Network]({{< ref "categories/networking" >}})
-
 <!--
 [Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) |🏅[Trainings and Certifications]({{< ref "/posts/training" >}}) | [Productivity]({{< ref "/categories/productivity" >}})
 -->
 
-
 |                                                    |                                                                 |                                                          |
 | -------------------------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------- |
 | 📑[Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | 🏅[Trainings and Certifications]({{< ref "/posts/training" >}}) | 📚[Productivity]({{< ref "/categories/productivity" >}}) |
-
-
 <!--
 |                                                                 |                                                                                      |
 | --------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -35,5 +31,3 @@ I am also interested in tools and techniques that help me increasing my [product
 {{< button href="about" target="_self" >}}
 » About «
 {{< /button >}}
-
-
