@@ -5,9 +5,10 @@ description: Git Cheatsheet
 summary: Git Cheatsheet.
 draft: false
 tags:
-  - devops
   - git
-categories: Cheatsheets
+categories: 
+  - DevOps
+  - Cheatsheets
 ---
 {{< lead >}}
 ### `Git` is a distributed version control software system that is capable of managing versions of source code or data. 

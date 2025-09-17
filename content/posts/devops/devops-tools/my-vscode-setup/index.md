@@ -8,7 +8,9 @@ tags:
   - vscode
   - devops
   - git
-categories: DevOps Tools
+categories: 
+  - DevOps
+  - DevOps Tools
 ---
 {{< lead >}}
 ### The open source AI code editor

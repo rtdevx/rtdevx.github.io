@@ -17,6 +17,13 @@
       <description></description>
     </item>
     <item>
+      <title>DevOps</title>
+      <link>http://localhost:1313/categories/devops/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/devops/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>DevOps Tools</title>
       <link>http://localhost:1313/categories/devops-tools/</link>
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
@@ -70,6 +77,13 @@
       <link>http://localhost:1313/categories/linux/</link>
       <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxmox</title>
+      <link>http://localhost:1313/categories/proxmox/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/proxmox/</guid>
       <description></description>
     </item>
     <item>
