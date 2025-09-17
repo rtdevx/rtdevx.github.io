@@ -50,8 +50,6 @@
     
   
     
-  
-    
       <url>
             <loc>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</loc>
             <lastmod>2025-09-13T00:00:00+00:00</lastmod>
@@ -303,6 +301,8 @@
             <loc>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</loc>
             <lastmod>2025-07-20T00:00:00+00:00</lastmod>
           </url>
+    
+  
     
   
     

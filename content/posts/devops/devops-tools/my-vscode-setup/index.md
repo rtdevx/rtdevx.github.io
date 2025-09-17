@@ -6,9 +6,8 @@ summary: My Visual Studio Code setup.
 draft: false
 tags:
   - vscode
-  - devops
   - git
-categories: 
+categories:
   - DevOps
   - DevOps Tools
 ---

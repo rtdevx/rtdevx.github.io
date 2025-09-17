@@ -16,5 +16,19 @@
       <guid>http://localhost:1313/posts/cheatsheets/devops/git/</guid>
       <description>Git Cheatsheet.</description>
     </item>
+    <item>
+      <title>My VSCode setup</title>
+      <link>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</guid>
+      <description>My Visual Studio Code setup.</description>
+    </item>
+    <item>
+      <title>Building Talos Linux Kubernetes Cluster</title>
+      <link>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</guid>
+      <description>Building Talos Linux Kubernetes Cluster&amp;hellip;</description>
+    </item>
   </channel>
 </rss>
