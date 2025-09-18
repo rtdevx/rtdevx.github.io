@@ -6,7 +6,7 @@ summary: Learn more about me and why I am starting this blog.
 ---
 ![](../assets/Kentemere2.jpg)
 
-**Experienced IT professional** accomplished in supporting and delivering secure, resilient, and PCI-compliant infrastructure solutions across international payment ecosystems. I specialize in building and automating high-stakes platforms for credit and debit card transaction processing and fraud detection systems (3D-Secure). Resilient platforms and infrastructures trusted by global banks and financial institutions.  
+**Experienced IT professional** accomplished in supporting and delivering secure, resilient, and PCI-compliant infrastructure solutions across international payment ecosystems. I specialize in building and automating high-stakes platforms for credit and debit card transaction processing and fraud detection systems (3D-Secure). Resilient platforms and infrastructures trusted by global banks and financial institutions. 
   
 A strong advocate of _DevOps_ and _Agile_ methodologies, I bring end-to-end transparency and _automation_ to infrastructure delivery. Skilled across _Linux_ and _Windows Server_ environments, I leverage tools like _Ansible_ and _PowerShell_ to streamline provisioning, hardening, and support of critical systems.  
 
