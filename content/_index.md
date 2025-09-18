@@ -11,13 +11,14 @@ My name is Rob and I am an experienced IT professional.
 My thoughts and learnings about:<br />
 ***DevOps***, ***Agile***, [Cloud,]({{< ref "categories/aws" >}}) [Linux,]({{< ref "categories/linux" >}}) ***Ansible***, ***Terraform***, [Kubernetes]({{< ref "categories/kubernetes" >}}), [Network]({{< ref "categories/networking" >}})
 
-<!--
-» [Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | [Trainings and Certifications]({{< ref "/posts/training" >}}) | [Productivity]({{< ref "/categories/productivity" >}}) «
--->
 
+[Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | [Trainings and Certifications]({{< ref "/posts/training" >}}) | [Productivity]({{< ref "/categories/productivity" >}})
+
+<!--
 { [Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) };<br> 
 { [Trainings and Certifications]({{< ref "/posts/training" >}}) };<br>
 { [Productivity]({{< ref "/categories/productivity" >}}) }<br>
+-->
 
 <!--
 📑[Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | 🏅[Trainings and Certifications]({{< ref "/posts/training" >}}) | 📚[Productivity]({{< ref "/categories/productivity" >}})
