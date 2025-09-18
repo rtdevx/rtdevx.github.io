@@ -71,7 +71,7 @@ _HTML Color Codes:_ https://htmlcolorcodes.com/
 | 🚩/ ⚠️       | Issue / Problem      |
 | 🚫 / ☢️ / ☣️ | Prohibited / Hazard  |
 | 🔍           | Issue Investigation  |
-| ✅            | Solution / Solved    |
+| ✅            | Solution / Resolved  |
 | ℹ️           | Info                 |
 | 💡           | Idea                 |
 | 👨🏻‍💻      | To Do                |
