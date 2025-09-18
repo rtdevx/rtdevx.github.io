@@ -237,7 +237,7 @@ _Source:_ https://jpanther.github.io/congo/docs/installation/#update-using-git
 - [Hugo Post Template]({{< ref "post-template" >}})
 
 
-[^Issue1]: [10. GitHub Actions]({{< ref "installing-congo-hugo/#10-github-actions--" >}}) 🚩<br>
+[^Issue1]: [10. GitHub Actions]({{< ref "installing-congo-hugo/#10-github-actions--" >}}) ⚠️<br>
 **Issue:**<br>
 remote: Permission denied issue emerged when implemented by following original instructions.<br> 
 <br>

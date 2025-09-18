@@ -68,7 +68,7 @@ _HTML Color Codes:_ https://htmlcolorcodes.com/
 | Emoji        | Usage                |
 | ------------ | -------------------- |
 | ‼️           | Attention            |
-| 🚩           | Issue / Problem      |
+| 🚩/ ⚠️       | Issue / Problem      |
 | 🚫 / ☢️ / ☣️ | Prohibited / Hazard  |
 | 🔍           | Issue Investigation  |
 | ✅            | Solution / Solved    |

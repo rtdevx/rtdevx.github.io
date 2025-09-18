@@ -147,7 +147,7 @@ alias k='kubectl'
 - Proxmox Official Documentation: https://www.talos.dev/v1.10/talos-guides/install/virtualized-platforms/proxmox/
 - Building Cluster using patches: https://www.talos.dev/v1.10/talos-guides/configuration/patching/
 
-[^Issue1]: "[Install talosctl, kubectl and k9s]({{< ref "#install-talosctl-kubectl-and-k9s" >}})"🚩<br>
+[^Issue1]: "[Install talosctl, kubectl and k9s]({{< ref "#install-talosctl-kubectl-and-k9s" >}})"⚠️<br>
 **ERROR:**<br>
 _k9s command not found after snap install issue in Ubuntu 24.04_
 <br><br>
