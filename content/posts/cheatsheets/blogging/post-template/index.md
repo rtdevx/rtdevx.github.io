@@ -197,4 +197,10 @@ Get-ChildItem -Path "C:\Users\robk\Documents\Documents\Notes\Obsidian\Zettelkast
 Disclaimer: _Content for educational purposes only, no rights reserved._
 {{< /alert >}}
 
+```shell
+{ {< alert "circle-info" >}}
+Disclaimer: _Content for educational purposes only, no rights reserved._
+{ {< /alert >}}
+```
+
 [^Reference1]: This is the reference point number 1. 
