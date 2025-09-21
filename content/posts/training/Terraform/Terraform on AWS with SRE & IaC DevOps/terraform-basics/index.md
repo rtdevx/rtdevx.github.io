@@ -3,7 +3,7 @@ title: Terraform Basics
 date: 2025-09-21
 description: Terraform Basics
 summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes...
-draft: true
+draft: false
 tags:
   - Assoc003
 categories:
