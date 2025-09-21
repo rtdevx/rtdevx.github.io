@@ -1,6 +1,6 @@
 ---
 title: Terraform Basics
-date: 2025-10-01
+date: 2025-09-21
 description: Terraform Basics
 summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes...
 draft: false
@@ -132,6 +132,7 @@ _More:_
 ![](assets/TF_terraform_blocks_top_level.jpg)
 
 _Terraform Blocks:_ https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/03-Terraform-Fundamental-Blocks
+
 _Terraform Resources:_ https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/04-Terraform-Resources
 ### Terraform Comments
 
