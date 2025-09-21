@@ -5,12 +5,48 @@
     
       <url>
             <loc>http://localhost:1313/posts/</loc>
-            <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+            <lastmod>2025-09-21T00:00:00+00:00</lastmod>
           </url>
     
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/terraform-basics/</loc>
+            <lastmod>2025-09-21T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/terraform/</loc>
+            <lastmod>2025-09-21T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/</loc>
+            <lastmod>2025-09-21T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/</loc>
+            <lastmod>2025-09-21T00:00:00+00:00</lastmod>
+          </url>
     
   
     
@@ -27,15 +63,6 @@
     
       <url>
             <loc>http://localhost:1313/posts/cheatsheets/devops/git/</loc>
-            <lastmod>2025-09-14T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/</loc>
             <lastmod>2025-09-14T00:00:00+00:00</lastmod>
           </url>
     
@@ -79,35 +106,8 @@
     
   
     
-  
-    
-  
-    
       <url>
             <loc>http://localhost:1313/posts/networking/osi-model/</loc>
-            <lastmod>2025-09-01T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/terraform-basics/</loc>
-            <lastmod>2025-09-01T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/training/terraform/</loc>
-            <lastmod>2025-09-01T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/training/</loc>
             <lastmod>2025-09-01T00:00:00+00:00</lastmod>
           </url>
     
