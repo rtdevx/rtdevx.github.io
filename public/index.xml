@@ -24,6 +24,13 @@
       <description>Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.</description>
     </item>
     <item>
+      <title>Ansible Vault</title>
+      <link>http://localhost:1313/posts/devops/ansible/ansible-vault/</link>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/devops/ansible/ansible-vault/</guid>
+      <description>Encrypting / Decrypting strings with Ansible Vault.</description>
+    </item>
+    <item>
       <title>HTTP Status Codes</title>
       <link>http://localhost:1313/posts/cheatsheets/devops/http-status-codes/</link>
       <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
