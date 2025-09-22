@@ -31,6 +31,13 @@
       <description>Git Cheatsheet.</description>
     </item>
     <item>
+      <title>Git Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/vscode/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/vscode/</guid>
+      <description>Git Cheatsheet.</description>
+    </item>
+    <item>
       <title>My VSCode setup</title>
       <link>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</link>
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>

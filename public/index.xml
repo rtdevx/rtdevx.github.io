@@ -24,6 +24,13 @@
       <description>Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.</description>
     </item>
     <item>
+      <title>VSCode Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/vscode/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/vscode/</guid>
+      <description>VSCode Cheatsheet.</description>
+    </item>
+    <item>
       <title>Git Cheatsheet</title>
       <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
