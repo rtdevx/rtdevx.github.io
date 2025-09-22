@@ -69,7 +69,7 @@ terraform apply tf.plan
 
 \*_terraform will not ask for confirmation (just like using it with the `-auto-approve` option) when executing the plan from the file._
 
-The **terraform state file** is the only way Terraform can track which resources it is managing. <font color=#f43f5e><b>It often contains sensitive information</b></font> so must be stored securely and access must be restricted.
+The **terraform state file** is the only way Terraform can track which resources it is managing. <font color=#EB4925><b>It often contains sensitive information</b></font> so must be stored securely and access must be restricted.
 ## Terraform Configuration Syntax
 
 _Source:_ [Terraform Language Syntax](https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/02-Terraform-Basics/02-03-Terraform-Language-Syntax)

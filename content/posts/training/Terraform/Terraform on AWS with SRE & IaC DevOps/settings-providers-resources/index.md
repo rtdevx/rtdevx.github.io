@@ -106,6 +106,17 @@ resource "aws_instance" "myec2vm" {
 | Destroy Resource          | <font color=#EB4925>Destroy</font> resources that <font color=#EBAC25>exist in the state</font> but <font color=#EBAC25>no longer exist in the configuration</font>.                                        |
 | Update in-place Resources | <font color=#EBAC25>Update in-place</font> resources whose <font color=#EBAC25>arguments have changed</font>.                                                                                               |
 | Destroy and re-create     | <font color=#EB4925>Destroy</font> and <font color=#C7EB25>re-create</font> resources whose arguments have changed but <font color=#EBAC25>cannot be updated in-place</font> due to remote API limitations. |
+## Terraform State
+
+- Terraform State file `terraform.tfstate`
+
+`terraform.tfstate` file is being created / updated every time `terraform plan` command is being executed.
+
+{{< alert "triangle-exclamation" >}}
+# <font color=#EB4925>Important!</font>
+
+The **terraform state file** is the only way Terraform can track which resources it is managing. <font color=#EB4925>It often contains sensitive information</font> so must be stored securely and access must be restricted.
+{{< /alert >}}
 ## Terraform Registry
 
 https://registry.terraform.io
