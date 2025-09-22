@@ -61,29 +61,38 @@
     
       <url>
             <loc>http://localhost:1313/posts/cheatsheets/devops/</loc>
-            <lastmod>2025-09-14T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/cheatsheets/devops/git/</loc>
-            <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+            <lastmod>2025-09-17T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/posts/cheatsheets/devops/vscode/</loc>
-            <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/posts/cheatsheets/devops/http-status-codes/</loc>
+            <lastmod>2025-09-17T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
             <loc>http://localhost:1313/posts/cheatsheets/</loc>
+            <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/devops/vscode/</loc>
+            <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/devops/git/</loc>
             <lastmod>2025-09-14T00:00:00+00:00</lastmod>
           </url>
     
@@ -95,8 +104,6 @@
             <loc>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</loc>
             <lastmod>2025-09-13T00:00:00+00:00</lastmod>
           </url>
-    
-  
     
   
     
