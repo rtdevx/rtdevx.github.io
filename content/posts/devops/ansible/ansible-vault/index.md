@@ -5,6 +5,7 @@ description: Encrypting / Decrypting strings with Ansible Vault.
 summary: Encrypting / Decrypting strings with Ansible Vault.
 draft: false
 tags:
+  - encryption
 categories:
   - DevOps
   - Ansible
@@ -67,9 +68,8 @@ ansible-vault encrypt secrets.encrypted --vault-password-file ~/.vault_key
 {{< alert "triangle-exclamation" >}}
 <font color=#EB4925><b>Important!</b></font>
 
-Files are protected with symmetric encryption of the Advanced Encryption Standard (AES256), where a single password or passphrase is used both to encrypt and decrypt the data.
+Files are protected with symmetric encryption of the Advanced Encryption Standard (_AES256_), where a single password or passphrase is used both to encrypt and decrypt the data.
 {{< /alert >}}
 ## >> Sources <<
 
 - https://docs.ansible.com/ansible/latest/cli/ansible-vault.html
-- https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/automating_system_administration_by_using_rhel_system_roles/ansible-vault

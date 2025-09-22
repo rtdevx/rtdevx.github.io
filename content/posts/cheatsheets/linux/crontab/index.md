@@ -74,3 +74,6 @@ Min  Hour Day  Mon  Weekday
 ## >> Sources <<
 
 - https://cheatsheets.zip/cron
+
+- https://crontab.guru/
+- https://crontab-generator.org/
