@@ -106,6 +106,8 @@ resource "aws_instance" "myec2vm" {
 | Destroy and re-create     | <font color=#EB4925>Destroy</font> and <font color=#C7EB25>re-create</font> resources whose arguments have changed but <font color=#EBAC25>cannot be updated in-place</font> due to remote API limitations. |
 ## Terraform State
 
+The primary purpose of **Terraform State** is to store bindings between objects on a remote system and resource instances declared in your configuration.
+
 - Terraform State file `terraform.tfstate`
 
 `terraform.tfstate` file is being created / updated every time `terraform plan` command is being executed.
