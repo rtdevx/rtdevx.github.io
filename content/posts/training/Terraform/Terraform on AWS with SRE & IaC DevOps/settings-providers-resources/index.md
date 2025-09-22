@@ -32,7 +32,7 @@ Within a Terraform Block <font color=#C7EB25>only constant values can be used</f
 - Declare providers for Terraform to install and use them
 - <font color=#EBAC25>Provider configurations belong to Root Module</font>
 
-_File:_ c1-versions.tf
+📄_File:_ c1-versions.tf
 
 ```shell
 # INFO: Terraform Block
@@ -81,7 +81,7 @@ It is possible to create multiple profiles in the `~/.aws/credentials` settings.
 	- <font color=#EBAC25>Resource Behavior:</font> How Terraform handles resource declarations?
 	- <font color=#EBAC25>Provisioners:</font> We can configure Resource post-creation actions
 
-_File:_ c2-ec2instance.tf
+📄_File:_ c2-ec2instance.tf
 
 ```shell
 # Resource: EC2 Instance
