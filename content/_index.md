@@ -9,7 +9,7 @@ My name is Rob and I am an experienced IT professional.
  -->
 
 My thoughts and learnings about:<br />
-***DevOps***, ***Agile***, [Cloud,]({{< ref "categories/aws" >}}) [Linux,]({{< ref "categories/linux" >}}) ***Ansible***, ***Terraform***, [Kubernetes]({{< ref "categories/kubernetes" >}}), [Network]({{< ref "categories/networking" >}})
+***DevOps***, ***Agile***, [Cloud,]({{< ref "categories/aws" >}}) [Linux,]({{< ref "categories/linux" >}}) [Ansible,]({{< ref "categories/ansible" >}}) [Terraform,]({{< ref "categories/terraform" >}}) [Kubernetes]({{< ref "categories/kubernetes" >}}), [Network]({{< ref "categories/networking" >}})
 
 <!--
 [Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | [Trainings and Certifications]({{< ref "/posts/training" >}}) | [Productivity]({{< ref "/categories/productivity" >}})
