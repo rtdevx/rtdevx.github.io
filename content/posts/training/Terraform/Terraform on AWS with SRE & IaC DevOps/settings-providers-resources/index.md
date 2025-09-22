@@ -53,7 +53,7 @@ provider "aws" {
 
 {{< alert "circle-info" >}}
 
-`required_version = "~> 1.13.2"` means that valid versions will be: `1.13.2-9`
+`required_version = "~> 1.13.2"` means that valid versions will be: `1.13.2-9`<br><br>
 `required_version = "~> 1.13"` means that valid versions will be: `1.13-99`
 
 {{< /alert >}}
