@@ -31,17 +31,24 @@
       <description></description>
     </item>
     <item>
+      <title>Cheatsheets</title>
+      <link>http://localhost:1313/categories/cheatsheets/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/cheatsheets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/categories/linux/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/linux/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Ansible</title>
       <link>http://localhost:1313/categories/ansible/</link>
       <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/ansible/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cheatsheets</title>
-      <link>http://localhost:1313/categories/cheatsheets/</link>
-      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/cheatsheets/</guid>
       <description></description>
     </item>
     <item>
@@ -91,13 +98,6 @@
       <link>http://localhost:1313/categories/kubernetes/</link>
       <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/categories/linux/</link>
-      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/linux/</guid>
       <description></description>
     </item>
     <item>
