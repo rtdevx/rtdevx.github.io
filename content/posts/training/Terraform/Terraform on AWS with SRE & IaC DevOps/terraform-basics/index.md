@@ -11,7 +11,7 @@ categories:
   - DevOps
   - IaC
 ---
-## Setting up Terraform
+## Pre-requisite
 
 - Install Terraform CLI
 - Install AWS CLI
