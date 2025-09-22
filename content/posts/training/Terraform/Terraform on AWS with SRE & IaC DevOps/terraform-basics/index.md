@@ -1,8 +1,8 @@
 ---
 title: Terraform Basics
-date: 2025-10-01
-description: Terraform Basics
-summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes...
+date: 2025-09-21
+description: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.
+summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.
 draft: false
 tags:
   - Assoc003
@@ -74,12 +74,12 @@ The **terraform state file** is the only way Terraform can track which resources
 
 _Source:_ [Terraform Language Syntax](https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/02-Terraform-Basics/02-03-Terraform-Language-Syntax)
 
-![](assets/TF_terraform_configuration_syntax.jpg)
+![](./assets/TF_terraform_configuration_syntax.jpg)
 ### Terraform Blocks
 
 Code in **Terraform** language is stored in plain text files ended with the <font color=#C7EB25><i>.tf</i></font> extension. Those are called <font color=#EBAC25>Terraform Configuration Files</font> or <font color=#EBAC25>Terraform Manifests</font>.
 
-![](assets/TF_terraform_blocks.jpg)
+![](./assets/TF_terraform_blocks.jpg)
 
 **2 types of blocks:**
 
@@ -91,7 +91,12 @@ Code in **Terraform** language is stored in plain text files ended with the <fon
 	- resource-specific block tags
 ### Terraform Arguments, Attributes and Meta-Arguments
 
-- `Arguments` can be <font color=#EB4925>required</font> or <font color=#C7EB25>optional</font>
+{{< alert "circle-info" >}}
+- Terraform **Attributes** are the <font color=#EBAC25>Input Values</font>.
+- Terraform **Arguments** are the <font color=#EBAC25>Output Values</font>.
+{{< /alert >}}
+
+- `Arguments` can be <font color=#EB4925>required</font> or <font color=#C7EB25>optional</font>. 
 
 ```shell
 resource "aws_instance" "ec2" {
@@ -101,6 +106,7 @@ resource "aws_instance" "ec2" {
 ```
 
 - `Attributes` are values exposed by a particular resource. It's format looks like:<br> `resource_type.resource_name.attribute_name`
+
 - `Meta-Arguments` change a resource type's behavior 
 	- `count`
 	- `depends_on`
@@ -129,7 +135,7 @@ _More:_
 - Data Sources Block
 - Modules Block
 
-![](assets/TF_terraform_blocks_top_level.jpg)
+![](./assets/TF_terraform_blocks_top_level.jpg)
 
 _Terraform Blocks:_ https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/03-Terraform-Fundamental-Blocks
 
