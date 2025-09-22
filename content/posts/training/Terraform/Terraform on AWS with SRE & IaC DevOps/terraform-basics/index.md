@@ -92,8 +92,8 @@ Code in **Terraform** language is stored in plain text files ended with the <fon
 ### Terraform Arguments, Attributes and Meta-Arguments
 
 {{< alert "circle-info" >}}
-- Terraform **Attributes** are the <font color=#EBAC25>Input Values</font>.
-- Terraform **Arguments** are the <font color=#EBAC25>Output Values</font>.
+- Terraform **Arguments** are the <font color=#EBAC25>Input Values</font>.
+- Terraform **Attributes** are the <font color=#EBAC25>Output Values</font>.
 {{< /alert >}}
 
 - `Arguments` can be <font color=#EB4925>required</font> or <font color=#C7EB25>optional</font>. 
