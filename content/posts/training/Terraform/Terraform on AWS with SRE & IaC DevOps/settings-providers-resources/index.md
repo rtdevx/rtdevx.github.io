@@ -21,8 +21,6 @@ categories:
 	- Terraform Backend
 
 {{< alert "triangle-exclamation" >}}
-<font color=#EB4925><b>Important!</b></font>
-
 Within a Terraform Block <font color=#C7EB25>only constant values can be used</font>. Arguments <font color=#EB4925>may not refer</font> to named objects such as resources, input variables, etc, and <font color=#EB4925>may not use</font> any of the Terraform language built-in functions.
 {{< /alert >}}
 
