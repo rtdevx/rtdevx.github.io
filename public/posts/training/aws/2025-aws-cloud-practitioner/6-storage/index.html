@@ -140,7 +140,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "920"
+    "wordCount": "906"
   }
   </script>
     
@@ -598,7 +598,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-06 00:00:00 &#43;0000 UTC">6 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>920 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <time datetime="2025-08-06 00:00:00 &#43;0000 UTC">6 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>906 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -742,7 +742,7 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="ebs-volume" class="relative group">EBS Volume <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs-volume" aria-label="Anchor">#</a></span></h2>
+        <h2 id="ebs-volume" class="relative group">EBS Volume </h2>
 <ul>
 <li><strong>EBS</strong> (Elastic Block Store) - Network drive that can be attached to instances while they run</li>
 <li><font color=#C7EB25>It allows instances to persist the data, even after their termination</font></li>
@@ -780,7 +780,7 @@
 </figure>
 
 <em><font color=#EB4925>EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them</font></em></p>
-<h3 id="ebs-delete-on-termination" class="relative group">EBS Delete on Termination <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs-delete-on-termination" aria-label="Anchor">#</a></span></h3>
+<h3 id="ebs-delete-on-termination" class="relative group">EBS Delete on Termination </h3>
 <p>
 
 
@@ -804,13 +804,13 @@
 <li>This can be controlled by both, AWS Console and AWS CLI</li>
 <li><font color=#EBAC25>Use case:</font> preserve root volume when instance is terminated</li>
 </ul>
-<h2 id="ebs-snapshots" class="relative group">EBS Snapshots <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs-snapshots" aria-label="Anchor">#</a></span></h2>
+<h2 id="ebs-snapshots" class="relative group">EBS Snapshots </h2>
 <ul>
 <li>Make a backup (snapshot) of EBS volume at a point in time</li>
 <li>Not necessary to detach the volume to do the snapshot but recommended</li>
 <li>Snapshots can be copied across AZ or Regions</li>
 </ul>
-<h3 id="ebs-snapshots-features" class="relative group">EBS Snapshots features <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs-snapshots-features" aria-label="Anchor">#</a></span></h3>
+<h3 id="ebs-snapshots-features" class="relative group">EBS Snapshots features </h3>
 <ul>
 <li>EBS Snapshot Archive
 <ul>
@@ -829,7 +829,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="ec2-instance-store" class="relative group">EC2 Instance Store <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ec2-instance-store" aria-label="Anchor">#</a></span></h2>
+<h2 id="ec2-instance-store" class="relative group">EC2 Instance Store </h2>
 <ul>
 <li>
 <p>EBS volumes are network drives with good but &ldquo;limited&rdquo; performance</p>
@@ -848,13 +848,13 @@
 </li>
 </ul>
 <p><font color=#EB4925>Risk of data loss if hardware fails.</font></p>
-<h2 id="efs---elastic-file-system" class="relative group">EFS - Elastic File System <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#efs---elastic-file-system" aria-label="Anchor">#</a></span></h2>
+<h2 id="efs---elastic-file-system" class="relative group">EFS - Elastic File System </h2>
 <ul>
 <li><font color=#EBAC25>Managed NFS</font> (Network File System) that can be mounted on 100s of EC2 instances</li>
 <li><font color=#EB4925>EFS works with Linux EC2 instances only</font> and is <font color=#C7EB25>multi-AZ.</font></li>
 <li>Highly-available, scalable, <font color=#EB4925>expensive</font> (3x gp2 EBS), pay per use, no capacity planning</li>
 </ul>
-<h3 id="efs-infrequent-access-efs-ia" class="relative group">EFS Infrequent Access (EFS-IA) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#efs-infrequent-access-efs-ia" aria-label="Anchor">#</a></span></h3>
+<h3 id="efs-infrequent-access-efs-ia" class="relative group">EFS Infrequent Access (EFS-IA) </h3>
 <ul>
 <li>Storage class that is cost-optimized for files not accessed every day</li>
 <li>up to <font color=#EB4925>92% lower cost</font> compared to EFS Standard</li>
@@ -866,7 +866,7 @@
 </li>
 <li>Transparent to the applications accessing EFS (apps don&rsquo;t see whether file is in EFS or EFS-IA)</li>
 </ul>
-<h2 id="ebs-vs-efs" class="relative group">EBS vs EFS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ebs-vs-efs" aria-label="Anchor">#</a></span></h2>
+<h2 id="ebs-vs-efs" class="relative group">EBS vs EFS </h2>
 <table>
   <thead>
       <tr>
@@ -926,7 +926,7 @@
 <li><a href="https://www.cloudzero.com/blog/ebs-vs-efs/" target="_blank" rel="noreferrer">https://www.cloudzero.com/blog/ebs-vs-efs/</a>
 </li>
 </ul>
-<h2 id="amazon-fsx" class="relative group">Amazon FSx <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-fsx" aria-label="Anchor">#</a></span></h2>
+<h2 id="amazon-fsx" class="relative group">Amazon FSx </h2>
 <p>3rd party with high-performance file system on AWS.</p>
 <ul>
 <li><strong>FSx for Lustre</strong> - fully managed, high-performance, scalable <font color=green>file storage for High Performance Computing (HPC)</font>.
@@ -938,7 +938,7 @@
 <li><strong>FSx for Windows File Server</strong> - fully managed, highly reliable and scalable Windows native shared file system built on Windows File Server. <font color=green>Supports SMB and NTFS file systems. Integrated with AD for security. Can be accessed from AWS or from On-Premise.</font></li>
 <li><strong>FSx for NetApp ONTAP</strong> -</li>
 </ul>
-<h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
+<h2 id="summary" class="relative group">Summary </h2>
 <p><strong>EBS Volumes</strong></p>
 <ul>
 <li>network drives attached to one <a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/4-ec2/">EC2 instance</a>
@@ -974,7 +974,7 @@
 <li>High Performance (HPC) Linux file system</li>
 </ul>
 <hr>
-<h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>
+<h2 id="-sources-" class="relative group">&raquo; Sources &laquo; </h2>
 <ul>
 <li><a href="https://aws.amazon.com/efs/when-to-choose-efs/" target="_blank" rel="noreferrer">https://aws.amazon.com/efs/when-to-choose-efs/</a>
 </li>
@@ -983,7 +983,7 @@
 <li><a href="https://www.cloudzero.com/blog/ebs-vs-efs/" target="_blank" rel="noreferrer">https://www.cloudzero.com/blog/ebs-vs-efs/</a>
 </li>
 </ul>
-<h2 id="-references-" class="relative group">&raquo; References &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-references-" aria-label="Anchor">#</a></span></h2>
+<h2 id="-references-" class="relative group">&raquo; References &laquo; </h2>
 <ul>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/11-s3/">S3</a>
 </li>
@@ -992,7 +992,7 @@
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/7-ami/">AMI</a>
 </li>
 </ul>
-<h2 id="-table-of-contents-clf-c02-" class="relative group">&raquo; Table of contents (CLF-C02) &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-table-of-contents-clf-c02-" aria-label="Anchor">#</a></span></h2>
+<h2 id="-table-of-contents-clf-c02-" class="relative group">&raquo; Table of contents (CLF-C02) &laquo; </h2>
 <table><thead><tr><th></th><th></th><th></th></tr></thead>
     <tbody>
         <tr>
@@ -1040,7 +1040,7 @@
             <td></td>
         </tr>
 </tbody></table>
-<h2 id="-disclaimer-" class="relative group">&raquo; Disclaimer &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-disclaimer-" aria-label="Anchor">#</a></span></h2>
+<h2 id="-disclaimer-" class="relative group">&raquo; Disclaimer &laquo; </h2>
 <span class=dark:text-neutral-300>
 
 

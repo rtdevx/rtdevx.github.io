@@ -137,7 +137,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "470"
+    "wordCount": "455"
   }
   </script>
     
@@ -541,7 +541,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-07-20 00:00:00 &#43;0000 UTC">20 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>470 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+      <time datetime="2025-07-20 00:00:00 &#43;0000 UTC">20 July 2025</time><span class="px-2 text-primary-500">&middot;</span><span>455 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
     
 
     
@@ -642,18 +642,18 @@
   <strong>Talos</strong> <strong>Linux</strong> is a minimal, hardened and immutable <strong>Linux</strong> distribution designed for <strong>Kubernetes</strong>. It supports cloud platforms, bare metal and virtualization, and all system management is done via an API.
 </div>
 
-<h2 id="-youtube-tutorial" class="relative group">📺 YouTube Tutorial <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-youtube-tutorial" aria-label="Anchor">#</a></span></h2>
+<h2 id="-youtube-tutorial" class="relative group">📺 YouTube Tutorial </h2>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/4_U0KK-blXQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 <p>💡Talos Linux - The Best OS For Kubernetes.</p>
 <div class="lead !mb-9 text-xl">
-  <h3 id="this-blog-post-describes-talos-linux-installation-on-proxmox-virtual-environment" class="relative group">This blog post describes Talos Linux installation on Proxmox Virtual Environment. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#this-blog-post-describes-talos-linux-installation-on-proxmox-virtual-environment" aria-label="Anchor">#</a></span></h3>
+  <h3 id="this-blog-post-describes-talos-linux-installation-on-proxmox-virtual-environment" class="relative group">This blog post describes Talos Linux installation on Proxmox Virtual Environment. </h3>
 <p>‼️When downloading ISO image, ensure downloading one with QEMU guest agent support for Proxmox.</p>
 </div>
 
-<h2 id="-download-talos-linux" class="relative group">💾 Download Talos Linux <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-download-talos-linux" aria-label="Anchor">#</a></span></h2>
+<h2 id="-download-talos-linux" class="relative group">💾 Download Talos Linux </h2>
 <ul>
 <li>If you need the <code>QEMU</code> guest agent so you can do guest VM shutdowns of your Talos VMs on <code>Proxmox</code>, then you will need a custom ISO</li>
 <li>To get this, navigate to <a href="https://factory.talos.dev/" target="_blank" rel="noreferrer">https://factory.talos.dev/</a>
@@ -663,8 +663,8 @@
 <li>This will provide you with a link to the bare metal ISO</li>
 <li>The lines we’re interested in are as follows</li>
 </ul>
-<h2 id="building-talos-kubernetes-cluster-using-patches" class="relative group">Building Talos Kubernetes cluster using patches <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#building-talos-kubernetes-cluster-using-patches" aria-label="Anchor">#</a></span></h2>
-<h3 id="install-talosctl-kubectl-and-k9s" class="relative group">Install talosctl, kubectl and k9s <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-talosctl-kubectl-and-k9s" aria-label="Anchor">#</a></span></h3>
+<h2 id="building-talos-kubernetes-cluster-using-patches" class="relative group">Building Talos Kubernetes cluster using patches </h2>
+<h3 id="install-talosctl-kubectl-and-k9s" class="relative group">Install talosctl, kubectl and k9s <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> </h3>
 <p>On your <code>Jump Server</code>, install <code>talosctl</code>, <code>kubectl</code> and <code>k9s</code>. I am using <code>Ubuntu Linux</code> in this example.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -692,12 +692,12 @@
 </span></span><span class="line hl"><span class="cl">sudo ln -s /snap/k9s/current/bin/k9s /snap/bin/</span></span></code></pre></td></tr></table>
 </div>
 </div>
-<h3 id="cluster-build" class="relative group">Cluster Build <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cluster-build" aria-label="Anchor">#</a></span></h3>
-<h4 id="1-generate-secrets" class="relative group">1. Generate Secrets <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-generate-secrets" aria-label="Anchor">#</a></span></h4>
+<h3 id="cluster-build" class="relative group">Cluster Build </h3>
+<h4 id="1-generate-secrets" class="relative group">1. Generate Secrets </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">talosctl gen secrets
-</span></span></code></pre></div><h4 id="2-export-variables" class="relative group">2. Export Variables <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-export-variables" aria-label="Anchor">#</a></span></h4>
+</span></span></code></pre></div><h4 id="2-export-variables" class="relative group">2. Export Variables </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">CLUSTER_IP</span><span class="o">=</span>192.168.XX.AB
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">CLUSTER_NAME</span><span class="o">=</span>talos-cluster
 </span></span><span class="line"><span class="cl">
@@ -708,7 +708,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">WORKER_IP1</span><span class="o">=</span>192.168.XX.BA
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">WORKER_IP2</span><span class="o">=</span>192.168.XX.BB
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">WORKER_IP3</span><span class="o">=</span>192.168.XX.BC
-</span></span></code></pre></div><h4 id="3-generate-config-files-for-the-cluster-using-patches" class="relative group">3. Generate config files for the cluster using patches <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-generate-config-files-for-the-cluster-using-patches" aria-label="Anchor">#</a></span></h4>
+</span></span></code></pre></div><h4 id="3-generate-config-files-for-the-cluster-using-patches" class="relative group">3. Generate config files for the cluster using patches </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/rtdevx/homelab.git
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/homelab/kubernetes/talos
@@ -719,18 +719,18 @@
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  --config-patch-control-plane @patches/cp.yaml <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  --config-patch-worker @patches/worker.yaml <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>  --output ~/rendered/
-</span></span></code></pre></div><h4 id="4-set-up-the-cluster" class="relative group">4. Set Up the cluster <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-set-up-the-cluster" aria-label="Anchor">#</a></span></h4>
+</span></span></code></pre></div><h4 id="4-set-up-the-cluster" class="relative group">4. Set Up the cluster </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">talosctl apply -f rendered/controlplane.yaml -n <span class="nv">$CONTROL_PLANE_IP1</span> --insecure
 </span></span><span class="line"><span class="cl">talosctl apply -f rendered/controlplane.yaml -n <span class="nv">$CONTROL_PLANE_IP2</span> --insecure
 </span></span><span class="line"><span class="cl">talosctl apply -f rendered/controlplane.yaml -n <span class="nv">$CONTROL_PLANE_IP3</span> --insecure
-</span></span></code></pre></div><h4 id="5-add-worker-nodes" class="relative group">5. Add Worker Nodes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#5-add-worker-nodes" aria-label="Anchor">#</a></span></h4>
+</span></span></code></pre></div><h4 id="5-add-worker-nodes" class="relative group">5. Add Worker Nodes </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">talosctl apply -f rendered/worker.yaml -n <span class="nv">$WORKER_IP1</span> --insecure
 </span></span><span class="line"><span class="cl">talosctl apply -f rendered/worker.yaml -n <span class="nv">$WORKER_IP2</span> --insecure
 </span></span><span class="line"><span class="cl">talosctl apply -f rendered/worker.yaml -n <span class="nv">$WORKER_IP3</span> --insecure
 </span></span></code></pre></div><p>‼️Note: <code>--insecure</code> is only used for the initial install. After cluster is installed with it&rsquo;s newly generated keys, this option should not be used.</p>
-<h4 id="6-configure-talosctl" class="relative group">6. Configure talosctl <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#6-configure-talosctl" aria-label="Anchor">#</a></span></h4>
+<h4 id="6-configure-talosctl" class="relative group">6. Configure talosctl </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mkdir -p ~/.talos 
 </span></span><span class="line"><span class="cl">cp rendered/talosconfig ~/.talos/config
 </span></span><span class="line"><span class="cl">
@@ -742,18 +742,18 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Set config node</span>
 </span></span><span class="line"><span class="cl">talosctl config node <span class="nv">$CONTROL_PLANE_IP1</span>
-</span></span></code></pre></div><h4 id="7-install-bootstrap-kubernetes" class="relative group">7. Install (Bootstrap) Kubernetes <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#7-install-bootstrap-kubernetes" aria-label="Anchor">#</a></span></h4>
+</span></span></code></pre></div><h4 id="7-install-bootstrap-kubernetes" class="relative group">7. Install (Bootstrap) Kubernetes </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">talosctl bootstrap
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Fetch kubeconfig</span>
 </span></span><span class="line"><span class="cl">talosctl kubeconfig
-</span></span></code></pre></div><h4 id="8-add-kubectl-alias-optional" class="relative group">8. Add kubectl alias (Optional) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#8-add-kubectl-alias-optional" aria-label="Anchor">#</a></span></h4>
+</span></span></code></pre></div><h4 id="8-add-kubectl-alias-optional" class="relative group">8. Add kubectl alias (Optional) </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Bash" data-lang="Bash"><span class="line"><span class="cl">vi ~/.bashrc
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#Custom Aliases</span>
 </span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">k</span><span class="o">=</span><span class="s1">&#39;kubectl&#39;</span>
 </span></span></code></pre></div><hr>
-<h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>
+<h2 id="-sources-" class="relative group">&raquo; Sources &laquo; </h2>
 <ul>
 <li>Proxmox Official Documentation: <a href="https://www.talos.dev/v1.10/talos-guides/install/virtualized-platforms/proxmox/" target="_blank" rel="noreferrer">https://www.talos.dev/v1.10/talos-guides/install/virtualized-platforms/proxmox/</a>
 </li>
