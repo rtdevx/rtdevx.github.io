@@ -9,4 +9,4 @@ The [AWS Certified Cloud Practitioner](https://aws.amazon.com/certification/cer
 <b>>> Disclaimer <<</b>
 </div>
  
- {{< disclaimer_practitioner25_s >}}
+ {{< disclaimer_practitioner25 >}}

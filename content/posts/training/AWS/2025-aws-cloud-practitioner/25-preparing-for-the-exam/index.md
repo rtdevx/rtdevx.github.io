@@ -64,4 +64,4 @@ https://www.aws.training/certification
 - [Compare AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/)
 ## >> Disclaimer <<
 
-{{< disclaimer_practitioner25_s >}}
+{{< disclaimer_practitioner25 >}}
