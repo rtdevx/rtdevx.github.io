@@ -18,10 +18,10 @@ You can visit an individual status code via `httpstatuses.io/code` for more deta
 {{< /alert >}}
 ## 1×× Informational
 
-- <font color=#EBAC25>100</font> Continue
-- <font color=#EBAC25>101</font> Switching Protocols
-- <font color=#EBAC25>102</font> Processing
-- <font color=#EBAC25>103</font> Early Hints
+- <font color=#4B5563>100</font> Continue
+- <font color=#4B5563>101</font> Switching Protocols
+- <font color=#4B5563>102</font> Processing
+- <font color=#4B5563>103</font> Early Hints
 ## 2×× Success
 
 - <font color=#C7EB25>200</font> OK

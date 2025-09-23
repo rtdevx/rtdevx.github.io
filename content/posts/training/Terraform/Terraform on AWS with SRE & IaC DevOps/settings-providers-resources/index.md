@@ -128,7 +128,7 @@ https://registry.terraform.io
 - <font color=#C7EB25>Official</font> - Owned and maintained by HashiCorp
 - <font color=#EBAC25>Verified</font> - Owned and maintained by third-party technology partners. HashiCorp has verified the authenticity of the Provider's publisher
 - <font color=#EB4925>Community</font> - Community providers are published to the Terraform Registry by individual maintainers, groups of maintainers or other members of the Terraform community
-- Archived - Official or Verified Providers that are no longer maintained.
+- <font color=#4B5563>Archived</font> - Official or Verified Providers that are no longer maintained.
 
 ---
 ## >> Sources <<
