@@ -37,6 +37,7 @@ _Sources:_
 | <kbd>F3</kbd>                                                   | Find next                               |
 | <kbd>Shift</kbd> + <kbd>F3</kbd>                                | Find previous                           |
 | <kbd>Alt</kbd> + <kbd>Enter</kbd>                               | Select all occurrences of Find match 🔥 |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>               | Change all occurrences of a word 🔥     |
 | <kbd>Ctrl</kbd> + <kbd>D</kbd>                                  | Add selection to next Find match        |
 | <kbd>Ctrl</kbd> + <kbd>K</kbd> + <kbd>Ctrl</kbd> + <kbd>D</kbd> | Move last selection to next Find match  |
 | <kbd>Alt</kbd> + <kbd>C/R/W</kbd>                               | Toggle case-sensitive/regex/whole word  |
