@@ -36,14 +36,14 @@ You can visit an individual status code via `httpstatuses.io/code` for more deta
 - <font color=#C7EB25>226</font> IM Used
 ## 3×× Redirection
 
-- <font color=#C7EB25>300</font> Multiple Choices
-- <font color=#C7EB25>301</font> Moved Permanently
-- <font color=#C7EB25></font><font color=#C7EB25>302</font> Found
-- <font color=#C7EB25>303</font> See Other
-- <font color=#C7EB25>304</font> Not Modified
-- <font color=#C7EB25>305</font> Use Proxy
-- <font color=#C7EB25>307</font> Temporary Redirect
-- <font color=#C7EB25>308</font> Permanent Redirect
+- <font color=#EBAC25>300</font> Multiple Choices
+- <font color=#EBAC25>301</font> Moved Permanently
+- <font color=#EBAC25>302</font> Found
+- <font color=#EBAC25>303</font> See Other
+- <font color=#EBAC25>304</font> Not Modified
+- <font color=#EBAC25>305</font> Use Proxy
+- <font color=#EBAC25>307</font> Temporary Redirect
+- <font color=#EBAC25>308</font> Permanent Redirect
 
 ## 4×× Client Error
 
