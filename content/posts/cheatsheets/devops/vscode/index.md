@@ -1,6 +1,6 @@
 ---
 title: VSCode Cheatsheet
-date: 2025-09-15
+date: 2025-09-11
 description: VSCode Cheatsheet.
 summary: VSCode Cheatsheet.
 draft: false
