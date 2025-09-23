@@ -1,6 +1,6 @@
 ---
 title: HTTP Status Codes
-date: 2025-09-17
+date: 2025-09-03
 description: HTTP Status Codes.
 summary: HTTP Status Codes.
 draft: false
