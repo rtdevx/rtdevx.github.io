@@ -138,7 +138,7 @@
     "keywords": ["CLF-C02"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "955"
+    "wordCount": "975"
   }
   </script>
     
@@ -596,7 +596,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-17 00:00:00 &#43;0000 UTC">17 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>955 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <time datetime="2025-08-17 00:00:00 &#43;0000 UTC">17 August 2025</time><span class="px-2 text-primary-500">&middot;</span><span>975 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -708,7 +708,7 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="cloudwatch-metrics" class="relative group">CloudWatch Metrics </h2>
+        <h2 id="cloudwatch-metrics" class="relative group">CloudWatch Metrics <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudwatch-metrics" aria-label="Anchor">#</a></span></h2>
 <p><strong>CloudWatch</strong> provides metrics for every service in AWS.</p>
 <p>It is possible to create <strong>CloudWatch Dashboards</strong> that consist of different metrics.</p>
 <p>
@@ -726,7 +726,7 @@
 <em>CloudWatch console</em></p>
 <p><em>CloudWatch Console:</em> <a href="https://console.aws.amazon.com/cloudwatch" target="_blank" rel="noreferrer">https://console.aws.amazon.com/cloudwatch</a>
 </p>
-<h3 id="important-metrics" class="relative group">Important Metrics </h3>
+<h3 id="important-metrics" class="relative group">Important Metrics <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#important-metrics" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li><strong>EC2 instances:</strong> CPU Utilization, Status Checks, Network (not RAM!)
 <ul>
@@ -745,7 +745,7 @@ CloudWatch &gt; Metrics &gt; All metrics
 
 # Create a custom alarm
 CloudWatch &gt; Alarms &gt; All alarms
-</code></pre><h3 id="cloudwatch-alarms" class="relative group">CloudWatch Alarms </h3>
+</code></pre><h3 id="cloudwatch-alarms" class="relative group">CloudWatch Alarms <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudwatch-alarms" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Alarms are used to trigger notifications for any metric</li>
 <li>Alarms actions
@@ -764,7 +764,7 @@ CloudWatch &gt; Alarms &gt; All alarms
 <li>Alarm States: OK, INSUFFICIENT_DATA, ALARM</li>
 </ul>
 <p><font color=#EB4925>Billing alarms are only available in us-east-1</font></p>
-<h3 id="cloudwatch-logs" class="relative group">CloudWatch Logs </h3>
+<h3 id="cloudwatch-logs" class="relative group">CloudWatch Logs <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudwatch-logs" aria-label="Anchor">#</a></span></h3>
 <p>CloudWatch Logs can collect logs from:</p>
 <ul>
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/14-deployments/#beanstalk">Elastic Beanstalk</a>
@@ -779,13 +779,13 @@ CloudWatch &gt; Alarms &gt; All alarms
 <li><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/15-aws-global-infrastructure/#route53">Route53</a>
  - DNS logs</li>
 </ul>
-<h3 id="cloudwatch-logs-for-ec2--on-premise" class="relative group">CloudWatch Logs for EC2 / on-premise </h3>
+<h3 id="cloudwatch-logs-for-ec2--on-premise" class="relative group">CloudWatch Logs for EC2 / on-premise <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cloudwatch-logs-for-ec2--on-premise" aria-label="Anchor">#</a></span></h3>
 <p><font color=#EB4925>CloudWatch agent is required to be installed on EC2 instance
 to push the logs that are needed.</font></p>
 <p><font color=#EB4925>CloudWatch agent can also be installed on on-premise servers too.</font></p>
 <p><a href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/2-iam/">IAM</a>
  permissions must be set for CloudWatch Logs to function correctly.</p>
-<h2 id="amazon-eventbridge" class="relative group">Amazon EventBridge </h2>
+<h2 id="amazon-eventbridge" class="relative group">Amazon EventBridge <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-eventbridge" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>Schedule - cron jobs (scheduled scripts)</li>
 <li>Event Pattern - Event rules to react to a service doing something</li>
@@ -845,8 +845,8 @@ to push the logs that are needed.</font></p>
 <figure><img src="./assets/AWS_CW_EventBridge4.png" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 </p>
-<h2 id="aws-cloudtrail" class="relative group">AWS CloudTrail </h2>
-<h5 id="aws-cloudtrail-provides-governance-compliance-and-audit-your-aws-account-and-it-is-enabled-by-default" class="relative group"><font color=#EB4925>AWS CloudTrail provides governance, compliance and audit your AWS Account and it is ENABLED BY DEFAULT.</font> </h5>
+<h2 id="aws-cloudtrail" class="relative group">AWS CloudTrail <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-cloudtrail" aria-label="Anchor">#</a></span></h2>
+<h5 id="aws-cloudtrail-provides-governance-compliance-and-audit-your-aws-account-and-it-is-enabled-by-default" class="relative group"><font color=#EB4925>AWS CloudTrail provides governance, compliance and audit your AWS Account and it is ENABLED BY DEFAULT.</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-cloudtrail-provides-governance-compliance-and-audit-your-aws-account-and-it-is-enabled-by-default" aria-label="Anchor">#</a></span></h5>
 <p>It can get a history of events / API calls made within your AWS account by:</p>
 <ul>
 <li>Console</li>
@@ -855,7 +855,7 @@ to push the logs that are needed.</font></p>
 <li>AWS Services</li>
 </ul>
 <p><font color=#C7EB25>Logs from CloudTrail can be stored in CloudWatch Logs or S3. Trail can be applied to All Regions (default) or a single region.</font></p>
-<h3 id="if-a-resource-is-deleted-in-aws-investigate-cloudtrail-first" class="relative group"><font color=#EB4925>If a resource is deleted in AWS, investigate CloudTrail first!</font> </h3>
+<h3 id="if-a-resource-is-deleted-in-aws-investigate-cloudtrail-first" class="relative group"><font color=#EB4925>If a resource is deleted in AWS, investigate CloudTrail first!</font> <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#if-a-resource-is-deleted-in-aws-investigate-cloudtrail-first" aria-label="Anchor">#</a></span></h3>
 <p>
 
 
@@ -870,8 +870,8 @@ to push the logs that are needed.</font></p>
 </p>
 <pre tabindex="0"><code class="language-AWSConsole" data-lang="AWSConsole"># Check Events History
 CloudTrail &gt; Event history
-</code></pre><h2 id="aws-x-ray" class="relative group">AWS X-Ray </h2>
-<h5 id="visual-analysis-of-our-applications-common-view-of-entire-architecture" class="relative group"><font color=#EB4925>Visual analysis of our applications.</font> Common view of entire architecture. </h5>
+</code></pre><h2 id="aws-x-ray" class="relative group">AWS X-Ray <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-x-ray" aria-label="Anchor">#</a></span></h2>
+<h5 id="visual-analysis-of-our-applications-common-view-of-entire-architecture" class="relative group"><font color=#EB4925>Visual analysis of our applications.</font> Common view of entire architecture. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#visual-analysis-of-our-applications-common-view-of-entire-architecture" aria-label="Anchor">#</a></span></h5>
 <ul>
 <li><strong>Troubleshooting performance</strong></li>
 <li><strong>Understanding dependencies in a microservices architecture</strong></li>
@@ -893,8 +893,8 @@ CloudTrail &gt; Event history
 <figure><img src="./assets/AWS_CW_XRAY1.png" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 </p>
-<h2 id="amazon-codeguru" class="relative group">Amazon CodeGuru </h2>
-<h5 id="ml-powered-service-for-automated-code-reviews-and-application-performance-recommendations" class="relative group">ML-powered service for automated code reviews and application performance recommendations. </h5>
+<h2 id="amazon-codeguru" class="relative group">Amazon CodeGuru <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amazon-codeguru" aria-label="Anchor">#</a></span></h2>
+<h5 id="ml-powered-service-for-automated-code-reviews-and-application-performance-recommendations" class="relative group">ML-powered service for automated code reviews and application performance recommendations. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#ml-powered-service-for-automated-code-reviews-and-application-performance-recommendations" aria-label="Anchor">#</a></span></h5>
 <p><strong>Provides 2 functionalities:</strong></p>
 <ul>
 <li><strong>CodeGuru Reviewer</strong> - automated code reviews for static code analysis (development)
@@ -925,15 +925,15 @@ CloudTrail &gt; Event history
 <li>Supports applications running on AWS as well as on-premise</li>
 <li>Minimal overhead on application</li>
 </ul>
-<h2 id="aws-health-dashboard" class="relative group">AWS Health Dashboard </h2>
-<h5 id="shows-all-regions-all-services-health-general-information-not-specific-to-you" class="relative group">Shows all regions, all services health. General information, not specific to you. </h5>
+<h2 id="aws-health-dashboard" class="relative group">AWS Health Dashboard <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-health-dashboard" aria-label="Anchor">#</a></span></h2>
+<h5 id="shows-all-regions-all-services-health-general-information-not-specific-to-you" class="relative group">Shows all regions, all services health. General information, not specific to you. <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#shows-all-regions-all-services-health-general-information-not-specific-to-you" aria-label="Anchor">#</a></span></h5>
 <p>Shows historical information for each day.</p>
 <p>Has an RSS feed that can be subscribed to.</p>
-<h3 id="aws-health-dashboard---your-account" class="relative group">AWS Health Dashboard - Your Account </h3>
+<h3 id="aws-health-dashboard---your-account" class="relative group">AWS Health Dashboard - Your Account <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#aws-health-dashboard---your-account" aria-label="Anchor">#</a></span></h3>
 <p><strong>AWS Account Health Dashboard</strong> provides alerts and remediation guidance when AWS is experiencing events that may impact you.</p>
 <p><font color=#EB4925>While the <strong>Service Health Dashboard</strong> displays the general status of AWS services, <strong>Account Health Dashboard</strong> gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources.</font></p>
 <p><font color=#EB4925>It can aggregate data from an entire AWS Organization.</font></p>
-<h2 id="summary" class="relative group">Summary </h2>
+<h2 id="summary" class="relative group">Summary <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#summary" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li><font color=#EBAC25>CloudWatch</font>
 <ul>
@@ -957,7 +957,7 @@ CloudTrail &gt; Event history
 <li><font color=#EBAC25>Amazon CodeGuru</font> - automated code reviews and application performance recommendations</li>
 </ul>
 <hr>
-<h2 id="-sources-" class="relative group">&raquo; Sources &laquo; </h2>
+<h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>
 <p>CloudWatch / CloudWatch Logs / CloudWatch Events (EventBridge):</p>
 <ul>
 <li><a href="https://docs.aws.amazon.com/cloudwatch/" target="_blank" rel="noreferrer">https://docs.aws.amazon.com/cloudwatch/</a>
@@ -965,7 +965,7 @@ CloudTrail &gt; Event history
 <li><a href="https://console.aws.amazon.com/cloudwatch" target="_blank" rel="noreferrer">https://console.aws.amazon.com/cloudwatch</a>
 </li>
 </ul>
-<h2 id="-table-of-contents-clf-c02-" class="relative group">&raquo; Table of contents (CLF-C02) &laquo; </h2>
+<h2 id="-table-of-contents-clf-c02-" class="relative group">&raquo; Table of contents (CLF-C02) &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-table-of-contents-clf-c02-" aria-label="Anchor">#</a></span></h2>
 <table><thead><tr><th></th><th></th><th></th></tr></thead>
     <tbody>
         <tr>
@@ -1013,7 +1013,7 @@ CloudTrail &gt; Event history
             <td></td>
         </tr>
 </tbody></table>
-<h2 id="-disclaimer-" class="relative group">&raquo; Disclaimer &laquo; </h2>
+<h2 id="-disclaimer-" class="relative group">&raquo; Disclaimer &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-disclaimer-" aria-label="Anchor">#</a></span></h2>
 <span class=dark:text-neutral-300>
 
 
@@ -1137,61 +1137,6 @@ CloudTrail &gt; Event history
       
 
       
-  
-    
-    
-    
-    <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
-      <div class="flex justify-between pt-3">
-        <span>
-          
-            <a class="group flex" href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/16-cloud-integrations/">
-              <span
-                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
-                ><span class="ltr:inline rtl:hidden">&larr;</span
-                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
-              >
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Cloud Integrations</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2025-08-16 00:00:00 &#43;0000 UTC">16 August 2025</time>
-                  
-                </span>
-              </span>
-            </a>
-          
-        </span>
-        <span>
-          
-            <a class="group flex text-right" href="http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/18-vpc/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >VPC</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2025-08-18 00:00:00 &#43;0000 UTC">18 August 2025</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
-                ><span class="ltr:inline rtl:hidden">&rarr;</span
-                ><span class="ltr:hidden rtl:inline">&larr;</span></span
-              >
-            </a>
-          
-        </span>
-      </div>
-    </div>
-  
-
 
       
     </footer>

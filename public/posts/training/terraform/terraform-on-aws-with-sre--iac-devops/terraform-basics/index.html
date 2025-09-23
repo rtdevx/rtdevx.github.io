@@ -138,7 +138,7 @@
     "keywords": ["Assoc003"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "698"
+    "wordCount": "708"
   }
   </script>
     
@@ -578,7 +578,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-09-21 00:00:00 &#43;0000 UTC">21 September 2025</time><span class="px-2 text-primary-500">&middot;</span><span>698 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+      <time datetime="2025-09-21 00:00:00 &#43;0000 UTC">21 September 2025</time><span class="px-2 text-primary-500">&middot;</span><span>708 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
     
 
     
@@ -667,14 +667,14 @@
         </div>
       
       <div class="min-h-0 min-w-0 max-w-prose grow">
-        <h2 id="prerequisite" class="relative group">Prerequisite </h2>
+        <h2 id="prerequisite" class="relative group">Prerequisite <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#prerequisite" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li>Install Terraform CLI</li>
 <li>Install AWS CLI</li>
 <li>Install VS Code Editor</li>
 <li>Install HashiCorp Terraform plugin for VS Code</li>
 </ul>
-<h2 id="terraform-basic-commands" class="relative group">Terraform basic commands </h2>
+<h2 id="terraform-basic-commands" class="relative group">Terraform basic commands <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#terraform-basic-commands" aria-label="Anchor">#</a></span></h2>
 <ul>
 <li><code>terraform init</code>
 <ul>
@@ -707,7 +707,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="other-useful-commands" class="relative group">Other useful commands </h3>
+<h3 id="other-useful-commands" class="relative group">Other useful commands <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#other-useful-commands" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li><code>terraform fmt</code> - HashiCorp recommends using consistent formatting in all config files by using the <code>terraform fmt</code> command. Optional command, <font color=#C7EB25>helps with formatting</font></li>
 <li><code>terraform state</code> command can be used to check what resources have been deployed against the <strong>terraform state file</strong>
@@ -749,7 +749,7 @@ the physical resources they are tracking</li>
 </span></span><span class="line"><span class="cl">terraform apply tf.plan
 </span></span></code></pre></div><p>*<em>terraform will not ask for confirmation (just like using it with the <code>-auto-approve</code> option) when executing the plan from the file.</em></p>
 <p>The <strong>terraform state file</strong> is the only way Terraform can track which resources it is managing. <font color=#EB4925><b>It often contains sensitive information</b></font> so must be stored securely and access must be restricted.</p>
-<h2 id="terraform-configuration-syntax" class="relative group">Terraform Configuration Syntax </h2>
+<h2 id="terraform-configuration-syntax" class="relative group">Terraform Configuration Syntax <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#terraform-configuration-syntax" aria-label="Anchor">#</a></span></h2>
 <p><em>Source:</em> <a href="https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/02-Terraform-Basics/02-03-Terraform-Language-Syntax" target="_blank" rel="noreferrer">Terraform Language Syntax</a>
 </p>
 <p>
@@ -764,7 +764,7 @@ the physical resources they are tracking</li>
 <figure><img src="./assets/TF_terraform_configuration_syntax.jpg" alt="" class="mx-auto my-0 rounded-md" />
 </figure>
 </p>
-<h3 id="terraform-blocks" class="relative group">Terraform Blocks </h3>
+<h3 id="terraform-blocks" class="relative group">Terraform Blocks <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#terraform-blocks" aria-label="Anchor">#</a></span></h3>
 <p>Code in <strong>Terraform</strong> language is stored in plain text files ended with the <font color=#C7EB25><i>.tf</i></font> extension. Those are called <font color=#EBAC25>Terraform Configuration Files</font> or <font color=#EBAC25>Terraform Manifests</font>.</p>
 <p>
 
@@ -793,7 +793,7 @@ the physical resources they are tracking</li>
 </ul>
 </li>
 </ul>
-<h3 id="terraform-arguments-attributes-and-meta-arguments" class="relative group">Terraform Arguments, Attributes and Meta-Arguments </h3>
+<h3 id="terraform-arguments-attributes-and-meta-arguments" class="relative group">Terraform Arguments, Attributes and Meta-Arguments <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#terraform-arguments-attributes-and-meta-arguments" aria-label="Anchor">#</a></span></h3>
 <div class="flex rounded-md bg-primary-100 px-4 py-3 dark:bg-primary-900">
   <span class="pe-3 text-primary-400">
     <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
@@ -850,7 +850,7 @@ the physical resources they are tracking</li>
 <li><a href="https://www.terraform.io/docs/language/meta-arguments/depends_on.html" target="_blank" rel="noreferrer">Resource: Meta-Arguments</a>
 </li>
 </ul>
-<h3 id="top-level-blocks" class="relative group">Top-Level Blocks </h3>
+<h3 id="top-level-blocks" class="relative group">Top-Level Blocks <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#top-level-blocks" aria-label="Anchor">#</a></span></h3>
 <ul>
 <li>Terraform Settings Block</li>
 <li>Provider Block</li>
@@ -877,7 +877,7 @@ the physical resources they are tracking</li>
 </p>
 <p><em>Terraform Resources:</em> <a href="https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/04-Terraform-Resources" target="_blank" rel="noreferrer">https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/04-Terraform-Resources</a>
 </p>
-<h3 id="terraform-comments" class="relative group">Terraform Comments </h3>
+<h3 id="terraform-comments" class="relative group">Terraform Comments <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#terraform-comments" aria-label="Anchor">#</a></span></h3>
 <p>3 ways to make comments in Terraform:</p>
 <ul>
 <li>Single-line:
@@ -894,7 +894,7 @@ the physical resources they are tracking</li>
 </span></span><span class="line"><span class="cl">Line <span class="m">2</span>
 </span></span><span class="line"><span class="cl">*/
 </span></span></code></pre></div><hr>
-<h2 id="-sources-" class="relative group">&raquo; Sources &laquo; </h2>
+<h2 id="-sources-" class="relative group">&raquo; Sources &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-sources-" aria-label="Anchor">#</a></span></h2>
 <p>Kalyan&rsquo;s GitHub Repositories:</p>
 <ul>
 <li><a href="https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/02-Terraform-Basics" target="_blank" rel="noreferrer">https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/02-Terraform-Basics</a>
@@ -917,7 +917,7 @@ the physical resources they are tracking</li>
 <li><em>aws_instance</em> resource documentation: <a href="https://registry.terraform.io/providers/-/aws/latest/docs/resources/instance" target="_blank" rel="noreferrer">https://registry.terraform.io/providers/-/aws/latest/docs/resources/instance</a>
 </li>
 </ul>
-<h2 id="-disclaimer-" class="relative group">&raquo; Disclaimer &laquo; </h2>
+<h2 id="-disclaimer-" class="relative group">&raquo; Disclaimer &laquo; <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-disclaimer-" aria-label="Anchor">#</a></span></h2>
 <span class=dark:text-neutral-300>
 
     <p>This series draws heavily from <strong>Kalyan Reddy Daida&rsquo;s</strong> <a href=https://www.udemy.com/course/terraform-on-aws-with-sre-iac-devops-real-world-demos/ target=_blank rel=noreferrer>Terraform on AWS with SRE & IaC DevOps</a> course on <em>Udemy</em>.</p>
@@ -1039,42 +1039,6 @@ the physical resources they are tracking</li>
       
 
       
-  
-    
-    
-    
-    <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
-      <div class="flex justify-between pt-3">
-        <span>
-          
-        </span>
-        <span>
-          
-            <a class="group flex text-right" href="http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/settings-providers-resources/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Terraform - Settings, Providers and Resources</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2025-09-22 00:00:00 &#43;0000 UTC">22 September 2025</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
-                ><span class="ltr:inline rtl:hidden">&rarr;</span
-                ><span class="ltr:hidden rtl:inline">&larr;</span></span
-              >
-            </a>
-          
-        </span>
-      </div>
-    </div>
-  
-
 
       
     </footer>
