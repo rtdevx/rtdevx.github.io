@@ -31,20 +31,6 @@
       <description>Encrypting / Decrypting strings with Ansible Vault.</description>
     </item>
     <item>
-      <title>HTTP Status Codes</title>
-      <link>http://localhost:1313/posts/cheatsheets/devops/http-status-codes/</link>
-      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/devops/http-status-codes/</guid>
-      <description>HTTP Status Codes.</description>
-    </item>
-    <item>
-      <title>VSCode Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/devops/vscode/</link>
-      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/devops/vscode/</guid>
-      <description>VSCode Cheatsheet.</description>
-    </item>
-    <item>
       <title>Git Cheatsheet</title>
       <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
@@ -57,6 +43,20 @@
       <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</guid>
       <description>My Visual Studio Code setup.</description>
+    </item>
+    <item>
+      <title>VSCode Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/vscode/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/vscode/</guid>
+      <description>VSCode Cheatsheet.</description>
+    </item>
+    <item>
+      <title>HTTP Status Codes</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/http-status-codes/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/http-status-codes/</guid>
+      <description>HTTP Status Codes.</description>
     </item>
     <item>
       <title>Building Talos Linux Kubernetes Cluster</title>

@@ -30,6 +30,13 @@
   
     
       <url>
+            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/</loc>
+            <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
             <loc>http://localhost:1313/posts/training/terraform/</loc>
             <lastmod>2025-09-22T00:00:00+00:00</lastmod>
           </url>
@@ -95,26 +102,10 @@
     
       <url>
             <loc>http://localhost:1313/posts/cheatsheets/devops/</loc>
-            <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+            <lastmod>2025-09-14T00:00:00+00:00</lastmod>
           </url>
     
   
-    
-      <url>
-            <loc>http://localhost:1313/posts/cheatsheets/devops/http-status-codes/</loc>
-            <lastmod>2025-09-17T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/cheatsheets/devops/vscode/</loc>
-            <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-          </url>
     
   
     
@@ -137,6 +128,15 @@
   
     
       <url>
+            <loc>http://localhost:1313/posts/training/aws/</loc>
+            <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+      <url>
             <loc>http://localhost:1313/posts/cheatsheets/blogging/</loc>
             <lastmod>2025-09-12T00:00:00+00:00</lastmod>
           </url>
@@ -152,6 +152,27 @@
     
   
     
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/</loc>
+            <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/devops/vscode/</loc>
+            <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/devops/http-status-codes/</loc>
+            <lastmod>2025-09-03T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
   
     
       <url>
@@ -163,24 +184,10 @@
     
   
     
-      <url>
-            <loc>http://localhost:1313/posts/training/aws/</loc>
-            <lastmod>2025-08-25T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
   
     
       <url>
             <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/25-preparing-for-the-exam/</loc>
-            <lastmod>2025-08-25T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/</loc>
             <lastmod>2025-08-25T00:00:00+00:00</lastmod>
           </url>
     
