@@ -1,6 +1,6 @@
 ---
 title: Terraform Variables Cheatsheet
-date: 2025-09-15
+date: 2025-09-09
 description: Terraform Variables Cheatsheet.
 summary: Terraform Variables Cheatsheet.
 draft: false
