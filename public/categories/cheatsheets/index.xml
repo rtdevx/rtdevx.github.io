@@ -17,6 +17,13 @@
       <description>Crontab Cheatsheet.</description>
     </item>
     <item>
+      <title>Terraform Variables Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</link>
+      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</guid>
+      <description>Terraform Variables Cheatsheet.</description>
+    </item>
+    <item>
       <title>Git Cheatsheet</title>
       <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
       <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
