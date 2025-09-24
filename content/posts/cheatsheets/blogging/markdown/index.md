@@ -1,6 +1,6 @@
 ---
 title: Markdown Cheatsheet
-date: 2025-09-12
+date: 2025-09-10
 description: This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.
 summary: This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.
 draft: false
