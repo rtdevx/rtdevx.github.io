@@ -1,23 +1,19 @@
 ---
 title: Git Cheatsheet
-date: 2025-09-14
+date: 2025-09-10
 description: Git Cheatsheet
 summary: Git Cheatsheet.
 draft: false
 tags:
   - git
-categories: 
+categories:
   - DevOps
   - Cheatsheets
 ---
-{{< lead >}}
-### `Git` is a distributed version control software system that is capable of managing versions of source code or data. 
-It is often used to control source code by programmers who are developing software collaboratively.
-
-{{< /lead >}}
-
 {{< alert "circle-info" >}}
+
 Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< ref "my-vscode-setup/#better-comments-options-" >}}) of [Better Comments extension]({{< ref "my-vscode-setup/#my-vscode-extensions" >}}) may help you creating more human-friendly comments in your code.
+
 {{< /alert >}}
 ## Basic Commands
 
