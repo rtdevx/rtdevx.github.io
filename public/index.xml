@@ -38,18 +38,18 @@
       <description>Encrypting / Decrypting strings with Ansible Vault.</description>
     </item>
     <item>
-      <title>Crontab Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/linux/crontab/</link>
-      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/linux/crontab/</guid>
-      <description>Crontab Cheatsheet.</description>
-    </item>
-    <item>
       <title>Terraform Variables Cheatsheet</title>
       <link>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</guid>
       <description>Terraform Variables Cheatsheet.</description>
+    </item>
+    <item>
+      <title>Crontab Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/linux/crontab/</link>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/linux/crontab/</guid>
+      <description>Crontab Cheatsheet.</description>
     </item>
     <item>
       <title>Git Cheatsheet</title>
