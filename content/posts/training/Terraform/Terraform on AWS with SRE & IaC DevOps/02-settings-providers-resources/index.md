@@ -1,5 +1,5 @@
 ---
-title: Terraform - Settings, Providers and Resources
+title: "Terraform: Settings, Providers and Resources"
 date: 2025-09-22
 description: A word or two about Terraform blocks, resources, Terraform Registry.
 summary: A word or two about Terraform blocks, resources, Terraform Registry.
