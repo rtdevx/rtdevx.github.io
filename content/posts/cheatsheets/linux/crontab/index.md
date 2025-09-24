@@ -13,13 +13,11 @@ categories:
 _Source:_ https://cheatsheets.zip/cron
 
 {{< /alert >}}
-
-{{< lead >}}
-**Online Crontab Generators:**
+## Crontab Generators
 
 - https://crontab.guru/
 - https://crontab-generator.org/
-{{< /lead >}}
+## Format
 
 ```
 Min  Hour Day  Mon  Weekday
