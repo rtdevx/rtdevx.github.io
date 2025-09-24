@@ -1,6 +1,6 @@
 ---
 title: My VSCode setup
-date: 2025-09-13
+date: 2025-09-11
 description: My Visual Studio Code setup.
 summary: My Visual Studio Code setup.
 draft: false
