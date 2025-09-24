@@ -11,19 +11,11 @@ categories:
   - Terraform
 ---
 ```shell
-# NOTE: Setting up the AWS provider
-provider "aws" {
-  region = "eu-west-2"
-}
-
-# NOTE: Variables
-
 # INFO: String Variable
 variable "vpcname" {
   description = "The name of the VPC"
   type        = string
-  default     = "myvpc"
-  
+  default     = "myvpc"  
 }
 
 # INFO: Number Variable
@@ -62,7 +54,6 @@ variable "mymap" {
 # INFO: String Variable
 resource "aws_vpc" "mytfvpc" {
   cidr_block = "10.0.0.0/16"
-
   tags = {
     Name = var.vpcname
   }
@@ -71,7 +62,6 @@ resource "aws_vpc" "mytfvpc" {
 # INFO: Number Variable
 resource "aws_vpc" "mytfvpc" {
   cidr_block = "10.0.0.0/16"
-
   tags = {
     Name = var.mylist[0]
   }
@@ -80,14 +70,12 @@ resource "aws_vpc" "mytfvpc" {
 # INFO: Map Variable
 resource "aws_vpc" "mytfvpc" {
   cidr_block = "10.0.0.0/16"
-
   tags = {
     Name = var.mymap["Key1"]
   }
 }
 
 # NOTE: Input variables
-
 variable "inputname" {
   description = "Set the name of the VPC"
   type        = string
@@ -96,21 +84,18 @@ variable "inputname" {
 
 resource "aws_vpc" "mytfvpc" {
   cidr_block = "10.0.0.0/16"
-
     tags = {
       Name = var.inputname
     }
   }
 
 # NOTE: Output
-
 output "vpcid" {
   description = "Output the VPC ID"
   value       = aws_vpc.mytfvpc.id
 }
 
 # NOTE: Tuples and Objects
-
 variable "mytuple" {
   description = "A tuple with mixed types"
   type        = tuple([string, number, bool])
