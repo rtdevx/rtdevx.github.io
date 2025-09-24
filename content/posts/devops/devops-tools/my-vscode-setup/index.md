@@ -72,19 +72,23 @@ Your browser does not support the video tag.
 
 ## Better Comments options ✨
 
-- !
-- ?
-- //
-- \*
-- todo:
-- note:
-- info:
-- hack:
-- fix:
-- optimize:
-- @critical
-- @high
-- @low
+```
+# !
+# ?
+# //
+# *
+# todo:
+# note:
+# info:
+# hack:
+# fix:
+# optimize:
+# @critical
+# @high
+# @low
+```
+
+![](./assets/vscode_screenshot_colors.png)
 
 ℹ️ Here are the settings:
 

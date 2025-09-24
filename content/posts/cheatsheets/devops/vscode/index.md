@@ -17,6 +17,9 @@ _Sources:_
 - https://cheatsheets.zip/vscode
 {{< /alert >}}
 
+{{< alert "circle-info" >}}
+[Example use]({{< ref "my-vscode-setup/#better-comments-options-" >}}) of [Better Comments extension]({{< ref "my-vscode-setup/#my-vscode-extensions" >}}) may help you creating more human-friendly comments in your code.
+{{< /alert >}}
 ## General
 
 | Shortcut                                                        | Description               |
