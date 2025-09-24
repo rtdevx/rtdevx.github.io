@@ -1,5 +1,5 @@
 ---
-title: "Welcome my blog. :tada:"
+title: Welcome my DevOps blog.
 description: My name is Rob and I am a DevOps engineer.
 ---
 <!-- 
