@@ -284,7 +284,7 @@ _More about AMI datasource:_
 
 💡 Finding AMI for filter value `values = ["al2023-ami-*-x86_64"]`:
 
-![](TF_AWS_Finding_AMI_Image1.png)
+![](./assets/TF_AWS_Finding_AMI_Image1.png)
 
 ![](./assets/TF_AWS_Finding_AMI_Image2.png)
 ## Create EC2 Instance
