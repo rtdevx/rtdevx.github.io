@@ -74,12 +74,12 @@ The **terraform state file** is the only way Terraform can track which resources
 
 _Source:_ [Terraform Language Syntax](https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/02-Terraform-Basics/02-03-Terraform-Language-Syntax)
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/Terraform/Terraform%20on%20AWS%20with%20SRE%20&%20IaC%20DevOps/02-terraform-basics/assets/TF_terraform_configuration_syntax.jpg)
+![](./assets/TF_terraform_configuration_syntax.jpg)
 ### Terraform Blocks
 
 Code in **Terraform** language is stored in plain text files ended with the <font color=#C7EB25><i>.tf</i></font> extension. Those are called <font color=#EBAC25>Terraform Configuration Files</font> or <font color=#EBAC25>Terraform Manifests</font>.
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/Terraform/Terraform%20on%20AWS%20with%20SRE%20&%20IaC%20DevOps/02-terraform-basics/assets/TF_terraform_blocks.jpg)
+![](./assets/TF_terraform_blocks.jpg)
 
 **2 types of blocks:**
 
@@ -135,7 +135,7 @@ _More:_
 - Data Sources Block
 - Modules Block
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/Terraform/Terraform%20on%20AWS%20with%20SRE%20&%20IaC%20DevOps/02-terraform-basics/assets/TF_terraform_blocks_top_level.jpg)
+![](./assets/TF_terraform_blocks_top_level.jpg)
 
 _Terraform Blocks:_ https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/03-Terraform-Fundamental-Blocks
 
