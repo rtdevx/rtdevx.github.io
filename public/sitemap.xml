@@ -23,13 +23,6 @@
   
     
       <url>
-            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-variables-datasources-output/</loc>
-            <lastmod>2025-09-24T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
             <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/</loc>
             <lastmod>2025-09-24T00:00:00+00:00</lastmod>
           </url>
@@ -38,6 +31,13 @@
     
       <url>
             <loc>http://localhost:1313/posts/training/terraform/</loc>
+            <lastmod>2025-09-24T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-variables-datasources-output/</loc>
             <lastmod>2025-09-24T00:00:00+00:00</lastmod>
           </url>
     
@@ -74,67 +74,8 @@
   
     
       <url>
-            <loc>http://localhost:1313/posts/cheatsheets/linux/crontab/</loc>
-            <lastmod>2025-09-20T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/cheatsheets/devops/</loc>
-            <lastmod>2025-09-20T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/cheatsheets/linux/</loc>
-            <lastmod>2025-09-20T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</loc>
-            <lastmod>2025-09-20T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/cheatsheets/</loc>
-            <lastmod>2025-09-20T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-  
-    
-      <url>
             <loc>http://localhost:1313/posts/devops/ansible/ansible-vault/</loc>
             <lastmod>2025-09-19T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/cheatsheets/devops/git/</loc>
-            <lastmod>2025-09-14T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</loc>
-            <lastmod>2025-09-13T00:00:00+00:00</lastmod>
           </url>
     
   
@@ -148,11 +89,61 @@
     
   
     
+      <url>
+            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/</loc>
+            <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/devops/</loc>
+            <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</loc>
+            <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/devops/vscode/</loc>
+            <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/</loc>
+            <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
   
     
       <url>
             <loc>http://localhost:1313/posts/cheatsheets/blogging/</loc>
-            <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+            <lastmod>2025-09-10T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/devops/git/</loc>
+            <lastmod>2025-09-10T00:00:00+00:00</lastmod>
           </url>
     
   
@@ -161,21 +152,30 @@
     
       <url>
             <loc>http://localhost:1313/posts/cheatsheets/blogging/markdown/</loc>
-            <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+            <lastmod>2025-09-10T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/posts/training/aws/2025-aws-cloud-practitioner/</loc>
-            <lastmod>2025-09-12T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/posts/cheatsheets/linux/crontab/</loc>
+            <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/posts/cheatsheets/linux/</loc>
+            <lastmod>2025-09-09T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/posts/cheatsheets/devops/vscode/</loc>
-            <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</loc>
+            <lastmod>2025-09-09T00:00:00+00:00</lastmod>
           </url>
     
   
@@ -376,9 +376,11 @@
   
     
       <url>
-            <loc>http://localhost:1313/posts/productivity/2025/250822-game-theory/</loc>
-            <lastmod>2025-07-22T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</loc>
+            <lastmod>2025-07-23T00:00:00+00:00</lastmod>
           </url>
+    
+  
     
   
     
@@ -387,11 +389,9 @@
   
     
       <url>
-            <loc>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</loc>
-            <lastmod>2025-07-20T00:00:00+00:00</lastmod>
+            <loc>http://localhost:1313/posts/productivity/2025/250822-game-theory/</loc>
+            <lastmod>2025-07-22T00:00:00+00:00</lastmod>
           </url>
-    
-  
     
   
     

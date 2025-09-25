@@ -7,42 +7,42 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copy, _right_? 🤔 </copyright>
-    <lastBuildDate>Sat, 20 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Crontab Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/linux/crontab/</link>
-      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/linux/crontab/</guid>
-      <description>Crontab Cheatsheet.</description>
-    </item>
-    <item>
-      <title>Terraform Variables Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</link>
-      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</guid>
-      <description>Terraform Variables Cheatsheet.</description>
-    </item>
-    <item>
-      <title>Git Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
-      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/devops/git/</guid>
-      <description>Git Cheatsheet.</description>
-    </item>
-    <item>
-      <title>Markdown Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/blogging/markdown/</link>
-      <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/blogging/markdown/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>VSCode Cheatsheet</title>
       <link>http://localhost:1313/posts/cheatsheets/devops/vscode/</link>
       <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/cheatsheets/devops/vscode/</guid>
       <description>VSCode Cheatsheet.</description>
+    </item>
+    <item>
+      <title>Git Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/git/</guid>
+      <description>Git Cheatsheet.</description>
+    </item>
+    <item>
+      <title>Markdown Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/blogging/markdown/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/blogging/markdown/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crontab Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/linux/crontab/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/linux/crontab/</guid>
+      <description>Crontab Cheatsheet.</description>
+    </item>
+    <item>
+      <title>Terraform Variables Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</guid>
+      <description>Terraform Variables Cheatsheet.</description>
     </item>
     <item>
       <title>HTTP Status Codes</title>

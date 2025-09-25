@@ -38,39 +38,11 @@
       <description>Encrypting / Decrypting strings with Ansible Vault.</description>
     </item>
     <item>
-      <title>Terraform Variables Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</link>
-      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</guid>
-      <description>Terraform Variables Cheatsheet.</description>
-    </item>
-    <item>
-      <title>Crontab Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/linux/crontab/</link>
-      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/linux/crontab/</guid>
-      <description>Crontab Cheatsheet.</description>
-    </item>
-    <item>
-      <title>Git Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
-      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/devops/git/</guid>
-      <description>Git Cheatsheet.</description>
-    </item>
-    <item>
       <title>My VSCode setup</title>
       <link>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</link>
-      <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</guid>
       <description>My Visual Studio Code setup.</description>
-    </item>
-    <item>
-      <title>Markdown Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/blogging/markdown/</link>
-      <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/blogging/markdown/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.&lt;/p&gt;</description>
     </item>
     <item>
       <title>VSCode Cheatsheet</title>
@@ -78,6 +50,34 @@
       <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/cheatsheets/devops/vscode/</guid>
       <description>VSCode Cheatsheet.</description>
+    </item>
+    <item>
+      <title>Git Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/git/</guid>
+      <description>Git Cheatsheet.</description>
+    </item>
+    <item>
+      <title>Markdown Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/blogging/markdown/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/blogging/markdown/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crontab Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/linux/crontab/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/linux/crontab/</guid>
+      <description>Crontab Cheatsheet.</description>
+    </item>
+    <item>
+      <title>Terraform Variables Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</guid>
+      <description>Terraform Variables Cheatsheet.</description>
     </item>
     <item>
       <title>HTTP Status Codes</title>
@@ -269,18 +269,18 @@
       <description>What is Cloud Computing&amp;hellip;</description>
     </item>
     <item>
+      <title>Building Talos Linux Kubernetes Cluster</title>
+      <link>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</guid>
+      <description>Building Talos Linux Kubernetes Cluster&amp;hellip;</description>
+    </item>
+    <item>
       <title>Game theory</title>
       <link>http://localhost:1313/posts/productivity/2025/250822-game-theory/</link>
       <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/productivity/2025/250822-game-theory/</guid>
       <description>The best video about Game Theory I&amp;rsquo;ve ever watched&amp;hellip;</description>
-    </item>
-    <item>
-      <title>Building Talos Linux Kubernetes Cluster</title>
-      <link>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</link>
-      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</guid>
-      <description>Building Talos Linux Kubernetes Cluster&amp;hellip;</description>
     </item>
     <item>
       <title>Zettelkasten note taking method</title>

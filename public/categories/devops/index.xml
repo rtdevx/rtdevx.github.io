@@ -10,32 +10,25 @@
     <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Terraform - Variables, Datasources and Output Values 🔥</title>
+      <title>Terraform: Variables, Datasources and Output Values 🔥</title>
       <link>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-variables-datasources-output/</link>
       <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-variables-datasources-output/</guid>
       <description>Terraform Variables, Datasources and Output Values.</description>
     </item>
     <item>
-      <title>Terraform - Settings, Providers and Resources</title>
+      <title>Terraform: Settings, Providers and Resources</title>
       <link>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-settings-providers-resources/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-settings-providers-resources/</guid>
       <description>A word or two about Terraform blocks, resources, Terraform Registry.</description>
     </item>
     <item>
-      <title>Terraform Basics</title>
+      <title>Terraform: Basics</title>
       <link>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/01-terraform-basics/</link>
       <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/01-terraform-basics/</guid>
       <description>Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.</description>
-    </item>
-    <item>
-      <title>Terraform Variables Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</link>
-      <pubDate>Sat, 20 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</guid>
-      <description>Terraform Variables Cheatsheet.</description>
     </item>
     <item>
       <title>Ansible Vault</title>
@@ -45,16 +38,9 @@
       <description>Encrypting / Decrypting strings with Ansible Vault.</description>
     </item>
     <item>
-      <title>Git Cheatsheet</title>
-      <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
-      <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/cheatsheets/devops/git/</guid>
-      <description>Git Cheatsheet.</description>
-    </item>
-    <item>
       <title>My VSCode setup</title>
       <link>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</link>
-      <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/devops/devops-tools/my-vscode-setup/</guid>
       <description>My Visual Studio Code setup.</description>
     </item>
@@ -66,6 +52,20 @@
       <description>VSCode Cheatsheet.</description>
     </item>
     <item>
+      <title>Git Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/git/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/git/</guid>
+      <description>Git Cheatsheet.</description>
+    </item>
+    <item>
+      <title>Terraform Variables Cheatsheet</title>
+      <link>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheatsheets/devops/terraform-variables/</guid>
+      <description>Terraform Variables Cheatsheet.</description>
+    </item>
+    <item>
       <title>HTTP Status Codes</title>
       <link>http://localhost:1313/posts/cheatsheets/devops/http-status-codes/</link>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
@@ -75,7 +75,7 @@
     <item>
       <title>Building Talos Linux Kubernetes Cluster</title>
       <link>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</link>
-      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/devops/kubernetes/talos-cluster-build/</guid>
       <description>Building Talos Linux Kubernetes Cluster&amp;hellip;</description>
     </item>
