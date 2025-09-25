@@ -139,7 +139,7 @@ code .\config\_default\params.toml
 ```
 
 ```toml
-colorScheme = "congo"
+colorScheme = "slate"
 ```
 
 ℹ️ Valid color options: `congo`, `avocado`, `cherry`, `fire`, `ocean`, `sapphire`, `slate`.<br />
