@@ -1,6 +1,6 @@
 ---
 title: Building Talos Linux Kubernetes Cluster
-date: 2025-07-20
+date: 2025-07-23
 description: Building Talos Linux Kubernetes Cluster...
 summary: Building Talos Linux Kubernetes Cluster...
 draft: false
