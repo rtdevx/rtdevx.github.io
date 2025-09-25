@@ -116,7 +116,7 @@ summaryLength = 0
 ## 5. Test new website
 
 ```PowerShell
-hugo server
+hugo server -D -disableFastRender
 ```
 
 ℹ️ After `Hugo server` is started, website should be available under:
