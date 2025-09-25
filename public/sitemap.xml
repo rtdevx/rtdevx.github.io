@@ -37,7 +37,7 @@
   
     
       <url>
-            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-variables-datasources-output/</loc>
+            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/04-variables-datasources-output/</loc>
             <lastmod>2025-09-24T00:00:00+00:00</lastmod>
           </url>
     
@@ -58,14 +58,14 @@
   
     
       <url>
-            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-settings-providers-resources/</loc>
+            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-settings-providers-resources/</loc>
             <lastmod>2025-09-22T00:00:00+00:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/01-terraform-basics/</loc>
+            <loc>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/</loc>
             <lastmod>2025-09-21T00:00:00+00:00</lastmod>
           </url>
     

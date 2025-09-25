@@ -11,23 +11,23 @@
     <atom:link href="http://localhost:1313/categories/terraform/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terraform: Variables, Datasources and Output Values 🔥</title>
-      <link>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-variables-datasources-output/</link>
+      <link>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/04-variables-datasources-output/</link>
       <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-variables-datasources-output/</guid>
+      <guid>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/04-variables-datasources-output/</guid>
       <description>Terraform Variables, Datasources and Output Values.</description>
     </item>
     <item>
       <title>Terraform: Settings, Providers and Resources</title>
-      <link>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-settings-providers-resources/</link>
+      <link>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-settings-providers-resources/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-settings-providers-resources/</guid>
+      <guid>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/03-settings-providers-resources/</guid>
       <description>A word or two about Terraform blocks, resources, Terraform Registry.</description>
     </item>
     <item>
       <title>Terraform: Basics</title>
-      <link>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/01-terraform-basics/</link>
+      <link>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/</link>
       <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/01-terraform-basics/</guid>
+      <guid>http://localhost:1313/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/</guid>
       <description>Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.</description>
     </item>
     <item>

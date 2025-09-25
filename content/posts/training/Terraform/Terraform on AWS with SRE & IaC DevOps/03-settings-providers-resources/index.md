@@ -24,7 +24,7 @@ categories:
 Within a Terraform Block <font color=#C7EB25>only constant values can be used</font>. Arguments <font color=#EB4925>may not refer</font> to named objects such as resources, input variables, etc, and <font color=#EB4925>may not use</font> any of the Terraform language built-in functions.
 {{< /alert >}}
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/Terraform/Terraform%20on%20AWS%20with%20SRE%20&%20IaC%20DevOps/02-settings-providers-resources/assets/TF_terraform_blocks.jpg)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/Terraform/Terraform%20on%20AWS%20with%20SRE%20&%20IaC%20DevOps/03-settings-providers-resources/assets/TF_terraform_blocks.jpg)
 ### Provider Block
 
 - <font color=#EB4925>Heart of the Terraform</font>
@@ -58,7 +58,7 @@ provider "aws" {
 
 {{< /alert >}}
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/Terraform/Terraform%20on%20AWS%20with%20SRE%20&%20IaC%20DevOps/02-settings-providers-resources/assets/TF_terraform_providers.jpg)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/Terraform/Terraform%20on%20AWS%20with%20SRE%20&%20IaC%20DevOps/03-settings-providers-resources/assets/TF_terraform_providers.jpg)
 
 ```shell
 # INFO: Provider Block
@@ -95,7 +95,7 @@ resource "aws_instance" "myec2vm" {
 }
 ```
 
-![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/Terraform/Terraform%20on%20AWS%20with%20SRE%20&%20IaC%20DevOps/02-settings-providers-resources/assets/TF_terraform_resource_syntax.jpg)
+![](4%20-%20Content%20Creation/Git/rtdevx.github.io/content/posts/training/Terraform/Terraform%20on%20AWS%20with%20SRE%20&%20IaC%20DevOps/03-settings-providers-resources/assets/TF_terraform_resource_syntax.jpg)
 #### Resource Behavior
 
 | Terraform Resource        |                                                                                                                                                                                                             |
