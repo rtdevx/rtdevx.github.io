@@ -45,7 +45,6 @@ My toolkit includes:
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **🧭 Agile**                             | `Jira`<br>Agile delivery and Jira project design and automation, SharePoint and Confluence (collaboration and documentation).                                   |
 | **☁️ Cloud Platforms**                   | `AWS`  <br>Designing and managing scalable, high-performance cloud environments to support dynamic workloads.                                                   |
-| **📦 Containers & Orchestration**        | `Docker`<br>Implementing container orchestration for seamless, reliable application deployment across diverse environments.                                     |
 | **📜 Infrastructure as Code (IaC)**      | `Ansible`, `Terraform` <br>Automating the provisioning and management of infrastructure, ensuring consistency, reliability, and scalability across deployments. |
 | **💻 Programming & Scripting Languages** | `PowerShell` <br>Crafting automation scripts and tools to optimize workflows, reduce manual interventions, and enhance system productivity.                     |
 | **🖥️ Systems Administration**           | `Linux`, `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                |
