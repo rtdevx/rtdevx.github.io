@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on rtdevx</title>
+    <link>http://localhost:1313/categories/productivity/</link>
+    <description>Recent content in Productivity on rtdevx</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copy, _right_? 🤔 </copyright>
+    <lastBuildDate>Tue, 22 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Game theory</title>
+      <link>http://localhost:1313/posts/productivity/2025/250822-game-theory/</link>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/productivity/2025/250822-game-theory/</guid>
+      <description>The best video about Game Theory I&amp;rsquo;ve ever watched&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Zettelkasten note taking method</title>
+      <link>http://localhost:1313/posts/productivity/2025/250819-zettelkasten/</link>
+      <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/productivity/2025/250819-zettelkasten/</guid>
+      <description>Increase your productivity with zettelkasten, highly effective note taking method&amp;hellip;</description>
+    </item>
+    <item>
+      <title>7 Chinese and Japanese studying techniques</title>
+      <link>http://localhost:1313/posts/productivity/2025/250717-7-studying-techniques/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/productivity/2025/250717-7-studying-techniques/</guid>
+      <description>Pomodoro, Kanji, Rewrite notes, Empty cup mindset, Chain learning, Study like a sensei, The forbidden night school&amp;hellip;</description>
+    </item>
+  </channel>
+</rss>

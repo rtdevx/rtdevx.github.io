@@ -28,6 +28,12 @@ hugo new site rtdevx.github.io
 ```
 
 👨🏻‍💻`Hugo framework` and `Git` must be installed on the local system. For more details, visit: [gohugo.io/installation](https://gohugo.io/installation/) and [official Hugo website](https://gohugo.io/) for more information.
+
+💡Install Hugo extended with Winget on Windows:
+
+```shell
+winget install -e --id Hugo.Hugo.Extended
+```
 ## 2. Installing Congo theme as Git submodule
 
 ```PowerShell
