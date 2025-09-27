@@ -66,7 +66,7 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 <center>
   {{< button >}}
-    {{< icon "email" >}} <i>e-mail:</i> 3vf154 [at] 3rChyV [dot] 8ip<br>
+    {{< icon "email" >}}  <i>e-mail:</i> 3vf154 [at] 3rChyV [dot] 8ip<br>
      *<i>base58</i>
      {{< /button >}}
  </center>     
@@ -88,7 +88,7 @@ CRACjDP+B4XN/3H1AQDAqTADEzujwjzsWWyLPTqJmgvNHr6qx1S776f46TqMQgEA
 
 <center>
 {{< button href="https://www.linkedin.com/in/robertkls/" target="_blank" >}}
-{{< icon "linkedin" >}} Linkedin
+{{< icon "linkedin" >}}  Linkedin
 {{< /button >}}
 </center>
 <br>
