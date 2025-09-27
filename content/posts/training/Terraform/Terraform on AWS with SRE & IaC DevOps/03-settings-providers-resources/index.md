@@ -34,7 +34,7 @@ Within a Terraform Block <font color=#C7EB25>only constant values can be used</f
 
 📄_File:_ c1-versions.tf
 
-```terraform
+```shell
 # INFO: Terraform Block
 terraform {
     required_version = "~> 1.13.0" # NOTE: Greater than 1.13.2. Only the most upright version number (.0) can change.
@@ -60,7 +60,7 @@ provider "aws" {
 
 ![](./assets/TF_terraform_providers.jpg)
 
-```terraform
+```shell
 # INFO: Provider Block
 provider "aws" {
   region = "eu-west-2"
@@ -83,7 +83,7 @@ It is possible to create multiple profiles in the `~/.aws/credentials` settings.
 
 📄_File:_ c2-ec2instance.tf
 
-```terraform
+```shell
 # Resource: EC2 Instance
 resource "aws_instance" "myec2vm" {
   ami = "ami-0742b4e673072066f"

@@ -40,7 +40,7 @@ https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/ma
 
 📄 _File:_ c2-variables.tf
 
-```terraform
+```shell
 # INFO: Input Variables
 # INFO: https://developer.hashicorp.com/terraform/language/block/variable
 
@@ -70,7 +70,7 @@ variable "instance_keypair" {
 
 📄 _File:_ c1-versions.tf
 
-```terraform
+```shell
 # INFO: Terraform Block
 # INFO: https://registry.terraform.io/providers/hashicorp/aws/latest/docs#example-usage
 
@@ -101,7 +101,7 @@ _More about Input Variables:_
 
 📄 _File:_ c3-ec2securitygroups.tf
 
-```terraform
+```shell
 # INFO: Create Ingress Security Group - SSH Traffic
 # INFO: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group#example-usage
 
@@ -220,7 +220,7 @@ Setting the `depends_on` meta-argument within the data blocks defers reading of 
 
 📄 _File:_ c4-ami-datasource.tf
 
-```terraform
+```shell
 # INFO: Get the latest AWS AMI ID for Amazon2 Linux
 # INFO: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami#example-usage
 
@@ -265,7 +265,7 @@ _More about AMI datasource:_
 
 📄 _File:_ c5-ec2instance.tf
 
-```terraform
+```shell
 # INFO: Create EC2 Instance
 # INFO: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#example-usage
 
@@ -301,7 +301,7 @@ The `output` block lets you expose information about your infrastructure.
 
 📄 _File:_ c6-outputs.tf
 
-```terraform
+```shell
 # INFO: Terraform Output Values
 # INFO: https://developer.hashicorp.com/terraform/language/block/output
 

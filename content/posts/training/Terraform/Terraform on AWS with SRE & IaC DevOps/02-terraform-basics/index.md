@@ -98,7 +98,7 @@ Code in **Terraform** language is stored in plain text files ended with the <fon
 
 - `Arguments` can be <font color=#EB4925>required</font> or <font color=#C7EB25>optional</font>. 
 
-```terraform
+```shell
 resource "aws_instance" "ec2" {
   ami           = "ami-08f714c552929eda9"
   instance_type = "t2.nano"  
