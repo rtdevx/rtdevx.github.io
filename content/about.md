@@ -66,7 +66,7 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 <center>
   {{< button >}}
-    {{< icon "email" >}}  <i>e-mail:</i> 3vf154 [at] 3rChyV [dot] 8ip<br>
+    {{< icon "email" >}} <i>e-mail:~#</i><font color=#C7EB25>3vf154</font>/at/<font color=#C7EB25>3rChyV</font>/dot/<font color=#C7EB25>8ip</font><br>
      *<i>base58</i>
      {{< /button >}}
  </center>     
