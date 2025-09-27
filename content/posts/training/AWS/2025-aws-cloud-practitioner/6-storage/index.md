@@ -97,10 +97,10 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 
 3rd party with high-performance file system on AWS.
 
-- **FSx for Lustre** - fully managed, high-performance, scalable <font color=green>file storage for High Performance Computing (HPC)</font>. 
+- **FSx for Lustre** - fully managed, high-performance, scalable <font color=#C7EB25>file storage for High Performance Computing (HPC)</font>. 
 	- <font color=#EBAC25>Use cases:</font> Machine Learning, Analytics, Video processing, Financial Modelling
 	- Scales up to 100s GB/s, millions of IOPS, sub-ms latencies
-- **FSx for Windows File Server** - fully managed, highly reliable and scalable Windows native shared file system built on Windows File Server. <font color=green>Supports SMB and NTFS file systems. Integrated with AD for security. Can be accessed from AWS or from On-Premise.</font>
+- **FSx for Windows File Server** - fully managed, highly reliable and scalable Windows native shared file system built on Windows File Server. <font color=#C7EB25>Supports SMB and NTFS file systems. Integrated with AD for security. Can be accessed from AWS or from On-Premise.</font>
 - **FSx for NetApp ONTAP** - 
 ## Summary
 
