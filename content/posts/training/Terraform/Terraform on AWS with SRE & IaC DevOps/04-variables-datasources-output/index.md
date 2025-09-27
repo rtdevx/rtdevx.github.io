@@ -11,32 +11,6 @@ categories:
   - DevOps
   - IaC
 ---
-## Scope
-
-1. Learn about Terraform `Input Variable` basics
-
-- AWS Region
-- Instance Type
-- Key Name
-
-2. Define `Security Groups` and Associate them as a `List item` to AWS EC2 Instance
-
-- vpc-ssh
-- vpc-web
-
-3. Learn about Terraform `Output Values`
-
-- Public IP
-- Public DNS
-
-4. Get latest EC2 AMI ID Using `Terraform Datasources` concept
-5. We are also going to use existing EC2 Key pair `terraform-key`
-6. Use all the above to create an EC2 Instance in default VPC
-
-_Source:_ https://github.com/stacksimplify/terraform-on-aws-ec2/blob/main/04-Terraform-Variables-and-Datasources/README.md#what-are-we-going-to-learn-
-### Prerequisite ✅
-
-Create a `terraform-key` in AWS EC2 Key pairs which we will reference in our EC2 Instance.
 ## Terraform Input Variables
 
 {{< lead >}}
