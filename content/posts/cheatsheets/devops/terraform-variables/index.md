@@ -10,7 +10,7 @@ categories:
   - Cheatsheets
   - Terraform
 ---
-```shell
+```terraform
 # INFO: String Variable
 variable "vpcname" {
   description = "The name of the VPC"
