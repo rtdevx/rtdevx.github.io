@@ -88,7 +88,7 @@ CRACjDP+B4XN/3H1AQDAqTADEzujwjzsWWyLPTqJmgvNHr6qx1S776f46TqMQgEA
 
 <center>
 {{< button href="https://www.linkedin.com/in/robertkls/" target="_blank" >}}
-{{< icon "linkedin" >}}  Linkedin
+{{< icon "linkedin" >}} LinkedIn
 {{< /button >}}
 </center>
 <br>
