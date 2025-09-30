@@ -1,6 +1,6 @@
 ---
 title: "Terraform: Variables, Datasources and Output Values 🔥"
-date: 2025-09-24
+date: 2025-10-04
 description: Terraform Variables, Datasources and Output Values.
 summary: Terraform Variables, Datasources and Output Values.
 draft: false

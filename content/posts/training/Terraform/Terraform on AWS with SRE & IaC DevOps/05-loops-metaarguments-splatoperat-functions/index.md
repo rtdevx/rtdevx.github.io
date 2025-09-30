@@ -1,6 +1,6 @@
 ---
 title: "Terraform: Loops, Meta-Arguments, Splat Operator and Functions"
-date: 2025-09-27
+date: 2025-10-05
 description: Terraform Loops, Meta-Arguments, Splat Operator and Functions.
 summary: Terraform Loops, Meta-Arguments, Splat Operator and Functions.
 draft: false

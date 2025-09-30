@@ -1,6 +1,6 @@
 ---
 title: "Terraform: Basics"
-date: 2025-09-21
+date: 2025-10-02
 description: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.
 summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.
 draft: false
