@@ -63,7 +63,7 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 </center>
 
 ## Contact
-
+<!--
 <center>
   {{< button >}}
     {{< icon "email" >}} <i>e-mail: </i><font color=#C7EB25>3vf154</font> [at] <font color=#C7EB25>3rChyV</font> [dot] <font color=#C7EB25>8ip</font><br>
@@ -85,7 +85,7 @@ CRACjDP+B4XN/3H1AQDAqTADEzujwjzsWWyLPTqJmgvNHr6qx1S776f46TqMQgEA
 =uHGh
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
+-->
 <center>
 {{< button href="https://www.linkedin.com/in/robertkls/" target="_blank" >}}
 {{< icon "linkedin" >}} LinkedIn
