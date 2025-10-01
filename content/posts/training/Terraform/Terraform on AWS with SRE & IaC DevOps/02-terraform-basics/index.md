@@ -193,12 +193,16 @@ version = ">= 1.2.0, < 2.0.0"
 
 The following table describes the operators you can use to configure version constraints:
 
-|Operator|Description|
-|---|---|
-|`=`,  <br>no operator|Allows only one exact version number. Cannot be combined with other conditions.|
-|`!=`|Excludes an exact version number.|
-|`>`,  <br>`>=`,  <br>`<`,  <br>`<=`|Compares to a specified version. Terraform allows versions that resolve to `true`. The `>` and `>=` operators request newer versions. The `<` and `<=` operators request older versions.|
-|`~>`|Allows only the right-most version component to increment. Examples:<br><br>- `~> 1.0.4`: Allows Terraform to install `1.0.5` and `1.0.10` but not `1.1.0`.<br>- `~> 1.1`: Allows Terraform to install `1.2` and `1.10` but not `2.0`.|
+| Operator                            | Description                                                                                                                                                                                                                            |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `=`,  <br>no operator               | Allows only one exact version number. Cannot be combined with other conditions.                                                                                                                                                        |
+| `!=`                                | Excludes an exact version number.                                                                                                                                                                                                      |
+| `>`,  <br>`>=`,  <br>`<`,  <br>`<=` | Compares to a specified version. Terraform allows versions that resolve to `true`. The `>` and `>=` operators request newer versions. The `<` and `<=` operators request older versions.                                               |
+| `~>`                                | Allows only the right-most version component to increment. Examples:<br><br>- `~> 1.0.4`: Allows Terraform to install `1.0.5` and `1.0.10` but not `1.1.0`.<br>- `~> 1.1`: Allows Terraform to install `1.2` and `1.10` but not `2.0`. |
+
+{{< alert "circle-info" >}}
+It is a <font color=#C7EB25>Best Practice</font> to use an exact version when using modules from the [Terraform registry](03-settings-providers-resources/#terraform-registry) since they can change significantly between versions and cause issues.
+{{< /alert >}}
 
 ---
 ## >> Sources <<
