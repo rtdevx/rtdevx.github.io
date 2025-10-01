@@ -169,7 +169,7 @@ Line 2
 - A <font color=#EBAC25>Terraform module</font> (usually the root module of a configuration) <font color=#EBAC25>can call other modules</font> to include their resources into the configuration
 - A module that has been called by another module is often referred to as a <font color=#EBAC25>child module</font>
 	- Child modules **can be called multiple times** within the same configuration and **multiple configurations can use the same child module**
-- In addition to modules from the local system, Terraform can load modules from a <font color=#EBAC25>public or private registry</font>
+- In addition to modules from the local system, Terraform can load modules from a <font color=#EBAC25>public or private</font> [registry](03-settings-providers-resources/#terraform-registry)
 	- It is therefore possible to publish modules for others to use and to use modules published by others
 ---
 ## >> Sources <<
@@ -187,6 +187,9 @@ Additional resources:
 - [Resource: AWS Instance Attribute Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#attributes-reference)
 - [Resource: Meta-Arguments](https://www.terraform.io/docs/language/meta-arguments/depends_on.html)
 - _aws_instance_ resource documentation: https://registry.terraform.io/providers/-/aws/latest/docs/resources/instance
+## >> References <<
+
+- [Terraform registry](03-settings-providers-resources/#terraform-registry)
 ## >> Disclaimer <<
 
 {{< disclaimer_terraform_on_AWS_25 >}}

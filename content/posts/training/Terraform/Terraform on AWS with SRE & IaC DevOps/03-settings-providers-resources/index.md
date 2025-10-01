@@ -121,7 +121,7 @@ The **terraform state file** is the only way Terraform can track which resources
 
 https://registry.terraform.io
 
-**Terraform Registry** is a selection of <font color=#C7EB25>Providers</font> and <font color=#C7EB25>Modules</font> used by Terraform.
+**Terraform Registry** is a selection of <font color=#C7EB25>Providers</font> and [Modules](02-terraform-basics/#terraform-modules) used by Terraform.
 
 **Provider Badges:**
 
@@ -138,6 +138,9 @@ https://registry.terraform.io
 - More about [File Function](https://www.terraform.io/docs/language/functions/file.html)
 - More about [Resources - Argument Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#argument-reference)
 - More about [Resources - Attribute Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#attributes-reference)
+## >> References <<
+
+- [Terraform modules](02-terraform-basics/#terraform-modules)
 ## >> Disclaimer <<
 
 {{< disclaimer_terraform_on_AWS_25 >}}
