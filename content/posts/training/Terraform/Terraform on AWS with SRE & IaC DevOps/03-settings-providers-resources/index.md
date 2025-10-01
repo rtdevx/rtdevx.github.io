@@ -119,7 +119,7 @@ The **terraform state file** is the only way Terraform can track which resources
 {{< /alert >}}
 ## Terraform Registry
 
-https://registry.terraform.io
+ℹ️ https://registry.terraform.io
 
 **Terraform Registry** is a selection of <font color=#C7EB25>Providers</font> and [Modules](02-terraform-basics/#terraform-modules) used by Terraform.
 
