@@ -96,23 +96,6 @@ Your browser does not support the video tag.
 
 ```JSON
 {
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "remote.SSH.remotePlatform": {
-        "ux-ansp1": "linux",
-        "ux-anss1": "linux"
-    },
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.wordWrap": "on",
-    "application.shellEnvironmentResolutionTimeout": 60,
-    "redhat.telemetry.enabled": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "material-icon-theme.folders.theme": "specific",
-    "material-icon-theme.folders.color": "#98c379",
-    "material-icon-theme.activeIconPack": "none",
 
 "better-comments.tags": [  
   
@@ -195,12 +178,7 @@ Your browser does not support the video tag.
       "backgroundColor": "transparent"
     }
   ],
-  "material-icon-theme.logLevel": "error",
-  "material-icon-theme.opacity": 0.75,
-  "material-icon-theme.saturation": 0.75,
-  "material-icon-theme.hidesExplorerArrows": true,
-  "workbench.activityBar.location": "top",
-  "editor.overtypeCursorStyle": "line"
+
 }
 ```
 
