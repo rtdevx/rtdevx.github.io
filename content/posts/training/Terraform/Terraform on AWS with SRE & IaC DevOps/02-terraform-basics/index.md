@@ -171,6 +171,33 @@ Line 2
 	- Child modules **can be called multiple times** within the same configuration and **multiple configurations can use the same child module**
 - In addition to modules from the local system, Terraform can load modules from a <font color=#EBAC25>public or private</font> [registry](03-settings-providers-resources/#terraform-registry)
 	- It is therefore possible to publish modules for others to use and to use modules published by others
+## Version Constraints
+
+_Source:_ https://developer.hashicorp.com/terraform/language/expressions/version-constraints
+
+Use the following syntax to specify version constraints:
+
+```
+version = "<operator> <version>"
+```
+
+In the following example, Terraform installs a versions `1.2.0` and newer, as well as version older than `2.0.0`:
+
+```
+version = ">= 1.2.0, < 2.0.0"
+```
+
+### Operators
+
+The following table describes the operators you can use to configure version constraints:
+
+|Operator|Description|
+|---|---|
+|`=`,  <br>no operator|Allows only one exact version number. Cannot be combined with other conditions.|
+|`!=`|Excludes an exact version number.|
+|`>`,  <br>`>=`,  <br>`<`,  <br>`<=`|Compares to a specified version. Terraform allows versions that resolve to `true`. The `>` and `>=` operators request newer versions. The `<` and `<=` operators request older versions.|
+|`~>`|Allows only the right-most version component to increment. Examples:<br><br>- `~> 1.0.4`: Allows Terraform to install `1.0.5` and `1.0.10` but not `1.1.0`.<br>- `~> 1.1`: Allows Terraform to install `1.2` and `1.10` but not `2.0`.|
+
 ---
 ## >> Sources <<
 
