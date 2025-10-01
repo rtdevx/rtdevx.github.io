@@ -1,6 +1,6 @@
 ---
 title: "Terraform: Basics"
-date: 2025-10-02
+date: 2025-10-01
 description: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.
 summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.
 draft: false
@@ -77,9 +77,9 @@ _Source:_ [Terraform Language Syntax](https://github.com/stacksimplify/hashicorp
 ![](./assets/TF_terraform_configuration_syntax.jpg)
 ### Terraform Blocks
 
-Code in **Terraform** language is stored in plain text files ended with the <font color=#C7EB25><i>.tf</i></font> extension. Those are called <font color=#EBAC25>Terraform Configuration Files</font> or <font color=#EBAC25>Terraform Manifests</font>.
-
-![](./assets/TF_terraform_blocks.jpg)
+{{< alert "circle-info" >}}
+Code in **Terraform** language is stored in plain text files ended with the <i>.tf</i> extension. Those are called <font color=#EBAC25>Terraform Configuration Files</font> or <font color=#EBAC25>Terraform Manifests</font>.
+{{< /alert >}}
 
 **2 types of blocks:**
 
@@ -89,6 +89,8 @@ Code in **Terraform** language is stored in plain text files ended with the <fon
 - Block inside Block
 	- provisioners
 	- resource-specific block tags
+
+![](./assets/TF_terraform_blocks.jpg)
 ### Terraform Arguments, Attributes and Meta-Arguments
 
 {{< alert "circle-info" >}}
@@ -156,7 +158,19 @@ Line 1
 Line 2
 */
 ```
+## Terraform Modules
 
+{{< alert "circle-info" >}}
+**Terraform Modules** are containers for multiple resources that are used together. A module consists of a collection of _.tf_ files kept together in a directory.
+{{< /alert >}}
+
+- Modules are the main way of <font color=#EBAC25>packaging and reusing</font> resource configurations in Terraform
+- Every Terraform configuration has at least one module, known as it's <font color=#EBAC25>root module</font>, which consists of the resources defined in the _.tf_ files **placed in the main working directory**
+- A <font color=#EBAC25>Terraform module</font> (usually the root module of a configuration) <font color=#EBAC25>can call other modules</font> to include their resources into the configuration
+- A module that has been called by another module is often referred to as a <font color=#EBAC25>child module</font>
+	- Child modules **can be called multiple times** within the same configuration and **multiple configurations can use the same child module**
+- In addition to modules from the local system, Terraform can load modules from a <font color=#EBAC25>public or private registry</font>
+	- It is therefore possible to publish modules for others to use and to use modules published by others
 ---
 ## >> Sources <<
 
