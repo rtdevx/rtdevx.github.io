@@ -173,7 +173,9 @@ Line 2
 	- It is therefore possible to publish modules for others to use and to use modules published by others
 ## Version Constraints
 
-_Source:_ https://developer.hashicorp.com/terraform/language/expressions/version-constraints
+_Source:_ 
+- [Version Constraints](https://developer.hashicorp.com/terraform/language/expressions/version-constraints)
+- [Version Constraints Best Practices](https://developer.hashicorp.com/terraform/language/expressions/version-constraints#best-practices)
 
 Use the following syntax to specify version constraints:
 
@@ -214,6 +216,9 @@ Additional resources:
 - [Resource: AWS Instance Attribute Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#attributes-reference)
 - [Resource: Meta-Arguments](https://www.terraform.io/docs/language/meta-arguments/depends_on.html)
 - _aws_instance_ resource documentation: https://registry.terraform.io/providers/-/aws/latest/docs/resources/instance
+
+- [Version Constraints](https://developer.hashicorp.com/terraform/language/expressions/version-constraints)
+- [Version Constraints Best Practices](https://developer.hashicorp.com/terraform/language/expressions/version-constraints#best-practices)
 ## >> References <<
 
 - [Terraform registry](03-settings-providers-resources/#terraform-registry)
