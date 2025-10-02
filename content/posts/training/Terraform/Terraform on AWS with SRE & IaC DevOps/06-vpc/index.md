@@ -1,8 +1,8 @@
 ---
 title: Building AWS VPC
 date: 2025-10-06
-description: Building AWS VPC using Terraform
-summary: Building AWS VPC using Terraform
+description: Building AWS VPC using Terraform.
+summary: Building AWS VPC using Terraform.
 draft: false
 tags:
   - Assoc003
