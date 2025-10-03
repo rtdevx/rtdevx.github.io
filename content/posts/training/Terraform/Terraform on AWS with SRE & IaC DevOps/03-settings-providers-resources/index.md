@@ -100,7 +100,7 @@ resource "aws_instance" "myec2vm" {
 
 | Terraform Resource        |                                                                                                                                                                                                             |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Create Resource           | <font color=#EBAC25>Create resources that exist in the configuration but are not associated with a real infrastructure</font> object in the state.                                                          |
+| Create Resource           | <font color=#C7EB25>Create resources that exist in the configuration but are not associated with a real infrastructure</font> object in the state.                                                          |
 | Destroy Resource          | <font color=#EB4925>Destroy</font> resources that <font color=#EBAC25>exist in the state</font> but <font color=#EBAC25>no longer exist in the configuration</font>.                                        |
 | Update in-place Resources | <font color=#EBAC25>Update in-place</font> resources whose <font color=#EBAC25>arguments have changed</font>.                                                                                               |
 | Destroy and re-create     | <font color=#EB4925>Destroy</font> and <font color=#C7EB25>re-create</font> resources whose arguments have changed but <font color=#EBAC25>cannot be updated in-place</font> due to remote API limitations. |
