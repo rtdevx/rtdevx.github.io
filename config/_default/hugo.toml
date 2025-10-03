@@ -4,7 +4,7 @@
 
 theme = "congo"
 
-baseURL = "https://rtdevx.github.io/"
+baseURL = "https://robk.uk/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = false
