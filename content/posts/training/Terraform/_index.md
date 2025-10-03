@@ -1,7 +1,7 @@
 +++
 draft = false
 title = 'Terraform Trainings and Certifications'
-date = '2025-10-02'
+date = '2025-10-01'
 +++
 **Terraform** is an infrastructure as code tool that lets you build, change, and version cloud and on-prem resources safely and efficiently.
 
