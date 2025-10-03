@@ -112,7 +112,7 @@
 
 [[footer]]
   name = "RSS"
-  url = "https://rtdevx.github.io/index.xml"
+  url = "https://robk.uk/index.xml"
   weight = 50
   [footer.params]
     icon = "rss"
