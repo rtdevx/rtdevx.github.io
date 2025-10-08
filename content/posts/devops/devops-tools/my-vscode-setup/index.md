@@ -244,3 +244,4 @@ start-process code -windowstyle Hidden -ArgumentList "--install-extension hnw.vs
 ## » References «
 
 [Git]({{< ref "posts/cheatsheets/devops/git/" >}})
+[VSCode Cheatsheet]({{< ref "posts/cheatsheets/devops/vscode" >}})
