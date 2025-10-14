@@ -161,9 +161,9 @@ IAM console > VPC > Route tables > my-public-route-table > Subnet associations >
 
 {{< alert "github" >}}
 
-Code for this section is available here:
+My code for this course is available here:
 
-https://github.com/rtdevx/terraform/tree/main/terraform-aws/06-AWS-VPC
+✅ https://github.com/rtdevx/terraform/tree/main/terraform-aws
 
 {{< /alert >}}
 
