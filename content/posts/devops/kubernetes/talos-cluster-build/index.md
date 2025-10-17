@@ -5,12 +5,13 @@ description: Building Talos Linux Kubernetes Cluster...
 summary: Building Talos Linux Kubernetes Cluster...
 draft: false
 tags:
-categories:
   - Kubernetes
+categories:
   - Homelab
   - Linux
   - DevOps
   - Proxmox
+  - Containers
 ---
 {{< lead >}}
 **Talos** **Linux** is a minimal, hardened and immutable **Linux** distribution designed for **Kubernetes**. It supports cloud platforms, bare metal and virtualization, and all system management is done via an API.
