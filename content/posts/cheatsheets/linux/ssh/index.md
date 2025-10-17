@@ -1,12 +1,12 @@
 ---
-title: SED Cheatsheet
+title: SSH Cheatsheet
 date: 2025-09-02
-description: SED Cheatsheet.
-summary: SED Cheatsheet.
+description: SSH Cheatsheet.
+summary: SSH Cheatsheet.
 draft: false
 tags:
 categories:
   - Cheatsheets
   - Linux
-externalUrl: https://cheatsheets.zip/sed
+externalUrl: https://cheatsheets.zip/ssh
 ---
