@@ -5,7 +5,7 @@ description: Linux Performance Troubleshooting.
 summary: Linux Performance Troubleshooting.
 draft: false
 tags:
-  - troubleshooting
+  - Troubleshooting
 categories:
   - DevOps
   - Linux
