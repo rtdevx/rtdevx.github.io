@@ -3,7 +3,7 @@ title: Example Linux Interview Questions
 date: 2025-08-24
 description: Example Linux Interview Questions.
 summary: Example Linux Interview Questions.
-draft: true
+draft: false
 tags:
 categories:
   - DevOps
@@ -90,13 +90,19 @@ man COMMAND
 ##### 1. What is the difference between a process and a thread?
 
 {{< mermaid >}}
-graph LR;
-A[Lemons]-->B[Lemonade];
-A-->C[Profit];
-A-->D[Profit];
-graph RL;
-A-->E[Profit]
+architecture-beta
+    group api(cloud)[API]
+
+    service db(database)[Database] in api
+    service disk1(disk)[Storage] in api
+    service disk2(disk)[Storage] in api
+    service server(server)[Server] in api
+
+    db:L -- R:server
+    disk1:T -- B:server
+    disk2:T -- B:db
 {{< /mermaid >}}
+
 ##### 2. How does the strace command help in debugging?
 ##### 3. Explain how cgroups (control groups) are used in Linux.
 ##### 4. What is SELinux and how does it enhance security?
