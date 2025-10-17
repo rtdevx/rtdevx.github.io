@@ -94,7 +94,8 @@ graph LR;
 A[Lemons]-->B[Lemonade];
 A-->C[Profit];
 A-->D[Profit];
-E-->A[Profit]
+graph RL;
+A-->E[Profit]
 {{< /mermaid >}}
 ##### 2. How does the strace command help in debugging?
 ##### 3. Explain how cgroups (control groups) are used in Linux.
