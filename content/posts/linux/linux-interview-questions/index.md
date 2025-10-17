@@ -1,6 +1,6 @@
 ---
 title: Example Linux Interview Questions
-date: 2025-08-24
+date: 2025-09-24
 description: Example Linux Interview Questions.
 summary: Example Linux Interview Questions.
 draft: false

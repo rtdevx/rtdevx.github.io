@@ -1,6 +1,6 @@
 ---
 title: Linux Performance Troubleshooting
-date: 2025-08-29
+date: 2025-09-29
 description: Linux Performance Troubleshooting.
 summary: Linux Performance Troubleshooting.
 draft: false
