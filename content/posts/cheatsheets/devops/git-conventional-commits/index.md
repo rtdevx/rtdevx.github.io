@@ -9,6 +9,5 @@ tags:
 categories:
   - Cheatsheets
   - DevOps
-  - Networking
 externalUrl: https://cheatsheets.zip/networkports
 ---
