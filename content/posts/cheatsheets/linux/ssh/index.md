@@ -1,6 +1,6 @@
 ---
 title: SED Cheatsheet
-date: 2025-09-18
+date: 2025-09-02
 description: SED Cheatsheet.
 summary: SED Cheatsheet.
 draft: false
