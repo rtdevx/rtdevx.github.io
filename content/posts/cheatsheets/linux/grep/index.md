@@ -1,6 +1,6 @@
 ---
 title: Grep Cheatsheet
-date: 2025-10-09
+date: 2025-09-11
 description: Grep Cheatsheet.
 summary: Grep Cheatsheet.
 draft: false

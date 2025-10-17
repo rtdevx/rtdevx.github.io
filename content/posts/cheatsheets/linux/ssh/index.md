@@ -1,8 +1,8 @@
 ---
-title: VIM Cheatsheet
-date: 2025-09-09
-description: VIM Cheatsheet.
-summary: VIM Cheatsheet.
+title: SSH Cheatsheet
+date: 2025-09-16
+description: SSH Cheatsheet.
+summary: SSH Cheatsheet.
 draft: false
 tags:
 categories:
