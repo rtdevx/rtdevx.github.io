@@ -6,9 +6,9 @@ summary: Encrypting / Decrypting strings with Ansible Vault.
 draft: false
 tags:
   - encryption
+  - Ansible
 categories:
   - DevOps
-  - Ansible
   - IaC
 ---
 
