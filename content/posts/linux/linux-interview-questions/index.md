@@ -3,7 +3,7 @@ title: Example Linux Interview Questions
 date: 2025-08-24
 description: Example Linux Interview Questions.
 summary: Example Linux Interview Questions.
-draft: false
+draft: true
 tags:
 categories:
   - DevOps
@@ -97,12 +97,34 @@ architecture-beta
     service disk1(disk)[Storage] in api
     service disk2(disk)[Storage] in api
     service server(server)[Server] in api
+    service internet(internet)[Internet] in api
+    service cloud(cloud)[Cloud] in api
 
+    cloud:R -- L:internet
+    internet:L -- R:server
     db:L -- R:server
     disk1:T -- B:server
     disk2:T -- B:db
 {{< /mermaid >}}
 
+{{< mermaid >}}
+stateDiagram-v2
+    Pending
+    Pending --> Processing
+    Processing --> Completed
+    Processing --> Failed
+    Failed --> Pending
+{{< /mermaid >}}
+
+{{< mermaid >}}
+C4Context
+    title System Context
+    Person(user, "User", "System User")
+    System(system, "Core System", "Handles Business Logic")
+    System_Ext(payment, "Payment System", "Processes Payments")
+    Rel(user, system, "Uses")
+    Rel(system, payment, "Calls")
+{{< /mermaid >}}
 ##### 2. How does the strace command help in debugging?
 ##### 3. Explain how cgroups (control groups) are used in Linux.
 ##### 4. What is SELinux and how does it enhance security?
