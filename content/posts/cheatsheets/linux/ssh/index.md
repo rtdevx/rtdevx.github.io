@@ -1,12 +1,12 @@
 ---
-title: SSH Cheatsheet
-date: 2025-09-16
-description: SSH Cheatsheet.
-summary: SSH Cheatsheet.
+title: SED Cheatsheet
+date: 2025-09-18
+description: SED Cheatsheet.
+summary: SED Cheatsheet.
 draft: false
 tags:
 categories:
   - Cheatsheets
   - Linux
-externalUrl: https://cheatsheets.zip/vim
+externalUrl: https://cheatsheets.zip/sed
 ---
