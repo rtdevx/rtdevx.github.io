@@ -1,5 +1,5 @@
 ---
-title: Grep Cheatsheet
+title: Grep Cheatsheet 🔗
 date: 2025-09-11
 description: Grep Cheatsheet.
 summary: Grep Cheatsheet.

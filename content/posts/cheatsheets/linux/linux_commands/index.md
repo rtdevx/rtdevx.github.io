@@ -1,5 +1,5 @@
 ---
-title: Linux Commands Cheatsheet
+title: Linux Commands Cheatsheet 🔗
 date: 2025-09-21
 description: Linux Commands Cheatsheet.
 summary: Linux Commands Cheatsheet.

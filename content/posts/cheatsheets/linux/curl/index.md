@@ -1,5 +1,5 @@
 ---
-title: Curl Cheatsheet
+title: Curl Cheatsheet 🔗
 date: 2025-09-15
 description: Curl Cheatsheet.
 summary: Curl Cheatsheet.

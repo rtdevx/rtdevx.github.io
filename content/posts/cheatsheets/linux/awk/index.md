@@ -1,5 +1,5 @@
 ---
-title: AWK Cheatsheet
+title: AWK Cheatsheet 🔗
 date: 2025-09-18
 description: AWK Cheatsheet.
 summary: AWK Cheatsheet.

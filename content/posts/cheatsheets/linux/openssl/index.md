@@ -1,5 +1,5 @@
 ---
-title: OpenSSL Cheatsheet
+title: OpenSSL Cheatsheet 🔗
 date: 2025-09-03
 description: OpenSSL Cheatsheet.
 summary: OpenSSL Cheatsheet.

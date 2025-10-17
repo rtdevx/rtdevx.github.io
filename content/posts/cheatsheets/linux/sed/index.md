@@ -1,5 +1,5 @@
 ---
-title: SED Cheatsheet
+title: SED Cheatsheet 🔗
 date: 2025-09-16
 description: SED Cheatsheet.
 summary: SED Cheatsheet.

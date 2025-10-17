@@ -1,5 +1,5 @@
 ---
-title: lsof Cheatsheet
+title: lsof Cheatsheet 🔗
 date: 2025-09-11
 description: lsof Cheatsheet.
 summary: lsof Cheatsheet.

@@ -1,5 +1,5 @@
 ---
-title: Find Cheatsheet
+title: Find Cheatsheet 🔗
 date: 2025-09-19
 description: Find Cheatsheet.
 summary: Find Cheatsheet.

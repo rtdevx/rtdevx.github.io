@@ -1,5 +1,5 @@
 ---
-title: VIM Cheatsheet
+title: VIM Cheatsheet 🔗
 date: 2025-09-09
 description: VIM Cheatsheet.
 summary: VIM Cheatsheet.
