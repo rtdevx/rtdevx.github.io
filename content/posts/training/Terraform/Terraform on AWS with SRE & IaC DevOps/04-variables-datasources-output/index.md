@@ -6,8 +6,8 @@ summary: Terraform Variables, Datasources and Output Values.
 draft: false
 tags:
   - Assoc003
+  - terraform
 categories:
-  - Terraform
   - DevOps
   - IaC
 ---

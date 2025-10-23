@@ -6,8 +6,8 @@ summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attribu
 draft: false
 tags:
   - Assoc003
+  - terraform
 categories:
-  - Terraform
   - DevOps
   - IaC
 ---
