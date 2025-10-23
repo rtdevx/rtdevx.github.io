@@ -39,18 +39,18 @@ IAM console > VPC > Subnets
 ```
 
 ℹ️ For the purpose of the manual exercise, we are only creating subnets in 1 AZ. With terraform we will spread the infrastructure across 2 AZ.
-### Public Subnets
+##### Public Subnets
 
 - **VPC ID:** my-manual-vpc
 - **Subnet Name:** my-public-subnet-1
 - **Availability zone:** eu-west-2a
 - **IPv4 CIDR Block:** 10.0.1.0/24
-#### Private Subnets
+##### Private Subnets
 
 - **Subnet Name:** my-private-subnet-1
 - **Availability zone:** eu-west-2a
 - **IPv4 CIDR Block:** 10.0.101.0/24
-#### DB Subnets
+##### DB Subnets
 
 - **VPC ID:** my-manual-vpc
 - **Subnet Name:** my-db-subnet-1
@@ -84,7 +84,7 @@ IAM console > VPC > NAT gateways
 - **Allocate Elastic Ip:** click on that
 - Click on **Create NAT Gateway**
 ### 5. Create Public Route Table, Create Routes, Associate Subnets
-#### Create Public Route Table
+##### Create Public Route Table
 
 ```CLI
 IAM console > VPC > Route tables
@@ -122,7 +122,7 @@ IAM console > VPC > Route tables > my-public-route-table > Subnet associations >
 ![](./assets/TF_AWS_Create_Public_Route4_associate.png)
 ### 6. Create Private Route Table, Create Routes, Associate Subnets
 
-#### Create Private Route Table
+##### Create Private Route Table
 
 ```CLI
 IAM console > VPC > Route tables
