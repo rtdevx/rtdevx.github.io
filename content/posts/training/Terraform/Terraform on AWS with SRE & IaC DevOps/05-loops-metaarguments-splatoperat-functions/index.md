@@ -6,7 +6,7 @@ summary: Terraform Loops, Meta-Arguments, Splat Operator and Functions.
 draft: false
 tags:
   - Assoc003
-  - terraform
+  - Terraform
 categories:
   - DevOps
   - IaC

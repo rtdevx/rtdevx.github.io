@@ -5,7 +5,7 @@ description: Terraform Variables Cheatsheet.
 summary: Terraform Variables Cheatsheet.
 draft: false
 tags:
-  - terraform
+  - Terraform
 categories:
   - DevOps
   - Cheatsheets

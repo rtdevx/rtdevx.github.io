@@ -1,11 +1,11 @@
 ---
-title: Ansible Vault
-date: 2025-09-19
-description: Encrypting / Decrypting strings with Ansible Vault.
-summary: Encrypting / Decrypting strings with Ansible Vault.
-draft: false
+title: Effortless Terraform documentation
+date: 2025-09-23
+description: Effortless Terraform documentation.
+summary: Effortless Terraform documentation.
+draft: true
 tags:
-  - terraform
+  - Terraform
 categories:
   - DevOps
   - IaC

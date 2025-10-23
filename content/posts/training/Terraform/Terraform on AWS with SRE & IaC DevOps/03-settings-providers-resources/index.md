@@ -6,7 +6,7 @@ summary: A word or two about Terraform blocks, resources, Terraform Registry.
 draft: false
 tags:
   - Assoc003
-  - terraform
+  - Terraform
 categories:
   - DevOps
   - IaC

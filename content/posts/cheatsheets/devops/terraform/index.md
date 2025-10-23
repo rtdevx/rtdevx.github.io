@@ -5,7 +5,7 @@ description: Terraform Cheatsheet.
 summary: Terraform Cheatsheet.
 draft: false
 tags:
-  - terraform
+  - Terraform
 categories:
   - Cheatsheets
   - DevOps
