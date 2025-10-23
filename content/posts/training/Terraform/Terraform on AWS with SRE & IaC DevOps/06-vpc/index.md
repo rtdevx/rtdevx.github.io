@@ -165,6 +165,26 @@ My code for this course is available here:
 
 ✅ https://github.com/rtdevx/terraform/tree/main/terraform-aws
 
+VPC related files:
+
+- 📄c4-01-vpc-variables.tf
+- 📄c2-generic-variables.tf
+- 📄c3-local-values.tf
+- 📄c4-01-vpc-variables.tf
+- 📄c4-02-vpc-module.tf
+- 📄c4-01-vpc-variables.tf
+- 📄c4-03-vpc-outputs.tf
+
+Some variables overwritten in `terraform.tfvars`:
+
+```shell
+# ! This will overwrite default values from c2-generic-variables.tf
+
+aws_region       = "eu-west-2"
+environment      = "uat"
+business_divsion = "training"
+```
+
 {{< /alert >}}
 
 
