@@ -165,6 +165,8 @@ My code for this course is available here:
 
 ✅ https://github.com/rtdevx/terraform/tree/main/terraform-aws
 
+{{< /alert >}}
+
 VPC related files:
 
 - 📄c4-01-vpc-variables.tf
@@ -184,9 +186,6 @@ aws_region       = "eu-west-2"
 environment      = "uat"
 business_divsion = "training"
 ```
-
-{{< /alert >}}
-
 
 ---
 ## >> Sources <<
