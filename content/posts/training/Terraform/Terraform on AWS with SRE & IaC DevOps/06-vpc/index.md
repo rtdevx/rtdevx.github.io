@@ -12,7 +12,7 @@ categories:
   - IaC
   - AWS
 ---
-## Part 1: Building VPC manually
+## 👨🏻‍💻Part 1: Building VPC manually
 
 ### VPC Components
 
