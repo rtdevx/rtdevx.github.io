@@ -5,10 +5,10 @@ description: Terraform Variables Cheatsheet.
 summary: Terraform Variables Cheatsheet.
 draft: false
 tags:
+  - terraform
 categories:
   - DevOps
   - Cheatsheets
-  - Terraform
 ---
 ```shell
 # INFO: String Variable

@@ -5,9 +5,9 @@ description: Terraform Cheatsheet.
 summary: Terraform Cheatsheet.
 draft: false
 tags:
+  - terraform
 categories:
   - Cheatsheets
   - DevOps
-  - Terraform
 externalUrl: https://cheatsheets.zip/terraform
 ---
