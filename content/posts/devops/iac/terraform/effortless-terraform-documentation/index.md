@@ -1,5 +1,5 @@
 ---
-title: Effortless Terraform documentation
+title: Auto-generated Terraform documentation
 date: 2025-10-23
 description: "`terraform-docs` is a tool that helps you create and format documentation for your terraform modules."
 summary: "`terraform-docs` is a tool that helps you create and format documentation for your terraform modules."
