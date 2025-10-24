@@ -32,7 +32,7 @@ It supports multiple formats, such as Markdown, AsciiDoc, JSON, and more, and ca
 ---
 ## GitHub Actions
 
-Original GitHub actions file can be found here: https://github.com/terraform-docs/terraform-docs/?tab=readme-ov-file#using-github-actions
+Original GitHub actions file can be found in the project's GitHub repository, here: https://github.com/terraform-docs/terraform-docs/?tab=readme-ov-file#using-github-actions
 
 Below example has been modified to include multiple directories:
 
