@@ -63,46 +63,13 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 </center>
 
 ## Contact
-<!--
-<center>
-  {{< button >}}
-    {{< icon "email" >}} <i>e-mail: </i><font color=#C7EB25>3vf154</font> [at] <font color=#C7EB25>3rChyV</font> [dot] <font color=#C7EB25>8ip</font><br>
-     *<i>base58</i>
-     {{< /button >}}
- </center>     
 
-```shell
------BEGIN PGP PUBLIC KEY BLOCK-----
-mDMEaNXOshYJKwYBBAHaRw8BAQdA+3SMAPHcQyIb633tGMoC2QZciPRerklMpe/F
-CUwzhmK0FFJvYiBLIDxyb2JrQG9uZXQuZXU+iJkEExYKAEEWIQQkqHxQ0ZZKIg4E
-W5ACjDP+B4XN/wUCaNXOsgIbAwUJBaWPfgULCQgHAgIiAgYVCgkICwIEFgIDAQIe
-BwIXgAAKCRACjDP+B4XN/9fxAQDl8GoANMbYnHohWFt7gfnhLs1PdPw7KX+qBDQ2
-7AVYOAEAtsfzFEjrnD9CG4F1J3J7t3E3cvVUpah3YM7YtuSi0wG4OARo1c6yEgor
-BgEEAZdVAQUBAQdAuRolkzxKO9gL59SG82Owgw7UyU88IyQ9goqBTxaBLl8DAQgH
-iH4EGBYKACYWIQQkqHxQ0ZZKIg4EW5ACjDP+B4XN/wUCaNXOsgIbDAUJBaWPfgAK
-CRACjDP+B4XN/3H1AQDAqTADEzujwjzsWWyLPTqJmgvNHr6qx1S776f46TqMQgEA
-7eEZ8w84w2sip2NObV2CqVfa/DS9TP5eDL85asUg4Ac=
-=uHGh
------END PGP PUBLIC KEY BLOCK-----
-```
--->
 <center>
 {{< button href="https://www.linkedin.com/in/robertkls/" target="_blank" >}}
 {{< icon "linkedin" >}} LinkedIn
 {{< /button >}}
 </center>
 <br>
-<!-- 
-{{< alert "circle-info">}}
-» Disclaimer «
-
-_\*This website does not use cookies, analytics, trackers, or any form of data collection. Additionally, web crawlers are explicitly disallowed from indexing or scanning this site._
-_External links may lead elsewhere - I can't vouch for what happens beyond this page._
-
-_\*\*No rights reserved. For educational and informational purposes only._
-<center>👨🏻‍💻</center>
-{{< /alert >}}
---> 
 
 {{< badge >}}
 *This website does not use cookies, analytics, trackers, or any form of data collection. External links (including YouTube embeds) may have different policies - I can't vouch for what happens on other sites. Web crawlers are explicitly disallowed from indexing or scanning this site.<br /><br />
