@@ -45,9 +45,7 @@ Below example has been modified to include multiple directories:
 
 name: Generate terraform docs
 on:
-  push:
-    branches:
-      - main
+  pull_request:
 
 jobs:
   docs:
