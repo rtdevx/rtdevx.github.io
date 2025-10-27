@@ -180,7 +180,7 @@ Connect from your computer using OpenVPN to your private network in AWS and on-p
 
 <font color=#EB4925>Goes over the public Internet.</font>
 
-![](AWS_VPC_Client_VPN.png)
+![](./assets/AWS_VPC_Client_VPN.png)
 ## Transit Gateway
 
 ![](./assets/AWS_VPC_Network_Topologies.png)
