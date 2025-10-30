@@ -70,7 +70,7 @@ VPC > Virtual Private Cloud > Subnets > Create subnet
 ```
 ## Security Groups & Network ACL
 
-### Security Groups
+### [Security Groups]({{< ref "5-security-groups" >}})
 
 - <font color=#EB4925>A firewall that controls traffic to and from an EC2 Instance</font>
 - Can only have <font color=#EB4925>allow rules</font>
