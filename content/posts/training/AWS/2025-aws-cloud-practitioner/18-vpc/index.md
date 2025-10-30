@@ -75,7 +75,6 @@ VPC > Virtual Private Cloud > Subnets > Create subnet
 - <font color=#EB4925>A firewall that controls traffic to and from an EC2 Instance</font>
 - Can only have <font color=#EB4925>allow rules</font>
 - Rules include <font color=#EB4925>IP addresses and other security groups</font>
-
 ### NACL (Network ACL)
 
 - <font color=#EB4925>A firewall that controls traffic to and from a SUBNET</font>
