@@ -12,7 +12,7 @@ categories: AWS
 
 - Security Groups are the fundamental of network security in AWS
 - They control how traffic is allowed in or out of our EC2 instances
-- Security Groups **only contain allow rules** (as oppose to [NACL]({{< ref "18-vpc/#security-groups--network-acl" >}}))
+- Security Groups **only contain allow rules** (as oppose to [NACL]({{< ref "18-vpc/#security-groups--network-acl" >}}) or [AWS Network Firewall]({{< ref "19-security-and-compliance/#aws-network-firewall" >}}))
 - Security Groups rules <font color=#C7EB25>can reference an IP or another Security Group</font>
 - Security Groups are acting as a "_firewall_" for [EC2]({{< ref "4-ec2" >}}) instances
 
