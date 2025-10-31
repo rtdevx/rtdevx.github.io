@@ -35,7 +35,6 @@ categories:
 - Scroll down and select your Talos version (`v1.10.0` for example)
 - Then tick the box for `siderolabs/qemu-guest-agent` and submit
 - This will provide you with a link to the bare metal ISO
-- The lines we’re interested in are as follows
 ## Building Talos Kubernetes cluster using patches
 
 ### Install talosctl, kubectl and k9s [^Issue1]
