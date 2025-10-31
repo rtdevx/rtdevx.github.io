@@ -51,7 +51,6 @@ My toolkit includes:
 {{< alert "github">}}
 Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page for more details.
 {{< /alert >}}
-
 ## CV Download
 
 <center>
