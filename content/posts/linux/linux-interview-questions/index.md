@@ -3,7 +3,7 @@ title: Example Linux Interview Questions
 date: 2025-08-24
 description: Example Linux Interview Questions.
 summary: Example Linux Interview Questions.
-draft: false
+draft: true
 tags:
 categories:
   - DevOps
