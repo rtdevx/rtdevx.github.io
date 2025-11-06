@@ -163,7 +163,7 @@ IAM console > VPC > Route tables > my-public-route-table > Subnet associations >
 
 My code for this course is available here:
 
-✅ https://github.com/rtdevx/terraform/tree/main/terraform-aws
+✅ https://github.com/rtdevx/terraform/tree/main/terraform-aws-iac-sre
 
 VPC related files:
 
