@@ -159,31 +159,176 @@ IAM console > VPC > Route tables > my-public-route-table > Subnet associations >
 - Delete `my-manual-vpc`
 ## 📄Part 2: Building VPC using Terraform
 
-{{< alert "github" >}}
+_File:_  📄c2-generic-variables.tf
 
-My code for this course is available here:
+```shell
+# INFO: Input Variables
+# INFO: https://developer.hashicorp.com/terraform/language/block/variable
 
-✅ https://github.com/rtdevx/terraform/tree/main/terraform-aws-iac-sre
+# INFO: AWS Region
+variable "aws_region" {
+  description = "Region in which AWS Resources will be created"
+  type        = string
+  default     = "eu-west-2"
+}
 
-VPC related files:
+# INFO: Environment Variable
+variable "environment" {
+  description = "Environment Variable used as a prefix"
+  type        = string
+  default     = "DEV"
+}
+# INFO: Business Division
+variable "business_divsion" {
+  description = "Business Division in the large organization this Infrastructure belongs"
+  type        = string
+  default     = "Operations"
+}
 
-- 📄c4-01-vpc-variables.tf
-- 📄c2-generic-variables.tf
-- 📄c3-local-values.tf
-- 📄c4-01-vpc-variables.tf
-- 📄c4-02-vpc-module.tf
-- 📄c4-01-vpc-variables.tf
-- 📄c4-03-vpc-outputs.tf
+# ! Default values will be overwritten in terraform.tfvars
+```
 
-{{< /alert >}}
+_File:_  📄c3-local-values.tf
 
+```shell
+# INFO: Local Values
+# INFO: https://developer.hashicorp.com/terraform/language/block/locals
+# INFO: slice Function used for AZ's: https://developer.hashicorp.com/terraform/language/functions/slice
+
+data "aws_availability_zones" "available" {}
+locals {
+  owners      = var.business_divsion
+  environment = var.environment
+  name        = "${var.business_divsion}-${var.environment}"
+  #name        = "${local.owners}-${local.environment}"
+
+  azs = slice(data.aws_availability_zones.available.names, 0, 2)
+
+  common_tags = {
+    owners      = local.owners
+    environment = local.environment
+  }
+}
+```
+
+_File:_  📄c4-01-vpc-variables.tf
+
+```shell
+# INFO: VPC Input Variables required by VPC module
+# INFO: https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
+
+# INFO: VPC Name
+variable "vpc_name" {
+  description = "VPC Name"
+  type        = string
+  default     = "myvpc"
+}
+
+# INFO: VPC CIDR Block
+variable "vpc_cidr" {
+  description = "VPC CIDR Block"
+  type        = string
+  default     = "10.0.0.0/16"
+}
+```
+
+_File:_  📄c4-02-vpc-module.tf
+
+```shell
+# INFO: Create VPC using Terraform Module
+# INFO: https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
+
+module "vpc" {
+  source = "./modules/aws-vpc"
+  #version = "~> 6.4.0"
+
+  name = "${local.name}-${var.vpc_name}"
+  cidr = var.vpc_cidr
+
+  azs = local.azs
+
+  private_subnets  = [for k, v in local.azs : cidrsubnet(var.vpc_cidr, 8, k)]
+  public_subnets   = [for k, v in local.azs : cidrsubnet(var.vpc_cidr, 8, k + 4)]
+  database_subnets = [for k, v in local.azs : cidrsubnet(var.vpc_cidr, 8, k + 8)]
+
+  create_database_subnet_group       = true
+  create_database_subnet_route_table = true
+
+  enable_nat_gateway = true
+  single_nat_gateway = true
+
+  tags = local.common_tags
+
+}
+```
+
+_File:_  📄c4-03-vpc-outputs.tf
+
+```shell
+# INFO: Output VPC ID
+output "vpc_id" {
+  description = "The ID of the VPC"
+  value       = module.vpc.vpc_id
+}
+
+# INFO: Output VPC CIDR block
+output "vpc_cidr_block" {
+  description = "The CIDR block of the VPC"
+  value       = module.vpc.vpc_cidr_block
+}
+
+# INFO: Output Private Subnets Information
+output "private_subnets" {
+  description = "List of IDs of private subnets"
+  value       = module.vpc.private_subnets
+}
+
+output "private_subnets_cidr_blocks" {
+  description = "List of cidr_blocks of private subnets"
+  value       = module.vpc.private_subnets_cidr_blocks
+}
+
+# INFO: Output Public Subnets Information
+output "public_subnets" {
+  description = "List of IDs of public subnets"
+  value       = module.vpc.public_subnets
+}
+
+output "public_subnets_cidr_blocks" {
+  description = "List of cidr_blocks of public subnets"
+  value       = module.vpc.public_subnets_cidr_blocks
+}
+
+# INFO: Output Database Subnets Information
+output "database_subnets" {
+  description = "List of IDs of database subnets"
+  value       = module.vpc.database_subnets
+}
+
+output "database_subnets_cidr_blocks" {
+  description = "List of cidr_blocks of database subnets"
+  value       = module.vpc.database_subnets_cidr_blocks
+}
+
+output "database_subnet_group" {
+  description = "ID of database subnet group"
+  value       = module.vpc.database_subnet_group
+}
+
+# INFO: Output NAT Gateway route IDs
+output "private_nat_gateway_route_ids" {
+  description = "List of IDs of the private nat gateway route"
+  value       = module.vpc.private_nat_gateway_route_ids
+}
+
+# INFO: Output Availability Zones
+output "azs" {
+  description = "A list of availability zones spefified as argument to this module"
+  value       = local.azs
+}
+```
 
 ---
-## >> Sources <<
-
-Kalyan’s GitHub Repositories:
-
-https://github.com/stacksimplify/terraform-on-aws-ec2/tree/main/06-AWS-VPC
 ## >> Disclaimer <<
 
 {{< disclaimer_terraform_on_AWS_25 >}}
