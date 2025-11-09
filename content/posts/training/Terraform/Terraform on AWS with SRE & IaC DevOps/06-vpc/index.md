@@ -328,6 +328,25 @@ output "azs" {
 }
 ```
 
+_File:_  📄terraform.tfvars
+
+```shell
+# ! This will overwrite default values from c2-generic-variables.tf
+
+aws_region       = "eu-west-2"
+environment      = "UAT"
+business_divsion = "Training"
+```
+
+_File:_  📄vpc.auto.tfvars
+
+```shell
+# ! This will overwrite default values from c2-generic-variables.tf
+
+vpc_name = "myvpc"
+vpc_cidr = "10.0.0.0/16"
+```
+
 ---
 ## >> Disclaimer <<
 
