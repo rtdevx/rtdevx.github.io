@@ -96,12 +96,7 @@ output "bucket_arn" {
 }
 ```
 
-✅ Benefits
-
-- **Reusable**: You can use `s3_bucket` in multiple projects.
-- **Customizable**: Just pass different variables.
-- **Clean**: Keeps your root module tidy and focused.
-## ✅ When to Provide Default Values
+## When to Provide Default Values?
 
 {{< alert >}}
 
@@ -135,11 +130,11 @@ variable "acl" {
     
     - When updating a module, adding a new variable **without a default** will break existing usage unless users update their code.
     - Providing a default ensures backward compatibility.
-## 🚫 When Not to Provide Defaults
+## When Not to Provide Defaults
 
 - If the variable is **critical and must be explicitly set** (e.g., `bucket_name`), omit the default to force the user to provide it.
 - If the value depends on external context (e.g., environment-specific settings), it's better to require it.
-## 🧠 Best Practice
+## Best Practice
 
 - Use defaults for convenience and safety.
 - Avoid defaults for values that must be unique or environment-specific.
