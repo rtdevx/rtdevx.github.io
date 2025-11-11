@@ -40,7 +40,6 @@ winget install -e --id Hugo.Hugo.Extended
 cd rtdevx.github.io
 git init
 git submodule add -b stable https://github.com/jpanther/congo.git themes/congo
-
 ```
 
 _Source:_ https://jpanther.github.io/congo/docs/installation/#install-using-git
