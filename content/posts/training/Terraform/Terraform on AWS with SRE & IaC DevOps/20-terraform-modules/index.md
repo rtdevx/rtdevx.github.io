@@ -11,8 +11,6 @@ categories:
   - DevOps
   - IaC
 ---
-# Develop local, re-usable modules
-
 {{< lead >}}
 
 Modules can be downloaded locally from the [Terraform Registry](https://registry.terraform.io/browse/modules?provider=aws) (and modified to your needs) or built from scratch.
@@ -20,7 +18,7 @@ Modules can be downloaded locally from the [Terraform Registry](https://registry
 {{< /lead >}}
 ## Example `s3_bucket` Module
 
-### Folder Structure
+##### Folder Structure
 
 ```
 
@@ -103,13 +101,13 @@ output "bucket_arn" {
 - **Reusable**: You can use `s3_bucket` in multiple projects.
 - **Customizable**: Just pass different variables.
 - **Clean**: Keeps your root module tidy and focused.
+## ✅ When to Provide Default Values
 
 {{< alert >}}
 
 In Terraform, **default values in a module's `variables.tf` file are optional**, but they serve specific purposes depending on how you want your module to behave.
 
 {{< /alert >}}
-### ✅ When to Provide Default Values
 
 1. **To Make Inputs Optional**
     
@@ -137,18 +135,13 @@ variable "acl" {
     
     - When updating a module, adding a new variable **without a default** will break existing usage unless users update their code.
     - Providing a default ensures backward compatibility.
-
-### 🚫 When Not to Provide Defaults
+## 🚫 When Not to Provide Defaults
 
 - If the variable is **critical and must be explicitly set** (e.g., `bucket_name`), omit the default to force the user to provide it.
 - If the value depends on external context (e.g., environment-specific settings), it's better to require it.
-### 🧠 Best Practice
+## 🧠 Best Practice
 
 - Use defaults for convenience and safety.
 - Avoid defaults for values that must be unique or environment-specific.
 - Always document your variables with `description` to clarify intent.
 
----
-## >> Disclaimer <<
-
-{{< disclaimer_terraform_on_AWS_25 >}}
