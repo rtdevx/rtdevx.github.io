@@ -179,7 +179,7 @@ variable "environment" {
   default     = "DEV"
 }
 # INFO: Business Division
-variable "business_divsion" {
+variable "business_division" {
   description = "Business Division in the large organization this Infrastructure belongs"
   type        = string
   default     = "Operations"
@@ -197,9 +197,9 @@ _File:_  📄c3-local-values.tf
 
 data "aws_availability_zones" "available" {}
 locals {
-  owners      = var.business_divsion
+  owners      = var.business_division
   environment = var.environment
-  name        = "${var.business_divsion}-${var.environment}"
+  name        = "${var.business_division}-${var.environment}"
   #name        = "${local.owners}-${local.environment}"
 
   azs = slice(data.aws_availability_zones.available.names, 0, 2)
@@ -335,7 +335,7 @@ _File:_  📄terraform.tfvars
 
 aws_region       = "eu-west-2"
 environment      = "UAT"
-business_divsion = "Training"
+business_division = "Training"
 ```
 
 _File:_  📄vpc.auto.tfvars
