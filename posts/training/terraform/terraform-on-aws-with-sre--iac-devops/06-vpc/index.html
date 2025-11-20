@@ -40,7 +40,7 @@
 </span></span><span class=line><span class=cl>  <span class=nv>default</span>     <span class=o>=</span> <span class=s2>&#34;DEV&#34;</span>
 </span></span><span class=line><span class=cl><span class=o>}</span>
 </span></span><span class=line><span class=cl><span class=c1># INFO: Business Division</span>
-</span></span><span class=line><span class=cl>variable <span class=s2>&#34;business_divsion&#34;</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>variable <span class=s2>&#34;business_division&#34;</span> <span class=o>{</span>
 </span></span><span class=line><span class=cl>  <span class=nv>description</span> <span class=o>=</span> <span class=s2>&#34;Business Division in the large organization this Infrastructure belongs&#34;</span>
 </span></span><span class=line><span class=cl>  <span class=nb>type</span>        <span class=o>=</span> string
 </span></span><span class=line><span class=cl>  <span class=nv>default</span>     <span class=o>=</span> <span class=s2>&#34;Operations&#34;</span>
@@ -53,9 +53,9 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>data <span class=s2>&#34;aws_availability_zones&#34;</span> <span class=s2>&#34;available&#34;</span> <span class=o>{}</span>
 </span></span><span class=line><span class=cl>locals <span class=o>{</span>
-</span></span><span class=line><span class=cl>  <span class=nv>owners</span>      <span class=o>=</span> var.business_divsion
+</span></span><span class=line><span class=cl>  <span class=nv>owners</span>      <span class=o>=</span> var.business_division
 </span></span><span class=line><span class=cl>  <span class=nv>environment</span> <span class=o>=</span> var.environment
-</span></span><span class=line><span class=cl>  <span class=nv>name</span>        <span class=o>=</span> <span class=s2>&#34;</span><span class=si>${</span><span class=nv>var</span><span class=p>.business_divsion</span><span class=si>}</span><span class=s2>-</span><span class=si>${</span><span class=nv>var</span><span class=p>.environment</span><span class=si>}</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=nv>name</span>        <span class=o>=</span> <span class=s2>&#34;</span><span class=si>${</span><span class=nv>var</span><span class=p>.business_division</span><span class=si>}</span><span class=s2>-</span><span class=si>${</span><span class=nv>var</span><span class=p>.environment</span><span class=si>}</span><span class=s2>&#34;</span>
 </span></span><span class=line><span class=cl>  <span class=c1>#name        = &#34;${local.owners}-${local.environment}&#34;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=nv>azs</span> <span class=o>=</span> slice<span class=o>(</span>data.aws_availability_zones.available.names, 0, 2<span class=o>)</span>
@@ -171,7 +171,7 @@
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=nv>aws_region</span>       <span class=o>=</span> <span class=s2>&#34;eu-west-2&#34;</span>
 </span></span><span class=line><span class=cl><span class=nv>environment</span>      <span class=o>=</span> <span class=s2>&#34;UAT&#34;</span>
-</span></span><span class=line><span class=cl><span class=nv>business_divsion</span> <span class=o>=</span> <span class=s2>&#34;Training&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>business_division</span> <span class=o>=</span> <span class=s2>&#34;Training&#34;</span>
 </span></span></code></pre></div><p><em>File:</em> 📄vpc.auto.tfvars</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># ! This will overwrite default values from c2-generic-variables.tf</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=nv>vpc_name</span> <span class=o>=</span> <span class=s2>&#34;myvpc&#34;</span>
