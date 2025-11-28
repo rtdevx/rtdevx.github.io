@@ -24,6 +24,7 @@ categories:
 	- this is the first command that should be run after writing new terraform configuration
 	- it will <font color=#EBAC25>download the provider plugins</font>
 	- `.terraform.lock.hcl` file is created to record the provider selections. Include this file in your version control repository so that Terraform can guarantee to make the same selections by default when you run `terraform init` in the future.
+	- `terraform init -upgrade` - <font color=#EB4925>command to upgrade the provider in Terraform</font>. This command will initialize the working directory and upgrade the provider to the latest version available, including any additional functionality that may have been added.
 - `terraform validate`
 	- <font color=#EBAC25>validates syntax and consistency</font> of the terraform files
 - `terraform plan`
@@ -32,6 +33,8 @@ categories:
 - `terraform apply`
 	- will apply the changes required to be in line with the <font color=#EBAC25>desired state</font> 
 	- by default, apply will scan the current directory and apply it's configuration (provision the infrastructure)
+	- `terraform apply -refresh-only` - <font color=#EB4925>detect drift between the Terraform configuration and the actual state of the resources in the cloud provider. It will update the state file with any changes made outside of Terraform</font>, ensuring that the configuration remains in sync with the actual resources.
+	- `terraform apply -replace=<resource>` - allows you to <font color=#EB4925>tag the specific resource for replacement without impacting the rest of the managed infrastructure</font>. This ensures that only the virtual machine is recreated, potentially resolving any issues with the local script execution.
 - `terraform destroy`
 	- will destroy the terraform-managed infrastructure
 ### Other useful commands
@@ -40,6 +43,7 @@ categories:
 - `terraform state` command can be used to check what resources have been deployed against the **terraform state file**
 	- `list`
 	- `show`
+	- `terraform state rm` - will remove the specified resource from the Terraform state, allowing you to then run terraform destroy to remove all remaining resources except for the resource that was removed from the state. <font color=#EB4925>This approach effectively excludes the specified resource from the destruction process</font>.
 - `terraform workspace`
 	- `delete` - Delete a workspace
 	- `list` - List Workspaces
@@ -51,8 +55,7 @@ categories:
 **Terraform workspaces** are a feature that allow you to manage multiple instances of your infrastructure using the same configuration files, each with its own isolated state file. <font color=#EBAC25>This helps in organizing different environments</font>, such as <font color=#C7EB25>development</font> and <font color=#EB4925>production</font>, without interfering with each other.
 {{< /alert >}}
 
-- `terraform show` - Reads and outputs a Terraform state or plan file in a human-readable
-  form
+- `terraform show` - Display the current state of the resources being managed by Terraform. <font color=#EBAC25>It provides detailed information about the infrastructure that Terraform is managing</font>, including resource attributes, dependencies, and configuration.
 - `terraform output` - Reads an output variable from a Terraform state file and prints
   the value.
 - `terraform refresh` - Update the state file of your infrastructure with metadata that matches
