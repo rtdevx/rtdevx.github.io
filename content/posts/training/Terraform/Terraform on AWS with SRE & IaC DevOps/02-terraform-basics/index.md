@@ -52,7 +52,8 @@ The `terraform state` command and its subcommands can be used for various tasks 
     
 2. Updating the Terraform state: The `terraform state mv` and `terraform state rm` subcommands can be used to move and remove resources from the Terraform state, respectively.
 
-`terraform state mv aws_s3_bucket.data-bucket aws_s3_bucket.data-bucket-prod`
+	_Example:_
+	`terraform state mv aws_s3_bucket.data-bucket aws_s3_bucket.data-bucket-prod`
 
 3. Pulling and pushing the Terraform state: The `terraform state pull` and `terraform state push` subcommands can be used to retrieve and upload the Terraform state from and to a remote backend, respectively. This is useful when multiple users or systems are working with the same Terraform configuration.
     
