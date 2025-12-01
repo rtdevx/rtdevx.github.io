@@ -44,6 +44,26 @@ categories:
 	- `list`
 	- `show`
 	- `terraform state rm` - will remove the specified resource from the Terraform state, allowing you to then run terraform destroy to remove all remaining resources except for the resource that was removed from the state. <font color=#EB4925>This approach effectively excludes the specified resource from the destruction process</font>.
+
+{{< alert "circle-info" >}}
+The `**terraform state**` command and its subcommands can be used for various tasks related to the Terraform state. Some of the tasks that can be performed using the `**terraform state**` command are:
+
+1. Inspecting the Terraform state: The `**terraform state show**` subcommand can be used to display the current state of a Terraform configuration. This can be useful for verifying the current state of resources managed by Terraform.
+    
+2. Updating the Terraform state: The `**terraform state mv**` and `**terraform state rm**` subcommands can be used to move and remove resources from the Terraform state, respectively.
+    
+3. Pulling and pushing the Terraform state: The `**terraform state pull**` and `**terraform state push**` subcommands can be used to retrieve and upload the Terraform state from and to a remote backend, respectively. This is useful when multiple users or systems are working with the same Terraform configuration.
+    
+4. Importing resources into Terraform: The `**terraform state import**` subcommand can be used to import existing resources into the Terraform state. This allows Terraform to manage resources that were created outside of Terraform.
+    
+
+By using the `**terraform state**` command and its subcommands, users can manage and manipulate the Terraform state in various ways, helping to ensure that their Terraform configurations are in the desired state.
+
+[https://developer.hashicorp.com/terraform/cli/commands/state/list](https://developer.hashicorp.com/terraform/cli/commands/state/list)
+
+[https://developer.hashicorp.com/terraform/cli/state](https://developer.hashicorp.com/terraform/cli/state)
+{{< /alert >}}
+
 - `terraform workspace`
 	- `delete` - Delete a workspace
 	- `list` - List Workspaces
@@ -226,6 +246,9 @@ Additional resources:
 
 - [Version Constraints](https://developer.hashicorp.com/terraform/language/expressions/version-constraints)
 - [Version Constraints Best Practices](https://developer.hashicorp.com/terraform/language/expressions/version-constraints#best-practices)
+
+- [https://developer.hashicorp.com/terraform/cli/commands/state/list](https://developer.hashicorp.com/terraform/cli/commands/state/list)
+- [https://developer.hashicorp.com/terraform/cli/state](https://developer.hashicorp.com/terraform/cli/state)
 ## >> References <<
 
 - [Terraform registry](03-settings-providers-resources/#terraform-registry)
