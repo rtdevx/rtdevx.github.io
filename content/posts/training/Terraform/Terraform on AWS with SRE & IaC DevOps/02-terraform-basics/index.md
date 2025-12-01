@@ -37,6 +37,7 @@ categories:
 	- `terraform apply -replace=<resource>` - allows you to <font color=#EB4925>tag the specific resource for replacement without impacting the rest of the managed infrastructure</font>. This ensures that only the virtual machine is recreated, potentially resolving any issues with the local script execution.
 - `terraform destroy`
 	- will destroy the terraform-managed infrastructure
+	- `terraform destroy -target <virtual machine>` and destroy only the target resource.
 ### Other useful commands
 
 - `terraform fmt` - HashiCorp recommends using consistent formatting in all config files by using the `terraform fmt` command. Optional command, <font color=#C7EB25>helps with formatting</font>
