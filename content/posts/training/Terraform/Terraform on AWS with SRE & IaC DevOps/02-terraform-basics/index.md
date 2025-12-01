@@ -56,7 +56,6 @@ The `**terraform state**` command and its subcommands can be used for various ta
     
 4. Importing resources into Terraform: The `**terraform state import**` subcommand can be used to import existing resources into the Terraform state. This allows Terraform to manage resources that were created outside of Terraform.
     
-
 By using the `**terraform state**` command and its subcommands, users can manage and manipulate the Terraform state in various ways, helping to ensure that their Terraform configurations are in the desired state.
 
 [https://developer.hashicorp.com/terraform/cli/commands/state/list](https://developer.hashicorp.com/terraform/cli/commands/state/list)
