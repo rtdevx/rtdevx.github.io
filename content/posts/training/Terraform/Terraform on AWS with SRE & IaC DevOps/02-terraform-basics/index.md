@@ -98,6 +98,7 @@ terraform apply tf.plan
 The **terraform state file** is the only way Terraform can track which resources it is managing. <font color=#EB4925><b>It often contains sensitive information</b></font> so must be stored securely and access must be restricted.
 
 - `terraform graph` - used to generate a visual representation of either a configuration or execution plan. The output is in the DOT format, which can be used by [GraphViz](http://www.graphviz.org/) to generate charts.
+	- `terraform graph -type=plan | dot -Tpng >graph.png`
 
 ![](./assets/TF_graph_example.png)
 
