@@ -96,6 +96,12 @@ terraform apply tf.plan
 \*_terraform will not ask for confirmation (just like using it with the `-auto-approve` option) when executing the plan from the file._
 
 The **terraform state file** is the only way Terraform can track which resources it is managing. <font color=#EB4925><b>It often contains sensitive information</b></font> so must be stored securely and access must be restricted.
+
+- `terraform graph` - used to generate a visual representation of either a configuration or execution plan. The output is in the DOT format, which can be used by [GraphViz](http://www.graphviz.org/) to generate charts.
+
+![](./assets/TF_graph_example.png)
+
+_More info:_ https://developer.hashicorp.com/terraform/cli/commands/graph](https://developer.hashicorp.com/terraform/cli/commands/graph)
 ## Terraform Configuration Syntax
 
 _Source:_ [Terraform Language Syntax](https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/02-Terraform-Basics/02-03-Terraform-Language-Syntax)
@@ -252,6 +258,8 @@ Additional resources:
 
 - [https://developer.hashicorp.com/terraform/cli/commands/state/list](https://developer.hashicorp.com/terraform/cli/commands/state/list)
 - [https://developer.hashicorp.com/terraform/cli/state](https://developer.hashicorp.com/terraform/cli/state)
+
+- [https://developer.hashicorp.com/terraform/cli/commands/graph](https://developer.hashicorp.com/terraform/cli/commands/graph)
 ## >> References <<
 
 - [Terraform registry](03-settings-providers-resources/#terraform-registry)
