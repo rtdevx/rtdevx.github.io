@@ -68,6 +68,10 @@ Terraform does not support directly accessing elements of a set by index because
 }
 ```
 
+{{< alert "circle-info" >}}
+`Key/value` pairs can be separated by either a comma or a line break. <font color=#EB4925>The keys in a map must be strings</font>.
+{{< /alert >}}
+
 - `null` - a value that represents absence or omission. `null` is most useful in conditional expressions, so you can dynamically omit an argument if a condition isn't met.
 
 {{< alert "circle-info" >}}
