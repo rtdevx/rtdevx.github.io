@@ -157,7 +157,7 @@ Heredocs support two special escape sequences that do not use backslashes:
 |`%%{`|Literal `%{`, without beginning a template directive sequence.|
 ### Interpolation
 
-A `${ ... }` sequence is an _interpolation,_ which evaluates the expression given between the markers, converts the result to a string if necessary, and then inserts it into the final string:
+A `${ ... }` sequence is an <font color=#C7EB25>interpolation</font>, which evaluates the expression given between the markers, converts the result to a string if necessary, and then inserts it into the final string:
 
 ```shell
 "Hello, ${var.name}!"
