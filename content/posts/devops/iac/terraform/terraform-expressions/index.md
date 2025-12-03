@@ -404,6 +404,33 @@ _More:_ [Dynamic Blocks](https://developer.hashicorp.com/terraform/language/expr
 
 To verify variable conditions, check blocks, and resource preconditions and postconditions.    
 
+{{< alert "circle-info" >}}
+Validate your configuration to improve your module consumer's troubleshooting, make your runs more predictable, and help your maintainers understand your configuration's intent.
+{{< /alert >}}
+### Input variable validation
+
+Use input variable validation to perform the following tasks:
+
+- Verify input variables meet specific format requirements.
+- Verify input values fall within acceptable ranges.
+- Prevent Terraform operations if a variable is misconfigured.
+
+For example, you can validate whether a variable value has valid AMI ID syntax.
+
+```shell
+variable "image_id" {
+  type        = string
+  description = "The id of the machine image (AMI) to use for the server."
+
+  validation {
+    condition     = length(var.image_id) > 4 && substr(var.image_id, 0, 4) == "ami-"
+    error_message = "The image_id value must be a valid AMI id, starting with \"ami-\"."
+  }
+}
+```
+
+If you set the value of the `image_id` variable to a string without AMI ID syntax, the condition evaluates to `false`. When a variable validation fails, Terraform errors, displays the configured `error_message`, and stops the operation from proceeding.
+
 _More:_ [Validate your configuration](https://developer.hashicorp.com/terraform/language/validate)
 ## Type Constraints
 
