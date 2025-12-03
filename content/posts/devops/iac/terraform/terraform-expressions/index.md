@@ -16,64 +16,62 @@ categories:
 
 _More:_ [Terraform Expressions](https://developer.hashicorp.com/terraform/language/expressions)
 {{< /lead >}}
-## Expressions
-
-### Types and Values
+## Types and Values
 
 Data types that Terraform expressions can resolve to, and the literal syntaxes for values of those types.
 
 _More:_ [Types and Values](https://developer.hashicorp.com/terraform/language/expressions/types)
-### Strings and Templates
+## Strings and Templates
 
 Syntaxes for string literals, including interpolation sequences and template directives. 
 
 _More:_ [Strings and Templates](https://developer.hashicorp.com/terraform/language/expressions/strings)
-### References to Values
+## References to Values
 
 How to refer to named values like variables and resource attributes.    
 
 _More:_ [References to Values](https://developer.hashicorp.com/terraform/language/expressions/references)
-### Operators
+## Operators
 
 Arithmetic, comparison, and logical operators.    
 
 _More:_ [Operators](https://developer.hashicorp.com/terraform/language/expressions/operators)
-### Function Calls
+## Function Calls
 
 Syntax for calling Terraform's built-in functions.    
 
 _More:_ [Function Calls](https://developer.hashicorp.com/terraform/language/expressions/function-calls)
-### Conditional Expressions
+## Conditional Expressions
 
 `<CONDITION> ? <TRUE VAL> : <FALSE VAL>` expression, which chooses between two values based on a bool condition.    
 
 _More:_ [Conditional Expressions](https://developer.hashicorp.com/terraform/language/expressions/conditionals)
-### For Expressions
+## For Expressions
 
 Expressions like `[for s in var.list : upper(s)]`, which can transform a complex type value into another complex type value.    
 
 _More:_ [For Expressions](https://developer.hashicorp.com/terraform/language/expressions/for)
-### Splat Expressions
+## Splat Expressions
 
 Expressions like `var.list[*].id`, which can extract simpler collections from more complicated expressions.    
 
 _More:_ [Splat Expressions](https://developer.hashicorp.com/terraform/language/expressions/splat)
-### Dynamic Blocks
+## Dynamic Blocks
 
 A way to create multiple repeatable nested blocks within a resource or other construct. 
 
 _More:_ [Dynamic Blocks](https://developer.hashicorp.com/terraform/language/expressions/dynamic-blocks)
-### Validate your configuration
+## Validate your configuration
 
 To verify variable conditions, check blocks, and resource preconditions and postconditions.    
 
 _More:_ [Validate your configuration](https://developer.hashicorp.com/terraform/language/validate)
-### Type Constraints
+## Type Constraints
 
 Syntax for referring to a type, rather than a value of that type. Input variables expect this syntax in their `type` argument.    
 
 _More:_ [Type Constraints](https://developer.hashicorp.com/terraform/language/expressions/type-constraints)
-### Version Constraints
+## Version Constraints
 
 Syntax of special strings that define a set of allowed software versions. Terraform uses version constraints in several places.
 
