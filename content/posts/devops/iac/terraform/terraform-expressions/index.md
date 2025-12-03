@@ -21,7 +21,7 @@ _More:_ [Terraform Expressions](https://developer.hashicorp.com/terraform/langua
 Data types that Terraform expressions can resolve to, and the literal syntaxes for values of those types.
 ### Types
 
-#### Privimitive types
+#### Primitive types
 - `string` - characters representing some text, like `"hello world!"`.
 - `number` - a numeric value. The `number` type can represent both whole numbers like `15` and fractional values like `6.283185`.
 - `bool` - a boolean value, either `true` or `false`. `bool` values can be used in conditional logic.
