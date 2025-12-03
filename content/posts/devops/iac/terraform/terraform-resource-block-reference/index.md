@@ -16,6 +16,7 @@ The `resource` block defines a piece of infrastructure and specifies the setti
 
 The arguments that an individual resource supports are determined by the provider. Refer to the provider documentation for more information about specific resource configuration.
 {{< /lead >}}
+## Configuration model
 
 The `resource` block supports the following arguments:
 
@@ -85,8 +86,7 @@ The `resource` block supports the following arguments:
         - [`scripts`](https://developer.hashicorp.com/terraform/language/block/resource#scripts)   string
         - [`on_failure`](https://developer.hashicorp.com/terraform/language/block/resource#on_failure)   keyword
         - [`connection`](https://developer.hashicorp.com/terraform/language/block/resource#connection)   block
-
-## [](https://developer.hashicorp.com/terraform/language/block/resource#complete-configuration)Complete configuration
+## Complete configuration
 
 The following `resource` block defines all of the supported built-in arguments you can set on a resource:
 
