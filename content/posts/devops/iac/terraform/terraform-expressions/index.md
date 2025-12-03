@@ -29,7 +29,9 @@ Data types that Terraform expressions can resolve to, and the literal syntaxes f
 - `list` (or `tuple`) - a sequence of values, like `["us-west-1a", "us-west-1c"]`. Identify elements in a list with consecutive whole numbers, starting with zero.
 - `set` - a collection of unique values that do not have any secondary identifiers or ordering.
 
+{{< alert "circle-info" >}}
 Terraform does not support directly accessing elements of a set by index because sets are unordered collections. To access elements in a set by index, first convert the set to a list.
+{{< /alert >}}
 
 1. Define a set. The following example specifies a set name `example_set`:
     
