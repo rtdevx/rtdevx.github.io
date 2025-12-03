@@ -260,7 +260,7 @@ Use the [`length` function](https://developer.hashicorp.com/terraform/language
 
 Use [`for` expressions](https://developer.hashicorp.com/terraform/language/expressions/for) in conjunction with the functions `alltrue` and `anytrue` to test whether a condition holds for all or for any elements of a collection.
 
-```
+```shell
   condition = alltrue([
     for v in var.instances : contains(["t2.micro", "m3.medium"], v.type)
   ])
@@ -350,7 +350,7 @@ var.list[*].id
 {{< alert "circle-info" >}}
 The special `[*]` symbol iterates over all of the elements of the list given to its left and accesses from each one the attribute name given on its right. A splat expression can also be used to access attributes and indexes from lists of complex types by extending the sequence of operations to the right of the symbol:
 
-```
+```shell
 var.list[*].interfaces[0].name
 ```
 {{< /alert >}}
@@ -359,6 +359,45 @@ _More:_ [Splat Expressions](https://developer.hashicorp.com/terraform/language/e
 ## Dynamic Blocks
 
 A way to create multiple repeatable nested blocks within a resource or other construct. 
+
+Within top-level block constructs like resources, expressions can usually be used only when assigning a value to an argument using the `name = expression` form. This covers many uses, but some resource types include repeatable _nested blocks_ in their arguments, which typically represent separate objects that are related to (or embedded within) the containing object:
+
+```shell
+resource "aws_elastic_beanstalk_environment" "tfenvtest" {
+  name = "tf-test-name" # can use expressions here
+
+  setting {
+    # but the "setting" block is always a literal block
+  }
+}
+```
+
+You can dynamically construct repeatable nested blocks like `setting` using a special `dynamic` block type, which is supported inside `resource`, `data`, `provider`, and `provisioner` blocks:
+
+```shell
+resource "aws_elastic_beanstalk_environment" "tfenvtest" {
+  name                = "tf-test-name"
+  application         = aws_elastic_beanstalk_application.tftest.name
+  solution_stack_name = "64bit Amazon Linux 2018.03 v2.11.4 running Go 1.12.6"
+
+  dynamic "setting" {
+    for_each = var.settings
+    content {
+      namespace = setting.value["namespace"]
+      name = setting.value["name"]
+      value = setting.value["value"]
+    }
+  }
+}
+```
+
+A `dynamic` block acts much like a [`for` expression](https://developer.hashicorp.com/terraform/language/expressions/for), but produces nested blocks instead of a complex typed value. It iterates over a given complex value, and generates a nested block for each element of that complex value.
+
+{{< alert "circle-info" >}}
+Overuse of `dynamic` blocks <font color=#EB4925>can make configuration hard to read and maintain, so we recommend using them only when you need to hide details in order to build a clean user interface for a re-usable module</font>.
+
+Always write nested blocks out literally where possible.
+{{< /alert >}}
 
 _More:_ [Dynamic Blocks](https://developer.hashicorp.com/terraform/language/expressions/dynamic-blocks)
 ## Validate your configuration
