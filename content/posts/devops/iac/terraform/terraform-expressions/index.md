@@ -33,7 +33,7 @@ Terraform does not support directly accessing elements of a set by index because
 
 1. Define a set. The following example specifies a set name `example_set`:
     
-    ```
+    ```shell
     variable "example_set" {
       type    = set(string)
       default = ["foo", "bar"]
@@ -42,7 +42,7 @@ Terraform does not support directly accessing elements of a set by index because
     
 2. Use the `tolist` function to convert the set to a list. The following example stores the converted list as a local variable called `example_list`:
     
-    ```
+    ```shell
     locals {
       example_list = tolist(var.example_set)
     }
@@ -50,7 +50,7 @@ Terraform does not support directly accessing elements of a set by index because
     
 3. You can then reference an element in the list:
     
-    ```
+    ```shell
     output "first_element" {
       value = local.example_list[0]
     }
