@@ -6,8 +6,8 @@ summary: The resource block defines a piece of infrastructure and specifies the 
 draft: false
 tags:
   - Assoc003
-categories:
   - Terraform
+categories:
   - DevOps
   - IaC
 ---

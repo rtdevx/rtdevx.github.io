@@ -6,8 +6,8 @@ summary: Develop local, re-usable Terraform Modules.
 draft: false
 tags:
   - Assoc003
-categories:
   - Terraform
+categories:
   - DevOps
   - IaC
 ---

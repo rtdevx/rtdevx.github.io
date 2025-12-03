@@ -6,8 +6,8 @@ summary: Terraform expressions are used to compute values within Terraform confi
 draft: false
 tags:
   - Assoc003
-categories:
   - Terraform
+categories:
   - DevOps
   - IaC
 ---
