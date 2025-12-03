@@ -15,6 +15,8 @@ categories:
 The `resource` block defines a piece of infrastructure and specifies the settings for Terraform to create it with. 
 
 The arguments that an individual resource supports are determined by the provider. Refer to the provider documentation for more information about specific resource configuration.
+
+_More info:_ https://developer.hashicorp.com/terraform/language/block/resource
 {{< /lead >}}
 ## Configuration model
 
@@ -161,8 +163,6 @@ resource "<TYPE>" "<LABEL>" {
   }
 }
 ```
-
-_More info:_ https://developer.hashicorp.com/terraform/language/block/resource
 
 ---
 ## >> Sources <<
