@@ -268,9 +268,7 @@ Use [`for` expressions](https://developer.hashicorp.com/terraform/language/exp
 
 ### `can` Function
 
-Use the [`can` function](https://developer.hashicorp.com/terraform/language/functions/can) to concisely use the validity of an expression as a condition. It returns `true` if its given expression evaluates successfully and `false` if it returns any error, so you can use various other functions that typically return errors as a part of your condition expressions.
-
-For example, you can use `can` with `regex` to test if a string matches a particular pattern because `regex` returns an error when given a non-matching string.
+Use the [`can` function](https://developer.hashicorp.com/terraform/language/functions/can) to concisely use the validity of an expression as a condition. It returns `true` if its given expression evaluates successfully and `false` if it returns any error.
 
 ```shell
   condition = can(regex("^[a-z]+$", var.name))
@@ -333,7 +331,29 @@ Expressions like `[for s in var.list : upper(s)]`, which can transform a comple
 _More:_ [For Expressions](https://developer.hashicorp.com/terraform/language/expressions/for)
 ## Splat Expressions
 
-Expressions like `var.list[*].id`, which can extract simpler collections from more complicated expressions.    
+Expressions like `var.list[*].id`, which can extract simpler collections from more complicated expressions. 
+
+A `splat expression` provides a more concise way to express a common operation that could otherwise be performed with a `for` expression.
+
+If `var.list` is a list of objects that all have an attribute `id`, then a list of the ids could be produced with the following `for` expression:
+
+```shell
+[for o in var.list : o.id]
+```
+
+This is equivalent to the following _splat expression:_
+
+```shell
+var.list[*].id
+```
+
+{{< alert "circle-info" >}}
+The special `[*]` symbol iterates over all of the elements of the list given to its left and accesses from each one the attribute name given on its right. A splat expression can also be used to access attributes and indexes from lists of complex types by extending the sequence of operations to the right of the symbol:
+
+```
+var.list[*].interfaces[0].name
+```
+{{< /alert >}}
 
 _More:_ [Splat Expressions](https://developer.hashicorp.com/terraform/language/expressions/splat)
 ## Dynamic Blocks
