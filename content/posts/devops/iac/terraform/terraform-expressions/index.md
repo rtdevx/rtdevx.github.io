@@ -83,7 +83,87 @@ Terraform does not support directly accessing elements of a set by index because
 _More:_ [Types and Values](https://developer.hashicorp.com/terraform/language/expressions/types)
 ## Strings and Templates
 
-Syntaxes for string literals, including interpolation sequences and template directives. 
+Syntaxes for string literals, including interpolation sequences and template directives.
+
+### Quoted Strings
+
+A quoted string is a series of characters delimited by straight double-quote characters (`"`).
+
+```
+"hello"
+```
+
+#### Escape Sequences
+
+In quoted strings, the backslash character serves as an escape sequence, with the following characters selecting the escape behaviour:
+
+|Sequence|Replacement|
+|---|---|
+|`\n`|Newline|
+|`\r`|Carriage Return|
+|`\t`|Tab|
+|`\"`|Literal quote (without terminating the string)|
+|`\\`|Literal backslash|
+|`\uNNNN`|Unicode character from the basic multilingual plane (NNNN is four hex digits)|
+|`\UNNNNNNNN`|Unicode character from supplementary planes (NNNNNNNN is eight hex digits)|
+There are also two special escape sequences that do not use backslashes:
+
+|Sequence|Replacement|
+|---|---|
+|`$${`|Literal `${`, without beginning an interpolation sequence.|
+|`%%{`|Literal `%{`, without beginning a template directive sequence.|
+
+### Heredoc Strings
+
+Terraform supports a "heredoc" style of string literal inspired by Unix shell languages, which allows multi-line strings to be expressed more clearly.
+
+```shell
+<<EOT
+hello
+world
+EOT
+```
+
+Terraform also accepts an _indented_ heredoc string variant that is introduced by the `<<-` sequence:
+
+```shell
+block {
+  value = <<-EOT
+  hello
+    world
+  EOT
+}
+```
+
+{{< alert "circle-info" >}}
+Don't use "heredoc" strings to generate JSON or YAML. Instead, use [the `jsonencode` function](https://developer.hashicorp.com/terraform/language/functions/jsonencode) or [the `yamlencode` function](https://developer.hashicorp.com/terraform/language/functions/yamlencode) so that Terraform can be responsible for guaranteeing valid JSON or YAML syntax.
+
+```shell
+example = jsonencode({
+  a = 1
+  b = "hello"
+})
+```
+{{< /alert >}}
+### Escape Sequences
+
+Backslash sequences are not interpreted as escapes in a heredoc string expression. Instead, the backslash character is interpreted literally.
+
+Heredocs support two special escape sequences that do not use backslashes:
+
+|Sequence|Replacement|
+|---|---|
+|`$${`|Literal `${`, without beginning an interpolation sequence.|
+|`%%{`|Literal `%{`, without beginning a template directive sequence.|
+### Interpolation
+
+A `${ ... }` sequence is an _interpolation,_ which evaluates the expression given between the markers, converts the result to a string if necessary, and then inserts it into the final string:
+
+```shell
+"Hello, ${var.name}!"
+```
+
+In the above example, the named object `var.name` is accessed and its value inserted into the string, producing a result like "Hello, Juan!".
 
 _More:_ [Strings and Templates](https://developer.hashicorp.com/terraform/language/expressions/strings)
 ## References to Values
