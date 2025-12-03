@@ -19,6 +19,22 @@ _More:_ [Terraform Expressions](https://developer.hashicorp.com/terraform/langua
 ## Types and Values
 
 Data types that Terraform expressions can resolve to, and the literal syntaxes for values of those types.
+### Types
+
+#### Privimitive types
+- `string` - characters representing some text, like `"hello world!"`.
+- `number` - a numeric value. The `number` type can represent both whole numbers like `15` and fractional values like `6.283185`.
+- `bool` - a boolean value, either `true` or `false`. `bool` values can be used in conditional logic.
+#### Complex types
+- `list` - (or `tuple`): a sequence of values, like `["us-west-1a", "us-west-1c"]`. Identify elements in a list with consecutive whole numbers, starting with zero.
+- `set` - a collection of unique values that do not have any secondary identifiers or ordering.
+- `map` - (or `object`): a group of values identified by named labels, like `{name = "Mabel", age = 52}`.
+
+- `null` - a value that represents absence or omission. `null` is most useful in conditional expressions, so you can dynamically omit an argument if a condition isn't met.
+
+{{< alert "circle-info" >}}
+`Strings`, `numbers`, and `bools` are sometimes called <font color=#EB4925>primitive types</font>. `Lists`/`tuples` and `maps`/`objects` are sometimes called <font color=#EB4925>complex types</font>, <font color=#EB4925>structural types</font>, or <font color=#EB4925>collection types</font>.
+{{< /alert >}}
 
 _More:_ [Types and Values](https://developer.hashicorp.com/terraform/language/expressions/types)
 ## Strings and Templates
