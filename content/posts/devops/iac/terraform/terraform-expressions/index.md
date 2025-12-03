@@ -13,8 +13,6 @@ categories:
 ---
 {{< lead >}}
 `Terraform expressions` are used to <font color=#C7EB25>compute values within Terraform configurations</font>, allowing for <font color=#C7EB25>dynamic and flexible infrastructure management</font>. They can include simple literals, complex references, and various built-in functions to manipulate data types and structures.
-
-_More:_ https://developer.hashicorp.com/terraform/language/expressions
 {{< /lead >}}
 ## Expressions
 
@@ -30,6 +28,8 @@ _More:_ https://developer.hashicorp.com/terraform/language/expressions
 - [Validate your configuration](https://developer.hashicorp.com/terraform/language/validate) to verify variable conditions, check blocks, and resource preconditions and postconditions.    
 - [Type Constraints](https://developer.hashicorp.com/terraform/language/expressions/type-constraints) documents the syntax for referring to a type, rather than a value of that type. Input variables expect this syntax in their `type` argument.    
 - [Version Constraints](https://developer.hashicorp.com/terraform/language/expressions/version-constraints) documents the syntax of special strings that define a set of allowed software versions. Terraform uses version constraints in several places.
+
+_More:_ https://developer.hashicorp.com/terraform/language/expressions
 
 ---
 ## >> Sources <<
