@@ -203,12 +203,127 @@ When multiple operators are used together in an expression, they are evaluated i
 _More:_ [Operators](https://developer.hashicorp.com/terraform/language/expressions/operators)
 ## Function Calls
 
-Syntax for calling Terraform's built-in functions.    
+Syntax for calling Terraform's built-in functions.  
+
+The Terraform language has a number of [built-in functions](https://developer.hashicorp.com/terraform/language/functions) that can be used in expressions to transform and combine values. These are similar to the operators but all follow a common syntax:
+
+```shell
+<FUNCTION NAME>(<ARGUMENT 1>, <ARGUMENT 2>)
+```
+
+The function name specifies which function to call. Each defined function expects a specific number of arguments with specific value types, and returns a specific value type as a result.
 
 _More:_ [Function Calls](https://developer.hashicorp.com/terraform/language/expressions/function-calls)
 ## Conditional Expressions
 
-`<CONDITION> ? <TRUE VAL> : <FALSE VAL>` expression, which chooses between two values based on a bool condition.    
+`<CONDITION> ? <TRUE VAL> : <FALSE VAL>` expression, which chooses between two values based on a bool condition. 
+
+The syntax of a conditional expression is as follows:
+
+```shell
+condition ? true_val : false_val
+```
+
+If `condition` is `true` then the result is `true_val`. If `condition` is `false` then the result is `false_val`.
+
+A common use of conditional expressions is to define defaults to replace invalid values:
+
+```shell
+var.a == "" ? "default-a" : var.a
+```
+
+If `var.a` is an empty string then the result is `"default-a"`, but otherwise it is the actual value of `var.a`.
+
+Use the logical operators `&&` (AND), `||` (OR), and `!` (NOT) to combine multiple conditions together.
+
+```shell
+  condition = var.name != "" && lower(var.name) == var.name
+```
+
+### `contains` Function
+
+Use the [`contains` function](https://developer.hashicorp.com/terraform/language/functions/contains) to test whether a given value is one of a set of predefined valid values.
+
+```shell
+  condition = contains(["STAGE", "PROD"], var.environment)
+```
+
+### `length` Function
+
+Use the [`length` function](https://developer.hashicorp.com/terraform/language/functions/length) to test a collection's length and require a non-empty list or map.
+
+```shell
+  condition = length(var.items) != 0
+```
+
+### `for` Expressions
+
+Use [`for` expressions](https://developer.hashicorp.com/terraform/language/expressions/for) in conjunction with the functions `alltrue` and `anytrue` to test whether a condition holds for all or for any elements of a collection.
+
+```
+  condition = alltrue([
+    for v in var.instances : contains(["t2.micro", "m3.medium"], v.type)
+  ])
+```
+
+### `can` Function
+
+Use the [`can` function](https://developer.hashicorp.com/terraform/language/functions/can) to concisely use the validity of an expression as a condition. It returns `true` if its given expression evaluates successfully and `false` if it returns any error, so you can use various other functions that typically return errors as a part of your condition expressions.
+
+For example, you can use `can` with `regex` to test if a string matches a particular pattern because `regex` returns an error when given a non-matching string.
+
+```shell
+  condition = can(regex("^[a-z]+$", var.name))
+```
+
+### `self` Object
+
+Use the `self` object in postcondition blocks to refer to attributes of the instance under evaluation.
+
+```shell
+resource "aws_instance" "example" {
+  instance_type = "t2.micro"
+  ami           = "ami-abc123"
+
+  lifecycle {
+    postcondition {
+      condition     = self.instance_state == "running"
+      error_message = "EC2 instance must be running."
+    }
+  }
+}
+```
+
+### `each` and `count` Objects
+
+In blocks where [`for_each`](https://developer.hashicorp.com/terraform/language/meta-arguments#for_each) or [`count`](https://developer.hashicorp.com/terraform/language/meta-arguments#count) are set, use `each` and `count` objects to refer to other resources that are expanded in a chain.
+
+```shell
+variable "vpc_cidrs" {
+  type = set(string)
+}
+
+data "aws_vpc" "example" {
+  for_each = var.vpc_cidrs
+
+  filter {
+    name   = "cidr"
+    values = [each.key]
+  }
+}
+
+resource "aws_internet_gateway" "example" {
+  for_each = data.aws_vpc.example
+  vpc_id = each.value.id
+
+  lifecycle {
+    precondition {
+      condition     = data.aws_vpc.example[each.key].state == "available"
+      error_message = "VPC ${each.key} must be available."
+    }
+  }
+}
+```
 
 _More:_ [Conditional Expressions](https://developer.hashicorp.com/terraform/language/expressions/conditionals)
 ## For Expressions
