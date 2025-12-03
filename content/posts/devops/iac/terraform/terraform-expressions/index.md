@@ -26,9 +26,47 @@ Data types that Terraform expressions can resolve to, and the literal syntaxes f
 - `number` - a numeric value. The `number` type can represent both whole numbers like `15` and fractional values like `6.283185`.
 - `bool` - a boolean value, either `true` or `false`. `bool` values can be used in conditional logic.
 #### Complex types
-- `list` - (or `tuple`): a sequence of values, like `["us-west-1a", "us-west-1c"]`. Identify elements in a list with consecutive whole numbers, starting with zero.
+- `list` (or `tuple`) - a sequence of values, like `["us-west-1a", "us-west-1c"]`. Identify elements in a list with consecutive whole numbers, starting with zero.
 - `set` - a collection of unique values that do not have any secondary identifiers or ordering.
-- `map` - (or `object`): a group of values identified by named labels, like `{name = "Mabel", age = 52}`.
+
+Terraform does not support directly accessing elements of a set by index because sets are unordered collections. To access elements in a set by index, first convert the set to a list.
+
+1. Define a set. The following example specifies a set name `example_set`:
+    
+    ```
+    variable "example_set" {
+      type    = set(string)
+      default = ["foo", "bar"]
+    }
+    ```
+    
+2. Use the `tolist` function to convert the set to a list. The following example stores the converted list as a local variable called `example_list`:
+    
+    ```
+    locals {
+      example_list = tolist(var.example_set)
+    }
+    ```
+    
+3. You can then reference an element in the list:
+    
+    ```
+    output "first_element" {
+      value = local.example_list[0]
+    }
+    output "second_element" {
+      value = local.example_list[1]
+    }
+    ```
+
+- `map` (or `object`) - a group of values identified by named labels, like `{name = "Mabel", age = 52}`. Maps/objects are represented by a pair of curly braces containing a series of `<KEY> = <VALUE>` pairs:
+
+```shell
+{
+  name = "John"
+  age  = 52
+}
+```
 
 - `null` - a value that represents absence or omission. `null` is most useful in conditional expressions, so you can dynamically omit an argument if a condition isn't met.
 
