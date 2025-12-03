@@ -170,6 +170,16 @@ _More:_ [Strings and Templates](https://developer.hashicorp.com/terraform/langua
 
 How to refer to named values like variables and resource attributes.    
 
+The main kinds of named values available in Terraform are:
+
+- [Resources](https://developer.hashicorp.com/terraform/language/expressions/references#resources)
+- [Input variables](https://developer.hashicorp.com/terraform/language/expressions/references#input-variables)
+- [Local values](https://developer.hashicorp.com/terraform/language/expressions/references#local-values)
+- [Child module outputs](https://developer.hashicorp.com/terraform/language/expressions/references#child-module-outputs)
+- [Data sources](https://developer.hashicorp.com/terraform/language/expressions/references#data-sources)
+- [Filesystem and workspace info](https://developer.hashicorp.com/terraform/language/expressions/references#filesystem-and-workspace-info)
+- [Block-local values](https://developer.hashicorp.com/terraform/language/expressions/references#block-local-values)
+
 _More:_ [References to Values](https://developer.hashicorp.com/terraform/language/expressions/references)
 ## Operators
 
