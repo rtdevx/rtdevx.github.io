@@ -441,6 +441,26 @@ _More:_ [Type Constraints](https://developer.hashicorp.com/terraform/language/ex
 
 Syntax of special strings that define a set of allowed software versions. Terraform uses version constraints in several places.
 
+Use the following syntax to specify version constraints:
+
+```shell
+version = "<operator> <version>"
+```
+
+In the following example, Terraform installs a versions `1.2.0` and newer, as well as version older than `2.0.0`:
+
+```shell
+version = ">= 1.2.0, < 2.0.0"
+```
+
+The following table describes the operators you can use to configure version constraints:
+
+|Operator|Description|
+|---|---|
+|`=`,  <br>no operator|Allows only one exact version number. Cannot be combined with other conditions.|
+|`!=`|Excludes an exact version number.|
+|`>`,  <br>`>=`,  <br>`<`,  <br>`<=`|Compares to a specified version. Terraform allows versions that resolve to `true`. The `>` and `>=` operators request newer versions. The `<` and `<=` operators request older versions.|
+|`~>`|Allows only the right-most version component to increment. Examples:<br><br>- `~> 1.0.4`: Allows Terraform to install `1.0.5` and `1.0.10` but not `1.1.0`.<br>- `~> 1.1`: Allows Terraform to install `1.2` and `1.10` but not `2.0`.|
 _More:_ [Version Constraints](https://developer.hashicorp.com/terraform/language/expressions/version-constraints)
 
 ---
