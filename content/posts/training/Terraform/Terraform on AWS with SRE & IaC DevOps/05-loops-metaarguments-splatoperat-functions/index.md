@@ -11,6 +11,76 @@ categories:
   - DevOps
   - IaC
 ---
+{{< lead >}}
+`Meta-arguments` are a class of arguments built into the Terraform configuration language that control how Terraform creates and manages your infrastructure. You can use meta-arguments in any type of resource. You can also use most meta-arguments in `module` blocks.
+
+_More:_ https://developer.hashicorp.com/terraform/language/meta-arguments
+{{< /lead >}}
+
+## `depends_on`
+
+The `depends_on` meta-argument instructs Terraform to complete all actions on the dependency object, including `read` operations, before performing actions on the object declaring the dependency. Use the `depends_on` argument to explicitly set the order in which Terraform creates resources. Refer to the [`depends_on` reference](https://developer.hashicorp.com/terraform/language/meta-arguments/depends_on) for details.
+## `count`
+
+By default, Terraform configures one infrastructure object for each `resource`, `module`, and `ephemeral` block. Terraform also creates single instances of a module per `module` block. You can add the `count` argument to `resource`, `module`, and `ephemeral` blocks to create and manage multiple instances of each without writing a separate block for each instance. Refer to the [`count` reference](https://developer.hashicorp.com/terraform/language/meta-arguments/count) for details.
+## `for_each`
+
+By default, Terraform configures one infrastructure object for each `resource`, `module`, and `ephemeral` block. You can add the `for_each` block to your `resource`, `data`, `module`, and `ephemeral` blocks to create and manage several similar objects, such as a fixed pool of compute instances, without writing a separate block for each instance. Refer to the [`for_each` reference](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each) for details.
+
+📄 _File:_ c5-ec2instance.tf
+
+{{< highlight shell "linenos=table,hl_lines=30-35" >}}
+# INFO: Create EC2 Instance
+# INFO: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#example-usage
+# INFO: First retrieve all available availability zones in the region
+#INFO: https://registry.terraform.io/providers/-/aws/latest/docs/data-sources/availability_zones
+
+# INFO: Gather all Availability Zones in your respective Region (as defined in c2-variables.tf)
+data "aws_availability_zones" "my_azones" {
+  filter {
+    name   = "opt-in-status"
+    values = ["opt-in-not-required"]
+  }
+}
+
+# INFO: EC2 Instance
+resource "aws_instance" "myec2vm" {
+  ami = data.aws_ami.amzlinux2.id
+  # NOTE: Referencing List and Map variables
+  #instance_type = var.instance_type
+  #instance_type = var.instance_type_list[1] # NOTE: Accessing variable of a type "list"
+  instance_type = var.instance_type_map["dev"]           # NOTE: Accessing variable of a type "map"
+  user_data     = file("${path.module}/app1-install.sh") # NOTE: Apply User Data
+  key_name      = var.instance_keypair                   # NOTE: Attach Key-Pair ID
+  vpc_security_group_ids = [                             # NOTE: Attach INGRESS SG
+    aws_security_group.vpc-ssh.id,
+    aws_security_group.vpc-web-80.id,
+    aws_security_group.vpc-web-443.id,
+    aws_security_group.vpc-egress.id # NOTE: Attach EGRESS SG
+  ]
+
+  # NOTE: Create EC2 Instance in all Availabilty Zones of a VPC  
+  for_each          = toset(data.aws_availability_zones.my_azones.names)
+  availability_zone = each.key # NOTE: You can also use each.value because for list items each.key == each.value
+
+  tags = {
+    "Name" = "for_each-Demo-${each.value}"
+  }
+}
+{{< /highlight >}}
+
+_More about `for_each`:_ 
+- https://developer.hashicorp.com/terraform/language/meta-arguments#for_each
+## `lifecycle`
+
+The `lifecycle` block accepts a rule that customizes how Terraform performs the lifecycle stages for each resource. Support for each `lifecycle` rule varies across Terraform configuration blocks. Refer to the [`lifecycle` reference](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle) for details.
+## `provider`
+
+By default, Terraform determines the local name of the provider from the first word in the resource type and uses that provider's default configuration to create the resource. You can add multiple `provider` blocks to your configuration and use the `provider` argument to a resource definition to specify which provider it should use. Refer to the [`provider` reference](https://developer.hashicorp.com/terraform/language/meta-arguments/provider) for details.
+
+## `providers`
+
+By default, child modules inherit the default provider configurations of their parent module. You can specify an alternate provider configuration in the `module` block using the `providers` argument. The `providers` argument instructs Terraform to use the reference provider configuration to create the module resources. Refer to the [`providers` reference](https://developer.hashicorp.com/terraform/language/meta-arguments/providers) for details.
 ## Variable List and Map
 
 📄 _File:_ c2-variables.tf
@@ -129,65 +199,15 @@ output "latest_splat_instance_publicdns" {
 }
 ```
 
-## `for_each` Meta-Argument
-
-📄 _File:_ c5-ec2instance.tf
-
-{{< highlight shell "linenos=table,hl_lines=30-35" >}}
-# INFO: Create EC2 Instance
-# INFO: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#example-usage
-# INFO: First retrieve all available availability zones in the region
-#INFO: https://registry.terraform.io/providers/-/aws/latest/docs/data-sources/availability_zones
-
-# INFO: Gather all Availability Zones in your respective Region (as defined in c2-variables.tf)
-data "aws_availability_zones" "my_azones" {
-  filter {
-    name   = "opt-in-status"
-    values = ["opt-in-not-required"]
-  }
-}
-
-# INFO: EC2 Instance
-resource "aws_instance" "myec2vm" {
-  ami = data.aws_ami.amzlinux2.id
-  # NOTE: Referencing List and Map variables
-  #instance_type = var.instance_type
-  #instance_type = var.instance_type_list[1] # NOTE: Accessing variable of a type "list"
-  instance_type = var.instance_type_map["dev"]           # NOTE: Accessing variable of a type "map"
-  user_data     = file("${path.module}/app1-install.sh") # NOTE: Apply User Data
-  key_name      = var.instance_keypair                   # NOTE: Attach Key-Pair ID
-  vpc_security_group_ids = [                             # NOTE: Attach INGRESS SG
-    aws_security_group.vpc-ssh.id,
-    aws_security_group.vpc-web-80.id,
-    aws_security_group.vpc-web-443.id,
-    aws_security_group.vpc-egress.id # NOTE: Attach EGRESS SG
-  ]
-
-  # NOTE: Create EC2 Instance in all Availabilty Zones of a VPC  
-  for_each          = toset(data.aws_availability_zones.my_azones.names)
-  availability_zone = each.key # NOTE: You can also use each.value because for list items each.key == each.value
-
-  tags = {
-    "Name" = "for_each-Demo-${each.value}"
-  }
-}
-{{< /highlight >}}
-
-_More about `for_each`:_ 
-- https://developer.hashicorp.com/terraform/language/meta-arguments
-- https://developer.hashicorp.com/terraform/language/meta-arguments#for_each
-
 ---
 ## >> Sources <<
 
 _Terraform:_
 
+- https://developer.hashicorp.com/terraform/language/meta-arguments
+
 `availability_zones` datasource
 - https://registry.terraform.io/providers/-/aws/latest/docs/data-sources/availability_zones
-
-`for_each`
-- https://developer.hashicorp.com/terraform/language/meta-arguments
-- https://developer.hashicorp.com/terraform/language/meta-arguments#for_each
 
 Kalyan’s GitHub Repositories:
 
