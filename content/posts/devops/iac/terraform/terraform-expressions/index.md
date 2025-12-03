@@ -183,7 +183,22 @@ The main kinds of named values available in Terraform are:
 _More:_ [References to Values](https://developer.hashicorp.com/terraform/language/expressions/references)
 ## Operators
 
-Arithmetic, comparison, and logical operators.    
+Arithmetic, comparison, and logical operators.
+
+When multiple operators are used together in an expression, they are evaluated in the following order of operations:
+
+1. `!`, `-` (multiplication by `-1`)
+2. `*`, `/`, `%`
+3. `+`, `-` (subtraction)
+4. `>`, `>=`, `<`, `<=`
+5. `==`, `!=`
+6. `&&`
+7. `||`
+
+- [Arithmetic Operators](https://developer.hashicorp.com/terraform/language/expressions/operators#arithmetic-operators)
+- [Equality Operators](https://developer.hashicorp.com/terraform/language/expressions/operators#equality-operators)
+- [Comparison Operators](https://developer.hashicorp.com/terraform/language/expressions/operators#comparison-operators)
+- [Logical Operators](https://developer.hashicorp.com/terraform/language/expressions/operators#logical-operators)
 
 _More:_ [Operators](https://developer.hashicorp.com/terraform/language/expressions/operators)
 ## Function Calls
