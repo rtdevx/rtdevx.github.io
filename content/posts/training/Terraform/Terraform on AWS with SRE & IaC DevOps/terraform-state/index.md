@@ -132,6 +132,24 @@ resource "packet_device" "worker" {
 }
 ```
 
+{{< alert "circle-info" >}}
+Could be used with `terraform state list`. 
+
+```shell
+❯ terraform state list
+data.aws_availability_zones.available
+module.vpc.aws_db_subnet_group.database[0]
+module.vpc.aws_default_network_acl.this[0]
+module.vpc.aws_default_route_table.default[0]
+module.vpc.aws_default_security_group.this[0]
+module.vpc.aws_eip.nat[0]
+```
+
+```shell
+terraform state show 'module.vpc.aws_eip.nat[0]'
+```
+{{< /alert >}}
+
 _More:_ [`terraform state show`](https://developer.hashicorp.com/terraform/cli/commands/state/show)
 ## Remote State
 

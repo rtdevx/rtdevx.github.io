@@ -24,7 +24,7 @@ categories:
 	- this is the first command that should be run after writing new terraform configuration
 	- it will <font color=#EBAC25>download the provider plugins</font>
 	- `.terraform.lock.hcl` file is created to record the provider selections. Include this file in your version control repository so that Terraform can guarantee to make the same selections by default when you run `terraform init` in the future.
-	- `terraform init -upgrade` - <font color=#EB4925>command to upgrade the provider in Terraform</font>. This command will initialize the working directory and upgrade the provider to the latest version available, including any additional functionality that may have been added.
+	- `terraform init -upgrade` - <font color=#EB4925>command to upgrade the provider in Terraform</font>. This command will initialize the working directory and upgrade the provider to the latest version available, including any additional functionality that may have been added. <font color=#EB4925>If Terraform was already initiated and providers were downloaded, Terraform will not upgrade to the new version by default.</font>
 - `terraform validate`
 	- <font color=#EBAC25>validates syntax and consistency</font> of the terraform files
 - `terraform plan`
@@ -34,10 +34,10 @@ categories:
 	- will apply the changes required to be in line with the <font color=#EBAC25>desired state</font> 
 	- by default, apply will scan the current directory and apply it's configuration (provision the infrastructure)
 	- `terraform apply -refresh-only` - <font color=#EB4925>detect drift between the Terraform configuration and the actual state of the resources in the cloud provider. It will update the state file with any changes made outside of Terraform</font>, ensuring that the configuration remains in sync with the actual resources.
-	- `terraform apply -replace=<resource>` - allows you to <font color=#EB4925>tag the specific resource for replacement without impacting the rest of the managed infrastructure</font>. This ensures that only the virtual machine is recreated, potentially resolving any issues with the local script execution.
+	- `terraform apply -replace=<resource>` - allows you to <font color=#EB4925>tag the specific resource for replacement without impacting the rest of the managed infrastructure</font>. This ensures that only the tagged resource is recreated, potentially resolving any issues with the local script execution.
 - `terraform destroy`
 	- will destroy the terraform-managed infrastructure
-	- `terraform destroy -target <virtual machine>` and destroy only the target resource.
+	- `terraform destroy -target <virtual machine>` - destroy only the target resource.
 ### Other useful commands
 
 - `terraform fmt` - HashiCorp recommends using consistent formatting in all config files by using the `terraform fmt` command. Optional command, <font color=#C7EB25>helps with formatting</font>
