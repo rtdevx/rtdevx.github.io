@@ -144,11 +144,30 @@ All `terraform state` subcommands that modify the state write backup files. Th
 {{< alert "circle-info" >}}
 Note that <font color=#EB4925>backups for state modification can not be disabled</font>. Due to the sensitivity of the state file, Terraform forces every state modification command to write a backup file. You'll have to remove these files manually if you don't want to keep them around.
 {{< /alert >}}
+## Terraform backend
+
+Terraform uses persisted state data to keep track of the resources it manages. You can either [integrate with HCP Terraform](https://developer.hashicorp.com/terraform/language/terraform#terraform-cloud) to store state data or define a `backend` block to store state in a remote object. This lets multiple people access the state data and work together on that collection of infrastructure resources.
+
+To configure a backend, add a nested `backend` block within the top-level `terraform` block. The following example configures the `remote` backend.
+
+```shell
+terraform {
+  backend "remote" {
+    organization = "example_corp"
+
+    workspaces {
+      name = "my-app-prod"
+    }
+  }
+}
+```
+
+_More:_ [Terraform Backend](https://developer.hashicorp.com/terraform/language/backend)
 
 ---
 ## >> Sources <<
 
-- https://developer.hashicorp.com/terraform/language/state
+- [`terraform state`](https://developer.hashicorp.com/terraform/language/state)
 
 Terraform state commands:
 
@@ -158,3 +177,7 @@ Terraform state commands:
 - [`terraform state replace-provider`](https://developer.hashicorp.com/terraform/cli/commands/state/replace-provider)
 - [`terraform state rm`](https://developer.hashicorp.com/terraform/cli/commands/state/rm)
 - [`terraform state show`](https://developer.hashicorp.com/terraform/cli/commands/state/show)
+
+Terraform Backend:
+
+- [Terraform Backend](https://developer.hashicorp.com/terraform/language/backend)
