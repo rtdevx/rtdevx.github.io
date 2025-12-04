@@ -182,6 +182,8 @@ _More:_ [Terraform Backend](https://developer.hashicorp.com/terraform/language/b
 
 Terraform state commands:
 
+- [terraform state commands reference](https://developer.hashicorp.com/terraform/cli/commands/state)
+
 - [`terraform state list`](https://developer.hashicorp.com/terraform/cli/commands/state/list)
 - [`terraform state mv`](https://developer.hashicorp.com/terraform/cli/commands/state/mv)
 - [`terraform state pull`](https://developer.hashicorp.com/terraform/cli/commands/state/pull)
