@@ -1,8 +1,8 @@
 ---
 title: Terraform State
 date: 2025-10-28
-description: Terraform must store state about your managed infrastructure and configuration. This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance for large infrastructures.
-summary: Terraform must store state about your managed infrastructure and configuration. This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance for large infrastructures.
+description: Terraform must store state about your managed infrastructure and configuration...
+summary: Terraform must store state about your managed infrastructure and configuration...
 draft: false
 tags:
   - Assoc003
@@ -20,7 +20,6 @@ _More:_ https://developer.hashicorp.com/terraform/language/state
 ## `terraform state` commands
 
 Refer to the following subcommands for additional information:
-
 ### `terraform state list`
 
 Usage: `terraform state list [options] [address...]`
@@ -74,7 +73,6 @@ Usage: `terraform state pull`
 This command downloads the state from its current location, upgrades the local copy to the latest state file version that is compatible with locally-installed Terraform, and outputs the raw format to stdout.
 
 _More:_ [`terraform state pull`](https://developer.hashicorp.com/terraform/cli/commands/state/pull)
-
 ### `terraform state replace-provider`
 
 The `terraform state replace-provider` command replaces the provider for resources in a [Terraform state](https://developer.hashicorp.com/terraform/language/state).
