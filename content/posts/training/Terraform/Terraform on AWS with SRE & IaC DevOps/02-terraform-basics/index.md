@@ -67,6 +67,8 @@ By using the `terraform state` command and its subcommands, users can manage and
 [https://developer.hashicorp.com/terraform/cli/state](https://developer.hashicorp.com/terraform/cli/state)
 {{< /alert >}}
 
+<font color=#EBAC25><i>More info:</i></font> `[Terraform State]({{< ref "training/terraform/terraform-on-aws-with-sre--iac-devops/terraform-state/" >}})`
+
 - `terraform workspace`
 	- `delete` - Delete a workspace
 	- `list` - List Workspaces
