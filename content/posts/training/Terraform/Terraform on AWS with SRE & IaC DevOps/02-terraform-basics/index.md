@@ -85,6 +85,15 @@ By using the `terraform state` command and its subcommands, users can manage and
   the value.
 - `terraform refresh` - Update the state file of your infrastructure with metadata that matches
   the physical resources they are tracking
+
+{{< alert "circle-info" >}}
+The difference between `terraform refresh` and `terraform apply -refresh-only`:
+
+![](./assets/TF_plan_vs_refresh.png)
+
+<font color=#EBAC25><i>More info:</i></font> https://medium.com/@srivastavaaaradhy02/terraform-plan-vs-terraform-refresh-explained-simply-8f402c74a87b
+{{< /alert >}}
+
 - `terraform providers`- Prints out a tree of modules in the referenced configuration annotated with their provider requirements  
 
 It is said that **best terraform practice** is to output the `terraform plan` to a file and then run `terraform apply` with the file input.
@@ -104,7 +113,7 @@ The **terraform state file** is the only way Terraform can track which resources
 
 ![](./assets/TF_graph_example.png)
 
-_More info:_ https://developer.hashicorp.com/terraform/cli/commands/graph](https://developer.hashicorp.com/terraform/cli/commands/graph)
+<font color=#EBAC25><i>More info:</i></font> https://developer.hashicorp.com/terraform/cli/commands/graph](https://developer.hashicorp.com/terraform/cli/commands/graph)
 ## Terraform Configuration Syntax
 
 _Source:_ [Terraform Language Syntax](https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/02-Terraform-Basics/02-03-Terraform-Language-Syntax)
@@ -263,6 +272,10 @@ Additional resources:
 - [https://developer.hashicorp.com/terraform/cli/state](https://developer.hashicorp.com/terraform/cli/state)
 
 - [https://developer.hashicorp.com/terraform/cli/commands/graph](https://developer.hashicorp.com/terraform/cli/commands/graph)
+
+The difference between `terraform refresh` and `terraform apply -refresh-only`:
+
+- https://medium.com/@srivastavaaaradhy02/terraform-plan-vs-terraform-refresh-explained-simply-8f402c74a87b
 ## >> References <<
 
 - [Terraform registry](03-settings-providers-resources/#terraform-registry)
