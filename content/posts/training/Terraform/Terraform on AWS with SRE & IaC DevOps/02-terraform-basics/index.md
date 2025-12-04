@@ -89,9 +89,9 @@ By using the `terraform state` command and its subcommands, users can manage and
 {{< alert "circle-info" >}}
 The difference between `terraform refresh` and `terraform apply -refresh-only`:
 
-![](./assets/TF_plan_vs_refresh.png)
+`terraform refresh` updates the state file to match real infrastructure but does not produce or apply a plan, while `terraform apply -refresh-only` runs through the full plan/apply workflow but only refreshes the state (no resource changes), making it auditable and consistent with Terraform’s apply process.
 
-<font color=#EBAC25><i>More info:</i></font> https://medium.com/@srivastavaaaradhy02/terraform-plan-vs-terraform-refresh-explained-simply-8f402c74a87b
+`terraform refresh` is being considered a <font color=#EB4925>legacy command</font>. Newer workflows encourage `apply -refresh-only`.
 {{< /alert >}}
 
 - `terraform providers`- Prints out a tree of modules in the referenced configuration annotated with their provider requirements  
@@ -272,10 +272,6 @@ Additional resources:
 - [https://developer.hashicorp.com/terraform/cli/state](https://developer.hashicorp.com/terraform/cli/state)
 
 - [https://developer.hashicorp.com/terraform/cli/commands/graph](https://developer.hashicorp.com/terraform/cli/commands/graph)
-
-The difference between `terraform refresh` and `terraform apply -refresh-only`:
-
-- https://medium.com/@srivastavaaaradhy02/terraform-plan-vs-terraform-refresh-explained-simply-8f402c74a87b
 ## >> References <<
 
 - [Terraform registry](03-settings-providers-resources/#terraform-registry)
