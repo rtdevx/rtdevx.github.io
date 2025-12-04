@@ -22,7 +22,7 @@ Terraform must store state about your managed infrastructure and configuration. 
 Refer to the following subcommands for additional information:
 ### `terraform state list`
 
-Usage: `terraform state list [options] [address...]`
+**Usage:** `terraform state list [options] [address...]`
 
 The command will list all resources in the state file matching the given addresses (if any). If no addresses are given, all resources are listed.
 
@@ -34,7 +34,7 @@ The resources listed are sorted according to module depth order followed alphabe
 
 The `terraform state mv` command changes bindings in Terraform state so that existing remote objects bind to new resource instances.
 
-Usage: `terraform state mv [options] SOURCE DESTINATION`
+**Usage:** `terraform state mv [options] SOURCE DESTINATION`
 
 {{< alert "circle-info" >}}
 <font color=#EB4925>Warning:</font> If you are using Terraform in a collaborative environment, you must ensure that when you are using `terraform state mv` for a code refactoring purpose you communicate carefully with your coworkers to ensure that nobody makes any other changes between your configuration change and your `terraform state mv` command, because otherwise they might inadvertently create a plan that will destroy the old object and create a new object at the new address.
@@ -70,7 +70,7 @@ terraform state mv packet_device.worker module.worker.packet_device.worker
 
 The `terraform state pull` downloads and outputs state information from a [remote state](https://developer.hashicorp.com/terraform/language/state/remote) or local state.
 
-Usage: `terraform state pull`
+**Usage:** `terraform state pull`
 
 This command downloads the state from its current location, upgrades the local copy to the latest state file version that is compatible with locally-installed Terraform, and outputs the raw format to stdout.
 
@@ -79,7 +79,7 @@ This command downloads the state from its current location, upgrades the local c
 
 The `terraform state replace-provider` command replaces the provider for resources in a [Terraform state](https://developer.hashicorp.com/terraform/language/state).
 
-Usage: `terraform state replace-provider [options] FROM_PROVIDER_FQN TO_PROVIDER_FQN`
+**Usage:** `terraform state replace-provider [options] FROM_PROVIDER_FQN TO_PROVIDER_FQN`
 
 This command will update all resources using the "from" provider, setting the provider to the specified "to" provider. This allows changing the source of a provider which currently has resources in state.
 
@@ -97,7 +97,7 @@ $ terraform state replace-provider hashicorp/aws registry.acme.corp/acme/aws
 
 The `terraform state rm` command removes the binding to an existing remote object without first destroying it. The remote object continues to exist but is no longer managed by Terraform.
 
-Usage: `terraform state rm [options] ADDRESS...`
+**Usage:** `terraform state rm [options] ADDRESS...`
 
 Terraform will search the state for any instances matching the given [resource address](https://developer.hashicorp.com/terraform/cli/state/resource-addressing), and remove the record of each one so that Terraform will no longer be tracking the corresponding remote objects.
 
@@ -116,7 +116,7 @@ $ terraform state rm 'packet_device.worker'
 
 The `terraform state show` command shows the attributes of a single resource in the [Terraform state](https://developer.hashicorp.com/terraform/language/state).
 
-Usage: `terraform state show [options] ADDRESS`
+**Usage:** `terraform state show [options] ADDRESS`
 
 The command will show the attributes of a single resource in the state file that matches the given address.
 
