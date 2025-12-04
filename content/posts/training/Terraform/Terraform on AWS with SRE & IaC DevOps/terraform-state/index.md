@@ -150,14 +150,25 @@ Terraform uses persisted state data to keep track of the resources it manages. Y
 
 To configure a backend, add a nested `backend` block within the top-level `terraform` block. The following example configures the `remote` backend.
 
+_File:_  📄provider.tf
+
 ```shell
 terraform {
-  backend "remote" {
-    organization = "example_corp"
-
-    workspaces {
-      name = "my-app-prod"
+  required_version = "~> 1.14.0" 
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.0" 
     }
+  }
+
+  # INFO: S3 Backend Block
+  backend "s3" {
+    bucket = "rk-backend"
+    key    = "terraform-core/aws-codepipelines/terraform.tfstate"
+    region = "eu-west-2"
+    dynamodb_table = "prod-a1s3backend-lock"
+    encrypt = true
   }
 }
 ```
