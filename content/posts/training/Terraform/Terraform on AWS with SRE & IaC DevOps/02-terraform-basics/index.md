@@ -104,7 +104,7 @@ terraform plan -out tf.plan
 terraform apply tf.plan
 ```
 
-\*_terraform will not ask for confirmation (just like using it with the `-auto-approve` option) when executing the plan from the file._
+\*<font color=#EB4925>terraform will not ask for confirmation</font> (just like using it with the `-auto-approve` option) when executing the plan from the file.
 
 The **terraform state file** is the only way Terraform can track which resources it is managing. <font color=#EB4925><b>It often contains sensitive information</b></font> so must be stored securely and access must be restricted.
 
