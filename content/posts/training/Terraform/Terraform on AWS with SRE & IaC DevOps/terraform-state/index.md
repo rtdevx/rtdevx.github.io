@@ -164,10 +164,10 @@ terraform {
 
   # INFO: S3 Backend Block
   backend "s3" {
-    bucket = "rk-backend"
+    bucket = "your-backend-s3-bucket"
     key    = "terraform-core/aws-codepipelines/terraform.tfstate"
     region = "eu-west-2"
-    dynamodb_table = "prod-a1s3backend-lock"
+    dynamodb_table = "prod-s3backend-lock"
     encrypt = true
   }
 }
