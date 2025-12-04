@@ -150,7 +150,7 @@ Terraform uses persisted state data to keep track of the resources it manages. Y
 
 To configure a backend, add a nested `backend` block within the top-level `terraform` block. The following example configures the `remote` backend.
 
-_File:_  📄provider.tf
+_File:_  📄providers.tf
 
 ```shell
 terraform {
