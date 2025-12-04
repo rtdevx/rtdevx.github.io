@@ -14,7 +14,7 @@ categories:
 {{< lead >}}
 `Meta-arguments` are a class of arguments built into the Terraform configuration language that control how Terraform creates and manages your infrastructure. You can use meta-arguments in any type of resource. You can also use most meta-arguments in `module` blocks.
 
-_More:_ https://developer.hashicorp.com/terraform/language/meta-arguments
+<font color=#EBAC25><i>More info:</i></font> https://developer.hashicorp.com/terraform/language/meta-arguments
 {{< /lead >}}
 
 ## `depends_on`
@@ -69,7 +69,7 @@ resource "aws_instance" "myec2vm" {
 }
 {{< /highlight >}}
 
-_More about `for_each`:_ 
+<font color=#EBAC25><i>More about</i></font> `for_each`:
 - https://developer.hashicorp.com/terraform/language/meta-arguments#for_each
 ## `lifecycle`
 

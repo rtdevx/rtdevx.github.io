@@ -94,7 +94,7 @@ provider "aws" {
 
 [AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#example-usage)
 
-_More about Input Variables:_
+<font color=#EBAC25><i>More info:</i></font>
 - [Terraform Input Variables](https://www.terraform.io/docs/language/values/variables.html)
 - [Terraform Input Variable Usage - 10 different types](https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/05-Terraform-Variables/05-01-Terraform-Input-Variables)
 #### Create Security Groups
@@ -252,7 +252,7 @@ data "aws_ami" "amzlinux2" {
 }
 ```
 
-_More about AMI datasource:_
+<font color=#EBAC25><i>More info:</i></font>
 
 - [AMI Datasource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami#example-usage)
 
