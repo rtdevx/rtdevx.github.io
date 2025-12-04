@@ -39,7 +39,7 @@ Usage: `terraform state mv [options] SOURCE DESTINATION`
 {{< alert "circle-info" >}}
 <font color=#EB4925>Warning:</font> If you are using Terraform in a collaborative environment, you must ensure that when you are using `terraform state mv` for a code refactoring purpose you communicate carefully with your coworkers to ensure that nobody makes any other changes between your configuration change and your `terraform state mv` command, because otherwise they might inadvertently create a plan that will destroy the old object and create a new object at the new address.
 {{< /alert >}}
-#### _Example:_ Rename a Resource
+##### _Example:_ Rename a Resource
 
 Renaming a resource means making a configuration change like the following:
 
@@ -55,7 +55,7 @@ To tell Terraform that it should treat the new "helper" resource as a rename of 
 ```shell
 terraform state mv packet_device.worker packet_device.helper
 ```
-#### _Example:_ Move a Resource Into a Module
+##### _Example:_ Move a Resource Into a Module
 
 If you originally wrote a resource in your root module but now wish to refactor it into a child module, you can move the `resource` block into the child module configuration, removing the original in the root module, and then run the following command to tell Terraform to treat it as a move:
 
@@ -80,7 +80,7 @@ The `terraform state replace-provider` command replaces the provider for resou
 Usage: `terraform state replace-provider [options] FROM_PROVIDER_FQN TO_PROVIDER_FQN`
 
 This command will update all resources using the "from" provider, setting the provider to the specified "to" provider. This allows changing the source of a provider which currently has resources in state.
-#### _Example:_ Replace Terraform provider
+##### _Example:_ Replace Terraform provider
 
 The example below replaces the `hashicorp/aws` provider with a fork by `acme`, hosted at a private registry at `registry.acme.corp`:
 
@@ -99,7 +99,7 @@ Usage: `terraform state rm [options] ADDRESS...`
 Terraform will search the state for any instances matching the given [resource address](https://developer.hashicorp.com/terraform/cli/state/resource-addressing), and remove the record of each one so that Terraform will no longer be tracking the corresponding remote objects.
 
 This means that although the objects will still continue to exist in the remote system, a subsequent [`terraform plan`](https://developer.hashicorp.com/terraform/cli/commands/plan) will include an action to create a new object for each of the "forgotten" instances. Depending on the constraints imposed by the remote system, creating those objects might fail if their names or other identifiers conflict with the old objects still present.
-#### _Example:_ Remove all Instances of a Resource
+##### _Example:_ Remove all Instances of a Resource
 
 The following example will cause Terraform to "forget" all of the instances of the `packet_device` resource named "worker".
 
@@ -115,7 +115,7 @@ The `terraform state show` command shows the attributes of a single resource i
 Usage: `terraform state show [options] ADDRESS`
 
 The command will show the attributes of a single resource in the state file that matches the given address.
-#### _Example:_ Show a Resource
+##### _Example:_ Show a Resource
 
 The example below shows a `packet_device` resource named `worker`:
 
