@@ -133,7 +133,7 @@ resource "packet_device" "worker" {
 ```
 
 {{< alert "circle-info" >}}
-`terraform state show` could works very well in combination with `terraform state list`. 
+`terraform state show` works very well in combination with `terraform state list`:
 
 ```shell
 ❯ terraform state list
