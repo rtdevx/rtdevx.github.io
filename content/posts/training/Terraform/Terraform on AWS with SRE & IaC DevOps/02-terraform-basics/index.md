@@ -42,8 +42,8 @@ categories:
 
 - `terraform fmt` - HashiCorp recommends using consistent formatting in all config files by using the `terraform fmt` command. Optional command, <font color=#C7EB25>helps with formatting</font>
 - `terraform state` command can be used to check what resources have been deployed against the **terraform state file**
-	- `list`
-	- `show`
+	- `list` - list resources in the state
+	- `show` - show a resource in the state
 	- `terraform state rm` - will remove the specified resource from the Terraform state, allowing you to then run terraform destroy to remove all remaining resources except for the resource that was removed from the state. <font color=#EB4925>This approach effectively excludes the specified resource from the destruction process</font>.
 
 {{< alert "circle-info" >}}
