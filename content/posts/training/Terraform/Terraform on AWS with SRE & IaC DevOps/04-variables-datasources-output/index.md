@@ -20,7 +20,7 @@ categories:
 - Basic Input Variables
 - Can be provided <font color=#EBAC25>when prompted</font> during `terraform plan` or `terraform apply`
 - <font color=#EB4925>Override</font> default variable values using _CLI argument_ `-var`
-- <font color=#EB4925>Override</font> default variable values using **Environment Variables (TF_var_aa)**
+- <font color=#EB4925>Override</font> default variable values using **Environment Variables (TF_VAR_aa)**
 - Provide Input Variables using `terraform.tfvars` files
 - Provide Input Variables using `<any-name>.tfvars` file with _CLI argument_ `-var-file`
 - Provide Input Variables using `auto.tfvars` files
