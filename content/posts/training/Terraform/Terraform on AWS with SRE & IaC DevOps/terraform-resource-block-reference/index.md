@@ -16,7 +16,7 @@ The `resource` block defines a piece of infrastructure and specifies the setti
 
 The arguments that an individual resource supports are determined by the provider. Refer to the provider documentation for more information about specific resource configuration.
 
-_More info:_ https://developer.hashicorp.com/terraform/language/block/resource
+<font color=#EBAC25><i>More info:</i></font> https://developer.hashicorp.com/terraform/language/block/resource
 {{< /lead >}}
 ## Configuration model
 

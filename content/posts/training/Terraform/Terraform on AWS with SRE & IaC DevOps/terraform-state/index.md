@@ -14,7 +14,7 @@ categories:
 {{< lead >}}
 Terraform must store state about your managed infrastructure and configuration. <font color=#C7EB25>This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance</font> for large infrastructures.
 
-_More:_ https://developer.hashicorp.com/terraform/language/state
+<font color=#EBAC25><i>More info:</i></font> https://developer.hashicorp.com/terraform/language/state
 {{< /lead >}}
 
 ## `terraform state` commands
@@ -28,7 +28,7 @@ The command will list all resources in the state file matching the given address
 
 The resources listed are sorted according to module depth order followed alphabetically. This means that resources that are in your immediate configuration are listed first, and resources that are more deeply nested within modules are listed last.
 
-_More:_ [`terraform state list`](https://developer.hashicorp.com/terraform/cli/commands/state/list)
+<font color=#EBAC25><i>More info:</i></font> [`terraform state list`](https://developer.hashicorp.com/terraform/cli/commands/state/list)
 
 ### `terraform state mv`
 
@@ -65,7 +65,7 @@ If you originally wrote a resource in your root module but now wish to refactor 
 terraform state mv packet_device.worker module.worker.packet_device.worker
 ```
 
-_More:_ [`terraform state mv`](https://developer.hashicorp.com/terraform/cli/commands/state/mv)
+<font color=#EBAC25><i>More info:</i></font> [`terraform state mv`](https://developer.hashicorp.com/terraform/cli/commands/state/mv)
 ### `terraform state pull`
 
 The `terraform state pull` downloads and outputs state information from a [remote state](https://developer.hashicorp.com/terraform/language/state/remote) or local state.
@@ -74,7 +74,7 @@ Usage: `terraform state pull`
 
 This command downloads the state from its current location, upgrades the local copy to the latest state file version that is compatible with locally-installed Terraform, and outputs the raw format to stdout.
 
-_More:_ [`terraform state pull`](https://developer.hashicorp.com/terraform/cli/commands/state/pull)
+<font color=#EBAC25><i>More info:</i></font> [`terraform state pull`](https://developer.hashicorp.com/terraform/cli/commands/state/pull)
 ### `terraform state replace-provider`
 
 The `terraform state replace-provider` command replaces the provider for resources in a [Terraform state](https://developer.hashicorp.com/terraform/language/state).
@@ -91,7 +91,7 @@ The example below replaces the `hashicorp/aws` provider with a fork by `acme`
 $ terraform state replace-provider hashicorp/aws registry.acme.corp/acme/aws
 ```
 
-_More:_ [`terraform state replace-provider`](https://developer.hashicorp.com/terraform/cli/commands/state/replace-provider)
+<font color=#EBAC25><i>More info:</i></font> [`terraform state replace-provider`](https://developer.hashicorp.com/terraform/cli/commands/state/replace-provider)
 
 ### `terraform state rm`
 
@@ -111,7 +111,7 @@ The following example will cause Terraform to "forget" all of the instances of t
 $ terraform state rm 'packet_device.worker'
 ```
 
-_More:_ [`terraform state rm`](https://developer.hashicorp.com/terraform/cli/commands/state/rm)
+<font color=#EBAC25><i>More info:</i></font> [`terraform state rm`](https://developer.hashicorp.com/terraform/cli/commands/state/rm)
 ### `terraform state show`
 
 The `terraform state show` command shows the attributes of a single resource in the [Terraform state](https://developer.hashicorp.com/terraform/language/state).
@@ -155,7 +155,7 @@ terraform state show 'module.vpc.aws_eip.nat[0]'
 ```
 {{< /alert >}}
 
-_More:_ [`terraform state show`](https://developer.hashicorp.com/terraform/cli/commands/state/show)
+<font color=#EBAC25><i>More info:</i></font> [`terraform state show`](https://developer.hashicorp.com/terraform/cli/commands/state/show)
 ## Remote State
 
 The Terraform state subcommands all work with remote state just as if it was local state. Reads and writes may take longer than normal as each read and each write do a full network roundtrip. Otherwise, backups are still written to disk and the CLI usage is the same as if it were local state.
@@ -196,7 +196,7 @@ terraform {
 }
 ```
 
-_More:_ [Terraform Backend](https://developer.hashicorp.com/terraform/language/backend)
+<font color=#EBAC25><i>More info:</i></font> [Terraform Backend](https://developer.hashicorp.com/terraform/language/backend)
 
 ---
 ## >> Sources <<
