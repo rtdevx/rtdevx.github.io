@@ -113,7 +113,7 @@ The **terraform state file** is the only way Terraform can track which resources
 
 ![](./assets/TF_graph_example.png)
 
-<font color=#EBAC25><i>More info:</i></font> https://developer.hashicorp.com/terraform/cli/commands/graph](https://developer.hashicorp.com/terraform/cli/commands/graph)
+<font color=#EBAC25><i>More info:</i></font> https://developer.hashicorp.com/terraform/cli/commands/graph
 ## Terraform Configuration Syntax
 
 _Source:_ [Terraform Language Syntax](https://github.com/stacksimplify/hashicorp-certified-terraform-associate/tree/main/02-Terraform-Basics/02-03-Terraform-Language-Syntax)
@@ -164,7 +164,7 @@ resource "aws_instance" "ec2" {
 _aws_instance_ resource documentation: https://registry.terraform.io/providers/-/aws/latest/docs/resources/instance contains references to all `Arguments` and `Attributes`.
 {{< /alert >}}
 
-_More:_
+<font color=#EBAC25><i>More info:</i></font>
 - [Additional Reference](https://learn.hashicorp.com/tutorials/terraform/resource?in=terraform/configuration-language)
 - [Resource: AWS Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
 - [Resource: AWS Instance Argument Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#argument-reference)
