@@ -21,6 +21,9 @@ categories:
 Data types that Terraform expressions can resolve to, and the literal syntaxes for values of those types.
 ### Types
 
+{{< alert "circle-info" >}}
+`Strings`, `numbers`, and `bools` are sometimes called <font color=#EB4925>primitive types</font>. `Lists`/`tuples` and `maps`/`objects` are sometimes called <font color=#EB4925>complex types</font>, <font color=#EB4925>structural types</font>, or <font color=#EB4925>collection types</font>.
+{{< /alert >}}
 #### Primitive types
 - `string` - characters representing some text, like `"hello world!"`.
 - `number` - a numeric value. The `number` type can represent both whole numbers like `15` and fractional values like `6.283185`.
@@ -75,10 +78,6 @@ Terraform does not support directly accessing elements of a set by index because
 {{< /alert >}}
 
 - `null` - a value that represents absence or omission. `null` is most useful in conditional expressions, so you can dynamically omit an argument if a condition isn't met.
-
-{{< alert "circle-info" >}}
-`Strings`, `numbers`, and `bools` are sometimes called <font color=#EB4925>primitive types</font>. `Lists`/`tuples` and `maps`/`objects` are sometimes called <font color=#EB4925>complex types</font>, <font color=#EB4925>structural types</font>, or <font color=#EB4925>collection types</font>.
-{{< /alert >}}
 
 <font color=#EBAC25><i>More info:</i></font> [Types and Values](https://developer.hashicorp.com/terraform/language/expressions/types)
 ## Strings and Templates
