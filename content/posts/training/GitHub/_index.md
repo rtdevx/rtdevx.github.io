@@ -9,9 +9,9 @@ date = '2025-12-01'
 - GitHub adds cloud hosting, pull requests, issues, and collaboration tools.
 - Together, they power open-source development and large-scale project management.
 
-| <font color=#EB4925>External Resources</font> » |                                                                             |                                                                           |
-| ----------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [GitHub.com](https://github.com)                | [GitHub Actions official Documentation](https://docs.github.com/en/actions) | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) |
+| <font color=#EB4925>External Resources</font> »                             |                                                                           |                                  |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------- |
+| [GitHub Actions official Documentation](https://docs.github.com/en/actions) | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) | [GitHub.com](https://github.com) |
 
 
 
