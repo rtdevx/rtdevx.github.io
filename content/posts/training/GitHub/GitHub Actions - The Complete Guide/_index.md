@@ -5,6 +5,6 @@ summary = 'Learnings from **Maximilian Schwarzmüller**’s "_GitHub Actions - T
 date = '2025-12-02'
 +++
 
-{{< disclaimer_gh_actions_schwarzmueller.html >}}
+{{< disclaimer_gh_actions_schwarzmueller >}}
 
 
