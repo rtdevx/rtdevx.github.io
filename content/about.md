@@ -45,7 +45,7 @@ My toolkit includes:
 | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **🧭 Agile**                        | `Jira`<br>Agile delivery and Jira project design and automation, SharePoint and Confluence (collaboration and documentation).                                                                      |
 | **☁️ Cloud Platforms**              | `AWS`  <br>Designing and managing scalable, high-performance cloud environments to support dynamic workloads.                                                                                      |
-| **🔧 DevOps Tools**                 | `GitHub Actions`, `AWS CodePipeline`, `AWS CodeBuild`<br>Streamlining CI/CD pipelines by integrating testing, monitoring, and security tools to maintain high code quality and system performance. |
+| **🔧 DevOps Tools**                 | `AWS CodePipeline`, `AWS CodeBuild`, `GitHub Actions`<br>Streamlining CI/CD pipelines by integrating testing, monitoring, and security tools to maintain high code quality and system performance. |
 | **📜 Infrastructure as Code (IaC)** | `Ansible`, `Terraform` <br>Automating the provisioning and management of infrastructure, ensuring consistency, reliability, and scalability across deployments.                                    |
 | **🖥️ Systems Administration**      | `Linux`, `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                                                   |
 
