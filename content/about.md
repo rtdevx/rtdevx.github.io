@@ -57,7 +57,7 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 - 🏅 **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}})) 
 - 🏅 **Terraform Associate** ([HCTA0-003]({{< ref "tags/hcta0-003" >}}))
-- [GitHub Actions]({{< ref "training/github/github-actions---the-complete-guide" >}})
+- [GitHub Actions]({{< ref "posts/training/github/github-actions---the-complete-guide" >}})
 ## Selected code samples
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
