@@ -245,6 +245,12 @@ jobs:
         run: echo "${{ toJSON(github) }}"
 ```
 
+{{< alert "circle-info" >}}
+**GitHub Actions contexts** are useful for **accessing information about the workflow run**, such as the event that triggered it, repository details, and environment variables. 
+
+Common use cases include <font color=#C7EB25>conditionally executing steps based on event types</font>, <font color=#C7EB25>managing secrets securely</font>, and <font color=#C7EB25>customizing workflows based on the context of the job</font> or steps.
+{{< /alert >}}
+
 <font color=#EBAC25><i>More:</i></font> [GitHub Actions Contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts)
 ## Skipping workflow runs
 {{< lead >}}
