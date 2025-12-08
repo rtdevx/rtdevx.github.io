@@ -156,6 +156,14 @@ jobs:
         run: echo "Deploying..."
 ```
 
+{{< alert "circle-info" >}}
+By default, **Pull Requests based on Forks do NOT trigger a workflow**.
+
+**Reason:** Everyone can fork & open pull requests. Malicious workflow runs & excess cost could be caused.
+
+<font color=#EB4925>First-time contributors must be approved manually.</font>
+{{< /alert >}}
+
 <font color=#EBAC25><i>More info:</i></font> 
 - [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax)
