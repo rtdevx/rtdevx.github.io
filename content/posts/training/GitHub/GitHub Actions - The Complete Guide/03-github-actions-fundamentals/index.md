@@ -131,6 +131,8 @@ flowchart TD
   D -->|Every job has a Runner| B[Job]
 {{< /mermaid >}}
 
+<font color=#EBAC25><i>More:</i></font> [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners)
+
 ---
 ## >> Sources <<
 
