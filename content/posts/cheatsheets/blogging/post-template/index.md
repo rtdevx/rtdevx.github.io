@@ -155,14 +155,13 @@ Referenced text[^Ref1] (word!).
 </body>
 </html>
 {{< /highlight >}}
-
 ## Mermaid - Diagrams and Flowcharts
 
-https://jpanther.github.io/congo/samples/diagrams-flowcharts/
-https://jpanther.github.io/congo/docs/shortcodes/#mermaid
-https://mermaid.js.org
-https://mermaid.js.org/syntax/architecture.html
-https://mermaidviewer.com/
+- https://jpanther.github.io/congo/samples/diagrams-flowcharts/
+- https://jpanther.github.io/congo/docs/shortcodes/#mermaid
+- https://mermaid.js.org
+- https://mermaid.js.org/syntax/architecture.html
+- https://mermaidviewer.com/
 ## 🖫 PowerShell string replace
 
 ```PowerShell
