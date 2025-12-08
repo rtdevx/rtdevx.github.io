@@ -54,12 +54,8 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 {{< /alert >}}
 ## Trainings and Certifications
 
-- **AWS Certified Cloud Practitioner** 
-
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7778f07e-79e9-467c-af5a-19928d4efd08" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
-- **Terraform Associate** HCTA0-003 
-	- badge ID:
+- **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}}))
+- **Terraform Associate** (HCTA0-003)
 ## Selected code samples
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
