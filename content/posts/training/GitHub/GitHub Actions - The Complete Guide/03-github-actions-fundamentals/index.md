@@ -174,9 +174,9 @@ By default, **Pull Requests based on Forks do NOT trigger a workflow**.
 ## Job Runners
 
 {{< lead >}}
-[Runners](https://docs.github.com/en/actions/concepts/runners) are the <font color=#EBAC25>machines that execute jobs in a GitHub Actions workflow</font>. For example, a runner can clone your repository locally, install testing software, and then run commands that evaluate your code.
+[Runners](https://docs.github.com/en/actions/concepts/runners) are the <font color=#EBAC25>machines that execute jobs in a GitHub Actions workflow</font>. For example, a **runner** can clone your repository locally, install testing software, and then run commands that evaluate your code.
 
-GitHub provides runners that you can use to run your jobs, or you can [host your own runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
+ℹ️ GitHub provides runners that you can use to run your jobs, or you can [host your own runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
 {{< /lead >}}
 
 {{< mermaid >}}
