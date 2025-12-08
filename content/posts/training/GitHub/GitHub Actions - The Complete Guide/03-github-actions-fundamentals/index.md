@@ -111,6 +111,7 @@ You can configure your [workflows]({{< ref "#-workflows" >}}) to run when *speci
 | `on: schedule`            | Workflow is scheduled                     |
 <ins><i>Example:</i></ins>
 
+📄 _File:_ .github/workflows/04-01-exercise.yml
 ```YAML
 name: 04-01 - Exercise - Events
 on:
@@ -130,6 +131,28 @@ on:
       # developer-1
     paths-ignore:
       - '.github/workflows/*'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output event data
+        run: echo "${{ toJSON(github.event) }}"
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          cd 04-react-exercise
+          npm ci
+      - name: Test code
+        run: |
+          cd 04-react-exercise
+          npm run test
+      - name: Build code
+        run: |
+          cd 04-react-exercise
+          npm run build
+      - name: Deploy project
+        run: echo "Deploying..."
 ```
 
 <font color=#EBAC25><i>More info:</i></font> [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
