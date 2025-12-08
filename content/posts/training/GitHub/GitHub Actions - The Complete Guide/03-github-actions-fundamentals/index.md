@@ -44,7 +44,7 @@ flowchart TD
 - Triggered upon [Events]({{< ref "03-github-actions-fundamentals/#events-workflow-triggers" >}})
 ### 🔧 Jobs
 
-- Define a **Runner** (execution environment - machine / operating system to execute the steps)
+- Define a [Runner](https://docs.github.com/en/actions/concepts/runners) (execution environment / operating system to execute the steps)
 - Contain one or more [Steps]({{< ref "03-github-actions-fundamentals/#-steps" >}})
 - Run in parallel (default) or sequential
 - Can be conditional
@@ -78,6 +78,18 @@ jobs:
       - name: Print goodbye
         run: echo "Done - bye!"
 ```
+
+ℹ️ If you need to run multiple shell commands, you can easily do so by adding the pipe symbol (`|`) as a value after the `run:` key:
+
+```YAML
+    steps:
+      - name: Print greeting
+        run: | 
+	        echo "Hello World!"
+	        echo "Hello Solar System!"
+```
+
+This will run both commands in one step.
 ## Events (Workflow Triggers)
 
 {{< lead >}}
@@ -92,6 +104,7 @@ _More:_ [Events that trigger workflows](https://docs.github.com/en/actions/refer
 ## >> Sources <<
 
 - [GitHub Event Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
+- [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners)
 
 - [GitHub Actions billing](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
 - [Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
