@@ -52,14 +52,6 @@ My toolkit includes:
 {{< alert "github">}}
 Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page for more details.
 {{< /alert >}}
-## CV Download
-
-<center>
-{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}
-📜 Download CV
-{{< /button >}}
-</center>
-
 ## Trainings and Certifications
 
 - AWS Certified Cloud Practitioner (badge ID: 7778f07e-79e9-467c-af5a-19928d4efd08)
@@ -69,6 +61,13 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
 - **GitHub:** [https://github.com/rtdevx/homelab/tree/main/ansible/site](https://github.com/rtdevx/homelab/tree/main/ansible/site) (contains Ansible playbooks that build Kubernetes cluster (K3s), installing Load Balancer (HAProxy) for K3s User to connect to the Kubernetes Control Plane Server and Agent Nodes.)
+## CV Download
+
+<center>
+{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}
+📜 Download CV
+{{< /button >}}
+</center>
 
 ## Contact
 
