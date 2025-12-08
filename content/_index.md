@@ -9,7 +9,7 @@ My name is Rob and I am an experienced IT professional.
  -->
 
 My thoughts and learnings about:<br />
-***DevOps***, ***Agile***, [AWS,]({{< ref "categories/aws" >}}) [Linux,]({{< ref "categories/linux" >}}) [Ansible,]({{< ref "tags/ansible" >}}) [Terraform,]({{< ref "tags/terraform" >}}) [Containers]({{< ref "categories/containers" >}}), [Network]({{< ref "categories/networking" >}})
+[**DevOps**,]({{< ref "categories/devops" >}}) [AWS,]({{< ref "categories/aws" >}}) [Linux,]({{< ref "categories/linux" >}}) [Ansible,]({{< ref "tags/ansible" >}}) [Terraform,]({{< ref "tags/terraform" >}}) [Containers]({{< ref "categories/containers" >}}), [Network]({{< ref "categories/networking" >}})
 
 <!--
 [Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | [Trainings and Certifications]({{< ref "/posts/training" >}}) | [Productivity]({{< ref "/categories/productivity" >}})
@@ -50,5 +50,5 @@ I am also interested in tools and techniques that help me increasing my [product
 -->
 
 {{< button href="about" target="_self" >}}
-» <b><font color=#EB4925>About</font></b> «
+» <b>About</b> «
 {{< /button >}}
