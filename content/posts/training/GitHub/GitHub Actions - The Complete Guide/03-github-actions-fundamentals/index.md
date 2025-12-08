@@ -22,4 +22,4 @@ categories:
 
 ## >> Disclaimer <<
 
-{{< disclaimer_tf_certified_assoc003 >}}
+{{< disclaimer_gh_actions_schwarzmueller >}}
