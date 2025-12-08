@@ -156,7 +156,7 @@ jobs:
         run: echo "Deploying..."
 ```
 
-{{< alert "circle-info" >}}
+{{< alert "triangle-exclamation" >}}
 By default, **Pull Requests based on Forks do NOT trigger a workflow**.
 
 **Reason:** Everyone can fork & open pull requests. Malicious workflow runs & excess cost could be caused.
