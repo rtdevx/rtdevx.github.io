@@ -131,6 +131,10 @@ flowchart TD
   D -->|Every job has a Runner| B[Job]
 {{< /mermaid >}}
 
+{{< alert "circle-info" >}}
+<b><font color=#EB4925>IMPORTANT:</font></b> Every job gets its own runner - it's own Virtual Machine that's totally isolated from other machines and jobs!
+{{< /alert >}}
+
 <font color=#EBAC25><i>More:</i></font> [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners)
 
 ---
