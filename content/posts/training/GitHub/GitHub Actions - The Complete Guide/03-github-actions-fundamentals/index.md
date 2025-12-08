@@ -56,7 +56,7 @@ flowchart TD
 - Can be conditional
 
 {{< alert "circle-info" >}}
-**GitHub Actions: Availability & Pricing**
+**GitHub Actions: <font color=#EBAC25>Availability & Pricing</font>**
 
 In **public repositories**, you can use GitHub Actions for **free**. For **private repositories**, **only a certain amount of monthly usage is available for free** - extra usage on top must be paid.
 
