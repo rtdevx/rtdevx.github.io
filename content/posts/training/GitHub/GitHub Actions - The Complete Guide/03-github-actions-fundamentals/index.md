@@ -189,11 +189,11 @@ jobs:
 ---
 ## >> Sources <<
 
-- [GitHub Event Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
-- [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners)
-- [GitHub Actions billing](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
+- [GitHub Event Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) - to indicate when to run (`on:`).
+- [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners) - execution environment / operating system to execute the steps.
+- [GitHub Actions billing](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions) - GitHub Actions billing information.
 - [Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
-- [GitHub Actions Contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts)
+- [GitHub Actions Contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts) - get metadata from GitHub about the job and environment where actions run. Useful for outputs and investigating issues.
 ## >> Disclaimer <<
 
 {{< disclaimer_gh_actions_schwarzmueller >}}
