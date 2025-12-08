@@ -110,13 +110,32 @@ You can configure your [workflows]({{< ref "#-workflows" >}}) to run when *speci
 | `on: repository_dispatch` | REST API request triggers workflow        |
 | `on: schedule`            | Workflow is scheduled                     |
 <font color=#EBAC25><i>And many more:</i></font> [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
+## Job Runners
+
+{{< lead >}}
+[Runners](https://docs.github.com/en/actions/concepts/runners) are the <font color=#EBAC25>machines that execute jobs in a GitHub Actions workflow</font>. For example, a runner can clone your repository locally, install testing software, and then run commands that evaluate your code.
+
+GitHub provides runners that you can use to run your jobs, or you can [host your own runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
+{{< /lead >}}
+
+{{< mermaid >}}
+flowchart TD
+  A[Workflow] --> B[Job]
+  B --> C[Steps]
+  C -->|Steps execute on the Runner| D[
+  Runner 
+  - Server that runs the job
+  - GitHub provides Ubuntu Linux, Windows & macOS Runners
+  - You can also host and use your own runner
+  ]
+  D -->|Every jon has a Runner| B[Job]
+{{< /mermaid >}}
 
 ---
 ## >> Sources <<
 
 - [GitHub Event Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 - [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners)
-
 - [GitHub Actions billing](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
 - [Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
 ## >> Disclaimer <<
