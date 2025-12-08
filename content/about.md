@@ -54,9 +54,10 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 {{< /alert >}}
 ## Trainings and Certifications
 
-- **AWS Certified Cloud Practitioner** (badge ID: 7778f07e-79e9-467c-af5a-19928d4efd08)
-- **Terraform Associate** HCTA0-003 (badge ID: )
-
+- **AWS Certified Cloud Practitioner** 
+	- badge ID: 7778f07e-79e9-467c-af5a-19928d4efd08
+- **Terraform Associate** HCTA0-003 
+	- badge ID:
 ## Selected code samples
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
