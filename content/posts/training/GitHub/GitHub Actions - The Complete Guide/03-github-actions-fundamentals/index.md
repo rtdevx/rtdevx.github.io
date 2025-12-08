@@ -50,10 +50,18 @@ flowchart TD
 - Can be conditional
 ### 👣 Steps
 
-- Execute a **shell script** or an **Action**
+- Execute a **shell script**, **command** or an **Action**
 - Can use custom or third-party actions
 - Steps are executed in order
 - Can be conditional
+
+{{< alert "circle-info" >}}
+In **public repositories**, you can use GitHub Actions for **free**. For **private repositories**, **only a certain amount of monthly usage is available for free** - extra usage on top must be paid.
+
+The exact quotas and payment details depend on your GitHub plan, a detailed summary can be found here: [https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
+
+If you can't find an "Actions" tab in your GitHub repository, you can should enable them as described here: [https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
+{{< /alert >}}
 ## Events (Workflow Triggers)
 
 {{< lead >}}
