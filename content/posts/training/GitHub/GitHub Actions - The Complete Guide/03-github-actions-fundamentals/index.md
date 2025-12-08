@@ -156,6 +156,7 @@ Find information about **contexts** available in GitHub Actions workflows, inclu
 |`matrix`|`object`|Contains the matrix properties defined in the workflow that apply to the current job. For more information, see [`matrix` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#matrix-context).|
 |`needs`|`object`|Contains the outputs of all jobs that are defined as a dependency of the current job. For more information, see [`needs` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#needs-context).|
 |`inputs`|`object`|Contains the inputs of a reusable or manually triggered workflow. For more information, see [`inputs` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#inputs-context).|
+
 The following example demonstrates how these different types of variables can be used together in a job:
 
 ```YAML
