@@ -13,7 +13,7 @@ categories:
   - CI/CD
 ---
 {{< lead >}}
-In **GitHub Actions**, [workflows]({{< ref "03-github-actions-fundamentals/#-workflows" >}}) are automated processes that consist of [Jobs]({{< ref "03-github-actions-fundamentals/#-jobs" >}}) and [Steps]({{< ref "03-github-actions-fundamentals/#-steps" >}}). Jobs are collections of steps that run in a specific environment, while steps are individual tasks executed sequentially within a job, allowing for organized automation of tasks like building, testing, and deploying code.
+In **GitHub Actions**, [workflows]({{< ref "#-workflows" >}}) are automated processes that consist of [Jobs]({{< ref "#-jobs" >}}) and [Steps]({{< ref "#-steps" >}}). Jobs are collections of steps that run in a specific environment, while steps are individual tasks executed sequentially within a job, allowing for organized automation of tasks like building, testing, and deploying code.
 {{< /lead >}}
 ## Workflows, Jobs & Steps
 
@@ -44,7 +44,7 @@ flowchart TD
 - Triggered upon [Events]({{< ref "03-github-actions-fundamentals/#events-workflow-triggers" >}})
 ### 🔧 Jobs
 
-- Define a **Runner** (execution environment)
+- Define a **Runner** (execution environment - machine / operating system to execute the steps)
 - Contain one or more [Steps]({{< ref "03-github-actions-fundamentals/#-steps" >}})
 - Run in parallel (default) or sequential
 - Can be conditional
@@ -57,7 +57,7 @@ flowchart TD
 ## Events (Workflow Triggers)
 
 {{< lead >}}
-You can configure your [workflows]({{< ref "03-github-actions-fundamentals/#-workflows" >}}) to run when specific activity on GitHub happens, at a scheduled time, or when an event outside of GitHub occurs.
+You can configure your [workflows]({{< ref "#-workflows" >}}) to run when specific activity on GitHub happens, at a scheduled time, or when an event outside of GitHub occurs.
 {{< /lead >}}
 
 
