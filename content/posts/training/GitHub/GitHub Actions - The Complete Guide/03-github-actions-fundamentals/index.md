@@ -109,6 +109,7 @@ You can configure your [workflows]({{< ref "#-workflows" >}}) to run when *speci
 | `on: workflow_dispatch`   | Manually trigger workflow                 |
 | `on: repository_dispatch` | REST API request triggers workflow        |
 | `on: schedule`            | Workflow is scheduled                     |
+
 <ins><i>Example:</i></ins>
 
 📄 _File:_ .github/workflows/04-01-exercise.yml
