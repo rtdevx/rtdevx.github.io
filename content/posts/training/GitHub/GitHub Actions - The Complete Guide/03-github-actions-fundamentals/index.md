@@ -25,6 +25,8 @@ flowchart TD
     A[Workflow 1] --> B[Job 1]
     B --> C[Step 1]
     B --> D[Step 2]
+    A[Workflow 1] --> C[Job 2]
+    C --> D[Step 1]
 
     %% Workflow 2
     E[Workflow 2] --> F[Job 1]
