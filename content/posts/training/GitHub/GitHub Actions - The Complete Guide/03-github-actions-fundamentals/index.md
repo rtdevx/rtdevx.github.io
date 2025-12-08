@@ -28,7 +28,6 @@ flowchart TD
     %% Workflow 2
     E[Workflow 2] --> F[Job 1]
     E --> I[Job 2]
-    F[Job 1] --> I[Job 2]
 
     %% Steps for Job 1
     F --> G[Step 1]
