@@ -9,7 +9,11 @@ My name is Rob and I am an experienced IT professional.
  -->
 
 My thoughts and learnings about:<br />
-[DevOps]({{< ref "categories/devops" >}}), [AWS]({{< ref "categories/aws" >}}), [Linux]({{< ref "categories/linux" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/devops" >}}), [Containers]({{< ref "categories/containers" >}}), [Network]({{< ref "categories/networking" >}})
+<!--
+[DevOps]({{< ref "categories/devops" >}}) » [AWS]({{< ref "categories/aws" >}}), [Linux]({{< ref "categories/linux" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/devops" >}}), [Containers]({{< ref "categories/containers" >}}), [Network]({{< ref "categories/networking" >}})
+-->
+
+[DevOps]({{< ref "categories/devops" >}}) » [AWS]({{< ref "categories/aws" >}}), [IaC]({{< ref "categories/iac" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/devops" >}}), [Containers]({{< ref "categories/containers" >}}), [Linux]({{< ref "categories/linux" >}}), [Network]({{< ref "categories/networking" >}})
 
 <!--
 [Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | [Trainings and Certifications]({{< ref "/posts/training" >}}) | [Productivity]({{< ref "/categories/productivity" >}})
