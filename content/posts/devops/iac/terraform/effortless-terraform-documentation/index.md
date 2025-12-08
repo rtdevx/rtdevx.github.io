@@ -38,7 +38,7 @@ Original GitHub actions file can be found in the project's GitHub repository, he
 
 📄 _File:_ `.github/workflows/documentation.yml`
 
-```shell
+```YAML
 # INFO: Generate Terraform modules documentation in various formats
 # ? https://terraform-docs.io/
 # ? https://github.com/terraform-docs/terraform-docs/
