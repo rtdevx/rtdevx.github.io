@@ -124,11 +124,11 @@ flowchart TD
   B --> C[Steps]
   C -->|Steps execute on the Runner| D[
   Runner 
-  - Server that runs the job
-  - GitHub provides Ubuntu Linux, Windows & macOS Runners
-  - You can also host and use your own runner
+  \- Server that runs the job
+  \- GitHub provides Ubuntu Linux, Windows & macOS Runners
+  \- You can also host and use your own runner
   ]
-  D -->|Every jon has a Runner| B[Job]
+  D -->|Every job has a Runner| B[Job]
 {{< /mermaid >}}
 
 ---
