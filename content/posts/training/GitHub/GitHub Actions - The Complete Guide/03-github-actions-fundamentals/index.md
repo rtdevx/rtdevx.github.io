@@ -3,7 +3,7 @@ title: "GitHub Actions: Fundamentals"
 date: 2025-12-03
 description: Understanding the Key Elements, working with Workflows, Jobs & Steps, building an Example Workflow.
 summary: Understanding the Key Elements, working with Workflows, Jobs & Steps, building an Example Workflow.
-draft: false
+draft: true
 tags:
   - Git
   - GitHub
