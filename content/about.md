@@ -84,4 +84,4 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 **No rights reserved. For educational and informational purposes only.
 {{< /badge >}}
 
-[^Ref1]only ones that are [documented on this website]({{< ref "posts/training" >}})
+[^Ref1]:Only ones that are [documented on this website]({{< ref "posts/training" >}})
