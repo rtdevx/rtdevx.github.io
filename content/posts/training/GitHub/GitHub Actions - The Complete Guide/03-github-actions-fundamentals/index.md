@@ -12,13 +12,13 @@ categories:
   - DevOps
   - CI/CD
 ---
-{{< lead >}}
-In **GitHub Actions**, [workflows]({{< ref "#-workflows" >}}) are automated processes that consist of [Jobs]({{< ref "#-jobs" >}}) and [Steps]({{< ref "#-steps" >}}). Jobs are collections of steps that run in a specific environment, while steps are individual tasks executed sequentially within a job, allowing for organized automation of tasks like building, testing, and deploying code.
-{{< /lead >}}
 
 | <font color=#EB4925>External Resources</font> »                             |                                                                           |                                  |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------- |
 | [GitHub Actions official Documentation](https://docs.github.com/en/actions) | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) | [GitHub.com](https://github.com) |
+{{< lead >}}
+In **GitHub Actions**, [workflows]({{< ref "#-workflows" >}}) are automated processes that consist of [Jobs]({{< ref "#-jobs" >}}) and [Steps]({{< ref "#-steps" >}}). Jobs are collections of steps that run in a specific environment, while steps are individual tasks executed sequentially within a job, allowing for organized automation of tasks like building, testing, and deploying code.
+{{< /lead >}}
 ## Workflows, Jobs & Steps
 
 {{< mermaid >}}
