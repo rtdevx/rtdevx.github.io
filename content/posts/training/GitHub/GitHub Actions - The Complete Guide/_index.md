@@ -13,4 +13,9 @@ date = '2025-12-02'
 
 {{< disclaimer_gh_actions_schwarzmueller >}}
 
+| <font color=#EB4925>External Resources</font> »                             |                                                                           |                                  |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------- |
+| [GitHub Actions official Documentation](https://docs.github.com/en/actions) | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) | [GitHub.com](https://github.com) |
+
+
 
