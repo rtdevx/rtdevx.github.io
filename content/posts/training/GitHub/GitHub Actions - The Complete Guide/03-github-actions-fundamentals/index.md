@@ -155,7 +155,9 @@ jobs:
         run: echo "Deploying..."
 ```
 
-<font color=#EBAC25><i>More info:</i></font> [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
+<font color=#EBAC25><i>More info:</i></font> 
+- [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
+- [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax)
 ## Job Runners
 
 {{< lead >}}
@@ -236,6 +238,7 @@ jobs:
 ## >> Sources <<
 
 - [GitHub Event Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) - to indicate when to run (`on:`).
+- [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax) - Workflow syntax. 
 - [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners) - execution environment / operating system to execute the steps.
 - [GitHub Actions billing](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions) - GitHub Actions billing information.
 - [Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
