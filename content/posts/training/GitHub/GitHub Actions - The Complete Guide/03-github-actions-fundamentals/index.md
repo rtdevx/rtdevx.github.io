@@ -13,7 +13,8 @@ categories:
   - CI/CD
 ---
 {{< lead >}}
-Understanding the Key Elements of **GitHub Actions**, working with *Workflows*, *Jobs* & *Steps*.
+Understanding the Key Elements of **GitHub Actions**:
+- *Workflows*, *Jobs* & *Steps*.
 {{< /lead >}}
 ## Workflows, Jobs & Steps
 
@@ -54,7 +55,6 @@ flowchart TD
 - Can use custom or third-party actions
 - Steps are executed in order
 - Can be conditional
-
 
 
 
