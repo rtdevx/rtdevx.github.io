@@ -138,7 +138,7 @@ flowchart TD
 <font color=#EBAC25><i>More:</i></font> [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners)
 ## Contexts reference
 {{< lead >}}
-Find information about **contexts** available in GitHub Actions workflows, including available properties, access methods, and usage examples.
+Find information about **contexts** (metadata) available in GitHub Actions workflows, including available properties, access methods, and usage examples.
 {{< /lead >}}
 ### [Available contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#available-contexts)
 
@@ -168,6 +168,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Deploying to production server on branch $GITHUB_REF"
+```
+
+Another example demonstrates how to output a GitHub context in JSON format:
+
+📄 _File:_ .github/workflows/03-output.yml
+```YAML
+name: 03 - Output information
+on: workflow_dispatch
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output GitHub context
+        run: echo "${{ toJSON(github) }}"
 ```
 
 <font color=#EBAC25><i>More:</i></font> [GitHub Actions Contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts)
