@@ -3,6 +3,8 @@
 name: GitHub Pages Hugo
 
 on:
+  schedule:
+    - cron: "00 6 * * *"  
   push:
     branches:
       - main
