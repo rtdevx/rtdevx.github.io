@@ -55,7 +55,9 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 ## Trainings and Certifications
 
 - **AWS Certified Cloud Practitioner** 
-	- badge ID: 7778f07e-79e9-467c-af5a-19928d4efd08
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7778f07e-79e9-467c-af5a-19928d4efd08" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
 - **Terraform Associate** HCTA0-003 
 	- badge ID:
 ## Selected code samples
