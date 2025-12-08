@@ -16,6 +16,9 @@ categories:
 You can configure your workflows to run when specific activity on GitHub happens, at a scheduled time, or when an event outside of GitHub occurs.
 {{< /lead >}}
 
+| <font color=#EB4925>External Resources</font> »                             |                                                                           |                                  |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------- |
+| [GitHub Actions official Documentation](https://docs.github.com/en/actions) | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) | [GitHub.com](https://github.com) |
 <font color=#EBAC25><i>More info:</i></font> [GitHub Event Triggers](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) 
 
 
