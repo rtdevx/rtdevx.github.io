@@ -242,6 +242,29 @@ jobs:
 ```
 
 <font color=#EBAC25><i>More:</i></font> [GitHub Actions Contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts)
+## Skipping workflow runs
+{{< lead >}}
+You can skip workflow runs triggered by the `push` and `pull_request` events by including a command in your commit message.
+{{< /lead >}}
+
+Workflows that would otherwise be triggered using `on: push` or `on: pull_request` won't be triggered if you add any of the following strings to the commit message in a push, or the HEAD commit of a pull request:
+
+- `[skip ci]`
+- `[ci skip]`
+- `[no ci]`
+- `[skip actions]`
+- `[actions skip]`
+
+Alternatively, you can add a `skip-checks` trailer to your commit message. The trailers section should be included at the end of your commit message and be preceded by two empty lines. If you already have other trailers in your commit message, `skip-checks` should be last. You can use either of the following:
+
+- `skip-checks:true`
+- `skip-checks: true`
+
+{{< alert "circle-info" >}}
+This can be useful for minor code changes (updating comments, etc.). When making minor changes, Workflows may be skipped if necessary.
+{{< /alert >}}
+
+<font color=#EBAC25><i>More:</i></font> [Skipping workflow runs](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs)
 
 ---
 ## >> Sources <<
@@ -252,6 +275,7 @@ jobs:
 - [GitHub Actions billing](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions) - GitHub Actions billing information.
 - [Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
 - [GitHub Actions Contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts) - get metadata from GitHub about the job and environment where actions run. Useful for outputs and investigating issues.
+- [Skipping workflow runs](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs) - skipping workflow runs with appropriate commit message. Useful for minor code changes (updating comments, etc.)
 ## >> Disclaimer <<
 
 {{< disclaimer_gh_actions_schwarzmueller >}}
