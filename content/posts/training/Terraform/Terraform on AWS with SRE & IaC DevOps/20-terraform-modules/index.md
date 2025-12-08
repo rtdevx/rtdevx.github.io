@@ -5,8 +5,8 @@ description: Develop local, re-usable Terraform Modules.
 summary: Develop local, re-usable Terraform Modules.
 draft: false
 tags:
-  - Assoc003
   - Terraform
+  - HCTA0-003
 categories:
   - DevOps
   - IaC

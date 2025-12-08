@@ -5,8 +5,8 @@ description: Building AWS VPC using Terraform.
 summary: Building AWS VPC using Terraform.
 draft: false
 tags:
-  - Assoc003
   - Terraform
+  - HCTA0-003
 categories:
   - DevOps
   - IaC

@@ -5,8 +5,8 @@ description: A word or two about Terraform blocks, resources, Terraform Registry
 summary: A word or two about Terraform blocks, resources, Terraform Registry.
 draft: false
 tags:
-  - Assoc003
   - Terraform
+  - HCTA0-003
 categories:
   - DevOps
   - IaC

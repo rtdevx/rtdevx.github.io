@@ -5,8 +5,8 @@ description: Terraform must store state about your managed infrastructure and co
 summary: Terraform must store state about your managed infrastructure and configuration...
 draft: false
 tags:
-  - Assoc003
   - Terraform
+  - HCTA0-003
 categories:
   - DevOps
   - IaC

@@ -5,8 +5,8 @@ description: The resource block defines a piece of infrastructure and specifies 
 summary: The resource block defines a piece of infrastructure and specifies the settings for Terraform to create it with.
 draft: false
 tags:
-  - Assoc003
   - Terraform
+  - HCTA0-003
 categories:
   - DevOps
   - IaC

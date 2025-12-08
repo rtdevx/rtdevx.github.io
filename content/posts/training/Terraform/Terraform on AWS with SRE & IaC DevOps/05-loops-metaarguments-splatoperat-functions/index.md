@@ -5,8 +5,8 @@ description: Terraform Loops, Meta-Arguments, Splat Operator and Functions.
 summary: Terraform Loops, Meta-Arguments, Splat Operator and Functions.
 draft: false
 tags:
-  - Assoc003
   - Terraform
+  - HCTA0-003
 categories:
   - DevOps
   - IaC

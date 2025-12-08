@@ -5,8 +5,8 @@ description: Terraform Variables, Datasources and Output Values.
 summary: Terraform Variables, Datasources and Output Values.
 draft: false
 tags:
-  - Assoc003
   - Terraform
+  - HCTA0-003
 categories:
   - DevOps
   - IaC

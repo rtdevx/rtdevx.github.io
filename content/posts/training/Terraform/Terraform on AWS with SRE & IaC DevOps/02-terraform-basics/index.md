@@ -5,8 +5,8 @@ description: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-att
 summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.
 draft: false
 tags:
-  - Assoc003
   - Terraform
+  - HCTA0-003
 categories:
   - DevOps
   - IaC

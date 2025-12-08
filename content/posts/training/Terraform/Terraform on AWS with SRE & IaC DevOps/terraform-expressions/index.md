@@ -5,8 +5,8 @@ description: Terraform expressions are used to compute values within Terraform c
 summary: Terraform expressions are used to compute values within Terraform configurations, allowing for dynamic and flexible infrastructure management.
 draft: false
 tags:
-  - Assoc003
   - Terraform
+  - HCTA0-003
 categories:
   - DevOps
   - IaC
