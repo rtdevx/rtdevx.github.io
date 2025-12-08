@@ -40,21 +40,29 @@ Understanding the Key Elements of **GitHub Actions**, working with *Workflows*, 
 {{< mermaid >}}
 flowchart TD
     subgraph Repo[Git Repository]
-    %% Workflow 1
-    A[Workflow 1] --> B[Job 1]
-    B --> C[Step 1]
-    B --> D[Step 2]
+        %% Event triggers
+        T1[Event: push] --> A[Workflow 1]
+        T2[Event: workflow_run (after Workflow 1)] --> E[Workflow 2]
 
-    %% Workflow 2
-    E[Workflow 2] --> F[Job 1]
-    E --> I[Job 2]
+        %% Workflow 1
+        A --> B[Job 1]
+        B --> C[Step 1]
+        B --> D[Step 2]
 
-    %% Steps for Job 1
-    F --> G[Step 1]
-    F --> H[Step 2]
+        %% Workflow 2
+        E --> F[Job 1]
+        E --> I[Job 2]
 
-    %% Steps for Job 2
-    I --> J[Step 1]
+        %% Steps for Job 1
+        F --> G[Step 1]
+        F --> H[Step 2]
+
+        %% Steps for Job 2
+        I --> J[Step 1]
+        I --> K[Step 2]
+
+        %% Dependency between workflows
+        A --> E
     end
 {{< /mermaid >}}
 
