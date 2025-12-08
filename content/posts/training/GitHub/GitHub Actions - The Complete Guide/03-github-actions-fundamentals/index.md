@@ -96,9 +96,20 @@ This will run both commands in one step.
 You can configure your [workflows]({{< ref "#-workflows" >}}) to run when *specific activity* on GitHub happens, *at a scheduled time*, or when an *event outside of GitHub* occurs.
 {{< /lead >}}
 
-
-
-_More:_ [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
+| Repository related (`on:`) | Comment                                   |
+| -------------------------- | ----------------------------------------- |
+| push                       | Pushing a commit                          |
+| pull_request               | Pull request action (opened, closed, ...) |
+| create                     | A branch or tag was created               |
+| fork                       | Repository was forked                     |
+| issues                     | An issues was opened, deleted, ...        |
+| issue_comment              | Issue or pull request comment action      |
+| watch                      | Repository was starred                    |
+| **Other (`on:`)**          |                                           |
+| workflow_dispatch          | Manually trigger workflow                 |
+| repository_dispatch        | REST API request triggers workflow        |
+| schedule                   | Workflow is scheduled                     |
+_And many more:_ [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 
 ---
 ## >> Sources <<
