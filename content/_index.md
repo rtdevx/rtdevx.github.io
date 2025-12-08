@@ -50,5 +50,5 @@ I am also interested in tools and techniques that help me increasing my [product
 -->
 
 {{< button href="about" target="_self" >}}
-» <font color=#EBAC25>About</font> «
+» <font color=#C7EB25>About</font> «
 {{< /button >}}
