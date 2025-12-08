@@ -28,6 +28,7 @@ flowchart TD
     %% Workflow 2
     E[Workflow 2] --> F[Job 1]
     E --> I[Job 2]
+    F --> I[Job 2]
 
     %% Steps for Job 1
     F --> G[Step 1]
@@ -35,8 +36,6 @@ flowchart TD
 
     %% Steps for Job 2
     I --> J[Step 1]
-    I --> K[Step 2]
-    I --> L[Step 3]
     end
 {{< /mermaid >}}
 ### ⚙️ Workflows
