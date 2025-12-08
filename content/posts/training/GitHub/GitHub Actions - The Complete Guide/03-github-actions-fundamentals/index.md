@@ -136,6 +136,40 @@ flowchart TD
 {{< /alert >}}
 
 <font color=#EBAC25><i>More:</i></font> [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners)
+## Contexts reference
+{{< lead >}}
+Find information about **contexts** available in GitHub Actions workflows, including available properties, access methods, and usage examples.
+{{< /lead >}}
+### [Available contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#available-contexts)
+
+|Context name|Type|Description|
+|---|---|---|
+|`github`|`object`|Information about the workflow run. For more information, see [`github` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#github-context).|
+|`env`|`object`|Contains variables set in a workflow, job, or step. For more information, see [`env` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#env-context).|
+|`vars`|`object`|Contains variables set at the repository, organization, or environment levels. For more information, see [`vars` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#vars-context).|
+|`job`|`object`|Information about the currently running job. For more information, see [`job` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#job-context).|
+|`jobs`|`object`|For reusable workflows only, contains outputs of jobs from the reusable workflow. For more information, see [`jobs` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#jobs-context).|
+|`steps`|`object`|Information about the steps that have been run in the current job. For more information, see [`steps` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#steps-context).|
+|`runner`|`object`|Information about the runner that is running the current job. For more information, see [`runner` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#runner-context).|
+|`secrets`|`object`|Contains the names and values of secrets that are available to a workflow run. For more information, see [`secrets` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#secrets-context).|
+|`strategy`|`object`|Information about the matrix execution strategy for the current job. For more information, see [`strategy` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#strategy-context).|
+|`matrix`|`object`|Contains the matrix properties defined in the workflow that apply to the current job. For more information, see [`matrix` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#matrix-context).|
+|`needs`|`object`|Contains the outputs of all jobs that are defined as a dependency of the current job. For more information, see [`needs` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#needs-context).|
+|`inputs`|`object`|Contains the inputs of a reusable or manually triggered workflow. For more information, see [`inputs` context](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#inputs-context).|
+The following example demonstrates how these different types of variables can be used together in a job:
+
+```YAML
+name: CI
+on: push
+jobs:
+  prod-check:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to production server on branch $GITHUB_REF"
+```
+
+<font color=#EBAC25><i>More:</i></font> [GitHub Actions Contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts)
 
 ---
 ## >> Sources <<
@@ -144,6 +178,7 @@ flowchart TD
 - [GitHub Actions Runners](https://docs.github.com/en/actions/concepts/runners)
 - [GitHub Actions billing](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
 - [Managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
+- [GitHub Actions Contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts)
 ## >> Disclaimer <<
 
 {{< disclaimer_gh_actions_schwarzmueller >}}
