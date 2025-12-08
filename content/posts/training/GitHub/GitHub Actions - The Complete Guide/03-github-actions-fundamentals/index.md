@@ -109,7 +109,30 @@ You can configure your [workflows]({{< ref "#-workflows" >}}) to run when *speci
 | `on: workflow_dispatch`   | Manually trigger workflow                 |
 | `on: repository_dispatch` | REST API request triggers workflow        |
 | `on: schedule`            | Workflow is scheduled                     |
-<font color=#EBAC25><i>And many more:</i></font> [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
+<ins><i>Example:</i></ins>
+
+```YAML
+name: 04-01 - Exercise - Events
+on:
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main # main
+      - 'dev-*' # dev-new dev-this-is-new
+      - 'feat/**' # feat/new feat/new/button
+  workflow_dispatch:
+  push:
+    branches:
+      - main # main
+      - 'dev-*' # dev-new dev-this-is-new
+      - 'feat/**' # feat/new feat/new/button
+      # developer-1
+    paths-ignore:
+      - '.github/workflows/*'
+```
+
+<font color=#EBAC25><i>More info:</i></font> [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 ## Job Runners
 
 {{< lead >}}
