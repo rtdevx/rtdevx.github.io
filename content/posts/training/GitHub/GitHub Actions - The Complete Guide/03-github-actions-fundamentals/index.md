@@ -13,8 +13,8 @@ categories:
   - CI/CD
 ---
 {{< lead >}}
-Understanding the Key Elements of **GitHub Actions**:
-- *Workflows*, *Jobs* & *Steps*.
+Understanding the Key Elements of **GitHub Actions**:<br/>
+*Workflows*, *Jobs* & *Steps*.
 {{< /lead >}}
 ## Workflows, Jobs & Steps
 
@@ -41,12 +41,12 @@ flowchart TD
 ### ⚙️ Workflows
 
 - Attached to GitHub repository
-- Contain one or more [Jobs]({{< ref "#jobs" >}})
-- Triggered upon **Events**
+- Contain one or more [Jobs]({{< ref "#-jobs" >}})
+- Triggered upon [Events]({{< ref "#events-workflow-triggers" >}})
 ### 🔧 Jobs
 
 - Define a **Runner** (execution environment)
-- Contain one or more **Steps**
+- Contain one or more [Steps]({{< ref "#-steps" >}})
 - Run in parallel (default) or sequential
 - Can be conditional
 ### 👣 Steps
