@@ -131,7 +131,7 @@ on:
       - 'feat/**' # feat/new feat/new/button
       # developer-1
     paths-ignore:
-      - '.github/workflows/*'
+      - '.github/workflows/*' # If files in .github/workflows change, workflow will not run
 jobs:
   deploy:
     runs-on: ubuntu-latest
