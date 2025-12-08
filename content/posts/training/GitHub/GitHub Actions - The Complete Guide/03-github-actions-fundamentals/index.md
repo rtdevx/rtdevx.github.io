@@ -35,6 +35,8 @@ flowchart TD
 
     %% Steps for Job 2
     I --> J[Step 1]
+    I --> K[Step 2]
+    I --> L[Step 3]
     end
 {{< /mermaid >}}
 ### ⚙️ Workflows
