@@ -1,6 +1,6 @@
 # .github/workflows/hugo.yml
 
-name: GitHub Pages
+name: GitHub Pages Hugo
 
 on:
   push:
