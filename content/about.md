@@ -53,10 +53,11 @@ My toolkit includes:
 Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page for more details.
 {{< /alert >}}
 ## Trainings and Certifications
-\*only the ones that are [documented on this website]({{< ref "posts/training" >}})
+\*only ones that are [documented on this website]({{< ref "posts/training" >}})
 
-- **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}}))
-- **Terraform Associate** ([HCTA0-003]({{< ref "tags/hcta0-003" >}}))
+- 🏅 **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}})) 
+- 🏅 **Terraform Associate** ([HCTA0-003]({{< ref "tags/hcta0-003" >}}))
+- [GitHub Actions]({{< ref "training/github/github-actions---the-complete-guide" >}})
 ## Selected code samples
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
