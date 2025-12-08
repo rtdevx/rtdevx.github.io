@@ -15,15 +15,17 @@ My thoughts and learnings about:<br />
 [Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | [Trainings and Certifications]({{< ref "/posts/training" >}}) | [Productivity]({{< ref "/categories/productivity" >}})
 -->
 
+<!--
 
 { [Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) }<br> 
 { [Trainings and Certifications]({{< ref "/posts/training" >}}) }<br>
 { [Productivity]({{< ref "/categories/productivity" >}}) }<br>
 
-
-<!--
-📑[Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | 🏅[Trainings and Certifications]({{< ref "/posts/training" >}}) | 📚[Productivity]({{< ref "/categories/productivity" >}})
 -->
+
+
+📑[Cheat Sheets]({{< ref "/posts/cheatsheets" >}}) | 🏅[Trainings and Certifications]({{< ref "/posts/training" >}}) | 📚[Productivity]({{< ref "/categories/productivity" >}})
+
 
 <!--
 
