@@ -59,12 +59,16 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 - 🏅 **Terraform Associate** ([HCTA0-003]({{< ref "tags/hcta0-003" >}}))
 
 {{< mermaid >}}
+---
+config:
+  theme: 'base'
+---
 timeline
-
     2025 : Ansible (Udemy)
          : 🏅AWS Certified Cloud Practitioner
          : 🏅Terraform Associate
          : GitHub Actions (Udemy)
+    2026 : AWS Certified Solutions Architect - Associate
 {{< /mermaid >}}
 ## Selected code samples[^Ref2]
 
