@@ -180,7 +180,7 @@ By default, **Pull Requests based on Forks do NOT trigger a workflow**.
 {{< /lead >}}
 
 {{< mermaid >}}
-flowchart TD
+flowchart LR
   A[Workflow] --> B[Job]
   B --> C[Steps]
   C -->|Steps execute on the Runner| D[
