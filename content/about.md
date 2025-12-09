@@ -62,8 +62,7 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 {{< mermaid >}}
 timeline
-        section 2025
-          Ansible : Ultimate Ansible Bootcamp by School of Devops® : Unofficial Guide to EX407 Redhat Certified Specialist in Ansible Automation : 📖 Udemy
+        section 2025          
           AWS Certified Cloud Practitioner : AWS Certified Cloud Practitioner (CLF-C02) : 🏅Certified
           Terraform : HashiCorp Certified Terraform Associate (003) (HCTA0-003) : 🏅Certified
           GitHub Actions : GitHub Actions - The Complete Guide : 📖 Udemy
