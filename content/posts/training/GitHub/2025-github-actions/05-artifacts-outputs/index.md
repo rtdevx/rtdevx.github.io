@@ -25,13 +25,17 @@ categories:
 flowchart LR
 B@{ shape: braces, label: "Example: Build app" }
 D@{ shape: braces, label: "Example: App binary, website files, etc" }
-  A(fa:fa-cog Job):::jobclass --> B
-  classDef jobclass fill:#EB4925
-  A a1@--> C(Output Assets)
+
+classDef redclass fill:#EB4925
+classDef yellowclass stroke:#EBAC25
+classDef greenclass stroke:#C7EB25
+
+  A(fa:fa-cog Job):::redclass --> B
+  A a1@--> C(Output Assets):::yellowclass
   a1@{ animate: true }
   C --> D
-  C -->|Via GitHub UI or REST API| E(Download & Use Manually)
-  C -->|Via Action| F(Download & Use in other Jobs)
+  C -->|Via GitHub UI or REST API| E(Download & Use Manually):::greenclass
+  C -->|Via Action| F(Download & Use in other Jobs):::greenclass
 {{< /mermaid >}}
 
 
