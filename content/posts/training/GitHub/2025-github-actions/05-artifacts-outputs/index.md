@@ -24,7 +24,14 @@ categories:
 {{< mermaid >}}
 ---
 config:
-  theme: 'forest'
+  theme: 'base'
+  themeVariables:
+    primaryColor: '#EB4925'
+    primaryTextColor: '#fff'
+    primaryBorderColor: '#7C0000'
+    lineColor: '#F8B229'
+    secondaryColor: '#EBAC25'
+    tertiaryColor: '#C7EB25'
 ---
 flowchart TD
   A(fa:fa-cog Job) --> B[Example: Build app]
