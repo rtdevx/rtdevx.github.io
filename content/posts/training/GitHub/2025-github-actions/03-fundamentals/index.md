@@ -22,7 +22,7 @@ In **GitHub Actions**, [workflows]({{< ref "#-workflows" >}}) are automated proc
 ## Workflows, Jobs & Steps
 
 {{< mermaid >}}
-flowchart TD
+flowchart LR
     subgraph Repo[Git Repository]
     %% Workflow 1
     A[Workflow 1] --> B[Job 1]
@@ -180,7 +180,7 @@ By default, **Pull Requests based on Forks do NOT trigger a workflow**.
 {{< /lead >}}
 
 {{< mermaid >}}
-flowchart LR
+flowchart TD
   A[Workflow] --> B[Job]
   B --> C[Steps]
   C -->|Steps execute on the Runner| D[
