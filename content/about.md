@@ -60,8 +60,9 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 {{< mermaid >}}
 timeline
-    title History of Social Media Platform
-    2025 : 🏅AWS Certified Cloud Practitioner
+    title Trainings and Certifications Timeline
+    2025 : Ansible (Udemy)
+         : 🏅AWS Certified Cloud Practitioner
          : 🏅Terraform Associate
          : GitHub Actions (Udemy)
 {{< /mermaid >}}
