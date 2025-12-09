@@ -54,6 +54,8 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 {{< /alert >}}
 ## Trainings and Certifications[^Ref1]
 
+[^Ref1]:Only ones that are [documented on this website]({{< ref "posts/training" >}})
+
 <!--
 - 🏅 **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}})) 
 - [GitHub Actions - The Complete Guide]({{< ref "posts/training/github/2025-github-actions" >}})
@@ -71,13 +73,16 @@ timeline
     2026 : AWS Certified Solutions Architect - Associate (🏅IN PROGRESS)
 {{< /mermaid >}}
 
-[^Ref1]:Only ones that are [documented on this website]({{< ref "posts/training" >}})
+|                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7778f07e-79e9-467c-af5a-19928d4efd08" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> | <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7778f07e-79e9-467c-af5a-19928d4efd08" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> |
+
 ## Selected code samples[^Ref2]
+
+[^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
 - **GitHub:** [https://github.com/rtdevx/homelab/tree/main/ansible/site](https://github.com/rtdevx/homelab/tree/main/ansible/site) (contains Ansible playbooks that build Kubernetes cluster (K3s), installing Load Balancer (HAProxy) for K3s User to connect to the Kubernetes Control Plane Server and Agent Nodes.)
-
-[^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
 ## CV Download
 
 <center>
