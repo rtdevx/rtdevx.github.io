@@ -219,7 +219,7 @@ Comment2@{ shape: braces, label: "By default jobs are being executed in paralel 
   W:::redclasss --> Job1:::yellowclass
   %% Step1
   Job1 Job1_Step1_Route@--> Step1Job1:::greenclass
-  Step1Job1 Job1_Step1_Step2_Route@--> Step2Job1:::greenclass  
+  Step1Job1 Job1_Step1_Step2_Route@-->|Explicit dependency:<br/> Step2 `needs: Step1`| Step2Job1:::greenclass  
   Job1_Step1_Route@{ animate: true }  
   Job1_Step1_Step2_Route@{ animate: true }
   %% Step2
