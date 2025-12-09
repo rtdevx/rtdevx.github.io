@@ -178,32 +178,7 @@ By default, **Pull Requests based on Forks do NOT trigger a workflow**.
 
 ℹ️ GitHub provides runners that you can use to run your jobs, or you can [host your own runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
 {{< /lead >}}
-<!--
-{{< mermaid >}}
-flowchart TD
 
-E@{ shape: braces, label: "**Runner:**
-- Server that runs the job
-- GitHub provides Ubuntu Linux, Windows & macOS Runners
-- You can also host and use your own runner" }
-
-classDef redclass fill:#EB4925
-classDef yellowclass stroke:#EBAC25
-classDef greenclass stroke:#C7EB25
-
-  A[**Workflow**]:::redclass a1@--> B[**Job**]:::yellowclass
-  a1@{ curve: linear }
-  B b1@--> C[**Steps**]:::yellowclass
-  b1@{ curve: linear }
-  b1@{ animate: true }  
-  C c1@-->|Steps execute on the Runner| D[(**Runner**)]:::greenclass
-  c1@{ curve: linear }
-  c1@{ animate: true }  
-  D d1@-->|Every job has a Runner| B[**Job**]
-  d1@{ curve: linear }
-   D ~~~ E
-{{< /mermaid >}}
--->
 {{< mermaid >}}
 flowchart TD
 
