@@ -66,7 +66,8 @@ timeline
          : 🏅AWS Certified Cloud Practitioner (CLF-C02)
          : 🏅HashiCorp Certified Terraform Associate (HCTA0-003)
          : GitHub Actions - The Complete Guide (Udemy)
-    2026 : AWS Certified Solutions Architect - Associate (🚧 IN PROGRESS)
+         : Docker - 40 Practical Demos for DevOps Learners (Udemy)
+    2026 : AWS Certified Solutions Architect - Associate (🏅IN PROGRESS)
 {{< /mermaid >}}
 ## Selected code samples[^Ref2]
 
