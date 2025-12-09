@@ -181,17 +181,28 @@ By default, **Pull Requests based on Forks do NOT trigger a workflow**.
 
 {{< mermaid >}}
 flowchart TD
-  A[**Workflow**] --> B[**Job**]
-  B --> C[**Steps**]
-  C -->|Steps execute on the Runner| D[
+
+classDef redclass fill:#EB4925
+classDef yellowclass stroke:#EBAC25
+classDef greenclass stroke:#C7EB25
+
+  A[**Workflow**]:::redclass a1@--> B[**Job**]:::yellowclass
+  a1@{ curve: linear }
+  B b1@--> C[**Steps**]:::yellowclass
+  b1@{ curve: linear }
+  b1@{ animate: true }  
+  C c1@-->|Steps execute on the Runner| D[
   **Runner** 
   \- Server that runs the job
   \- GitHub provides Ubuntu Linux, Windows & macOS Runners
   \- You can also host and use your own runner
-  ]
-  D -->|Every job has a Runner| B[**Job**]
+  ]:::yellowclass
+  c1@{ curve: linear }
+  c1@{ animate: true }  
+  D d1@-->|Every job has a Runner| B[**Job**]
+  d1@{ curve: linear }
 {{< /mermaid >}}
-
+<br/>
 {{< alert "triangle-exclamation" >}}
 <b><font color=#EB4925>IMPORTANT</font></b>: Every job gets its own runner - it's own Virtual Machine that's totally isolated from other machines and jobs! For that reason, `runs-on:` must be defined for each job.
 {{< /alert >}}
