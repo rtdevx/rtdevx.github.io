@@ -22,7 +22,7 @@ In **GitHub Actions**, [workflows]({{< ref "#-workflows" >}}) are automated proc
 ## Workflows, Jobs & Steps
 
 {{< mermaid >}}
-flowchart LR
+flowchart TD
     subgraph Repo[Git Repository]
     %% Workflow 1
     A[Workflow 1] --> B[Job 1]
