@@ -25,7 +25,8 @@ categories:
 flowchart LR
 B@{ shape: braces, label: "Example: Build app" }
 D@{ shape: braces, label: "Example: App binary, website files, etc" }
-  A(fa:fa-cog Job) --> B
+  A(fa:fa-cog Job):::jobclass --> B
+  classDef jobclass fill:#EB4925
   A a1@--> C(Output Assets)
   a1@{ animate: true }
   C --> D
