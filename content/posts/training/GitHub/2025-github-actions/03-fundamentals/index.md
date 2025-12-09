@@ -208,7 +208,7 @@ Runner1@{ shape: db, label: "**Runner1**" }
 Runner2@{ shape: db, label: "**Runner2**" }
 
 %% Comments
-Comment1@{ shape: braces, label: "**Runner:**
+Comment1@{ shape: braces, label: "<b><u>Runner:</b></u>
 - Server that runs the job
 - GitHub provides Ubuntu Linux, Windows & macOS Runners
 - You can also host and use your own runner" }
