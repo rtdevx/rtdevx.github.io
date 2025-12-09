@@ -24,7 +24,7 @@ categories:
 {{< mermaid >}}
 flowchart TD
   A[Job] --> B[Example: Build app]
-  A --> C[Output Asset(s)]
+  A --> C[Output Assets]
   C --> D[Example: App binary, website files, etc]
   C -->|Via GitHub UI or REST API| E[Download & Use Manually]
   C -->|Via Action| F[Download & Use in other Jobs]
