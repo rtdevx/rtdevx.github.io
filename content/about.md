@@ -58,13 +58,13 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 - [GitHub Actions - The Complete Guide]({{< ref "posts/training/github/2025-github-actions" >}})
 - 🏅 **Terraform Associate** ([HCTA0-003]({{< ref "tags/hcta0-003" >}}))
 
-{{ mermaid }}
+{{< mermaid >}}
 timeline
     title History of Social Media Platform
     2025 : 🏅AWS Certified Cloud Practitioner
          : 🏅Terraform Associate
          : GitHub Actions (Udemy)
-{{ /mermaid }}
+{{< /mermaid >}}
 ## Selected code samples[^Ref2]
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
