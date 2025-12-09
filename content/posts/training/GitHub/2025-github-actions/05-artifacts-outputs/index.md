@@ -26,7 +26,8 @@ flowchart LR
 B@{ shape: braces, label: "Example: Build app" }
 D@{ shape: braces, label: "Example: App binary, website files, etc" }
   A(fa:fa-cog Job) --> B
-  A --> C(Output Assets)
+  A a1@--> C(Output Assets)
+  a1@{ animate: true }
   C --> D
   C -->|Via GitHub UI or REST API| E(Download & Use Manually)
   C -->|Via Action| F(Download & Use in other Jobs)
