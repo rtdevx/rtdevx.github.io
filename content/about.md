@@ -55,7 +55,7 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 ## Trainings and Certifications[^Ref1]
 
 - 🏅 **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}})) 
-- [GitHub Actions - The Complete Guide]({{< ref "posts/training/github/github-actions---the-complete-guide" >}})
+- [GitHub Actions - The Complete Guide]({{< ref "posts/training/github/2025-github-actions" >}})
 - 🏅 **Terraform Associate** ([HCTA0-003]({{< ref "tags/hcta0-003" >}}))
 ## Selected code samples
 
