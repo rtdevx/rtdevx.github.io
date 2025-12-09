@@ -213,7 +213,7 @@ Comment1@{ shape: braces, label: "**Runner:**
 - GitHub provides Ubuntu Linux, Windows & macOS Runners
 - You can also host and use your own runner" }
 
-Comment2@{ shape: braces, label: "By default jobs are being executed in paralel (see **Job 2**). Dependencies can be specified explicitly (see **Job 1**)." }
+Comment2@{ shape: braces, label: "By default jobs are being executed in paralel (see **Job 2**).<br/>Dependencies can be specified explicitly (see **Job 1**)." }
 
 %% Job1
   W:::redclasss --> Job1:::yellowclass
@@ -245,7 +245,9 @@ Comment2@{ shape: braces, label: "By default jobs are being executed in paralel 
   Runner2 ~~~ Comment1
   Runner2 ~~~ Comment2
 {{< /mermaid >}}
+
 <br/>
+
 {{< alert "triangle-exclamation" >}}
 <b><font color=#EB4925>IMPORTANT</font></b>: Every job gets its own runner - it's own Virtual Machine that's totally isolated from other machines and jobs! For that reason, `runs-on:` must be defined for each job.
 {{< /alert >}}
