@@ -163,6 +163,7 @@ Referenced text[^Ref1] (word!).
 - https://mermaid.js.org/syntax/architecture.html
 - https://mermaidviewer.com/
 - https://docs.mermaidchart.com/mermaid-oss/config/theming.html#customizing-themes-with-themevariables - colors
+- https://mermaid.js.org/syntax/flowchart.html?id=flowcharts-basic-syntax - basic syntax and shapes
 ## 🖫 PowerShell string replace
 
 ```PowerShell
