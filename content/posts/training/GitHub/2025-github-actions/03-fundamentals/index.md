@@ -178,7 +178,7 @@ By default, **Pull Requests based on Forks do NOT trigger a workflow**.
 
 ℹ️ GitHub provides runners that you can use to run your jobs, or you can [host your own runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
 {{< /lead >}}
-
+<!--
 {{< mermaid >}}
 flowchart TD
 
@@ -202,6 +202,38 @@ classDef greenclass stroke:#C7EB25
   D d1@-->|Every job has a Runner| B[**Job**]
   d1@{ curve: linear }
    D ~~~ E
+{{< /mermaid >}}
+-->
+{{< mermaid >}}
+flowchart TD
+
+E@{ shape: braces, label: "**Runner:**
+- Server that runs the job
+- GitHub provides Ubuntu Linux, Windows & macOS Runners
+- You can also host and use your own runner" }
+
+classDef redclass fill:#EB4925
+classDef redclasss stroke:#EB4925
+classDef yellowclass stroke:#EBAC25
+classDef greenclass stroke:#C7EB25
+
+  A[**Workflow**]:::redclasss a1@--> B1[**Job1**]:::yellowclass
+  B1 b1@--> C1[**Step1**]:::greenclass
+  C1 c2@--> C2[**Step2**]:::greenclass  
+  b1@{ animate: true }  
+  c2@{ animate: true }   
+  C2 c1@-->|Steps execute on the Runner| D1[(**Runner**)]:::redclass
+  c1@{ animate: true }  
+  D1 -.-|Every job has a Runner| B1
+
+  A[**Workflow**]:::redclasss a1@--> B2[**Job2**]:::yellowclass  
+  B2 b2@--> C3[**Step1**]:::greenclass
+  b2@{ animate: true }
+  C3 c3@-->|Steps execute on the Runner| D2[(**Runner**)]:::redclass
+  c3@{ animate: true }
+  D2 -.- |Every job has a Runner| B2  
+
+  D2 ~~~ E
 {{< /mermaid >}}
 <br/>
 {{< alert "triangle-exclamation" >}}
