@@ -182,6 +182,11 @@ By default, **Pull Requests based on Forks do NOT trigger a workflow**.
 {{< mermaid >}}
 flowchart TD
 
+E@{ shape: braces, label: "**Runner:**
+- Server that runs the job
+- GitHub provides Ubuntu Linux, Windows & macOS Runners
+- You can also host and use your own runner" }
+
 classDef redclass fill:#EB4925
 classDef yellowclass stroke:#EBAC25
 classDef greenclass stroke:#C7EB25
@@ -191,16 +196,12 @@ classDef greenclass stroke:#C7EB25
   B b1@--> C[**Steps**]:::yellowclass
   b1@{ curve: linear }
   b1@{ animate: true }  
-  C c1@-->|Steps execute on the Runner| D[
-  **Runner** 
-  \- Server that runs the job
-  \- GitHub provides Ubuntu Linux, Windows & macOS Runners
-  \- You can also host and use your own runner
-  ]:::yellowclass
+  C c1@-->|Steps execute on the Runner| D[(**Runner**)]:::greenclass
   c1@{ curve: linear }
   c1@{ animate: true }  
   D d1@-->|Every job has a Runner| B[**Job**]
   d1@{ curve: linear }
+   D ~~~ E
 {{< /mermaid >}}
 <br/>
 {{< alert "triangle-exclamation" >}}
