@@ -60,10 +60,10 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 {{< mermaid >}}
 timeline
-    title Trainings and Certifications Timeline
+    title
     2025 : Ansible (Udemy)
-         : 🏅**AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}}))
-         : 🏅**Terraform Associate** ([HCTA0-003]({{< ref "tags/hcta0-003" >}}))
+         : 🏅AWS Certified Cloud Practitioner
+         : 🏅Terraform Associate
          : GitHub Actions (Udemy)
 {{< /mermaid >}}
 ## Selected code samples[^Ref2]
