@@ -44,12 +44,12 @@ flowchart TD
 ### ⚙️ Workflows
 
 - Attached to GitHub repository
-- Contain one or more [Jobs]({{< ref "03-github-actions-fundamentals/#-jobs" >}})
-- Triggered upon [Events]({{< ref "03-github-actions-fundamentals/#events-workflow-triggers" >}})
+- Contain one or more [Jobs]({{< ref "03-fundamentals/#-jobs" >}})
+- Triggered upon [Events]({{< ref "03-fundamentals/#events-workflow-triggers" >}})
 ### 🔧 Jobs
 
 - Define a [Runner](https://docs.github.com/en/actions/concepts/runners) (execution environment / operating system to execute the steps)
-- Contain one or more [Steps]({{< ref "03-github-actions-fundamentals/#-steps" >}})
+- Contain one or more [Steps]({{< ref "03-fundamentals/#-steps" >}})
 - Run in parallel (default) or sequential
 - Can be conditional
 ### 👣 Steps
