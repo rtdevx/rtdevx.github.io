@@ -68,7 +68,6 @@ timeline
           Terraform : HashiCorp Certified Terraform Associate (003) (HCTA0-003) : 🏅Certified
           GitHub Actions : GitHub Actions - The Complete Guide : 📖 Udemy
           Docker : Docker - 40 Practical Demos for DevOps Learners : Master Dockerfiles, Docker Build, Docker Compose, Multi-Container Apps, and Multi-Stage Builds with Practical Demos : 📖 Udemy
-
         section 2026
           AWS Certified Solutions Architect : AWS Certified Solutions Architect Associate Certification (SAA-C03) : 🚧 IN PROGRESS
 {{< /mermaid >}}
