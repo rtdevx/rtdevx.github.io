@@ -22,6 +22,10 @@ categories:
 <font color=#EBAC25><i>More info:</i></font> [Store and share data with workflow artifacts](https://docs.github.com/en/actions/tutorials/store-and-share-data) 
 
 {{< mermaid >}}
+---
+config:
+  theme: 'forest'
+---
 flowchart TD
   A(fa:fa-cog Job) --> B[Example: Build app]
   A --> C(Output Assets)
