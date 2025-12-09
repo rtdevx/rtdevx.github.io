@@ -30,7 +30,7 @@ classDef redclass fill:#EB4925
 classDef yellowclass stroke:#EBAC25
 classDef greenclass stroke:#C7EB25
 
-  A(fa:fa-cog Job):::redclass --> B
+  A("fa:fa-cog Job"):::redclass --> B
   A a1@--> C(Output Assets):::yellowclass
   a1@{ animate: true }
   C --> D
