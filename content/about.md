@@ -61,15 +61,11 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 -->
 
 {{< mermaid >}}
-
-config:
-  theme: 'base'
-
 timeline
-    2025 : Ansible (Udemy)
+    2025 : Ultimate Ansible Bootcamp by School of Devops® (Udemy)
          : 🏅AWS Certified Cloud Practitioner
          : 🏅Terraform Associate
-         : GitHub Actions (Udemy)
+         : GitHub Actions - The Complete Guide (Udemy)
     2026 : AWS Certified Solutions Architect - Associate
 {{< /mermaid >}}
 ## Selected code samples[^Ref2]
