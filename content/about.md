@@ -69,10 +69,14 @@ timeline
          : Docker - 40 Practical Demos for DevOps Learners (Udemy)
     2026 : AWS Certified Solutions Architect - Associate (🏅IN PROGRESS)
 {{< /mermaid >}}
+
+[^Ref1]:Only ones that are [documented on this website]({{< ref "posts/training" >}})
 ## Selected code samples[^Ref2]
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
 - **GitHub:** [https://github.com/rtdevx/homelab/tree/main/ansible/site](https://github.com/rtdevx/homelab/tree/main/ansible/site) (contains Ansible playbooks that build Kubernetes cluster (K3s), installing Load Balancer (HAProxy) for K3s User to connect to the Kubernetes Control Plane Server and Agent Nodes.)
+
+[^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
 ## CV Download
 
 <center>
@@ -95,6 +99,3 @@ timeline
 
 **No rights reserved. For educational and informational purposes only.
 {{< /badge >}}
-
-[^Ref1]:Only ones that are [documented on this website]({{< ref "posts/training" >}})
-[^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
