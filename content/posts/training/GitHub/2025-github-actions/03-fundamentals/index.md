@@ -217,27 +217,31 @@ Comment2@{ shape: braces, label: "By default jobs are being executed in paralel 
 
 %% Job1
   W:::redclasss --> Job1:::yellowclass
-  Job1 Job1Step1Route@--> Step1Job1:::greenclass
-  Step1Job1 c2@--> Step2Job1:::greenclass  
-  Job1Step1Route@{ animate: true }  
-  c2@{ animate: true }   
-  Step2Job1 c1@-->|Steps execute on the Runner| Runner1:::redclass
-  c1@{ animate: true }  
+  %% Step1
+  Job1 Job1_Step1_Route@--> Step1Job1:::greenclass
+  Step1Job1 Job1_Step1_Step2_Route@--> Step2Job1:::greenclass  
+  Job1_Step1_Route@{ animate: true }  
+  Job1_Step1_Step2_Route@{ animate: true }
+  %% Step2
+  Step2Job1 Job1_Step2_Runner_Route@-->|Steps execute on the Runner| Runner1:::redclass
+  Job1_Step2_Runner_Route@{ animate: true }  
   Runner1 -.-|Every job has a Runner| Job1
 
 %% Job2
-  W --> Job2:::yellowclass  
-  Job2 b2@--> Step1Job2:::greenclass
-  b2@{ animate: true }
-  Step1Job2 c3@-->|Steps execute on the Runner| Runner2:::redclass
-  c3@{ animate: true }
+  W --> Job2:::yellowclass
+  %% Step1
+  Job2 Job2_Step1_Route@--> Step1Job2:::greenclass
+  Job2_Step1_Route@{ animate: true }
+  Step1Job2 Job2_Step1_Runner_Route@-->|Steps execute on the Runner| Runner2:::redclass
+  Job2_Step1_Runner_Route@{ animate: true }
   Runner2 -.- |Every job has a Runner| Job2 
+  %% Step2
+  Job2 Job2_Step2_Route@--> Step2Job2:::greenclass
+  Job2_Step2_Route@{ animate: true }
+  Step2Job2 Job2_Step2_Runner_Route@-->|Steps execute on the Runner| Runner2:::redclass
+  Job2_Step2_Runner_Route@{ animate: true }
 
-  Job2 b3@--> Step2Job2:::greenclass
-  b3@{ animate: true }
-  Step2Job2 c4@-->|Steps execute on the Runner| Runner2:::redclass
-  c4@{ animate: true }
-
+  %% Comments
   Runner2 ~~~ Comment1
   Runner2 ~~~ Comment2
 {{< /mermaid >}}
