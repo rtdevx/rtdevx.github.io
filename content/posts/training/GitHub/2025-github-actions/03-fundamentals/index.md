@@ -238,7 +238,7 @@ Comment2@{ shape: braces, label: "By default jobs are being executed in paralel 
   %% Step2
   Job2 Job2_Step2_Route@--> Step2Job2:::greenclass
   Job2_Step2_Route@{ animate: true }
-  Step2Job2 Job2_Step2_Runner_Route@-->|Steps execute on the Runner| Runner2:::redclass
+  Step2Job2 Job2_Step2_Runner_Route@-->|Steps execute on the Runner| Runner2
   Job2_Step2_Runner_Route@{ animate: true }
 
   %% Comments
