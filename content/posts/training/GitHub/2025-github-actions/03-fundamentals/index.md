@@ -180,35 +180,66 @@ By default, **Pull Requests based on Forks do NOT trigger a workflow**.
 {{< /lead >}}
 
 {{< mermaid >}}
-flowchart TD
+flowchart TB
 
-E@{ shape: braces, label: "**Runner:**
-- Server that runs the job
-- GitHub provides Ubuntu Linux, Windows & macOS Runners
-- You can also host and use your own runner" }
-
+%% Class Definitions
 classDef redclass fill:#EB4925
 classDef redclasss stroke:#EB4925
 classDef yellowclass stroke:#EBAC25
 classDef greenclass stroke:#C7EB25
 
-  A[**Workflow**]:::redclasss a1@--> B1[**Job1**]:::yellowclass
-  B1 b1@--> C1[**Step1**]:::greenclass
-  C1 c2@--> C2[**Step2**]:::greenclass  
-  b1@{ animate: true }  
+%% Workflows
+W@{ shape: doc, label: "**Workflow**" }
+
+%% Jobs
+Job1@{ shape: processes, label: "**Job1**" }
+Job2@{ shape: processes, label: "**Job2**" }
+
+%% Job1 Steps
+Step1Job1@{ shape: process, label: "**Step1**" }
+Step2Job1@{ shape: process, label: "**Step2**" }
+
+%% Job2 Steps
+Step1Job2@{ shape: process, label: "**Step1**" }
+Step2Job2@{ shape: process, label: "**Step2**" }
+
+%% Runners
+Runner1@{ shape: db, label: "**Runner1**" }
+Runner2@{ shape: db, label: "**Runner2**" }
+
+%% Comments
+Comment1@{ shape: braces, label: "**Runner:**
+- Server that runs the job
+- GitHub provides Ubuntu Linux, Windows & macOS Runners
+- You can also host and use your own runner" }
+
+Comment2@{ shape: braces, label: "By default jobs are being executed in paralel (see **Job 2**). Dependencies can be specified explicitly (see **Job 1**)." }
+
+%% Job1
+  W:::redclasss --> Job1:::yellowclass
+  Job1 Job1Step1Route@--> Step1Job1:::greenclass
+  Step1Job1 c2@--> Step2Job1:::greenclass  
+  Job1Step1Route@{ animate: true }  
   c2@{ animate: true }   
-  C2 c1@-->|Steps execute on the Runner| D1[(**Runner**)]:::redclass
+  Step2Job1 c1@-->|Steps execute on the Runner| Runner1:::redclass
   c1@{ animate: true }  
-  D1 -.-|Every job has a Runner| B1
+  Runner1 -.-|Every job has a Runner| Job1
 
-  A[**Workflow**]:::redclasss a1@--> B2[**Job2**]:::yellowclass  
-  B2 b2@--> C3[**Step1**]:::greenclass
+%% Job2
+  W --> Job2:::yellowclass  
+  Job2 b2@--> Step1Job2:::greenclass
   b2@{ animate: true }
-  C3 c3@-->|Steps execute on the Runner| D2[(**Runner**)]:::redclass
+  Step1Job2 c3@-->|Steps execute on the Runner| Runner2:::redclass
   c3@{ animate: true }
-  D2 -.- |Every job has a Runner| B2  
+  Runner2 -.- |Every job has a Runner| Job2 
 
-  D2 ~~~ E
+  Job2 b3@--> Step2Job2:::greenclass
+  b3@{ animate: true }
+  Step2Job2 c4@-->|Steps execute on the Runner| Runner2:::redclass
+  c4@{ animate: true }
+
+  Runner2 ~~~ Comment1
+  Runner2 ~~~ Comment2
 {{< /mermaid >}}
 <br/>
 {{< alert "triangle-exclamation" >}}
