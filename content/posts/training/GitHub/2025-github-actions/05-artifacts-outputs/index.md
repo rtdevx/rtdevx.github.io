@@ -3,7 +3,7 @@ title: "GitHub Actions: Job Artifacts & Outputs"
 date: 2025-11-04
 description: Job artifacts in GitHub Actions are files generated during a workflow run that can be stored and shared between jobs.
 summary: Job artifacts in GitHub Actions are files generated during a workflow run that can be stored and shared between jobs.
-draft: false
+draft: true
 tags:
   - Git
   - GitHub
@@ -22,23 +22,12 @@ categories:
 <font color=#EBAC25><i>More info:</i></font> [Store and share data with workflow artifacts](https://docs.github.com/en/actions/tutorials/store-and-share-data) 
 
 {{< mermaid >}}
----
-config:
-  theme: 'base'
-  themeVariables:
-    primaryColor: '#EB4925'
-    primaryTextColor: '#fff'
-    primaryBorderColor: '#7C0000'
-    lineColor: '#F8B229'
-    secondaryColor: '#EBAC25'
-    tertiaryColor: '#C7EB25'
----
 flowchart TD
-  A(fa:fa-cog Job) --> B[Example: Build app]
-  A --> C(Output Assets)
-  C --> D[Example: App binary, website files, etc]
-  C -->|Via GitHub UI or REST API| E(Download & Use Manually)
-  C -->|Via Action| F(Download & Use in other Jobs)
+  A(fa:fa-cog Job) --> B[Example: Build app]
+  A --> C(Output Assets)
+  C --> D[Example: App binary, website files, etc]
+  C -->|Via GitHub UI or REST API| E(Download & Use Manually)
+  C -->|Via Action| F(Download & Use in other Jobs)
 {{< /mermaid >}}
 
 
