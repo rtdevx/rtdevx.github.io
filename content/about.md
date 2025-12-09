@@ -62,6 +62,8 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 ---
 config:
   theme: 'base'
+  timeline:
+    disableMulticolor: true
 ---
 timeline
     2025 : Ansible (Udemy)
