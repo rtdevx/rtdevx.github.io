@@ -62,11 +62,15 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 {{< mermaid >}}
 timeline
-    2025 : Ultimate Ansible Bootcamp by School of Devops® (Udemy)
-         : 🏅AWS Certified Cloud Practitioner
-         : 🏅Terraform Associate
-         : GitHub Actions - The Complete Guide (Udemy)
-    2026 : AWS Certified Solutions Architect - Associate
+        section 2025
+          Ansible : Ultimate Ansible Bootcamp by School of Devops® : Unofficial Guide to EX407 Redhat Certified Specialist in Ansible Automation : 📖 Udemy
+          AWS Certified Cloud Practitioner : AWS Certified Cloud Practitioner (CLF-C02) : 🏅Certified
+          Terraform : HashiCorp Certified Terraform Associate (003) (HCTA0-003) : 🏅Certified
+          GitHub Actions : GitHub Actions - The Complete Guide : 📖 Udemy
+          Docker : Docker - 40 Practical Demos for DevOps Learners : Master Dockerfiles, Docker Build, Docker Compose, Multi-Container Apps, and Multi-Stage Builds with Practical Demos : 📖 Udemy
+
+        section 2026
+          AWS Certified Solutions Architect : AWS Certified Solutions Architect Associate Certification (SAA-C03) : 🚧 IN PROGRESS
 {{< /mermaid >}}
 ## Selected code samples[^Ref2]
 
