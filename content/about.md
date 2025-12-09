@@ -62,6 +62,7 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 
 {{< mermaid >}}
 timeline
+    2024 : Jenkins, From Zero To Hero - Become a DevOps Jenkins Master (Udemy)
     2025 : Ultimate Ansible Bootcamp by School of Devops® (Udemy)
          : 🏅AWS Certified Cloud Practitioner (CLF-C02)
          : 🏅HashiCorp Certified Terraform Associate (HCTA0-003)
