@@ -70,12 +70,11 @@ timeline
          : 🏅HashiCorp Certified Terraform Associate (HCTA0-003)
          : GitHub Actions - The Complete Guide (Udemy)
          : Docker - 40 Practical Demos for DevOps Learners (Udemy)
-    2026 : AWS Certified Solutions Architect - Associate (SAA-C03) (🏅IN PROGRESS)
+    2026 : AWS Certified Solutions Architect - Associate (SAA-C03) :🏅IN PROGRESS
 {{< /mermaid >}}
 
-|                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                       |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7778f07e-79e9-467c-af5a-19928d4efd08" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> | <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7778f07e-79e9-467c-af5a-19928d4efd08" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
