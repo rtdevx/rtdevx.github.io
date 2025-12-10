@@ -75,8 +75,7 @@ timeline
 |                                       **Issued:**<br/>September 12, 2025                                       |                                            **Issued:**<br/>December 10, 2025                                            |                                               **Issued:**<br/>🏅IN PROGRESS                                               |
 |                                      **Expires:**<br/>September 12, 2028                                       |                                           **Expires:**<br/>December 10, 2028                                            |                                                   **Expires:**<br/>TBC                                                    |
 
-[^Ref1]:Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
-[^Ref1]:
+[^Ref1]:Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/><br/>[AWS]({{< ref "categories/aws" >}}), [IaC]({{< ref "categories/iac" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/ci/cd" >}}), [Containers]({{< ref "categories/containers" >}}), [Linux]({{< ref "categories/linux" >}}), [Network]({{< ref "categories/networking" >}})
 
 |   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
 | :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
