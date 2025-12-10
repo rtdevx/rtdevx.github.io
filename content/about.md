@@ -68,7 +68,9 @@ timeline
         : AWS Certified Solutions Architect Associate (SAA-C03)
 {{< /mermaid >}}
 
+{{< badge >}}
 Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in: [AWS]({{< ref "categories/aws" >}}), [IaC]({{< ref "categories/iac" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/ci/cd" >}}), [Containers]({{< ref "categories/containers" >}}), [Linux]({{< ref "categories/linux" >}}), [Network]({{< ref "categories/networking" >}})
+{{< /badge >}}
 
 |                                        AWS Certified Cloud Practitioner                                        |                                         HashiCorp Certified Terraform Associate                                         |                                        AWS Certified Solutions Architect Associate                                        |
 | :------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
