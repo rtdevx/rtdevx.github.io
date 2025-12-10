@@ -73,7 +73,7 @@ timeline
 {{< /mermaid >}}
 
 
-<img src="./assets/creedly-clf-c02.png" width="45%"> <img src="./assets/creedly-clf-c02.png" width="45%">
+![](./assets/creedly-clf-c02.png)
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
