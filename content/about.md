@@ -75,14 +75,11 @@ timeline
 |  <font color=#C7EB25>Issuing Date:</font><br/>September 12, 2025   |  <font color=#C7EB25>Issuing Date:</font><br/>December 10, 2025   | <font color=#C7EB25>Issuing Date:</font><br/>🏅IN PROGRESS |
 | <font color=#EB4925>Expiration Date:</font><br/>September 12, 2028 | <font color=#EB4925>Expiration Date:</font><br/>December 10, 2028 |    <font color=#EB4925>Expiration Date:</font><br/>TBC     |
 
-{{< alert "circle-info">}}
+Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
 
-Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/>
-
-| [AWS]({{< ref "categories/aws" target=_self >}}) |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
-| :----------------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
-|     [CI/CD]({{< ref "categories/ci/cd" >}})      | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
-{{< /alert >}}
+|   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
+| :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
+| [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
@@ -91,7 +88,7 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 - **GitHub:** [https://github.com/rtdevx/homelab/tree/main/ansible/site](https://github.com/rtdevx/homelab/tree/main/ansible/site) (contains Ansible playbooks that build Kubernetes cluster (K3s), installing Load Balancer (HAProxy) for K3s User to connect to the Kubernetes Control Plane Server and Agent Nodes)
 
 {{< alert "github">}}
-Feel free to take look at my [GitHub page](https://github.com/rtdevx) for more code examples.
+Feel free to take look at [my GitHub page](https://github.com/rtdevx) for more code examples.
 {{< /alert >}}
 ## CV Download
 
