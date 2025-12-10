@@ -50,7 +50,7 @@ My toolkit includes:
 | **🖥️ Systems Administration**      | `Linux`, `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                |
 ## Trainings and Certifications[^Ref1]
 
-Only ones that are [documented on this website]({{< ref "posts/training" >}})
+[^Ref1]:Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/>[AWS]({{< ref "categories/aws" >}}), [IaC]({{< ref "categories/iac" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/ci/cd" >}}), [Containers]({{< ref "categories/containers" >}}), [Linux]({{< ref "categories/linux" >}}), [Network]({{< ref "categories/networking" >}})
 
 <!--
 - 🏅 **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}})) 
@@ -74,12 +74,12 @@ timeline
 |                                     [CLF-C02]({{< ref "tags/clf-c02" >}})                                      |                                        [HCTA0-003]({{< ref "tags/hcta0-003" >}})                                        |                                                          SAA-C03                                                          |
 |                                       **Issued:**<br/>September 12, 2025                                       |                                            **Issued:**<br/>December 10, 2025                                            |                                               **Issued:**<br/>🏅IN PROGRESS                                               |
 |                                      **Expires:**<br/>September 12, 2028                                       |                                           **Expires:**<br/>December 10, 2028                                            |                                                   **Expires:**<br/>TBC                                                    |
-
-[^Ref1]:Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/>[AWS]({{< ref "categories/aws" >}}), [IaC]({{< ref "categories/iac" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/ci/cd" >}}), [Containers]({{< ref "categories/containers" >}}), [Linux]({{< ref "categories/linux" >}}), [Network]({{< ref "categories/networking" >}})
-
+<!--
 |   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
 | :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
 | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
+-->
+
 ## Selected code samples
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
