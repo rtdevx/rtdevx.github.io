@@ -69,10 +69,11 @@ timeline
 {{< /mermaid >}}
 
 Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/><br/>
-<!--
-[AWS]({{< ref "categories/aws" >}}) | [IaC]({{< ref "categories/iac" >}}) | [Ansible]({{< ref "tags/ansible" >}}) | [Terraform]({{< ref "tags/terraform" >}}) | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}})
--->
 
+[AWS]({{< ref "categories/aws" >}}) | [IaC]({{< ref "categories/iac" >}}) | [Ansible]({{< ref "tags/ansible" >}}) | [Terraform]({{< ref "tags/terraform" >}}) | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}})
+
+
+<!--
 {{< button href="../categories/aws" target="_self" >}}  
 AWS
 {{< /button >}}
@@ -104,6 +105,7 @@ Linux
 {{< button href="../categories/networking" target="_self" >}}  
 Network
 {{< /button >}}
+-->
 
 |                                        AWS Certified Cloud Practitioner                                        |                                         HashiCorp Certified Terraform Associate                                         |                                        AWS Certified Solutions Architect Associate                                        |
 | :------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
