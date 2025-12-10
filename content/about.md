@@ -116,7 +116,6 @@ Network
 
 Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
 
-
 |   {{< button href="../categories/aws" target="_self" >}}  <br>AWS<br>{{< /button >}}   |        {{< button href="../categories/iac" target="_self" >}}  <br>IaC<br>{{< /button >}}        |  {{< button href="../tags/ansible" target="_self" >}}  <br>Ansible<br>{{< /button >}}  |   {{< button href="../tags/terraform" target="_self" >}}  <br>Terraform<br>{{< /button >}}    |
 | :------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
 | {{< button href="../categories/ci/cd" target="_self" >}}  <br>CI/CD<br>{{< /button >}} | {{< button href="../categories/containers" target="_self" >}}  <br>Containers<br>{{< /button >}} | {{< button href="../categories/linux" target="_self" >}}  <br>Linux<br>{{< /button >}} | {{< button href="../categories/networking" target="_self" >}}  <br>Network<br>{{< /button >}} |
