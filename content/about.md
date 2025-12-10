@@ -88,7 +88,9 @@ Ansible
 {{< button href="../tags/terraform" target="_self" >}}  
 Terraform
 {{< /button >}}
+
 <br/>
+
 {{< button href="../categories/ci/cd" target="_self" >}}  
 CI/CD
 {{< /button >}}
