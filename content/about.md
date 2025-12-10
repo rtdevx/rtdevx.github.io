@@ -77,7 +77,7 @@ timeline
 |                 ![](../assets/creedly-clf-c02.png)                 |               ![](../assets/creedly-hcta0-003.png)                |             ![](../assets/creedly-saa-c03.png)             |
 |               [CLF-C02]({{< ref "tags/clf-c02" >}})                |             [HCTA0-003]({{< ref "tags/hcta0-003" >}})             |                          SAA-C03                           |
 |  <font color=#C7EB25>Issuing Date:</font><br/>September 12, 2025   |  <font color=#C7EB25>Issuing Date:</font><br/>December 10, 2025   | <font color=#C7EB25>Issuing Date:</font><br/>🏅IN PROGRESS |
-| <font color=#EB4925>Expiration Date:</font><br/>September 12, 2028 | <font color=#EB4925>Expiration Date:</font><br/>December 10, 2027 |    <font color=#EB4925>Expiration Date:</font><br/>TBC     |
+| <font color=#EB4925>Expiration Date:</font><br/>September 12, 2028 | <font color=#EB4925>Expiration Date:</font><br/>December 10, 2028 |    <font color=#EB4925>Expiration Date:</font><br/>TBC     |
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
