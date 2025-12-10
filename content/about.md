@@ -88,7 +88,7 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 - **GitHub:** [https://github.com/rtdevx/homelab/tree/main/ansible/site](https://github.com/rtdevx/homelab/tree/main/ansible/site) (contains Ansible playbooks that build Kubernetes cluster (K3s), installing Load Balancer (HAProxy) for K3s User to connect to the Kubernetes Control Plane Server and Agent Nodes)
 
 {{< alert "github">}}
-Feel free to take look at [my GitHub page](https://github.com/rtdevx) for more code examples.
+Feel free to take look at [my GitHub page](https://github.com/rtdevx) for more...
 {{< /alert >}}
 ## CV Download
 
