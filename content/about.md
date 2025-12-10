@@ -76,24 +76,31 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 {{< button href="../categories/aws" target="_self" >}}  
 AWS
 {{< /button >}}
+
 {{< button href="../categories/iac" target="_self" >}}  
 IaC
 {{< /button >}}
+
 {{< button href="../tags/ansible" target="_self" >}}  
 Ansible
 {{< /button >}}
+
 {{< button href="../tags/terraform" target="_self" >}}  
 Terraform
 {{< /button >}}
+
 {{< button href="../categories/ci/cd" target="_self" >}}  
 CI/CD
 {{< /button >}}
+
 {{< button href="../categories/containers" target="_self" >}}  
 Containers
 {{< /button >}}
+
 {{< button href="../categories/linux" target="_self" >}}  
 Linux
 {{< /button >}}
+
 {{< button href="../categories/networking" target="_self" >}}  
 Network
 {{< /button >}}
