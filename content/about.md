@@ -84,8 +84,6 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 | [AWS]({{< ref "categories/aws" >}}) | [IaC]({{< ref "categories/iac" >}}) | [Ansible]({{< ref "tags/ansible" >}}) | [Terraform]({{< ref "tags/terraform" >}}) | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
 | ----------------------------------- | ----------------------------------- | ------------------------------------- | ----------------------------------------- | --------------------------------------- | ------------------------------------------------- | --------------------------------------- | ---------------------------------------------- |
 
-
-[AWS]({{< ref "categories/aws" >}}), [IaC]({{< ref "categories/iac" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/ci/cd" >}}), [Containers]({{< ref "categories/containers" >}}), [Linux]({{< ref "categories/linux" >}}), [Network]({{< ref "categories/networking" >}})
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
