@@ -79,9 +79,9 @@ timeline
 
 Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/>
 
-|   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
-| :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
-| [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
+| [AWS]({{< ref "categories/aws" target=_self >}}) |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
+| :----------------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
+|     [CI/CD]({{< ref "categories/ci/cd" >}})      | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
 {{< /alert >}}
 ## Selected code samples[^Ref2]
 
