@@ -68,7 +68,7 @@ timeline
         : AWS Certified Solutions Architect Associate (SAA-C03)
 {{< /mermaid >}}
 
-Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/><br/>
+Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
 
 |   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
 | :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
