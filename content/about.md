@@ -70,7 +70,7 @@ timeline
 
 |                                 AWS Certified Cloud Practitioner                                  |  HashiCorp Certified Terraform Associate  | AWS Certified Solutions Architect Associate |
 | :-----------------------------------------------------------------------------------------------: | :---------------------------------------: | :-----------------------------------------: |
-| <img src="../assets/creedly-clf-c02_600.png" alt="AWS Certified Cloud Practitioner" width="120"/> |   ![](../assets/creedly-hcta0-003.png)    |     ![](../assets/creedly-saa-c03.png)      |
+| <img src="../assets/creedly-clf-c02-340.png" alt="AWS Certified Cloud Practitioner" width="120"/> |   ![](../assets/creedly-hcta0-003.png)    |     ![](../assets/creedly-saa-c03.png)      |
 |                               [CLF-C02]({{< ref "tags/clf-c02" >}})                               | [HCTA0-003]({{< ref "tags/hcta0-003" >}}) |                   SAA-C03                   |
 |                                **Issued:**<br/>September 12, 2025                                 |     **Issued:**<br/>December 10, 2025     |        **Issued:**<br/>🏅IN PROGRESS        |
 |                                **Expires:**<br/>September 12, 2028                                |    **Expires:**<br/>December 10, 2028     |            **Expires:**<br/>TBC             |
