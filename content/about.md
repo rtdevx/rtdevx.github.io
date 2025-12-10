@@ -68,12 +68,12 @@ timeline
         : AWS Certified Solutions Architect Associate (SAA-C03)
 {{< /mermaid >}}
 
-|   AWS Certified Cloud Practitioner    |  HashiCorp Certified Terraform Associate  | AWS Certified Solutions Architect Associate |
-| :-----------------------------------: | :---------------------------------------: | :-----------------------------------------: |
-|  ![](../assets/creedly-clf-c02.png)   |   ![](../assets/creedly-hcta0-003.png)    |     ![](../assets/creedly-saa-c03.png)      |
-| [CLF-C02]({{< ref "tags/clf-c02" >}}) | [HCTA0-003]({{< ref "tags/hcta0-003" >}}) |                   SAA-C03                   |
-|  **Issued:**<br/>September 12, 2025   |     **Issued:**<br/>December 10, 2025     |        **Issued:**<br/>🏅IN PROGRESS        |
-|  **Expires:**<br/>September 12, 2028  |    **Expires:**<br/>December 10, 2028     |            **Expires:**<br/>TBC             |
+|                                 AWS Certified Cloud Practitioner                                  |  HashiCorp Certified Terraform Associate  | AWS Certified Solutions Architect Associate |
+| :-----------------------------------------------------------------------------------------------: | :---------------------------------------: | :-----------------------------------------: |
+| <img src="../assets/creedly-clf-c02_600.png" alt="AWS Certified Cloud Practitioner" width="120"/> |   ![](../assets/creedly-hcta0-003.png)    |     ![](../assets/creedly-saa-c03.png)      |
+|                               [CLF-C02]({{< ref "tags/clf-c02" >}})                               | [HCTA0-003]({{< ref "tags/hcta0-003" >}}) |                   SAA-C03                   |
+|                                **Issued:**<br/>September 12, 2025                                 |     **Issued:**<br/>December 10, 2025     |        **Issued:**<br/>🏅IN PROGRESS        |
+|                                **Expires:**<br/>September 12, 2028                                |    **Expires:**<br/>December 10, 2028     |            **Expires:**<br/>TBC             |
 
 Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
 
