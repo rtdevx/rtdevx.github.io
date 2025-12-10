@@ -75,7 +75,7 @@ timeline
 |  <font color=#C7EB25>Issuing Date:</font><br/>September 12, 2025   |  <font color=#C7EB25>Issuing Date:</font><br/>December 10, 2025   | <font color=#C7EB25>Issuing Date:</font><br/>🏅IN PROGRESS |
 | <font color=#EB4925>Expiration Date:</font><br/>September 12, 2028 | <font color=#EB4925>Expiration Date:</font><br/>December 10, 2028 |    <font color=#EB4925>Expiration Date:</font><br/>TBC     |
 
-ℹ️ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
+>Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
 
 |   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
 | :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
