@@ -50,7 +50,7 @@ My toolkit includes:
 | **🖥️ Systems Administration**      | `Linux`, `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                |
 ## Trainings and Certifications[^Ref1]
 
-[^Ref1]:Only ones that are [documented on this website]({{< ref "posts/training" >}})
+Only ones that are [documented on this website]({{< ref "posts/training" >}})
 
 <!--
 - 🏅 **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}})) 
@@ -75,20 +75,19 @@ timeline
 |                                         **Issued:**<br/>September 12, 2025                                         |                                              **Issued:**<br/>December 10, 2025                                              |                                                 **Issued:**<br/>🏅IN PROGRESS                                                 |
 |                                        **Expires:**<br/>September 12, 2028                                         |                                             **Expires:**<br/>December 10, 2028                                              |                                                     **Expires:**<br/>TBC                                                      |
 
-Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
+[^Ref1]:Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
+[^Ref1]:
 
 |   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
 | :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
 | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
-## Selected code samples[^Ref2]
-
-[^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
+## Selected code samples
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
 - **GitHub:** [https://github.com/rtdevx/homelab/tree/main/ansible/site](https://github.com/rtdevx/homelab/tree/main/ansible/site) (contains Ansible playbooks that build Kubernetes cluster (K3s), installing Load Balancer (HAProxy) for K3s User to connect to the Kubernetes Control Plane Server and Agent Nodes)
 
 {{< alert "github">}}
-Feel free to take look at [my GitHub page](https://github.com/rtdevx) for more...
+Check [my GitHub Repository](https://github.com/rtdevx) for more code samples...
 {{< /alert >}}
 ## CV Download
 
