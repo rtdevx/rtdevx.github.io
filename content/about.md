@@ -68,12 +68,6 @@ timeline
         : AWS Certified Solutions Architect Associate (SAA-C03)
 {{< /mermaid >}}
 
-Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
-
-|   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
-| :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
-| [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
-
 <!--
 {{< button href="../categories/aws" target="_self" >}}  
 AWS
@@ -120,6 +114,11 @@ Network
 | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
 -->
 
+Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:
+
+|   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
+| :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
+| [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
 ## Selected code samples
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
