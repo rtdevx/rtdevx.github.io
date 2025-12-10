@@ -72,11 +72,11 @@ timeline
     2026 : AWS Certified Solutions Architect Associate (SAA-C03) : 🏅IN PROGRESS
 {{< /mermaid >}}
 
-| AWS Certified Cloud Practitioner   | HashiCorp Certified Terraform Associate | # AWS Certified Solutions Architect Associate |
-| ---------------------------------- | --------------------------------------- | --------------------------------------------- |
-| ![](../assets/creedly-clf-c02.png) | ![](../assets/creedly-hcta0-003.png)    | ![](../assets/creedly-saa-c03.png)            |
-| **Issuing Date:** 9/12/2025        | **Issuing Date:** 9/12/2025             | **Issuing Date:**🏅IN PROGRESS                |
-| **Expiration Date:** 9/12/2028     | **Expiration Date:** 9/12/2028          | **Expiration Date:** N/A                      |
+| AWS Certified Cloud Practitioner   | HashiCorp Certified Terraform Associate | AWS Certified Solutions Architect Associate |
+| ---------------------------------- | --------------------------------------- | ------------------------------------------- |
+| ![](../assets/creedly-clf-c02.png) | ![](../assets/creedly-hcta0-003.png)    | ![](../assets/creedly-saa-c03.png)          |
+| **Issuing Date:** 9/12/2025        | **Issuing Date:** 9/12/2025             | **Issuing Date:**🏅IN PROGRESS              |
+| **Expiration Date:** 9/12/2028     | **Expiration Date:** 9/12/2028          | **Expiration Date:** N/A                    |
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
