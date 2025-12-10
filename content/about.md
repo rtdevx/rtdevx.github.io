@@ -72,10 +72,12 @@ timeline
     2026 : AWS Certified Solutions Architect Associate (SAA-C03) : 🏅IN PROGRESS
 {{< /mermaid >}}
 
+![](../assets/Kentemere2.jpg)
+
 | AWS Certified Cloud Practitioner | HashiCorp Certified Terraform Associate |
 | -------------------------------- | --------------------------------------- |
+| ![](../assets/Kentemere2.jpg)    | ![](../assets/Kentemere2.jpg)           |
 | **Issuing Date:** 9/12/2025      | **Issuing Date:** 9/12/2025             |
-| ![](../creedly-clf-c02.png)      | ![](../creedly-clf-c02.png)             |
 | **Expiration Date:** 9/12/2028   | **Expiration Date:** 9/12/2028          |
 ## Selected code samples[^Ref2]
 
