@@ -72,9 +72,12 @@ timeline
     2026 : AWS Certified Solutions Architect Associate (SAA-C03) : 🏅IN PROGRESS
 {{< /mermaid >}}
 
+
 |                                   |                                   |
 | --------------------------------- | --------------------------------- |
 | ![](./assets/creedly-clf-c02.png) | ![](./assets/creedly-clf-c02.png) |
+| **Issuing Date:** 9/12/2025       | **Issuing Date:** 9/12/2025       |
+| **Expiration Date:** 9/12/2028    | **Expiration Date:** 9/12/2028    |
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
