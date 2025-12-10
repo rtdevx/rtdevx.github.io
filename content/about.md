@@ -78,13 +78,13 @@ timeline
 |               [CLF-C02]({{< ref "tags/clf-c02" >}})                |             [HCTA0-003]({{< ref "tags/hcta0-003" >}})             |                          SAA-C03                           |
 |  <font color=#C7EB25>Issuing Date:</font><br/>September 12, 2025   |  <font color=#C7EB25>Issuing Date:</font><br/>December 10, 2025   | <font color=#C7EB25>Issuing Date:</font><br/>🏅IN PROGRESS |
 | <font color=#EB4925>Expiration Date:</font><br/>September 12, 2028 | <font color=#EB4925>Expiration Date:</font><br/>December 10, 2028 |    <font color=#EB4925>Expiration Date:</font><br/>TBC     |
-
+{{< alert "circle-info">}}
 Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/>
 
 |   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
 | :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
 | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
-
+{{< /alert >}}
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
