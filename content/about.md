@@ -78,6 +78,8 @@ timeline
 |               [CLF-C02]({{< ref "tags/clf-c02" >}})                |             [HCTA0-003]({{< ref "tags/hcta0-003" >}})             |                          SAA-C03                           |
 |  <font color=#C7EB25>Issuing Date:</font><br/>September 12, 2025   |  <font color=#C7EB25>Issuing Date:</font><br/>December 10, 2025   | <font color=#C7EB25>Issuing Date:</font><br/>🏅IN PROGRESS |
 | <font color=#EB4925>Expiration Date:</font><br/>September 12, 2028 | <font color=#EB4925>Expiration Date:</font><br/>December 10, 2028 |    <font color=#EB4925>Expiration Date:</font><br/>TBC     |
+<center><font color=#EBAC25><i>More info:</i></font> [🗂️My Trainings]({{< ref "posts/training" >}})</center>
+
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
