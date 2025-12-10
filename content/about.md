@@ -48,10 +48,6 @@ My toolkit includes:
 | **🔧 CI/CD Tools**                  | `AWS CodePipeline`, `AWS CodeBuild`, `GitHub Actions`<br>Building and maintaining CI/CD pipelines to automate software development workflows.                   |
 | **📜 Infrastructure as Code (IaC)** | `Ansible`, `Terraform` <br>Automating the provisioning and management of infrastructure, ensuring consistency, reliability, and scalability across deployments. |
 | **🖥️ Systems Administration**      | `Linux`, `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                |
-
-{{< alert "github">}}
-Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page for more details.
-{{< /alert >}}
 ## Trainings and Certifications[^Ref1]
 
 [^Ref1]:Only ones that are [documented on this website]({{< ref "posts/training" >}})
@@ -78,6 +74,7 @@ timeline
 |               [CLF-C02]({{< ref "tags/clf-c02" >}})                |             [HCTA0-003]({{< ref "tags/hcta0-003" >}})             |                          SAA-C03                           |
 |  <font color=#C7EB25>Issuing Date:</font><br/>September 12, 2025   |  <font color=#C7EB25>Issuing Date:</font><br/>December 10, 2025   | <font color=#C7EB25>Issuing Date:</font><br/>🏅IN PROGRESS |
 | <font color=#EB4925>Expiration Date:</font><br/>September 12, 2028 | <font color=#EB4925>Expiration Date:</font><br/>December 10, 2028 |    <font color=#EB4925>Expiration Date:</font><br/>TBC     |
+
 {{< alert "circle-info">}}
 Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/>
 
@@ -91,6 +88,10 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 
 - **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
 - **GitHub:** [https://github.com/rtdevx/homelab/tree/main/ansible/site](https://github.com/rtdevx/homelab/tree/main/ansible/site) (contains Ansible playbooks that build Kubernetes cluster (K3s), installing Load Balancer (HAProxy) for K3s User to connect to the Kubernetes Control Plane Server and Agent Nodes)
+
+{{< alert "github">}}
+Feel free to take look at my [GitHub page](https://github.com/rtdevx) for more code examples.
+{{< /alert >}}
 ## CV Download
 
 <center>
