@@ -73,11 +73,11 @@ timeline
 {{< /mermaid >}}
 
 
-| AWS Certified Cloud Practitioner  | HashiCorp Certified Terraform Associate |
-| --------------------------------- | --------------------------------------- |
-| **Issuing Date:** 9/12/2025       | **Issuing Date:** 9/12/2025             |
-| ![](./assets/creedly-clf-c02.png) | ![](./assets/creedly-clf-c02.png)       |
-| **Expiration Date:** 9/12/2028    | **Expiration Date:** 9/12/2028          |
+| AWS Certified Cloud Practitioner                                                                       | HashiCorp Certified Terraform Associate                                                                |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Issuing Date:** 9/12/2025                                                                            | **Issuing Date:** 9/12/2025                                                                            |
+| <img src="./assets/creedly-clf-c02.png" alt="Responsive Image" style="max-width: 100%; height: auto;"> | <img src="./assets/creedly-clf-c02.png" alt="Responsive Image" style="max-width: 100%; height: auto;"> |
+| **Expiration Date:** 9/12/2028                                                                         | **Expiration Date:** 9/12/2028                                                                         |
 ## Selected code samples[^Ref2]
 
 [^Ref2]:Check [my GitHub Repository](https://github.com/rtdevx) for more code samples.
