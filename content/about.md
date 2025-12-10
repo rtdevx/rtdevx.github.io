@@ -70,6 +70,14 @@ timeline
 
 Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/><br/>[AWS]({{< ref "categories/aws" >}}) | [IaC]({{< ref "categories/iac" >}}) | [Ansible]({{< ref "tags/ansible" >}}) | [Terraform]({{< ref "tags/terraform" >}}) | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}})
 
+{{< button href="categories/aws" target="_self" >}}  
+🏷️ AWS  
+{{< /button >}}
+
+{{< button href="categories/iac" target="_self" >}}  
+🏷️ IaC 
+{{< /button >}}
+
 |                                        AWS Certified Cloud Practitioner                                        |                                         HashiCorp Certified Terraform Associate                                         |                                        AWS Certified Solutions Architect Associate                                        |
 | :------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
 | <center><img src="../assets/creedly-clf-c02.png" alt="AWS Certified Cloud Practitioner" width="100"/></center> | <center><img src="../assets/creedly-hcta0-003.png" alt="HashiCorp Certified Terraform Associate" width="100"/></center> | <center><img src="../assets/creedly-saa-c03.png" alt="AWS Certified Solutions Architect Associate" width="100"/></center> |
