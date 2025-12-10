@@ -76,6 +76,7 @@ timeline
 | <font color=#EB4925>Expiration Date:</font><br/>September 12, 2028 | <font color=#EB4925>Expiration Date:</font><br/>December 10, 2028 |    <font color=#EB4925>Expiration Date:</font><br/>TBC     |
 
 {{< alert "circle-info">}}
+
 Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/>
 
 |   [AWS]({{< ref "categories/aws" >}})   |        [IaC]({{< ref "categories/iac" >}})        |  [Ansible]({{< ref "tags/ansible" >}})  |   [Terraform]({{< ref "tags/terraform" >}})    |
