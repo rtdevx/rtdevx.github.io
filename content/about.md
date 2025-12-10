@@ -68,38 +68,41 @@ timeline
         : AWS Certified Solutions Architect Associate (SAA-C03)
 {{< /mermaid >}}
 
-Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/><br/>[AWS]({{< ref "categories/aws" >}}) | [IaC]({{< ref "categories/iac" >}}) | [Ansible]({{< ref "tags/ansible" >}}) | [Terraform]({{< ref "tags/terraform" >}}) | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}})
+Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/><br/>
+<!--
+[AWS]({{< ref "categories/aws" >}}) | [IaC]({{< ref "categories/iac" >}}) | [Ansible]({{< ref "tags/ansible" >}}) | [Terraform]({{< ref "tags/terraform" >}}) | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}})
+-->
 
 {{< button href="../categories/aws" target="_self" >}}  
-🏷️ AWS
+AWS
 {{< /button >}}
 
 {{< button href="../categories/iac" target="_self" >}}  
-🏷️ IaC
+IaC
 {{< /button >}}
 
 {{< button href="../tags/ansible" target="_self" >}}  
-🏷️ Ansible
+Ansible
 {{< /button >}}
 
 {{< button href="../tags/terraform" target="_self" >}}  
-🏷️ Terraform
+Terraform
 {{< /button >}}
 
 {{< button href="../categories/ci/cd" target="_self" >}}  
-🏷️ CI/CD
+CI/CD
 {{< /button >}}
 
 {{< button href="../categories/containers" target="_self" >}}  
-🏷️ Containers
+Containers
 {{< /button >}}
 
 {{< button href="../categories/linux" target="_self" >}}  
-🏷️ Linux
+Linux
 {{< /button >}}
 
 {{< button href="../categories/networking" target="_self" >}}  
-🏷️ Network
+Network
 {{< /button >}}
 
 |                                        AWS Certified Cloud Practitioner                                        |                                         HashiCorp Certified Terraform Associate                                         |                                        AWS Certified Solutions Architect Associate                                        |
