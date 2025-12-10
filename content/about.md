@@ -50,7 +50,7 @@ My toolkit includes:
 | **🖥️ Systems Administration**      | `Linux`, `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                |
 ## Trainings and Certifications[^Ref1]
 
-[^Ref1]:Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/>[AWS]({{< ref "categories/aws" >}}), [IaC]({{< ref "categories/iac" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/ci/cd" >}}), [Containers]({{< ref "categories/containers" >}}), [Linux]({{< ref "categories/linux" >}}), [Network]({{< ref "categories/networking" >}})
+[^Ref1]:Only those that were documented [this website]({{< ref "categories/devops" >}}).
 
 <!--
 - 🏅 **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}})) 
@@ -67,6 +67,8 @@ timeline
     2026 : Docker - 40 Practical Demos for DevOps Learners (Udemy)
         : AWS Certified Solutions Architect Associate (SAA-C03)
 {{< /mermaid >}}
+
+Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more information or jump to any category you may be interested in:<br/>[AWS]({{< ref "categories/aws" >}}), [IaC]({{< ref "categories/iac" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/ci/cd" >}}), [Containers]({{< ref "categories/containers" >}}), [Linux]({{< ref "categories/linux" >}}), [Network]({{< ref "categories/networking" >}})
 
 |                                        AWS Certified Cloud Practitioner                                        |                                         HashiCorp Certified Terraform Associate                                         |                                        AWS Certified Solutions Architect Associate                                        |
 | :------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
