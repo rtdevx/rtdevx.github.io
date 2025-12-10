@@ -63,14 +63,13 @@ Feel free to take look at [my homelab](https://github.com/rtdevx) GitHub page fo
 -->
 
 {{< mermaid >}}
-timeline
-    2024 : Jenkins, From Zero To Hero - Become a DevOps Jenkins Master (Udemy)
+timeline    
     2025 : Ultimate Ansible Bootcamp by School of Devops® (Udemy)
          : 🏅AWS Certified Cloud Practitioner (CLF-C02)
          : 🏅HashiCorp Certified Terraform Associate (HCTA0-003)
          : GitHub Actions - The Complete Guide (Udemy)
          : Docker - 40 Practical Demos for DevOps Learners (Udemy)
-    2026 : AWS Certified Solutions Architect - Associate (SAA-C03) :🏅IN PROGRESS
+    2026 : AWS Certified Solutions Architect Associate (SAA-C03) : 🏅IN PROGRESS
 {{< /mermaid >}}
 
 | <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7778f07e-79e9-467c-af5a-19928d4efd08" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> | <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7778f07e-79e9-467c-af5a-19928d4efd08" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> |
