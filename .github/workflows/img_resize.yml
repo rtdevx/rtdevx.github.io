@@ -24,14 +24,13 @@ jobs:
             find content/photography -type f -maxdepth 5 -print || true
 
       - name: Resize Images
-
         # You can change the version as well
         uses: gonzalonaveira/gh-image-resizing@master
         with:
-          IMAGES_MAX_WIDTH: "400"
+          IMAGES_MAX_WIDTH: "800"
           IMAGES_QUALITY: "90"
-          IMAGES_FORMATS: "jpg,jpeg,png,webp,PNG,JPG" 
-          IMAGES_DIRECTORIES: "content/photography/**"
+          IMAGES_FORMATS: "jpg,jpeg,png,webp" 
+          IMAGES_DIRECTORIES: "content/photography"
 
 #      - name: Commit changes
 #        uses: EndBug/add-and-commit@v4

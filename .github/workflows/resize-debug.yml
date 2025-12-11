@@ -1,0 +1,35 @@
+name: Resize photography debug
+
+on:
+  workflow_dispatch:
+
+jobs:
+  debug-resize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show photography files
+        run: |
+          echo "PWD: $(pwd)"
+          echo "Listing content/photography (top-level)"
+          ls -la content || true
+          ls -la content/photography || true
+          echo "Find matching image files (case-insensitive)"
+          find content/photography -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -print || true
+
+      - name: Print action inputs (sanity)
+        run: |
+          echo "IMAGES_DIRECTORIES='content/photography'"
+          echo "IMAGES_FORMATS='jpg,jpeg,png,webp'"
+          echo "IMAGES_MAX_WIDTH='400'"
+
+      - name: Resize images (debug)
+        uses: gonzalonaveira/gh-image-resizing@v1
+        with:
+          IMAGES_MAX_WIDTH: 400
+          IMAGES_QUALITY: 90
+          IMAGES_FORMATS: "jpg,jpeg,png,webp"
+          IMAGES_DIRECTORIES: "content/photography"
+          DEBUG: true
