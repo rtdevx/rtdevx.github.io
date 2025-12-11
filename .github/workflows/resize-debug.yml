@@ -21,9 +21,15 @@ jobs:
         run: |
             DIRS=$(find content/photography -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -printf '%h\n' | sort -u | paste -sd, -)
             echo "IMAGES_DIRECTORIES=$DIRS" >> $GITHUB_ENV
+
+      - name: Sleep for 30 seconds
+        run: sleep 30s
+        shell: bash
+            
       - name: Resize images
         uses: gonzalonaveira/gh-image-resizing@master
         if: steps.build_dirs.outcome == 'success'
+        
         with:
           IMAGES_MAX_WIDTH: 400
           IMAGES_QUALITY: 90
