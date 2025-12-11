@@ -32,4 +32,5 @@ jobs:
           IMAGES_QUALITY: 90
           IMAGES_FORMATS: "jpg,jpeg,png,webp"
           IMAGES_DIRECTORIES: "content/photography"
+          IMAGES_SUFFIX: "-resized"
           DEBUG: true
