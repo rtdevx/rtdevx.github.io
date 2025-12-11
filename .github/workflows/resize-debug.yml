@@ -6,19 +6,19 @@ on:
 jobs:
   debug-resize:
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
+
+
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+            fetch-depth: 0
+            persist-credentials: true
 
-      - name: Show photography files
-        run: |
-          echo "PWD: $(pwd)"
-          echo "Listing content/photography (top-level)"
-          ls -la content || true
-          ls -la content/photography || true
-          echo "Find matching image files (case-insensitive)"
-          find content/photography -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -print || true
-      - name: Resize images (debug)
+      - name: Resize images
         uses: gonzalonaveira/gh-image-resizing@master
         with:
           IMAGES_MAX_WIDTH: 400
@@ -28,11 +28,11 @@ jobs:
           IMAGES_SUFFIX: "-resized"
           DEBUG: true
 
-      - name: Show resized files and git status
+      - name: Commit resized images
         run: |
-          echo "List any resized files"
-          find content/photography -type f -iname '*-resized.*' -print || true
-          echo "List any new/modified files"
-          git status --porcelain || true
-          echo "Show last 200 lines of action container logs (if any)"
-          # no universal way to fetch container logs from inside job; check the action step logs in the UI
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/photography/**/*-resized.* || true
+          git commit -m "Resize photography images" || echo "No changes to commit"
+          git push
+
