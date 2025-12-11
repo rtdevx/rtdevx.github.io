@@ -11,7 +11,7 @@ tags:
 categories:
   - Travel
   - Photography
-unlisted: true
+hidden: true
 layout: photography
 ---
 {{< lead >}}
