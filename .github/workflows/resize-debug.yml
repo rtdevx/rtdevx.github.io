@@ -27,3 +27,12 @@ jobs:
           IMAGES_DIRECTORIES: "content/photography"
           IMAGES_SUFFIX: "-resized"
           DEBUG: true
+
+      - name: Show resized files and git status
+        run: |
+          echo "List any resized files"
+          find content/photography -type f -iname '*-resized.*' -print || true
+          echo "List any new/modified files"
+          git status --porcelain || true
+          echo "Show last 200 lines of action container logs (if any)"
+          # no universal way to fetch container logs from inside job; check the action step logs in the UI
