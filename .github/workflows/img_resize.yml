@@ -22,7 +22,7 @@ jobs:
           IMAGES_MAX_WIDTH: "800"
           IMAGES_QUALITY: "600"
           IMAGES_FORMATS: "jpg, jpge, png" 
-          IMAGES_DIRECTORIES: "content/photography"
+          IMAGES_DIRECTORIES: "content/photography/2012-south-africa-and-lesotho/assets"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
