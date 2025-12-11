@@ -1,9 +1,11 @@
 name: Resize images
 
-on: 
-  push:
-    branches:
-      - main    
+on:
+  workflow_run:
+    workflows: ["hugo"]
+    branches: [main]
+    types: 
+      - completed
 
 jobs:
   build:
