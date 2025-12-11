@@ -19,10 +19,10 @@ jobs:
         # You can change the version as well
         uses: gonzalonaveira/gh-image-resizing@master
         with:
-          IMAGES_MAX_WIDTH: "800"
+          IMAGES_MAX_WIDTH: "1200"
           IMAGES_QUALITY: "90"
           IMAGES_FORMATS: "jpg, jpeg, png" 
-          IMAGES_DIRECTORIES: "public/assets/blog/images"
+          IMAGES_DIRECTORIES: "content/photography/2012-south-africa-and-lesotho/assets"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
