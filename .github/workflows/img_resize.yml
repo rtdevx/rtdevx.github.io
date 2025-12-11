@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@master
 
       - name: Resize Images
-        id: resize-images
 
         # You can change the version as well
         uses: gonzalonaveira/gh-image-resizing@master
