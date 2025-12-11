@@ -2,7 +2,7 @@ name: Resize images
 
 on:
   workflow_run:
-    workflows: ["hugo"]
+    workflows: ["pages-build-deployment"]
     branches: [main]
     types: 
       - completed
@@ -24,8 +24,7 @@ jobs:
           IMAGES_MAX_WIDTH: "1200"
           IMAGES_QUALITY: "90"
           IMAGES_FORMATS: "jpg, jpeg, png" 
-          IMAGES_DIRECTORIES: "content/photography/2012-south-africa-and-lesotho/assets"
-          DEBUG: "true"
+          IMAGES_DIRECTORIES: "assets"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
