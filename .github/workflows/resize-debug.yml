@@ -27,7 +27,7 @@ jobs:
           IMAGES_MAX_WIDTH: 400
           IMAGES_QUALITY: 90
           IMAGES_FORMATS: "jpg,jpeg,png,webp"
-          IMAGES_DIRECTORIES: "${{ steps.build_dirs.outputs.dirs }}/*"
+          IMAGES_DIRECTORIES: "${{ steps.build_dirs.outputs.dirs }}**"
           IMAGES_SUFFIX: "-resized"
 
       - name: Commit resized images
