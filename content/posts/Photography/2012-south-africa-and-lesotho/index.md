@@ -7,7 +7,6 @@ draft: false
 tags:
   - Africa
   - Lesotho
-  - South Africa
 categories:
   - Travel
   - Photography
