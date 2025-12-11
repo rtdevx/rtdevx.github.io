@@ -3,7 +3,7 @@ title: South Africa and Lesotho
 date: 2025-12-01
 description: My travel to South Africa and in 2012 was certainly my first DSLR experience… And first experience with Photo Editing Software. This is where my journey starts…
 summary: My travel to South Africa and in 2012 was certainly my first DSLR experience… And first experience with Photo Editing Software. This is where my journey starts…
-draft: false
+draft: true
 tags:
 categories:
   - Travel
