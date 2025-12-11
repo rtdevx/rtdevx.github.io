@@ -36,5 +36,5 @@ jobs:
 #            Images Reszied by Github action
 #            ${{steps.resize-images.outputs.result}}
             
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
