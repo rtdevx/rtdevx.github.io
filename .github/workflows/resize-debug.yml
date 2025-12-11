@@ -24,7 +24,7 @@ jobs:
           IMAGES_MAX_WIDTH: 400
           IMAGES_QUALITY: 90
           IMAGES_FORMATS: "jpg,jpeg,png,webp"
-          IMAGES_DIRECTORIES: "content/photography/2012-south-africa-and-lesotho/**"
+          IMAGES_DIRECTORIES: "content/photography/**,content/photography/**/**,content/photography/**/**/**"
           IMAGES_SUFFIX: "-resized"
           DEBUG: true
 
