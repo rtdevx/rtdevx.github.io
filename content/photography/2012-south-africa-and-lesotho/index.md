@@ -48,4 +48,3 @@ My travel to South Africa and in 2012 was certainly **my first DSLR experience**
 
 ![](./assets/DSC_2698.jpg)
 
-![](./assets/DSC_2761.jpg)
