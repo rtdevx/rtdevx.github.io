@@ -1,78 +1,49 @@
 ---
 title: South Africa and Lesotho
 date: 2025-12-01
-description: My travel to South Africa and in 2012 was certainly my first DSLR experience… And first experience with Photo Editing Software. This is where my journey starts…
-summary: My travel to South Africa and in 2012 was certainly my first DSLR experience… And first experience with Photo Editing Software. This is where my journey starts…
-draft: true
+description: My travel to South Africa and in 2012 was certainly my first DSLR experience…
+summary: My travel to South Africa and in 2012 was certainly my first DSLR experience…
+draft: false
 tags:
+  - Africa
+  - Lesotho
 categories:
   - Travel
   - Photography
+unlisted: "true"
 ---
-{{ < Lead > }}
+{{< lead >}}
 My travel to South Africa and in 2012 was certainly **my first DSLR experience**… And first experience with Photo Editing Software. This is where my journey starts…
-{{ < /Lead > }}
+{{< /lead >}}
 
-![](DSC_1586.jpg)
+![](./assets/DSC_2761.jpg)
 
-![](DSC_1613.jpg)
+![](./assets/DSC_0850.jpg)
 
-![](DSC_1616.jpg)
+![](./assets/DSC_0944.jpg)
 
-![](DSC_1690.jpg)
+![](./assets/DSC_1157.jpg)
 
-![](DSC_1696.jpg)
+![](./assets/DSC_1191.jpg)
 
-![](DSC_2021.jpg)
+![](./assets/DSC_1389.jpg)
 
-![](DSC_2165.jpg)
+![](./assets/DSC_1397.jpg)
 
-![](DSC_2473.jpg)
+![](./assets/DSC_1412.jpg)
 
-![](DSC_2484.jpg)
+![](./assets/DSC_1517.jpg)
 
-![](DSC_2503.jpg)
+![](./assets/DSC_2021.jpg)
 
-![](DSC_2587.jpg)
+![](./assets/DSC_2165.jpg)
 
-![](DSC_2616.jpg)
+![](./assets/DSC_2484.jpg)
 
-![](DSC_2650.jpg)
+![](./assets/DSC_2503.jpg)
 
-![](DSC_2698.jpg)
+![](./assets/DSC_2587.jpg)
 
-![](DSC_2761.jpg)
+![](./assets/DSC_2616.jpg)
 
-
-![](DSC_0675.jpg)
-
-![](DSC_0850.jpg)
-
-![](DSC_0944.jpg)
-
-![](DSC_1030.jpg)
-
-![](DSC_1031.jpg)
-
-![](DSC_1044.jpg)
-
-![](DSC_1154.jpg)
-
-![](DSC_1157.jpg)
-
-![](DSC_1160.jpg)
-
-![](DSC_1186.jpg)
-
-![](DSC_1191.jpg)
-
-![](DSC_1389.jpg)
-
-![](DSC_1397.jpg)
-
-![](DSC_1412.jpg)
-
-![](DSC_1473.jpg)
-
-![](DSC_1517.jpg)
-
+![](./assets/DSC_2698.jpg)
