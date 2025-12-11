@@ -17,22 +17,23 @@ jobs:
             persist-credentials: true
 
       - name: Build directories list
-        id: build_dirs
+        id: builddirs
         run: |
-            DIRS=$(find content/photography -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -printf '%h\n' | sort -u | paste -sd, -)
-            echo "IMAGES_DIRECTORIES=$DIRS" >> $GITHUB_ENV
-           
+          DIRS=$(find content/photography -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -printf '%h\n' | sort -u | sed 's/$/\/**/' | paste -sd, -)
+          echo "dirs=$DIRS" >> $GITHUB_OUTPUT
+
+      - name: Debug show dirs
+        run: echo "DIRS from step output: ${{ steps.builddirs.outputs.dirs }}"
+
       - name: Resize images
         uses: gonzalonaveira/gh-image-resizing@master
-        if: steps.build_dirs.outcome == 'success'
-        
         with:
           IMAGES_MAX_WIDTH: 400
           IMAGES_QUALITY: 90
           IMAGES_FORMATS: "jpg,jpeg,png,webp"
-          IMAGES_DIRECTORIES: "${{ steps.build_dirs.outputs.dirs }}"
-          #IMAGES_DIRECTORIES: "content/photography/2012-south-africa-and-lesotho/assets,content/photography/2014-south-africa-and-lesotho/assets"
+          IMAGES_DIRECTORIES: ${{ steps.builddirs.outputs.dirs }}
           IMAGES_SUFFIX: "-resized"
+          DEBUG: true
 
       - name: Commit resized images
         run: |
