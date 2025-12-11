@@ -7,12 +7,13 @@ draft: false
 tags:
   - Africa
   - Lesotho
+  - South Africa
 categories:
   - Travel
   - Photography
-hidden: false
-noResize: true
+hidden: true
 layout: photography
+noresize: true
 ---
 {{< lead >}}
 My travel to South Africa and in 2012 was certainly **my first DSLR experience**… And first experience with Photo Editing Software. This is where my journey starts…
