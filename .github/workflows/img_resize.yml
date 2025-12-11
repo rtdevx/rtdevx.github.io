@@ -21,7 +21,7 @@ jobs:
         with:
           IMAGES_MAX_WIDTH: "800"
           IMAGES_QUALITY: "90"
-          IMAGES_FORMATS: "jpg, jpge, png" 
+          IMAGES_FORMATS: "jpg, jpeg, png" 
           IMAGES_DIRECTORIES: "public/assets/blog/images"
 
       - name: Commit changes
