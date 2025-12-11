@@ -26,15 +26,15 @@ jobs:
           IMAGES_FORMATS: "jpg, jpeg, png" 
           IMAGES_DIRECTORIES: "content/photography"
 
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v4
-        with:
-          add: 'public/'
-          author_name: "github-actions[bot]"
-          author_email: "github-actions@users.noreply.github.com"
-          message: |
-            Images Reszied by Github action
-            ${{steps.resize-images.outputs.result}}
+#      - name: Commit changes
+#        uses: EndBug/add-and-commit@v4
+#        with:
+#          add: 'public/'
+#          author_name: "github-actions[bot]"
+#          author_email: "github-actions@users.noreply.github.com"
+#          message: |
+#            Images Reszied by Github action
+#            ${{steps.resize-images.outputs.result}}
             
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
