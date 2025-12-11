@@ -19,7 +19,7 @@ jobs:
       - name: Build directories list
         id: builddirs
         run: |
-          DIRS=$(find content/photography -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -printf '%h\n' | sort -u | sed 's/$/\/**/' | paste -sd, -)
+          DIRS=$(find content/photography -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -printf '%h\n' | sort -u | paste -sd, -)
           echo "dirs=$DIRS" >> $GITHUB_OUTPUT
 
       - name: Debug show dirs
