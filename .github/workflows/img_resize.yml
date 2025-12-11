@@ -16,6 +16,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
+      - name: Show photography files
+        run: |
+            echo "PWD: $(pwd)"
+            ls -la content || true
+            ls -la content/photography || true
+            find content/photography -type f -maxdepth 5 -print || true
+
       - name: Resize Images
 
         # You can change the version as well
@@ -23,7 +30,7 @@ jobs:
         with:
           IMAGES_MAX_WIDTH: "400"
           IMAGES_QUALITY: "90"
-          IMAGES_FORMATS: "jpg, jpeg, png, webp" 
+          IMAGES_FORMATS: "jpg,jpeg,png,webp,PNG,JPG" 
           IMAGES_DIRECTORIES: "content/photography/**"
 
 #      - name: Commit changes
