@@ -23,6 +23,7 @@ jobs:
           IMAGES_QUALITY: "90"
           IMAGES_FORMATS: "jpg, jpeg, png" 
           IMAGES_DIRECTORIES: "content/photography/2012-south-africa-and-lesotho/assets"
+          DEBUG: "true"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
