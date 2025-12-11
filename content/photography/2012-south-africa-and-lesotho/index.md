@@ -10,7 +10,7 @@ tags:
 categories:
   - Travel
   - Photography
-hidden: true
+hidden: false
 layout: photography
 ---
 {{< lead >}}
