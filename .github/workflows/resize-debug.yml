@@ -18,13 +18,6 @@ jobs:
           ls -la content/photography || true
           echo "Find matching image files (case-insensitive)"
           find content/photography -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -print || true
-
-      - name: Print action inputs (sanity)
-        run: |
-          echo "IMAGES_DIRECTORIES='content/photography'"
-          echo "IMAGES_FORMATS='jpg,jpeg,png,webp'"
-          echo "IMAGES_MAX_WIDTH='400'"
-
       - name: Resize images (debug)
         uses: gonzalonaveira/gh-image-resizing@master
         with:
