@@ -16,8 +16,6 @@ unlisted: "true"
 My travel to South Africa and in 2012 was certainly **my first DSLR experience**… And first experience with Photo Editing Software. This is where my journey starts…
 {{< /lead >}}
 
-![](./assets/DSC_2761.jpg)
-
 ![](./assets/DSC_0850.jpg)
 
 ![](./assets/DSC_0944.jpg)
@@ -47,3 +45,5 @@ My travel to South Africa and in 2012 was certainly **my first DSLR experience**
 ![](./assets/DSC_2616.jpg)
 
 ![](./assets/DSC_2698.jpg)
+
+![](./assets/DSC_2761.jpg)
