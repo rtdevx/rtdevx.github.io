@@ -2,7 +2,7 @@ name: Resize images
 
 on:
   workflow_run:
-    workflows: ["pages-build-deployment"]
+    workflows: ["GitHub Pages Hugo"]
     branches: [main]
     types: 
       - completed
