@@ -2,11 +2,14 @@ name: Resize images
 
 on:
   workflow_dispatch:    
-  workflow_run:
-    workflows: ["GitHub Pages Hugo"]
-    branches: [main]
-    types: 
-      - completed
+
+  schedule:
+    - cron: "00 3 * * *"    
+#  workflow_run:
+#    workflows: ["GitHub Pages Hugo"]
+#    branches: [main]
+#    types: 
+#      - completed
 
 jobs:
   resize-images:
