@@ -4,7 +4,7 @@ on:
   workflow_dispatch:    
 
   schedule:
-    - cron: "00 3 * * *"    
+    - cron: "00 1 * * *"    
 #  workflow_run:
 #    workflows: ["GitHub Pages Hugo"]
 #    branches: [main]
