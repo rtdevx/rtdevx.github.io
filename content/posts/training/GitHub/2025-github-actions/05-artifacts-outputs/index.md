@@ -250,7 +250,7 @@ Official Marketplace GitHub Action for **caching**: https://github.com/actions/c
 - Official Marketplace GitHub Action for **uploading** the artifacts: https://github.com/marketplace/actions/upload-a-build-artifact
 - Official Marketplace GitHub Action for **downloading** the artifacts: https://github.com/actions/download-artifact
 - Official Marketplace GitHub Action for **caching**: https://github.com/actions/cache
-	- - https://github.com/actions/cache?tab=readme-ov-file#implementation-examples
+	- https://github.com/actions/cache?tab=readme-ov-file#implementation-examples
 	- https://github.com/actions/cache/blob/main/examples.md
 ## >> Disclaimer <<
 
