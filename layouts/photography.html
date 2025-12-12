@@ -38,6 +38,13 @@
 <!-- Custom section END-->
     </header>
     <section class="prose mt-6 max-w-full dark:prose-invert">
+      {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            {{ partial "toc.html" . }}
+          </div>
+        </div>
+      {{ end }}      
       {{ .Content | emojify }}
     </section>
     <footer class="pt-8">
