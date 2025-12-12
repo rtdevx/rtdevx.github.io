@@ -8,7 +8,6 @@ tags:
   - Git
   - GitHub
   - GitHubActions
-  - VCS
 categories:
   - DevOps
   - CI/CD
