@@ -1,6 +1,6 @@
 ---
 title: "Indian Himalayas #1"
-date: 2013-04-01
+date: 2013-01-01
 description: "Indian Himalayas #1"
 summary: "Indian Himalayas #1"
 draft: false
