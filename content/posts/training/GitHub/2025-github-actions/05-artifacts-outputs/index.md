@@ -42,6 +42,11 @@ classDef greenclass stroke:#C7EB25
   C -->|Via GitHub UI or REST API| E(Download & Use Manually):::greenclass
   C -->|Via Action| F(Download & Use in other Jobs):::greenclass
 {{< /mermaid >}}
+### Uploading Job Artifacts
+
+Official Marketplace GitHub Action for uploading the artifacts: https://github.com/marketplace/actions/upload-a-build-artifact
+
+
 
 <font color=#EBAC25><i>More info:</i></font> [Store and share data with workflow artifacts](https://docs.github.com/en/actions/tutorials/store-and-share-data) 
 
@@ -49,6 +54,7 @@ classDef greenclass stroke:#C7EB25
 ## >> Sources <<
 
 - [Store and share data with workflow artifacts](https://docs.github.com/en/actions/tutorials/store-and-share-data) - Use artifacts to share data between jobs in a workflow and store data once that workflow has completed.
+- Official Marketplace GitHub Action for uploading the artifacts: https://github.com/marketplace/actions/upload-a-build-artifact
 ## >> Disclaimer <<
 
 {{< disclaimer_gh_actions_schwarzmueller >}}
