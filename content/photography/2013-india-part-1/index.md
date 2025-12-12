@@ -14,7 +14,7 @@ categories:
   - Asia
   - India
 hidden: false
-noResize: true
+noResize: false
 layout: photography
 ---
 {{< lead >}}
