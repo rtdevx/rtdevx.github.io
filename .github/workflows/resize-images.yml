@@ -9,7 +9,7 @@ on:
       - completed
 
 jobs:
-  debug-resize:
+  resize-images:
     runs-on: ubuntu-latest
     permissions:
         contents: write
