@@ -23,7 +23,7 @@ categories:
 
 ## Job Arrifacts
 
-xxx
+
 
 {{< mermaid >}}
 flowchart LR
