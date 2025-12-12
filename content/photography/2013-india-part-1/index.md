@@ -1,8 +1,8 @@
 ---
 title: "Indian Himalayas #1"
 date: 2013-01-01
-description: DESC
-summary: SUMMARY
+description: "Indian Himalayas #1"
+summary: "Indian Himalayas #1"
 draft: false
 tags:
   - Backpacking
