@@ -20,6 +20,7 @@ categories:
 | <font color=#EB4925>External Resources</font> »                             |                                                                           |                                  |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------- |
 | [GitHub Actions official Documentation](https://docs.github.com/en/actions) | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) | [GitHub.com](https://github.com) |
+
 <font color=#EBAC25><i>More info:</i></font> [Store and share data with workflow artifacts](https://docs.github.com/en/actions/tutorials/store-and-share-data) 
 
 {{< mermaid >}}
