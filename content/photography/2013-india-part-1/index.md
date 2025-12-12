@@ -125,6 +125,7 @@ layout: photography
 
 <center><iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d970357.3470410913!2d77.09727093794845!3d29.40348766824337!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390cfd6a1d2921af%3A0x570c5acc7d0f7853!2sPaharganj%2C%20New%20Delhi%2C%20Delhi%2C%20India!3m2!1d28.645604499999997!2d77.21277839999999!4m5!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand%2C%20India!3m2!1d30.1157619!2d78.28530169999999!5e0!3m2!1sen!2suk!4v1765501555077!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
 
+
 {{< alert "circle-info" >}}
 ## Where to stay in New Delhi
 
@@ -132,6 +133,7 @@ If you don’t have any better ideas or arrangements, head to **Paharganj** dist
 
 [India Mike](https://www.indiamike.com) – Travel and Community forums seem to be very good and informative source of information about travelling in India.
 {{< /alert >}}
+
 
 {{< alert "circle-info" >}}
 ## 3 weeks Himalaya Itinerary
