@@ -11,12 +11,6 @@ This part of my blog highlights the trainings I've completed along the way - cho
 
 [^Ref1]:Only those that were documented [this website]({{< ref "categories/devops" >}}).
 
-<!--
-- 🏅 **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}})) 
-- [GitHub Actions - The Complete Guide]({{< ref "posts/training/github/2025-github-actions" >}})
-- 🏅 **Terraform Associate** ([HCTA0-003]({{< ref "tags/hcta0-003" >}}))
--->
-
 {{< mermaid >}}
 timeline    
     2025 : Ultimate Ansible Bootcamp by School of Devops® (Udemy)
