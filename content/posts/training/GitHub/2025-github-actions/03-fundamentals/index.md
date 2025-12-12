@@ -331,7 +331,6 @@ Alternatively, you can add a `skip-checks` trailer to your commit message. The t
 This can be useful for minor code changes (updating comments, etc.). When making minor changes, Workflows may be skipped if necessary.
 {{< /alert >}}
 
-
 <font color=#EBAC25><i>More:</i></font> [Skipping workflow runs](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/skip-workflow-runs)
 
 ---
