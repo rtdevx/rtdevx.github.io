@@ -5,14 +5,14 @@ description: My travel to South Africa and in 2012 was certainly my first DSLR e
 summary: My travel to South Africa and in 2012 was certainly my first DSLR experience…
 draft: false
 tags:
-  - Africa
-  - Lesotho
-  - South Africa
   - Backpacking
   - 2012AD
 categories:
   - Travel
   - Photography
+  - Africa
+  - Lesotho
+  - South Africa
 hidden: false
 noResize: true
 layout: photography
