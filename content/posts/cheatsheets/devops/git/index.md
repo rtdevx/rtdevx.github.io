@@ -9,6 +9,7 @@ tags:
 categories:
   - DevOps
   - Cheatsheets
+  - CI/CD
 ---
 {{< alert "circle-info" >}}
 
