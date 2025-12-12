@@ -41,8 +41,6 @@ layout: photography
 
 ![](./assets/DSC_3602.jpg)
 
-![](./assets/DSC_3605.jpg)
-
 ![](./assets/DSC_3611.jpg)
 
 ![](./assets/DSC_3612.jpg)
@@ -55,8 +53,6 @@ layout: photography
 
 ![](./assets/DSC_3668.jpg)
 
-![](./assets/DSC_3682.jpg)
-
 ![](./assets/DSC_3697.jpg)
 
 ![](./assets/DSC_3713.jpg)
@@ -65,11 +61,7 @@ layout: photography
 
 ![](./assets/DSC_3720.jpg)
 
-![](./assets/DSC_3722.jpg)
-
 ![](./assets/DSC_3740.jpg)
-
-![](./assets/DSC_3742.jpg)
 
 ![](./assets/DSC_3750.jpg)
 
@@ -79,15 +71,11 @@ layout: photography
 
 ![](./assets/DSC_3844.jpg)
 
-![](./assets/DSC_3949.jpg)
-
 ![](./assets/DSC_3998.jpg)
 
 ![](./assets/DSC_4042.jpg)
 
 ![](./assets/DSC_4045.jpg)
-
-![](./assets/DSC_4049.jpg)
 
 ![](./assets/DSC_4059.jpg)
 
@@ -95,35 +83,23 @@ layout: photography
 
 ![](./assets/DSC_4078.jpg)
 
-![](./assets/DSC_4080.jpg)
-
 ![](./assets/DSC_4082.jpg)
 
 ![](./assets/DSC_4092.jpg)
 
 ![](./assets/DSC_4108.jpg)
 
-![](./assets/DSC_4111.jpg)
-
 ![](./assets/DSC_4115.jpg)
 
 ![](./assets/DSC_4125.jpg)
-
-![](./assets/DSC_4131.jpg)
 
 ![](./assets/DSC_4151.jpg)
 
 ![](./assets/DSC_4174.jpg)
 
-![](./assets/DSC_4176.jpg)
-
 ![](./assets/DSC_4190.jpg)
 
 ![](./assets/DSC_4195.jpg)
-
-![](./assets/DSC_4197.jpg)
-
-![](./assets/DSC_4229.jpg)
 
 ![](./assets/DSC_4261.jpg)
 
