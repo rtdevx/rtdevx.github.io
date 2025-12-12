@@ -1,6 +1,6 @@
 ---
 title: South Africa and Lesotho
-date: 2025-12-01
+date: 2012-04-01
 description: My travel to South Africa and in 2012 was certainly my first DSLR experience…
 summary: My travel to South Africa and in 2012 was certainly my first DSLR experience…
 draft: false
@@ -8,6 +8,8 @@ tags:
   - Africa
   - Lesotho
   - South Africa
+  - Backpacking
+  - 2012AD
 categories:
   - Travel
   - Photography
