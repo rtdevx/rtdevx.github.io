@@ -3,7 +3,7 @@ title: "GitHub Actions: Job Artifacts & Outputs"
 date: 2025-11-04
 description: Job artifacts in GitHub Actions are files generated during a workflow run that can be stored and shared between jobs.
 summary: Job artifacts in GitHub Actions are files generated during a workflow run that can be stored and shared between jobs.
-draft: false
+draft: true
 tags:
   - Git
   - GitHub
@@ -20,10 +20,7 @@ categories:
 | <font color=#EB4925>External Resources</font> »                             |                                                                           |                                  |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------- |
 | [GitHub Actions official Documentation](https://docs.github.com/en/actions) | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) | [GitHub.com](https://github.com) |
-
 ## Job Arrifacts
-
-
 
 {{< mermaid >}}
 flowchart LR
