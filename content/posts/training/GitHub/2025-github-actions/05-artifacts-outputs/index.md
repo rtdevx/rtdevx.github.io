@@ -189,7 +189,14 @@ subE ~~~ COMMENT2
 <br/>
 
 {{< alert "circle-info" >}}
-Caching can be used not only between Jobs but also between Workflows.
+<b><font color=#EB4925>IMPORTANT</font></b>: 
+
+- Caching can be used not only between Jobs but also between Workflows.
+- Caching block is placed before the block that will be cached. In below example, it is `- name: Install dependencies`.
+- Caching block must be used in every job to which this particular cache applies to.
+
+See  `- name: Install dependencies` block in below example.
+
 {{< /alert >}}
 
 📄 _File:_ cicd-gh-actions-course/.github/workflows/04-01-artifacts-outputs.yml
@@ -220,16 +227,6 @@ Caching can be used not only between Jobs but also between Workflows.
 ```
 
 {{< /highlight >}}
-
-{{< alert "circle-info" >}}
-<b><font color=#EB4925>IMPORTANT</font></b>: 
-
-- Caching block is placed before the block that will be cached. In the above example, it is `- name: Install dependencies`.
-- Caching block must be used in every job to which this particular cache applies to.
-
-See  `- name: Install dependencies` block in above example.
-
-{{< /alert >}}
 
 <br>
 

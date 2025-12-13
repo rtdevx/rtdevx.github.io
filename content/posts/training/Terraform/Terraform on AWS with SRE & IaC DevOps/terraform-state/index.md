@@ -137,7 +137,6 @@ resource "packet_device" "worker" {
 }
 ```
 
-{{< alert "circle-info" >}}
 `terraform state show` works very well in combination with `terraform state list`:
 
 ```shell
@@ -153,7 +152,6 @@ module.vpc.aws_eip.nat[0]
 ```shell
 terraform state show 'module.vpc.aws_eip.nat[0]'
 ```
-{{< /alert >}}
 
 <font color=#EBAC25><i>More info:</i></font> [`terraform state show`](https://developer.hashicorp.com/terraform/cli/commands/state/show)
 ## Remote State
