@@ -6,9 +6,13 @@ summary: Learn more about me and why I am starting this blog.
 ---
 ![](../assets/Kentemere2.jpg)
 
-**Experienced IT professional** accomplished in supporting and delivering secure, resilient, and PCI-compliant infrastructure solutions across international payment ecosystems. I specialize in building and automating high-stakes platforms for credit and debit card transaction processing and fraud detection systems (3D-Secure). Resilient platforms and infrastructures trusted by global banks and financial institutions. 
-  
-A strong advocate of _DevOps_ and _Agile_ methodologies, I bring end-to-end transparency and _automation_ to infrastructure delivery. Skilled across _Linux_ and _Windows Server_ environments, I leverage tools like _Ansible_ and _PowerShell_ to streamline provisioning, hardening, and support of critical systems.  
+I’m an IT professional with over 15 years of experience building and supporting secure, PCI‑compliant infrastructures across AWS Cloud and on‑prem environments. My focus is on automation and resilience — using tools like Terraform, Ansible, and CI/CD pipelines to deliver systems that scale reliably and reduce risk.
+
+Over the years, I’ve led projects ranging from fraud detection platforms to large‑scale payment systems, always with an emphasis on clarity, collaboration, and sustainable automation. I enjoy mentoring teams, sharing knowledge, and embedding Agile practices to help organizations work more transparently and effectively.
+
+What sets me apart is the combination of deep technical expertise and a drive to make complex systems understandable and maintainable. Whether it’s modularizing Terraform code, automating deployments with Ansible, or designing CI/CD workflows, I aim to create solutions that are not only robust but also auditable and future‑ready.
+
+I’m currently expanding my cloud expertise with the AWS Solutions Architect certification, and I share code samples and infrastructure projects openly on GitHub to demonstrate my approach to automation and DevOps.
 
 <!--
 
