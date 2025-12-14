@@ -141,7 +141,7 @@ Check [my GitHub Repository](https://github.com/rtdevx) for more code samples...
 
 <center>
 {{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}
-📜 Download
+📜 <b>Download</b>
 {{< /button >}}
 </center>
 
