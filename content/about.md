@@ -140,8 +140,14 @@ Check [my GitHub Repository](https://github.com/rtdevx) for more code samples...
 ## CURRICULUM VITAE
 
 <center>
+{{< button href="../../cv" target="_self" >}}
+📖 Read
+{{< /button >}}
+</center>
+<br/>
+<center>
 {{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}
-📜 Download
+📜 Download PDF
 {{< /button >}}
 </center>
 
