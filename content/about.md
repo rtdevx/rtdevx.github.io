@@ -137,7 +137,7 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 {{< alert "github">}}
 Check [my GitHub Repository](https://github.com/rtdevx) for more code samples...
 {{< /alert >}}
-## Curriculum Vitae
+## Curriculum Vitae 
 
 <center>
 {{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}
