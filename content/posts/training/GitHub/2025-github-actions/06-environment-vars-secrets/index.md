@@ -195,7 +195,7 @@ When a GitHub Actions workflow deploys to an environment, the environment is dis
 
 {{< alert "circle-info" >}}
 
-<font color=#EBAC25>You can use environments to require approval for a job to proceed, restrict which branches can trigger a workflow, gate deployments with custom deployment protection rules, or limit access to secrets</font>. 
+You can **use environments** to <font color=#C7EB25>require approval</font> for a job to proceed, <font color=#C7EB25>restrict</font> which branches can trigger a workflow, gate deployments with <font color=#C7EB25>custom deployment protection rules</font>, or <font color=#EB4925>limit access to secrets</font>. 
 
 {{< /alert >}}
 #### Referencing environments
