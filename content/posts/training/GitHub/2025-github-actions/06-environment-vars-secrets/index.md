@@ -186,14 +186,18 @@ can no longer be exposed</font>.
 ## GitHub Deployment Environments
 
 {{< lead >}}
-You can create and deploy to different environments.
+<font color=#EBAC25>You can create and deploy to different environments</font>.
 {{< /lead >}}
 
 **Environments** are used to describe a general deployment target like `production`, `staging`, or `development`. 
 
 When a GitHub Actions workflow deploys to an environment, the environment is displayed on the main page of the repository. 
 
-You can use environments to require approval for a job to proceed, restrict which branches can trigger a workflow, gate deployments with custom deployment protection rules, or limit access to secrets. 
+{{< alert "circle-info" >}}
+
+<font color=#EBAC25>You can use environments to require approval for a job to proceed, restrict which branches can trigger a workflow, gate deployments with custom deployment protection rules, or limit access to secrets</font>. 
+
+{{< /alert >}}
 #### Referencing environments
 
 {{< highlight html "linenos=table,hl_lines=4 " >}}
