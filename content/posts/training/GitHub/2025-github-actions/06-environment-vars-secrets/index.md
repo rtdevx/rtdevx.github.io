@@ -3,7 +3,7 @@ title: "GitHub Actions: Environment Variables & Secrets"
 date: 2025-12-17
 description: Environment Variables and Secrets in GitHub Actions.
 summary: Environment Variables and Secrets in GitHub Actions.
-draft: true
+draft: false
 tags:
   - Git
   - GitHub
