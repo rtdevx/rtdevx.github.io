@@ -196,7 +196,7 @@ When a GitHub Actions workflow deploys to an environment, the environment is dis
 You can use environments to require approval for a job to proceed, restrict which branches can trigger a workflow, gate deployments with custom deployment protection rules, or limit access to secrets. 
 #### Referencing environments
 
-{{< highlight html "linenos=table,hl_lines=3 " >}}
+{{< highlight html "linenos=table,hl_lines=4 " >}}
 
 ```YAML
 jobs:
