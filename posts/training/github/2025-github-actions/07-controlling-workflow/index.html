@@ -131,8 +131,8 @@ WF2:::redclasss --> Job1WF2:::yellowclass
 Job1WF1 --> Steps1WF1[Steps]:::greenclass
 Job1WF2 --> Steps2WF2[Steps]:::greenclass
 Steps2WF2 --> Job2WF2:::redclass
-WF1 WF1@----> Job2WF2
-WF1@{ animate: true }
+WF1 WF1-Job2WF2@----> Job2WF2
+WF1-Job2WF2@{ animate: true }
 Steps1WF1 -.- COMMENT1</div><p>Reusable workflows are YAML-formatted files, very similar to any other workflow file. As with other workflow files, you locate reusable workflows in the <code>.github/workflows</code> directory of a repository. Subdirectories of the <code>workflows</code> directory are not supported.</p><p>For a workflow to be reusable, the values for <code>on</code> must include <code>workflow_call</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-YAML data-lang=YAML><span class=line><span class=cl><span class=nt>on</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>workflow_call</span><span class=p>:</span><span class=w>
 </span></span></span></code></pre></div><h3 id=using-inputs-and-secrets-in-a-reusable-workflow class="relative group">Using inputs and secrets in a reusable workflow <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#using-inputs-and-secrets-in-a-reusable-workflow aria-label=Anchor>#</a></span></h3><p>You can define inputs and secrets, which can be passed from the caller workflow and then used within the called workflow. There are three stages to using an input or a secret in a reusable workflow.</p><ol><li><p>In the reusable workflow, use the <code>inputs</code> and <code>secrets</code> keywords to define inputs or secrets that will be passed from a caller workflow.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>on</span><span class=p>:</span><span class=w>
