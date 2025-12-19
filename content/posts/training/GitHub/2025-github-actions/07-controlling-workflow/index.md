@@ -227,12 +227,33 @@ Steps1WF1 -.- COMMENT1
 
 Reusable workflows are YAML-formatted files, very similar to any other workflow file. As with other workflow files, you locate reusable workflows in the `.github/workflows` directory of a repository. Subdirectories of the `workflows` directory are not supported.
 
-For a workflow to be reusable, the values for `on` must include `workflow_call`:
+{{< alert "triangle-exclamation" >}}
+<b><font color=#EB4925>IMPORTANT</font></b>: 
+For a workflow to be reusable, the values for `on` must include `workflow_call` (See below example).
+{{< /alert >}}
+
+
+
+📄 _File:_ cicd-gh-actions-course/.github/workflows/06-04-reusable-workflow.yml
+
+{{< highlight html "linenos=table,hl_lines=3-4" >}}
 
 ```YAML
+name: 06-04 Reusable Workflow
 on:
   workflow_call:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output information
+        run: |
+          echo "This is a reusable workflow example."
+          echo "You can add deployment steps here."
 ```
+
+{{< /highlight >}}
 ### Using inputs and secrets in a reusable workflow
 
 You can define inputs and secrets, which can be passed from the caller workflow and then used within the called workflow. There are three stages to using an input or a secret in a reusable workflow.
