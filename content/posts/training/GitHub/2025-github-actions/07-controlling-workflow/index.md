@@ -192,20 +192,31 @@ Learn how to avoid duplication when creating a workflow by reusing existing work
 
 flowchart TD
 
+%% Comments
 COMMENT1@{ shape: braces, label: "<i>Example:</i> Upload website code to hosting server." }
 
+%% Class Definitions
 classDef redclass fill:#EB4925
 classDef redclasss stroke:#EB4925
 classDef yellowclass stroke:#EBAC25
 classDef greenclass stroke:#C7EB25
 
-    WF1[Workflow 1]:::redclass --> Job1WF1[Job 1]:::yellowclass
-    WF2[Workflow 2]:::redclasss --> Job1WF2[Job 1]:::yellowclass
+%% Workflows
+WF1@{ shape: doc, label: "**Workflow 1**" }
+WF2@{ shape: doc, label: "**Workflow 2**" }
+
+%% Jobs
+Job1WF1@{ shape: processes, label: "**Job 1**" }
+Job1WF2@{ shape: processes, label: "**Job 1**" }
+Job2WF2@{ shape: processes, label: "**Job 2**" }
+
+    WF1:::redclass --> Job1WF1:::yellowclass
+    WF2:::redclasss --> Job1WF2:::yellowclass
     
     Job1WF1 --> Steps1WF1[Steps]:::greenclass
     Job1WF2 --> Steps2WF2[Steps]:::greenclass
 
-    Steps2WF2 --> Job2WF2[Job 2]:::redclass
+    Steps2WF2 --> Job2WF2:::redclass
 
     WF1 WF1@----> Job2WF2
     WF1@{ animate: true }
