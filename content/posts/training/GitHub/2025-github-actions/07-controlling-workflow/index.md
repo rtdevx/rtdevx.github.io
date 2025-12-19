@@ -188,6 +188,32 @@ Learn how to avoid duplication when creating a workflow by reusing existing work
 
 {{< /lead >}}
 
+{{< mermaid >}}
+
+flowchart TD
+
+COMMENT1@{ shape: braces, label: "<i>Example:</i> Upload website code to hosting server." }
+
+classDef redclass fill:#EB4925
+classDef redclasss stroke:#EB4925
+classDef yellowclass stroke:#EBAC25
+classDef greenclass stroke:#C7EB25
+
+    WF1[Workflow 1]:::redclass --> Job1WF1[Job 1]:::yellowclass
+    WF2[Workflow 2]:::redclasss --> Job1WF2[Job 1]:::yellowclass
+    
+    Job1WF1 --> Steps1WF1[Steps]:::greenclass
+    Job1WF2 --> Steps2WF2[Steps]:::greenclass
+
+    Steps2WF2 --> Job2WF2[Job 2]:::redclass
+
+    WF1 WF1@----> Job2WF2
+    WF1@{ animate: true }
+
+Steps1WF1 -.- COMMENT1
+
+{{< /mermaid >}}
+
 Reusable workflows are YAML-formatted files, very similar to any other workflow file. As with other workflow files, you locate reusable workflows in the `.github/workflows` directory of a repository. Subdirectories of the `workflows` directory are not supported.
 
 For a workflow to be reusable, the values for `on` must include `workflow_call`:
