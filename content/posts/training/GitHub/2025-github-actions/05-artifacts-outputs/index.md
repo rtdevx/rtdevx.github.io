@@ -103,7 +103,7 @@ In addition to **Artifacts**, we also have the **Job Outputs**.
 
 📄 _File:_ cicd-gh-actions-course/.github/workflows/04-01-artifacts-outputs.yml
 
-{{< highlight html "linenos=table,hl_lines=5-6 18-19" >}}
+{{< highlight YAML "linenos=table,hl_lines=5-6 18-19" >}}
 
 ```YAML
   build:
@@ -131,7 +131,7 @@ In addition to **Artifacts**, we also have the **Job Outputs**.
 
 📄 _File:_ cicd-gh-actions-course/.github/workflows/04-01-artifacts-outputs.yml
 
-{{< highlight html "linenos=table,hl_lines=3 11-12" >}}
+{{< highlight YAML "linenos=table,hl_lines=3 11-12" >}}
 
 ```YAML
   deploy:
@@ -201,7 +201,7 @@ See  `- name: Install dependencies` block in below example.
 
 📄 _File:_ cicd-gh-actions-course/.github/workflows/04-01-artifacts-outputs.yml
 
-{{< highlight html "linenos=table,hl_lines=11-15" >}}
+{{< highlight YAML "linenos=table,hl_lines=11-15" >}}
 
 ```YAML
     build:

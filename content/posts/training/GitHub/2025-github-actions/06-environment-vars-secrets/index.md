@@ -165,7 +165,7 @@ Secrets can be stored for a specific repository or for an environment.<br/> They
 
 `Secrets` context object is being used to access / reference secrets stored in GitHub Actions repository / organization.
 
-{{< highlight html "linenos=table,hl_lines=4-5 " >}}
+{{< highlight YAML "linenos=table,hl_lines=4-5 " >}}
 
 ```YAML
     env:
@@ -200,7 +200,7 @@ You can **use environments** to <font color=#C7EB25>require approval</font> for 
 {{< /alert >}}
 #### Referencing environments
 
-{{< highlight html "linenos=table,hl_lines=4 " >}}
+{{< highlight YAML "linenos=table,hl_lines=4 " >}}
 
 ```YAML
 jobs:

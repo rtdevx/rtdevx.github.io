@@ -30,7 +30,7 @@ You can use the `jobs.<job_id>.if` conditional to prevent a job from running u
 
 📄 _File:_ .github/workflows/06-01-execution-flow.yml
 
-{{< highlight html "linenos=table,hl_lines=17 21 " >}}
+{{< highlight YAML "linenos=table,hl_lines=17 21 " >}}
 
 ```YAML
   test:
@@ -76,7 +76,7 @@ Note:  **failure function** (`failure() &&`) <font color=#EB4925>must be present
 <ins><i>Example:</i></ins>
 
 📄 _File:_ .github/workflows/06-01-execution-flow.yml
-{{< highlight html "linenos=table,hl_lines=5 " >}}
+{{< highlight YAML "linenos=table,hl_lines=5 " >}}
 
 ```YAML
   build:
@@ -236,7 +236,7 @@ For a workflow to be reusable, the values for `on` must include `workflow_cal
 
 📄 _File:_ cicd-gh-actions-course/.github/workflows/06-04-reusable-workflow.yml
 
-{{< highlight html "linenos=table,hl_lines=3-4" >}}
+{{< highlight YAML "linenos=table,hl_lines=3-4" >}}
 
 ```YAML
 name: 06-04 Reusable Workflow
@@ -312,8 +312,11 @@ You can define inputs and secrets, which can be passed from the caller workflow 
     ```
     
     Workflows that call reusable workflows in the same organization or enterprise can use the `inherit` keyword to implicitly pass the secrets.
-    
-    ```yaml
+
+
+{{< highlight YAML "linenos=table,hl_lines=3-4" >}}
+
+   ```YAML
     jobs:
       call-workflow-passing-data:
         uses: octo-org/example-repo/.github/workflows/reusable-workflow.yml@main
@@ -321,6 +324,8 @@ You can define inputs and secrets, which can be passed from the caller workflow 
           config-path: .github/labeler.yml
         secrets: inherit
     ```
+
+{{< /highlight >}}
 
 <font color=#EBAC25><i>More info:</i></font> [Reuse workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)
 
