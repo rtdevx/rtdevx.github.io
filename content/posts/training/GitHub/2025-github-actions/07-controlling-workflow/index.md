@@ -91,12 +91,72 @@ Note:  **failure function** (`failure() &&`) <font color=#EB4925>must be present
 
 {{< /highlight >}}
 
+<ins><i>Example:</i></ins> report job depends on lint and deploy jobs (`needs: [lint, deploy]`). It will still run if any of the jobs fails.
+
+![](./assets/job-execution-flow.png)
+
+{{< alert "triangle-exclamation" >}}
+`continue-on-error: true` changes the behaviour and sets the failed job to successful, even if it failed. Can be used for jobs that are allowed to fail.
+
+Check [contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts) for more information.
+
+<font color=#EBAC25><i>Hint:</i></font>
+
+|   |   |   |
+|---|---|---|
+|`steps.<step_id>.conclusion`|`string`|The result of a completed step after [`continue-on-error`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) is applied. Possible values are `success`, `failure`, `cancelled`, or `skipped`. When a `continue-on-error` step fails, the `outcome` is `failure`, but the final `conclusion` is `success`.|
+|`steps.<step_id>.outcome`|`string`|The result of a completed step before [`continue-on-error`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) is applied. Possible values are `success`, `failure`, `cancelled`, or `skipped`. When a `continue-on-error` step fails, the `outcome` is `failure`, but the final `conclusion` is `success`.|
+
+{{< /alert >}}
+
 <font color=#EBAC25><i>More info:</i></font>
 - Using conditions to control job execution: https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-jobs-with-conditions
 - Contexts: https://docs.github.com/en/actions/reference/workflows-and-actions/contexts
 - Operators: https://docs.github.com/en/actions/reference/workflows-and-actions/expressions#operators
+## Matrix Strategies
 
-- Running Jobs with a Matrix
+{{< lead >}}
+
+The **GitHub Actions matrix strategy** is a powerful feature that <font color=#EBAC25>allows you to run the same job multiple times across various combinations of variables (like different operating systems or language versions) without duplicating code</font>. It maximizes parallelism and testing coverage within a single, maintainable workflow definition.
+
+{{< /lead >}}
+### How it Works
+
+Within a workflow file, you define a `strategy` block within a job, which contains a `matrix` key. Inside the `matrix`, you specify variables as keys and a list of values for each variable. GitHub Actions then automatically generates a separate, parallel job run for every possible combination of these values. 
+
+<ins><i>Example:</i></ins>
+
+This example tests a Node.js application on two different operating systems and two different Node.js versions:
+
+```YAML
+jobs:
+  build-and-test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node_version: [14, 16]
+    steps:
+      - uses: [actions/checkout@v4](github.com)
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: [actions/setup-node@v4](github.com)
+        with:
+          node-version: ${{ matrix.node_version }}
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+```
+
+This configuration creates four jobs:
+
+- `os: ubuntu-latest`, `node_version: 14`
+- `os: ubuntu-latest`, `node_version: 16`
+- `os: windows-latest`, `node_version: 14`
+- `os: windows-latest`, `node_version: 16`
+
+<font color=#EBAC25><i>More info:</i></font> [Running variations of jobs in a workflow](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations)
+
 - Re-Using Workflows
 
 ---
@@ -105,6 +165,10 @@ Note:  **failure function** (`failure() &&`) <font color=#EB4925>must be present
 - Using conditions to control job execution: https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-jobs-with-conditions
 - Contexts: https://docs.github.com/en/actions/reference/workflows-and-actions/contexts
 - Operators: https://docs.github.com/en/actions/reference/workflows-and-actions/expressions#operators
+
+Matrix strategies:
+
+- [Running variations of jobs in a workflow](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations)
 ## >> Disclaimer <<
 
 {{< disclaimer_gh_actions_schwarzmueller >}}
