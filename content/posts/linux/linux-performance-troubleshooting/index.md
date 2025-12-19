@@ -9,6 +9,7 @@ tags:
 categories:
   - DevOps
   - Linux
+  - Cheatsheets
 ---
 
 {{< youtube rwVLa9me7e4 >}}
