@@ -218,8 +218,8 @@ Job2WF2@{ shape: processes, label: "**Job 2**" }
 
     Steps2WF2 --> Job2WF2:::redclass
 
-    WF1 WF1@----> Job2WF2
-    WF1@{ animate: true }
+    WF1 WF1-Job2WF2@----> Job2WF2
+    WF1-Job2WF2@{ animate: true }
 
 Steps1WF1 -.- COMMENT1
 
