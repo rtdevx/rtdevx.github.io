@@ -91,7 +91,7 @@ Note:  **failure function** (`failure() &&`) <font color=#EB4925>must be present
 
 {{< /highlight >}}
 
-<ins><i>Example:</i></ins> report job depends on lint and deploy jobs (`needs: [lint, deploy]`). It will still run if any of the jobs fails.
+<ins><i>Example:</i></ins> `report` job depends on `lint` and `deploy` jobs (`needs: [lint, deploy]`). It will still run if any of the jobs fails.
 
 ![](./assets/job-execution-flow.png)
 
