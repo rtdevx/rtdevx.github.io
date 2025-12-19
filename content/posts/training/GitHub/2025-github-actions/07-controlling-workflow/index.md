@@ -3,7 +3,7 @@ title: "GitHub Actions: Controlling Workflow and Job Execution"
 date: 2025-11-11
 description: Controlling Workflow & Job Execution in GitHub Actions.
 summary: Controlling Workflow & Job Execution in GitHub Actions.
-draft: true
+draft: false
 tags:
   - Git
   - GitHub
@@ -154,10 +154,118 @@ This configuration creates four jobs:
 - `os: ubuntu-latest`, `node_version: 16`
 - `os: windows-latest`, `node_version: 14`
 - `os: windows-latest`, `node_version: 16`
+### Inclusions and Exclusions in Matrix strategies
+
+{{< lead >}}
+
+In **GitHub Actions matrix strategies**, the `include` keyword adds specific configurations or properties, while the `exclude` keyword removes unwanted combinations from the default matrix permutations. This provides fine-grained control over which jobs run in the workflow.
+
+{{< /lead >}}
+
+<ins><i>Example:</i></ins>
+
+```YAML
+strategy:
+  matrix:
+    os: [ubuntu-latest, macos-latest]
+    node: [14, 16]
+    include:
+      # Add a specific job for Node 18 on Ubuntu
+      - os: ubuntu-latest
+        node: 18
+      # Add an extra property (e.g., 'test-suite') to the macos-latest/Node 16 job
+      - os: macos-latest
+        node: 16
+        test-suite: "extended"
+```
 
 <font color=#EBAC25><i>More info:</i></font> [Running variations of jobs in a workflow](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations)
+## Re-Using Workflows
 
-- Re-Using Workflows
+{{< lead >}}
+
+Learn how to avoid duplication when creating a workflow by reusing existing workflows.
+
+{{< /lead >}}
+
+Reusable workflows are YAML-formatted files, very similar to any other workflow file. As with other workflow files, you locate reusable workflows in the `.github/workflows` directory of a repository. Subdirectories of the `workflows` directory are not supported.
+
+For a workflow to be reusable, the values for `on` must include `workflow_call`:
+
+```YAML
+on:
+  workflow_call:
+```
+### Using inputs and secrets in a reusable workflow
+
+You can define inputs and secrets, which can be passed from the caller workflow and then used within the called workflow. There are three stages to using an input or a secret in a reusable workflow.
+
+1. In the reusable workflow, use the `inputs` and `secrets` keywords to define inputs or secrets that will be passed from a caller workflow.
+    
+    ```yaml
+    on:
+      workflow_call:
+        inputs:
+          config-path:
+            required: true
+            type: string
+        secrets:
+          personal_access_token:
+            required: true
+    ```
+    
+    For details of the syntax for defining inputs and secrets, see [`on.workflow_call.inputs`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_callinputs) and [`on.workflow_call.secrets`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_callsecrets).
+    
+2. In the reusable workflow, reference the input or secret that you defined in the `on` key in the previous step.
+    
+    Note
+    
+    If the secrets are inherited by using `secrets: inherit` in the calling workflow, you can reference them even if they are not explicitly defined in the `on` key. For more information, see [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsecretsinherit).
+    
+    ```yaml
+    jobs:
+      reusable_workflow_job:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/labeler@v6
+          with:
+            repo-token: ${{ secrets.personal_access_token }}
+            configuration-path: ${{ inputs.config-path }}
+    ```
+    
+    In the example above, `personal_access_token` is a secret that's defined at the repository or organization level.
+    
+    Warning
+    
+    Environment secrets cannot be passed from the caller workflow as `on.workflow_call` does not support the `environment` keyword. If you include `environment` in the reusable workflow at the job level, the environment secret will be used, and not the secret passed from the caller workflow. For more information, see [Managing environments for deployment](https://docs.github.com/en/actions/deployment/targeting-different-environments/managing-environments-for-deployment#environment-secrets) and [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_call).
+    
+3. Pass the input or secret from the caller workflow.
+    
+    To pass named inputs to a called workflow, use the `with` keyword in a job. Use the `secrets` keyword to pass named secrets. For inputs, the data type of the input value must match the type specified in the called workflow (either boolean, number, or string).
+    
+    ```yaml
+    jobs:
+      call-workflow-passing-data:
+        uses: octo-org/example-repo/.github/workflows/reusable-workflow.yml@main
+        with:
+          config-path: .github/labeler.yml
+        secrets:
+          personal_access_token: ${{ secrets.token }}
+    ```
+    
+    Workflows that call reusable workflows in the same organization or enterprise can use the `inherit` keyword to implicitly pass the secrets.
+    
+    ```yaml
+    jobs:
+      call-workflow-passing-data:
+        uses: octo-org/example-repo/.github/workflows/reusable-workflow.yml@main
+        with:
+          config-path: .github/labeler.yml
+        secrets: inherit
+    ```
+
+<font color=#EBAC25><i>More info:</i></font> [Reuse workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)
+
 
 ---
 ## >> Sources <<
@@ -166,9 +274,10 @@ This configuration creates four jobs:
 - Contexts: https://docs.github.com/en/actions/reference/workflows-and-actions/contexts
 - Operators: https://docs.github.com/en/actions/reference/workflows-and-actions/expressions#operators
 
-Matrix strategies:
+**Matrix strategies:**
 
 - [Running variations of jobs in a workflow](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations)
+- [Reuse workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)
 ## >> Disclaimer <<
 
 {{< disclaimer_gh_actions_schwarzmueller >}}
