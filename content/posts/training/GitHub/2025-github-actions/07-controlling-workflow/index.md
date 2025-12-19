@@ -180,7 +180,7 @@ strategy:
 ```
 
 <font color=#EBAC25><i>More info:</i></font> [Running variations of jobs in a workflow](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations)
-## Re-Using Workflows
+## 🔥Re-Using Workflows 
 
 {{< lead >}}
 
