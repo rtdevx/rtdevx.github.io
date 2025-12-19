@@ -301,6 +301,8 @@ You can define inputs and secrets, which can be passed from the caller workflow 
     
     To pass named inputs to a called workflow, use the `with` keyword in a job. Use the `secrets` keyword to pass named secrets. For inputs, the data type of the input value must match the type specified in the called workflow (either boolean, number, or string).
     
+{{< highlight YAML "linenos=table,hl_lines=3-4" >}}
+
     ```yaml
     jobs:
       call-workflow-passing-data:
@@ -310,7 +312,9 @@ You can define inputs and secrets, which can be passed from the caller workflow 
         secrets:
           personal_access_token: ${{ secrets.token }}
     ```
-    
+
+{{< /highlight >}}
+
     Workflows that call reusable workflows in the same organization or enterprise can use the `inherit` keyword to implicitly pass the secrets.
 
 
