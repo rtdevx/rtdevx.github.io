@@ -40,6 +40,9 @@ flowchart RL
         NAT1["NAT Gateway AZ1"]
         NAT2["NAT Gateway AZ2"]
 
+        %% Load Balancer
+        ALB["Application Load Balancer<br/>(Internet-facing)"]
+
         %% AZ1
         subgraph AZ1["AZ1"]
             Pub1["Public Subnet AZ1<br/><i>(0.0.0.0/0 ↔ IGW)</i>"]
@@ -52,17 +55,29 @@ flowchart RL
             Priv2["Private Subnet AZ2<br/><i>(0.0.0.0/0 ↔ NAT2)</i>"]
         end
 
+        %% ALB placement in public subnets
+        Pub1 <--> ALB
+        Pub2 <--> ALB
+
         %% Public subnet traffic (bi-directional)
         Pub1 <--> IGW
         Pub2 <--> IGW
 
         %% Private subnet traffic (bi-directional)
-        Priv1 --> NAT1
-        Priv2 --> NAT2
+        Priv1 <--> NAT1
+        Priv2 <--> NAT2
 
         %% NAT ↔ IGW (bi-directional)
-        NAT1 --> IGW
-        NAT2 --> IGW
+        NAT1 <--> IGW
+        NAT2 <--> IGW
+
+        %% ALB to private subnets (targets)
+        ALB ~~~ Priv1
+        ALB ~~~ Priv2
+
+        %% ALB To Internet Gateway
+        ALB -.- IGW
+
 
     end
 
