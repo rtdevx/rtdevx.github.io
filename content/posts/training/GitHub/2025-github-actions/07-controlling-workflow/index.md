@@ -320,14 +320,14 @@ You can define inputs and secrets, which can be passed from the caller workflow 
 
 {{< highlight YAML "linenos=table,hl_lines=3-4" >}}
 	
-	   ```YAML
+```YAML
 	    jobs:
 	      call-workflow-passing-data:
 	        uses: octo-org/example-repo/.github/workflows/reusable-workflow.yml@main
 	        with:
 	          config-path: .github/labeler.yml
 	        secrets: inherit
-	    ```
+```
 	
 {{< /highlight >}}
 
