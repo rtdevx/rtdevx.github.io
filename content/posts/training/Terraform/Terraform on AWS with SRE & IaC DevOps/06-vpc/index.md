@@ -29,6 +29,12 @@ categories:
 
 flowchart RL
 
+%% Class Definitions
+classDef redclass fill:#EB4925
+classDef redclasss stroke:#EB4925
+classDef yellowclass stroke:#EBAC25
+classDef greenclass stroke:#C7EB25
+
     %% External Internet
     Internet["☁️ Internet"]
 
@@ -36,20 +42,20 @@ flowchart RL
     subgraph VPC["AWS VPC"]
 
         %% IGW + NATs
-        IGW["Internet Gateway"]
-        NAT1["NAT Gateway AZ1"]
-        NAT2["NAT Gateway AZ2"]
+        IGW["Internet Gateway"]:::redclass
+        NAT1["NAT Gateway AZ1"]:::redclasss
+        NAT2["NAT Gateway AZ2"]:::redclasss
 
         %% AZ1
         subgraph AZ1["AZ1"]
-            Pub1["Public Subnet AZ1<br/><i>(0.0.0.0/0 ↔ IGW)</i>"]
-            Priv1["Private Subnet AZ1<br/><i>(0.0.0.0/0 ↔ NAT1)</i>"]
+            Pub1["Public Subnet AZ1<br/><i>(0.0.0.0/0 ↔ IGW)</i>"]:::greenclass
+            Priv1["Private Subnet AZ1<br/><i>(0.0.0.0/0 ↔ NAT1)</i>"]:::redclasss
         end
 
         %% AZ2
         subgraph AZ2["AZ2"]
-            Pub2["Public Subnet AZ2<br/><i>(0.0.0.0/0 ↔ IGW)</i>"]
-            Priv2["Private Subnet AZ2<br/><i>(0.0.0.0/0 ↔ NAT2)</i>"]
+            Pub2["Public Subnet AZ2<br/><i>(0.0.0.0/0 ↔ IGW)</i>"]:::greenclass
+            Priv2["Private Subnet AZ2<br/><i>(0.0.0.0/0 ↔ NAT2)</i>"]:::redclasss
         end
 
         %% Public subnet traffic (bi-directional)
