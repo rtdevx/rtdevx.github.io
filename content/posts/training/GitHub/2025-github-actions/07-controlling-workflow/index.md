@@ -327,9 +327,7 @@ You can define inputs and secrets, which can be passed from the caller workflow 
 	        with:
 	          config-path: .github/labeler.yml
 	        secrets: inherit
-	    ```
-	
-	{{< /highlight >}}
+	    ```	
 
 <font color=#EBAC25><i>More info:</i></font> [Reuse workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)
 
