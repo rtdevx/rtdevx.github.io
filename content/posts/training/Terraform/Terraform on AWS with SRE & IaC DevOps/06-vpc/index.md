@@ -14,6 +14,17 @@ categories:
 ---
 ## 👨🏻‍💻Part 1: Building VPC manually
 
+### VPC Components
+
+- Create VPC 
+	- 2 AZ
+		- Public Subnets
+		- Private Subnets
+- Create Internet Gateway and Associate to VPC
+- Create NAT Gateway in Public Subnet 
+- Create Public Route Table, Add Public Route via Internet Gateway and Associate Public Subnet
+- Create Private Route Table, Add Private Route via NAT Gateway and Associate Private Subnet
+
 {{< mermaid >}}
 
 flowchart RL
@@ -59,16 +70,6 @@ flowchart RL
     IGW <--> Internet
 
 {{< /mermaid >}}
-### VPC Components
-
-- Create VPC 
-	- 2 AZ
-		- Public Subnets
-		- Private Subnets
-- Create Internet Gateway and Associate to VPC
-- Create NAT Gateway in Public Subnet 
-- Create Public Route Table, Add Public Route via Internet Gateway and Associate Public Subnet
-- Create Private Route Table, Add Private Route via NAT Gateway and Associate Private Subnet
 ### 1. Create VPC
 
 ```CLI
