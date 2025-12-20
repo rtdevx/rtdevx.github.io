@@ -14,6 +14,51 @@ categories:
 ---
 ## 👨🏻‍💻Part 1: Building VPC manually
 
+{{< mermaid >}}
+
+flowchart RL
+
+    %% External Internet
+    Internet["☁️ Internet"]
+
+    %% VPC container
+    subgraph VPC["AWS VPC"]
+
+        %% IGW + NATs
+        IGW["Internet Gateway"]
+        NAT1["NAT Gateway AZ1"]
+        NAT2["NAT Gateway AZ2"]
+
+        %% AZ1
+        subgraph AZ1["AZ1"]
+            Pub1["Public Subnet AZ1<br/><i>(0.0.0.0/0 ↔ IGW)</i>"]
+            Priv1["Private Subnet AZ1<br/><i>(0.0.0.0/0 ↔ NAT1)</i>"]
+        end
+
+        %% AZ2
+        subgraph AZ2["AZ2"]
+            Pub2["Public Subnet AZ2<br/><i>(0.0.0.0/0 ↔ IGW)</i>"]
+            Priv2["Private Subnet AZ2<br/><i>(0.0.0.0/0 ↔ NAT2)</i>"]
+        end
+
+        %% Public subnet traffic (bi-directional)
+        Pub1 <--> IGW
+        Pub2 <--> IGW
+
+        %% Private subnet traffic (bi-directional)
+        Priv1 --> NAT1
+        Priv2 --> NAT2
+
+        %% NAT ↔ IGW (bi-directional)
+        NAT1 --> IGW
+        NAT2 --> IGW
+
+    end
+
+    %% IGW ↔ Internet (bi-directional)
+    IGW <--> Internet
+
+{{< /mermaid >}}
 ### VPC Components
 
 - Create VPC 
