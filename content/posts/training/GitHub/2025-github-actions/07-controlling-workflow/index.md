@@ -13,6 +13,10 @@ categories:
   - CI/CD
   - IaC
 ---
+
+| <font color=#EB4925>External Resources</font> »                             |                                                                           |                                  |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------- |
+| [GitHub Actions official Documentation](https://docs.github.com/en/actions) | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) | [GitHub.com](https://github.com) |
 ## Controlling Execution Flow
 
 ## Using conditions to control job execution

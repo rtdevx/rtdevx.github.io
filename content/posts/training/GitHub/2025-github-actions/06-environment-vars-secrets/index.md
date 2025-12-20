@@ -22,7 +22,6 @@ categories:
 | [GitHub Actions official Documentation](https://docs.github.com/en/actions) | [GitHub Actions Marketplace](https://github.com/marketplace?type=actions) | [GitHub.com](https://github.com) |
 ## Environment Variables
 
-
 ### Declaring a variable
 
 {{< alert "circle-info" >}}
