@@ -109,14 +109,19 @@ These environment variable can, for example, give you quick access to the reposi
 ## Environment Variables vs Secrets
 
 {{< lead >}}
+
 In **GitHub Actions**, <font color=#C7EB25>variables are used to store non-sensitive information</font> that can be displayed and edited, while <font color=#EB4925>secrets are specifically designed to securely store sensitive data</font>, such as **API keys**, and <font color=#EB4925>are encrypted to prevent exposure in logs</font>. 
+
 {{< /lead >}}
 
 {{< alert "circle-info" >}}
+
 <font color=#EB4925>Secrets</font> should be used for any **sensitive information**, whereas <font color=#C7EB25>variables</font> can be used for **general configuration data**.
+
 {{< /alert >}}
 <br/>
 {{< mermaid >}}
+
 flowchart TD
 
 classDef redclass fill:#EB4925
@@ -131,6 +136,7 @@ environment variables
 should never be exposed]:::greenclass -->|<i>Example</i>: Database access password| B[Use Secrets]:::redclass
 
  B -.- C 
+ 
  {{< /mermaid >}}
 ### [Creating secrets for a repository](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#creating-secrets-for-a-repository)
 
@@ -156,24 +162,24 @@ To create secrets or variables on GitHub for an organization repository, you mus
 If your repository has environment secrets or can access secrets from the parent organization, then those secrets are also listed on this page.
 
 {{< alert "circle-info" >}}
+
 Secrets can be stored for a specific repository or for an environment.<br/> They can be stored at a repository-level or at an organization-level.
 
 <font color=#EBAC25><i>More info:</i></font> 
 - https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets
+
 {{< /alert >}}
 #### Accessing secrets
 
 `Secrets` context object is being used to access / reference secrets stored in GitHub Actions repository / organization.
 
-{{< highlight YAML "linenos=table,hl_lines=4-5 " >}}
+{{< highlight YAML "linenos=table,hl_lines=3-4 " >}}
 
-```YAML
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.15pwqcc.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
-```
 
 {{< /highlight >}}
 
@@ -186,7 +192,9 @@ can no longer be exposed</font>.
 ## GitHub Deployment Environments
 
 {{< lead >}}
+
 <font color=#EBAC25>You can create and deploy to different environments</font>.
+
 {{< /lead >}}
 
 **Environments** are used to describe a general deployment target like `production`, `staging`, or `development`. 
@@ -200,9 +208,8 @@ You can **use environments** to <font color=#C7EB25>require approval</font> for 
 {{< /alert >}}
 #### Referencing environments
 
-{{< highlight YAML "linenos=table,hl_lines=4 " >}}
+{{< highlight YAML "linenos=table,hl_lines=3 " >}}
 
-```YAML
 jobs:
   test:
     environment: testing
@@ -211,7 +218,6 @@ jobs:
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
-```
 
 {{< /highlight >}}
 

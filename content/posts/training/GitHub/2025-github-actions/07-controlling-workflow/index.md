@@ -18,11 +18,15 @@ categories:
 ## Using conditions to control job execution
 
 {{< lead >}}
+
 You can use the `jobs.<job_id>.if` conditional to prevent a job from running unless a condition is met. You can use any supported context and expression to create a conditional. For more information on which contexts are supported in this key, see [Contexts reference](https://docs.github.com/en/actions/learn-github-actions/contexts#context-availability).
+
 {{< /lead >}}
 
 {{< alert "circle-info" >}}
+
 <font color=#EB4925>The default action of GitHub Actions is when the step fails, the whole job the step belongs to also fails</font>. For that reason we may want to have some form of control during our job execution.
+
 {{< /alert >}}
 ### Step execution
 
@@ -30,9 +34,8 @@ You can use the `jobs.<job_id>.if` conditional to prevent a job from running u
 
 📄 _File:_ .github/workflows/06-01-execution-flow.yml
 
-{{< highlight YAML "linenos=table,hl_lines=17 21 " >}}
+{{< highlight YAML "linenos=table,hl_lines=16 20 " >}}
 
-```YAML
   test:
     runs-on: ubuntu-latest
     steps:
@@ -57,7 +60,6 @@ You can use the `jobs.<job_id>.if` conditional to prevent a job from running u
         with:
           name: test-report
           path: 06-react-exercise/test.json
-```
 
 {{< /highlight >}}
 
@@ -76,9 +78,9 @@ Note:  **failure function** (`failure() &&`) <font color=#EB4925>must be present
 <ins><i>Example:</i></ins>
 
 📄 _File:_ .github/workflows/06-01-execution-flow.yml
-{{< highlight YAML "linenos=table,hl_lines=5 " >}}
 
-```YAML
+{{< highlight YAML "linenos=table,hl_lines=4 " >}}
+
   build:
     needs: test
     # run this job even if the test job fails
@@ -87,7 +89,6 @@ Note:  **failure function** (`failure() &&`) <font color=#EB4925>must be present
     steps:
       - name: Get code
         uses: actions/checkout@v3
-```
 
 {{< /highlight >}}
 
@@ -232,13 +233,10 @@ Reusable workflows are YAML-formatted files, very similar to any other workflow 
 For a workflow to be reusable, the values for `on` must include `workflow_call` (See below example).
 {{< /alert >}}
 
-
-
 📄 _File:_ cicd-gh-actions-course/.github/workflows/06-04-reusable-workflow.yml
 
-{{< highlight YAML "linenos=table,hl_lines=3-4" >}}
+{{< highlight YAML "linenos=table,hl_lines=2-3" >}}
 
-```YAML
 name: 06-04 Reusable Workflow
 on:
   workflow_call:
@@ -251,7 +249,6 @@ jobs:
         run: |
           echo "This is a reusable workflow example."
           echo "You can add deployment steps here."
-```
 
 {{< /highlight >}}
 ### Using inputs and secrets in a reusable workflow
@@ -301,9 +298,8 @@ You can define inputs and secrets, which can be passed from the caller workflow 
     
     To pass named inputs to a called workflow, use the `with` keyword in a job. Use the `secrets` keyword to pass named secrets. For inputs, the data type of the input value must match the type specified in the called workflow (either boolean, number, or string).
     
-{{< highlight YAML "linenos=table,hl_lines=3-4" >}}
+{{< highlight YAML "linenos=table,hl_lines=2-3" >}}
 
-    ```YAML
     jobs:
       call-workflow-passing-data:
         uses: octo-org/example-repo/.github/workflows/reusable-workflow.yml@main
@@ -311,23 +307,19 @@ You can define inputs and secrets, which can be passed from the caller workflow 
           config-path: .github/labeler.yml
         secrets:
           personal_access_token: ${{ secrets.token }}
-    ```
 
 {{< /highlight >}}
 
    Workflows that call reusable workflows in the same organization or enterprise can use the `inherit` keyword to implicitly pass the secrets.
 
+{{< highlight YAML "linenos=table,hl_lines=2-3" >}}
 
-{{< highlight YAML "linenos=table,hl_lines=3-4" >}}
-
-```YAML
 	    jobs:
 	      call-workflow-passing-data:
 	        uses: octo-org/example-repo/.github/workflows/reusable-workflow.yml@main
 	        with:
 	          config-path: .github/labeler.yml
 	        secrets: inherit
-```
 
 {{< /highlight >}}
 
