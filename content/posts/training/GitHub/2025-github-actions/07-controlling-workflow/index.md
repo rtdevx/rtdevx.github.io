@@ -315,11 +315,8 @@ You can define inputs and secrets, which can be passed from the caller workflow 
 
 {{< /highlight >}}
 
-<br>
+   Workflows that call reusable workflows in the same organization or enterprise can use the `inherit` keyword to implicitly pass the secrets.
 
-    Workflows that call reusable workflows in the same organization or enterprise can use the `inherit` keyword to implicitly pass the secrets.
-
-<br/>
 
 	{{< highlight YAML "linenos=table,hl_lines=3-4" >}}
 	
