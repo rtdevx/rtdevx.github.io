@@ -303,7 +303,7 @@ You can define inputs and secrets, which can be passed from the caller workflow 
     
 {{< highlight YAML "linenos=table,hl_lines=3-4" >}}
 
-    ```yaml
+    ```YAML
     jobs:
       call-workflow-passing-data:
         uses: octo-org/example-repo/.github/workflows/reusable-workflow.yml@main
@@ -318,7 +318,7 @@ You can define inputs and secrets, which can be passed from the caller workflow 
    Workflows that call reusable workflows in the same organization or enterprise can use the `inherit` keyword to implicitly pass the secrets.
 
 
-	{{< highlight YAML "linenos=table,hl_lines=3-4" >}}
+{{< highlight YAML "linenos=table,hl_lines=3-4" >}}
 	
 	   ```YAML
 	    jobs:
@@ -329,7 +329,7 @@ You can define inputs and secrets, which can be passed from the caller workflow 
 	        secrets: inherit
 	    ```
 	
-	{{< /highlight >}}
+{{< /highlight >}}
 
 <font color=#EBAC25><i>More info:</i></font> [Reuse workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)
 
