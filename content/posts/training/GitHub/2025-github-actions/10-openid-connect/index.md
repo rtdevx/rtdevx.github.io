@@ -74,8 +74,8 @@ Example `Get AWS permissions` **GitHub Action** o assume an **IAM** role.
       - name: Get AWS permissions
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::450226343468:role/GitHubDemo1
-          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::450226343468:role/GitHubDemo1 # Role ARN
+          aws-region: us-east-1 # Location of the S3 Bucket
 ```
 
 ℹ️ _Note:_ Refer to below documentation to set up OIDC in AWS:
