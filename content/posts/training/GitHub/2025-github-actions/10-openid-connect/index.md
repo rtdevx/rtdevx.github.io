@@ -91,6 +91,14 @@ Example `Get AWS permissions` **GitHub Action** o assume an **IAM** role.
 - [OpenID Connect](https://docs.github.com/en/actions/concepts/security/openid-connect)
 - [Configuring OpenID Connect in Amazon Web Services](https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-aws)
 - [Create an OpenID Connect (OIDC) identity provider in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)
+
+**More On GitHub Actions Security:**
+
+- General overview & important concepts: [https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions](https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions)    
+- More on Secrets: [https://docs.github.com/en/actions/security-guides/encrypted-secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)    
+- Using `GITHUB_TOKEN`: [https://docs.github.com/en/actions/security-guides/automatic-token-authentication](https://docs.github.com/en/actions/security-guides/automatic-token-authentication)    
+- Advanced - Preventing Fork Pull Requests Attacks: [https://securitylab.github.com/research/github-actions-preventing-pwn-requests/](https://securitylab.github.com/research/github-actions-preventing-pwn-requests/)    
+- Security Hardening with OpenID Connect: [https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect)
 ## >> Disclaimer <<
 
 {{< disclaimer_gh_actions_schwarzmueller >}}
