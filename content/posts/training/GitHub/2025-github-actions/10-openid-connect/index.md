@@ -68,6 +68,16 @@ Use **OpenID Connect** within your workflows to **authenticate with Amazon Web S
 
 OpenID Connect (OIDC) allows your GitHub Actions workflows to access resources in Amazon Web Services (AWS), without needing to store the AWS credentials as long-lived GitHub secrets.
 
+Example `Get AWS permissions` **GitHub Action** o assume an **IAM** role.
+
+```YAML
+      - name: Get AWS permissions
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::450226343468:role/GitHubDemo1
+          aws-region: us-east-1
+```
+
 ℹ️ _Note:_ Refer to below documentation to set up OIDC in AWS:
 
 <font color=#EBAC25><i>More Information:</i></font> 
