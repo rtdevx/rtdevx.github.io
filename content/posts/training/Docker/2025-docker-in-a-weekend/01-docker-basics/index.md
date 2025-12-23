@@ -3,7 +3,7 @@ title: Docker basics
 date: 2026-01-01
 description: Docker is a platform that allows you to develop, ship, and run applications in lightweight, portable containers...
 summary: Docker is a platform that allows you to develop, ship, and run applications in lightweight, portable containers...
-draft: false
+draft: true
 tags:
   - Docker
 categories:
