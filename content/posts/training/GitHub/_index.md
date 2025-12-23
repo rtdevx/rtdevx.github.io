@@ -1,7 +1,6 @@
 +++
 draft = false
 title = 'VCS Trainings and Certifications'
-date = '2025-12-01'
 +++
 **Git** is the most widely used **Version Control System**, helping developers track changes, collaborate, and manage code effectively. **GitHub** builds on **Git** by providing a cloud platform to host, review, and share projects with ease.
 
