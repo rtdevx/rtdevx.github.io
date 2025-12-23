@@ -12,6 +12,6 @@ Master Dockerfiles, Docker Build, Docker Compose, Multi-Container Apps, and Mult
 
 {{< disclaimer_docker_25 >}}
 
-| <font color=#EB4925>External Resources</font> »           |                                       |                                       |
-| --------------------------------------------------------- | ------------------------------------- | ------------------------------------- |
-| [Docker official Documentation](https://docs.docker.com/) | [Docker Hub](https://hub.docker.com/) | [Docker.com](https://www.docker.com/) |
+| <font color=#EB4925>External Resources</font> »           |                                       |                                       |                                                     |
+| --------------------------------------------------------- | ------------------------------------- | ------------------------------------- | --------------------------------------------------- |
+| [Docker official Documentation](https://docs.docker.com/) | [Docker Hub](https://hub.docker.com/) | [Docker.com](https://www.docker.com/) | [Docker Cheatsheet](https://cheatsheets.zip/docker) |
