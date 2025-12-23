@@ -144,7 +144,65 @@ class CONTAINERS containerGroup
 	- When we use the `docker push` command, our image is pushed to our configured registry.
 ## Essential Docker commands
 
-https://cheatsheets.zip/docker
+```shell
+# List Docker images (should be empty if none are pulled yet)
+docker images
+
+# Pull Docker image from Docker Hub
+docker pull stacksimplify/mynginx:v1
+
+# Example using Docker Hub image:
+docker run --name myapp1 -p 8080:80 -d stacksimplify/mynginx:v1
+
+# List containers
+
+docker ps # List only running containers
+docker ps -a # List all containers (including stopped ones)
+docker ps -q # List only container IDs
+
+# Connect to the container's terminal
+docker exec -it <CONTAINER-NAME> /bin/sh
+
+  # Inside the container, you can run commands:
+  ls
+  hostname
+  exit  # To exit the container's terminal
+
+# Execute commands
+
+docker exec -it myapp1 ls # List directory contents inside the container
+docker exec -it myapp1 hostname # Get the hostname of the container
+docker exec -it myapp1 printenv # Print environment variables
+docker exec -it myapp1 df -h # Check disk space usage
+
+# Start and stop containers
+docker start <CONTAINER-NAME>
+docker stop <CONTAINER-NAME>
+
+# Verify the container is running
+docker ps
+
+# Remove the container
+docker rm <CONTAINER-NAME>
+docker rm -f <CONTAINER-NAME> # stop and remove the container in one command
+
+# List Docker images
+docker images
+
+# Remove Docker image using Image ID
+docker rmi <IMAGE-ID>
+
+  # Example:
+  docker rmi abc12345def6
+
+# Remove Docker image using Image Name and Tag
+docker rmi <IMAGE-NAME>:<IMAGE-TAG>
+
+  # Example:
+  docker rmi stacksimplify/mynginx:v1
+```
+
+<font color=#EBAC25><i>More info:</i></font> https://cheatsheets.zip/docker
 ## Dockerfile
 
 **Dockerfile** is a <font color=#EBAC25>simple text file that contains a set of instructions to build a Docker Image</font>. It automates the process of creating `Docker Images` by specifying steps which are called **instructions** in Docker terminology.
