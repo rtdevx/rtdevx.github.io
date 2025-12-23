@@ -1,7 +1,7 @@
 +++
 draft = false
 title = 'Docker: 40 Practical Demos for DevOps Learners'
-summary = 'Learnings from **Kalyan Reddy Daida**’s "_Docker in a Weekend: 40 Practical Demos for DevOps Learners_" course on _Udemy_'.
+summary = 'Learnings from **Kalyan Reddy Daida**’s "_Docker in a Weekend: 40 Practical Demos for DevOps Learners_" course on _Udemy_.'
 +++
 
 Master Dockerfiles, Docker Build, Docker Compose, Multi-Container Apps, and Multi-Stage Builds with 40 Practical Demos.
