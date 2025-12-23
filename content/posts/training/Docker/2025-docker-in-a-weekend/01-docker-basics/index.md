@@ -148,7 +148,7 @@ https://cheatsheets.zip/docker
 
 ## Dockerfile
 
-x
+xxx
 
 ---
 ## >> Sources <<
