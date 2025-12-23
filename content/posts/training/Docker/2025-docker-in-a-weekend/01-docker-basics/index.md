@@ -3,7 +3,7 @@ title: Docker basics
 date: 2026-01-01
 description: Docker is a platform that allows you to develop, ship, and run applications in lightweight, portable containers...
 summary: Docker is a platform that allows you to develop, ship, and run applications in lightweight, portable containers...
-draft: false
+draft: true
 tags:
   - Docker
 categories:
@@ -147,7 +147,34 @@ class CONTAINERS containerGroup
 https://cheatsheets.zip/docker
 ## Dockerfile
 
-xxx
+**Dockerfile** is a <font color=#EBAC25>simple text file that contains a set of instructions to build a Docker Image</font>. It automates the process of creating `Docker Images` by specifying steps which are called **instructions** in Docker terminology.
+
+<ins><i>Example:</i></ins>
+
+- Install software
+- Copy files
+- Set environment variables
+- Run commands
+- Define entry point for your application (start application when container starts)
+### Folder Structure
+
+```SHELL
+❯ tree
+.
+├── DockerFiles
+│   ├── Dockerfile
+│   └── index.html
+└── README.md
+```
+### Dockerfile
+
+```SHELL
+❯ cat DockerFiles/Dockerfile
+FROM nginx
+COPY index.html /usr/share/nginx/html
+```
+
+
 
 ---
 ## >> Sources <<
