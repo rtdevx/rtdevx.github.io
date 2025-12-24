@@ -27,9 +27,17 @@
     showName = false
 
 [[main]]
+  name = "Series"
+  pageRef = "series"
+  weight = 30
+  [main.params]
+    icon = "google-scholar"
+    showName = false    
+
+[[main]]
   name = "Tags"
   pageRef = "tags"
-  weight = 30
+  weight = 40
   [main.params]
     icon = "tag"
     showName = false  
@@ -37,7 +45,7 @@
 [[main]]
   name = "CheatSheets"
   pageRef = "posts/cheatsheets"
-  weight = 40
+  weight = 50
   [main.params]
     icon = "translate"
     showName = false
