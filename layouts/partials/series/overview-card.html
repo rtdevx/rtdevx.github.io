@@ -66,7 +66,7 @@
       {{ range $i, $p := $seriesPosts }}
         <li class="flex items-start">
           <span class="text-neutral-500 dark:text-neutral-400 mr-2">
-            {{ add $i 1 }}.
+            &nbsp;&nbsp;{{ add $i 1 }}.
           </span>
 
           {{ if eq $p.Permalink $current.Permalink }}
@@ -88,7 +88,7 @@
       {{ if $prev }}
         <a href="{{ $prev.Permalink }}"
            class="text-primary-600 dark:text-primary-400 hover:underline">
-          ← Previous
+          &nbsp;&nbsp;← Previous
         </a>
       {{ else }}
         <span></span>
@@ -97,7 +97,7 @@
       {{ if $next }}
         <a href="{{ $next.Permalink }}"
            class="text-primary-600 dark:text-primary-400 hover:underline">
-          Next →
+          Next →&nbsp;&nbsp;
         </a>
       {{ end }}
     </div>
