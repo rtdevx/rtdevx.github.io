@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 # Deploying and Managing Infrastructure at scale
 
@@ -177,9 +178,6 @@ _More:_ https://docs.aws.amazon.com/systems-manager/
 
 - <font color=#EBAC25>Infrastructure Composer</font>
 - <font color=#EBAC25>Systems Manager (SSM)</font>
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

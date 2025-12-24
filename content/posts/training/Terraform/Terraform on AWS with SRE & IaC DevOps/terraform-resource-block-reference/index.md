@@ -10,6 +10,7 @@ tags:
 categories:
   - DevOps
   - IaC
+series: Terraform on AWS
 ---
 {{< lead >}}
 The `resource` block defines a piece of infrastructure and specifies the settings for Terraform to create it with. 

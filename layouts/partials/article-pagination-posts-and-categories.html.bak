@@ -1,0 +1,170 @@
+{{ if .Params.showPagination | default (.Site.Params.article.showPagination | default true) }}
+
+  {{/* ----------------------------------------------------------
+       Normalize tags so they are always a list
+     ---------------------------------------------------------- */}}
+  {{ $tags := .Params.tags }}
+  {{ if $tags }}
+    {{ if not (reflect.IsSlice $tags) }}
+      {{ $tags = slice $tags }}
+    {{ end }}
+  {{ else }}
+    {{ $tags = slice }}
+  {{ end }}
+
+  {{/* ----------------------------------------------------------
+       Normalize categories so they are always a list
+     ---------------------------------------------------------- */}}
+  {{ $cats := .Params.categories }}
+  {{ if $cats }}
+    {{ if not (reflect.IsSlice $cats) }}
+      {{ $cats = slice $cats }}
+    {{ end }}
+  {{ else }}
+    {{ $cats = slice }}
+  {{ end }}
+
+  {{/* ----------------------------------------------------------
+       Build topic fingerprint (tags + categories)
+     ---------------------------------------------------------- */}}
+  {{ $topics := union $tags $cats }}
+
+  {{/* If no topics exist, skip topic-aware navigation entirely */}}
+  {{ if gt (len $topics) 0 }}
+
+    {{/* ----------------------------------------------------------
+         Build global list of posts in "posts" section
+         Exclude externalUrl posts
+       ---------------------------------------------------------- */}}
+    {{ $posts := where site.RegularPages "Section" "posts" }}
+    {{ $posts := where $posts "Params.externalUrl" "==" nil }}
+
+    {{/* ----------------------------------------------------------
+         Filter posts that intersect on tags OR categories
+       ---------------------------------------------------------- */}}
+    {{ $all := slice }}
+    {{ range $p := $posts }}
+      {{ $pTags := $p.Params.tags }}
+      {{ if $pTags }}
+        {{ if not (reflect.IsSlice $pTags) }}
+          {{ $pTags = slice $pTags }}
+        {{ end }}
+      {{ else }}
+        {{ $pTags = slice }}
+      {{ end }}
+
+      {{ $pCats := $p.Params.categories }}
+      {{ if $pCats }}
+        {{ if not (reflect.IsSlice $pCats) }}
+          {{ $pCats = slice $pCats }}
+        {{ end }}
+      {{ else }}
+        {{ $pCats = slice }}
+      {{ end }}
+
+      {{ $pTopics := union $pTags $pCats }}
+
+      {{ if gt (len (intersect $topics $pTopics)) 0 }}
+        {{ $all = $all | append $p }}
+      {{ end }}
+    {{ end }}
+
+    {{/* ----------------------------------------------------------
+         Sort filtered posts by date (desc)
+       ---------------------------------------------------------- */}}
+    {{ $all := sort $all "Date" "desc" }}
+
+    {{/* ----------------------------------------------------------
+         Find index of current page in filtered list
+       ---------------------------------------------------------- */}}
+    {{ $current := . }}
+    {{ $index := -1 }}
+
+    {{ range $i, $p := $all }}
+      {{ if eq $p $current }}
+        {{ $index = $i }}
+      {{ end }}
+    {{ end }}
+
+    {{/* If current page is not in the filtered list, skip */}}
+    {{ if ge $index 0 }}
+
+      {{/* ----------------------------------------------------------
+           Compute prev/next safely
+         ---------------------------------------------------------- */}}
+      {{ $lastIndex := sub (len $all) 1 }}
+      {{ $prev := cond (gt (add $index 1) $lastIndex) nil (index $all (add $index 1)) }}
+      {{ $next := cond (lt (sub $index 1) 0) nil (index $all (sub $index 1)) }}
+
+      {{/* ----------------------------------------------------------
+           Respect invertPagination setting
+         ---------------------------------------------------------- */}}
+      {{ if .Params.invertPagination | default (.Site.Params.article.invertPagination | default false) }}
+        {{ $tmp := $next }}
+        {{ $next = $prev }}
+        {{ $prev = $tmp }}
+      {{ end }}
+
+      {{/* ----------------------------------------------------------
+           Render navigation if prev or next exists
+         ---------------------------------------------------------- */}}
+      {{ if or $next $prev }}
+        <div class="pt-8">
+          <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+          <div class="flex justify-between pt-3">
+
+            <span>
+              {{ if $prev }}
+                <a class="group flex" href="{{ $prev.Permalink }}">
+                  <span
+                    class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                    ><span class="ltr:inline rtl:hidden">&larr;</span
+                    ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+                  >
+                  <span class="flex flex-col">
+                    <span
+                      class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                      >{{ $prev.Title | emojify }}</span
+                    >
+                    <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                      {{ if .Params.showDate | default (.Site.Params.article.showDate | default true) }}
+                        {{ partial "meta/date.html" $prev.Date }}
+                      {{ end }}
+                    </span>
+                  </span>
+                </a>
+              {{ end }}
+            </span>
+
+            <span>
+              {{ if $next }}
+                <a class="group flex text-right" href="{{ $next.Permalink }}">
+                  <span class="flex flex-col">
+                    <span
+                      class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                      >{{ $next.Title | emojify }}</span
+                    >
+                    <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                      {{ if .Params.showDate | default (.Site.Params.article.showDate | default true) }}
+                        {{ partial "meta/date.html" $next.Date }}
+                      {{ end }}
+                    </span>
+                  </span>
+                  <span
+                    class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                    ><span class="ltr:inline rtl:hidden">&rarr;</span
+                    ><span class="ltr:hidden rtl:inline">&larr;</span></span
+                  >
+                </a>
+              {{ end }}
+            </span>
+
+          </div>
+        </div>
+      {{ end }}
+
+    {{ end }} {{/* index >= 0 */}}
+
+  {{ end }} {{/* topics exist */}}
+
+{{ end }} {{/* showPagination */}}

@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## What is Amazon S3
 
@@ -317,9 +318,6 @@ _More about Storage Gateway types:_ https://aws.amazon.com/storagegateway/
 
 - [Storage]({{< ref "6-storage" >}})
 - [Security and Compliance]({{< ref "19-security-and-compliance" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 This section is about multiple applications communicating with each other.
 
@@ -110,9 +111,6 @@ When migrating to the cloud, instead of re-engineering the application to use **
 ## >> Sources <<
 
 - Amazon SQS: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

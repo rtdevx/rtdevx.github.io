@@ -12,6 +12,7 @@ categories:
   - DevOps
   - CI/CD
   - IaC
+series: GitHub Actions The Complete Guide
 ---
 {{< lead >}}
 **GitHub Actions** <font color=#C7EB25>environment variables</font> are <font color=#EBAC25>user-defined values that can influence the behaviour of workflows, allowing for customization based on different contexts</font>. 

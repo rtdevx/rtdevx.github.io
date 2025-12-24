@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## Shared Responsibility Model
 
@@ -403,9 +404,6 @@ Access outside zone of trusts = findings.
 - [Databases]({{< ref "12-databases" >}})
 - [Other Compute Services]({{< ref "13-other-compute-services" >}})
 - [AWS Global Infrastructure]({{< ref "15-aws-global-infrastructure" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

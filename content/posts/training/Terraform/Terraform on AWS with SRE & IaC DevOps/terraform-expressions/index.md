@@ -10,6 +10,7 @@ tags:
 categories:
   - DevOps
   - IaC
+series: Terraform on AWS
 ---
 {{< lead >}}
 `Terraform expressions` are used to <font color=#EBAC25>compute values within Terraform configurations</font>, allowing for <font color=#EBAC25>dynamic and flexible infrastructure management</font>. They can include simple literals, complex references, and various built-in functions to manipulate data types and structures.

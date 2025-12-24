@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 # Other AWS Services that don't fit in other categories.
 
@@ -134,10 +135,6 @@ Used for running marketing campaigns.
 ## >> Sources <<
 
 - More info about Cloud Migration Strategy: https://aws.amazon.com/blogs/enterprise-strategy/new-possibilities-seven-strategies-to-accelerate-your-application-migration-to-aws/
-
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

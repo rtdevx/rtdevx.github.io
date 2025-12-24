@@ -1,7 +1,7 @@
 {{ if .Params.showPagination | default (.Site.Params.article.showPagination | default true) }}
 
   {{/* ==========================================================
-       STEP 1 — NORMALIZE TAGS & CATEGORIES
+       STEP 1 — PREPARE NORMALIZED TAGS & CATEGORIES
      ========================================================== */}}
 
   {{/* Normalize tags */}}
@@ -27,17 +27,43 @@
   {{ $topics := union $tags $cats }}
 
   {{/* ==========================================================
-       STEP 2 — DETERMINE NAVIGATION LIST
+       STEP 2 — DETERMINE NAVIGATION LIST (SMART FALLBACK)
        Priority:
-         1. Topic-aware (tags + categories)
-         2. Global fallback
+         1. Series
+         2. Topic-aware
+         3. Global
      ========================================================== */}}
 
   {{ $navList := slice }}
   {{ $mode := "" }}
 
-  {{/* ---------- 1️⃣ TOPIC-AWARE MODE ---------- */}}
-  {{ if gt (len $topics) 0 }}
+  {{/* ---------- 1️⃣ SERIES MODE ---------- */}}
+  {{ if .Params.series }}
+    {{ $series := .Params.series }}
+    {{ $seriesPosts := where site.RegularPages "Params.series" $series }}
+    {{ $seriesPosts := where $seriesPosts "Params.externalUrl" "==" nil }}
+
+    {{/* Check if any post has series_order */}}
+    {{ $hasOrder := false }}
+    {{ range $seriesPosts }}
+      {{ if .Params.series_order }}
+        {{ $hasOrder = true }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Sort series posts */}}
+    {{ if $hasOrder }}
+      {{ $seriesPosts = sort $seriesPosts "Params.series_order" "asc" }}
+    {{ else }}
+      {{ $seriesPosts = sort $seriesPosts "Date" "asc" }}
+    {{ end }}
+
+    {{ $navList = $seriesPosts }}
+    {{ $mode = "series" }}
+  {{ end }}
+
+  {{/* ---------- 2️⃣ TOPIC-AWARE MODE ---------- */}}
+  {{ if and (eq $mode "") (gt (len $topics) 0) }}
     {{ $posts := where site.RegularPages "Section" "posts" }}
     {{ $posts := where $posts "Params.externalUrl" "==" nil }}
 
@@ -77,7 +103,7 @@
     {{ end }}
   {{ end }}
 
-  {{/* ---------- 2️⃣ GLOBAL FALLBACK ---------- */}}
+  {{/* ---------- 3️⃣ GLOBAL FALLBACK ---------- */}}
   {{ if eq $mode "" }}
     {{ $global := where site.RegularPages "Section" "posts" }}
     {{ $global := where $global "Params.externalUrl" "==" nil }}
@@ -111,7 +137,8 @@
     {{ end }}
 
     {{/* ========================================================
-         STEP 4 — RENDER NAVIGATION BLOCK (ONLY IF NEEDED)
+         STEP 4 — RENDER EXACTLY ONE NAVIGATION BLOCK
+         Only if prev or next exists
        ======================================================== */}}
 
     {{ if or $prev $next }}

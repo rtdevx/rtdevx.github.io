@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## Well-Architected Framework
 
@@ -181,10 +182,6 @@ AWS re:Post is not intended to be used for questions that are time-sensitive.
 - AWS Solutions Library (formerly Quick Starts): https://aws.amazon.com/solutions/
 	- Vetted Technology Solutions for the AWS Cloud
 	- Example: live streaming on AWS https://aws.amazon.com/solutions/implementations/live-streaming-on-aw
-
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 
 | **Private Cloud**                                                       | **Public Cloud**                                                                                       | **Hybrid Cloud**                                                        |
@@ -105,9 +106,6 @@ _Shared Responsibility Model:_ [Shared Responsibility Model - Amazon Web Service
 - [High availability and scalability in AWS](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html)    
 - [Migration and transfer](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html)    
 - [Cloud economics in AWS resources](https://aws.amazon.com/economics/resources/)
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

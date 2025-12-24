@@ -1,0 +1,60 @@
+{{ if .Params.series }}
+
+  {{ $series := .Params.series }}
+  {{ $current := . }}  {{/* capture the outer page */}}
+
+  {{ $seriesPosts := where site.RegularPages "Params.series" $series }}
+  {{ $seriesPosts := where $seriesPosts "Params.externalUrl" "==" nil }}
+
+  {{ $hasOrder := false }}
+  {{ range $seriesPosts }}
+    {{ if .Params.series_order }}
+      {{ $hasOrder = true }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $hasOrder }}
+    {{ $seriesPosts = sort $seriesPosts "Params.series_order" "asc" }}
+  {{ else }}
+    {{ $seriesPosts = sort $seriesPosts "Date" "asc" }}
+  {{ end }}
+
+  {{ $seriesSlug := $series | urlize }}
+  {{ $seriesURL := printf "/series/%s/" $seriesSlug }}
+
+  <div class="mt-12 p-6 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-neutral-50 dark:bg-neutral-900">
+    <h2 class="text-xl font-semibold mb-2">Series Overview: {{ $series }}</h2>
+
+    {{ with .Params.series_description }}
+      <p class="text-neutral-700 dark:text-neutral-300 mb-4">{{ . }}</p>
+    {{ end }}
+
+    <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4">
+      {{ len $seriesPosts }} parts in this series.
+      <a href="{{ $seriesURL }}" class="text-primary-600 dark:text-primary-400 hover:underline">
+        View full series →
+      </a>
+    </p>
+
+    <ul class="space-y-2">
+      {{ range $i, $p := $seriesPosts }}
+        <li class="flex items-start">
+          <span class="text-neutral-500 dark:text-neutral-400 w-6">{{ add $i 1 }}.</span>
+
+          {{ if eq $p.Permalink $current.Permalink }}
+            <span class="font-semibold text-neutral-800 dark:text-neutral-200">
+              {{ $p.Title }}
+            </span>
+          {{ else }}
+            <a href="{{ $p.Permalink }}"
+               class="text-primary-600 dark:text-primary-400 hover:underline">
+              {{ $p.Title }}
+            </a>
+          {{ end }}
+
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+
+{{ end }}

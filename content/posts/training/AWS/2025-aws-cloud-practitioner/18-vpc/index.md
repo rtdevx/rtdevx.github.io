@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## VPC - Virtual Private Cloud
 
@@ -215,9 +216,6 @@ Works with Direct Connect Gateway, VPN connections.
 
 - [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
 - [S3]({{< ref "11-s3" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

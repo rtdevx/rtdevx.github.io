@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## Docker
 
@@ -152,9 +153,6 @@ Lambda Container Image - although ECS / Fargate is preferred for running Docker 
 ## >> References <<
 
 - [EC2]({{< ref "4-ec2" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

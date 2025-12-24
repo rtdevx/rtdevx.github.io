@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## CloudWatch Metrics
 
@@ -180,10 +181,6 @@ Has an RSS feed that can be subscribed to.
 CloudWatch / CloudWatch Logs / CloudWatch Events (EventBridge): 
 - https://docs.aws.amazon.com/cloudwatch/
 - https://console.aws.amazon.com/cloudwatch
-
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

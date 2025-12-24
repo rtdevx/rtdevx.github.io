@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## Amazon Rekognition
 
@@ -109,10 +110,6 @@ Can read and process any type of document (PDF, images, etc.)
 ## >> Sources <<
 
 - Amazon Rekognition: https://aws.amazon.com/rekognition
-
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

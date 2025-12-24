@@ -10,6 +10,7 @@ tags:
 categories:
   - DevOps
   - IaC
+series: Terraform on AWS
 ---
 {{< lead >}}
 

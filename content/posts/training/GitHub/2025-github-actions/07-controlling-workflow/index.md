@@ -12,6 +12,7 @@ categories:
   - DevOps
   - CI/CD
   - IaC
+series: GitHub Actions The Complete Guide
 ---
 
 | <font color=#EB4925>External Resources</font> »                             |                                                                           |                                  |

@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## What is Amazon EC2 AMI
 
@@ -64,9 +65,6 @@ Automate the creation, maintain, validate the build of EC2 AMI's. Can run on a s
 
 - [EC2]({{< ref "4-ec2" >}})
 - [Storage]({{< ref "6-storage" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

@@ -12,6 +12,7 @@ categories:
   - DevOps
   - CI/CD
   - IaC
+series: GitHub Actions The Complete Guide
 ---
 {{< lead >}}
 In **GitHub Actions**, [workflows]({{< ref "#-workflows" >}}) are automated processes that consist of [Jobs]({{< ref "#-jobs" >}}) and [Steps]({{< ref "#-steps" >}}). Jobs are collections of steps that run in a specific environment, while steps are individual tasks executed sequentially within a job, allowing for organized automation of tasks like building, testing, and deploying code.

@@ -10,6 +10,7 @@ tags:
 categories:
   - DevOps
   - IaC
+series: Terraform on AWS
 ---
 {{< lead >}}
 `Meta-arguments` are a class of arguments built into the Terraform configuration language that control how Terraform creates and manages your infrastructure. You can use meta-arguments in any type of resource. You can also use most meta-arguments in `module` blocks.

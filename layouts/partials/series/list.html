@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+  {{ $series := .Title }}
+
+  <h1 class="mb-6">{{ $series }}</h1>
+
+  {{/* Optional: series description from _index.md */}}
+  {{ with .Params.description }}
+    <p class="mb-8 text-neutral-700 dark:text-neutral-300">{{ . }}</p>
+  {{ end }}
+
+  {{/* Collect posts in this series */}}
+  {{ $seriesPosts := where site.RegularPages "Params.series" $series }}
+  {{ $seriesPosts := where $seriesPosts "Params.externalUrl" "==" nil }}
+
+  {{/* Determine if any post has series_order */}}
+  {{ $hasOrder := false }}
+  {{ range $seriesPosts }}
+    {{ if .Params.series_order }}
+      {{ $hasOrder = true }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Sort */}}
+  {{ if $hasOrder }}
+    {{ $seriesPosts = sort $seriesPosts "Params.series_order" "asc" }}
+  {{ else }}
+    {{ $seriesPosts = sort $seriesPosts "Date" "asc" }}
+  {{ end }}
+
+  <ul class="space-y-4">
+    {{ range $seriesPosts }}
+      <li>
+        <a href="{{ .Permalink }}" class="text-primary-600 dark:text-primary-400 hover:underline">
+          {{ .Title }}
+        </a>
+        <div class="text-xs text-neutral-500 dark:text-neutral-400">
+          {{ partial "meta/date.html" .Date }}
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+
+{{ end }}

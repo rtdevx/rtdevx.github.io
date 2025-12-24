@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 **Auto Scaling Group** contains a collection of [EC2 instances]({{< ref "4-ec2" >}}) that are treated as a logical grouping for the purposes of automatic scaling and management.
 
@@ -66,9 +67,6 @@ _AWS EC2 Auto Scaling : Step By Step Tutorial_
 
 - [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
 - [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

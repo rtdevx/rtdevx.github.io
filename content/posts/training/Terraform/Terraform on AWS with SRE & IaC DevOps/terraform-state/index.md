@@ -10,6 +10,7 @@ tags:
 categories:
   - DevOps
   - IaC
+series: Terraform on AWS
 ---
 {{< lead >}}
 Terraform must store state about your managed infrastructure and configuration. <font color=#C7EB25>This state is used by Terraform to map real world resources to your configuration, keep track of metadata, and to improve performance</font> for large infrastructures.

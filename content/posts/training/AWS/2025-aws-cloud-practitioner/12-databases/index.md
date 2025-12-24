@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## Relational Databases
 
@@ -248,10 +249,6 @@ Managed <font color=#EB4925>E</font>xtract, <font color=#EB4925>T</font>ransform
 - ElastiCache: https://docs.aws.amazon.com/elasticache/
 - QuickSight: https://docs.aws.amazon.com/quicksight/
 - [Configuring and managing a Multi-AZ deployment for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
-
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

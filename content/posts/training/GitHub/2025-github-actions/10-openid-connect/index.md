@@ -12,6 +12,7 @@ categories:
   - DevOps
   - CI/CD
   - IaC
+series: GitHub Actions The Complete Guide
 ---
 {{< lead >}}
 **OpenID Connect** allows your workflows to **exchange short-lived tokens** directly from your **cloud provider**.

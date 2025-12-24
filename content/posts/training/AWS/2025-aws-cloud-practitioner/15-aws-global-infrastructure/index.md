@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 A Global Application is an application deployed in multiple geographies.
 On AWS this could be Regions and / or Edge Locations.
@@ -244,9 +245,6 @@ https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html
 
 - [S3]({{< ref "11-s3" >}})
 - [Security and Compliance]({{< ref "19-security-and-compliance" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

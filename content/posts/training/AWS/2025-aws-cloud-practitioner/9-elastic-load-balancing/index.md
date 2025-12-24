@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 **Elastic Load Balancing** automatically **distributes your incoming traffic** across multiple targets (<font color=#C7EB25>EC2 instances, containers, IP addresses</font>) in **one or more Availability Zones**.
 
@@ -76,9 +77,6 @@ _Mastering AWS Network Load Balancer | ALB vs NLB | Step by Step Tutorial_
 
 - [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
 - [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

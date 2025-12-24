@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## Scalability
 
@@ -35,9 +36,6 @@ categories: AWS
 
 - [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
 - [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

@@ -12,6 +12,7 @@ categories:
   - DevOps
   - CI/CD
   - IaC
+series: GitHub Actions The Complete Guide
 ---
 {{< lead >}}
 **Job artifacts** in **GitHub Actions** are files generated during a workflow run that can be stored and shared between jobs. They are <font color=#EBAC25>useful for persisting data like test results or build outputs, allowing you to access them after the workflow has completed</font>.

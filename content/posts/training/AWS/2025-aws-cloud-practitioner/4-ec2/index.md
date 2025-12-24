@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## What is Amazon EC2
 
@@ -166,9 +167,6 @@ _Dedicated Host vs Dedicated Instance:_ https://docs.aws.amazon.com/AWSEC2/lates
 ## >> References <<
 
 - [Security Groups]({{< ref "5-security-groups" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

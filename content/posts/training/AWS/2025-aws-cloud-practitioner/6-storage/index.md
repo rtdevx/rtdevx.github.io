@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## EBS Volume
 
@@ -149,9 +150,6 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - [S3]({{< ref "11-s3" >}})
 - [EC2]({{< ref "4-ec2" >}})
 - [AMI]({{< ref "7-ami" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

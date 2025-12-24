@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## AWS Organizations
 
@@ -399,9 +400,6 @@ Response times:
 - [Amazon Simple Storage Service]({{< ref "11-s3" >}})
 - [Amazon S3 Glacier]({{< ref "11-s3/#glacier" >}})
 - [Lambda]({{< ref "13-other-compute-services/#lambda" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## **IAM** = Identity and Access management
 
@@ -159,9 +160,6 @@ IAM > Users > Username > Last Accessed
 ## >> References << 
 
 - [Account Management and Billing]({{< ref "21-account-management-and-billing" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

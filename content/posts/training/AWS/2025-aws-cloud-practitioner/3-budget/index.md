@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## Setting up a budget
 
@@ -28,10 +29,6 @@ Billing and Cost Management > Budgets > Create a budget
 ```
 
 ![](./assets/AWS_Budget_setup.png)
-
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}

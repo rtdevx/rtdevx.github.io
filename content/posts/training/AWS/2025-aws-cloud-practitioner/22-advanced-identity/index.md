@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
 categories: AWS
+series: AWS Cloud Practitioner
 ---
 ## AWS STS (Security Token Service)
 
@@ -70,9 +71,6 @@ _Amazon Cognito for web and mobile applications. <font color=#C7EB25>It can also
 ## >> References <<
 
 - [Identity and Access management (IAM)]({{< ref "2-iam" >}})
-## >> Table of contents (CLF-C02) <<
-
-{{< toc_cf-c02 >}}
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}
