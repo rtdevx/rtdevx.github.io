@@ -43,30 +43,39 @@
   {{ $prev := cond (gt $index 0) (index $seriesPosts (sub $index 1)) nil }}
   {{ $next := cond (lt (add $index 1) (len $seriesPosts)) (index $seriesPosts (add $index 1)) nil }}
 
-  <div class="not-prose mt-12 p-6 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-neutral-50 dark:bg-neutral-900">
+  <!-- Outer card with explicit padding -->
+  <div
+    class="not-prose mt-12 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-neutral-50 dark:bg-neutral-900 shadow-sm dark:shadow-none"
+    style="padding: 1.5rem 2rem;"
+  >
+
     <div class="h-8"></div>
-    <center><h2 class="text-xl font-semibold mb-2">Series Overview: {{ $series }}</h2></center>
+
+    <h2 class="text-xl font-semibold mb-2 text-center">
+      Series Overview: {{ $series }}
+    </h2>
 
     {{ with .Params.series_description }}
-      <p class="text-neutral-700 dark:text-neutral-300 mb-4">{{ . }}</p>
+      <p class="text-neutral-700 dark:text-neutral-300 mb-4">
+        {{ . }}
+      </p>
     {{ end }}
 
-    <center>    
-    <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4">
+    <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4 text-center">
       {{ len $seriesPosts }} parts in this series.
       <a href="{{ $seriesURL }}" class="text-primary-600 dark:text-primary-400 hover:underline">
         View full series →
       </a>
     </p>
-    </center>
 
     <div class="h-8"></div>
 
-    <ul class="space-y-2">
+    <!-- List with slight indentation -->
+    <ul class="space-y-2 ml-4">
       {{ range $i, $p := $seriesPosts }}
         <li class="flex items-start">
           <span class="text-neutral-500 dark:text-neutral-400 mr-2">
-            &nbsp;&nbsp;{{ add $i 1 }}.
+            {{ add $i 1 }}.
           </span>
 
           {{ if eq $p.Permalink $current.Permalink }}
@@ -83,12 +92,12 @@
       {{ end }}
     </ul>
 
-    {{/* Mini navigation */}}
+    <!-- Mini navigation -->
     <div class="flex justify-between text-sm mt-6">
       {{ if $prev }}
         <a href="{{ $prev.Permalink }}"
            class="text-primary-600 dark:text-primary-400 hover:underline">
-          &nbsp;&nbsp;← Previous
+          ← Previous
         </a>
       {{ else }}
         <span></span>
@@ -97,7 +106,7 @@
       {{ if $next }}
         <a href="{{ $next.Permalink }}"
            class="text-primary-600 dark:text-primary-400 hover:underline">
-          Next →&nbsp;&nbsp;
+          Next →
         </a>
       {{ end }}
     </div>
