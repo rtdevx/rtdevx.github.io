@@ -31,43 +31,78 @@
   {{ $seriesSlug := $series | urlize }}
   {{ $seriesURL := printf "/series/%s/" $seriesSlug }}
 
+  {{/* Determine current index */}}
+  {{ $index := -1 }}
+  {{ range $i, $p := $seriesPosts }}
+    {{ if eq $p.Permalink $current.Permalink }}
+      {{ $index = $i }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Determine previous and next posts */}}
+  {{ $prev := cond (gt $index 0) (index $seriesPosts (sub $index 1)) nil }}
+  {{ $next := cond (lt (add $index 1) (len $seriesPosts)) (index $seriesPosts (add $index 1)) nil }}
+
   <div class="not-prose mt-12 p-6 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-neutral-50 dark:bg-neutral-900">
-    <h2 class="text-xl font-semibold mb-2">Series Overview: {{ $series }}</h2>
+    <div class="h-8"></div>
+    <center><h2 class="text-xl font-semibold mb-2">Series Overview: {{ $series }}</h2></center>
 
     {{ with .Params.series_description }}
       <p class="text-neutral-700 dark:text-neutral-300 mb-4">{{ . }}</p>
     {{ end }}
 
+    <center>    
     <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4">
-    {{ len $seriesPosts }} parts in this series.
-    <a href="{{ $seriesURL }}" class="text-primary-600 dark:text-primary-400 hover:underline">
+      {{ len $seriesPosts }} parts in this series.
+      <a href="{{ $seriesURL }}" class="text-primary-600 dark:text-primary-400 hover:underline">
         View full series →
-    </a>
+      </a>
     </p>
+    </center>
 
     <div class="h-8"></div>
 
     <ul class="space-y-2">
-    {{ range $i, $p := $seriesPosts }}
+      {{ range $i, $p := $seriesPosts }}
         <li class="flex items-start">
-        <span class="text-neutral-500 dark:text-neutral-400 mr-2">
+          <span class="text-neutral-500 dark:text-neutral-400 mr-2">
             {{ add $i 1 }}.
-        </span>
+          </span>
 
-        {{ if eq $p.Permalink $current.Permalink }}
+          {{ if eq $p.Permalink $current.Permalink }}
             <span class="font-semibold text-neutral-900 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 rounded">
-            {{ $p.Title }}
+              {{ $p.Title }}
             </span>
-        {{ else }}
+          {{ else }}
             <a href="{{ $p.Permalink }}"
-            class="text-primary-600 dark:text-primary-400 hover:underline block">
-            {{ $p.Title }}
+               class="text-primary-600 dark:text-primary-400 hover:underline block">
+              {{ $p.Title }}
             </a>
-        {{ end }}
-
+          {{ end }}
         </li>
-    {{ end }}
+      {{ end }}
     </ul>
+
+    {{/* Mini navigation */}}
+    <div class="flex justify-between text-sm mt-6">
+      {{ if $prev }}
+        <a href="{{ $prev.Permalink }}"
+           class="text-primary-600 dark:text-primary-400 hover:underline">
+          ← Previous
+        </a>
+      {{ else }}
+        <span></span>
+      {{ end }}
+
+      {{ if $next }}
+        <a href="{{ $next.Permalink }}"
+           class="text-primary-600 dark:text-primary-400 hover:underline">
+          Next →
+        </a>
+      {{ end }}
+    </div>
+
+    <div class="h-8"></div>
 
   </div>
 
