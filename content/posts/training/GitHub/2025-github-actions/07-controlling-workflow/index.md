@@ -106,6 +106,8 @@ Note:  **failure function** (`failure() &&`) <font color=#EB4925>must be present
 
 Check [contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts) for more information.
 
+{{< /alert >}}
+
 <font color=#EBAC25><i>Hint:</i></font>
 
 |   |   |   |
@@ -113,7 +115,6 @@ Check [contexts](https://docs.github.com/en/actions/reference/workflows-and-acti
 |`steps.<step_id>.conclusion`|`string`|The result of a completed step after [`continue-on-error`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) is applied. Possible values are `success`, `failure`, `cancelled`, or `skipped`. When a `continue-on-error` step fails, the `outcome` is `failure`, but the final `conclusion` is `success`.|
 |`steps.<step_id>.outcome`|`string`|The result of a completed step before [`continue-on-error`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepscontinue-on-error) is applied. Possible values are `success`, `failure`, `cancelled`, or `skipped`. When a `continue-on-error` step fails, the `outcome` is `failure`, but the final `conclusion` is `success`.|
 
-{{< /alert >}}
 
 <font color=#EBAC25><i>More info:</i></font>
 - Using conditions to control job execution: https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-jobs-with-conditions
