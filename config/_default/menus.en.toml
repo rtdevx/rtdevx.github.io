@@ -85,14 +85,22 @@
   weight = 10
 
 [[footer]]
+  name = "Series"
+  pageRef = "series"
+  weight = 20
+#  [footer.params]
+#    icon = "google-scholar"
+#    showName = false 
+
+[[footer]]
   name = "Tags"
   pageRef = "tags"
-  weight = 20
+  weight = 30
 
 [[footer]]
   name = "About"
   pageRef = "about"
-  weight = 30
+  weight = 40
 #  [footer.params]
 #    icon = "circle-info"
 #    showName = false  
@@ -100,7 +108,7 @@
 [[footer]]
   name = "»"
   pageRef = "post-template"
-  weight = 35
+  weight = 45
 
 #[[footer]]
 #  name = "Links"
