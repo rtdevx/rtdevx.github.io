@@ -15,7 +15,7 @@
   pageRef = "posts"
   weight = 10
   [main.params]
-    icon = "bars"
+    icon = "list"
     showName = false
 
 [[main]]
@@ -27,20 +27,20 @@
     showName = false
 
 [[main]]
-  name = "Series"
-  pageRef = "series"
-  weight = 30
-  [main.params]
-    icon = "google-scholar"
-    showName = false    
-
-[[main]]
   name = "Tags"
   pageRef = "tags"
-  weight = 40
+  weight = 30
   [main.params]
     icon = "tag"
     showName = false  
+
+#[[main]]
+#  name = "Series"
+#  pageRef = "series"
+#  weight = 40
+#  [main.params]
+#    icon = "bars"
+#    showName = false 
 
 [[main]]
   name = "CheatSheets"
@@ -85,17 +85,17 @@
   weight = 10
 
 [[footer]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 20
+
+[[footer]]
   name = "Series"
   pageRef = "series"
-  weight = 20
+  weight = 30
 #  [footer.params]
 #    icon = "google-scholar"
 #    showName = false 
-
-[[footer]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 30
 
 [[footer]]
   name = "About"
