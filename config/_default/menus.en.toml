@@ -15,7 +15,7 @@
   pageRef = "posts"
   weight = 10
   [main.params]
-    icon = "list"
+    icon = "bars"
     showName = false
 
 [[main]]
