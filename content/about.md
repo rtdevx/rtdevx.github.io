@@ -42,7 +42,6 @@ My toolkit includes:
 | **💻 Programming & Scripting Languages** | `PowerShell` <br>Crafting automation scripts and tools to optimize workflows, reduce manual interventions, and enhance system productivity.                                                                                                    |
 | **🖥️ Systems Administration**           | **`Linux`**  `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                                                                                           |
 | **🧭 Agile**                             | `Jira`<br>Agile delivery and Jira project design and automation, SharePoint and Confluence (collaboration and documentation)<br>                                                                                                               |
-
 -->
 
 | **Tech Stack**                      | **Details**                                                                                                                                                     |
