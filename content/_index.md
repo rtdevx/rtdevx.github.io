@@ -8,7 +8,7 @@ My name is Rob and I am an experienced IT professional.
 {{< /lead >}}
  -->
 
-My thoughts and learnings about<br />
+My thoughts and learnings about:<br />
 [DevOps]({{< ref "categories/devops" >}}) » [AWS]({{< ref "categories/aws" >}}), [IaC]({{< ref "categories/iac" >}}), [Ansible]({{< ref "tags/ansible" >}}), [Terraform]({{< ref "tags/terraform" >}}), [CI/CD]({{< ref "categories/ci/cd" >}}), [Containers]({{< ref "categories/containers" >}}), [Linux]({{< ref "categories/linux" >}}), [Network]({{< ref "categories/networking" >}})
 
 <!--
