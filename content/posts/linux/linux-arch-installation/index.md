@@ -541,7 +541,7 @@ In this scenario, we are installing 2 kernels. Normal one and LTS. If one fails,
 
 ---
 
-<center>💔💔💔</center>
+<center>👇🏻👇🏻👇🏻</center>
 
 If you are experiencing `ERROR: file not found: '/etc/vconsole.conf'` during Kernel installation process:
 
@@ -634,7 +634,7 @@ Re-run the command and ensure no errors:
 
 {{< /highlight >}}
 
-Below is next required step for this to work but in our case, this will be completed at a later stage. FYI only.
+Below is next required step for this to work but in our case, we still have to reconfigure the HOOKS so this will be completed at a later stage. FYI only.
 
 Once you have created and configured `vconsole.conf`, you may need to rebuild your initramfs to apply the changes. You can do this with the following command:
 
@@ -642,7 +642,7 @@ Once you have created and configured `vconsole.conf`, you may need to rebuild yo
 sudo mkinitcpio -P
 ```
 
-<center>❤️‍🔥❤️‍🔥❤️‍🔥</center>
+<center>☝🏻☝🏻☝🏻</center>
 
 ---
 - Install the Linux Firmware packages (drivers) 
