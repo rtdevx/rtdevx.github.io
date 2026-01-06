@@ -610,14 +610,6 @@ Re-run the command and ensure no errors:
 [root@archiso /]# pacman -S linux linux-headers linux-lts linux-lts-headers
 ```
 
-Below is next required step for this to work but in our case, this will be completed at a later stage. FYI only.
-
-Once you have created and configured `vconsole.conf`, you may need to rebuild your initramfs to apply the changes. You can do this with the following command:
-
-```shell
-sudo mkinitcpio -P
-```
-
 **Ensure `image generation successful`**
 
 {{< highlight shell "linenos=table,hl_lines=17 " >}}
@@ -641,6 +633,14 @@ sudo mkinitcpio -P
 ==> Initcpio image generation successful
 
 {{< /highlight >}}
+
+Below is next required step for this to work but in our case, this will be completed at a later stage. FYI only.
+
+Once you have created and configured `vconsole.conf`, you may need to rebuild your initramfs to apply the changes. You can do this with the following command:
+
+```shell
+sudo mkinitcpio -P
+```
 
 <center>☝🏻☝🏻☝🏻</center>
 
