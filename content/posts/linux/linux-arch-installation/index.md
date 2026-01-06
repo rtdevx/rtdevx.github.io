@@ -712,7 +712,11 @@ pacman -S nvidia nvidia-utils nvidia-lts
 ```shell
 # EDIT
 HOOKS=(base systemd autodetect microcode modconf kms keyboard keymap sd-vconsole block filesystems fsck)
+```
 
+Ensure you add `encrypt` and `lvm2`
+
+```shell
 # Add encrypt and lvm2 between block and filesystems
 HOOKS=(base systemd autodetect microcode modconf kms keyboard keymap sd-vconsole block encrypt lvm2 filesystems fsck)
 ```
