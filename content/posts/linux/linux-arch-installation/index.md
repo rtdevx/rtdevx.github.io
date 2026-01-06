@@ -502,7 +502,7 @@ passwd: password updated successfully
 #### Install additional packages
 
 ```shell
-[root@archiso /]# pacman -S base-devel dosfstools grub efibootmgr gnome gnome-tweaks lvm2 mtools vim networkmanager openssh os-probe sudo
+[root@archiso /]# pacman -S base-devel dosfstools grub efibootmgr gnome gnome-tweaks lvm2 mtools vim networkmanager openssh os-prober sudo
 ```
 
 - `base-devel` 
@@ -679,6 +679,12 @@ add `crypt` information so GRUB can load encrypted volume:
 
 ```shell
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 cryptdevice=/dev/sda3:volgroup0 quiet"
+```
+
+ensure cryptodisk is enabled:
+
+```shell
+GRUB_ENABLE_CRYPTODISK=y
 ```
 #### Setup  EFI partition
 
