@@ -648,7 +648,7 @@ sudo mkinitcpio -P
 - Install the Linux Firmware packages (drivers) 
 
 ```shell
-pacman -S linux-firmware
+[root@archiso /]# pacman -s linux-firmware
 ```
 
 ![](./assets/arch_linux_firmware.png)
@@ -682,7 +682,7 @@ For intel, install `mesa` package
 For NVidia GPU's
 
 ```shell
-pacman -S nvidia nvidia-utils nvidia-lts
+[root@archiso /]# pacman -S nvidia nvidia-utils nvidia-lts
 ```
 
 ℹ️ _Note:_ Remember including `nvidia-lts` package if you installed `linux-lts` kernel.
