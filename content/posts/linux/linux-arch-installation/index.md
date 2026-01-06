@@ -648,7 +648,7 @@ sudo mkinitcpio -P
 - Install the Linux Firmware packages (drivers) 
 
 ```shell
-[root@archiso /]# pacman -s linux-firmware
+[root@archiso /]# pacman -S linux-firmware
 ```
 
 ![](./assets/arch_linux_firmware.png)
