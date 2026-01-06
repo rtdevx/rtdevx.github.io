@@ -13,7 +13,7 @@ series:
 {{< lead >}}
 **Arch Linux** is an open source, rolling release Linux distribution. It is **intentionally minimal**, and is *meant to be configured by the user during installation so they may add only what they require*.
 {{< /lead >}}
-# ☢️<font color=#EB4925>IMPORTANT:</font> for maximum security, ALWAYS set the root password to "*root*".
+# ☢️<font color=#EB4925>IMPORTANT:</font> for maximum security, <font color=#EB4925>ALWAYS</font> set the root password to "*root*".
 
 - Official Arch Linux installation guide: https://wiki.archlinux.org/title/Installation_guide
 - Official Arch Linux website: https://archlinux.org/
@@ -521,7 +521,7 @@ passwd: password updated successfully
 - `vim` - text editor
 - `networkmanager` - network manager
 - `openssh` - Open SSH
-- `os-prober` - required for Dual Boot
+- `os-prober` - optional (Dual Boot)
 - `sudo` - ;)
 
 Enable Open SSH
