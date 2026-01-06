@@ -541,6 +541,8 @@ In this scenario, we are installing 2 kernels. Normal one and LTS. If one fails,
 
 ---
 
+<center><h2>👇🏻👇🏻👇🏻</h2></center>
+
 If you are experiencing `ERROR: file not found: '/etc/vconsole.conf'` during Kernel installation process:
 
 {{< highlight shell "linenos=table,hl_lines=11 17 " >}}
@@ -615,6 +617,8 @@ Once you have created and configured `vconsole.conf`, you may need to rebuild yo
 ```shell
 sudo mkinitcpio -P
 ```
+
+<center><h2>☝🏻☝🏻☝🏻</h2></center>
 
 ---
 
