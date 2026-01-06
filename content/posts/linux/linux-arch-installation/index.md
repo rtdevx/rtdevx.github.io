@@ -359,6 +359,12 @@ Your logical volumes should now be located in `/dev/volgroup0/`. If you cannot f
 
 - Insert `dm_mod` kernel module
 
+{{< alert "circle-info" >}}
+
+The command `modprobe dm_mod` is used to load the device-mapper module in Linux, which is necessary for certain functionalities like Logical Volume Management (LVM).
+
+{{< /alert >}}
+
 ```shell
 # Insert dm_mod kernel module
 root@archiso ~ # modprobe dm_mod
