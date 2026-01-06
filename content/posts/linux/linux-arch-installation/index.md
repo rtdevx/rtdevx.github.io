@@ -696,7 +696,7 @@ Installing for x86_64-efi platform.
 Installation finished. No error reported.
 ```
 
-ℹ️ _Note:_ Original commant (`grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck`) came back with an error!
+ℹ️ _Note:_ Original command (`grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck`) came back with an error!
 #### Additional steps
 
 ```shell
