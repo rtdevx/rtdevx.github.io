@@ -618,6 +618,30 @@ Once you have created and configured `vconsole.conf`, you may need to rebuild yo
 sudo mkinitcpio -P
 ```
 
+**Ensure `image generation successful`**
+
+{{< highlight shell "linenos=table,hl_lines=17 " >}}
+
+==> Starting build: '6.18.3-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [block]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+
+{{< /highlight >}}
+
 <center>☝🏻☝🏻☝🏻</center>
 
 ---
