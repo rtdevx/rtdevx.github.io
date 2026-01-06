@@ -814,12 +814,10 @@ mount: (hint) your fstab has been modified, but systemd still uses
 #### Install `GRUB` boot loader
 
 ```shell
-[root@archiso /]# grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck --no-nvram
+[root@archiso /]# grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
 Installing for x86_64-efi platform.
 Installation finished. No error reported.
 ```
-
-ℹ️ _Note:_ Original command (`grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck`) came back with an error!
 #### Additional steps
 
 ```shell
