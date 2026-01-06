@@ -539,6 +539,85 @@ systemctl enable sshd
 
 In this scenario, we are installing 2 kernels. Normal one and LTS. If one fails, we could fail over to the next one...
 
+---
+
+If you are experiencing `ERROR: file not found: '/etc/vconsole.conf'` during Kernel installation process:
+
+{{< highlight shell "linenos=table,hl_lines=11 17 " >}}
+
+==> Starting build: '6.18.3-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [sd-vconsole]
+==> ERROR: file not found: '/etc/vconsole.conf'
+  -> Running build hook: [block]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+==> WARNING: errors were encountered during the build. The image may not be complete.
+error: command failed to execute correctly
+
+{{< /highlight >}}
+
+Follow this guide:
+
+https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration
+
+The error message "ERROR: file not found: '/etc/vconsole.conf'" indicates that your system is unable to locate the `vconsole.conf` file, which is essential for configuring the virtual console settings, such as keyboard mapping and console font.
+
+The `vconsole.conf` file is used during the boot process to set up the virtual console environment. If this file is missing, you may encounter issues with character display and keyboard functionality in the console.
+
+**Creating vconsole.conf**
+
+If the file does not exist, you can create it manually. Here’s how:
+
+1. Use a text editor to create the file:
+
+- `vim /etc/vconsole.conf`
+    
+2. Add the necessary configurations. For example:
+
+ ```shell
+KEYMAP=uk
+FONT=161
+ ```
+
+Check available keymaps and fonts for your locale:
+
+```shell
+localectl list-keymaps
+ls -l /usr/share/kbd/consolefonts/
+```
+
+Console Fonts screenshots: https://adeverteuil.github.io/linux-console-fonts-screenshots
+
+3. Save the file and exit the editor.
+
+**After Creating the File**
+
+Re-run the command and ensure no errors:
+
+```shell
+[root@archiso /]# pacman -S linux linux-headers linux-lts linux-lts-headers
+```
+
+Below is next required step for this to work but in our case, this will be completed at a later stage. FYI only.
+
+Once you have created and configured `vconsole.conf`, you may need to rebuild your initramfs to apply the changes. You can do this with the following command:
+
+```shell
+sudo mkinitcpio -P
+```
+
+---
+
 - Install the Linux Firmware packages (drivers) 
 
 ```shell
