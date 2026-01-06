@@ -66,6 +66,8 @@ ip addr show
 ```
 ### Enable SSH
 
+Only for the installer at this stage!
+
 ```shell
 # Ensure sshd is running
 systemctl status sshd
@@ -77,7 +79,7 @@ passwd
 ssh -l root INSTALLER_IP # ip addr show
 ```
 
-![](arch_ssh.png)
+![](./assets/arch_ssh.png)
 ### Find out details about your HDD and identify your device
 
 ```shell
