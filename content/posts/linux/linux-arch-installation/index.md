@@ -621,7 +621,6 @@ sudo mkinitcpio -P
 <center><h2>☝🏻☝🏻☝🏻</h2></center>
 
 ---
-
 - Install the Linux Firmware packages (drivers) 
 
 ```shell
