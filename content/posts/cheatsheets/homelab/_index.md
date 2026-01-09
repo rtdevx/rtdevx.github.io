@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = 'My Homelab'
 summary = 'My homelab: where servers misbehave, automation keeps them in line, and curiosity runs the place.....'
 +++

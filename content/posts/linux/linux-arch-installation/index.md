@@ -1,6 +1,6 @@
 ---
 title: Installing Arch Linux
-date: 2025-12-27
+date: 2025-11-27
 description: Installing Arch Linux...
 summary: Installing Arch Linux...
 draft: false
