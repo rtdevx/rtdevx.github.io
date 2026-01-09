@@ -43,7 +43,12 @@ If you use community‑provided scripts, always review them before running. Chec
 
 More about Proxmox Helper Scipts in this Video:
 
+---
+
 {{< youtube kcpu4z5eSEU >}}
+_Proxmox Automation with Proxmox Helper Scripts! _
+
+---
 ## 2-node pi-hole installation
 
 Pi-hole Proxmox Helper Scipt: https://community-scripts.github.io/ProxmoxVE/scripts?id=pihole&category=Adblock+%26+DNS
@@ -71,7 +76,12 @@ Please note that good, old `gravity-sync` project has discontinued and will not 
 
 {{< /alert >}}
 
+---
+
 {{< youtube OcSBggDyeJ4 >}}
+_Pi-hole Syncing… But Smarter..._
+
+---
 
 <font color=#EBAC25><i>More info:</i></font> 
 - [Nebula Sync](https://github.com/lovelaze/nebula-sync)
