@@ -35,9 +35,7 @@ Installing all components using [Proxmox Helper Scripts](https://community-scrip
 
 {{< alert "triangle-exclamation" >}}
 
-# <font color=#EB4925>Warning:</font>
-
-If you use community‑provided scripts, always review them before running. Check the source, skim the code, and avoid piping directly into `bash` without inspection. A quick look helps keep your system safe.
+<font color=#EB4925><b>Warning:</b></font> If you use community‑provided scripts, always review them before running. Check the source, skim the code, and avoid piping directly into `bash` without inspection. A quick look helps keep your system safe.
 
 {{< /alert >}}
 
