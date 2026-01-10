@@ -7,6 +7,7 @@ draft: false
 tags:
   - privacy
   - adblock
+  - pihole
 categories:
   - Homelab
   - Proxmox
