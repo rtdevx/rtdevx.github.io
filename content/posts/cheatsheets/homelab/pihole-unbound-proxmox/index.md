@@ -44,7 +44,7 @@ More about Proxmox Helper Scipts in this Video:
 ---
 
 {{< youtube kcpu4z5eSEU >}}
-_Proxmox Automation with Proxmox Helper Scripts! _
+_Proxmox Automation with Proxmox Helper Scripts!_
 
 ---
 ## 2-node pi-hole installation
