@@ -477,7 +477,7 @@ At this point, <font color=#EB4925>ensure all partitions and their mount points 
 Bear in mind we are now logged in into an `in-progress installation`. We left the installer and we are now inside of Arch `chroot` environment that will soon become our live system. 
 
 {{< alert >}}
-<font color=#EB4925><h2>Any commands issued at this stage are being issued against soon-to-be-ready Arch Linux system!</h></font>
+<font color=#EB4925><h2>Any commands issued after this point are being issued against soon-to-be-ready Arch Linux system!</h></font>
 {{< /alert >}}
 
 ![](./assets/arch_meme2.png)
