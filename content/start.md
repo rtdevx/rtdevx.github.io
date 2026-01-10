@@ -1,15 +1,10 @@
 +++
 draft = false
-title = '🔰Posts'
-summary = 'Welcome to my blog.'
+title = '🧭Start'
+summary = 'Start Page.'
 +++
 
-| Jump to Section                                                |                                                                                                             |
-| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| ✨[Cheat Sheets]({{< ref "/posts/cheatsheets" >}})              | A set of useful cheat sheets...                                                                             |
-| ✨[Trainings and Certifications]({{< ref "/posts/training" >}}) | Training in progress being documented at this moment and the trainings that I have completed in the past... |
 
-<!-- DuckDuckGo Site Search -->
 <center>
 <form
 id="ddg-site-search"
@@ -40,3 +35,9 @@ input.value = "site:" + domain + " " + input.value;
 });
 })();
 </script>
+
+|   {{< button href="../categories/aws" target="_self" >}}  <br>AWS<br>{{< /button >}}   |             {{< button href="../categories/iac" target="_self" >}}  <br>IaC<br>{{< /button >}}              |  {{< button href="../tags/ansible" target="_self" >}}  <br>Ansible<br>{{< /button >}}  |   {{< button href="../tags/terraform" target="_self" >}}  <br>Terraform<br>{{< /button >}}    |
+| :------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+| {{< button href="../categories/ci/cd" target="_self" >}}  <br>CI/CD<br>{{< /button >}} |      {{< button href="../categories/containers" target="_self" >}}  <br>Containers<br>{{< /button >}}       | {{< button href="../categories/linux" target="_self" >}}  <br>Linux<br>{{< /button >}} | {{< button href="../categories/networking" target="_self" >}}  <br>Network<br>{{< /button >}} |
+|             ✨[Trainings and Certifications]({{< ref "/posts/training" >}})             | Training in progress being documented at this moment and the trainings that I have completed in the past... |                                                                                        |                                                                                               |
+
