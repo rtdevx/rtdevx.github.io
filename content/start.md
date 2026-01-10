@@ -2,7 +2,7 @@
 draft = false
 title = '🧭Start'
 summary = 'Start Page.'
-date = 'Start Page.'
+layout = 'single'
 +++
 
 
