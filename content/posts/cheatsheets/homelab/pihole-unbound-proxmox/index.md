@@ -1,6 +1,6 @@
 ---
 title: Pihole with Unbound on Proxmox LXC
-date: 2025-11-29
+date: 2025-07-23
 description: "**Pi-hole** is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network."
 summary: "**Pi-hole** is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network."
 draft: false
