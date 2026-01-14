@@ -23,7 +23,7 @@ series:
 _Jay is explaining how to install Arch Linux on a potato..._ 🥔
 
 {{< youtube 5DHz23VQJxk >}}
-_# Beginner friendly ARCH LINUX Installation Guide and Walkthrough_ by a fantastic host, _[Bread on Penguins](https://www.youtube.com/@BreadOnPenguins)_
+_Beginner friendly ARCH LINUX Installation Guide and Walkthrough_ by a fantastic host, _[Bread on Penguins](https://www.youtube.com/@BreadOnPenguins)_
 
 ---
 ## Pre-requisites
