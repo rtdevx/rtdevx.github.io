@@ -15,6 +15,11 @@ series: Terraform on AWS
 ---
 ## 👨🏻‍💻Part 1: Building VPC manually
 
+---
+
+{{< youtube g2JOHLHh4rI >}}
+
+---
 ### VPC Components
 
 - Create VPC 
