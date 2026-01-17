@@ -18,6 +18,7 @@ Amazon **Virtual Private Cloud** (VPC) enables you to provision logically isolat
 - [VPC Peering]({{< ref "18-vpc/#vpc-peering" >}}), [VPC Endpoints]({{< ref "18-vpc/#vpc-endpoints" >}})
 - [Site to Site VPN and Direct Connect]({{< ref "18-vpc/#site-to-site-vpn--direct-connect" >}})
 - [Transit Gateway]({{< ref "18-vpc/#transit-gateway" >}})
+## VPC components
 
 |                                                 |                                                                                                                               |
 | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
