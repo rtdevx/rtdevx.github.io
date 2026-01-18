@@ -187,6 +187,13 @@ This gives enhanced security and lower latency to access AWS services.
 
 - VPC <font color=#EB4925>Endpoint Gateway</font> - for Amazon [S3]({{< ref "11-s3" >}}) and [DynamoDB]({{< ref "12-databases/#dynamodb" >}}) only
 - VPC <font color=#EB4925>Endpoint Interface</font> - most services (including S3 and DynamoDB)
+
+|                    | Interface Endpoint                                | Gateway Endpoint                                         |
+| ------------------ | ------------------------------------------------- | -------------------------------------------------------- |
+| **What**           | Elastic Network Interface (ENI) with a private IP | A gateway that is a target for a specific route          |
+| **How**            | Uses DNS entries to redirect traffic              | Uses prefix lists in the route table to redirect traffic |
+| **Which services** | API Gateway, CloudFormation, CloudWatch, etc.     | S3, DynamoDB                                             |
+| **Security**       | Security Groups                                   | VPC Endpoint Policies                                    |
 ## Private Link
 
 Most secure and scalable way to expose a service to 1000s of VPCs. Using VPC Peering (see above) is not practical because of the management overhead.
