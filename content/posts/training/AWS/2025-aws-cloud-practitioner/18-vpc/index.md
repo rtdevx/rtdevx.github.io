@@ -35,30 +35,30 @@ Amazon **Virtual Private Cloud** (VPC) enables you to provision logically isolat
 | [Direct Connect]({{< ref "18-vpc/#direct-connect-dx" >}})                                               | High Speed, high bandwidth, private network connection from customer to AWS                                                   |
 | [Security Group]({{< ref "18-vpc/#security-groups" >}})                                                 | Instance-level firewall                                                                                                       |
 | [Network ACL]({{< ref "18-vpc/#nacl-network-acl" >}})                                                   | Subnet-level firewall                                                                                                         |
-## VPC Rules and Guidance
-
-- CIDR block size can be between /16 and /28
-- The CIDR block must not overlap with any existing CIDR block that's associated with the VPC
-- <font color=#EB4925>You cannot increase or decrease the size of an existing CIDR block</font>
-- The first four and last IP address are not available for use
-- AWS recommend you use CIDR blocks from the `RFC 1918` ranges:
-
-|RFC 1918 Name|IP Address Range|CIDR Block|Classful Description|
-|---|---|---|---|
-|10.0.0.0|10.0.0.0 – 10.255.255.255|10.0.0.0/8|Single Class A network|
-|172.16.0.0|172.16.0.0 – 172.31.255.255|172.16.0.0/12|16 contiguous Class B networks|
-|192.168.0.0|192.168.0.0 – 192.168.255.255|192.168.0.0/16|256 contiguous Class C networks|
-### Purpose and Benefits
-
-- **Network Address Translation (NAT)**: Private IP addresses allow multiple devices on a local network to share a single public IP address through NAT.    
-- **Security**: Using private addresses enhances security by making it difficult for external hosts to initiate connections to internal systems.    
-- **No Registration Required**: Organizations can use these addresses without needing approval from Internet registries, simplifying network setup.
 
 ---
 
 {{< youtube g2JOHLHh4rI >}}
 
 ---
+## VPC Rules and Guidance
+
+- CIDR block size can be between **/16** and **/28**
+- The CIDR block must not overlap with any existing CIDR block that's associated with the VPC
+- <font color=#EB4925>You cannot increase or decrease the size of an existing CIDR block</font>
+- The first four and last IP address are not available for use
+- AWS recommend you use CIDR blocks from the **RFC 1918** ranges:
+
+| RFC 1918 Name | IP Address Range              | CIDR Block     | Classful Description            |
+| ------------- | ----------------------------- | -------------- | ------------------------------- |
+| 10.0.0.0      | 10.0.0.0 – 10.255.255.255     | 10.0.0.0/8     | Single Class A network          |
+| 172.16.0.0    | 172.16.0.0 – 172.31.255.255   | 172.16.0.0/12  | 16 contiguous Class B networks  |
+| 192.168.0.0   | 192.168.0.0 – 192.168.255.255 | 192.168.0.0/16 | 256 contiguous Class C networks |
+### Purpose and Benefits
+
+- **Network Address Translation (NAT)**: Private IP addresses allow multiple devices on a local network to share a single public IP address through NAT.    
+- **Security**: Using private addresses enhances security by making it difficult for external hosts to initiate connections to internal systems.    
+- **No Registration Required**: Organizations can use these addresses without needing approval from Internet registries, simplifying network setup.
 ## IP Addresses in AWS
 
 - IPv4 (4.3 Billion Addresses)
