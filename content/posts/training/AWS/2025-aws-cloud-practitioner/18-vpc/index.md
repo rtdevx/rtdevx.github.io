@@ -214,6 +214,15 @@ _AWS Private Link_
 _Site-to-Site VPN:_
 _- On-Premises - <font color=#EB4925>must use Customer Gateway</font> (CGW)_
 _- AWS: <font color=#EB4925>must use a Virtual Private Gateway</font> (VGW)_
+#### Site-to-Site VPN CloudHub 
+
+Site-to-Site VPN CloudHub uses an Amazon VPC virtual private gateway with multiple customer gateways, each using unique BGP autonomous system numbers (ASNs). 
+
+The remote sites must not have overlapping IP ranges. Your gateways advertise the appropriate routes (BGP prefixes) over their VPN connections. 
+
+These routing advertisements are received and re-advertised to each BGP peer so that each site can send data to and receive data from the other sites.
+
+![](./assets/AWS_VPC_Site_to_Site_VPN_CloudHub.png)
 ### Direct Connect (DX)
 
 - Establish a physical connection between on-premises and AWS
