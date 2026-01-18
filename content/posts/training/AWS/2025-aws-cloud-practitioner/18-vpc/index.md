@@ -223,6 +223,7 @@ The remote sites must not have overlapping IP ranges. Your gateways advertise th
 These routing advertisements are received and re-advertised to each BGP peer so that each site can send data to and receive data from the other sites.
 
 ![](./assets/AWS_VPC_Site_to_Site_VPN_CloudHub.png)
+_Source:_ [Site-to-Site VPN CloudHub](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-vpn-cloudhub.html)
 ### Direct Connect (DX)
 
 - Establish a physical connection between on-premises and AWS
@@ -260,6 +261,7 @@ Works with Direct Connect Gateway, VPN connections.
 - <font color=#EBAC25>Private Link:</font> Privately connect to a service in a 3rd party VPC
 - <font color=#EBAC25>VPC Flow Logs:</font> Network traffic logs
 - <font color=#EBAC25>Site to Site VPN:</font> VPN over public internet between on-premises DC and AWS
+- [Site-to-Site VPN CloudHub](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-vpn-cloudhub.html)
 - <font color=#EBAC25>Client VPN:</font> OpenVPN connection from your computer into your VPC
 - <font color=#EBAC25>Direct Connect:</font> Direct private connection to AWS
 - <font color=#EBAC25>Transit Gateway:</font> Connect thousands of VPC and on-premises networks together
