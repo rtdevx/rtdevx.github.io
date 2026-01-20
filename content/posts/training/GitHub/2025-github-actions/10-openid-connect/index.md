@@ -91,10 +91,12 @@ Example `Get AWS permissions` **GitHub Action** o assume an **IAM** role.
 
 https://github.com/rtdevx/terraform-core/tree/main/aws-oidc
 
-- GitHub Actions Workflow to allow fetching credentials from AWS Parameter Store (using above configured IAM Role and OIDC Provider)
+- GitHub Actions Workflow to generate OIDC (using above configured IAM Role and OIDC Provider)
 
 ```YAML
-name: Terraform Deploy
+name: Terraform AWS GH1 Build - DEV
+
+# NOTE: Fetch AWS Credentials
 
 on:
   workflow_dispatch:
@@ -102,8 +104,13 @@ permissions:
   id-token: write
   contents: read
 
+defaults:
+  run:
+    shell: bash
+    working-directory: ./terraform-manifests
+
 jobs:
-  deploy:
+  iac-aws-gh1-build:
     runs-on: ubuntu-latest
 
     steps:
@@ -115,16 +122,6 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::390157243794:role/tf-core-oidcRole
           aws-region: eu-west-2 # NOTE: STS API endpoint that GitHub Actions calls to assume the role is regional. Region must match where OIDC Provider have been deployed (terraform-core/aws-oidc/c5-oidc-provider.tf)
-
-
-      - name: Retrieve AWS credentials from Parameter Store
-        id: ssm
-        run: |
-          ACCESS_KEY=$(aws ssm get-parameter --name "/CodeBuild/MY_AWS_ACCESS_KEY_ID" --with-decryption --query "Parameter.Value" --output text)
-          SECRET_KEY=$(aws ssm get-parameter --name "/CodeBuild/MY_AWS_SECRET_ACCESS_KEY" --with-decryption --query "Parameter.Value" --output text)
-
-          echo "AWS_ACCESS_KEY_ID=$ACCESS_KEY" >> $GITHUB_ENV
-          echo "AWS_SECRET_ACCESS_KEY=$SECRET_KEY" >> $GITHUB_ENV
 ```
 
 ---
