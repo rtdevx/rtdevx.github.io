@@ -104,5 +104,5 @@ _September 2009 - September 2025_
 - AWS CodePipeline with Multiple Environments Dev and Staging
 ### Ansible Homelab Kubernetes Cluster - [GitHub Repository](https://github.com/rtdevx/homelab/tree/main/ansible/site)
 
-- Playbooks for building my homelab (K3s Kubernetes cluster with HAProxy load balancing)
+- Playbooks for building my homelab
 - Showcases automation of complex multi‑node environments and DevOps tooling
