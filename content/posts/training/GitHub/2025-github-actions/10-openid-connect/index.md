@@ -85,7 +85,7 @@ Example `Get AWS permissions` **GitHub Action** o assume an **IAM** role.
 
 - [Configuring OpenID Connect in Amazon Web Services](https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-aws)
 - [Create an OpenID Connect (OIDC) identity provider in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)
-### Terraform
+## Example Code
 
 - Deploy IAM Role and OIDC Provider
 
