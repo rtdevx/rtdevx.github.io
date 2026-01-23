@@ -120,7 +120,10 @@ jobs:
 
 {{< alert "github" >}}
 
-<font color=#EBAC25><i>My exmaple GitHub repository:</i></font> https://github.com/rtdevx/terraform-core/tree/main/aws-oidc
+My exmaple GitHub repositories using GitHub Actions and OICD to deploy Terraform against AWS:
+
+- https://github.com/rtdevx/terraform-core/tree/main/aws-oidc
+- https://github.com/rtdevx/terraform-iac-aws-gh1
 
 {{< /alert >}}
 
