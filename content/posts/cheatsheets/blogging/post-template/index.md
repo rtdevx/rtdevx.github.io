@@ -65,23 +65,24 @@ _HTML Color Codes:_ https://htmlcolorcodes.com/
 **Insert an icon:** `{ {< icon "circle-info" >} }`
 ## ❤️Emojis
 
-| Emoji        | Usage                |
-| ------------ | -------------------- |
-| ‼️           | Attention            |
-| 🚩/ ⚠️       | Issue / Problem      |
-| 🚫 / ☢️ / ☣️ | Prohibited / Hazard  |
-| 🔍           | Issue Investigation  |
-| ✅            | Solution / Resolved  |
-| ℹ️           | Info                 |
-| 💡           | Idea                 |
-| 👨🏻‍💻      | To Do                |
-| 💾           | Download             |
-| 📺           | YouTube              |
-| ✨/ 🔥        | Post title highlight |
-| 🗂️          | Series               |
-| 🏅           | Certified            |
-| 📄           | File / Code          |
-
+| Emoji        | Usage                           |
+| ------------ | ------------------------------- |
+| ‼️           | Attention                       |
+| 🚩/ ⚠️       | Issue / Problem                 |
+| 🚫 / ☢️ / ☣️ | Prohibited / Hazard             |
+| 🔍           | Issue Investigation             |
+| ✅            | Solution / Resolved             |
+| ℹ️           | Info                            |
+| 💡           | Idea                            |
+| 👨🏻‍💻      | To Do                           |
+| 💾           | Download                        |
+| 📺           | YouTube                         |
+| ✨/ 🔥        | Post title highlight            |
+| 📚           | Series                          |
+| 🏅           | Certified                       |
+| 🗂️          | My Trainings                    |
+| 📄           | File / Code                     |
+| 🐈‍⬛         | Example Code section in article |
 💾 https://emojipedia.org/
 ## 🔥References
 
