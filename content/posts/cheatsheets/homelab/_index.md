@@ -11,5 +11,5 @@ My homelab is a fully automated playground of declarative infrastructure, where 
 ```shell
 sudo apt update && sudo apt install -y curl
 
-bash <(curl -s https://raw.githubusercontent.com/rtdevx/cicd-ansible-pull/main/scripts/bootstrap.sh)
+bash <(curl -s https://raw.githubusercontent.com/rtdevx/iac-ansible-pull/main/scripts/bootstrap.sh)
 ```
