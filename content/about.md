@@ -130,7 +130,7 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 -->
 ## Selected code samples
 
-- **GitHub:** [https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/terraform-iac-aws-cp1) (contains modular Terraform code, Bash provisioning scripts and CI configs)
+- **GitHub:** [[https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/iac-terraform-aws-jvx)]([https://github.com/rtdevx/terraform-iac-aws-cp1](https://github.com/rtdevx/iac-terraform-aws-jvx)) (contains modular Terraform code, Bash provisioning scripts and CI configs)
 - **GitHub:** [https://github.com/rtdevx/homelab/tree/main/ansible/site](https://github.com/rtdevx/homelab/tree/main/ansible/site) (contains Ansible playbooks that configures my homelab)
 
 {{< alert "github">}}
