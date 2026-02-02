@@ -68,7 +68,7 @@ timeline
          : 🏅AWS Certified Cloud Practitioner (CLF-C02)
          : 🏅HashiCorp Certified Terraform Associate (HCTA0-003)
          : GitHub Actions - The Complete Guide (Udemy)
-    2026 : AWS Certified Solutions Architect Associate (SAA-C03)<br> IN PROGRESS
+    2026 : AWS Certified Solutions Architect Associate (SAA-C03) - IN PROGRESS
 {{< /mermaid >}}
 
 <!--
