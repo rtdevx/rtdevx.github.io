@@ -7,6 +7,7 @@ draft: false
 tags:
   - Terraform
   - HCTA0-003
+  - VPC
 categories:
   - DevOps
   - IaC

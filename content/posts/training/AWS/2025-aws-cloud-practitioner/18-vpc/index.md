@@ -6,6 +6,7 @@ summary: VPC - Virtual Private Cloud...
 draft: false
 tags:
   - CLF-C02
+  - VPC
 categories: AWS
 series: AWS Cloud Practitioner
 ---
