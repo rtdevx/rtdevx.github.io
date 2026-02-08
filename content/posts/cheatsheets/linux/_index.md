@@ -4,15 +4,12 @@ title = 'Linux Cheatsheets'
 summary = 'A set of useful Linux cheat sheets...'
 +++
 
-$ cowthink "Hmm, I didn't know that"  
+$ cowthink "[Bash Cheatsheets] | [Learn Bash]"  
  _________________________  
-( Hmm, I didn't know that )  
+( [Bash Cheatsheets](https://cheatsheets.zip/bash) | [Learn Bash](https://learnxinyminutes.com/bash/) )  
  -------------------------  
         o   ^__^  
          o  (oo)\_______  
             (__)\       )\/\  
                 ||----w |  
                 ||     ||
-
-| <font color=#EB4925>External Resources</font> »<br> | **Bash**<br>[Bash Cheatsheets](https://cheatsheets.zip/bash) \| [Learn Bash](https://learnxinyminutes.com/bash/)<br> |
-| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
