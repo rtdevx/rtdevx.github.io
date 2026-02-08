@@ -12,9 +12,8 @@ $ cowthink "Where can I find useful information about Linux bash shell scripting
 / ( [Bash Cheatsheets](https://cheatsheets.zip/bash) | [Learn Bash](https://learnxinyminutes.com/bash/) | [Bash Scripting Exercises](https://www.w3resource.com/bash-script-exercises/index.php) ) \
 \                                                                                                         /
 
- ----------------------------------------
-        \   ^\_\_^
-         \  (oo)\_\_\_\_\_\_\_
-            (\_\_)\       )\/\
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
                 ||----w |
                 ||     ||
