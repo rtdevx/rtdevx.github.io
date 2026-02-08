@@ -4,7 +4,7 @@ title = 'Linux Cheatsheets'
 summary = 'A set of useful Linux cheat sheets...'
 +++
 
-$ cowthink "<font color=#EB4925>Bash:</font> Bash Cheatsheets | Learn Bash"  
+**$** **cowthink** "Bash Cheatsheets | Learn Bash"  
  _________________________  
 ( [Bash Cheatsheets](https://cheatsheets.zip/bash) | [Learn Bash](https://learnxinyminutes.com/bash/) )  
  -------------------------  
