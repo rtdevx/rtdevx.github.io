@@ -14,5 +14,5 @@ $ cowthink "Hmm, I didn't know that"
                 ||----w |  
                 ||     ||
 
-| <font color=#EB4925>External Resources</font> »<br><br /><br /> | **Bash**<br>[Bash Cheatsheets](https://cheatsheets.zip/bash) \| [Learn Bash](https://learnxinyminutes.com/bash/)<br> |
-| --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| <font color=#EB4925>External Resources</font> »<br> | **Bash**<br>[Bash Cheatsheets](https://cheatsheets.zip/bash) \| [Learn Bash](https://learnxinyminutes.com/bash/)<br> |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
