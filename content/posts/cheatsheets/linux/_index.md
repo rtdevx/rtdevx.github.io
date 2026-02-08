@@ -4,9 +4,9 @@ title = 'Linux Cheatsheets'
 summary = 'A set of useful Linux cheat sheets...'
 +++
 
-**$** **cowthink** "Where can I find a quick reference to Linux bash shell scripting?"  
+**$** **cowthink** "Where can I find useful information about Linux bash shell scripting?" 
  _________________________  
-( [Bash Cheatsheets](https://cheatsheets.zip/bash) | [Learn Bash](https://learnxinyminutes.com/bash/) )  
+( [Bash Cheatsheets](https://cheatsheets.zip/bash) | [Learn Bash](https://learnxinyminutes.com/bash/) | [Bash Scripting Exercises](https://www.w3resource.com/bash-script-exercises/index.php) )  
  -------------------------  
         o   ^__^  
          o  (oo)\_______  
