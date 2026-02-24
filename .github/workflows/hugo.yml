@@ -1,13 +1,12 @@
-# .github/workflows/hugo.yml
-
 name: GitHub Pages Hugo
 
 on:
   schedule:
-    - cron: "00 6 * * *"  
+    - cron: "00 6 * * *"
   push:
     branches:
       - main
+
 permissions:
   contents: write
 
@@ -16,12 +15,16 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           submodules: true
           fetch-depth: 0
+
+      - name: Update submodules to latest
+        run: git submodule update --remote --merge
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
