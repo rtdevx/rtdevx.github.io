@@ -23,6 +23,11 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Configure Git identity
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+
       - name: Update submodules to latest
         run: git submodule update --remote --merge
 
