@@ -71,7 +71,7 @@ timeline
     2026 : Terraform on AWS EKS Kubernetes IaC SRE (Udemy)
 	     : AWS Certified Solutions Architect Associate (SAA-C03) - IN PROGRESS
 {{< /mermaid >}}
-
+ 
 <!--
 {{< button href="../categories/aws" target="_self" >}}  
 AWS
