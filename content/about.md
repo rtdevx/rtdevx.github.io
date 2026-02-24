@@ -61,7 +61,7 @@ Implementing container orchestration for seamless, reliable application deployme
 - [GitHub Actions - The Complete Guide]({{< ref "posts/training/github/2025-github-actions" >}})
 - 🏅 **Terraform Associate** ([HCTA0-003]({{< ref "tags/hcta0-003" >}}))
 -->
-
+ 
 {{< mermaid >}}
 timeline    
     2025 : Ultimate Ansible Bootcamp by School of Devops® (Udemy)
