@@ -5,8 +5,8 @@ description: Pre-requisites, requirements and best practices for building EKS Cl
 summary: Pre-requisites, requirements and best practices for building EKS Cluster.
 draft: false
 tags:
-  - Terraform
   - EKS
+  - Terraform
 categories:
   - DevOps
   - IaC
