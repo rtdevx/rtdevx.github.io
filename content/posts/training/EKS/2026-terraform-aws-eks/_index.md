@@ -12,6 +12,6 @@ AWS EKS IAM, Ingress, EBS CSI, EFS CSI, VPC, Fargate, Application & Network Load
 
 {{< disclaimer_terraform_on_AWS_EKS_26 >}}
 
-| <font color=#EB4925>External Resources</font> »                                                                                                   |                                                                                                    |                                                                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [Terraform on AWS EKS Kubernetes IaC SRE Udemy course](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/) | [Instructor's GitHub: terraform-on-aws-eks](https://github.com/stacksimplify/terraform-on-aws-eks) | [My GitHub: iac-terraform-aws-eks](https://github.com/rtdevx/iac-terraform-aws-eks) |
+| <font color=#EB4925>External Resources</font> »                                                                                                   |                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [Terraform on AWS EKS Kubernetes IaC SRE Udemy course](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/) | [Instructor's GitHub: terraform-on-aws-eks](https://github.com/stacksimplify/terraform-on-aws-eks) |
