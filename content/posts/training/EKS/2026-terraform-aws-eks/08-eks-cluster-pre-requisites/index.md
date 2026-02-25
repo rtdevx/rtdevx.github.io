@@ -16,6 +16,7 @@ series: Terraform on AWS EKS
 ## EKS Cluster creation Options using Terraform
 
 ![](./assets/AWS_EKS_Cluster_Options.png)
+© _Kalyan Reddy Daida_, [StackSimplify](https://stacksimplify.com/)
 
 {{< lead >}}
 
@@ -25,6 +26,7 @@ EKS Cluster can be created using both, **Terraform Resources** or **Terraform Mo
 ### Pre-requisites for building EKS Cluster
 
 ![](./assets/AWS_EKS_Cluster_Prereq.png)
+© _Kalyan Reddy Daida_, [StackSimplify](https://stacksimplify.com/)
 #### Pre-requisite Resources
 
 - Subnets - Public and Private
@@ -45,6 +47,7 @@ EKS Cluster can be created using both, **Terraform Resources** or **Terraform Mo
 	- EKS Worker Nodes EC2 Instances
 
 ![](./assets/AWS_EKS_Cluster_Architecture.png)
+© _Kalyan Reddy Daida_, [StackSimplify](https://stacksimplify.com/)
 
 {{< alert "circle-info" >}}
 
