@@ -1,9 +1,9 @@
 ---
 title: Pre-requisites for building EKS Cluster
 date: 2026-02-01
-description: Pre-requisites for building EKS Cluster.
-summary: Pre-requisites for building EKS Cluster.
-draft: true
+description: Pre-requisites, requirements and best practices for building EKS Cluster.
+summary: Pre-requisites, requirements and best practices for building EKS Cluster.
+draft: false
 tags:
   - Terraform
   - EKS
