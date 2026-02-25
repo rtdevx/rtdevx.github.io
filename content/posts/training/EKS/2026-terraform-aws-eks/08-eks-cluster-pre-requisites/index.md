@@ -46,7 +46,7 @@ EKS Cluster can be created using both, **Terraform Resources** or **Terraform Mo
 
 ![](./assets/AWS_EKS_Cluster_Architecture.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
-{{< alert >}}
+{{< highlight >}}
 
 ℹ️ _Note:_
 
@@ -61,7 +61,7 @@ EKS Cluster can be created using both, **Terraform Resources** or **Terraform Mo
 
 - Both, Public and Private Worker Nodes are communicating with the Control Plane via the Internet (inside of AWS Cloud).
 
- {{< /alert >}}
+ {{< /highlight >}}
 ## Elastic Network Interface (ENI)
 
 When EKS Cluster is created, AWS creates ENI's that have EKS Cluster name in their description. 
