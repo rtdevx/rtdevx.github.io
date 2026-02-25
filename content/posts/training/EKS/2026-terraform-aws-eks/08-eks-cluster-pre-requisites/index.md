@@ -46,7 +46,7 @@ EKS Cluster can be created using both, **Terraform Resources** or **Terraform Mo
 
 ![](./assets/AWS_EKS_Cluster_Architecture.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
-{{< alert "circle-info" >}}
+{{< alert >}}
 
 ℹ️ _Note:_
 
