@@ -48,16 +48,16 @@ EKS Cluster can be created using both, **Terraform Resources** or **Terraform Mo
 
 {{< alert "circle-info" >}}
 
-_Note:_ 
+ℹ️ _Note:_
 
 - EKS Control Plane is managed by Amazon and is being built in separate VPC and under separate (Amazon's) account.
 - Communication between the Control Plane is via EKS ENI (Elastic Network Interfaces) and controlled via Security Groups.
 
-_Note:_
+ℹ️ _Note:_
 
 - Bastion Host is optional and will not be build in my example. Access to EC2 instances will be granted via **SSM Session Manager** and restricted to admins (or any other user group, as appropriate) and specific tags only.
 
-_Note:_
+ℹ️ _Note:_
 
 - Both, Public and Private Worker Nodes are communicating with the Control Plane via the Internet (inside of AWS Cloud).
 
