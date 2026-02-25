@@ -123,7 +123,7 @@ jobs:
 My exmaple GitHub repositories using GitHub Actions and OICD to deploy Terraform against AWS:
 
 - https://github.com/rtdevx/terraform-core/tree/main/aws-oidc
-- https://github.com/rtdevx/terraform-iac-aws-gh1
+- https://github.com/rtdevx/iac-terraform-aws-jvx
 
 {{< /alert >}}
 
