@@ -50,7 +50,7 @@ EKS Cluster can be created using both, **Terraform Resources** or **Terraform Mo
 
 _Note:_ 
 
-- EKS Control Plans is managed by Amazon and is being built in separate VPC and under separate (Amazon's) account.
+- EKS Control Plane is managed by Amazon and is being built in separate VPC and under separate (Amazon's) account.
 - Communication between the Control Plane is via EKS ENI (Elastic Network Interfaces) and controlled via Security Groups.
 
 _Note:_
