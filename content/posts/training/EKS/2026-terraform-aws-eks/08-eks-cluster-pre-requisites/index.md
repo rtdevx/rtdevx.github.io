@@ -71,6 +71,9 @@ Those Network Interfaces are created in our VPC, under our AWS account and they 
 The Amazon EKS also creates cluster Security Group attached to ENI's.
 
 ---
+## >> Sources <<
+
+Provision an EKS cluster (AWS) using Terraform: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
 ## >> Disclaimer <<
 
 {{< disclaimer_terraform_on_AWS_EKS_26 >}}
