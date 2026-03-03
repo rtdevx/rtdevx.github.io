@@ -81,6 +81,8 @@ Those Network Interfaces are created in our **VPC**, under our AWS account and t
 {{< /alert >}}
 
 The Amazon EKS also creates cluster Security Group attached to ENI's.
+
+![](./assets/AWS_EKS_ENI.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ## kubectl
 
 ### Installation
