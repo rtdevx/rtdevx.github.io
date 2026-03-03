@@ -55,7 +55,7 @@ EKS Cluster can be created using both, **Terraform Resources** or **Terraform Mo
 
 <font color=#EBAC25><i>Note:</i></font>
 
-- Bastion Host is optional and will not be build in my example. Access to EC2 instances will be granted via **SSM Session Manager** and restricted to admins (or any other user group, as appropriate) and specific tags only.
+- Bastion Host is optional and will not be build in my example. Access to EC2 instances will be granted via **SSM Session Manager** and restricted to admins (or any other user group, as appropriate).
 
 <font color=#EBAC25><i>Note:</i></font>
 
