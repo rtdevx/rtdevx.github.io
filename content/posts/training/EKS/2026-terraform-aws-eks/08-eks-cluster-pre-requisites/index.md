@@ -89,7 +89,7 @@ curl.exe -LO "https://dl.k8s.io/release/v1.35.0/bin/windows/amd64/kubectl.exe"
 kubectl version --client
 ```
 
-Detailed installation steps for Windows and Linux and MacOs here: 
+Detailed installation steps for Windows, Linux and MacOs here: 
 
 - https://kubernetes.io/docs/tasks/tools/#kubectl
 - https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
