@@ -80,8 +80,7 @@ The Amazon EKS also creates cluster Security Group attached to ENI's.
 <font color=#EB4925>You must</font> use a **kubectl** version that is within one minor version difference of your Amazon EKS cluster control plane. For example, a _1.34_ kubectl client works with Kubernetes _1.33_, _1.34_, and _1.35_ clusters.
 
 {{< /alert >}}
-
-Windows (curl):
+#### Windows (curl):
 
 ```shell
 curl.exe -LO "https://dl.k8s.io/release/v1.35.0/bin/windows/amd64/kubectl.exe"
