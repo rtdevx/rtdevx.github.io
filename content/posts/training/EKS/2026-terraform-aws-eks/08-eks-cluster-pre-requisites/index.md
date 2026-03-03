@@ -71,6 +71,106 @@ When EKS Cluster is created, AWS creates ENI's that have EKS Cluster name in the
 Those Network Interfaces are created in our VPC, under our AWS account and they allow AWS Fargate and EC2 instances communicating with EKS Control Plane that lives in a separate VPC, in Amazon's Account.
 
 The Amazon EKS also creates cluster Security Group attached to ENI's.
+## kubectl
+
+### Installation
+
+{{< alert "circle-info" >}}
+
+<font color=#EB4925>You must</font> use a **kubectl** version that is within one minor version difference of your Amazon EKS cluster control plane. For example, a _1.34_ kubectl client works with Kubernetes _1.33_, _1.34_, and _1.35_ clusters.
+
+{{< /alert >}}
+
+Windows (curl):
+
+```shell
+curl.exe -LO "https://dl.k8s.io/release/v1.35.0/bin/windows/amd64/kubectl.exe"
+
+kubectl version --client
+```
+
+Detailed installation steps for Windows and Linux and MacOs here: 
+
+- https://kubernetes.io/docs/tasks/tools/#kubectl
+- https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
+### Configuration
+
+```shell
+# Configure kubeconfig for kubectl
+aws eks --region <region-code> update-kubeconfig --name <cluster_name>
+aws eks --region eu-central-1 update-kubeconfig --name hr-stag-eksdemo1
+
+# List Worker Nodes
+kubectl get nodes
+kubectl get nodes -o wide
+
+# Verify Services
+kubectl get svc
+```
+### Verify Namespaces and Resources in Namespaces
+
+```shell
+# Verify Namespaces
+kubectl get namespaces
+kubectl get ns
+ 
+Observation: namespaces will be listed by default
+1. kube-node-lease
+2. kube-public
+3. default
+4. kube-system
+
+# Verify Resources in kube-node-lease namespace
+kubectl get all -n kube-node-lease
+
+# Verify Resources in kube-public namespace
+kubectl get all -n kube-public
+
+# Verify Resources in default namespace
+kubectl get all -n default
+
+Observation: 
+1. Kubernetes Service: Cluster IP Service for Kubernetes Endpoint
+
+# Verify Resources in kube-system namespace
+kubectl get all -n kube-system
+
+Observation: 
+1. Kubernetes Deployment: coredns
+2. Kubernetes DaemonSet: aws-node, kube-proxy
+3. Kubernetes Service: kube-dns
+4. Kubernetes Pods: coredns, aws-node, kube-proxy
+```
+### Verify pods in kube-system namespace
+
+```shell
+# Verify System pods in kube-system namespace
+kubectl get pods # Nothing in default namespace
+kubectl get pods -n kube-system
+kubectl get pods -n kube-system -o wide
+
+# Verify Daemon Sets in kube-system namespace
+kubectl get ds -n kube-system
+
+Observation: The below two daemonsets will be running
+1. aws-node
+2. kube-proxy
+
+# Describe aws-node Daemon Set
+kubectl describe ds aws-node -n kube-system
+
+Observation: 
+1. Reference "Image" value it will be the ECR Registry URL 
+
+# Describe kube-proxy Daemon Set
+kubectl describe ds kube-proxy -n kube-system
+
+Observation:
+1. Reference "Image" value it will be the ECR Registry URL 
+
+# Describe coredns Deployment
+kubectl describe deploy coredns -n kube-system
+```
 
 ---
 ## >> Sources <<
