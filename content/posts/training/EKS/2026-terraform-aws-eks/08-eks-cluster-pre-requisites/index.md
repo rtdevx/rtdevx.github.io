@@ -1,5 +1,5 @@
 ---
-title: Pre-requisites for building EKS Cluster in AWS
+title: "EKS: Pre-requisites for building Cluster in AWS"
 date: 2026-02-01
 description: Pre-requisites, requirements and best practices for building EKS Cluster.
 summary: Pre-requisites, requirements and best practices for building EKS Cluster.
