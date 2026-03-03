@@ -76,7 +76,7 @@ When EKS Cluster is created, AWS creates ENI's that have EKS Cluster name in the
 
 {{< alert "circle-info" >}}
 
-Those Network Interfaces are created in our VPC, under our AWS account and they allow AWS Fargate and EC2 instances communicating with EKS Control Plane that lives in a separate VPC, in Amazon's Account.
+Those Network Interfaces are created in our **VPC**, under our AWS account and they allow **AWS Fargate** and **EC2 instances** communicating with **EKS Control Plane** that lives in a separate VPC, in Amazon's-owned Account.
 
 {{< /alert >}}
 
