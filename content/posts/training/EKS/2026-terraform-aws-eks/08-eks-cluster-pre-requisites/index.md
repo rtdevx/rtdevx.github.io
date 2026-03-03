@@ -98,7 +98,7 @@ Detailed installation steps for Windows, Linux and MacOs here:
 ```shell
 # Configure kubeconfig for kubectl
 aws eks --region <region-code> update-kubeconfig --name <cluster_name>
-aws eks --region eu-central-1 update-kubeconfig --name hr-stag-eksdemo1
+aws eks --region eu-central-1 update-kubeconfig --name ops-dev-eks-ekscluster
 
 # List Worker Nodes
 kubectl get nodes
