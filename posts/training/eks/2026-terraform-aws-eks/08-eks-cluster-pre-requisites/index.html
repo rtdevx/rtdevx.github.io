@@ -16,7 +16,7 @@
 </span></span><span class=line><span class=cl>kubectl version --client
 </span></span></code></pre></div><p>Detailed installation steps for Windows, Linux and MacOs here:</p><ul><li><a href=https://kubernetes.io/docs/tasks/tools/#kubectl target=_blank rel=noreferrer>https://kubernetes.io/docs/tasks/tools/#kubectl</a></li><li><a href=https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html target=_blank rel=noreferrer>https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html</a></li></ul><h3 id=configuration class="relative group">Configuration <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#configuration aria-label=Anchor>#</a></span></h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=c1># Configure kubeconfig for kubectl</span>
 </span></span><span class=line><span class=cl>aws eks --region &lt;region-code&gt; update-kubeconfig --name &lt;cluster_name&gt;
-</span></span><span class=line><span class=cl>aws eks --region eu-central-1 update-kubeconfig --name hr-stag-eksdemo1
+</span></span><span class=line><span class=cl>aws eks --region eu-central-1 update-kubeconfig --name ops-dev-eks-ekscluster
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># List Worker Nodes</span>
 </span></span><span class=line><span class=cl>kubectl get nodes
