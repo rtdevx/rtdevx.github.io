@@ -74,7 +74,11 @@ My Terraform code for this series: https://github.com/rtdevx/iac-terraform-aws-e
 
 When EKS Cluster is created, AWS creates ENI's that have EKS Cluster name in their description. 
 
+{{< alert "circle-info" >}}
+
 Those Network Interfaces are created in our VPC, under our AWS account and they allow AWS Fargate and EC2 instances communicating with EKS Control Plane that lives in a separate VPC, in Amazon's Account.
+
+{{< /alert >}}
 
 The Amazon EKS also creates cluster Security Group attached to ENI's.
 ## kubectl
