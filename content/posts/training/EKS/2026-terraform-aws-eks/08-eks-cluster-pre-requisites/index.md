@@ -89,7 +89,7 @@ curl.exe -LO "https://dl.k8s.io/release/v1.35.0/bin/windows/amd64/kubectl.exe"
 kubectl version --client
 ```
 
-Detailed installation steps for Windows, Linux and MacOs here: 
+Detailed installation steps for Windows, Linux and MacOS here: 
 
 - https://kubernetes.io/docs/tasks/tools/#kubectl
 - https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
@@ -175,7 +175,14 @@ kubectl describe deploy coredns -n kube-system
 ---
 ## >> Sources <<
 
-Provision an EKS cluster (AWS) using Terraform: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
+Provision an EKS cluster (AWS) using Terraform: 
+
+- https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
+
+Detailed installation steps for Windows, Linux and MacOS: 
+
+- https://kubernetes.io/docs/tasks/tools/#kubectl
+- https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
 ## >> Disclaimer <<
 
 {{< disclaimer_terraform_on_AWS_EKS_26 >}}
