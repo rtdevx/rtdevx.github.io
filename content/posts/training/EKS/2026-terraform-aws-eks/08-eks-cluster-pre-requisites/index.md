@@ -17,6 +17,12 @@ series: Terraform on AWS EKS
 
 ![](./assets/AWS_EKS_Cluster_Options.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
+{{< alert "circle-info" >}}
+
+My Terraform code for this series: https://github.com/rtdevx/iac-terraform-aws-eks
+
+{{< /alert >}}
+
 {{< lead >}}
 
 EKS Cluster can be created using both, **Terraform Resources** or **Terraform Module** from Terraform Public Registry.
