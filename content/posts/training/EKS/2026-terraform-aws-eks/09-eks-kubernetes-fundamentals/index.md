@@ -73,7 +73,7 @@ Example Container Runtimes:
 <font color=#EBAC25><i>More info:</i></font> https://kubernetes.io/docs/setup/production-environment/container-runtimes/
 ### Kubelet
 
-- <font color=#C7EB25>Agent that runs on every node in the cluster</font>.
+- <font color=#EBAC25>Agent that runs on every node in the cluster</font>.
 - Responsible for <font color=#EBAC25>making sure that containers are running in a POD on a node</font>.
 ### Kube-Proxy
 
