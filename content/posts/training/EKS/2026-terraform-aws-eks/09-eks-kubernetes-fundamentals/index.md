@@ -1,9 +1,9 @@
 ---
 title: "EKS: Kubernetes Fundamentals 🔥"
-date: 2026-02-01
+date: 2026-02-02
 description: Kubernetes Fundamentals.
 summary: Kubernetes Fundamentals.
-draft: true
+draft: false
 tags:
   - Terraform
   - EKS
@@ -13,43 +13,104 @@ categories:
   - AWS
 series: Terraform on AWS EKS
 ---
+{{< lead >}}
+**Kubernetes** is a portable, extensible, open-source platform for managing containerized workflows.
 
+- Service discovery and Load Balancing
+- Storage Orchestration
+- Automated rollouts and rollbacks
+- Automatic bin packing
+- Self-healing
+- Secret and configuration  management
 
-# <!-- TO DELETE -->
+{{< /lead >}}
+## Kubernetes Architecture
+
+![](./assets/AWS_EKS_Architecture.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+## Kubernetes components
+### kube-apiserver
+
+- It is acting as a front-end for the Kubernetes Control Plane. <font color=#EBAC25>It exposes the Kubernetes API</font>.
+- Command line tools (like `kubectl`), Users as well as Master components (scheduler, controller manager, etcd) and Worker node components (`kubelet`) talk to API server.
+### etcd
+
+- Consistent and highly-available key value store used as Kubernetes backing store for all cluster data.
+- <font color=#EBAC25>It stores all the masters and worker node information</font>.
+### kube-scheduler
+
+- **Scheduler** is responsible for <font color=#EBAC25>distributing containers across multiple nodes</font>.
+- It watches for newly created Pods with no assigned node and selects the node to run it on.
+### Controllers
 
 {{< lead >}}
-<font color=#C7EB25>Lead Content</font> to <font color=#EBAC25>emphasize</font> or <font color=#EB4925>highlight</font>.
+
+**Controllers** are responsible for <font color=#EBAC25>noticing and responding when nodes, containers or endpoints go down</font>. They make decisions to bring up new containers.
+
 {{< /lead >}}
 
-{{< alert "circle-info" >}}
-- Post Template: https://robk.uk/posts/cheatsheets/blogging/post-template/
-- Icons: https://jpanther.github.io/congo/samples/icons/
-- Shortcodes: https://jpanther.github.io/congo/docs/shortcodes/#icon
-- Markdown: https://robk.uk/posts/cheatsheets/blogging/markdown/
-- Installing Hugo: https://robk.uk/posts/blogging/installing-congo-hugo/
-- ASCII CheatSheet: https://cheatsheets.zip/ascii-code
-{{< /alert >}}
+- kube-controller-manager
+	- Node Controller - noticing and responding when nodes go down.
+	- Replication Controller - maintaining the right number of PODs.
+	- Endpoints Controller - populating the Endpoints object (joins Services & PODs).
+	- Service Account & Token Controller - creating default accounts and API Access for new namespaces.
 
-<font color=#C7EB25>Hugo Link:</font>
-`[EC2]({{< ref "4-ec2" >}})`
+- cloud-controller-manager
+	- <font color=#EBAC25>Runs controllers specific to the cloud provider</font>.
+	- Node Controller - checking the cloud provider to determine if node has been deleted.
+	- Route Controller - setting up routes in the underlying cloud infrastructure.
+	- Service Controller - creating, updating, deleting cloud provider Load Balancer.
+### Container Runtime
 
-📄 _File:_ c1-versions.tf
-```shell
-# INFO: Terraform Block
-```
+<font color=#EB4925>Container Runtime is the underlying software where we run all those Kubernetes components</font>.
 
-ℹ️ _Note:_ `region = var.aws_region` is now referring to a variable declared in `c1-variables.tf` file.
+Example Container Runtimes:
 
-<font color=#EBAC25><i>More info:</i></font>
-<ins><i>Example:</i></ins>
+- [Docker Engine](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#docker)
+- [containerd](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd)
+- [CRI-O](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#cri-o)
+- [Mirantis Container Runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/#mcr)
 
-{{< youtube bO25vbkoJlA >}}
-# <!-- /TO DELETE -->
+<font color=#EBAC25><i>More info:</i></font> https://kubernetes.io/docs/setup/production-environment/container-runtimes/
+### Kubelet
+
+- <font color=#C7EB25>Agent that runs on every node in the cluster</font>.
+- Responsible for <font color=#EBAC25>making sure that containers are running in a POD on a node</font>.
+### Kube-Proxy
+
+- It is a network proxy that runs on each node in the cluster.
+- It maintains network rules on nodes.
+	- Those network rules allow network communication to your PODs from network sessions inside or outside the cluster.
+## EKS Cluster Architecture
+
+![](./assets/AWS_EKS_Architecture_EKS.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+
+ℹ️ _Note:_ <font color=#EB4925>EKS lets us focus only on Application Workloads</font>. We don't need to worry about any of those components as those are being managed by AWS EKS.
+## Kubernetes Fundamentals
+
+### POD
+
+- A **POD** is a single instance of an Application.
+- A **POD** is the smallest object that you can create in Kubernetes.
+### ReplicaSet
+
+A **ReplicaSet** is responsible for <font color=#EBAC25>maintaining a stable set of replica PODs running at any given time</font>. 
+
+It is used to guarantee availability of a specified number of identical PODs.
+### Deployment
+
+A **Deployment** <font color=#EBAC25>runs multiple replicas of your application and automatically replaces any instances that fail or become unresponsive</font>.
+
+<font color=#EB4925>Rollout & Rollback changes to applications</font>. Deployments are well-suited for stateless applications.
+### Service
+
+A **service** is an abstraction for **POD**s, allocating and providing **VIP** (Virtual IP) addresses.
+
+In simple terms - <font color=#EBAC25>service sits in front of a POD and acts as a Load Balancer</font>.
 
 ---
 ## >> Sources <<
 
-
+Container Runtimes: https://kubernetes.io/docs/setup/production-environment/container-runtimes/
 ## >> Disclaimer <<
 
 {{< disclaimer_terraform_on_AWS_EKS_26 >}}
