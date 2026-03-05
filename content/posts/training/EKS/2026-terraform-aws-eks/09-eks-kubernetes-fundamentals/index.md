@@ -97,6 +97,20 @@ Example Container Runtimes:
 A **ReplicaSet** is responsible for <font color=#EBAC25>maintaining a stable set of replica PODs running at any given time</font>. 
 
 It is used to guarantee availability of a specified number of identical PODs.
+
+{{< mermaid >}}
+
+flowchart LR
+
+    A[Replica Sets] -->B[Go shopping]
+
+    A -->C[Scaling]
+
+    A -->D[Load Balancing]
+
+    A -->E[Labels & Selectors]
+
+{{< /mermaid >}}
 ### Deployment
 
 A **Deployment** <font color=#EBAC25>runs multiple replicas of your application and automatically replaces any instances that fail or become unresponsive</font>.
