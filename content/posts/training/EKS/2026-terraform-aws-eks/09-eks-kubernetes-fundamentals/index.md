@@ -107,8 +107,30 @@ A **service** is an abstraction for **POD**s, allocating and providing **VIP** (
 
 In simple terms - <font color=#EBAC25>service sits in front of a POD and acts as a Load Balancer</font>.
 
+{{< alert "circle-info" >}}
+
+We can expose an application running a set of PODs using different types of [services](https://kubernetes.io/docs/concepts/services-networking/service/##publishing-services-service-types) available in K8s.
+
+- ClusterIP - default Service type and exposes the Service **within the cluster ONLY**
+- [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/##publishing-services-service-types) - exposes the Service externally on each Node’s IP at a static port so that the Service is accessible via each Node’s IP and `nodePort` outside of the Kubernete cluster. Kubernetes control plane allocates a port from a range specified by `--service-node-port-range`.
+- [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/##loadbalancer) - exposes the Service externally using a load blancer, which directs traffic from a `loadBalancerIP` to `clusterIP`.
+- [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/##externalname) - maps the Service to the DNS name specified by `externalName` field, not a typical selector such as `cassandra`.
+
+<font color=#EBAC25><i>More info:</i></font>
+
+- https://bsdnet.github.io/posts/kubernetes-service-illustrated/
+- https://www.nigelpoulton.com/post/explained-kubernetes-service-ports
+
+{{< /alert >}}
+
 ---
 ## >> Sources <<
+
+Kubernetes components: https://kubernetes.io/docs/concepts/overview/components/
+
+Kubernetes Service types: https://kubernetes.io/docs/concepts/services-networking/service/##publishing-services-service-types
+
+Kubernetes Service Ports: https://www.nigelpoulton.com/post/explained-kubernetes-service-ports
 
 Container Runtimes: https://kubernetes.io/docs/setup/production-environment/container-runtimes/
 ## >> Disclaimer <<
