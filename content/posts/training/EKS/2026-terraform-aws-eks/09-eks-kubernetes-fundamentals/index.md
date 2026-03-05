@@ -100,9 +100,9 @@ It is used to guarantee availability of a specified number of identical PODs.
 
 {{< mermaid >}}
 
-flowchart LR
+flowchart TD
 
-    A[Replica Sets] -->B[Go shopping]
+    A[Replica Sets] -->B[High Availability or Reliability]
 
     A -->C[Scaling]
 
