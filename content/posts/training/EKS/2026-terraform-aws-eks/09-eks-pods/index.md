@@ -112,7 +112,6 @@ kubectl logs -f nginx
     - Refer below link and search for **Interacting with running Pods** for additional log options
     - Troubleshooting skills are very important. So please go through all logging options available and master them.
     - **Reference:** [https://kubernetes.io/docs/reference/kubectl/cheatsheet/](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-
 ### Connect to Container in a POD
 
 - **Connect to a Container in POD and execute commands**
