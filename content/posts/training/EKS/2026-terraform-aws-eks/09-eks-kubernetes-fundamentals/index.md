@@ -123,6 +123,8 @@ We can expose an application running a set of PODs using different types of [ser
 
 {{< /alert >}}
 
+{{< youtube v=J8jAzqbXxjE >}}
+
 ---
 ## >> Sources <<
 
