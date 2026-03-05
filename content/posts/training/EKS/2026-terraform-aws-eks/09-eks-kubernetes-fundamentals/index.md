@@ -111,6 +111,8 @@ flowchart TD
     A -->E[Labels & Selectors]
 
 {{< /mermaid >}}
+
+If an application crashes (any pod dies), **ReplicaSet** will recreate the pod immediately to ensure the configured number of PODs is running at any time.
 ### Deployment
 
 A **Deployment** <font color=#EBAC25>runs multiple replicas of your application and automatically replaces any instances that fail or become unresponsive</font>.
