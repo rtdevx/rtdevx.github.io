@@ -101,7 +101,7 @@ It is used to guarantee availability of a specified number of identical PODs.
 A **Deployment** <font color=#EBAC25>runs multiple replicas of your application and automatically replaces any instances that fail or become unresponsive</font>.
 
 <font color=#EB4925>Rollout & Rollback changes to applications</font>. Deployments are well-suited for stateless applications.
-### Service
+### Service ✨
 
 A **service** is an abstraction for **POD**s, allocating and providing **VIP** (Virtual IP) addresses.
 
