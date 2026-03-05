@@ -14,6 +14,12 @@ categories:
   - Containers
 series: Terraform on AWS EKS
 ---
+{{< alert "circle-info" >}}
+
+`kubectl` quick reference: [https://kubernetes.io/docs/reference/kubectl/quick-reference/](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
+
+{{< /alert >}}
+
 {{< lead >}}
 
 **PODs** are the smallest deployable units of computing that you can create and manage in Kubernetes.
