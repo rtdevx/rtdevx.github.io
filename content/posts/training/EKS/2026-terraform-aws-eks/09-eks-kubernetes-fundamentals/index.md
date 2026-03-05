@@ -123,6 +123,8 @@ We can expose an application running a set of PODs using different types of [ser
 
 {{< /alert >}}
 
+![](./assets/AWS_EKS_Services.png)
+
 ---
 
 {{< youtube J8jAzqbXxjE >}}
