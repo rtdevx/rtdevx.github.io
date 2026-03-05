@@ -11,6 +11,7 @@ categories:
   - DevOps
   - IaC
   - AWS
+  - Containers
 series: Terraform on AWS EKS
 ---
 ## EKS Cluster creation Options using Terraform
