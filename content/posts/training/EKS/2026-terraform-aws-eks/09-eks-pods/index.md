@@ -42,7 +42,6 @@ kubectl get nodes
 # Get Worker Node Status with wide option
 kubectl get nodes -o wide
 ```
-
 ### Create a Pod
 
 - Create a Pod
@@ -50,7 +49,6 @@ kubectl get nodes -o wide
 ```
 kubectl run nginx --image=nginx #--port 80
 ```
-
 ### List Pods with wide option
 
 - List pods with wide option which also provide Node information on which Pod is running
@@ -58,7 +56,6 @@ kubectl run nginx --image=nginx #--port 80
 ```
 kubectl get pods -o wide
 ```
-
 ### Describe Pod
 
 - Describe the POD, primarily required during troubleshooting.
@@ -96,7 +93,6 @@ kubectl get nodes -o wide
 ```
 http://<node1-public-ip>:<Node-Port>
 ```
-
 ## Interact with a Pod
 
 ### Verify Pod Logs
@@ -151,7 +147,6 @@ kubectl get pod nginx -o yaml
 # Get service definition YAML output
 kubectl get service nginx -o yaml   
 ```
-
 ## Clean-Up
 
 ```
