@@ -130,7 +130,7 @@ exit
 - **Running individual commands in a Container**
 
 ```
-kubectl exec -it <pod-name> env
+kubectl exec -it nginx env
 
 # Sample Commands
 kubectl exec -it nginx -- env
