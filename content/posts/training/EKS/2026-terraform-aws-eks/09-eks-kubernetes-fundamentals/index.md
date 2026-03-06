@@ -60,32 +60,30 @@ An overview of the **key components** that make up a Kubernetes cluster (officia
 {{< mermaid >}}
 
 flowchart LR
-    subgraph User
-        A[Apply YAML<br/>kubectl apply -f ...]
+    User["User applies YAML (kubectl apply)"]
+
+    subgraph API_Server["API Server"]
+        Desired["Desired State (spec)"]
+        Actual["Actual State (status)"]
     end
 
-    subgraph APIServer[Kubernetes API Server]
-        B[Store Desired State<br/>(Resources)]
-        C[Store Actual State<br/>(Cluster Objects)]
+    subgraph Controller_Manager["Controller Manager"]
+        Controller["Controller (e.g., Deployment Controller)"]
+        Loop["Reconciliation Loop: Observe → Compare → Act"]
     end
 
-    subgraph ControllerManager[Kube Controller Manager]
-        D[Controller<br/>(e.g., Deployment Controller)]
-        E[Control Loop<br/>Observe → Compare → Act]
+    subgraph Cluster["Cluster Resources"]
+        Pods["Pods / ReplicaSets / Nodes"]
     end
 
-    subgraph Cluster
-        F[Pods / Nodes / ReplicaSets<br/>(Actual State)]
-    end
+    User --> Desired
+    Pods --> Actual
 
-    A --> B
-    F --> C
+    Controller --> Desired
+    Controller --> Actual
 
-    D -->|Watches| B
-    D -->|Watches| C
-
-    D --> E
-    E -->|Reconcile Actions<br/>(create/update/delete)| F
+    Controller --> Loop
+    Loop --> Pods
 
 {{< /mermaid >}}
 
