@@ -192,6 +192,13 @@ We can expose an application running a set of PODs using different types of [ser
 {{< youtube J8jAzqbXxjE >}}
 
 ---
+## Kubernetes API Reference
+
+The Kubernetes API Reference provides detailed information about the various API objects, their operations, and how to interact with them. It includes specifications for resources like Pods, Services, and Deployments, as well as guidelines for using the API effectively.
+
+- Reference: https://kubernetes.io/docs/reference/
+- v1.24 Reference: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/
+
 ## >> Sources <<
 
 Kubernetes components: https://kubernetes.io/docs/concepts/overview/components/
@@ -203,6 +210,11 @@ Kubernetes Service Ports (Nigel Poulton): https://www.nigelpoulton.com/post/expl
 Kubernetes Services Illustrated (The Infra Guy): https://bsdnet.github.io/posts/kubernetes-service-illustrated/
 
 Container Runtimes: https://kubernetes.io/docs/setup/production-environment/container-runtimes/
+
+**Kubernetes API Reference:**
+
+- Reference: https://kubernetes.io/docs/reference/
+- v1.24 Reference: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/
 ## >> Disclaimer <<
 
 {{< disclaimer_terraform_on_AWS_EKS_26 >}}
