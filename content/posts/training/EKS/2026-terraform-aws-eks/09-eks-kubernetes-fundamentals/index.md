@@ -158,7 +158,9 @@ Kubernetes components: https://kubernetes.io/docs/concepts/overview/components/
 
 Kubernetes Service types: https://kubernetes.io/docs/concepts/services-networking/service/##publishing-services-service-types
 
-Kubernetes Service Ports: https://www.nigelpoulton.com/post/explained-kubernetes-service-ports
+Kubernetes Service Ports (Nigel Poulton): https://www.nigelpoulton.com/post/explained-kubernetes-service-ports
+
+Kubernetes Services Illustrated (The Infra Guy): https://bsdnet.github.io/posts/kubernetes-service-illustrated/
 
 Container Runtimes: https://kubernetes.io/docs/setup/production-environment/container-runtimes/
 ## >> Disclaimer <<
