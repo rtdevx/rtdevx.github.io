@@ -59,7 +59,7 @@ An overview of the **key components** that make up a Kubernetes cluster (officia
 
 {{< mermaid >}}
 
-flowchart LR
+flowchart TD
     User["User applies YAML (kubectl apply)"]
 
     subgraph API_Server["API Server"]
