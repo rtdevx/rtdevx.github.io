@@ -13,6 +13,11 @@ categories:
   - Containers
 series: Terraform on AWS EKS
 ---
+
+| <font color=#EB4925>External Resources</font> »                                     |                                                                                            |                                                                                  |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| [Kubernetes Fundamentals](https://github.com/stacksimplify/kubernetes-fundamentals) | [`kubectl` quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/) | [`kubectl` cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) |
+
 {{< lead >}}
 **Kubernetes** is a portable, extensible, open-source platform for managing containerized workflows.
 
