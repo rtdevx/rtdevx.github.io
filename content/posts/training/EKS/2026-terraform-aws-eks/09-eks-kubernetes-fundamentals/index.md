@@ -137,7 +137,7 @@ We can expose an application running a set of PODs using different types of [ser
 - [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/##publishing-services-service-types) - exposes the Service externally on each Node’s IP at a static port so that the Service is accessible via each Node’s IP and `nodePort` outside of the Kubernete cluster. Kubernetes control plane allocates a port from a range specified by `--service-node-port-range`.
 - [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/##loadbalancer) - exposes the Service externally using a load blancer, which directs traffic from a `loadBalancerIP` to `clusterIP`.
 - **Ingress** - advanced Load Balancer which provides **context path based routing**, **SSL**, **SSL Redirect** and many more (i.e. AWS ALB)
-- [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/##externalname) - maps the Service to the DNS name specified by `externalName` field, not a typical selector such as `cassandra`.
+- [ExternalName](https://kubernetes.io/docs/concepts/services-networking/service/##externalname) - maps the Service to the DNS name specified by `externalName` field.
 
 {{< /alert >}}
 
