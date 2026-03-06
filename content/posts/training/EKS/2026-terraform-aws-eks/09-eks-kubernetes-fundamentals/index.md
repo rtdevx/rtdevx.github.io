@@ -57,6 +57,38 @@ An overview of the **key components** that make up a Kubernetes cluster (officia
 - It watches for newly created Pods with no assigned node and selects the node to run it on.
 ### Controllers
 
+{{< mermaid >}}
+
+flowchart LR
+    subgraph User
+        A[Apply YAML<br/>kubectl apply -f ...]
+    end
+
+    subgraph APIServer[Kubernetes API Server]
+        B[Store Desired State<br/>(Resources)]
+        C[Store Actual State<br/>(Cluster Objects)]
+    end
+
+    subgraph ControllerManager[Kube Controller Manager]
+        D[Controller<br/>(e.g., Deployment Controller)]
+        E[Control Loop<br/>Observe → Compare → Act]
+    end
+
+    subgraph Cluster
+        F[Pods / Nodes / ReplicaSets<br/>(Actual State)]
+    end
+
+    A --> B
+    F --> C
+
+    D -->|Watches| B
+    D -->|Watches| C
+
+    D --> E
+    E -->|Reconcile Actions<br/>(create/update/delete)| F
+
+{{< /mermaid >}}
+
 {{< lead >}}
 
 **Controllers** are responsible for <font color=#EBAC25>noticing and responding when nodes, containers or endpoints go down</font>. They make decisions to bring up new containers.
