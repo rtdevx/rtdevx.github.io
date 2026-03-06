@@ -122,28 +122,6 @@ If an application crashes (any pod dies), **ReplicaSet** will recreate the pod i
 A **Deployment** <font color=#EBAC25>runs multiple replicas of your application and automatically replaces any instances that fail or become unresponsive</font>.
 
 <font color=#EB4925>Rollout & Rollback changes to applications</font>. Deployments are well-suited for stateless applications.
-
-{{< mermaid >}}
-
-flowchart LR
-
-    A[Deployments] -->B[Create a Deployment to rollout ReplicaSet]
-
-    A -->C[Updating Deployment]
-
-    A -->D[Rolling back Deployment]
-
-    A -->E[Scaling Deployment]
-
-    A -->F[Pausing and Resuming Deployment]
-
-    A -->G[Deployment Status]
-
-    A -->H[Clean up Policy]
-
-    A -->I[Canary Deployments]
-
-{{< /mermaid >}}
 ### Service ✨
 
 A **service** is an abstraction for **POD**s, allocating and providing **VIP** (Virtual IP) addresses.
