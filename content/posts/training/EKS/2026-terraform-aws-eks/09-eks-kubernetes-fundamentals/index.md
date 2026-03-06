@@ -34,6 +34,15 @@ series: Terraform on AWS EKS
 
 ![](./assets/AWS_EKS_Architecture.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ## Kubernetes components
+
+{{< alert "circle-info" >}}
+
+An overview of the key components that make up a Kubernetes cluster (official documentation):
+
+- https://kubernetes.io/docs/concepts/overview/components/
+
+{{< /alert >}}
+
 ### kube-apiserver
 
 - It is acting as a front-end for the Kubernetes Control Plane. <font color=#EBAC25>It exposes the Kubernetes API</font>.
