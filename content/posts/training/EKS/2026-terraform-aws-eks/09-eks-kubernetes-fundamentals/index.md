@@ -192,7 +192,7 @@ We can expose an application running a set of PODs using different types of [ser
 {{< youtube J8jAzqbXxjE >}}
 
 ---
-## Kubernetes API Reference
+## Kubernetes API Reference ✨
 
 The Kubernetes API Reference provides detailed information about the various API objects, their operations, and how to interact with them. It includes specifications for resources like Pods, Services, and Deployments, as well as guidelines for using the API effectively.
 
