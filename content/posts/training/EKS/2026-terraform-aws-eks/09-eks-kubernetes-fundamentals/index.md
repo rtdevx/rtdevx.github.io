@@ -37,7 +37,7 @@ series: Terraform on AWS EKS
 
 {{< alert "circle-info" >}}
 
-An overview of the key components that make up a Kubernetes cluster (official documentation):
+An overview of the **key components** that make up a Kubernetes cluster (official documentation):
 
 - https://kubernetes.io/docs/concepts/overview/components/
 
