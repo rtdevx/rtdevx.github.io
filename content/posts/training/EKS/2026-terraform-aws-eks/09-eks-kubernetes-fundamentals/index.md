@@ -190,6 +190,7 @@ We can expose an application running a set of PODs using different types of [ser
 ---
 
 {{< youtube J8jAzqbXxjE >}}
+Kubernetes Networking Explained - _Mischa van den Burg_, [Kubecraft](https://www.skool.com/kubecraft)
 
 ---
 ## Kubernetes API Reference ✨
