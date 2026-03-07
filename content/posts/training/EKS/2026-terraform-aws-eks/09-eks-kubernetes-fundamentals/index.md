@@ -1,17 +1,16 @@
 ---
-title: "EKS: Kubernetes Fundamentals 🔥"
+title: Kubernetes Fundamentals 🔥
 date: 2026-02-02
 description: Kubernetes Fundamentals.
 summary: Kubernetes Fundamentals.
 draft: false
 tags:
-  - Terraform
   - EKS
 categories:
   - DevOps
   - AWS
   - Containers
-series: Terraform on AWS EKS
+series: AWS EKS
 ---
 
 | <font color=#EB4925>External Resources</font> »                                                                                              |                                                                                            |                                                                                  |

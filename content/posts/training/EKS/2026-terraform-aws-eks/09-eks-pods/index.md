@@ -11,7 +11,7 @@ categories:
   - DevOps
   - AWS
   - Containers
-series: Terraform on AWS EKS
+series: AWS EKS
 ---
 {{< alert "circle-info" >}}
 
