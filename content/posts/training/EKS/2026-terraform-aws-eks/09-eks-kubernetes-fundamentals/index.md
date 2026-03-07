@@ -18,6 +18,7 @@ series: Terraform on AWS EKS
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
 | [Kubernetes Official Documentation](https://kubernetes.io/docs/home/)                                                                        | [`kubectl` quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/) | [`kubectl` cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)       |
 | [Kubernetes Fundamentals](https://github.com/stacksimplify/kubernetes-fundamentals) (Practice Kubernetes commands with _Kalyan Reddy Daida_) | [Nigel Poulton Blog](https://www.nigelpoulton.com/blog/categories/kubernetes)              | [K8s YAML Specification](https://dev.to/harshm03/comprehensive-guide-to-k8s-yaml-4c3c) |
+| API reference: https://kubernetes.io/docs/reference/                                                                                         |                                                                                            |                                                                                        |
 
 {{< lead >}}
 **Kubernetes** is a portable, extensible, open-source platform for managing containerized workflows.
@@ -198,7 +199,7 @@ The Kubernetes API Reference provides detailed information about the various API
 
 - Reference: https://kubernetes.io/docs/reference/
 - v1.24 Reference: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/
-
+- [K8s YAML Specification](https://dev.to/harshm03/comprehensive-guide-to-k8s-yaml-4c3c)
 ## >> Sources <<
 
 Kubernetes components: https://kubernetes.io/docs/concepts/overview/components/
