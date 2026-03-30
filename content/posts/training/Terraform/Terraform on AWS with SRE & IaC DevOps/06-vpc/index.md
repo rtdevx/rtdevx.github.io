@@ -86,7 +86,7 @@ classDef greenclass stroke:#C7EB25
 ### 1. Create VPC
 
 ```CLI
-IAM console > VPC
+AWS console > VPC
 ```
 
 - **Name:** my-manual-vpc
@@ -94,7 +94,7 @@ IAM console > VPC
 ### 2. Create Subnets
 
 ```CLI
-IAM console > VPC > Subnets
+AWS console > VPC > Subnets
 ```
 
 ℹ️ For the purpose of the manual exercise, we are only creating subnets in 1 AZ. With terraform we will spread the infrastructure across 2 AZ.
@@ -124,7 +124,7 @@ No association with NAT or Internet Gateway is required for the DB subnet as Dat
 ### 3. Create IGW and associate it with VPC
 
 ```CLI
-IAM console > VPC > Internet gateways
+AWS console > VPC > Internet gateways
 ```
 
 - **Name Tag:** my-igw
@@ -135,7 +135,7 @@ IAM console > VPC > Internet gateways
 💡NAT Gateway should always be placed in the Public Subnet.
 
 ```CLI
-IAM console > VPC > NAT gateways
+AWS console > VPC > NAT gateways
 ```
 
 - **Name:** my-nat-gateway
@@ -146,7 +146,7 @@ IAM console > VPC > NAT gateways
 ##### Create Public Route Table
 
 ```CLI
-IAM console > VPC > Route tables
+AWS console > VPC > Route tables
 ```
 
 - **Name tag:** my-public-route-table
@@ -155,7 +155,7 @@ IAM console > VPC > Route tables
 ##### Create Public Route in newly created Route Table
 
 ```CLI
-IAM console > VPC > Route tables > my-public-route-table > Routes
+AWS console > VPC > Route tables > my-public-route-table > Routes
 ```
 
 - Click on **Edit Routes** > **Add Route**
@@ -169,7 +169,7 @@ IAM console > VPC > Route tables > my-public-route-table > Routes
 ##### Associate Public Subnet 1 in Route Table
 
 ```CLI
-IAM console > VPC > Route tables > my-public-route-table > Subnet associations > Explicit subnet associations
+AWS console > VPC > Route tables > my-public-route-table > Subnet associations > Explicit subnet associations
 ```
 
 - Click on **Edit Subnet Associations**
@@ -184,7 +184,7 @@ IAM console > VPC > Route tables > my-public-route-table > Subnet associations >
 ##### Create Private Route Table
 
 ```CLI
-IAM console > VPC > Route tables
+AWS console > VPC > Route tables
 ```
 
 - **Name tag:** my-private-route-table
@@ -193,7 +193,7 @@ IAM console > VPC > Route tables
 ##### Create Private Route in newly created Route Table
 
 ```CLI
-IAM console > VPC > Route tables > my-private-route-table > Routes
+AWS console > VPC > Route tables > my-private-route-table > Routes
 ```
 
 - Click on **Edit Routes** > **Add Route**
@@ -205,7 +205,7 @@ IAM console > VPC > Route tables > my-private-route-table > Routes
 ##### Associate Private Subnet 1 in Route Table
 
 ```CLI
-IAM console > VPC > Route tables > my-public-route-table > Subnet associations > Explicit subnet associations
+AWS console > VPC > Route tables > my-public-route-table > Subnet associations > Explicit subnet associations
 ```
 
 - Click on **Edit Subnet Associations**
