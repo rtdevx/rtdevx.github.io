@@ -12,8 +12,6 @@ categories:
   - Containers
 series: AWS EKS
 ---
-# AWS EKS IAM Roles for Service Accounts (IRSA)
-
 {{< alert "circle-info" >}}
 
 **IRSA** is quite difficult but fundamental concept for EKS. I will keep updating this article with more information as I move along.
