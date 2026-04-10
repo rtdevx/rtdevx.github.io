@@ -73,6 +73,8 @@ When **AWS IAM Identity Provider** is configured, identities from EKS Cluster wi
 
 ![](./assets/AWS_EKS_IRSA_flow.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
+EKS Cluster is acting as an external Identity Provider to AWS IAM.
+
 - K8s Service account is assuming an IAM role with policy attached via _AssumeRoleWithWebIdentity_ API
 - K8s Service account runs a job in a POD
 - K8s Service account is sending JWT Token request
