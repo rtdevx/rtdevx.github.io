@@ -90,6 +90,16 @@ EKS Cluster is acting as an external Identity Provider to AWS IAM.
 - AWS STS generates temporary IAM credentials
 - Access to S3 bucket is granted based on temporary credentials and according to IAM Role / policy permissions
 
+{{< alert "circle-info" >}}
+
+1. Allow EKS cluster to be an Identity Provider in IAM
+2. Create Service Account for Kubernetes
+3. Create IAM Role with IAM Policy attached and associate it with the Service Account
+
+After that's done, Kubernetes Service Account should have access to create / modify the resources specified in the IAM Policy.
+
+{{< /alert >}}
+
 ---
 ## >> Sources <<
 
