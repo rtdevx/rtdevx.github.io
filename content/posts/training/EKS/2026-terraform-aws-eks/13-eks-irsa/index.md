@@ -19,9 +19,17 @@ series: AWS EKS
 {{< /alert >}}
 ## Introduction to IRSA
 
-Applications in a Pod’s containers can use an AWS SDK or the AWS CLI to make API requests to AWS services using AWS Identity and Access Management (IAM) permissions. Applications must sign their AWS API requests with AWS credentials. **IAM roles for service accounts (IRSA)** provide the ability to manage credentials for your applications, similar to the way that Amazon EC2 instance profiles provide credentials to Amazon EC2 instances. Instead of creating and distributing your AWS credentials to the containers or using the Amazon EC2 instance’s role, you associate an IAM role with a Kubernetes service account and configure your Pods to use the service account.
+{{< lead >}}
+
+Applications in a Pod’s containers can use an AWS SDK or the AWS CLI to make API requests to AWS services using AWS Identity and Access Management (IAM) permissions. 
+
+Applications must sign their AWS API requests with AWS credentials. **IAM roles for service accounts (IRSA)** provide the ability to manage credentials for your applications, similar to the way that Amazon EC2 instance profiles provide credentials to Amazon EC2 instances. 
+
+Instead of creating and distributing your AWS credentials to the containers or using the Amazon EC2 instance’s role, you associate an IAM role with a Kubernetes service account and configure your Pods to use the service account.
 
 _Source:_ https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html
+
+{{< /lead >}}
 
 Many resources (LB, CSI Controllers, etc) depends on this concept.
 ## How o access AWS Services from Workloads running in EKS Cluster?
@@ -76,7 +84,7 @@ When **AWS IAM Identity Provider** is configured, identities from EKS Cluster wi
 EKS Cluster is acting as an external Identity Provider to AWS IAM.
 
 - K8s Service account is assuming an IAM role with policy attached via _AssumeRoleWithWebIdentity_ API
-- K8s Service account runs a job in a POD
+- K8s Service account runs a Job in a POD
 - K8s Service account is sending JWT Token request
 - JWT is sent to STS and allows to assume the role via _AssumeRoleWihWebIdentity_ API
 - AWS STS generates temporary IAM credentials
