@@ -6,6 +6,7 @@ summary: AWS EKS IAM Roles for Service Accounts (IRSA).
 draft: false
 tags:
   - EKS
+  - OpenID
 categories:
   - DevOps
   - AWS

@@ -8,6 +8,7 @@ tags:
   - Git
   - GitHub
   - GitHubActions
+  - OpenID
 categories:
   - DevOps
   - CI/CD
