@@ -31,7 +31,7 @@ _Source:_ https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service
 
 {{< /lead >}}
 
-Many resources (LB, CSI Controllers, etc) depends on this concept.
+Many resources (LB, CSI Controllers, etc) depend on this concept.
 ## How o access AWS Services from Workloads running in EKS Cluster?
 
 Jobs and PODS need to access services from AWS EKS Cluster.
