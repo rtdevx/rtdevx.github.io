@@ -23,9 +23,9 @@ series: AWS EKS
 
 Applications in a Pod’s containers can use an AWS SDK or the AWS CLI to make API requests to AWS services using AWS Identity and Access Management (IAM) permissions. 
 
-**Applications must sign their AWS API requests with AWS credentials. IAM roles for service accounts (IRSA) provide the ability to manage credentials for your applications, similar to the way that Amazon EC2 instance profiles provide credentials to Amazon EC2 instances.** 
+<font color=#EBAC25>Applications must sign their AWS API requests with AWS credentials. IAM roles for service accounts (IRSA) provide the ability to manage credentials for your applications, similar to the way that Amazon EC2 instance profiles provide credentials to Amazon EC2 instances.</font>
 
-**Instead of creating and distributing your AWS credentials to the containers or using the Amazon EC2 instance’s role, you associate an IAM role with a Kubernetes service account and configure your Pods to use the service account.**
+<font color=#EBAC25>Instead of creating and distributing your AWS credentials to the containers or using the Amazon EC2 instance’s role, you associate an IAM role with a Kubernetes service account and configure your Pods to use the service account.</font>
 
 _Source:_ https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html
 
