@@ -69,6 +69,16 @@ When **AWS IAM Identity Provider** is configured, identities from EKS Cluster wi
 ![](./assets/AWS_EKS_IRSA_6.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 **K8s Service Account** will assume **IAM Role** to get **Temporary Credentials** when running a Job to list content of S3 bucket.
+## IRSA - Functional flow
+
+![](./assets/AWS_EKS_IRSA_flow.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+
+- K8s Service account is assuming an IAM role with policy attached via _AssumeRoleWithWebIdentity_ API
+- K8s Service account runs a job in a POD
+- K8s Service account is sending JWT Token request
+- JWT is sent to STS and allows to assume the role via _AssumeRoleWihWebIdentity_ API
+- AWS STS generates temporary IAM credentials
+- Access to S3 bucket is granted based on temporary credentials and according to IAM Role / policy permissions
 
 ---
 ## >> Sources <<
