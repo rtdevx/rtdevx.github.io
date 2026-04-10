@@ -56,7 +56,7 @@ https://< EKS Cluster OpenID Connect provider URL >/.well-known/openid-configura
 ![](./assets/AWS_EKS_IRSA_4_EndPoint.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ### AWS IAM Identity Provider
 
-![](AWS_EKS_IRSA_5_IAM_Identity_Provider_1.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](./assets/AWS_EKS_IRSA_5_IAM_Identity_Provider_1.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 ![](./assets/AWS_EKS_IRSA_5_IAM_Identity_Provider_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
