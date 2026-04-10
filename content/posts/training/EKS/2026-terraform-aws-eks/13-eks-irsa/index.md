@@ -104,11 +104,20 @@ Mounted Secret:
 
 ![](./assets/AWS_EKS_IRSA_token.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
+![](./assets/AWS_EKS_IRSA_token_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+
+{{< alert "circle-info" >}}
+
+**JWT token** is encoded and can be decoded at https://jwt.io website.
+
+{{< /alert >}}
+
 ---
 ## >> Sources <<
 
 - Udemy: https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/learn/lecture/30316166#overview
 - AWS: https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html
+- JWT: https://jwt.io
 ## >> Disclaimer <<
 
 {{< disclaimer_terraform_on_AWS_EKS_26 >}}
