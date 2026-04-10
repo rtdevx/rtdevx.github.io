@@ -96,9 +96,13 @@ EKS Cluster is acting as an external Identity Provider to AWS IAM.
 2. Create Service Account for Kubernetes
 3. Create IAM Role with IAM Policy attached and associate it with the Service Account
 
+{{< /alert >}}
+
 After that's done, Kubernetes Service Account should have access to create / modify the resources specified in the IAM Policy.
 
-{{< /alert >}}
+Mounted Secret:
+
+![](./assets/AWS_EKS_IRSA_token.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 ---
 ## >> Sources <<
