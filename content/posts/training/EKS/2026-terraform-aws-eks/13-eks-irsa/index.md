@@ -59,7 +59,7 @@ Whenever EKS Cluster is created, OpenID Connect URL is also created (see below).
 ![](./assets/AWS_EKS_IRSA_3.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ### EKS Cluster OpenID Connect Configuration Endpoint
 
-https://< EKS Cluster OpenID Connect provider URL >/.well-known/openid-configuration
+*https://< EKS Cluster OpenID Connect provider URL >/.well-known/openid-configuration*
 
 ![](./assets/AWS_EKS_IRSA_4_EndPoint.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ## AWS IAM Identity Provider
