@@ -24,15 +24,15 @@ Applications in a Pod’s containers can use an AWS SDK or the AWS CLI to make A
 _Source:_ https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html
 
 Many resources (LB, CSI Controllers, etc) depends on this concept.
-### How o access AWS Services from Workloads running in EKS Cluster?
+## How o access AWS Services from Workloads running in EKS Cluster?
 
 Jobs and PODS need to access services from AWS EKS Cluster.
 
 ![](./assets/AWS_EKS_IRSA_1.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
-### Why do Kubernetes Workloads need to access AWS Services?
+## Why do Kubernetes Workloads need to access AWS Services?
 
 ![](./assets/AWS_EKS_IRSA_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
-### Key Items for IRSA Implementation
+## Key Items for IRSA Implementation
 
 **AWS:**
 
@@ -49,19 +49,19 @@ Jobs and PODS need to access services from AWS EKS Cluster.
 Whenever EKS Cluster is created, OpenID Connect URL is also created (see below). This means that EKS Cluster can act as OpenID connect provider.
 
 ![](./assets/AWS_EKS_IRSA_3.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
-#### EKS Cluster OpenID Connect Configuration Endpoint
+### EKS Cluster OpenID Connect Configuration Endpoint
 
 https://< EKS Cluster OpenID Connect provider URL >/.well-known/openid-configuration
 
 ![](./assets/AWS_EKS_IRSA_4_EndPoint.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
-### AWS IAM Identity Provider
+## AWS IAM Identity Provider
 
 ![](./assets/AWS_EKS_IRSA_5_IAM_Identity_Provider_1.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 ![](./assets/AWS_EKS_IRSA_5_IAM_Identity_Provider_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 When **AWS IAM Identity Provider** is configured, identities from EKS Cluster will be able to consume AWS Services.
-### AWS IAM Roles for Kubernetes Service Accounts
+## AWS IAM Roles for Kubernetes Service Accounts
 
 - K8s Service Account
 - IAM Role with STS (Secure Token Services) IAM Policy attached to access the resources
