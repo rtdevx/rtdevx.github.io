@@ -75,7 +75,7 @@ When **AWS IAM Identity Provider** is configured, identities from EKS Cluster wi
 
 [https://github.com/rtdevx/iac-terraform-aws-eks/tree/main/terraform-manifests-eks](https://github.com/rtdevx/iac-terraform-aws-eks)
 
-AWS **IAM Identity Provider** configuration can be found in those files:
+**AWS IAM Identity Provider** configuration can be found in those files:
 
 📄 _File:_ terraform-manifests-eks/c6-01-iam-oidc-connect-provider-variables.tf
 📄 _File:_ terraform-manifests-eks/c6-02-iam-oidc-connect-provider.tf
