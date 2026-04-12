@@ -71,7 +71,9 @@ Whenever EKS Cluster is created, OpenID Connect URL is also created (see below).
 
 When **AWS IAM Identity Provider** is configured, identities from EKS Cluster will be able to consume AWS Services.
 
-{{< icon "github" >}}  <font color=#EBAC25><i>Example Terraform code:</i></font> 
+{{< alert "github" >}}
+
+<font color=#EBAC25><i>Example Terraform code:</i></font> 
 
 https://github.com/rtdevx/iac-terraform-aws-eks
 
@@ -79,6 +81,8 @@ https://github.com/rtdevx/iac-terraform-aws-eks
 
 📄 _File:_ terraform-manifests-eks/c6-01-iam-oidc-connect-provider-variables.tf
 📄 _File:_ terraform-manifests-eks/c6-02-iam-oidc-connect-provider.tf
+
+{{< /alert >}}
 ## AWS IAM Roles for Kubernetes Service Accounts
 
 - K8s Service Account
