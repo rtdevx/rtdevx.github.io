@@ -13,7 +13,7 @@ categories:
 series: AWS EKS
 ---
 {{< lead >}}
-AWS **EBS Container Storage Interface (CSI)** driver allows **EKS Clusters** to manage the **lifecycle** of [EBS]({{< ref "2025-aws-cloud-practitioner/6-storage/#ebs-volume" >}}) volumes for persistent volumes in k8s (Create / Resize / Delete volumes).
+AWS **EBS Container Storage Interface (CSI)** driver allows **EKS Clusters** to manage the **lifecycle** of [EBS]({{< ref "6-storage/#ebs-volume" >}}) volumes for persistent volumes in k8s (Create / Resize / Delete volumes).
 {{< /lead >}}
 ## AWS Elastic Block Store - Introduction
 
