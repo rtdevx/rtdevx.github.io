@@ -3,7 +3,7 @@ title: EKS EBS CSI Driver
 date: 2026-02-04
 description: Introduction to EKS Storage.
 summary: Introduction to EKS Storage.
-draft: true
+draft: false
 tags:
   - EKS
 categories:
