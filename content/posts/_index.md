@@ -1,7 +1,7 @@
 +++
 draft = false
 title = '🔰Posts'
-summary = 'Welcome to my blog.'
+summary = 'Posts.'
 +++
 
 | Jump to Section                                                |                                                                                                             |
