@@ -32,7 +32,7 @@ series: AWS EKS
 {{< /lead >}}
 ## Kubernetes Architecture
 
-![](./assets/AWS_EKS_Architecture.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_Architecture.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ## Kubernetes components
 
 {{< alert "circle-info" >}}
@@ -127,7 +127,7 @@ Example Container Runtimes:
 	- Those network rules allow network communication to your PODs from network sessions inside or outside the cluster.
 ## EKS Cluster Architecture
 
-![](./assets/AWS_EKS_Architecture_EKS.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_Architecture_EKS.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 ℹ️ _Note:_ <font color=#EB4925>EKS lets us focus only on Application Workloads</font>. We don't need to worry about any of those components as those are being managed by AWS EKS.
 ## Kubernetes Fundamentals
@@ -180,7 +180,7 @@ We can expose an application running a set of PODs using different types of [ser
 
 {{< /alert >}}
 
-![](./assets/AWS_EKS_Services.png)
+![](AWS_EKS_Services.png)
 
 <font color=#EBAC25><i>More info:</i></font>
 

@@ -37,10 +37,10 @@ Many resources (LB, CSI Controllers, etc) depend on this concept.
 
 Jobs and PODS need to access services from AWS EKS Cluster.
 
-![](./assets/AWS_EKS_IRSA_1.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_1.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ## Why do Kubernetes Workloads need to access AWS Services?
 
-![](./assets/AWS_EKS_IRSA_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ## Key Items for IRSA Implementation
 
 **AWS:**
@@ -57,17 +57,17 @@ Jobs and PODS need to access services from AWS EKS Cluster.
 
 Whenever EKS Cluster is created, OpenID Connect URL is also created (see below). This means that EKS Cluster can act as OpenID connect provider.
 
-![](./assets/AWS_EKS_IRSA_3.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_3.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ### EKS Cluster OpenID Connect Configuration Endpoint
 
 *https://< EKS Cluster OpenID Connect provider URL >/.well-known/openid-configuration*
 
-![](./assets/AWS_EKS_IRSA_4_EndPoint.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_4_EndPoint.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ## AWS IAM Identity Provider
 
-![](./assets/AWS_EKS_IRSA_5_IAM_Identity_Provider_1.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_5_IAM_Identity_Provider_1.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
-![](./assets/AWS_EKS_IRSA_5_IAM_Identity_Provider_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_5_IAM_Identity_Provider_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 When **AWS IAM Identity Provider** is configured, identities from EKS Cluster will be able to consume AWS Services.
 
@@ -88,12 +88,12 @@ https://github.com/rtdevx/iac-terraform-aws-eks
 - K8s Service Account
 - IAM Role with STS (Secure Token Services) IAM Policy attached to access the resources
 
-![](./assets/AWS_EKS_IRSA_6.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_6.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 **K8s Service Account** will assume **IAM Role** to get **Temporary Credentials** when running a Job to list content of S3 bucket.
 ## IRSA - Functional flow
 
-![](./assets/AWS_EKS_IRSA_flow.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_flow.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 EKS Cluster is acting as an external Identity Provider to AWS IAM.
 
@@ -116,9 +116,9 @@ After that's done, Kubernetes Service Account should have access to create / mod
 
 Mounted Secret:
 
-![](./assets/AWS_EKS_IRSA_token.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_token.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
-![](./assets/AWS_EKS_IRSA_token_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_IRSA_token_2.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 {{< alert "circle-info" >}}
 

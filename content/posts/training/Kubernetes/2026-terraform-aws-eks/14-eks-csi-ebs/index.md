@@ -25,7 +25,7 @@ AWS **EBS Container Storage Interface (CSI)** driver allows **EKS Clusters** to 
 - AWS recommends [EBS]({{< ref "6-storage/#ebs-volume" >}}) for data that must be quickly accessible and requires long-term persistence
 - [EBS]({{< ref "6-storage/#ebs-volume" >}}) is well sited to both database-style applications that rely on random reads and writes, and to throughput-intensive applications that perform long, continuous reads and writes
 
-![](./assets/AWS_EKS_CSI_Driver.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](AWS_EKS_CSI_Driver.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 
 
