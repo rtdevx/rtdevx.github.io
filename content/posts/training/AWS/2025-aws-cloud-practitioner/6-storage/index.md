@@ -6,6 +6,7 @@ summary: Storage in AWS...
 draft: false
 tags:
   - CLF-C02
+  - Storage
 categories: AWS
 series: AWS Cloud Practitioner
 ---

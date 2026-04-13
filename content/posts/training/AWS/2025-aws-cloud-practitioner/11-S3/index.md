@@ -6,6 +6,7 @@ summary: Amazon S3 is one of the main building blocks of AWS. It is advertised a
 draft: false
 tags:
   - CLF-C02
+  - Storage
 categories: AWS
 series: AWS Cloud Practitioner
 ---
