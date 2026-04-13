@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = 'Amazon Elastic Kubernetes Service'
 +++
 **Amazon** Elastic Kubernetes Service (**Amazon** **EKS**) is the premiere platform for running Kubernetes clusters, both in the **Amazon** Web Services (AWS) cloud and in your own data centers (**EKS** Anywhere and **Amazon** **EKS** Hybrid Nodes). **Amazon** **EKS** simplifies building, securing, and maintaining Kubernetes clusters.
