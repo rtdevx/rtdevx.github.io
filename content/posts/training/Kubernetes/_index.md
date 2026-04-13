@@ -6,7 +6,7 @@ title = 'Kubernetes'
 
 | <font color=#EB4925>External Resources</font> » |                                                              |
 | ----------------------------------------------- | ------------------------------------------------------------ |
-| [Kubernetes](https://kubernetes.io))            | [Kubernetes Documentation](https://kubernetes.io/docs/home/) |
+| [Kubernetes](https://kubernetes.io)             | [Kubernetes Documentation](https://kubernetes.io/docs/home/) |
 
 
 
