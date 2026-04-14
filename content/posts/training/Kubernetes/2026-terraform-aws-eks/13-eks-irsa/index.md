@@ -1,6 +1,6 @@
 ---
 title: EKS IAM Roles for Service Accounts (IRSA)
-date: 2026-02-03
+date: 2026-01-03
 description: AWS EKS IAM Roles for Service Accounts (IRSA).
 summary: AWS EKS IAM Roles for Service Accounts (IRSA).
 draft: false

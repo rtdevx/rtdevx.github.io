@@ -1,6 +1,6 @@
 ---
 title: Docker basics
-date: 2026-01-01
+date: 2026-02-01
 description: Docker is a platform that allows you to develop, ship, and run applications in lightweight, portable containers...
 summary: Docker is a platform that allows you to develop, ship, and run applications in lightweight, portable containers...
 draft: true
@@ -12,7 +12,9 @@ categories:
 series: Docker in a weekend
 ---
 {{< lead >}}
+
 **Docker** is a platform that allows you to develop, ship, and run applications in lightweight, portable **containers**. These containers package your application and its dependencies, ensuring it runs consistently across different environments, such as development, testing, and production.
+
 {{< /lead >}}
 
 | <font color=#EB4925>External Resources</font> »           |                                       |                                       |                                                     |

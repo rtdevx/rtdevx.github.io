@@ -1,6 +1,6 @@
 ---
 title: "EKS: Kubernetes PODs"
-date: 2026-02-03
+date: 2026-01-03
 description: A Kubernetes Pod is the smallest deployable unit in Kubernetes, consisting of one or more containers that share storage and network resources.
 summary: A Kubernetes Pod is the smallest deployable unit in Kubernetes, consisting of one or more containers that share storage and network resources.
 draft: true

@@ -1,6 +1,6 @@
 ---
 title: EKS EBS CSI Driver
-date: 2026-02-04
+date: 2026-01-04
 description: Introduction to EKS Storage.
 summary: Introduction to EKS Storage.
 draft: false
