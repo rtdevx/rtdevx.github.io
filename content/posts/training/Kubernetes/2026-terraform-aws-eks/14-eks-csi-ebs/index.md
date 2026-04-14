@@ -74,7 +74,7 @@ flowchart TD
 
 {{< /mermaid >}}
 
-<font color=#EB4925><b>Persistent Volume Claims</b></font> specify the desired storage size and access modes, and they bind to Persistent Volumes (PVs) that meet these requirements.
+**Persistent Volume Claims** specify the desired storage size and access modes, and they bind to **Persistent Volumes** (PVs) that meet these requirements.
 
 ```YAML
 apiVersion: v1
