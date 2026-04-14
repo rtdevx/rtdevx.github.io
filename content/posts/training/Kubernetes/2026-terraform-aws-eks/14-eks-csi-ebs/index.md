@@ -37,8 +37,19 @@ A **Storage Class** provides a way for administrators to describe the _classes_ 
 The Kubernetes concept of a storage class is similar to “**profiles**” in some other storage system designs.
 
 {{< /alert >}}
+### Example Storage Classes
 
-<font color=#EBAC25><i>More info:</i></font> https://kubernetes.io/docs/concepts/storage/storage-classes/
+Here are a few examples of StorageClasses for different storage providers:
+
+|StorageClass Name|Provisioner|Parameters|Reclaim Policy|Volume Binding Mode|
+|---|---|---|---|---|
+|standard|kubernetes.io/aws-ebs|type: gp2, fsType: ext4|Delete|Immediate|
+|fast|kubernetes.io/gce-pd|type: pd-ssd|Retain|WaitForFirstConsumer|
+|low-latency|csi-driver.example-vendor|guaranteedReadWriteLatency: "true"|Retain|WaitForFirstConsumer|
+
+<font color=#EBAC25><i>More info:</i></font> 
+- https://kubernetes.io/docs/concepts/storage/storage-classes/
+- https://k8sbyexample.org/storage-classes
 ## Persistent Volume Claims
 
 <font color=#EB4925><b>Persistent Volume Claims</b> (PVC) must exist in the same namespace as the <b>POD</b> using the claim.</font> The cluster finds the claim in the Pod's namespace and uses it to get the Persistent Volume backing the claim.
@@ -131,7 +142,9 @@ Because **Persistent Volume** is a cluster resource, it belongs outside of any N
 ## >> Sources <<
 
 - Kubernetes Storage Documentation: https://kubernetes.io/docs/concepts/storage/
-- Storage Classes: https://kubernetes.io/docs/concepts/storage/storage-classes/
+- Storage Classes: 
+	- https://kubernetes.io/docs/concepts/storage/storage-classes/
+	- https://k8sbyexample.org/storage-classes
 - Persistent Volumes: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
 - Persistent Volume Claims: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims
 ## >> Disclaimer <<
