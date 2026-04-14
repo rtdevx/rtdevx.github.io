@@ -22,7 +22,7 @@
     Pod -->|Requests storage via PVC| PVC
     PVC -->|Binds to matching PV| PV
     PV -->|Provides physical storage| Storage
-    Pod -->|Read/Write via mounted volume| PV</div><p><font color=#EB4925><b>Persistent Volume Claims</b></font> specify the desired storage size and access modes, and they bind to Persistent Volumes (PVs) that meet these requirements.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-YAML data-lang=YAML><span class=line><span class=cl><span class=nt>apiVersion</span><span class=p>:</span><span class=w> </span><span class=l>v1</span><span class=w>
+    Pod -->|Read/Write via mounted volume| PV</div><p><strong>Persistent Volume Claims</strong> specify the desired storage size and access modes, and they bind to <strong>Persistent Volumes</strong> (PVs) that meet these requirements.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-YAML data-lang=YAML><span class=line><span class=cl><span class=nt>apiVersion</span><span class=p>:</span><span class=w> </span><span class=l>v1</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=nt>kind</span><span class=p>:</span><span class=w> </span><span class=l>PersistentVolumeClaim</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=nt>metadata</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>myclaim</span><span class=w>
