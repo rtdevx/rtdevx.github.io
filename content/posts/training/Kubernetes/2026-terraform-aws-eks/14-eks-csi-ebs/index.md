@@ -73,6 +73,30 @@ flowchart TD
     Pod -->|Read/Write via mounted volume| PV
 
 {{< /mermaid >}}
+
+<font color=#EB4925><b>Persistent Volume Claims</b></font> specify the desired storage size and access modes, and they bind to Persistent Volumes (PVs) that meet these requirements.
+
+```YAML
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: myclaim
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 8Gi
+  storageClassName: slow
+  selector:
+    matchLabels:
+      release: "stable"
+    matchExpressions:
+      - {key: environment, operator: In, values: [dev]}
+```
+
+<font color=#EBAC25><i>More info:</i></font> https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims
 ## Persistent Volumes
 
 <font color=#EBAC25>A <b>Persistent Volume</b> (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using <b>Storage Classes</b>.</font> It is a resource in the cluster just like a node is a cluster resource.
@@ -109,6 +133,7 @@ Because **Persistent Volume** is a cluster resource, it belongs outside of any N
 - Kubernetes Storage Documentation: https://kubernetes.io/docs/concepts/storage/
 - Storage Classes: https://kubernetes.io/docs/concepts/storage/storage-classes/
 - Persistent Volumes: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+- Persistent Volume Claims: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims
 ## >> Disclaimer <<
 
 {{< disclaimer_terraform_on_AWS_EKS_26 >}}
