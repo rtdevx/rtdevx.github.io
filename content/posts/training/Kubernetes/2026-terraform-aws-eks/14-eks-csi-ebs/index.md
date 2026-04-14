@@ -45,33 +45,6 @@ The Kubernetes concept of a storage class is similar to “**profiles**” in so
 
 {{< mermaid >}}
 
-sequenceDiagram
-
-    participant Pod
-
-    participant PVC as PersistentVolumeClaim
-
-    participant PV as PersistentVolume
-
-    participant Storage as Storage Backend
-
-
-    Pod->>PVC: Request storage (claim)
-
-    PVC->>PV: Bind to matching PersistentVolume
-
-    PV->>Storage: Provide physical storage
- 
-
-    Pod->>PV: Read/Write data through mounted volume
-
-{{< /mermaid >}}
-## Persistent Volumes
-
-<font color=#EBAC25>A <b>Persistent Volume</b> (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using <b>Storage Classes</b>.</font> It is a resource in the cluster just like a node is a cluster resource.
-
-{{< mermaid >}}
-
 flowchart TD
 
 
@@ -83,17 +56,14 @@ flowchart TD
 
     end
   
-
     subgraph CS[Cluster Scope]
 
         PV[PersistentVolume]
 
     end
  
-
     Storage[(Storage Backend)]
   
-
     Pod -->|Requests storage via PVC| PVC
 
     PVC -->|Binds to matching PV| PV
@@ -101,6 +71,31 @@ flowchart TD
     PV -->|Provides physical storage| Storage
 
     Pod -->|Read/Write via mounted volume| PV
+
+{{< /mermaid >}}
+## Persistent Volumes
+
+<font color=#EBAC25>A <b>Persistent Volume</b> (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using <b>Storage Classes</b>.</font> It is a resource in the cluster just like a node is a cluster resource.
+
+{{< mermaid >}}
+
+sequenceDiagram
+
+    participant Pod
+
+    participant PVC as PersistentVolumeClaim
+
+    participant PV as PersistentVolume
+
+    participant Storage as Storage Backend
+
+    Pod->>PVC: Request storage (claim)
+
+    PVC->>PV: Bind to matching PersistentVolume
+
+    PV->>Storage: Provide physical storage
+ 
+    Pod->>PV: Read/Write data through mounted volume
 
 {{< /mermaid >}}
 
