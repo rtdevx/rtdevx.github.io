@@ -14,7 +14,7 @@ categories:
 series: AWS EKS
 ---
 {{< lead >}}
-Kubernetes **PODS** are **ephemeral** by nature. This means they do not store any information inside of the POD by default. Storage solution is required for the infrastructure to work.
+Kubernetes **PODS** are **ephemeral** by nature. This means they do not store any information inside of the POD by default. Storage solution is required for the data to be retained.
 
 AWS **EBS Container Storage Interface (CSI)** driver allows **EKS Clusters** to manage the **lifecycle** of EBS volumes for persistent volumes in k8s (Create / Resize / Delete volumes).
 {{< /lead >}}
