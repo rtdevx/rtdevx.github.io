@@ -50,6 +50,35 @@ Here are a few examples of StorageClasses for different storage providers:
 <font color=#EBAC25><i>More info:</i></font> 
 - https://kubernetes.io/docs/concepts/storage/storage-classes/
 - https://k8sbyexample.org/storage-classes
+## Persistent Volumes
+
+<font color=#EBAC25>A <b>Persistent Volume</b> (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using <b>Storage Classes</b>.</font> It is a resource in the cluster just like a node is a cluster resource.
+
+{{< mermaid >}}
+
+sequenceDiagram
+
+    participant Pod
+
+    participant PVC as PersistentVolumeClaim
+
+    participant PV as PersistentVolume
+
+    participant Storage as Storage Backend
+
+    Pod->>PVC: Request storage (claim)
+
+    PVC->>PV: Bind to matching PersistentVolume
+
+    PV->>Storage: Provide physical storage
+ 
+    Pod->>PV: Read/Write data through mounted volume
+
+{{< /mermaid >}}
+
+Because **Persistent Volume** is a cluster resource, it belongs outside of any Namespace in the Kubernetes cluster - as opposite to **Persistent Volume Claims**.
+
+<font color=#EBAC25><i>More info:</i></font> https://kubernetes.io/docs/concepts/storage/persistent-volumes/
 ## Persistent Volume Claims
 
 <font color=#EB4925><b>Persistent Volume Claims</b> (PVC) must exist in the same namespace as the <b>POD</b> using the claim.</font> The cluster finds the claim in the Pod's namespace and uses it to get the Persistent Volume backing the claim.
@@ -108,35 +137,6 @@ spec:
 ```
 
 <font color=#EBAC25><i>More info:</i></font> https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims
-## Persistent Volumes
-
-<font color=#EBAC25>A <b>Persistent Volume</b> (PV) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using <b>Storage Classes</b>.</font> It is a resource in the cluster just like a node is a cluster resource.
-
-{{< mermaid >}}
-
-sequenceDiagram
-
-    participant Pod
-
-    participant PVC as PersistentVolumeClaim
-
-    participant PV as PersistentVolume
-
-    participant Storage as Storage Backend
-
-    Pod->>PVC: Request storage (claim)
-
-    PVC->>PV: Bind to matching PersistentVolume
-
-    PV->>Storage: Provide physical storage
- 
-    Pod->>PV: Read/Write data through mounted volume
-
-{{< /mermaid >}}
-
-Because **Persistent Volume** is a cluster resource, it belongs outside of any Namespace in the Kubernetes cluster - as opposite to **Persistent Volume Claims**.
-
-<font color=#EBAC25><i>More info:</i></font> https://kubernetes.io/docs/concepts/storage/persistent-volumes/
 
 ---
 ## >> Sources <<
