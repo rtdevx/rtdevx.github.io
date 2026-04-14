@@ -14,7 +14,7 @@ series: AWS EKS
 ---
 ## EKS Cluster creation Options using Terraform
 
-![](Content%20Creation/Git/rtdevx.github.io/content/posts/training/Kubernetes/2026-terraform-aws-eks/08-eks-cluster-pre-requisites/assets/AWS_EKS_Cluster_Options.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](./assets/AWS_EKS_Cluster_Options.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 {{< lead >}}
 
@@ -29,7 +29,7 @@ My Terraform code for this series: https://github.com/rtdevx/iac-terraform-aws-e
 {{< /alert >}}
 ### Pre-requisites for building EKS Cluster
 
-![](Content%20Creation/Git/rtdevx.github.io/content/posts/training/Kubernetes/2026-terraform-aws-eks/08-eks-cluster-pre-requisites/assets/AWS_EKS_Cluster_Prereq.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](./assets/AWS_EKS_Cluster_Prereq.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 #### Pre-requisite Resources
 
 - Subnets - Public and Private
@@ -49,7 +49,7 @@ My Terraform code for this series: https://github.com/rtdevx/iac-terraform-aws-e
 	- EKS Node Group Network Interfaces (ENI)
 	- EKS Worker Nodes EC2 Instances
 
-![](Content%20Creation/Git/rtdevx.github.io/content/posts/training/Kubernetes/2026-terraform-aws-eks/08-eks-cluster-pre-requisites/assets/AWS_EKS_Cluster_Architecture.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](./assets/AWS_EKS_Cluster_Architecture.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 
 {{< alert "circle-info" >}}
 
@@ -68,7 +68,7 @@ My Terraform code for this series: https://github.com/rtdevx/iac-terraform-aws-e
 
  {{< /alert >}}
  
-![](AWS_EKS_Core_Objects.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](./assets/AWS_EKS_Core_Objects.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ## Elastic Network Interface (ENI)
 
 When EKS Cluster is created, AWS creates ENI's that have EKS Cluster name in their description. 
@@ -81,7 +81,7 @@ Those Network Interfaces are created in our **VPC**, under our AWS account and t
 
 The Amazon EKS also creates cluster Security Group attached to ENI's.
 
-![](AWS_EKS_ENI.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+![](./assets/AWS_EKS_ENI.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
 ## kubectl
 
 ### Installation

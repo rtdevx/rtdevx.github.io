@@ -26,6 +26,13 @@ AWS **EBS Container Storage Interface (CSI)** driver allows **EKS Clusters** to 
 - [EBS]({{< ref "6-storage/#ebs-volume" >}}) is well sited to both database-style applications that rely on random reads and writes, and to throughput-intensive applications that perform long, continuous reads and writes
 
 ![](AWS_EKS_CSI_Driver.png "© Kalyan Reddy Daida, [StackSimplify](https://stacksimplify.com/)")
+## Kubernetes Storage Classes
+
+
+## Persistent Volume Claims
+
+
+## Persistent Volumes
 
 
 
