@@ -132,7 +132,7 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 ## Selected code samples
 
 - **GitHub:** https://github.com/rtdevx/iac-terraform-aws-jvx (contains modular Terraform code, Bash provisioning scripts and CI configs)
-- **GitHub:** [https://github.com/rtdevx/homelab/tree/main/ansible/site](https://github.com/rtdevx/homelab/tree/main/ansible/site) (contains Ansible playbooks that configures my homelab)
+- **GitHub:** https://github.com/rtdevx/homelab/tree/main/ansible/site (contains Ansible playbooks that configures my homelab)
 
 {{< alert "github">}}
 Check [my GitHub Repository](https://github.com/rtdevx) for more code samples...
