@@ -206,7 +206,7 @@ class CONTAINERS containerGroup
 - We can run own, private registry.
 - When we use the `docker pull` or `docker run` commands, the required images are pulled from our configured registry.
 - When we use the `docker push` command, our image is pushed to our configured registry.
-## Dockerfile
+### Dockerfile
 
 **Dockerfile** is a <font color=#EBAC25>simple text file that contains a set of instructions to build a Docker Image</font>. It automates the process of creating `Docker Images` by specifying steps which are called **instructions** in Docker terminology.
 
@@ -234,7 +234,7 @@ class CONTAINERS containerGroup
 FROM nginx
 COPY index.html /usr/share/nginx/html
 ```
-## Docker Image
+### Docker Image
 
 {{< lead >}}
 
