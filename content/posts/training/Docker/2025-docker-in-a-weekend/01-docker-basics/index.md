@@ -184,6 +184,53 @@ class CONTAINERS containerGroup
 {{< /mermaid >}}
 ## Docker Terminology
 
+{{< mermaid >}}
+
+flowchart TB
+
+    %% --- Structure ---
+    subgraph Client["Docker Client (Optional)"]
+        CLI["Docker CLI"]
+    end
+
+    subgraph Host["Docker Host"]
+        subgraph Daemon["Docker Daemon"]
+        end
+
+        subgraph Images["Images"]
+            Img1["Image-1"]
+            Img2["Image-2"]
+        end
+
+        subgraph Containers["Containers"]
+            C11["Container-11"]
+            C21["Container-21"]
+        end
+    end
+
+    CLI --> Daemon
+    Img1 --> C11
+    Img2 --> C21
+
+    %% --- Styling ---
+    classDef client fill:#d9d9d9,stroke:#666,stroke-width:1px;
+    classDef daemon fill:#f4a261,stroke:#b36b00,stroke-width:1px;
+    classDef imgBlue fill:#4ea8de,stroke:#1d5f8a,stroke-width:1px;
+    classDef imgGreen fill:#52b788,stroke:#2d6a4f,stroke-width:1px;
+    classDef contBlue fill:#4ea8de,stroke:#1d5f8a,stroke-width:1px;
+    classDef contGreen fill:#52b788,stroke:#2d6a4f,stroke-width:1px;
+
+    class CLI client
+    class Daemon daemon
+
+    class Img1 imgBlue
+    class Img2 imgGreen
+
+    class C11 contBlue
+    class C21 contGreen
+
+{{< /mermaid >}}
+
 ### Docker Daemon
 - The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as *images*, *containers*, *networks* and *volumes*.
 ### Docker Client
