@@ -3,7 +3,7 @@ title: EKS IAM Roles for Service Accounts (IRSA)
 date: 2026-04-03
 description: AWS EKS IAM Roles for Service Accounts (IRSA).
 summary: AWS EKS IAM Roles for Service Accounts (IRSA).
-draft: false
+draft: true
 tags:
   - EKS
   - OpenID

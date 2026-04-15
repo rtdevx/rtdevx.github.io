@@ -13,6 +13,8 @@ categories:
   - Containers
 series: AWS EKS
 ---
+# ARTICLE FOR REVIEW! DRAFT!
+
 {{< alert "circle-info" >}}
 
 `kubectl` quick reference: [https://kubernetes.io/docs/reference/kubectl/quick-reference/](https://kubernetes.io/docs/reference/kubectl/quick-reference/)

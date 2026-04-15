@@ -3,7 +3,7 @@ title: Kubernetes Fundamentals 🔥
 date: 2026-04-02
 description: Kubernetes Fundamentals.
 summary: Kubernetes Fundamentals.
-draft: false
+draft: true
 tags:
   - EKS
 categories:

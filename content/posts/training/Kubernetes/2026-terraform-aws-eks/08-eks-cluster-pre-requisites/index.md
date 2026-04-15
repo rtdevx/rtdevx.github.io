@@ -3,7 +3,7 @@ title: Pre-requisites for building EKS Cluster in AWS
 date: 2026-04-01
 description: Pre-requisites, requirements and best practices for building EKS Cluster in AWS using Terraform.
 summary: Pre-requisites, requirements and best practices for building EKS Cluster in AWS using Terraform.
-draft: false
+draft: true
 tags:
   - EKS
 categories:
