@@ -184,28 +184,28 @@ class CONTAINERS containerGroup
 {{< /mermaid >}}
 ## Docker Terminology
 
-- **Docker Daemon**
-	- The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as *images*, *containers*, *networks* and *volumes*.
-- **Docker Client**
-	- Docker client can be present on either Docker Host or any other machine (local desktop).
-	- The Docker client (docker) is the primary way that many Docker users interact with Docker.
-	- When you use commands such as `docker run`, the client sends commands to dockerd (Docker Daemon), which carries them out.
-	- The docker command uses the Docker API.
-	- The Docker client can communicate with more than one daemon.
-- **Docker Images**
-	- An `image` is a read-only template with instructions for creating the Docker container.
-	- Often, and image is based on another image - with some additional customization.
-- **Docker Containers**
-	- A container isa runnable instance of an image.
-	- We can *create*, *start*, *stop*, *move* or *delete* a container using the Docker API or CLI.
-	- We can connect to a container to one or more networks, attach storage to it or even create a new image based on it's current state.
-	- When a container is removed, any changes to its state that are not stored in the persistent storage will disappear.
-- **Docker Registry** (Docker Hub)
-	- A Docker Registry stores Docker Images.
-	- Docker Hub is a public registry that anyone can use. Docker is configured to look for images on Docker Hub by default.
-	- We can run own, private registry.
-	- When we use the `docker pull` or `docker run` commands, the required images are pulled from our configured registry.
-	- When we use the `docker push` command, our image is pushed to our configured registry.
+### Docker Daemon
+- The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as *images*, *containers*, *networks* and *volumes*.
+### Docker Client
+- Docker client can be present on either Docker Host or any other machine (local desktop).
+- The Docker client (docker) is the primary way that many Docker users interact with Docker.
+- When you use commands such as `docker run`, the client sends commands to dockerd (Docker Daemon), which carries them out.
+- The docker command uses the Docker API.
+- The Docker client can communicate with more than one daemon.
+### Docker Images
+- An `image` is a read-only template with instructions for creating the Docker container.
+- Often, and image is based on another image - with some additional customization.
+### Docker Containers
+- A container isa runnable instance of an image.
+- We can *create*, *start*, *stop*, *move* or *delete* a container using the Docker API or CLI.
+- We can connect to a container to one or more networks, attach storage to it or even create a new image based on it's current state.
+- When a container is removed, any changes to its state that are not stored in the persistent storage will disappear.
+### Docker Registry (Docker Hub)
+- A Docker Registry stores Docker Images.
+- Docker Hub is a public registry that anyone can use. Docker is configured to look for images on Docker Hub by default.
+- We can run own, private registry.
+- When we use the `docker pull` or `docker run` commands, the required images are pulled from our configured registry.
+- When we use the `docker push` command, our image is pushed to our configured registry.
 ## Dockerfile
 
 **Dockerfile** is a <font color=#EBAC25>simple text file that contains a set of instructions to build a Docker Image</font>. It automates the process of creating `Docker Images` by specifying steps which are called **instructions** in Docker terminology.
