@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = 'Terraform on AWS EKS Kubernetes IaC SRE'
 summary = 'Learnings from **Kalyan Reddy Daida**’s "_[Terraform on AWS EKS Kubernetes IaC SRE](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/)_" course on _Udemy_.'
 +++
