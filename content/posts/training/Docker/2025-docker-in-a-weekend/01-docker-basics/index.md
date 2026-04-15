@@ -3,7 +3,7 @@ title: Docker basics
 date: 2026-02-01
 description: Docker is a platform that allows you to develop, ship, and run applications in lightweight, portable containers...
 summary: Docker is a platform that allows you to develop, ship, and run applications in lightweight, portable containers...
-draft: true
+draft: false
 tags:
   - Docker
 categories:
@@ -236,12 +236,22 @@ COPY index.html /usr/share/nginx/html
 ```
 ## Docker Image
 
+{{< lead >}}
 
+A **Docker Image** is a lightweight, standalone and executable software package that includes everything needed to run an application: **the code**, a **runtime**, **system tools**, **libraries** and **settings.**
+
+{{< /lead >}}
+
+If a `Dockerfile` is the **recipe**, then a Docker Image is the perfectly packaged, ready-to-use meal created from that recipe. This package is completely portable, meaning it will run the exact same way on your laptop, a teammate's computer, or a production server.
+
+<font color=#EBAC25><i>More info:</i></font> https://www.geeksforgeeks.org/devops/what-is-docker-image/
 
 ---
 ## >> Sources <<
 
 **Exercises:** https://github.com/stacksimplify/docker-in-a-weekend/tree/main/02-Pull-from-Hub-and-Run-Docker-Image
+
+What is Docker Image: https://www.geeksforgeeks.org/devops/what-is-docker-image/
 
 **Additional Resources**
 
