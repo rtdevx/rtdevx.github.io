@@ -83,13 +83,6 @@ docker rmi <IMAGE-NAME>:<IMAGE-TAG>
 <font color=#EBAC25><i>More info:</i></font> https://cheatsheets.zip/docker
 ## Why Containers?
 
-- **Flexible** - Complex apps can be easily containerized.
-- **Lightweight** - Containers use fewer resources than virtual machines.
-- **Portable** - You can build locally, deploy to the cloud and run everywhere.
-- **Loosely Coupled** - Replace or upgrade containers without affecting others.
-- **Scalable** - Easily scale containers across data centers.
-- **Secure** - Containers provide isolation out of he box.
-
 {{< mermaid >}}
 
 graph LR
@@ -182,6 +175,13 @@ class G1,G2,G3,G4 container
 class CONTAINERS containerGroup
 
 {{< /mermaid >}}
+
+- **Flexible** - Complex apps can be easily containerized.
+- **Lightweight** - Containers use fewer resources than virtual machines.
+- **Portable** - You can build locally, deploy to the cloud and run everywhere.
+- **Loosely Coupled** - Replace or upgrade containers without affecting others.
+- **Scalable** - Easily scale containers across data centers.
+- **Secure** - Containers provide isolation out of he box.
 ## Docker Terminology
 
 {{< mermaid >}}
@@ -230,7 +230,6 @@ flowchart TB
     class C21 contGreen
 
 {{< /mermaid >}}
-
 ### Docker Daemon
 - The Docker daemon (dockerd) listens for Docker API requests and manages Docker objects such as *images*, *containers*, *networks* and *volumes*.
 ### Docker Client
