@@ -42,9 +42,9 @@ series: AWS Cloud Practitioner
 ---
 ## >> Sources <<
 
-{{< icon "amazon" >}} Documentation: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html
+_Documentation:_ {{< icon "amazon" >}} https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html
 
-{{< icon "youtube" >}} _Full YouTube Rahul's AWS Course:_ https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
+_Full YouTube Rahul's AWS Course:_ {{< icon "youtube" >}} https://www.youtube.com/playlist?list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}
