@@ -13,14 +13,15 @@ categories:
 ---
 {{< alert "circle-info" >}}
 
-Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< ref "my-vscode-setup/#better-comments-options-" >}}) of ✨ [Better Comments extension]({{< ref "my-vscode-setup/#my-vscode-extensions" >}}) may help you creating more human-friendly comments in your code.
+Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< ref "my-vscode-setup/#better-comments-options-" >}}) of [✨Better Comments extension]({{< ref "my-vscode-setup/#my-vscode-extensions" >}}) may help you creating more human-friendly comments in your code.
 
 {{< /alert >}}
 
 | <font color=#EB4925>External Resources</font> »                                                               |                                                                   |                                                              |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
 | [Git Official cheat-sheet](https://git-scm.com/cheat-sheet)                                                   | [gitcheatsheets.org](https://gitcheatsheets.org/)                 | [Git cheat-sheets](https://cheats.dhr.wtf/sheet/git/)        |
-| [Git Cheatsheet \| From the desk of Scott Thornton](https://scthornton.github.io/cheatsheets/git-cheatsheet/) | [Git Cheat Sheet - devsheets.io](https://devsheets.io/sheets/git) | ✨[Conventional Commits](https://www.conventionalcommits.org) |
+| [Git Cheatsheet \| From the desk of Scott Thornton](https://scthornton.github.io/cheatsheets/git-cheatsheet/) | [Git Cheat Sheet - devsheets.io](https://devsheets.io/sheets/git) | [✨Conventional Commits](https://www.conventionalcommits.org) |
+
 
 {{< alert "circle-info" >}}
 #### Conventional Git Commits:
