@@ -11,34 +11,34 @@ categories:
   - Cheatsheets
   - CI/CD
 ---
-| <font color=#EB4925>External Resources</font> »                                                               |                                                                   |                                                               |
-| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------- |
-| [Git Official cheat-sheet](https://git-scm.com/cheat-sheet)                                                   | [gitcheatsheets.org](https://gitcheatsheets.org/)                 | [Git cheat-sheets](https://cheats.dhr.wtf/sheet/git/)         |
-| [Git Cheatsheet \| From the desk of Scott Thornton](https://scthornton.github.io/cheatsheets/git-cheatsheet/) | [Git Cheat Sheet - devsheets.io](https://devsheets.io/sheets/git) | 🔥[Conventional Commits](https://www.conventionalcommits.org) |
-
 {{< alert "circle-info" >}}
 
 Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< ref "my-vscode-setup/#better-comments-options-" >}}) of [Better Comments extension]({{< ref "my-vscode-setup/#my-vscode-extensions" >}}) may help you creating more human-friendly comments in your code.
 
 {{< /alert >}}
 
-
+| <font color=#EB4925>External Resources</font> »                                                               |                                                                   |                                                               |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------- |
+| [Git Official cheat-sheet](https://git-scm.com/cheat-sheet)                                                   | [gitcheatsheets.org](https://gitcheatsheets.org/)                 | [Git cheat-sheets](https://cheats.dhr.wtf/sheet/git/)         |
+| [Git Cheatsheet \| From the desk of Scott Thornton](https://scthornton.github.io/cheatsheets/git-cheatsheet/) | [Git Cheat Sheet - devsheets.io](https://devsheets.io/sheets/git) | 🔥[Conventional Commits](https://www.conventionalcommits.org) |
 {{< alert "circle-info" >}}
 #### Conventional Git Commits:
 
-- `build`: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-- `ci`: Changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
-- **`chore`: Changes which doesn't change source code or tests e.g. changes to the build process, auxiliary tools, libraries**
-- `docs`: Documentation only changes
-- **`feat`: A new feature**
-- **`fix`: A bug fix**
-- `perf`: A code change that improves performance
-- `refactor`: A code change that neither fixes a bug nor adds a feature
-- `revert`: Revert something
-- `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-- `test`: Adding missing tests or correcting existing tests
+|          |                                                                                                                  |
+| -------- | ---------------------------------------------------------------------------------------------------------------- |
+| `feat`   | Introduces a new feature                                                                                         |
+| `fix`    | Fixes a bug                                                                                                      |
+| `docs`   | Changes in documentation only                                                                                    |
+| `style`  | Code changes that do not impact the functionality (e.g., formatting, white-space, etc)                           |
+| refactor | Code changes that neither fix a bug nor introduce a feature, typically improving code readability or structure   |
+| perf     | Code changes that improve performance                                                                            |
+| test     | Addition of missing tests or corrections to existing tests                                                       |
+| `chore`  | Changes that do not modify the source code or test files, like tweaking the build process or adding dependencies |
+| build    | Changes affecting the build system or external dependencies (e.g., changes in webpack, npm packages)             |
+| ci       | Changes to Continuous Integration configuration files and scripts (e.g., Travis, CircleCI, Jenkins)              |
+| revert   | Reverts a previously made commit                                                                                 |
 
-_Source:_ https://gist.github.com/Zekfad/f51cb06ac76e2457f11c80ed705c95a3
+_Source:_ https://cheatsheets.zip/conventional-commits
 
 {{< /alert >}}
 ## Basic Commands
