@@ -38,7 +38,6 @@ Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< re
 | build    | Changes affecting the build system or external dependencies (e.g., changes in webpack, npm packages)             |
 | ci       | Changes to Continuous Integration configuration files and scripts (e.g., Travis, CircleCI, Jenkins)              |
 | revert   | Reverts a previously made commit                                                                                 |
-
 _Source:_ https://cheatsheets.zip/conventional-commits
 
 {{< /alert >}}
