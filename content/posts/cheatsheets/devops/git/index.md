@@ -13,7 +13,7 @@ categories:
 ---
 {{< alert "circle-info" >}}
 
-Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< ref "my-vscode-setup/#better-comments-options-" >}}) of [✨Better Comments extension]({{< ref "my-vscode-setup/#my-vscode-extensions" >}}) may help you creating more human-friendly comments in your code.
+Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [✨Example use]({{< ref "my-vscode-setup/#better-comments-options-" >}}) of [Better Comments extension]({{< ref "my-vscode-setup/#my-vscode-extensions" >}}) may help you creating more human-friendly comments in your code.
 
 {{< /alert >}}
 
