@@ -9,5 +9,5 @@ tags:
 categories:
   - Cheatsheets
   - DevOps
-externalUrl: https://cheatsheets.zip/networkports
+externalUrl: https://cheatsheets.zip/conventional-commits
 ---
