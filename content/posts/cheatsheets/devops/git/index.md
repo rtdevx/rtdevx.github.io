@@ -22,8 +22,8 @@ Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< re
 
 {{< /alert >}}
 
-{{< alert "circle-info" >}}
 
+{{< alert "circle-info" >}}
 #### Conventional Git Commits:
 
 - `build`: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
