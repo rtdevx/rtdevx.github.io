@@ -38,6 +38,8 @@ Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< re
 - `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 - `test`: Adding missing tests or correcting existing tests
 
+_Source:_ https://gist.github.com/Zekfad/f51cb06ac76e2457f11c80ed705c95a3
+
 {{< /alert >}}
 ## Basic Commands
 
@@ -175,6 +177,7 @@ Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< re
 
 - https://cheats.dhr.wtf/sheet/git/
 - https://git-scm.com/cheat-sheet
+- https://gist.github.com/Zekfad/f51cb06ac76e2457f11c80ed705c95a3
 ## » References «
 
 [Better Comments Options]({{< ref "my-vscode-setup/#better-comments-options-" >}})
