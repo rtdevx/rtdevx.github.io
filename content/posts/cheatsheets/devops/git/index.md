@@ -11,6 +11,10 @@ categories:
   - Cheatsheets
   - CI/CD
 ---
+| <font color=#EB4925>External Resources</font> »             |                                                       |     |
+| ----------------------------------------------------------- | ----------------------------------------------------- | --- |
+| [Git Official cheat-sheet](https://git-scm.com/cheat-sheet) | [Git cheat-sheets](https://cheats.dhr.wtf/sheet/git/) |     |
+
 {{< alert "circle-info" >}}
 
 Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< ref "my-vscode-setup/#better-comments-options-" >}}) of [Better Comments extension]({{< ref "my-vscode-setup/#my-vscode-extensions" >}}) may help you creating more human-friendly comments in your code.
@@ -151,6 +155,7 @@ Read [My VSCode Setup]({{< ref "my-vscode-setup" >}}) post. [Example use]({{< re
 ## >> Sources <<
 
 - https://cheats.dhr.wtf/sheet/git/
+- https://git-scm.com/cheat-sheet
 ## » References «
 
 [Better Comments Options]({{< ref "my-vscode-setup/#better-comments-options-" >}})
