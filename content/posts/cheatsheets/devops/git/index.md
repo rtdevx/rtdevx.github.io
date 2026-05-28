@@ -11,9 +11,9 @@ categories:
   - Cheatsheets
   - CI/CD
 ---
-| <font color=#EB4925>External Resources</font> »             |                                                       |     |
-| ----------------------------------------------------------- | ----------------------------------------------------- | --- |
-| [Git Official cheat-sheet](https://git-scm.com/cheat-sheet) | [Git cheat-sheets](https://cheats.dhr.wtf/sheet/git/) |     |
+| <font color=#EB4925>External Resources</font> »             |                                                   |                                                       |
+| ----------------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------- |
+| [Git Official cheat-sheet](https://git-scm.com/cheat-sheet) | [gitcheatsheets.org](https://gitcheatsheets.org/) | [Git cheat-sheets](https://cheats.dhr.wtf/sheet/git/) |
 
 {{< alert "circle-info" >}}
 
