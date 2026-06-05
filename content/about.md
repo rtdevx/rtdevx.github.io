@@ -142,7 +142,7 @@ Check [my GitHub Repository](https://github.com/rtdevx) for more code samples...
 
 |                                                                                                                                 |                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>📄 CV<br>{{< /button >}}<br></center> | <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>📝 Cover Letter<br>{{< /button >}}<br></center> |
+| <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>💾 CV<br>{{< /button >}}<br></center> | <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>💾 Cover Letter<br>{{< /button >}}<br></center> |
 
 ---
 
