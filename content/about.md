@@ -140,9 +140,9 @@ Check [my GitHub Repository](https://github.com/rtdevx) for more code samples...
 ## Curriculum Vitae 
 
 
-| <center>CV</center>                                                                                                                   | <center>Cover Letter</center>                                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>📄 Download<br>{{< /button >}}<br></center> | <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>📝 Download<br>{{< /button >}}<br></center> |
+|                                                                                                                                 |                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>📄 CV<br>{{< /button >}}<br></center> | <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>📝 Cover Letter<br>{{< /button >}}<br></center> |
 
 
 <!--
