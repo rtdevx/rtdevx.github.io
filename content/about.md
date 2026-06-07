@@ -68,8 +68,7 @@ timeline
          : 🏅AWS Certified Cloud Practitioner (CLF-C02)
          : 🏅HashiCorp Certified Terraform Associate (HCTA0-003)
          : GitHub Actions - The Complete Guide (Udemy)
-    2026 : Terraform on AWS EKS Kubernetes IaC SRE (Udemy) - IN PROGRESS
-	     : AWS Certified Solutions Architect Associate (SAA-C03) - IN PROGRESS
+    2026 : AWS Certified Solutions Architect Associate (SAA-C03) - IN PROGRESS
 {{< /mermaid >}}
 
 <!--
@@ -140,9 +139,9 @@ Check [my GitHub Repository](https://github.com/rtdevx) for more code samples...
 ## Curriculum Vitae 
 
 
-|                                                                                                                                 |                                                                                                                                           |
-| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>📄 CV<br>{{< /button >}}<br></center> | <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>📝 Cover Letter<br>{{< /button >}}<br></center> |
+|                                                                                                                      |                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| <center><br>{{< button href="../../assets/RK_CV_WEB.pdf" target="_self" >}}<br>📄 CV<br>{{< /button >}}<br></center> | <center><br>{{< button href="../../assets/CV_RK_WEB_ANONYMIZED.pdf" target="_self" >}}<br>📝 Cover Letter<br>{{< /button >}}<br></center> |
 
 ---
 
