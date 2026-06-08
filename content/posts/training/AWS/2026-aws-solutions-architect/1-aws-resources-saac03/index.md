@@ -19,7 +19,7 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
 - [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
 - [Amazon AWS FAQ's](https://aws.amazon.com/faqs/)
 {{< /lead >}}
-### AWS Certification Course Resources
+## AWS Certification Course Resources
 
 1. [learn.cantrill.io](https://learn.cantrill.io/) - ([Adrian Cantrill](https://www.linkedin.com/in/adriancantrill/))    
 2. [Linux Academy](https://linuxacademy.com/) - (multiple authors)    
@@ -49,7 +49,7 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
 3. [Curated list](https://gist.github.com/leonardofed/bbf6459ad154ad5215d354f3825435dc) of AWS resources for the certification    
 4. [AWS in Plain English](https://expeditedsecurity.com/aws-in-plain-english/)    
 5. [Exam Pro](https://www.exampro.co/) included with courses
-### AWS Whitepaper Help
+## AWS Whitepaper Help
 
 1. Knowledge Hut [Whitepaper Recommendations](https://www.knowledgehut.com/blog/cloud-computing/recommended-aws-whitepapers)    
 2. AWS Well Architected Whitepapers    
@@ -59,7 +59,7 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
     4. [Reliability](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
     5. [Performance](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)        
     6. [Cost](https://d1.awsstatic.com/whitepapers/architecture/AWS-Cost-Optimization-Pillar.pdf)
-### Communities
+## Communities
 
 1. Linux Academy Slack - [https://linuxacademy-community-slack.herokuapp.com/](https://linuxacademy-community-slack.herokuapp.com/)    
 2. Learn.cantrill.io Slack - [https://techstudyslack.com/](https://techstudyslack.com/)    
@@ -68,7 +68,7 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
 5. OG-AWS Slack - [https://og-aws-slack.lexikon.io/](https://og-aws-slack.lexikon.io/)    
 6. DevOpsChatCo Slack - [https://devopschat.co/register](https://devopschat.co/register)    
 7. AWS Community Discord - [https://discord.gg/JN9FMbm](https://discord.gg/JN9FMbm)    
-### What Do I Need For AWS Job?
+## What Do I Need For AWS Job?
 
 While not specific to AWS, the [DevOps Roadmap](https://roadmap.sh/devops) is incredibly useful in painting some context for the general learning of AWS concepts like EC2 and logs management and CI/CD tooling.
 
@@ -99,7 +99,7 @@ That being said here is a very general idea to get you started.
 6. [Linux Journey](https://linuxjourney.com/) [https://linuxjourney.com/](https://linuxjourney.com/) (Linux)    
 7. [Over The Wire](https://overthewire.org/wargames/) (Security)    
 8. [DevOps Bootcamp](https://www.youtube.com/playlist?list=PLleOCN2eBn8IhLAckXL0BWomad5lrhB8j) (24 Video DevOps Bootcamp)
-### More Resources?
+## More Resources?
 
 CCP Write Ups
 
