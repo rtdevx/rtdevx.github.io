@@ -10,6 +10,12 @@ categories:
   - AWS
 series: AWS Solution Architect
 ---
+{{< alert "circle-info" >}}
+
+| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
+{{< /alert >}}
 ## AWS FAQ
 
 {{< lead >}}
