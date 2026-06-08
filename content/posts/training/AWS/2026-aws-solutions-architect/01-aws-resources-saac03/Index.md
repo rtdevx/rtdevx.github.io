@@ -174,10 +174,13 @@ AWS Topics more:Explanation
 ---
 ## >> Sources <<
 
-_Source:_ 
+_Sources:_ 
 - [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
 - [Amazon AWS FAQ's](https://aws.amazon.com/faqs/)
-- [AWS Cloud Practitioner Series]({{< ref "series/aws-cloud-practitioner" >}})
+
+_Series:_
+- [Series: AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}})
+- [Series: AWS Solution Architect]({{< ref "series/aws-solution-architect" >}})
 ## SAA-C03 details and Resources
 
 - [Ultimate AWS Certified Solutions Architect Associate 2026](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03)
