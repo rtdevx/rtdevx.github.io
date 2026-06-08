@@ -149,7 +149,7 @@ _Sources:_
 _Series:_
 - [Series: AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}})
 - [Series: AWS Solution Architect]({{< ref "series/aws-solution-architect" >}})
-## SAA-C03 details and Resources
+## SAA-C03 Resources
 
 - [Ultimate AWS Certified Solutions Architect Associate 2026](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03)
 - [AWS Certified Solutions Architect Associate Code & Slides](https://courses.datacumulus.com/downloads/certified-solutions-architect-pn9/)
