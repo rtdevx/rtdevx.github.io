@@ -13,9 +13,11 @@ series: AWS Solution Architect
 ## AWS FAQ
 
 {{< lead >}}
-A bunch of FAQ's, Resources and general advice on AWS careers and certifications.
+A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and certifications**.
 
-<font color=#27D3F5>_Source:_</font> [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
+<font color=#EBAC25>_Sources:_</font> 
+- - [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
+- [Amazon AWS FAQ's](https://aws.amazon.com/faqs/)
 {{< /lead >}}
 ### AWS Certification Course Resources
 
@@ -170,7 +172,9 @@ AWS Topics more:Explanation
 ---
 ## >> Sources <<
 
-_Source:_ [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
+_Source:_ 
+- [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
+- [Amazon AWS FAQ's](https://aws.amazon.com/faqs/)
 ## SAA-C03 details and Resources
 
 - [Ultimate AWS Certified Solutions Architect Associate 2026](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03)
