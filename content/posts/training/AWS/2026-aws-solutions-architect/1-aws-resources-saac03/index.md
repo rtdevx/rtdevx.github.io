@@ -75,18 +75,6 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
 
 While not specific to AWS, the [DevOps Roadmap](https://roadmap.sh/devops) is incredibly useful in painting some context for the general learning of AWS concepts like EC2 and logs management and CI/CD tooling.
 
-[Why An AWS Certification Will Not Get You An AWS Job!](https://www.reddit.com/r/AmazonWebServices/comments/ga0tqc/why_an_aws_certification_will_not_get_you_an_aws/)
-
-[We Hire AWS Solutions Architects Not Paper Certified Ones](https://medium.com/linux-academy/we-hire-real-aws-solutions-architects-not-paper-certified-ones-e17bd28ba487)
-
-No two jobs will be the same. Find out the AWS position you want and then go research it on Indeed, LinkedIn, ZipRecruiter, CareerBuilder, GlassDoor, Monster. What appears on "most" of those job reqs is what you need to learn/know.
-
-[Create better searches on those job sites!](https://business.linkedin.com/content/dam/me/business/en-us/talent-solutions/learning-center/tip-sheets/en-us/UseBooleanLogic.pdf)
-
-You can find recruiters by doing fuzzy searches on keywords + location. Then follow or message said recruiter for future opportunities. From there you can also find the commonly used "recruiter hashtags" that are relevant to your area. 
-
-[Where Do I Find Recruiters?](https://www.reddit.com/r/ITCareerQuestions/comments/f8bo3v/where_do_i_find_recruiters/)
-
 That being said here is a very general idea to get you started.
 
 - At least 1 major cloud associate level certification (AWS, Azure, GCP)
