@@ -107,7 +107,7 @@ That being said here is a very general idea to get you started.
 6. [IT Career Roadmap 2020 by Salary](https://i.lensdump.com/i/iHcJHP.png) - credits to [/u/SinecureLife](https://www.reddit.com/r/ITCareerQuestions/comments/dbjkdx/oc_common_it_career_paths_roadmap_visual_2020/)    
 ### What Certification Should I Get?
 
-![](AWS_Certifications.png)
+![](./assets/AWS_Certifications.png)
 
 1. [Your Future](https://www.youtube.com/watch?v=oxZa1oSGUps) - ([David Bombal](https://www.linkedin.com/in/davidbombal/))
 ### Where can I pickup those non AWS skills?
