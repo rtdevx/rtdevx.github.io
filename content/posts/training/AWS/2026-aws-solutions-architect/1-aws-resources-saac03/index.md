@@ -10,6 +10,7 @@ categories:
   - AWS
 series: AWS Solution Architect
 ---
+
 | <font color=#EB4925>AWS Series</font> »                               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
@@ -157,3 +158,7 @@ _Series:_
 - [Practice Exams | AWS Certified Solutions Architect Associate](https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate)
 
 _Source:_ https://courses.datacumulus.com/downloads/certified-solutions-architect-pn9/
+
+| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
