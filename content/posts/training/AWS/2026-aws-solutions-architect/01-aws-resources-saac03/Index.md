@@ -15,7 +15,7 @@ series: AWS Solution Architect
 {{< lead >}}
 A bunch of FAQ's, Resources and general advice on AWS careers and certifications.
 
-_Source:_ [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
+<font color=#27D3F5>_Source:_</font> [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
 {{< /lead >}}
 ### AWS Certification Course Resources
 
@@ -197,8 +197,6 @@ AWS Topics more:Explanation
 ### I Still Have Questions
 
 [How to Ask Smart Questions](http://www.catb.org/esr/faqs/smart-questions.html)
-
-_Source:_ [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
 
 ---
 ## >> Sources <<
