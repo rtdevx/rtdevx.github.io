@@ -10,7 +10,7 @@ categories:
   - AWS
 series: AWS Solution Architect
 ---
-{{< alert "circle-info" >}}
+{{< alert "list" >}}
 
 | <font color=#EB4925>AWS Series</font> »                               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
