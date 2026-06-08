@@ -12,7 +12,7 @@ series: AWS Solution Architect
 ---
 {{< alert "list" >}}
 
-| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| Series: <font color=#EB4925>AWS Certifications</font>                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 {{< /alert >}}
