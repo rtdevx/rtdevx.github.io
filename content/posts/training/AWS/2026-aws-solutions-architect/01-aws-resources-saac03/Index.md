@@ -16,7 +16,7 @@ series: AWS Solution Architect
 A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and certifications**.
 
 <font color=#EBAC25>_Sources:_</font> 
-- - [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
+- [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
 - [Amazon AWS FAQ's](https://aws.amazon.com/faqs/)
 {{< /lead >}}
 ### AWS Certification Course Resources
@@ -106,6 +106,8 @@ That being said here is a very general idea to get you started.
 5. CompTIA [Tech Town Index 2019](https://www.comptia.org/content/research/best-tech-cities-it-jobs)    
 6. [IT Career Roadmap 2020 by Salary](https://i.lensdump.com/i/iHcJHP.png) - credits to [/u/SinecureLife](https://www.reddit.com/r/ITCareerQuestions/comments/dbjkdx/oc_common_it_career_paths_roadmap_visual_2020/)    
 ### What Certification Should I Get?
+
+![](AWS_Certifications.png)
 
 1. [Your Future](https://www.youtube.com/watch?v=oxZa1oSGUps) - ([David Bombal](https://www.linkedin.com/in/davidbombal/))
 ### Where can I pickup those non AWS skills?
