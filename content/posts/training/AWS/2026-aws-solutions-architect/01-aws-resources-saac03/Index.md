@@ -62,37 +62,6 @@ A bunch of FAQ's, Resources and general advice on AWS careers and certifications
     8. [Reliability](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
     9. [Performance](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)        
     10. [Cost](https://d1.awsstatic.com/whitepapers/architecture/AWS-Cost-Optimization-Pillar.pdf)
-### Re:Invent presentations - AWS CSAP
-
-1. AWS re:Invent 2015: [Deep Dive in AWS Direct Connect and VPNs](https://www.youtube.com/watch?v=SMvom9QjkPk)    
-2. AWS re:Invent 2018: [Extending Data Centers to Cloud: Connectivity Options & Best](https://www.youtube.com/watch?v=LNYY3bMSiHM)    
-3. AWS re:Invent 2017: [Identity Management for Your Users and Apps: A Deep Dive](https://www.youtube.com/watch?v=jLQjQpUYw6g)    
-4. AWS re:Invent 2018: [Deep Dive on Amazon Aurora with MySQL Compatibility](https://www.youtube.com/watch?v=U42mC_iKSBg)    
-5. AWS re:Invent 2018: [Deep Dive and Best Practices for Amazon Redshift](https://www.youtube.com/watch?v=TJDtQom7SAA)    
-6. AWS re:Invent 2018: [A Serverless Journey: AWS Lambda Under the Hood](https://www.youtube.com/watch?v=QdzV04T_kec)    
-7. AWS re:Invent 2017: [Operating Your Serverless API in Production at Scale](https://www.youtube.com/watch?v=tIfqpM3o55s)    
-8. AWS re:Invent 2016: [Identifying Your Migration Options: the 6 Rs](https://www.youtube.com/watch?v=8U1ZZzqh8LQ)    
-9. AWS re:Invent 2015: [AWS Storage Gateway: Secure, Cost-Effective Backup & Archive](https://www.youtube.com/watch?v=VmjDfz-MIZE)    
-10. AWS re:Invent 2016: [Enabling DevOps for an Enterprise with AWS Service Catalog](https://www.youtube.com/watch?v=J6XeDtCuERM)   
-11. AWS re:Invent 2018: [Architecture Patterns for Multi-Region Active-Active Applications](https://www.youtube.com/watch?v=2e29I3dA8o4vvvvv)    
-12. AWS re:Invent 2015: [AWS CodeDeploy: Automating Your Software](https://www.youtube.com/watch?v=A4NSyUbAEkw)    
-13. AWS re:Invent 2018: [DynamoDB Deep Dive: Advanced Design Patterns](https://www.youtube.com/watch?v=HaEPXoXVf2k)    
-14. 2019 Re:Invent [Session & Video List](http://aws-reinvent-audio.s3-website.us-east-2.amazonaws.com/2019/2019.html)    
-15. 2019 Re:Invent [Presentations](http://aws-reinvent-audio.s3-website.us-east-2.amazonaws.com/2019/2019_presentations.html)    
-
-**Change 2019 to 2016, 2017, 2018 in both places in the URL for that year's session, video, and presentations.**
-### Thought Leadership Material
-
-This section covers things like customer success stories, case studies into customers running and optimizing on AWS, etc.
-
-1. AWS re:Invent 2018: [Ethan Kaplan from Fender Shares How AWS Helps Brings Music to More Customers](https://www.youtube.com/watch?v=F61GtueelP4)    
-2. AWS re:Invent 2018: [Dean Del Vecchio from Guardian Life Shares the Company’s Digital Transformation](https://www.youtube.com/watch?v=4FpL0jZBjfE)    
-3. Researchers Are Using [Machine Learning to Screen for Autism in Children](https://www.youtube.com/watch?v=YQpTlnWYAqE)    
-4. [Finding Missing Children with Machine Learning](https://www.youtube.com/watch?v=HSac9lXKu5U)    
-5. Increasing Access to [Education with Computer Games](https://www.youtube.com/watch?v=X6CAO2otdlE)    
-6. AWS re:Invent 2019: [Amplifying CI/CD](https://www.youtube.com/watch?v=HfEl9GXZC0s) helped Wag! reduce release process by 600%    
-7. [Automating Your Documentation](https://www.youtube.com/watch?v=Gma8WAP-XPk) using AWS and Serverless    
-8. [The Westrum Organization Culture Model](https://cloud.google.com/solutions/devops/devops-culture-westrum-organizational-culture) - This covers at high-level the signs of an organization's culture. The value here is identifying what organizations' culture best fits the job seeker.
 ### Communities
 
 1. Linux Academy Slack - [https://linuxacademy-community-slack.herokuapp.com/](https://linuxacademy-community-slack.herokuapp.com/)    
@@ -114,7 +83,7 @@ No two jobs will be the same. Find out the AWS position you want and then go res
 
 [Create better searches on those job sites!](https://business.linkedin.com/content/dam/me/business/en-us/talent-solutions/learning-center/tip-sheets/en-us/UseBooleanLogic.pdf)
 
-You can find recruiters by doing fuzzy searches on keywords + location. Then follow or message said recruiter for future opportunities. From there you can also find the commonly used "recruiter hashtags" that are relevant to your area. Recruiters tend to use common hashtags for job postings (sometimes location dependent -- #awsToronto #awsSeattle)
+You can find recruiters by doing fuzzy searches on keywords + location. Then follow or message said recruiter for future opportunities. From there you can also find the commonly used "recruiter hashtags" that are relevant to your area. 
 
 [Where Do I Find Recruiters?](https://www.reddit.com/r/ITCareerQuestions/comments/f8bo3v/where_do_i_find_recruiters/)
 
@@ -183,18 +152,18 @@ AWS Topics more:Explanation
 
 1. [Transit Gateway](https://medium.com/@heycasey/creating-a-transit-gateway-6e3df814a07a) - ([Paul Casey](https://www.linkedin.com/in/heycasey/))    
 2. [AWS Stash](https://awsstash.com/) - filterable collection of AWS resources
-### Related AWS Github Repos
+## Related AWS Github Repos
 
 1. [Practical Guide](https://github.com/open-guides/og-aws) to AWS    
 2. My Arsenal of AWS [Security Tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)    
 3. [Curated List](https://github.com/donnemartin/awesome-aws) of Awesome AWS libraries, open source repos, guides, blogs, etc.    
 4. AWS [Status Page Explanations](https://github.com/neilthecellist/Statuspage2English)
-### Recommended Reddit posts
+## Recommended Reddit posts
 
 1. How To [Start a Career in Cloud Computing](https://www.reddit.com/r/ITCareerQuestions/comments/crn6qp/how_do_you_start_a_career_in_cloud_computing/ex7fg16/)    
 2. Why You Should Avoid [Exams Dumps](https://www.reddit.com/r/AmazonWebServices/comments/gn0m97/why_you_should_avoid_aws_exam_dumps/)    
 3. Take Care [About Costs](https://www.reddit.com/r/aws/comments/g1ve18/i_am_charged_60k_on_aws_without_using_anything/)
-### I Still Have Questions
+## I Still Have Questions
 
 [How to Ask Smart Questions](http://www.catb.org/esr/faqs/smart-questions.html)
 
