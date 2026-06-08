@@ -87,9 +87,11 @@ That being said here is a very general idea to get you started.
 
 ![](./assets/AWS_Certifications.png)
 
+---
 {{< youtube oxZa1oSGUps >}}
 <center>📺<i>David Bombal</i>: What you need to study in 2020</center>
 
+---
 ### Where can I pickup those non AWS skills?
 
 1. [KodeKloud](https://kodekloud.com/p/learning-path) (DevOps, Linux, Docker, Ansible, Puppet, Kubernetes, Chef, Docker Swarm, OpenShift)    
