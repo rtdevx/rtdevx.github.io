@@ -54,19 +54,14 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
 5. [Exam Pro](https://www.exampro.co/) included with courses
 ### AWS Whitepaper Help
 
-1. AWS Ramp Up PDFs    
-    1. [Business-Finance](https://cdn.discordapp.com/attachments/570278657323565066/695249732137648128/AWS_RampUp_Business-Finance.pdf)        
-    2. [Architect](https://cdn.discordapp.com/attachments/570278657323565066/695249730397274152/AWSRampUp_Architect.pdf)        
-    3. [Developer](https://cdn.discordapp.com/attachments/570278657323565066/695249728857833513/AWSRampUp_Developer.pdf)        
-    4. [Operations](https://cdn.discordapp.com/attachments/570278657323565066/695249723191459900/AWSRampUp_Operations.pdf)        
-2. Knowledge Hut [Whitepaper Recommendations](https://www.knowledgehut.com/blog/cloud-computing/recommended-aws-whitepapers)    
-3. AWS Well Architected Whitepapers    
-    5. [Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf)        
-    6. [Operational Excellence](https://d1.awsstatic.com/whitepapers/architecture/AWS-Operational-Excellence-Pillar.pdf)        
-    7. [Security](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf) 
-    8. [Reliability](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
-    9. [Performance](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)        
-    10. [Cost](https://d1.awsstatic.com/whitepapers/architecture/AWS-Cost-Optimization-Pillar.pdf)
+1. Knowledge Hut [Whitepaper Recommendations](https://www.knowledgehut.com/blog/cloud-computing/recommended-aws-whitepapers)    
+2. AWS Well Architected Whitepapers    
+    1. [Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf)        
+    2. [Operational Excellence](https://d1.awsstatic.com/whitepapers/architecture/AWS-Operational-Excellence-Pillar.pdf)        
+    3. [Security](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf) 
+    4. [Reliability](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
+    5. [Performance](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)        
+    6. [Cost](https://d1.awsstatic.com/whitepapers/architecture/AWS-Cost-Optimization-Pillar.pdf)
 ### Communities
 
 1. Linux Academy Slack - [https://linuxacademy-community-slack.herokuapp.com/](https://linuxacademy-community-slack.herokuapp.com/)    
