@@ -102,9 +102,7 @@ That being said here is a very general idea to get you started.
 - An understanding of DevOps and Agile environments
 ### What Certification Should I Get?
 
-![](AWS_Certifications_2.png)
-
-- [Your Future](https://www.youtube.com/watch?v=oxZa1oSGUps) - ([David Bombal](https://www.linkedin.com/in/davidbombal/))
+![](./assets/AWS_Certifications.png)
 ### Where can I pickup those non AWS skills?
 
 1. [KodeKloud](https://kodekloud.com/p/learning-path) (DevOps, Linux, Docker, Ansible, Puppet, Kubernetes, Chef, Docker Swarm, OpenShift)    
