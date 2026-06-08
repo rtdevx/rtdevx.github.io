@@ -101,14 +101,6 @@ That being said here is a very general idea to get you started.
 - At least one scripting language, perf Python, JavaScript, Go, or Java
 - At least 1 Windows or Linux, perf both
 - An understanding of DevOps and Agile environments
-### How Much Should I Make At x Position?
-
-1. [Glassdoor](https://www.glassdoor.com/)    
-2. [LinkedIn Salary](https://www.linkedin.com/salary/)    
-3. [Payscale](https://www.payscale.com/)    
-4. CompTIA [IT Career Path](https://www.comptia.org/content/it-careers-path-roadmap)    
-5. CompTIA [Tech Town Index 2019](https://www.comptia.org/content/research/best-tech-cities-it-jobs)    
-6. [IT Career Roadmap 2020 by Salary](https://i.lensdump.com/i/iHcJHP.png) - credits to [/u/SinecureLife](https://www.reddit.com/r/ITCareerQuestions/comments/dbjkdx/oc_common_it_career_paths_roadmap_visual_2020/)    
 ### What Certification Should I Get?
 
 ![](./assets/AWS_Certifications.png)
@@ -166,14 +158,6 @@ AWS Topics more:Explanation
 2. My Arsenal of AWS [Security Tools](https://github.com/toniblyx/my-arsenal-of-aws-security-tools)    
 3. [Curated List](https://github.com/donnemartin/awesome-aws) of Awesome AWS libraries, open source repos, guides, blogs, etc.    
 4. AWS [Status Page Explanations](https://github.com/neilthecellist/Statuspage2English)
-## Recommended Reddit posts
-
-1. How To [Start a Career in Cloud Computing](https://www.reddit.com/r/ITCareerQuestions/comments/crn6qp/how_do_you_start_a_career_in_cloud_computing/ex7fg16/)    
-2. Why You Should Avoid [Exams Dumps](https://www.reddit.com/r/AmazonWebServices/comments/gn0m97/why_you_should_avoid_aws_exam_dumps/)    
-3. Take Care [About Costs](https://www.reddit.com/r/aws/comments/g1ve18/i_am_charged_60k_on_aws_without_using_anything/)
-## I Still Have Questions
-
-[How to Ask Smart Questions](http://www.catb.org/esr/faqs/smart-questions.html)
 
 ---
 ## >> Sources <<
