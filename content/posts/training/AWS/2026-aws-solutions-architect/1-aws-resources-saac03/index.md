@@ -134,13 +134,6 @@ Real World Examples
 
 1. Amazon’s [This Is My Architecture](https://aws.amazon.com/this-is-my-architecture/?tma.sort-by=item.additionalFields.airDate&tma.sort-order=desc)
 
-Success Stories
-
-1. [How I Went From 14hr to 70k with no experience!](https://www.reddit.com/r/ITCareerQuestions/comments/bhfegj/how_i_went_from_14hr_to_70k_with_no_experience/)    
-2. [Tossing My Coin That Hat Too I'm A College Dropout](https://www.reddit.com/r/ITCareerQuestions/comments/gc9a1v/tossing_my_coin_that_hat_too_im_a_college_dropout/)    
-3. [Guide to Passing All 3 AWS Associate Level Certifications](https://medium.com/@annamcabee/guide-to-passing-all-3-aws-associate-level-certifications-73516bcef6e1)    
-4. [How to Pass Three AWS Associate Certifications In One Month](https://www.contino.io/insights/how-to-pass-three-aws-associate-certifications-in-one-month)    
-
 Other
 
 1. What Is [SRE](https://landing.google.com/sre/sre-book/chapters/introduction/)?    
