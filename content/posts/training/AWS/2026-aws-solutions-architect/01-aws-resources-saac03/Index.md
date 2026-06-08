@@ -10,6 +10,9 @@ categories:
   - AWS
 series: AWS Solution Architect
 ---
+| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 ## AWS FAQ
 
 {{< lead >}}
@@ -19,6 +22,7 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
 - [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
 - [Amazon AWS FAQ's](https://aws.amazon.com/faqs/)
 {{< /lead >}}
+
 ### AWS Certification Course Resources
 
 1. [learn.cantrill.io](https://learn.cantrill.io/) - ([Adrian Cantrill](https://www.linkedin.com/in/adriancantrill/))    
