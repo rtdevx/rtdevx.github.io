@@ -252,3 +252,7 @@ Managed <font color=#EB4925>E</font>xtract, <font color=#EB4925>T</font>ransform
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}
+
+| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |

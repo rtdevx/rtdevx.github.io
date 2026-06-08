@@ -69,3 +69,7 @@ Automate the creation, maintain, validate the build of EC2 AMI's. Can run on a s
 
 {{< disclaimer_practitioner25 >}}
 
+| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
+

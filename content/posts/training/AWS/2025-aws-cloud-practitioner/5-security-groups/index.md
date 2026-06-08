@@ -48,3 +48,7 @@ _Full YouTube Rahul's AWS Course:_ {{< icon "youtube" >}}  https://www.youtube.c
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}
+
+| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
