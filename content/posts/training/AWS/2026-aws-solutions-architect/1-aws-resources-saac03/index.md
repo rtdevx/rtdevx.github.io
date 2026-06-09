@@ -1,8 +1,8 @@
 ---
-title: AWS FAQ and Resources
+title: "Solutions Architect: AWS FAQ and Resources"
 date: 2026-04-01
 description: Some useful AWS FAQ.
-summary: Some useful AWS FAQ before we start with AWS Solution Architect.
+summary: Some useful AWS FAQ before for AWS Solution Architect certification.
 draft: false
 tags:
   - SAA-C03
