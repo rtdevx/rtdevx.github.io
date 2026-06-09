@@ -10,7 +10,7 @@ categories: AWS
 series: AWS Cloud Practitioner
 ---
 ---
-ℹ️ [Associate-level]({{< ref "series/aws-solution-architect" >}}) **extension** of the **EC2 section** can be found here: [EC2 (SAAC03)]({{< ref "4-ec2-saac03" >}}).
+ℹ️ [Associate-level]({{< ref "series/aws-solution-architect" >}}) **extension** of the **EC2 section** can be found here: [Solutions Architect: EC2]({{< ref "4-ec2-saac03" >}}).
 
 ---
 ## What is Amazon EC2

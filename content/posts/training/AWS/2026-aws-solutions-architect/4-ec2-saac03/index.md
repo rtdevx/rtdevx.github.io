@@ -1,5 +1,5 @@
 ---
-title: EC2 (SAAC03)
+title: "Solutions Architect: EC2"
 date: 2026-04-02
 description: Associate-level extension of the EC2 Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the EC2 Section from AWS Cloud Practitioner Series.
