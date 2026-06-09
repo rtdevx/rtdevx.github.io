@@ -35,7 +35,7 @@ series: AWS Solution Architect
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
-### Solutions Architect details and Resources
+### Solutions Architect Resources
 
 - [Ultimate AWS Certified Solutions Architect Associate 2026](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03)
 - [AWS Certified Solutions Architect Associate Code & Slides](https://courses.datacumulus.com/downloads/certified-solutions-architect-pn9/)
