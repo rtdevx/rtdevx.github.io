@@ -154,7 +154,7 @@ For a deeper dive, **AWS** has a **solid introductory post here:**
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
 - [KodeKloud: EC2 Placement](https://notes.kodekloud.com/docs/AWS-Certified-Developer-Associate/Elastic-Compute-CloudEC2/EC2-Placement)
 
-Elastic Network Interface (ENI):
+**Elastic Network Interface (ENI):**
 
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
 - [KodeKloud: Elastic Network Interfaces](https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Services-Compute/Elastic-Network-Interfaces)
