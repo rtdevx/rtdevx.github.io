@@ -42,7 +42,6 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 
 - EBS volumes are defined by **size, throughput, and IOPS**    
 - Only **gp2/gp3** and **io1/io2 Block Express** can be used as **boot volumes**
-
 ### General Purpose and IOPS
 
 ||[Amazon EBS General Purpose SSD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/general-purpose.html)|   |[Amazon EBS Provisioned IOPS SSD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/provisioned-iops.html)|   |
@@ -57,7 +56,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |**NVMe reservations**|Not supported|   |Supported|Not supported|
 |**Boot volume**|Supported|   |   |   |
 
-_Source:_ https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
+📡 _Source:_ https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
 ### HDD
 
 ||[Throughput Optimized HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_st1)|[Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_sc1)|
