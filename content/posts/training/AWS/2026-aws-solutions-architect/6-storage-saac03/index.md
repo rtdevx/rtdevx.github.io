@@ -43,6 +43,8 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 - EBS volumes are defined by **size, throughput, and IOPS**    
 - Only **gp2/gp3** and **io1/io2 Block Express** can be used as **boot volumes**
 
+### General Purpose and IOPS
+
 ||[Amazon EBS General Purpose SSD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/general-purpose.html)|   |[Amazon EBS Provisioned IOPS SSD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/provisioned-iops.html)|   |
 |---|:-:|:-:|:-:|:-:|
 |**Volume type**|`gp3` 6|`gp2`|`io2` Block Express|`io1`|
@@ -55,19 +57,54 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |**NVMe reservations**|Not supported|   |Supported|Not supported|
 |**Boot volume**|Supported|   |   |   |
 
+_Source:_ https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
+### HDD
 
+||[Throughput Optimized HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_st1)|[Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_sc1)|
+|---|---|---|
+|**Volume type**|`st1`|`sc1`|
+|**Durability**|99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)|   |
+|**Use cases**|- Big data<br>    <br>- Data warehouses<br>    <br>- Log processing|- Throughput-oriented storage for data that is infrequently accessed<br>    <br>- Scenarios where the lowest storage cost is important|
+|**Volume size**|125 GiB - 16 TiB|   |
+|**Max IOPS per volume** (1 MiB I/O)|500|250|
+|**Max throughput per volume**|500 MiB/s|250 MiB/s|
+|**Amazon EBS Multi-attach**|Not supported|   |
+|**Boot volume**|Not supported|   |
 
-📡 _Sources:_ 
-- [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
-## EBS Multi-Attach
+_Source:_ https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
 
+For more information about the Hard disk drives (HDD) volumes, see [Amazon EBS Throughput Optimized HDD and Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html).
 
+📡 _Source:_ [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
+## EBS Multi‑Attach (io1 / io2 family)
+
+- Allows the **same EBS volume** to be attached to **multiple EC2 instances** within the **same Availability Zone**    
+- Each attached instance gets **full read/write access** to the high‑performance volume    
+- Supports up to **16 EC2 instances** at once    
+- Designed for **clustered Linux applications** that require shared block‑level storage  
+- Applications **must handle concurrent writes** safely — AWS does _not_ manage write coordination    
+- Requires a **cluster‑aware file system** (standard single‑node file systems like XFS or EXT4 will corrupt data)
+### Use cases
+
+- Increasing availability for clustered workloads (e.g., **Teradata**, shared‑disk clustering, HA databases)    
+- Scenarios where multiple nodes need simultaneous, low‑latency access to the same block device    
+### Examples of cluster‑aware file systems
+
+- **GFS2** (Red Hat Global File System 2)    
+- **OCFS2** (Oracle Cluster File System 2)    
+- **BeeGFS** (parallel cluster file system)    
+- **Lustre** (high‑performance distributed file system)    
+
+These file systems are designed to coordinate locks, manage concurrent writes, and prevent corruption - something traditional file systems cannot do.
+
+📡 _Source:_ https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html
 
 
 ---
 ## >> Sources <<
 
-[Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
+- [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
+- [Attach an EBS volume to multiple EC2 instances using Multi-Attach](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html)
 ## >> References <<
 
 - [Storage]({{< ref "6-storage" >}})
