@@ -1,6 +1,6 @@
 ---
 title: EC2 (SAAC03)
-date: 2026-04-01
+date: 2026-04-02
 description: EC2 - Associate Level.
 summary: EC2 - Associate Level.
 draft: false
