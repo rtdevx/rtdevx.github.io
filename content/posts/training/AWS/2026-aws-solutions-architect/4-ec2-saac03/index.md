@@ -119,7 +119,7 @@ They’re powerful once you get comfortable with them, especially for multi‑ho
 
 For a deeper dive, AWS has a solid introductory post here: 
 
-- 🔥[Elastic Network Interfaces in the Virtual Private Cloud](https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/)
+🔥[Elastic Network Interfaces in the Virtual Private Cloud](https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/)
 
 {{< /alert >}}
 
