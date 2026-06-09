@@ -131,6 +131,12 @@ There is no charge for creating a placement group.
 	- Saving the RAM state
 	- Services that take time to initialize
 
+- **Instance RAM Size** - must be less than 150 GB
+- **Instance Size** - not supported for bare metal instances
+- **AMI** - Amazon Linux 2, Linux AMI, Ubuntu, RHEL, CentOS & Windows…
+- **Root Volume** - must be EBS, encrypted, not instance store
+- **Available for** On-Demand, Reserved and Spot Instances
+
 ‼️An instance <font color=#EB4925>can NOT be hibernated more than 60 days.</font>
 
 ---
