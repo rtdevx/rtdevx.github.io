@@ -81,7 +81,7 @@ For more information about the Hard disk drives (HDD) volumes, see [Amazon EBS T
 - Each attached instance gets **full read/write access** to the high‑performance volume    
 - Supports up to **16 EC2 instances** at once    
 - Designed for **clustered Linux applications** that require shared block‑level storage  
-- Applications **must handle concurrent writes** safely — AWS does _not_ manage write coordination    
+- Applications **must handle concurrent writes** safely - AWS does _not_ manage write coordination    
 - Requires a **cluster‑aware file system** (standard single‑node file systems like XFS or EXT4 will corrupt data)
 ### Use cases
 
