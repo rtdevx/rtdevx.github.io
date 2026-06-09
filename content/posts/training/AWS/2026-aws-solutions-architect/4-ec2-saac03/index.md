@@ -113,7 +113,9 @@ Placement groups are optional. If you don't launch your instances into a placeme
 
 There is no charge for creating a placement group.
 
-📡 _Source:_ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
+📡 _Sources:_ 
+- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
+- https://notes.kodekloud.com/docs/AWS-Certified-Developer-Associate/Elastic-Compute-CloudEC2/EC2-Placement
 
 ---
 ## >> Sources <<
