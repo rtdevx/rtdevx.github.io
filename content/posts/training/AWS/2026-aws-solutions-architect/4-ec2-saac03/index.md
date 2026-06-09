@@ -113,7 +113,11 @@ There is no charge for creating a placement group.
 
 {{< alert "circle-info" >}}
 
-**ENIs** are a more advanced networking feature in AWS, and they take a bit of time and hands‑on practice to fully understand. They’re powerful once you get comfortable with them, especially for multi‑homed architectures, failover patterns, and security‑focused designs. For a deeper dive, AWS has a solid introductory post here: 
+**ENIs** are a more advanced networking feature in AWS, and they take a bit of time and hands‑on practice to fully understand. 
+
+They’re powerful once you get comfortable with them, especially for multi‑homed architectures, failover patterns, and security‑focused designs. 
+
+For a deeper dive, AWS has a solid introductory post here: 
 
 - 🔥[Elastic Network Interfaces in the Virtual Private Cloud](https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/)
 
