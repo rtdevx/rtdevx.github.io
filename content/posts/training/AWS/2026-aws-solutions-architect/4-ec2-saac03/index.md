@@ -1,8 +1,8 @@
 ---
 title: EC2 (SAAC03)
 date: 2026-04-02
-description: EC2 - Associate Level.
-summary: EC2 - Associate Level.
+description: '**Associate‑level extension** of the [EC2]({{< ref "4-ec2" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.'
+summary: '**Associate‑level extension** of the [EC2]({{< ref "4-ec2" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.'
 draft: false
 tags:
   - SAA-C03
