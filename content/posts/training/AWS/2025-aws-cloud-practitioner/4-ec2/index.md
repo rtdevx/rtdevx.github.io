@@ -10,7 +10,6 @@ categories: AWS
 series: AWS Cloud Practitioner
 ---
 ---
-
 ℹ️ [Associate-level]({{< ref "series/aws-solution-architect" >}}) **extension** of the **EC2 section** can be found here: [EC2]({{< ref "4-ec2-saac03" >}}).
 
 ---
@@ -180,8 +179,8 @@ _Dedicated Host vs Dedicated Instance:_ https://docs.aws.amazon.com/AWSEC2/lates
 
 ℹ️ [Associate-level]({{< ref "series/aws-solution-architect" >}}) **extension** of the **EC2 section** can be found here: [EC2]({{< ref "4-ec2-saac03" >}}).
 
----
-
 | <font color=#EB4925>AWS Series</font> »                               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
+
+---

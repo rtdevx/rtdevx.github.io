@@ -11,7 +11,6 @@ categories:
 series: AWS Solution Architect
 ---
 --- 
-
 ℹ️ **Associate‑level extension** of the [EC2]({{< ref "4-ec2" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
 {{< alert "list" >}}
@@ -132,7 +131,6 @@ There is no charge for creating a placement group.
 _Source:_ https://courses.datacumulus.com/downloads/certified-solutions-architect-pn9/
 
 --- 
-
 ℹ️ **Associate‑level extension** of the [EC2]({{< ref "4-ec2" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
 {{< alert "list" >}}
