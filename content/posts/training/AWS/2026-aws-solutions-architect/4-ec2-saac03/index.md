@@ -109,7 +109,7 @@ There is no charge for creating a placement group.
 
 📡 _Sources:_ 
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
-- https://notes.kodekloud.com/docs/AWS-Certified-Developer-Associate/Elastic-Compute-CloudEC2/EC2-Placement
+- [KodeKloud: EC2 Placement](https://notes.kodekloud.com/docs/AWS-Certified-Developer-Associate/Elastic-Compute-CloudEC2/EC2-Placement)
 
 ---
 ## >> Sources <<
