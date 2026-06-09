@@ -107,6 +107,11 @@ These file systems are designed to coordinate locks, manage concurrent writes, a
 - Snapshots taken from **encrypted volumes** remain encrypted automatically
 
 📡 <font color=#EBAC25><i>Source:</i></font> [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
+## EFS
+
+ℹ️ For more information about **Elastic File System**, refer to [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}}) from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
+
+![](./assets/AWS_Storage_EFS.png)
 
 ---
 ## >> Sources <<
