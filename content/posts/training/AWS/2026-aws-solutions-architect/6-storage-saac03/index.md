@@ -56,7 +56,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |**NVMe reservations**|Not supported|   |Supported|Not supported|
 |**Boot volume**|Supported|   |   |   |
 
-📡 _Source:_ https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
+📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
 ### HDD
 
 ||[Throughput Optimized HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_st1)|[Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_sc1)|
@@ -70,11 +70,11 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |**Amazon EBS Multi-attach**|Not supported|   |
 |**Boot volume**|Not supported|   |
 
-_Source:_ https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
+📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
 
 For more information about the Hard disk drives (HDD) volumes, see [Amazon EBS Throughput Optimized HDD and Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html).
 
-📡 _Source:_ [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
+📡 <font color=#EBAC25><i>Source:</i></font> [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
 ## EBS Multi‑Attach (io1 / io2 family)
 
 - Allows the **same EBS volume** to be attached to **multiple EC2 instances** within the **same Availability Zone**    
@@ -96,7 +96,7 @@ For more information about the Hard disk drives (HDD) volumes, see [Amazon EBS T
 
 These file systems are designed to coordinate locks, manage concurrent writes, and prevent corruption - something traditional file systems cannot do.
 
-📡 _Source:_ https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html
+📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html
 
 
 ---
