@@ -3,7 +3,7 @@ title: "Solutions Architect: Storage"
 date: 2026-04-03
 description: Associate-level extension of the Storage Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the Storage Section from AWS Cloud Practitioner Series.
-draft: true
+draft: false
 tags:
   - SAA-C03
 categories:
