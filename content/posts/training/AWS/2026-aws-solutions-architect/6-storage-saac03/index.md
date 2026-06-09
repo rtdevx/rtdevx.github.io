@@ -3,7 +3,7 @@ title: "Solutions Architect: Storage"
 date: 2026-04-03
 description: Associate-level extension of the Storage Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the Storage Section from AWS Cloud Practitioner Series.
-draft: false
+draft: true
 tags:
   - SAA-C03
 categories:
@@ -25,7 +25,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 
 {{< /alert >}}
 
-| Cloud Practitioner \| Storage      |                                                                                                                                                                                                                                    |
+|                                    |                                                                                                                                                                                                                                    |
 | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Storage]({{< ref "6-storage" >}}) | - [EBS]({{< ref "6-storage/#ebs-volume" >}})<br>- [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}})<br>- [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}})<br>- [FSx]({{< ref "6-storage/#amazon-fsx" >}}) |
 
