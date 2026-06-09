@@ -59,7 +59,7 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 	- Specify retention (from 1 day to 1 year)
 
 - Fast Snapshot Restore (FSR)
-	- Force full initialization of snapshot to have no latency on the first use ($!)
+	- Force full initialization of snapshot to have no latency on the first use (EXPENSIVE!)
 ## EC2 Instance Store
 
 - EBS volumes are network drives with good but "limited" performance
