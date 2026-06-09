@@ -126,7 +126,6 @@ For a deeper dive, AWS has a solid introductory post here:
 📡 _More:_ 
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
 - [KodeKloud: Elastic Network Interfaces](https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Services-Compute/Elastic-Network-Interfaces)
-- [Elastic Network Interfaces in the Virtual Private Cloud](https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/)
 ## EC2 Hibernate
 
 - **EC2 Hibernate**
