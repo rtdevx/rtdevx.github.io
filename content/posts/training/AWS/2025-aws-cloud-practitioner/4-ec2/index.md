@@ -11,11 +11,7 @@ series: AWS Cloud Practitioner
 ---
 ---
 
-{{< lead >}}
-
 ℹ️ **Associate‑level extension** of the **EC2 section** can be found here: [EC2]({{< ref "4-ec2-saac03" >}}).
-
-{{< /lead >}}
 
 ---
 ## What is Amazon EC2
