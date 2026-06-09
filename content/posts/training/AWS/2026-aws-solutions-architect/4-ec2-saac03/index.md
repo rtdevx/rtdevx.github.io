@@ -101,13 +101,13 @@ There is no charge for creating a placement group.
 
 - Logical component in a VPC that represents a virtual network card 
 - The ENI can have the following attributes:
-	- Primary private IPv4, one or more secondary IPv4
-	- One Elastic IP (IPv4) per private IPv4
-	- One Public IPv4
-	- One or more security groups
+	- <font color=#EBAC25>Primary private IPv4</font>, <font color=#EBAC25>one or more secondary IPv4</font>
+	- <font color=#EBAC25>One Elastic IP (IPv4)</font> per private IPv4
+	- <font color=#EBAC25>One Public IPv4</font>
+	- <font color=#EBAC25>One or more security groups</font>
 	- A MAC address
-	- You can create ENI independently and attach them on the fly (move them) on EC2 instances for failover
-	- Bound to a specific availability zone (AZ)
+	- You can <font color=#C7EB25>create ENI independently and attach them on the fly (move them) on EC2 instances for failover</font>
+	- <font color=#EBAC25>Bound to a specific availability zone</font> (AZ)
 
 ![](./assets/AWS_EC2_ENI.jpg "© kodekloud.com, [KodeKloud: Elastic Network Interfaces](https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Services-Compute/Elastic-Network-Interfaces)")
 
