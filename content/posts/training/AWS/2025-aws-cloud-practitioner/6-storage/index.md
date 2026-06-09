@@ -57,6 +57,9 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - Recycle Bin for EBS Snapshots
 	- Setup rules to retain deleted snapshots so you can recover them after an accidental deletion
 	- Specify retention (from 1 day to 1 year)
+
+- Fast Snapshot Restore (FSR)
+	- Force full initialization of snapshot to have no latency on the first use ($!)
 ## EC2 Instance Store
 
 - EBS volumes are network drives with good but "limited" performance
