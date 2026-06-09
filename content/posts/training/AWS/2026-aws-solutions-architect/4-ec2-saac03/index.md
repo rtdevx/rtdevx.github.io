@@ -107,7 +107,27 @@ There is no charge for creating a placement group.
 - [KodeKloud: EC2 Placement](https://notes.kodekloud.com/docs/AWS-Certified-Developer-Associate/Elastic-Compute-CloudEC2/EC2-Placement)
 ## Elastic Network Interfaces (ENI)
 
+- Logical component in a VPC that represents a virtual network card 
+- The ENI can have the following attributes:
+	- Primary private IPv4, one or more secondary IPv4
+	- One Elastic IP (IPv4) per private IPv4
+	- One Public IPv4
+	- One or more security groups
+	- A MAC address
+	- You can create ENI independently and attach them on the fly (move them) on EC2 instances for failover
+	- Bound to a specific availability zone (AZ)
 
+📡 _More:_ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
+## EC2 Hibernate
+
+- **EC2 Hibernate**
+	- The in-memory (RAM) state is preserved
+	- The instance boot is much faster! (the OS is not stopped / restarted)
+	- Under the hood: the RAM state is written to a file in the root EBS volume
+		- The root EBS volume must be encrypted
+ 
+- **Use cases**
+	- Long-running processing • Saving the RAM state • Services that take time to initialize
 
 ---
 ## >> Sources <<
@@ -117,6 +137,10 @@ There is no charge for creating a placement group.
 **Placement Groups:** 
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
 - [KodeKloud: EC2 Placement](https://notes.kodekloud.com/docs/AWS-Certified-Developer-Associate/Elastic-Compute-CloudEC2/EC2-Placement)
+
+Elastic Network Interface (ENI):
+
+- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
