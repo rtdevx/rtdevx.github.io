@@ -28,6 +28,9 @@ series: AWS Solution Architect
 ---
 ## >> Sources <<
 
+
+## >> References <<
+
 [Storage]({{< ref "6-storage" >}})
 ## >> Disclaimer <<
 
