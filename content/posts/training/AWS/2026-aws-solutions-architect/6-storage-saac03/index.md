@@ -106,7 +106,6 @@ These file systems are designed to coordinate locks, manage concurrent writes, a
 - Copying an **unencrypted snapshot** allows you to create an **encrypted** version    
 - Snapshots taken from **encrypted volumes** remain encrypted automatically
 
-
 ---
 ## >> Sources <<
 
