@@ -109,7 +109,11 @@ There is no charge for creating a placement group.
 	- You can create ENI independently and attach them on the fly (move them) on EC2 instances for failover
 	- Bound to a specific availability zone (AZ)
 
-📡 _More:_ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
+![](./assets/AWS_EC2_ENI.jpg "© kodekloud.com, [KodeKloud: Elastic Network Interfaces](https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Services-Compute/Elastic-Network-Interfaces)")
+
+📡 _More:_ 
+- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
+- [KodeKloud: Elastic Network Interfaces](https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Services-Compute/Elastic-Network-Interfaces)
 ## EC2 Hibernate
 
 - **EC2 Hibernate**
@@ -143,6 +147,7 @@ There is no charge for creating a placement group.
 Elastic Network Interface (ENI):
 
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
+- [KodeKloud: Elastic Network Interfaces](https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Services-Compute/Elastic-Network-Interfaces)
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
