@@ -106,11 +106,14 @@ These file systems are designed to coordinate locks, manage concurrent writes, a
 - Copying an **unencrypted snapshot** allows you to create an **encrypted** version    
 - Snapshots taken from **encrypted volumes** remain encrypted automatically
 
+📡 <font color=#EBAC25><i>Source:</i></font> [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
+
 ---
 ## >> Sources <<
 
 - [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
 - [Attach an EBS volume to multiple EC2 instances using Multi-Attach](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html)
+- [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
 ## >> References <<
 
 - [Storage]({{< ref "6-storage" >}})
