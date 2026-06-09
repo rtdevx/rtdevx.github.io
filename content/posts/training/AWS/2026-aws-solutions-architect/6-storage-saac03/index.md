@@ -97,6 +97,14 @@ For more information about the Hard disk drives (HDD) volumes, see [Amazon EBS T
 These file systems are designed to coordinate locks, manage concurrent writes, and prevent corruption - something traditional file systems cannot do.
 
 📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html
+## EBS Encryption
+
+- Encrypting an EBS volume protects **data at rest**, **data in transit** between the instance and the volume, **all snapshots**, and **any volumes created from those snapshots**    
+- Encryption and decryption are handled **transparently** by AWS    
+- Performance impact is **minimal**    
+- Uses **KMS-managed keys** (AES‑256)    
+- Copying an **unencrypted snapshot** allows you to create an **encrypted** version    
+- Snapshots taken from **encrypted volumes** remain encrypted automatically
 
 
 ---
