@@ -25,9 +25,9 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 
 {{< /alert >}}
 
-|                                    |                                                                                                                                                                                                                                    |
-| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Storage]({{< ref "6-storage" >}}) | - [EBS]({{< ref "6-storage/#ebs-volume" >}})<br>- [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}})<br>- [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}})<br>- [FSx]({{< ref "6-storage/#amazon-fsx" >}}) |
+|                                    |                                                                                                                     |                                                                                                             |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [Storage]({{< ref "6-storage" >}}) | - [EBS]({{< ref "6-storage/#ebs-volume" >}})<br>- [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}}) | - [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}})<br>- [FSx]({{< ref "6-storage/#amazon-fsx" >}}) |
 
 
 
