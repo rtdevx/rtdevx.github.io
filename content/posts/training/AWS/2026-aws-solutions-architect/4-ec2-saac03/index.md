@@ -161,7 +161,7 @@ Elastic Network Interface (ENI):
 - 🔥[Elastic Network Interfaces in the Virtual Private Cloud](https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/)
 ## >> References <<
 
-[EC2]({{< ref "4-ec2" >}})
+[Cloud Practitioner: EC2]({{< ref "4-ec2" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
