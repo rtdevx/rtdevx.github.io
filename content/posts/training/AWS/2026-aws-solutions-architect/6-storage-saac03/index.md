@@ -48,13 +48,13 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |---|:-:|:-:|:-:|:-:|
 |**Volume type**|`gp3` 6|`gp2`|`io2` Block Express|`io1`|
 |**Durability**|99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)|   |99.999% durability (0.001% annual failure rate)|99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)|
-|**Use cases**|- Transactional workloads<br>    <br>- Virtual desktops<br>    <br>- Medium-sized, single-instance databases<br>    <br>- Low-latency interactive applications<br>    <br>- Boot volumes<br>    <br>- Development and test environments|   |Workloads that require:<br><br>- Consistent sub-millisecond latency with average latency under 500 microseconds 5<br>    <br>- Sustained IOPS performance<br>    <br>- More than 80,000 IOPS or 2,000 MiB/s of throughput|- Workloads that require sustained IOPS performance or more than 16,000 IOPS<br>    <br>- I/O-intensive database workloads|
+|**Use cases**|- <font color=#EBAC25>Transactional workloads</font><br>    <br>- <font color=#EBAC25>Virtual desktops</font><br>    <br>- <font color=#EBAC25>Medium-sized, single-instance databases</font><br>    <br>- <font color=#EBAC25>Low-latency interactive applications</font><br>    <br>- <font color=#EBAC25>Boot volumes</font><br>    <br>- <font color=#EBAC25>Development and test environments</font>|   |**Workloads that require:**<br><br>- <font color=#EBAC25>Consistent sub-millisecond latency with average latency under 500 microseconds</font><br>    <br>- <font color=#EBAC25>Sustained IOPS performance</font><br>    <br>- <font color=#EBAC25>More than 80,000 IOPS or 2,000 MiB/s of throughput</font>|- <font color=#EBAC25>Workloads that require sustained IOPS performance or more than 16,000 IOPS</font><br>    <br>- <font color=#EBAC25>I/O-intensive database workloads</font>|
 |**Volume size**|1 GiB - 64 TiB|1 GiB - 16 TiB|4 GiB - 64 TiB|4 GiB - 16 TiB|
 |**Max IOPS**|80,000 3 (25.6 KiB I/O 4)|16,000 (16 KiB I/O 4)|256,000 3 (16 KiB I/O 4)|64,000 (16 KiB I/O 4)|
 |**Max throughput**|2,000 MiB/s|250 MiB/s 1|4,000 MiB/s|1,000 MiB/s 2|
-|**Amazon EBS Multi-attach**|Not supported|   |Supported|   |
-|**NVMe reservations**|Not supported|   |Supported|Not supported|
-|**Boot volume**|Supported|   |   |   |
+|**Amazon EBS Multi-attach**|<font color=#EB4925>Not supported</font>|   |<font color=#C7EB25>Supported</font>|   |
+|**NVMe reservations**|<font color=#EB4925>Not supported</font>|   |<font color=#C7EB25>Supported</font>|<font color=#EB4925>Not supported</font>|
+|**Boot volume**|<font color=#C7EB25>Supported</font>|   |   |   |
 
 📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
 ### HDD
@@ -63,12 +63,12 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |---|---|---|
 |**Volume type**|`st1`|`sc1`|
 |**Durability**|99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)|   |
-|**Use cases**|- Big data<br>    <br>- Data warehouses<br>    <br>- Log processing|- Throughput-oriented storage for data that is infrequently accessed<br>    <br>- Scenarios where the lowest storage cost is important|
+|**Use cases**|- <font color=#EBAC25>Big data</font><br>    <br>- <font color=#EBAC25>Data warehouses</font><br>    <br>- <font color=#EBAC25>Log processing</font>|- <font color=#EBAC25>Throughput-oriented storage for data that is infrequently accessed</font><br>    <br>- <font color=#EBAC25>Scenarios where the lowest storage cost is important</font>|
 |**Volume size**|125 GiB - 16 TiB|   |
 |**Max IOPS per volume** (1 MiB I/O)|500|250|
 |**Max throughput per volume**|500 MiB/s|250 MiB/s|
-|**Amazon EBS Multi-attach**|Not supported|   |
-|**Boot volume**|Not supported|   |
+|**Amazon EBS Multi-attach**|<font color=#EB4925>Not supported</font>|   |
+|**Boot volume**|<font color=#EB4925>Not supported</font>|   |
 
 📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
 
