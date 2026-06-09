@@ -123,11 +123,15 @@ There is no charge for creating a placement group.
 - **EC2 Hibernate**
 	- The in-memory (RAM) state is preserved
 	- The instance boot is much faster! (the OS is not stopped / restarted)
-	- Under the hood: the RAM state is written to a file in the root EBS volume
-		- The root EBS volume must be encrypted
+	- RAM state is written to a file in the root EBS volume
+		- <font color=#EB4925>The root EBS volume must be encrypted</font>
  
 - **Use cases**
-	- Long-running processing • Saving the RAM state • Services that take time to initialize
+	- Long-running processing
+	- Saving the RAM state
+	- Services that take time to initialize
+
+‼️An instance <font color=#EB4925>can NOT be hibernated more than 60 days.</font>
 
 ---
 ## >> Sources <<
