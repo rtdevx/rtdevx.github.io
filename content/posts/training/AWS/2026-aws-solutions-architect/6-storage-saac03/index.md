@@ -18,7 +18,8 @@ series: AWS Solution Architect
 | <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
-There’s very little difference between the **Cloud Practitioner** and **Associate** content in the **Storage** domain, so I’m only covering the additional **Associate‑level** points here. 
+
+ℹ️ There’s very little difference between the **Cloud Practitioner** and **Associate** content in the **Storage** domain, so I’m only covering the additional **Associate‑level** points here. 
 
 For full foundational coverage, refer to the table below from the Cloud Practitioner section.
 
