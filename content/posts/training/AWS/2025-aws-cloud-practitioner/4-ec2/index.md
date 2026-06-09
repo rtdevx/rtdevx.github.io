@@ -9,11 +9,15 @@ tags:
 categories: AWS
 series: AWS Cloud Practitioner
 ---
+---
+
 {{< lead >}}
 
 ℹ️ **Associate‑level extension** of the **EC2 section** can be found here: [EC2]({{< ref "4-ec2-saac03" >}}).
 
 {{< /lead >}}
+
+---
 ## What is Amazon EC2
 
 An **Amazon EC2** instance is a virtual server in the [AWS]({{< ref "categories/aws" >}}) Cloud. When you launch an EC2 instance, the instance type that you specify determines the hardware available to your instance. Each instance type offers a different balance of compute, memory, network, and storage resources. 
