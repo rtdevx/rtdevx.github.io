@@ -64,45 +64,39 @@ Depending on the type of workload, you can create a placement group using one of
 
 Packs instances close together <font color=#EBAC25>inside an Availability Zone</font>. This strategy enables workloads to achieve the low-latency network performance necessary for tightly-coupled node-to-node communication that is typical of high-performance computing (HPC) applications.
 
-**Pros**
-- Extremely high network throughput and very low latency between instances (up to 10–100 Gbps with Enhanced Networking)    
-- Ideal for tightly coupled, high‑performance workloads that need fast node‑to‑node communication    
-
-**Cons**
-- All instances are in a single AZ, so an AZ outage takes down the entire group    
-- Capacity can be limited — launches may fail if AWS can’t place all instances close enough together    
-
-**Use cases**
-- Big Data or distributed compute jobs that must complete quickly    
-- HPC workloads, analytics engines, or applications requiring ultra‑low latency and high network bandwidth
+- **Pros**
+	- Extremely high network throughput and very low latency between instances (up to 10–100 Gbps with Enhanced Networking)
+	- Ideal for tightly coupled, high‑performance workloads that need fast node‑to‑node communication    
+- **Cons**
+	- All instances are in a single AZ, so an AZ outage takes down the entire group 
+	- Capacity can be limited — launches may fail if AWS can’t place all instances close enough together    
+- **Use cases**
+	- Big Data or distributed compute jobs that must complete quickly    
+	- HPC workloads, analytics engines, or applications requiring ultra‑low latency and high network bandwidth
 ### Partition
 
 <font color=#EBAC25>Spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions.</font> This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra, and Kafka.
 
-**Pros**
-- Can span multiple Availability Zones, improving resilience    
-- Reduces the risk of simultaneous failure across instances    
-- Instances are isolated on separate racks and physical hardware    
-
-**Cons**
-- Limited to **seven partitions per AZ** within a placement group    
-
-**Use cases**
-- Applications that need maximum high availability    
-- Critical workloads where each instance must be isolated from failures in other nodes
+- **Pros**
+	- Can span multiple Availability Zones, improving resilience    
+	- Reduces the risk of simultaneous failure across instances    
+	- Instances are isolated on separate racks and physical hardware    
+- **Cons**
+	- Limited to **seven partitions per AZ** within a placement group    
+- **Use cases**
+	- Applications that need maximum high availability    
+	- Critical workloads where each instance must be isolated from failures in other nodes
 ### **Spread** 
 
 <font color=#EBAC25>Strictly places a small group of instances across distinct underlying hardware</font> to reduce correlated failures.
 
-**Pros**
-- Highest failure isolation — each instance sits on distinct hardware    
-- Ideal for small numbers of critical instances needing maximum resilience    
-
-**Cons**
-- Limited to **seven instances per AZ**    
-
-**Use cases**
-- Critical services where no two instances should fail together
+- **Pros**
+	- Highest failure isolation — each instance sits on distinct hardware    
+	- Ideal for small numbers of critical instances needing maximum resilience
+- **Cons**
+	- Limited to **seven instances per AZ**    
+- **Use cases**
+	- Critical services where no two instances should fail together
 
 {{< alert "circle-info" >}}
 
