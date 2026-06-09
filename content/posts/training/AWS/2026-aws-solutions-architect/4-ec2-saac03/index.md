@@ -106,6 +106,8 @@ There is no charge for creating a placement group.
 📡 _Sources:_ 
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
 - [KodeKloud: EC2 Placement](https://notes.kodekloud.com/docs/AWS-Certified-Developer-Associate/Elastic-Compute-CloudEC2/EC2-Placement)
+## Elastic Network Interfaces (ENI)
+
 
 
 ---
@@ -134,8 +136,6 @@ _Source:_ https://courses.datacumulus.com/downloads/certified-solutions-architec
 --- 
 
 ℹ️ **Associate‑level extension** of the [EC2]({{< ref "4-ec2" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
-
----
 
 | <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
