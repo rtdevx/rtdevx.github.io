@@ -106,7 +106,7 @@ There is no charge for creating a placement group.
 	- <font color=#EBAC25>One Public IPv4</font>
 	- <font color=#EBAC25>One or more security groups</font>
 	- A MAC address
-	- You can <font color=#C7EB25>create ENI independently and attach them on the fly (move them) on EC2 instances for failover</font>
+	- You can <font color=#EBAC25>create ENI independently and attach them on the fly (move them) on EC2 instances for failover</font>
 	- <font color=#EB4925>Bound to a specific availability zone</font> (AZ)
 
 ![](./assets/AWS_EC2_ENI.jpg "© kodekloud.com, [KodeKloud: Elastic Network Interfaces](https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Services-Compute/Elastic-Network-Interfaces)")
