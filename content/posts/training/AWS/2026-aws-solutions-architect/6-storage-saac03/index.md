@@ -13,6 +13,8 @@ series: AWS Solution Architect
 ---
 ℹ️ **Associate‑level extension** of the [Storage]({{< ref "6-storage" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
+[Storage]({{< ref "6-storage" >}}) » [EBS]({{< ref "6-storage/#ebs-volume" >}}) | [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}}) | [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}}) | [FSx]({{< ref "6-storage/#amazon-fsx" >}})
+
 {{< alert "list" >}}
 
 | <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
