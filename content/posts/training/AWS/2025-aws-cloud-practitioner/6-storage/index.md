@@ -75,6 +75,8 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - <font color=#EBAC25>Managed NFS</font> (Network File System) that can be mounted on 100s of EC2 instances
 - <font color=#EB4925>EFS works with Linux EC2 instances only</font> and is <font color=#C7EB25>multi-AZ.</font>
 - Highly-available, scalable, <font color=#EB4925>expensive</font> (3x gp2 EBS), pay per use, no capacity planning
+- Encryption at rest using **KMS**
+- Scales automatically, <font color=#EBAC25>pay-per-use</font>, no capacity planning
 ### EFS Infrequent Access (EFS-IA)
 
 - Storage class that is cost-optimized for files not accessed every day
