@@ -14,14 +14,14 @@ series: AWS Solution Architect
 
 ℹ️ **Associate‑level extension** of the [EC2]({{< ref "4-ec2" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
----
-
 {{< alert "list" >}}
 
 | <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 {{< /alert >}}
+
+---
 ## Public vs Private vs Elastic IP
 
 - **Public IP**
@@ -135,11 +135,11 @@ _Source:_ https://courses.datacumulus.com/downloads/certified-solutions-architec
 
 ℹ️ **Associate‑level extension** of the [EC2]({{< ref "4-ec2" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
----
-
 {{< alert "list" >}}
 
 | <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 {{< /alert >}}
+
+---
