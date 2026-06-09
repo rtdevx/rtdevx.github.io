@@ -59,15 +59,12 @@ Depending on the type of workload, you can create a placement group using one of
 
 Packs instances close together <font color=#EBAC25>inside an Availability Zone</font>. This strategy enables workloads to achieve the low-latency network performance necessary for tightly-coupled node-to-node communication that is typical of high-performance computing (HPC) applications.
 
-- **Pros**
-	- Extremely high network throughput and very low latency between instances (up to 10–100 Gbps with Enhanced Networking)
-	- Ideal for tightly coupled, high‑performance workloads that need fast node‑to‑node communication    
-- **Cons**
-	- All instances are in a single AZ, so an AZ outage takes down the entire group 
-	- Capacity can be limited — launches may fail if AWS can’t place all instances close enough together    
-- **Use cases**
-	- Big Data or distributed compute jobs that must complete quickly    
-	- HPC workloads, analytics engines, or applications requiring ultra‑low latency and high network bandwidth
+|               |                                                                                                                                                                                                                              |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pros**      | - Extremely high network throughput and very low latency between instances (up to 10–100 Gbps with Enhanced Networking)<br>- Ideal for tightly coupled, high‑performance workloads that need fast node‑to‑node communication |
+| **Cons**      | - All instances are in a single AZ, so an AZ outage takes down the entire group <br>- Capacity can be limited — launches may fail if AWS can’t place all instances close enough together                                     |
+| **Use Cases** | - Big Data or distributed compute jobs that must complete quickly    <br>- HPC workloads, analytics engines, or applications requiring ultra‑low latency and high network bandwidth                                          |
+
 ### Partition
 
 <font color=#EBAC25>Spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions.</font> This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra, and Kafka.
