@@ -79,7 +79,7 @@ Packs instances close together <font color=#EBAC25>inside an Availability Zone</
 
 |               |                                                                                                                                                         |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Pros**      | - Highest failure isolation — each instance sits on distinct hardware    <br>- Ideal for small numbers of critical instances needing maximum resilience |
+| **Pros**      | - Highest failure isolation - each instance sits on distinct hardware    <br>- Ideal for small numbers of critical instances needing maximum resilience |
 | **Cons**      | - Limited to **seven instances per AZ**                                                                                                                 |
 | **Use Cases** | - Critical services where no two instances should fail together                                                                                         |
 
