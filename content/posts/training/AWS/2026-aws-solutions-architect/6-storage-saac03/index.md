@@ -56,7 +56,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |**NVMe reservations**|<font color=#EB4925>Not supported</font>|   |<font color=#C7EB25>Supported</font>|<font color=#EB4925>Not supported</font>|
 |**Boot volume**|<font color=#C7EB25>Supported</font>|   |   |   |
 
-📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html#vol-type-ssd
+📡 <font color=#EBAC25><i>Source:</i></font> [Solid state drive (SSD) volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html#vol-type-ssd)
 ### HDD
 
 ||[Throughput Optimized HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_st1)|[Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_sc1)|
@@ -70,7 +70,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |**Amazon EBS Multi-attach**|<font color=#EB4925>Not supported</font>|   |
 |**Boot volume**|<font color=#EB4925>Not supported</font>|   |
 
-📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html#vol-type-hdd
+📡 <font color=#EBAC25><i>Source:</i></font> [Hard disk drive (HDD) volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html#vol-type-hdd)
 
 For more information about the Hard disk drives (HDD) volumes, see [Amazon EBS Throughput Optimized HDD and Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html).
 
@@ -96,7 +96,7 @@ For more information about the Hard disk drives (HDD) volumes, see [Amazon EBS T
 
 These file systems are designed to coordinate locks, manage concurrent writes, and prevent corruption - something traditional file systems cannot do.
 
-📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html
+📡 <font color=#EBAC25><i>Source:</i></font> [Attach an EBS volume to multiple EC2 instances using Multi-Attach](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html)
 ## EBS Encryption
 
 - Encrypting an EBS volume protects **data at rest**, **data in transit** between the instance and the volume, **all snapshots**, and **any volumes created from those snapshots**    
