@@ -3,7 +3,7 @@ title: "Solutions Architect: Scalability & High Availability"
 date: 2026-04-04
 description: Associate-level extension of the `Scalability & High Availability` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `Scalability & High Availability` Section from AWS Cloud Practitioner Series.
-draft: true
+draft: false
 tags:
   - SAA-C03
 categories:
