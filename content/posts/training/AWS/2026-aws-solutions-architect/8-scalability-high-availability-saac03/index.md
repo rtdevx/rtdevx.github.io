@@ -12,7 +12,7 @@ series: AWS Solution Architect
 ---
 <p align="right">
 <small>©️ <i>No Rights Reserved</i></small>, <a href="./#-disclaimer-">Disclaimer</a>
-</p>
+</p><br>
 ---
 ℹ️ `Scalability & High Availability` is already covered at a high level in the [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}}) section of the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. 
 
