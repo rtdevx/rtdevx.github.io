@@ -32,7 +32,9 @@ This section focuses only on the **Associate‑level additions**.
     - **Horizontal scalability (elasticity)**        
 - [Scalability]({{< ref "8-scalability-high-availability/#scalability" >}}) is related to, but distinct from, [High Availability][Scalability]({{< ref "8-scalability-high-availability/#high-availability" >}})
 
-📡 _Source:_ [High availability and scalability on AWS](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html)
+📡 _Sources:_ 
+- **Cloud Practitioner:** [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
+- [High availability and scalability on AWS](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html)
 
 ---
 
