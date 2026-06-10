@@ -77,6 +77,8 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - Highly-available, scalable, <font color=#EB4925>expensive</font> (3x gp2 EBS), pay per use, no capacity planning
 - Encryption at rest using **KMS**
 - Scales automatically, <font color=#EBAC25>pay-per-use</font>, no capacity planning
+
+![](./assets/AWS_Storage_EFS.png)
 ### Performance & Storage Classes
 
 #### EFS Scale
