@@ -38,7 +38,7 @@ This section focuses only on the **Associate‑level additions**.
 
 {{< lead >}}
 
-**Scalability** » <font color=#C7EB25>handling increasing load</font>.<br>
+**Scalability** » <font color=#C7EB25>handling increasing load</font>.
 **High Availability** » <font color=#C7EB25>staying operational</font> when parts of the system fail.
 
 {{< /lead >}}
