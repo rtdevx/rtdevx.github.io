@@ -84,13 +84,13 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - Automatically grows to <font color=#EBAC25>petabyte‑scale</font> as your data increases    
 #### Performance Modes _(chosen at file system creation)_
 
-- **General Purpose (default)** — best for latency‑sensitive workloads (web servers, CMS, etc.)    
-- **Max I/O** — higher latency but higher throughput and massive parallelism (big data, media processing)
+- **General Purpose (default)** - best for latency‑sensitive workloads (web servers, CMS, etc.)    
+- **Max I/O** - higher latency but higher throughput and massive parallelism (big data, media processing)
 #### Throughput Modes
 
-- **Bursting** — baseline of <font color=#EBAC25>50 MiB/s per TB</font>, with bursts up to <font color=#EBAC25>100 MiB/s</font>
-- **Provisioned** — set a fixed throughput regardless of storage size (e.g., **1 GiB/s** even with 1 TB stored)    
-- **Elastic** — automatically adjusts throughput based on workload demand    
+- **Bursting** - baseline of <font color=#EBAC25>50 MiB/s per TB</font>, with bursts up to <font color=#EBAC25>100 MiB/s</font>
+- **Provisioned** - set a fixed throughput regardless of storage size (e.g., **1 GiB/s** even with 1 TB stored)    
+- **Elastic (Recommended)** - <font color=#C7EB25>automatically adjusts throughput based on workload demand</font>
     - Up to <font color=#EBAC25>3 GiB/s reads</font> and <font color=#EBAC25>1 GiB/s writes</font>
     - Ideal for <font color=#EB4925>unpredictable or spiky workloads</font>
 #### Storage Classes
