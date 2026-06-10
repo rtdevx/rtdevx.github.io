@@ -17,10 +17,70 @@ series: AWS Solution Architect
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 
-ℹ️ **Cloud Practitioner:** [RDS and Aurora]({{< ref "12-databases/#rds-and-aurora" >}})
-## RDS - Storage Autoscaling
+## RDS
+
+ℹ️ **Cloud Practitioner:** [Amazon RDS]({{< ref "12-databases/#amazon-rds" >}})
+### RDS - Storage Autoscaling
 
 
+### RDS Read Replicas
+
+
+### RDS Multi AZ (Disaster Recovery)
+
+
+### RDS Backups
+
+
+## Aurora
+
+ℹ️ **Cloud Practitioner:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})
+### High Availability and Read Scaling
+
+
+### Aurora DB Cluster
+
+
+### Features of Aurora
+
+
+### Aurora Replicas - Auto Scaling
+
+
+### Aurora – Custom Endpoints
+
+
+### Aurora Serverless
+
+
+### Global Aurora
+
+
+### Aurora Backups
+
+
+### Aurora Database Cloning
+
+
+## RDS & Aurora Security
+
+
+## ElastiCache
+
+ℹ️ **Cloud Practitioner:** [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
+### DB Cache
+
+
+### User Session Store
+
+
+### Redis vs Memcached
+
+
+### Cache Security
+
+
+### Patterns
 
 ---
 ## >> Sources <<
