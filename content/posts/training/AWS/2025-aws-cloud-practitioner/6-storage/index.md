@@ -79,14 +79,14 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - Scales automatically, <font color=#EBAC25>pay-per-use</font>, no capacity planning
 ### Performance & Storage Classes
 
-##### EFS Scale
+#### EFS Scale
 - Supports <font color=#EBAC25>thousands of concurrent NFS clients</font> and <font color=#EBAC25>10+ GB/s</font> of throughput    
 - Automatically grows to <font color=#EBAC25>petabyte‑scale</font> as your data increases    
-##### Performance Modes _(chosen at file system creation)_
+#### Performance Modes _(chosen at file system creation)_
 
 - **General Purpose (default)** — best for latency‑sensitive workloads (web servers, CMS, etc.)    
 - **Max I/O** — higher latency but higher throughput and massive parallelism (big data, media processing)
-##### Throughput Modes
+#### Throughput Modes
 
 - **Bursting** — baseline of <font color=#EBAC25>50 MiB/s per TB</font>, with bursts up to <font color=#EBAC25>100 MiB/s</font>
 - **Provisioned** — set a fixed throughput regardless of storage size (e.g., **1 GiB/s** even with 1 TB stored)    
