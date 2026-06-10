@@ -56,7 +56,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |**NVMe reservations**|<font color=#EB4925>Not supported</font>|   |<font color=#C7EB25>Supported</font>|<font color=#EB4925>Not supported</font>|
 |**Boot volume**|<font color=#C7EB25>Supported</font>|   |   |   |
 
-📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
+📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html#vol-type-ssd
 ### HDD
 
 ||[Throughput Optimized HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_st1)|[Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_sc1)|
@@ -70,7 +70,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |**Amazon EBS Multi-attach**|<font color=#EB4925>Not supported</font>|   |
 |**Boot volume**|<font color=#EB4925>Not supported</font>|   |
 
-📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html
+📡 <font color=#EBAC25><i>Source:</i></font> https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html#vol-type-hdd
 
 For more information about the Hard disk drives (HDD) volumes, see [Amazon EBS Throughput Optimized HDD and Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html).
 
