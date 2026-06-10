@@ -1,9 +1,9 @@
 ---
 title: "Solutions Architect: Scalability & High Availability"
-date: 2026-04-01
+date: 2026-04-04
 description: Associate-level extension of the `Scalability & High Availability` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `Scalability & High Availability` Section from AWS Cloud Practitioner Series.
-draft: true
+draft: false
 tags:
   - SAA-C03
 categories:
@@ -11,7 +11,9 @@ categories:
 series: AWS Solution Architect
 ---
 ---
-ℹ️ **Associate‑level extension** of the [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
+ℹ️ `Scalability & High Availability` is already covered at a high level in the [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}}) section of the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. 
+
+This section focuses only on the **Associate‑level additions**.
 
 {{< alert "list" >}}
 
@@ -21,8 +23,16 @@ series: AWS Solution Architect
 {{< /alert >}}
 
 ---
+## Scalability & High Availability
 
-# CONTENT
+[Scalability]({{< ref "8-scalability-high-availability/#scalability" >}}) means an application or system can handle increased load by adapting.
+    
+- [Two kinds]({{< ref "8-scalability-high-availability/#two-kinds-of-scalability" >}}) of scalability:
+    - **Vertical scalability**        
+    - **Horizontal scalability (elasticity)**        
+- [Scalability]({{< ref "8-scalability-high-availability/#scalability" >}}) is related to, but distinct from, [High Availability][Scalability]({{< ref "8-scalability-high-availability/#high-availability" >}})
+
+
 
 ---
 ## >> Sources <<
@@ -30,7 +40,9 @@ series: AWS Solution Architect
 
 ## >> References <<
 
-[Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
+**Cloud Practitioner:** [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
+**Cloud Practitioner:** [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
+**Cloud Practitioner:** [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
