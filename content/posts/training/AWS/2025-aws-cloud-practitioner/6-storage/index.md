@@ -127,7 +127,8 @@ EFS Storage tiers and lifecycle management.
 | **File Size Limit** | No limit                         | 47.9 TiB                      |
 | **Accessibility**   | Not accessible over the internet | Shared across instances       |
 | **Pricing**         | Cheaper for single-instance      | Cost-effective for shared use |
-*More:* 
+
+<font color=#EBAC25><i>More info:</i></font>
 - https://aws.amazon.com/efs/when-to-choose-efs/
 - https://lucidity.cloud/blog/ebs-vs-efs
 - https://www.cloudzero.com/blog/ebs-vs-efs/
