@@ -3,7 +3,7 @@ title: "Solutions Architect: Scalability & High Availability"
 date: 2026-04-04
 description: Associate-level extension of the `Scalability & High Availability` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `Scalability & High Availability` Section from AWS Cloud Practitioner Series.
-draft: false
+draft: true
 tags:
   - SAA-C03
 categories:
@@ -40,9 +40,9 @@ This section focuses only on the **Associate‑level additions**.
 
 ## >> References <<
 
-**Cloud Practitioner:** [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
-**Cloud Practitioner:** [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
-**Cloud Practitioner:** [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
+- **Cloud Practitioner:** [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
+- **Cloud Practitioner:** [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
+- **Cloud Practitioner:** [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
