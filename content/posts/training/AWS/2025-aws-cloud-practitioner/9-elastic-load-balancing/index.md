@@ -44,24 +44,61 @@ _AWS Elastic Load Balancing Introduction_
 ### 1. Application Load Balancer 
 
 - HTTP / HTTPS only ([layer 7]({{< ref "osi-model/#7-application-layer" >}}))
+- Load balancing to multiple HTTP applications across machines (target groups)
+- Load balancing to multiple applications on the same machine (ex: containers)
+- Support for HTTP/2 and WebSocket
+- Support redirects (from HTTP to HTTPS for example)
+
+- Routing tables to different target groups
+	- Routing based on path in URL (example.com/users & example.com/posts)
+	- Routing based on hostname in URL (one.example.com & other.example.com)
+	- Routing based on Query String, Headers (example.com/users?id=123&order=false)
+- ALB are a great fit for micro services & container-based application (example: Docker & Amazon ECS)
+- Has a port mapping feature to redirect to a dynamic port in ECS
 
 {{< youtube cuJTmBvFCS0 >}}
 _AWS ALB (Application Load Balancer) - Step By Step Tutorial_
+#### Target Groups
+
+- **EC2 instances** (including those in an Auto Scaling Group) - HTTP targets    
+- **ECS tasks** (managed by ECS) - HTTP targets    
+- **Lambda functions** - HTTP requests are converted into JSON events    
+- **IP addresses** - must be **private** IPs    
+- An **ALB** can route traffic to **multiple target groups**    
+- **Health checks** are defined at the **target group** level
 
 ---
 ### 2. Network Load Balancer 
 
 - <font color=red>ultra high performance</font>, allows for TCP ([layer 4]({{< ref "osi-model/#4-transport-layer" >}}))
+- **Network Load Balancers (Layer 4)** can forward **TCP and UDP** traffic to your targets    
+- Built to handle **millions of requests per second** with **ultra‑low latency**    
+- Each NLB provides **one static IP per AZ**, and you can also assign **Elastic IPs** for fixed, whitelisted addresses    
+- Ideal for **extreme performance** use cases and workloads that rely on **TCP or UDP** traffic
 
 {{< youtube _d8xGNKAqeo >}}
 _Mastering AWS Network Load Balancer | ALB vs NLB | Step by Step Tutorial_
+#### Target Groups
+
+- **EC2 instances**
+- **IP Addresses** - must be private IPs
+- **Application Load Balancer**
+- Health Checks support the **TCP**, **HTTP** and **HTTPS** Protocols
+
+![](./assets/AWS_ALB_NLB_TG.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ---
-
 ### 3. Gateway Load Balancer
 
+- Operates at Layer 3 (Network Layer) – IP Packets
+- **Combines the following functions:**
+	- Transparent Network Gateway – single entry/exit for all traffic
+	- Load Balancer  - distributes traffic to your virtual appliances
 - Supports GENEVE protocol. Built for extra security ([layer 3]({{< ref "osi-model/#3-network-layer" >}}))
+#### Target Groups
 
+- **EC2 instances**
+- **IP Addresses** - must be private IPs
 
 ---
 ## >> Sources <<
