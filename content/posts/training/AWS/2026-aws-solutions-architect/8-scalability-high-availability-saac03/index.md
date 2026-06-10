@@ -15,12 +15,9 @@ series: AWS Solution Architect
 
 This section focuses only on the **Associate‑level additions**.
 
-{{< alert "list" >}}
-
-| <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
+| <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
-{{< /alert >}}
 
 ---
 ## Scalability & High Availability
@@ -192,9 +189,7 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 
 _Source:_ https://courses.datacumulus.com/downloads/certified-solutions-architect-pn9/
 
-{{< alert "list" >}}
-
-| <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
+| <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
-{{< /alert >}}
+

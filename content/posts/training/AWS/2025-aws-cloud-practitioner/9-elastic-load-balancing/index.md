@@ -122,6 +122,6 @@ _Mastering AWS Network Load Balancer | ALB vs NLB | Step by Step Tutorial_
 
 {{< disclaimer_practitioner25 >}}
 
-| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |

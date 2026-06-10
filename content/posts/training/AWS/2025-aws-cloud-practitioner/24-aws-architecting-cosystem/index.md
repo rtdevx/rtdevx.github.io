@@ -186,6 +186,6 @@ AWS re:Post is not intended to be used for questions that are time-sensitive.
 
 {{< disclaimer_practitioner25 >}}
 
-| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |

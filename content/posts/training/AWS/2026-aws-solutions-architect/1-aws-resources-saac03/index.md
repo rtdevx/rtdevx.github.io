@@ -10,12 +10,10 @@ categories:
   - AWS
 series: AWS Solution Architect
 ---
-{{< alert "list" >}}
 
-| <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
+| <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
-{{< /alert >}}
 ## AWS FAQ
 
 {{< lead >}}
@@ -156,6 +154,6 @@ AWS Topics more:Explanation
 
 _Source:_ https://courses.datacumulus.com/downloads/certified-solutions-architect-pn9/
 
-| <font color=#EB4925>AWS Series</font> »                               |                                                                       |
+| <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |

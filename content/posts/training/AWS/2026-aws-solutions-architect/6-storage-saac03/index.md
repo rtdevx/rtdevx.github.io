@@ -13,17 +13,13 @@ series: AWS Solution Architect
 ---
 ℹ️ **Associate‑level extension** of the [Storage]({{< ref "6-storage" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
-{{< alert "list" >}}
-
 | <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 
 ℹ️ There’s very little difference between the **Cloud Practitioner** and **Associate** content in the **Storage** domain, so I’m only covering the additional **Associate‑level** points here. 
 
-For full foundational coverage, refer to the table below from the Cloud Practitioner section.
-
-{{< /alert >}}
+For full foundational coverage, refer to the table below from the Cloud Practitioner section:
 
 |                                    |                                                                                                                     |                                                                                                             |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -146,11 +142,9 @@ _Source:_ https://courses.datacumulus.com/downloads/certified-solutions-architec
 ---
 ℹ️ **Associate‑level extension** of the [Storage]({{< ref "6-storage" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
-{{< alert "list" >}}
-
-| <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
+| <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
-{{< /alert >}}
+
 
 ---
