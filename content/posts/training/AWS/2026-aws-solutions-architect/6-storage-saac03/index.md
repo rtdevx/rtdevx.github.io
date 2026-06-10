@@ -56,7 +56,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 |**NVMe reservations**|<font color=#EB4925>Not supported</font>|   |<font color=#C7EB25>Supported</font>|<font color=#EB4925>Not supported</font>|
 |**Boot volume**|<font color=#C7EB25>Supported</font>|   |   |   |
 
-📡 <font color=#EBAC25><i>Source:</i></font> [Solid state drive (SSD) volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html#vol-type-ssd)
+📡 <font color=#EBAC25><i>Source:</i></font> **Amazon EBS volume types:** [Solid state drive (SSD) volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html#vol-type-ssd)
 ### HDD
 
 ||[Throughput Optimized HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_st1)|[Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_sc1)|
@@ -74,7 +74,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 
 For more information about the Hard disk drives (HDD) volumes, see [Amazon EBS Throughput Optimized HDD and Cold HDD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html).
 
-📡 <font color=#EBAC25><i>Source:</i></font> [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
+📡 <font color=#EBAC25><i>Source:</i></font> **Amazon EBS volume types:** [Amazon EBS volume types](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)
 ## EBS Multi‑Attach (io1 / io2 family)
 
 - Allows the **same EBS volume** to be attached to **multiple EC2 instances** within the **same Availability Zone**    
@@ -121,17 +121,15 @@ These file systems are designed to coordinate locks, manage concurrent writes, a
 - [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
 ## >> References <<
 
-**Cloud Practitioner:**
-
-- [Storage]({{< ref "6-storage" >}})
-	- [EBS]({{< ref "6-storage/#ebs-volume" >}})
-	- [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}})
-	- [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}})
-	- [FSx]({{< ref "6-storage/#amazon-fsx" >}})
-- [AMI]({{< ref "7-ami" >}})
+- **Cloud Practitioner:** [Storage]({{< ref "6-storage" >}})
+	- **Cloud Practitioner:** [EBS]({{< ref "6-storage/#ebs-volume" >}})
+	- **Cloud Practitioner:** [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}})
+	- **Cloud Practitioner:** [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}})
+	- **Cloud Practitioner:** [FSx]({{< ref "6-storage/#amazon-fsx" >}})
+- **Cloud Practitioner:** [AMI]({{< ref "7-ami" >}})
 - EC2
-	- [EC2]({{< ref "4-ec2" >}})
-	- [EC2 - SAAC03]({{< ref "4-ec2-saac03" >}})
+	- **Cloud Practitioner:** [EC2 (CLF-C02)]({{< ref "4-ec2" >}})
+	- **Solutions Architect:** [EC2 (SAA-C03)]({{< ref "4-ec2-saac03" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}

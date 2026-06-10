@@ -3,7 +3,7 @@ title: "Solutions Architect: Scalability & High Availability"
 date: 2026-04-04
 description: Associate-level extension of the `Scalability & High Availability` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `Scalability & High Availability` Section from AWS Cloud Practitioner Series.
-draft: true
+draft: false
 tags:
   - SAA-C03
 categories:
@@ -32,12 +32,24 @@ This section focuses only on the **Associate‑level additions**.
     - **Horizontal scalability (elasticity)**        
 - [Scalability]({{< ref "8-scalability-high-availability/#scalability" >}}) is related to, but distinct from, [High Availability][Scalability]({{< ref "8-scalability-high-availability/#high-availability" >}})
 
+📡 _Source:_ [High availability and scalability on AWS](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html)
 
+{{< lead >}}
+
+**Scalability** is about <font color=#C7EB25>handling increasing load</font>, while **High Availability** is about <font color=#C7EB25>staying operational</font> when parts of the system fail.
+
+{{< /lead >}}
+## Elastic Load Balancing
+
+ℹ️ For more information about **Load Balancing**, refer to [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
+## Auto Scaling Groups
+
+ℹ️ For more information about **Auto Scaling Groups**, refer to [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 
 ---
 ## >> Sources <<
 
-
+[High availability and scalability on AWS](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html)
 ## >> References <<
 
 - **Cloud Practitioner:** [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
