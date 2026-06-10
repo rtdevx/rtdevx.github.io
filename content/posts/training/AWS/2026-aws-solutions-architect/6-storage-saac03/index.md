@@ -121,6 +121,8 @@ These file systems are designed to coordinate locks, manage concurrent writes, a
 - [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
 ## >> References <<
 
+**Cloud Practitioner:**
+
 - [Storage]({{< ref "6-storage" >}})
 	- [EBS]({{< ref "6-storage/#ebs-volume" >}})
 	- [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}})
