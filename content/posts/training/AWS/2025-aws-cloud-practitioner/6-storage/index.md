@@ -93,7 +93,13 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - **Elastic** — automatically adjusts throughput based on workload demand    
     - Up to <font color=#EBAC25>3 GiB/s reads</font> and <font color=#EBAC25>1 GiB/s writes</font>
     - Ideal for <font color=#EB4925>unpredictable or spiky workloads</font>
-### EFS Infrequent Access (EFS-IA)
+### EFS – Storage Classes
+
+EFS Storage tiers and lifecycle management.
+#### Standard
+
+- For frequently accessed files
+#### EFS Infrequent Access (EFS-IA)
 
 - Storage class that is cost-optimized for files not accessed every day
 - up to <font color=#EB4925>92% lower cost</font> compared to EFS Standard
@@ -101,6 +107,13 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - Enable **EFS-IA** with a **Lifecycle Policy**
 	- Example: move files that are not accessed for 60 days to **EFS-IA**
 - Transparent to the applications accessing EFS (apps don't see whether file is in EFS or EFS-IA)
+#### Archive
+
+- Rarely accessed data (few times each year), <font color=#EB4925>50% cheaper</font>
+### Availability and durability
+
+- **Standard:** Multi-AZ, great for prod
+- **One Zone:** One AZ, great for dev, backup enabled by default, compatible with IA (EFS One Zone-IA)
 ## EBS vs EFS
 
 | Feature             | EBS                              | EFS                           |
