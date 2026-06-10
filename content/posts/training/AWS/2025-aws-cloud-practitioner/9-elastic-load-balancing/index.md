@@ -13,6 +13,8 @@ series: AWS Cloud Practitioner
 
 <font color=#EB4925>It monitors the health of its registered targets and routes the traffic only to healthy targets.</font>
 
+ℹ️ **Solutions-Architect** level coverage: [Elastic Load Balancing (SAA-C03)]({{< ref "8-scalability-high-availability-saac03/#elastic-load-balancing" >}})
+
 ---
 
 {{< youtube qpHLRc4Qt1E >}}
@@ -114,6 +116,8 @@ _Mastering AWS Network Load Balancer | ALB vs NLB | Step by Step Tutorial_
 
 - [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
 - [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
+
+- **Solutions-Architect:** [Elastic Load Balancing (SAA-C03)]({{< ref "8-scalability-high-availability-saac03/#elastic-load-balancing" >}})
 ## >> Disclaimer <<
 
 {{< disclaimer_practitioner25 >}}
