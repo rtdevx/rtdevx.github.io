@@ -17,7 +17,6 @@ series: AWS Solution Architect
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 
----
 ## Public vs Private vs Elastic IP
 
 - **Public IP**

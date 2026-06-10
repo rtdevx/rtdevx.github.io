@@ -19,7 +19,6 @@ This section focuses only on the **Associate‑level additions**.
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 
----
 ## Scalability & High Availability
 
 [Scalability]({{< ref "8-scalability-high-availability/#scalability" >}}) means an application or system can handle increased load by adapting.
