@@ -123,7 +123,7 @@ These file systems are designed to coordinate locks, manage concurrent writes, a
 	- **Cloud Practitioner:** [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}})
 	- **Cloud Practitioner:** [FSx]({{< ref "6-storage/#amazon-fsx" >}})
 - **Cloud Practitioner:** [AMI]({{< ref "7-ami" >}})
-- EC2
+- **EC2**
 	- **Cloud Practitioner:** [EC2 (CLF-C02)]({{< ref "4-ec2" >}})
 	- **Solutions Architect:** [EC2 (SAA-C03)]({{< ref "4-ec2-saac03" >}})
 ## >> Disclaimer <<
