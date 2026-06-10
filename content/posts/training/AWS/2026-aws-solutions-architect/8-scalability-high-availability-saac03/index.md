@@ -34,11 +34,15 @@ This section focuses only on the **Associate‑level additions**.
 
 📡 _Source:_ [High availability and scalability on AWS](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html)
 
+---
+
 {{< lead >}}
 
 **Scalability** is about <font color=#C7EB25>handling increasing load</font>, while **High Availability** is about <font color=#C7EB25>staying operational</font> when parts of the system fail.
 
 {{< /lead >}}
+
+---
 ## Elastic Load Balancing
 
 ℹ️ For more information about **Load Balancing**, refer to [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
