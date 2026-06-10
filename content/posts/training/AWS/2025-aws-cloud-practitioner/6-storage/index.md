@@ -77,6 +77,22 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - Highly-available, scalable, <font color=#EB4925>expensive</font> (3x gp2 EBS), pay per use, no capacity planning
 - Encryption at rest using **KMS**
 - Scales automatically, <font color=#EBAC25>pay-per-use</font>, no capacity planning
+### EFS – Performance & Storage Classes
+
+#### EFS Scale
+- Supports <font color=#EBAC25>thousands of concurrent NFS clients</font> and <font color=#EBAC25>10+ GB/s</font> of throughput    
+- Automatically grows to <font color=#EBAC25>petabyte‑scale</font> as your data increases    
+#### Performance Modes _(chosen at file system creation)_
+
+- **General Purpose (default)** — best for latency‑sensitive workloads (web servers, CMS, etc.)    
+- **Max I/O** — higher latency but higher throughput and massive parallelism (big data, media processing)
+#### Throughput Modes
+
+- **Bursting** — baseline of <font color=#EBAC25>50 MiB/s per TB</font>, with bursts up to <font color=#EBAC25>100 MiB/s</font>
+- **Provisioned** — set a fixed throughput regardless of storage size (e.g., **1 GiB/s** even with 1 TB stored)    
+- **Elastic** — automatically adjusts throughput based on workload demand    
+    - Up to <font color=#EBAC25>3 GiB/s reads</font> and <font color=#EBAC25>1 GiB/s writes</font>
+    - Ideal for <font color=#EB4925>unpredictable or spiky workloads</font>
 ### EFS Infrequent Access (EFS-IA)
 
 - Storage class that is cost-optimized for files not accessed every day
