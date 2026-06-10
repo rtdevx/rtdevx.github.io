@@ -38,7 +38,8 @@ This section focuses only on the **Associate‑level additions**.
 
 {{< lead >}}
 
-**Scalability** is about <font color=#C7EB25>handling increasing load</font>, while **High Availability** is about <font color=#C7EB25>staying operational</font> when parts of the system fail.
+**Scalability** » <font color=#C7EB25>handling increasing load</font>.<br>
+**High Availability** » <font color=#C7EB25>staying operational</font> when parts of the system fail.
 
 {{< /lead >}}
 
