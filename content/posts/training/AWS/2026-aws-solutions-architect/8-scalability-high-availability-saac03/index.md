@@ -150,7 +150,16 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 ℹ️ For more high-level information about **Load Balancing**, refer to [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 ## Auto Scaling Groups
 
+### ASG Metrics
 
+- **CPUUtilization** - average CPU usage across all instances    
+- **RequestCountPerTarget** - ensures each instance receives a stable number of requests
+- **NetworkIn / NetworkOut** - useful when the application is **network‑bound**
+- **Custom CloudWatch metrics** - any application‑specific metric you publish for scaling decisions
+### ASG Scaling Cooldown
+
+- After a scaling activity happens, you are in the cooldown period (default 300 seconds)
+- During the cooldown period, the ASG will not launch or terminate additional instances (<font color=#EBAC25>to allow for metrics to stabilize</font>)
 
 ℹ️ For more high-level information about **Auto Scaling Groups**, refer to [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 

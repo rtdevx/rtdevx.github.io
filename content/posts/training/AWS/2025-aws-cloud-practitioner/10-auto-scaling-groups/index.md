@@ -13,6 +13,8 @@ series: AWS Cloud Practitioner
 
 **Auto Scaling Group** uses **Auto Scaling** features such as **health check replacements** and **scaling policies**.
 
+ℹ️ Additional, **Solutions-Architect** level coverage: [Auto Scaling Groups (SAA-C03)]({{< ref "8-scalability-high-availability-saac03/#auto-scaling-groups" >}})
+
 ---
 
 {{< youtube fwfkSxb1T-s >}}
@@ -56,6 +58,8 @@ _AWS EC2 Auto Scaling : Step By Step Tutorial_
 			- Example: increase the min. capacity to 10 at 5pm on Fridays
 	- **Predictive Scaling**
 		- Uses Machine Learning to predict the load
+		
+		![](./assets/AWS_ASG_Predictive_Scaling.png)
 
 ---
 ## >> Sources <<

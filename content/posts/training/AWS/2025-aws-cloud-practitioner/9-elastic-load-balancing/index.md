@@ -13,7 +13,7 @@ series: AWS Cloud Practitioner
 
 <font color=#EB4925>It monitors the health of its registered targets and routes the traffic only to healthy targets.</font>
 
-ℹ️ **Solutions-Architect** level coverage: [Elastic Load Balancing (SAA-C03)]({{< ref "8-scalability-high-availability-saac03/#elastic-load-balancing" >}})
+ℹ️ Additional, **Solutions-Architect** level coverage: [Elastic Load Balancing (SAA-C03)]({{< ref "8-scalability-high-availability-saac03/#elastic-load-balancing" >}})
 
 ---
 
