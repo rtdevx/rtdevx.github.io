@@ -98,14 +98,6 @@ This section focuses only on the **Associate‑level additions**.
     - Cookie names: **AWSALB** (ALB) and **AWSELB** (CLB)
 ### Cross-Zone Load Balancing
 
-{{< alert "circle-info" >}}
-
-**Cross‑Zone Load Balancing** lets a load balancer distribute traffic evenly across **all** registered targets in **all** Availability Zones, rather than only the targets in the AZ where the request was received. 
-
-This helps smooth out uneven workloads and prevents situations where one AZ becomes overloaded simply because it has fewer instances. <font color=#EBAC25>It improves overall load distribution and resilience, especially in multi‑AZ architectures</font>.
-
-{{< /alert >}}
-
 ![](./assets/AWS_HA_Cross_Zone_Load_Balancing.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 - **Application Load Balancer**
@@ -114,6 +106,14 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 - **Network Load Balancer & Gateway Load Balancer**
 	- Disabled by default
 	- You pay charges ($) for inter AZ data if enabled
+
+{{< alert "circle-info" >}}
+
+**Cross‑Zone Load Balancing** lets a load balancer distribute traffic evenly across **all** registered targets in **all** Availability Zones, rather than only the targets in the AZ where the request was received. 
+
+This helps smooth out uneven workloads and prevents situations where one AZ becomes overloaded simply because it has fewer instances. <font color=#EBAC25>It improves overall load distribution and resilience, especially in multi‑AZ architectures</font>.
+
+{{< /alert >}}
 ### SSL/TLS
 
 - Load balancers use **X.509 SSL/TLS certificates**    
@@ -141,16 +141,18 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
     
 - **SAN** is a **certificate feature**: a _single certificate_ can list multiple valid hostnames (Subject Alternative Names), allowing one certificate to cover several domains.
     
-**In short:** 
-**SNI** = client tells the server which certificate to use
+**In short:**<br><br> 
+**SNI** = client tells the server which certificate to use<br>
 **SAN** = one certificate that is valid for multiple hostnames
 
 {{< /alert >}}
 
-ℹ️ For more information about **Load Balancing**, refer to [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
+ℹ️ For more high-level information about **Load Balancing**, refer to [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 ## Auto Scaling Groups
 
-ℹ️ For more information about **Auto Scaling Groups**, refer to [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
+
+
+ℹ️ For more high-level information about **Auto Scaling Groups**, refer to [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 
 ---
 ## >> Sources <<
