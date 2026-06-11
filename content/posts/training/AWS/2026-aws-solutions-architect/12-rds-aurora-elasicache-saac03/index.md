@@ -51,7 +51,7 @@ series: AWS Solution Architect
 - A read replica can be **promoted to a standalone primary database** (i.e., becomes its own **read/write** DB instance)    
 - Applications must update their **connection strings** to make use of read replicas
 
-![](./assets/AWS_RDS_Replicas.jpg)
+![](./assets/AWS_RDS_Replicas.jpg "© Amazon AWS, [Amazon RDS read replicas](https://aws.amazon.com/rds/features/read-replicas/)")
 
 {{< alert "circle-info" >}}
 
@@ -99,9 +99,11 @@ You can switch an RDS instance from Single‑AZ to Multi‑AZ **with zero downti
 {{< /lead >}}
 ### High Availability and Read Scaling
 
-![](./assets/AWS_DB_Aurora_Read_Scaling.png)
+![](./assets/AWS_DB_Aurora_Read_Scaling.png "© Amazon AWS, [High availability for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)")
 
 **Aurora** keeps **six copies of your data across three AZs**, needing **4 copies for writes** and **3 for reads**, uses **self‑healing, peer‑to‑peer replication**, and stripes storage across hundreds of volumes. A single Aurora writer handles writes, failover to a new writer happens in **under 30 seconds**, up to **15 read replicas** can serve reads, and **cross‑region replication** is supported.
+
+<font color=#EBAC25><i>More info:</i></font> [High availability for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)
 ### Aurora DB Cluster
 
 ![](./assets/AWS_DB_Aurora_Cluster.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
@@ -274,6 +276,7 @@ An Aurora global database consists of one _primary_ AWS Region where your data i
 	- [RDS Backups]([https://aws.amazon.com/rds/features/multi-az/](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html))
 - [Amazon Aurora](https://aws.amazon.com/rds/aurora/)
 	- [Amazon Aurora features](https://aws.amazon.com/rds/aurora/features/)
+	- [High availability for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)
 	- [Using Aurora serverless](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html)
 	- [Using Amazon Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)
 	- [Overview of backing up and restoring an Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Backups.html)
