@@ -19,7 +19,7 @@ series: AWS Solution Architect
 
 ## RDS
 
-ℹ️ **Cloud Practitioner:** [Amazon RDS]({{< ref "12-databases/#amazon-rds" >}})
+🏅 **Cloud Practitioner-level:** [Amazon RDS]({{< ref "12-databases/#amazon-rds" >}})
 
 - **RDS** stands for _Relational Database Service_
 	- Fully managed service for SQL‑based relational databases
@@ -88,7 +88,7 @@ You can switch an RDS instance from Single‑AZ to Multi‑AZ **with zero downti
 	- Restore the backup file onto a new RDS instance running MySQL
 ## Aurora
 
-ℹ️ **Cloud Practitioner:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})
+🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})
 
 {{< lead >}}
 
@@ -210,7 +210,7 @@ An Aurora global database consists of one _primary_ AWS Region where your data i
 <font color=#EBAC25><i>More info:</i></font> [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)
 ## ElastiCache
 
-ℹ️ **Cloud Practitioner:** [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
+🏅 **Cloud Practitioner-level:** [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
 
 <font color=#EBAC25><i>More info:</i></font>
 - [Amazon ElastiCache](https://aws.amazon.com/elasticache/)

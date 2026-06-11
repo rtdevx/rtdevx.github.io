@@ -29,7 +29,7 @@ Data is typically structured across multiple tables, which can be joined togethe
 ## RDS and Aurora
 ### Amazon RDS
 
-ℹ️ RDS **Solutions Architect Associate level extension:** [Amazon RDS]({{< ref "12-rds-aurora-elasicache-saac03/#rds" >}}).
+🏅 **Solutions Architect Associate level extension:** [Amazon RDS]({{< ref "12-rds-aurora-elasicache-saac03/#rds" >}}).
 
 <font color=#EBAC25>RDS</font> stands for <font color=#EBAC25>Relational Database Service</font>. It is a managed DB service.
 
@@ -61,7 +61,7 @@ It allows creating databases in the cloud that are managed by AWS:
 _Source:_ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
 ### Amazon Aurora
 
-ℹ️ Aurora's **Solutions Architect Associate level extension:** [Amazon Aurora]({{< ref "12-rds-aurora-elasicache-saac03/#aurora" >}}).
+🏅 **Solutions Architect Associate level extension:** [Amazon Aurora]({{< ref "12-rds-aurora-elasicache-saac03/#aurora" >}}).
 
 - Aurora is proprietary technology from AWS (not open sourced)
 - PostgreSQL and MySQL are both supported
@@ -104,7 +104,7 @@ _More:_ [Configuring and managing a Multi-AZ deployment for Amazon RDS](https://
 ## Other Database Types
 ### <font color=#EBAC25>Amazon ElastiCache</font>
 
-ℹ️ **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}).
+🏅 **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}).
 
 - The same way **RDS** is to get **managed Relational Databases**, **ElastiCache** is to get managed <font color=#EBAC25>Redis</font> or <font color=#EBAC25>Memcached</font>.
 - Caches are <font color=#C7EB25>in-memory databases</font> with high performance and low latency
