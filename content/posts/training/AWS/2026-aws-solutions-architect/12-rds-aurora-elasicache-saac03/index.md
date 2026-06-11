@@ -86,6 +86,8 @@ You can switch an RDS instance from Single‑AZ to Multi‑AZ **with zero downti
 	- Create a backup of your on-premises database
 	- Store it on Amazon S3 (object storage)
 	- Restore the backup file onto a new RDS instance running MySQL
+
+<font color=#EBAC25><i>More info:</i></font> [RDS Backups]([https://aws.amazon.com/rds/features/multi-az/](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html))
 ## Aurora
 
 🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})
@@ -269,6 +271,7 @@ An Aurora global database consists of one _primary_ AWS Region where your data i
 
 - [Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 	- [Amazon RDS multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
+	- [RDS Backups]([https://aws.amazon.com/rds/features/multi-az/](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html))
 - [Amazon Aurora](https://aws.amazon.com/rds/aurora/)
 	- [Amazon Aurora features](https://aws.amazon.com/rds/aurora/features/)
 	- [Using Aurora serverless](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html)
