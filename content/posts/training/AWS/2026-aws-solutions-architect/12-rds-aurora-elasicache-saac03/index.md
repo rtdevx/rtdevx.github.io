@@ -99,11 +99,7 @@ You can switch an RDS instance from Single‑AZ to Multi‑AZ **with zero downti
 
 ![](./assets/AWS_DB_Aurora_Read_Scaling.png)
 
-{{< lead >}}
-
-Aurora keeps **six copies of your data across three AZs**, needing **4 copies for writes** and **3 for reads**, uses **self‑healing, peer‑to‑peer replication**, and stripes storage across hundreds of volumes. A single Aurora writer handles writes, failover to a new writer happens in **under 30 seconds**, up to **15 read replicas** can serve reads, and **cross‑region replication** is supported.
-
-{{< /lead >}}
+**Aurora** keeps **six copies of your data across three AZs**, needing **4 copies for writes** and **3 for reads**, uses **self‑healing, peer‑to‑peer replication**, and stripes storage across hundreds of volumes. A single Aurora writer handles writes, failover to a new writer happens in **under 30 seconds**, up to **15 read replicas** can serve reads, and **cross‑region replication** is supported.
 ### Aurora DB Cluster
 
 ![](./assets/AWS_DB_Aurora_Cluster.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
@@ -122,14 +118,14 @@ Aurora keeps **six copies of your data across three AZs**, needing **4 copies fo
 <font color=#EBAC25><i>More info:</i></font> [Amazon Aurora features](https://aws.amazon.com/rds/aurora/features/)
 ### Aurora Replicas - Auto Scaling
 
-![](./assets/AWS_DB_Aurora_Autoscaling.png)
+![](./assets/AWS_DB_Aurora_Autoscaling.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### Aurora – Custom Endpoints
 
 - Define a subset of Aurora Instances as a Custom Endpoint
 - <font color=#EBAC25>Example:</font> Run analytical queries on specific replicas
 - The Reader Endpoint is generally not used after defining Custom Endpoints
 
-![](./assets/AWS_DB_Aurora_Custom_Endpoints.png)
+![](./assets/AWS_DB_Aurora_Custom_Endpoints.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### Aurora Serverless
 
 - Automated database instantiation and <font color=#EBAC25>auto scaling based on actual usage</font>
@@ -247,7 +243,7 @@ An Aurora global database consists of one _primary_ AWS Region where your data i
 - The user hits another instance of our application
 - The instance retrieves the data and the user is already logged in
 
-![](./assets/AWS_DB_Elasticache_User_Session_Store.png)
+![](./assets/AWS_DB_Elasticache_User_Session_Store.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### Redis vs Memcached
 
 | REDIS                                                           | MEMCACHED                                      |
@@ -266,7 +262,7 @@ An Aurora global database consists of one _primary_ AWS Region where your data i
 
 ![](./assets/AWS_DB_Elasticache_Patterns.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
-> Quote: There are only two hard things in Computer Science: cache invalidation and naming things
+> <font color=#EBAC25>There are only two hard things in Computer Science:</font> cache invalidation and naming things.
 
 ---
 ## >> Sources <<
