@@ -29,7 +29,7 @@ series: AWS Solution Architect
 ![](./assets/AWS_Route53_URL.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### How DNS Works
 
-![](AWS_Route53_How_DNS_Works.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+![](./assets/AWS_Route53_How_DNS_Works.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Amazon Route 53
 
 🏅 **Cloud Practitioner-level:** [Route 53]({{< ref "15-aws-global-infrastructure/#route53" >}})
@@ -110,7 +110,7 @@ A hosted zone and the corresponding domain have the same name. There are two typ
 - <font color=#C7EB25>Geolocation</font> Routing Policy - <font color=#EB4925>Routing based specifically on Geolocation</font>
 - <font color=#C7EB25>IP-based</font> Routing Policy - <font color=#EB4925>Route the traffic based on the IP address originates from</font>
 
-_More on Routing Policies:_ [Choosing a routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
+<font color=#EBAC25><i>More info:</i></font> [Choosing a routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
 
 ---
 ## >> Sources <<
