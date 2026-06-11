@@ -87,6 +87,7 @@ series: AWS Solution Architect
 | Less traffic on Route 53  | More traffic on Route 53 ($$)      |
 | Possibly outdated records | Records are outdated for less time |
 |                           | Easy to change records             |
+
 <font color=#EB4925>Except for Alias records, TTL is mandatory for each DNS record.</font>
 ## Route 53 - Hosted Zones
 
@@ -198,6 +199,8 @@ The primary and secondary records can route traffic to anything from an Amazon S
 {{< /lead >}}
 
 ![](./assets/AWS_Route53_Health_Checks.png "© Amazon AWS, [How Amazon Route 53 checks the health of your resources](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html)")
+
+
 
 <font color=#EBAC25><i>More info:</i></font> 
 - [How Amazon Route 53 checks the health of your resources](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html)
