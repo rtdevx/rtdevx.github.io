@@ -1,5 +1,5 @@
 ---
-title: "Solutions Architect: route 53"
+title: "Solutions Architect: Route 53"
 date: 2026-04-06
 description: Associate-level extension of the `Route53` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `Route53` Section from AWS Cloud Practitioner Series.
