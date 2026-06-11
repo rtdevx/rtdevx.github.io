@@ -249,7 +249,6 @@ The primary and secondary records can route traffic to anything from an Amazon S
 - [How Amazon Route 53 checks the health of your resources](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html)
 - [Types of Amazon Route 53 health checks](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-types.html)
 
-
 ---
 ## >> Sources <<
 

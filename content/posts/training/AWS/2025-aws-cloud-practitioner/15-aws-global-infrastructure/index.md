@@ -31,6 +31,8 @@ _AWS Global Infrastructure Overview - Regions, Availability Zones, Edge Location
 ---
 ## Route53
 
+🏅 **Solutions Architect Associate level extension:** [Route 53]({{< ref "15-route53-saac03" >}}).
+
 **Route53** is managed **DNS**.
 
 ![](./assets/AWS_Route53_1.png)
