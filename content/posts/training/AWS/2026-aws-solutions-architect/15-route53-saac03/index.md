@@ -11,7 +11,7 @@ categories:
 series: AWS Solution Architect
 ---
 ---
-ℹ️ **Associate‑level extension** of the [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
+ℹ️ **Associate‑level extension** of the [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key **Route53** concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
 | <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
