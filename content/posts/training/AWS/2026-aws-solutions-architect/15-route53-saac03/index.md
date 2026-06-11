@@ -200,7 +200,50 @@ The primary and secondary records can route traffic to anything from an Amazon S
 
 ![](./assets/AWS_Route53_Health_Checks.png "© Amazon AWS, [How Amazon Route 53 checks the health of your resources](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html)")
 
+- HTTP Health Checks are only for public resources
+- Health Check => Automated DNS Failover:
+	1. Health checks that monitor an endpoint (application, server, other AWS resource)
+	2. Health checks that monitor other health checks (Calculated Health Checks)
+	3. Health checks that monitor CloudWatch Alarms (full control !!) – e.g., throttles of DynamoDB, alarms on RDS, custom metrics, … (helpful for private resources)	
+- Health Checks are integrated with CloudWatch metrics
+### Monitor an Endpoint
 
+- **About 15 global health checkers will check the endpoint health**
+	- Healthy/Unhealthy Threshold – 3 (default)
+	- Interval – 30 sec (can set to 10 sec – higher cost)
+	- Supported protocol: HTTP, HTTPS and TCP
+	- If > 18% of health checkers report the endpoint is healthy, Route 53 considers it Healthy. Otherwise, it’s Unhealthy
+- Health Checks pass only when the endpoint responds with the 2xx and 3xx status codes
+- Health Checks can be setup to pass / fail based on the text in the first 5120 bytes of the response
+- Configure you router/firewall to allow incoming requests from Route 53 Health Checkers
+### Calculated Health Checks
+
+- Combine the results of multiple Health Checks into a single Health Check
+- You can use OR, AND, or NOT
+- Can monitor up to 256 Child Health Checks
+- Specify how many of the health checks need to pass to make the parent pass
+- <font color=#EBAC25>Usage:</font> perform maintenance to your website without causing all health checks to fail
+### Private Hosted Zones
+
+- Route 53 health checkers are outside the VPC
+- They can’t access private endpoints (private VPC or on-premises resource)
+- You can create a **CloudWatch Metric** and associate a **CloudWatch Alarm**, then create a Health Check that checks the alarm itself
+
+![](./assets/AWS_Route53_Health_Checks_Calculated.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Hybrid DNS
+
+- Route 53 Resolver automatically answers DNS queries for EC2 internal hostnames, Private Hosted Zone records, and public DNS records    
+- Supports <font color=#EBAC25>hybrid DNS</font>, <font color=#C7EB25>allowing resolution between your VPC (via Route 53 Resolver) and external networks</font>
+- External networks can include other VPCs (including peered VPCs) or on‑premises environments connected through Direct Connect or VPN
+## Resolver Endpoints
+
+**Inbound Endpoint** - allows your DNS Resolvers to resolve domain names for AWS resources (e.g., EC2 instances) and records in Private Hosted Zones.
+
+![](./assets/AWS_Route53_Endpoint_Inbound.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+**Outbound Endpoint** - Route 53 Resolver forwards DNS queries to your DNS Resolvers.
+
+![](./assets/AWS_Route53_Endpoint_Outbound.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 <font color=#EBAC25><i>More info:</i></font> 
 - [How Amazon Route 53 checks the health of your resources](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html)
