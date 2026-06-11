@@ -108,9 +108,87 @@ A hosted zone and the corresponding domain have the same name. There are two typ
 - <font color=#C7EB25>Latency</font> Routing Policy - <font color=#EB4925>Based on latency</font> - minimizing the latency between user and the server sending the traffic that is geographically (latency-based) closer to the user
 - <font color=#C7EB25>Failover</font> Routing Policy - <font color=#EB4925>Disaster Recovery</font> ([DR]({{< ref "23-other-services/#disaster-recovery-strategies" >}})) - based on Health Checks
 - <font color=#C7EB25>Geolocation</font> Routing Policy - <font color=#EB4925>Routing based specifically on Geolocation</font>
+- <font color=#C7EB25>Geoproximity</font> Routing Policy - <font color=#EB4925>based on the geographic location of your users and your resources</font> - it routes traffic to the closest resource that is available, <font color=#EB4925>can be "biased"</font>
 - <font color=#C7EB25>IP-based</font> Routing Policy - <font color=#EB4925>Route the traffic based on the IP address originates from</font>
 
 <font color=#EBAC25><i>More info:</i></font> [Choosing a routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
+### Simple Routing
+
+- Typically, **route traffic to a single resource**
+- Can specify **multiple values in the same record**
+- <font color=#EBAC25>If multiple values are returned, a random one is chosen by the client</font>
+- When Alias enabled, specify only one AWS resource
+- <font color=#EB4925>Can’t be associated with Health Checks</font>
+
+![](./assets/AWS_Route53_Routing_Simple.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+<font color=#EBAC25><i>More info:</i></font> [Simple Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-simple.html)
+### Weighted Routing
+
+- Control the % of the requests that go to each specific resource
+- DNS records must have the same name and type
+- <font color=#C7EB25>Can be associated with Health Checks</font>
+- <font color=#EBAC25>Use cases:</font> load balancing between regions, testing new application versions…
+
+{{< alert "circle-info" >}}
+
+- Assign a weight of 0 to a record to stop sending traffic to a resource
+- If all records have weight of 0, then all records will be returned equally
+
+{{< /alert >}}
+
+<font color=#EBAC25><i>More info:</i></font> [Weighted routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-weighted.html)
+### Latency-based Routing
+
+- Redirect to the resource that has the least latency close to us
+- Super <font color=#EBAC25>helpful when latency for users is a priority</font>
+- Latency is based on traffic between users and AWS Regions
+- <font color=#EBAC25>Germany users may be directed to the US</font> (if that’s the lowest latency)
+- <font color=#C7EB25>Can be associated with Health Checks</font> (has a failover capability)
+
+<font color=#EBAC25><i>More info:</i></font> [Latency-based routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-latency.html)
+### Failover Routing
+
+**Failover routing** lets you route traffic to a resource when the resource is **healthy** or to a different resource when the first resource is **unhealthy**. 
+
+The primary and secondary records can route traffic to anything from an Amazon S3 bucket that is configured as a website to a complex tree of records. 
+
+![](./assets/AWS_Route53_Routing_Failover.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+<font color=#EBAC25><i>More info:</i></font> 
+- [Failover routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-failover.html)
+- [Active-passive failover](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-types.html#dns-failover-types-active-passive)
+### Geolocation Routing
+
+- Different from Latency-based!
+- <font color=#EBAC25>This routing is based on user location</font>
+- Specify location by Continent, Country or by US State (if there’s overlapping, most precise location selected)
+- Should create a “Default” record (in case there’s no match on location)
+- <font color=#EBAC25>Use cases:</font> website localization, restrict content distribution, load balancing, …
+- <font color=#C7EB25>Can be associated with Health Checks</font>
+
+<font color=#EBAC25><i>More info:</i></font> [Geolocation Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html)
+### Geoproximity Routing
+
+- Route traffic to your resources based on the geographic location of users and resources
+- Ability to shift more traffic to resources based on the defined bias
+- To change the size of the geographic region, specify bias values:
+	- To expand (1 to 99) - more traffic to the resource
+	- To shrink (-1 to -99) - less traffic to the resource
+
+ <font color=#EB4925>You must use Route 53 Traffic Flow to use this feature</font>.
+
+![](./assets/AWS_Route53_Routing_Geoproximity.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+<font color=#EBAC25><i>More info:</i></font> [Geoproximity Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geoproximity.html)
+### IP-based Routing
+
+- Routing is <font color=#EBAC25>based on clients’ IP addresses</font>
+- You provide a list of CIDRs for your clients and the corresponding endpoints/locations (user-IP-to-endpoint mappings)
+- <font color=#EBAC25>Use cases:</font> Optimize performance, reduce network costs…
+- <font color=#EBAC25>Example:</font> route end users from a particular ISP to a specific endpoint
+
+<font color=#EBAC25><i>More info:</i></font> [IP-based Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-ipbased.html)
 
 ---
 ## >> Sources <<
@@ -120,6 +198,14 @@ A hosted zone and the corresponding domain have the same name. There are two typ
 - [What is Amazon Route 53?](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
 - [Working with hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html)
 - [Choosing a routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
+	- [Simple Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-simple.html)
+	- [Weighted routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-weighted.html)
+	- [Latency-based routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-latency.html)
+	- [Failover routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-failover.html)
+		- [Active-passive failover](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-types.html#dns-failover-types-active-passive)
+	- [Geolocation Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html)
+	- [Geoproximity Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geoproximity.html)
+	- [IP-based Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-ipbased.html)
 ## >> References <<
 
 - **Cloud Practitioner:** [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}})
