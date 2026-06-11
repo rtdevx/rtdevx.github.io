@@ -34,9 +34,9 @@ series: AWS Solution Architect
 
 🏅 **Cloud Practitioner-level:** [Route 53]({{< ref "15-aws-global-infrastructure/#route53" >}})
 
-{{< lead >}}
+
 **Route 53** is a fully managed, scalable, **authoritative**[^Ref1] DNS service that also acts as a domain registrar and can perform health checks on your resources.
-{{< /lead >}}
+
 
 [^Ref1]: **Authoritative** means the DNS server is the _official source of truth_ for a domain — it holds and serves the real DNS records, and you (as the domain owner) are allowed to create, change, or delete those records directly.
 ## Route 53 - Records
