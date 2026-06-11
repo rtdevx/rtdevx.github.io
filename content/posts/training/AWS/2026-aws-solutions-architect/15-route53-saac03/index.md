@@ -191,6 +191,17 @@ The primary and secondary records can route traffic to anything from an Amazon S
 <font color=#EBAC25><i>More info:</i></font> [IP-based Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-ipbased.html)
 ## Route 53 - Health Checks
 
+{{< lead >}}
+
+**Amazon Route 53 health checks monitor the health of your resources** such as web servers and email servers. You can optionally configure **Amazon CloudWatch alarms** for your health checks, so that you receive notification when a resource becomes unavailable.
+
+{{< /lead >}}
+
+![](./assets/AWS_Route53_Health_Checks.png "© Amazon AWS, [How Amazon Route 53 checks the health of your resources](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html)")
+
+<font color=#EBAC25><i>More info:</i></font> 
+- [How Amazon Route 53 checks the health of your resources](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html)
+- [Types of Amazon Route 53 health checks](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-types.html)
 
 
 ---
@@ -209,6 +220,9 @@ The primary and secondary records can route traffic to anything from an Amazon S
 	- [Geolocation Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html)
 	- [Geoproximity Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geoproximity.html)
 	- [IP-based Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-ipbased.html)
+- Health Checks
+	- [How Amazon Route 53 checks the health of your resources](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html)
+	- [Types of Amazon Route 53 health checks](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks-types.html)
 ## >> References <<
 
 - **Cloud Practitioner:** [Route53]({{< ref "15-aws-global-infrastructure/#route53" >}})
