@@ -2,3 +2,5 @@
   tags = "tags"
   categories = "categories"
   series = "series"
+[params]
+  customHead = true  
