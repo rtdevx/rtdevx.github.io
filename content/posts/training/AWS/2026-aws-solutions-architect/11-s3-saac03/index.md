@@ -143,15 +143,16 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 
 {{< /alert >}}
 
-| Feature            | SSE-S3                                | SSE-KMS                                                                | SSE-C                                                    |
-| ------------------ | ------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------- |
-| Who owns the keys? | AWS (S3 owns & manages all keys)      | AWS KMS owns keys, but you can own/manage Customer‑Managed Keys (CMKs) | You (customer provides and fully owns the keys)          |
-| Key storage        | Managed internally by S3              | Stored in AWS KMS                                                      | Not stored by AWS                                        |
-| Key rotation       | Automatic (AWS‑controlled)            | Optional automatic rotation for CMKs                                   | You must rotate keys yourself                            |
-| Access control     | Basic S3 IAM permissions              | Fine‑grained IAM + KMS key policies                                    | Controlled entirely by you                               |
-| Audit logging      | No per‑object key usage logs          | Full CloudTrail audit of every key request                             | No AWS audit logs (AWS never sees the key)               |
-| Performance        | Fastest (no KMS calls)                | Slightly slower due to KMS API calls                                   | Similar to SSE‑S3, but you must supply keys per request  |
-| Use cases          | Default encryption, general workloads | Compliance, regulated workloads, strict access control                 | Bring‑your‑own‑key requirements, external key management |
+| Feature                                       | SSE-S3                                   | SSE-KMS                                                                | SSE-C                                                                     |
+| --------------------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| <font color=#EBAC25>Who owns the keys?</font> | AWS (S3 owns & manages all keys)         | AWS KMS owns keys, but you can own/manage Customer‑Managed Keys (CMKs) | You (customer provides and fully owns the keys)                           |
+| <font color=#EBAC25>Key storage</font>        | Managed internally by S3                 | Stored in AWS KMS                                                      | Not stored by AWS                                                         |
+| <font color=#EBAC25>Key rotation</font>       | Automatic (AWS‑controlled)               | Optional automatic rotation for CMKs                                   | You must rotate keys yourself                                             |
+| <font color=#EBAC25>Access control</font>     | Basic S3 IAM permissions                 | Fine‑grained IAM + KMS key policies                                    | Controlled entirely by you                                                |
+| <font color=#EBAC25>Audit logging</font>      | No per‑object key usage logs             | Full CloudTrail audit of every key request                             | No AWS audit logs (AWS never sees the key)                                |
+| <font color=#EBAC25>Performance</font>        | Fastest (no KMS calls)                   | Slightly slower due to KMS API calls                                   | Similar to SSE‑S3, but you must supply keys per request                   |
+| <font color=#EBAC25>Must set header</font>    | "x-amz-server-side-encryption": "AES256" | "x-amz-server-side-encryption": "aws:kms"                              | Encryption key must provided in HTTP headers, for every HTTP request made |
+| <font color=#EBAC25>Use cases</font>          | Default encryption, general workloads    | Compliance, regulated workloads, strict access control                 | Bring‑your‑own‑key requirements, external key management                  |
 
 
 ---
