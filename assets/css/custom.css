@@ -380,3 +380,8 @@ My Samples
   --color-secondary-950:10, 10, 10
 }
 */
+/*Right Post Menu Highlight */
+.toc-active {
+  color: var(--color-primary-600);
+  font-weight: 600;
+}
