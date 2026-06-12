@@ -10,8 +10,6 @@ categories:
   - AWS
 series: AWS Solution Architect
 ---
----
-ℹ️ **Associate‑level extension** of the [S3]({{< ref "11-s3" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key **S3** concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
 | <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -19,11 +17,11 @@ series: AWS Solution Architect
 
 ## S3 - Introduction
 
-ℹ️ Introduction to [S3]({{< ref "11-s3" >}}) has been covered thoroughly in [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. 
+ℹ️ **Associate‑level extension** of the [S3]({{< ref "11-s3" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key **S3** concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
 
 {{< lead >}}
 
-<center><b><font color=#C7EB25>Do not skip</font> the <font color=#EB4925>S3</font> <font color=#EBAC25>foundational</font> <font color=#EB4925>section!</font></b></center><br><br>
+<center><b><font color=#C7EB25>Do not skip</font> the <font color=#EB4925>S3</font> <font color=#EBAC25>foundational</font> <font color=#EB4925>section!</font></b></center><br>
 <center><small><small>*check link below.</small></small></center>
 
 {{< /lead >}}
