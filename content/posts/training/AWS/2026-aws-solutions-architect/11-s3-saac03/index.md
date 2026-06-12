@@ -49,7 +49,7 @@ series: AWS Solution Architect
 	- Can be used to delete old versions of files (if versioning is enabled)
 	- Can be used to delete incomplete Multi-Part uploads
 	
-Rules can be created for a certain prefix (example: _s3://mybucket/mp3/*_)
+Rules can be created for a certain prefix (<font color=#EBAC25>example:</font> _s3://mybucket/mp3/*_)
 Rules can be created for certain objects Tags (<font color=#EBAC25>example:</font> Department: Finance)
 #### Storage Class Analysis
 
@@ -72,6 +72,8 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 - You can define as many S3 event notifications as needed
 
 ![](./assets/AWS_S3_Event_Notifications_Permissions.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+
 
 ---
 ## >> Sources <<
