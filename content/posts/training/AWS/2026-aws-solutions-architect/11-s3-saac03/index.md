@@ -212,7 +212,7 @@ If your workload is high‑volume, you can hit these limits and experience throt
 
 {{< lead >}}
 
-**Cross-Origin Resource Sharing** (CORS).
+{{< center >}}**Cross-Origin Resource Sharing** (CORS).{{< /center >}}
 
 {{< /lead >}}
 
