@@ -59,6 +59,14 @@ series: AWS Solution Architect
 	- You cannot create a CNAME at the **zone apex** (e.g., `example.com`), only at subdomains like `www.example.com`    
 - **NS** - defines the name servers for the hosted zone
 	- NS records determine how DNS traffic for the domain is routed
+#### Alias Records
+
+- Maps a hostname to an AWS resource    
+- Route 53-specific extension to standard DNS    
+- Automatically tracks changes to the resource’s underlying IPs    
+- Can be used at the **zone apex** (e.g., `example.com`), unlike CNAME    
+- Always implemented as an **A/AAAA** record for AWS targets    
+- <font color=#EB4925>TTL cannot be customised</font> (Route 53 manages it automatically)
 
 {{< alert "circle-info" >}}
 
@@ -69,17 +77,9 @@ series: AWS Solution Architect
 - **CNAME = standard DNS record**
 - **ALIAS = Route 53 extension that solves CNAME limitations**
 
-![](./assets/AWS_Route53_Alias_Records_Targets.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
-
 {{< /alert >}}
-#### Alias Records
 
-- Maps a hostname to an AWS resource    
-- Route 53-specific extension to standard DNS    
-- Automatically tracks changes to the resource’s underlying IPs    
-- Can be used at the **zone apex** (e.g., `example.com`), unlike CNAME    
-- Always implemented as an **A/AAAA** record for AWS targets    
-- <font color=#EB4925>TTL cannot be customised</font> (Route 53 manages it automatically)
+![](./assets/AWS_Route53_Alias_Records_Targets.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### Route 53 - Records TTL
 
 | High TTL – e.g., 24 hr    | Low TTL – e.g., 60 sec.            |
