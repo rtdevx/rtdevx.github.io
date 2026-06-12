@@ -144,7 +144,8 @@ AWS Topics more:Explanation
 
 - [GitHub - simplesteph/AWS-FAQ · GitHub](https://github.com/simplesteph/AWS-FAQ)
 - [Amazon AWS FAQ's](https://aws.amazon.com/faqs/)
-### Solutions Architect Resources
+
+ **Solutions Architect Resources:**
 
 - [Ultimate AWS Certified Solutions Architect Associate 2026](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03)
 - [AWS Certified Solutions Architect Associate Code & Slides](https://courses.datacumulus.com/downloads/certified-solutions-architect-pn9/)
