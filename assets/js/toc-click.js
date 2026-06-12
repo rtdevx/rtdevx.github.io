@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("TOC script loaded");
+
   const tocLinks = document.querySelectorAll("#tableOfContents a");
 
   tocLinks.forEach(link => {
