@@ -111,6 +111,7 @@ A hosted zone and the corresponding domain have the same name. There are two typ
 - <font color=#C7EB25>Geolocation</font> Routing Policy - <font color=#EB4925>Routing based specifically on Geolocation</font>
 - <font color=#C7EB25>Geoproximity</font> Routing Policy - <font color=#EB4925>based on the geographic location of your users and your resources</font> - it routes traffic to the closest resource that is available, <font color=#EB4925>can be "biased"</font>
 - <font color=#C7EB25>IP-based</font> Routing Policy - <font color=#EB4925>Route the traffic based on the IP address originates from</font>
+- <font color=#C7EB25>Multi-Value</font> Routing Policy - <font color=#EB4925>Route the traffic multiple resources</font>
 
 <font color=#EBAC25><i>More info:</i></font> [Choosing a routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
 ### Simple Routing
@@ -190,6 +191,13 @@ The primary and secondary records can route traffic to anything from an Amazon S
 - <font color=#EBAC25>Example:</font> route end users from a particular ISP to a specific endpoint
 
 <font color=#EBAC25><i>More info:</i></font> [IP-based Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-ipbased.html)
+### Multi-Value Routing
+
+- Use when **routing traffic to multiple resources**
+- **Route 53 return multiple values/resources**
+- Can be associated with Health Checks (return only values for healthy resources)
+- **Up to 8 healthy records** are returned for each Multi-Value query
+- Multi-Value is **not a substitute for having an ELB**
 ## Route 53 - Health Checks
 
 {{< lead >}}
