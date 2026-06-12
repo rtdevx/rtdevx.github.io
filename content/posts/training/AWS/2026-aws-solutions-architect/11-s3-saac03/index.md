@@ -153,6 +153,59 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 | <font color=#EBAC25>Performance</font>        | Fastest (no KMS calls)                   | Slightly slower due to KMS API calls                                   | Similar to SSE‑S3, but you must supply keys per request                   |
 | <font color=#EBAC25>Must set header</font>    | "x-amz-server-side-encryption": "AES256" | "x-amz-server-side-encryption": "aws:kms"                              | Encryption key must provided in HTTP headers, for every HTTP request made |
 | <font color=#EBAC25>Use cases</font>          | Default encryption, general workloads    | Compliance, regulated workloads, strict access control                 | Bring‑your‑own‑key requirements, external key management                  |
+#### SSE-S3
+
+- Uses encryption keys that are fully handled, managed, and owned by AWS    
+- Objects are encrypted on the server side before being stored    
+- Encryption algorithm is **AES‑256**    
+- Requires the header: `x-amz-server-side-encryption: AES256`    
+- Enabled by default for all new buckets and newly uploaded objects
+#### SSE-KMS
+
+- Uses encryption keys that are created, stored, and managed by **AWS KMS**    
+- Provides stronger controls: you can manage permissions and audit every key use through **CloudTrail**    
+- Objects are encrypted on the server side before being stored
+
+{{< alert "circle-info" >}}
+
+Using **SSE‑KMS** means every S3 upload triggers a **GenerateDataKey** call to KMS, and every download triggers a **Decrypt** call. These operations count toward your **KMS request-per‑second quotas** (which vary by region: 5,500 / 10,000 / 30,000 req/s). 
+
+If your workload is high‑volume, you can hit these limits and experience throttling. You can request a quota increase through the **Service Quotas** console.
+
+{{< /alert >}}
+#### SSE-C
+
+- Uses server‑side encryption with keys that are fully managed and controlled by the customer, outside of AWS    
+- Amazon S3 never stores or retains the encryption key you supply    
+- All requests must be sent over HTTPS
+
+{{< alert "circle-info" >}}
+
+**SSE‑C = Server‑Side Encryption with Customer‑Provided Keys.**
+
+**Where the keys live**
+
+- **AWS never stores SSE‑C keys.**    
+- **You store them yourself**, typically in:    
+    - Your own **on‑premises HSM**        
+    - A **third‑party key management system**        
+    - A **self‑hosted KMS** (HashiCorp Vault, Thales, Fortanix, etc.)        
+    - A **secure secrets manager** (1Password, Bitwarden, CyberArk, etc.)        
+    - A **custom encrypted database** or internal secrets vault        
+
+**How they are used**
+- For every **PUT** and **GET** request, you must send the key in the HTTPS request header.    
+- AWS uses the key **only in memory** to encrypt/decrypt the object.    
+- AWS immediately discards the key after the operation.    
+- If you lose the key, **the object is unrecoverable**.
+
+**Why SSE‑C exists**
+- Some organisations have compliance rules requiring:    
+    - **External key custody**        
+    - **Keys never stored or managed by AWS**
+    - **Full customer control of key lifecycle**
+
+{{< /alert >}}
 
 
 ---
