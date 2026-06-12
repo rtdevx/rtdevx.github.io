@@ -23,11 +23,11 @@ series: AWS Solution Architect
 
 {{< lead >}}
 
-<center><b><font color=#C7EB25>Do not skip</font> the <font color=#EBAC25>foundational</font> <font color=#EB4925>section!</font></b></center>
+<center><b><font color=#C7EB25>Do not skip</font> the <font color=#EB4925>S3</font> <font color=#EBAC25>foundational</font> <font color=#EB4925>section!</font></b></center>
 
 {{< /lead >}}
 
-‼️ _Note:_ [S3 Foundational]({{< ref "11-s3" >}})
+‼️ _Note:_ [S3 Foundational Section]({{< ref "11-s3" >}})
 ## S3 - Advanced
 
 ℹ️ Read more about [S3 Storage Classes]({{< ref "11-s3/#s3-storage-classes" >}}) in the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
