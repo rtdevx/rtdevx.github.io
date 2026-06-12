@@ -381,7 +381,7 @@ My Samples
 }
 */
 /*Right Post Menu Highlight */
-.toc-active {
+.toc-link-active {
   color: var(--color-primary-600);
   font-weight: 600;
 }
