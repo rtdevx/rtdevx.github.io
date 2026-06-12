@@ -26,7 +26,10 @@ series: AWS Solution Architect
 
 {{< /lead >}}
 
-‼️ _Note:_ [S3 Foundational Section]({{< ref "11-s3" >}})
+|     |                                                   |     |
+| --- | ------------------------------------------------- | --- |
+|     | ‼️ [S3 Foundational Section]({{< ref "11-s3" >}}) |     |
+
 ## S3 - Advanced
 
 ℹ️ Read more about [S3 Storage Classes]({{< ref "11-s3/#s3-storage-classes" >}}) in the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
