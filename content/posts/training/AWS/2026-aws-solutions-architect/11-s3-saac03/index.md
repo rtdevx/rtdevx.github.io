@@ -207,6 +207,38 @@ If your workload is high‑volume, you can hit these limits and experience throt
 
 {{< /alert >}}
 
+![](./assets/AWS_S3_HTTPS_Enforce.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### CORS
+
+{{< lead >}}
+
+**Cross-Origin Resource Sharing** (CORS).
+
+{{< /lead >}}
+
+- Origin = scheme (protocol) + host (domain) + port
+	- <font color=#EBAC25>example:</font> https://www.example.com (implied port is 443 for HTTPS, 80 for HTTP)
+- Web Browser based mechanism to allow requests to other origins while visiting the main origin
+- Same origin: http://example.com/app1 & http://example.com/app2
+- Different origins: http://www.example.com & http://other.example.com
+- The requests won’t be fulfilled unless the other origin allows for the requests, using CORS Headers (<font color=#EBAC25>example:</font> Access-Control-Allow-Origin)
+
+![](./assets/AWS_S3_CORS.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+{{< alert "circle-info" >}}
+- If a client makes a cross-origin request on our S3 bucket, we need to enable the correct CORS headers
+- It’s a popular exam question
+- You can allow for a specific origin or for * (all origins)
+{{< /alert >}}
+
+![](./assets/AWS_S3_CORS2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### MFA Delete
+
+- **MFA Delete** adds an extra security layer by requiring a one‑time MFA code before performing sensitive S3 actions    
+- MFA is required to **permanently delete object versions** and to **suspend versioning**    
+- MFA is _not_ required to **enable versioning** or **list deleted versions**    
+- MFA Delete only works when **Versioning is enabled**    
+- Only the **root account (bucket owner)** can turn MFA Delete on or off
 
 ---
 ## >> Sources <<
