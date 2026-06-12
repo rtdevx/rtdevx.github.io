@@ -239,12 +239,65 @@ If your workload is high‑volume, you can hit these limits and experience throt
 - MFA is _not_ required to **enable versioning** or **list deleted versions**    
 - MFA Delete only works when **Versioning is enabled**    
 - Only the **root account (bucket owner)** can turn MFA Delete on or off
+### S3 Access Logs
+
+S3 access logs let you record **every request** made to your bucket - whether allowed or denied, and regardless of which AWS account made it. Logs are delivered to another S3 bucket **in the same region**, where they can be analysed with tools like Athena, EMR, or external analytics systems. 
+
+The log format is documented by AWS: [Amazon S3 server access log format - Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html)
+### Pre-Signed URLs
+
+- Pre‑signed URLs can be generated via the S3 Console, AWS CLI, or SDKs    
+- Expiration limits:    
+    - **Console:** 1–720 minutes (up to 12 hours)        
+    - **CLI:** `--expires-in` (default 3600s, max 604800s ≈ 168 hours)        
+- Anyone using the URL inherits the **permissions of the creator** for GET/PUT    
+- <font color=#EBAC25>Common uses:</font>
+    - Give authenticated users temporary access to premium content        
+    - Dynamically generate download links for changing user lists        
+    - Allow temporary, controlled uploads to a specific S3 location
+### Glacier Vault Lock
+
+- Implements a **WORM (Write Once, Read Many)** model for immutable data    
+- You create a **Vault Lock policy** and then **lock** it so it cannot be changed or deleted    
+- Ensures strong compliance and long‑term data retention guarantees
+### Object Lock
+
+- Enforces a **WORM (Write Once, Read Many)** model to prevent object version deletion    
+- **Retention modes:**    
+    - **Compliance:** No one (not even root) can delete or shorten retention; fully immutable        
+    - **Governance:** Most users are blocked, but privileged users can modify retention or delete   
+- **Retention period:** Protects an object for a fixed time; can only be extended    
+- **Legal Hold:**    
+    - Protects an object indefinitely, independent of retention        
+    - Can be added or removed with the `s3:PutObjectLegalHold` permission
+### Access Points
+
+- Access Points simplify security management for S3 Buckets
+- Each Access Point has:
+	- its own DNS name (Internet Origin or VPC Origin)
+	- an access point policy (similar to bucket policy) – manage security at scale
+
+![](./assets/AWS_S3_Access_Points.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+{{< alert "circle-info" >}}
+
+You can restrict an S3 Access Point to a VPC by making it **VPC‑only**, requiring access through a **VPC Endpoint**, whose policy must allow the target bucket and Access Point.
+
+{{< /alert >}}
+
+![](./assets/AWS_S3_Access_Points_VPC.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### Object Lambda
+
+- Use **S3 Object Lambda** with **Lambda functions** to transform objects dynamically before they’re returned    
+- Works with a single S3 bucket plus an Access Point and an Object Lambda Access Point    
+- <font color=#EBAC25>Common uses:</font> redact PII, convert data formats (e.g., XML → JSON), or resize/watermark images on demand
 
 ---
 ## >> Sources <<
 
 - [Amazon S3](https://aws.amazon.com/s3/)
 - [Amazon Simple Storage Service Documentation](https://docs.aws.amazon.com/s3/)
+- [Amazon S3 server access log format - Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html)
 
 **S3 Security:**
 
