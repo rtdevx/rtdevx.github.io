@@ -130,8 +130,6 @@ These file systems are designed to coordinate locks, manage concurrent writes, a
 
 {{< 26_disclaimer_aws_saac03 >}}
 
-ℹ️ **Associate‑level extension** of the [Storage]({{< ref "6-storage" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. In this post, I expand on key EC2 concepts and introduce deeper topics relevant to the **Associate‑level understanding**.
-
 | <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
