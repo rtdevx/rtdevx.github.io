@@ -28,7 +28,7 @@ series: AWS Solution Architect
 
 {{< /lead >}}
 
-<a href="{{< ref "11-s3" >}}" target="_self">‼️ S3 Foundational Section</a>
+<center><a href="{{< ref "11-s3" >}}" target="_self">‼️ S3 Foundational Section</a></center>
 
 ---
 ## S3 - Advanced
