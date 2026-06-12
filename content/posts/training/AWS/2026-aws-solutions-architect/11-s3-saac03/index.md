@@ -111,18 +111,59 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 
 ### Storage Lens
 
-- Provides visibility to **understand, analyze, and optimize storage usage across your entire AWS Organization**    
-- **Surfaces anomalies**, **highlights cost‑saving opportunities**, and **recommends data‑protection best practices** using 30 days of usage and activity metrics    
+- Provides visibility to **understand, analyze, and optimize storage usage across your entire AWS Organization**
+- **Surfaces anomalies**, **highlights cost‑saving opportunities**, and **recommends data‑protection best practices** using 30 days of usage and activity metrics
 - Lets you aggregate insights at the Organization, account, region, bucket, or prefix level
 
 - Default dashboard shows Multi-Region and Multi-Account data
 	- Preconfigured by Amazon S3
+## S3 - Security
+
+- [Security best practices for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)
+- [Amazon S3 Security Controls Cheat Sheet](https://www.cybr.com/cloud-security/amazon-s3-security-controls-cheat-sheet/)
+
+![](./assets/AWS_S3_Security_Controls.png "© cybr.com, [Amazon S3 Security Controls Cheat Sheet](https://www.cybr.com/cloud-security/amazon-s3-security-controls-cheat-sheet/)")
+
+### Object Encryption
+
+- **Server-Side Encryption (SSE)**
+	- Server-Side Encryption with <font color=#EBAC25>Amazon S3-Managed Keys</font> (SSE-S3) - <font color=#C7EB25>Enabled by Default</font>
+		- Encrypts S3 objects using keys handled, managed, and owned by AWS
+	- Server-Side Encryption with <font color=#EBAC25>KMS Keys stored in AWS KMS</font> (SSE-KMS)
+		- Leverage AWS Key Management Service (AWS KMS) to manage encryption keys
+	- Server-Side Encryption with <font color=#EBAC25>Customer-Provided Keys</font> (SSE-C)
+		- When you want to manage your own encryption keys
+- **Client-Side Encryption**
+
+{{< alert "circle-info" >}}
+
+- **SSE‑S3** → AWS owns and manages everything
+- **SSE‑KMS** → AWS KMS manages keys, but you can own them and enforce strict controls
+- **SSE‑C** → You own the keys entirely and provide them with every request
+
+{{< /alert >}}
+
+| Feature            | SSE-S3                                | SSE-KMS                                                                | SSE-C                                                    |
+| ------------------ | ------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------- |
+| Who owns the keys? | AWS (S3 owns & manages all keys)      | AWS KMS owns keys, but you can own/manage Customer‑Managed Keys (CMKs) | You (customer provides and fully owns the keys)          |
+| Key storage        | Managed internally by S3              | Stored in AWS KMS                                                      | Not stored by AWS                                        |
+| Key rotation       | Automatic (AWS‑controlled)            | Optional automatic rotation for CMKs                                   | You must rotate keys yourself                            |
+| Access control     | Basic S3 IAM permissions              | Fine‑grained IAM + KMS key policies                                    | Controlled entirely by you                               |
+| Audit logging      | No per‑object key usage logs          | Full CloudTrail audit of every key request                             | No AWS audit logs (AWS never sees the key)               |
+| Performance        | Fastest (no KMS calls)                | Slightly slower due to KMS API calls                                   | Similar to SSE‑S3, but you must supply keys per request  |
+| Use cases          | Default encryption, general workloads | Compliance, regulated workloads, strict access control                 | Bring‑your‑own‑key requirements, external key management |
+
 
 ---
 ## >> Sources <<
 
-[Amazon S3](https://aws.amazon.com/s3/)
-[Amazon Simple Storage Service Documentation](https://docs.aws.amazon.com/s3/)
+- [Amazon S3](https://aws.amazon.com/s3/)
+- [Amazon Simple Storage Service Documentation](https://docs.aws.amazon.com/s3/)
+
+**S3 Security:**
+
+- [Security best practices for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)
+- [Amazon S3 Security Controls Cheat Sheet](https://www.cybr.com/cloud-security/amazon-s3-security-controls-cheat-sheet/)
 ## >> References <<
 
 **Cloud Practitioner:** 
