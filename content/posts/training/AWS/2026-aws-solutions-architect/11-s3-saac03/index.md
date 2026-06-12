@@ -64,6 +64,14 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 - With **Requester Pays**, the requester covers request and data‑download charges instead    
 - Useful for sharing large datasets across AWS accounts
 - The requester must be authenticated in AWS (cannot be anonymous)
+### Event Notifications
+
+- Supports events like **ObjectCreated**, **ObjectRemoved**, **ObjectRestore**, **Replication**, etc.    
+- Allows object‑name filtering (e.g., `*.jpg`)    
+- <font color=#EBAC25>Common use cases:</font> generate image thumbnails, trigger data processing pipelines, send notifications, update search indexes, run ETL jobs, or kick off serverless workflows    
+- You can define as many S3 event notifications as needed
+
+![](./assets/AWS_S3_Event_Notifications_Permissions.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ---
 ## >> Sources <<
@@ -72,7 +80,9 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 [Amazon Simple Storage Service Documentation](https://docs.aws.amazon.com/s3/)
 ## >> References <<
 
-**Cloud Practitioner:** [S3]({{< ref "11-s3" >}})
+**Cloud Practitioner:** 
+- [S3]({{< ref "11-s3" >}})
+	- [S3 Storage Classes]({{< ref "11-s3/#s3-storage-classes" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
