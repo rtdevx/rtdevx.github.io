@@ -381,7 +381,9 @@ My Samples
 }
 */
 /*Right Post Menu Highlight */
-.toc-link-active {
+/* Highlight TOC link that matches the current :target */
+.toc-active {
   color: var(--color-primary-600);
   font-weight: 600;
 }
+
