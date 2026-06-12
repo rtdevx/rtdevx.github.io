@@ -380,11 +380,3 @@ My Samples
   --color-secondary-950:10, 10, 10
 }
 */
-/*Right Post Menu Highlight */
-/* Highlight TOC link that matches the current :target */
-.toc-active {
-  color: var(--color-primary-600);
-  font-weight: 600;
-}
-
-
