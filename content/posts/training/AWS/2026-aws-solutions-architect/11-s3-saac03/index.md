@@ -21,7 +21,7 @@ series: AWS Solution Architect
 
 {{< lead >}}
 
-<center><b><font color=#C7EB25>Do not skip</font> the <font color=#EB4925>S3</font> <font color=#EBAC25>foundational</font> <font color=#EB4925>section!</font></b></center><br>
+<center><b><font color=#C7EB25>Do not skip</font> <font color=#27D3F5>S3</font> <font color=#EBAC25>foundational</font> <font color=#EB4925>section!</font></b></center><br>
 <center><small><small>*check link below.</small></small></center>
 
 {{< /lead >}}
