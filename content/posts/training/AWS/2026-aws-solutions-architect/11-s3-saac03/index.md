@@ -28,7 +28,7 @@ series: AWS Solution Architect
 
 {{< /lead >}}
 
-<center><a href="{{< ref "11-s3" >}}" target="_self">‼️ S3 Foundational Section</a></center>
+<center>‼️<a href="{{< ref "11-s3" >}}" target="_self"> S3 Foundational Section</a></center>
 
 ---
 ## S3 - Advanced
@@ -76,7 +76,7 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 - You can define as many S3 event notifications as needed
 
 ![](./assets/AWS_S3_Event_Notifications_Permissions.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
-### Baseline Performance
+### Performance
 
 - Amazon S3 automatically scales to high request rates, latency 100-200 ms
 - Your application can achieve at least **3,500 PUT/COPY/POST/DELETE** or **5,500 GET/HEAD requests per second per prefix in a bucket.**
@@ -102,6 +102,21 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 {{< /alert >}}
 
 <font color=#EBAC25><i>More about S3 Objects:</i></font> [Amazon S3 - Objects]({{< ref "11-s3/#amazon-s3---objects" >}})
+
+| Multi-Part upload:                                      | S3 Transfer Acceleration                                                                                                               |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| recommended for files > 100MB, must use for files > 5GB | Increase transfer speed by transferring file to an AWS edge location which will forward the data to the S3 bucket in the target region |
+| Can help parallelize uploads (speed up transfers)       | Compatible with multi-part upload                                                                                                      |
+| ![](./assets/AWS_S3_Acc1.png)                           | ![](./assets/AWS_S3_Acc2.png)                                                                                                          |
+
+### Storage Lens
+
+- Provides visibility to **understand, analyze, and optimize storage usage across your entire AWS Organization**    
+- **Surfaces anomalies**, **highlights cost‑saving opportunities**, and **recommends data‑protection best practices** using 30 days of usage and activity metrics    
+- Lets you aggregate insights at the Organization, account, region, bucket, or prefix level
+
+- Default dashboard shows Multi-Region and Multi-Account data
+	- Preconfigured by Amazon S3
 
 ---
 ## >> Sources <<
