@@ -76,8 +76,32 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 - You can define as many S3 event notifications as needed
 
 ![](./assets/AWS_S3_Event_Notifications_Permissions.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### Baseline Performance
 
+- Amazon S3 automatically scales to high request rates, latency 100-200 ms
+- Your application can achieve at least **3,500 PUT/COPY/POST/DELETE** or **5,500 GET/HEAD requests per second per prefix in a bucket.**
 
+| Example (object path => prefix): |                   |
+| -------------------------------- | ----------------- |
+| bucket/folder1/sub1/file         | => /folder1/sub1/ |
+| bucket/folder1/sub2/file         | => /folder1/sub2/ |
+| bucket/1/file                    | => /1/            |
+| bucket/2/file                    | => /2/            |
+
+{{< alert "circle-info" >}}
+
+- Objects (files) have a Key
+- The <font color=#C7EB25>key</font> is the FULL path:
+	- s3://my-bucket/my_file.txt
+	- s3://my-bucket/my_folder/another_folder/my_file.txt
+- The <font color=#C7EB25>key</font> is composed of <font color=#EBAC25>prefix</font> + <font color=orange>object name</font>
+	- s3://my-bucket/<font color=#EBAC25>my_folder/another_folder/</font><font color=orange>my_file.txt</font>
+- There is no concept of "_directories_" within S3 buckets (although UI will suggest there is)
+	- <font color=#EB4925>Just keys with very long names that contain slashes ("/")</font>
+
+{{< /alert >}}
+
+<font color=#EBAC25><i>More about S3 Objects:</i></font> [Amazon S3 - Objects]({{< ref "11-s3/#amazon-s3---objects" >}})
 
 ---
 ## >> Sources <<
