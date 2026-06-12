@@ -10,6 +10,7 @@ tags:
 categories: AWS
 series: AWS Cloud Practitioner
 ---
+🏅 **Solutions Architect Associate level extension:** [S3 - SAAC03]({{< ref "11-s3-saac03" >}}).
 ## What is Amazon S3
 
 **Amazon S3** is <font color=#EB4925>one of the main building blocks of AWS.</font>
@@ -229,6 +230,16 @@ For data that is less frequently accessed but requires rapid access when needed.
 	- For long-term storage
 	- Standard (12 hours), Bulk (48 hours)
 	- Minimum storage duration of 180 days
+### <font color=#EBAC25>S3 Express One Zone</font>
+
+- High performance, **single Availability Zone** storage class
+- Objects stored in a Directory Bucket (bucket in a single AZ)
+- Handle 100,000s requests per second with **single-digit millisecond latency**
+- Up to 10x better performance than S3 Standard (50% lower costs)
+- High Durability (99.999999999%) and Availability (99.95%)
+- Co-locate your storage and compute resources in the same AZ (reduces latency)
+- <font color=#EBAC25>Use cases:</font> latency-sensitive apps, data-intensive apps, AI & ML training, financial modeling, media processing, HPC…
+- Best integrated with SageMaker Model Training, Athena, EMR, Glue…
 ## Intelligent tiering
 
 Moves objects automatically between Storage Tiers based on usage for a small monthly monitoring and auto-tiering fee.

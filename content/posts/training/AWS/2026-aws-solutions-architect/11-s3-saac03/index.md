@@ -19,7 +19,8 @@ series: AWS Solution Architect
 
 ## S3 - Introduction
 
-### S3 - Introduction
+ℹ️ Introduction to [S3]({{< ref "11-s3" >}}) has been covered thoroughly in [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. <b><font color=#EB4925>Do not skip the foundational section!</font></b>
+
 
 
 ---
