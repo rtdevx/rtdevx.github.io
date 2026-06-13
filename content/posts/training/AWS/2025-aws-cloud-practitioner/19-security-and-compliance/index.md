@@ -16,6 +16,7 @@ tags:
   - HSM
   - iam
   - encryption
+  - SecretsManager
 categories: AWS
 series: AWS Cloud Practitioner
 ---
