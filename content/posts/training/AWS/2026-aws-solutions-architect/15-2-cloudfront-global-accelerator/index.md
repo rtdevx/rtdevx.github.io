@@ -1,6 +1,6 @@
 ---
 title: "Solutions Architect: CloudFront & Global Accelerator"
-date: 2026-04-01
+date: 2026-04-08
 description: Associate-level extension of the `CloudFront & Global Accelerator` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `CloudFront & Global Accelerator` Section from AWS Cloud Practitioner Series.
 draft: false
