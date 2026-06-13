@@ -143,7 +143,7 @@ EFS Storage tiers and lifecycle management.
 - **FSx for Lustre** - fully managed, high-performance, scalable <font color=#C7EB25>file storage for High Performance Computing (HPC)</font>. 
 	- <font color=#EBAC25>Use cases:</font> Machine Learning, Analytics, Video processing, Financial Modelling
 	- Scales up to 100s GB/s, millions of IOPS, sub-ms latencies
-	- Seamless integration with [S3]({{< ref "tag/s3" >}})
+	- Seamless integration with [S3]({{< ref "tags/s3" >}})
 		- Can “read S3” as a file system (through FSx)
 		- Can write the output of the computations back to S3 (through FSx)
 	- Can be used from on-premises servers (VPN or Direct Connect)
