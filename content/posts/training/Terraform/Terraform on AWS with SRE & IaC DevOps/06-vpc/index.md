@@ -12,6 +12,7 @@ categories:
   - DevOps
   - IaC
   - AWS
+  - Networking
 series: Terraform on AWS
 ---
 ## 👨🏻‍💻Part 1: Building VPC manually

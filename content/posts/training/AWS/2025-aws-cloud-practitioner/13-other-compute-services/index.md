@@ -13,7 +13,9 @@ tags:
   - EKS
   - Lambda
   - Serverless
-categories: AWS
+categories:
+  - AWS
+  - Containers
 series: AWS Cloud Practitioner
 ---
 ## Docker

@@ -6,10 +6,11 @@ summary: Deploying and Managing Infrastructure at scale in AWS...
 draft: false
 tags:
   - CLF-C02
-  - cicd
-  - iac
   - SSM
-categories: AWS
+categories:
+  - AWS
+  - IaC
+  - CI/CD
 series: AWS Cloud Practitioner
 ---
 # Deploying and Managing Infrastructure at scale

@@ -7,7 +7,9 @@ draft: false
 tags:
   - CLF-C02
   - VPC
-categories: AWS
+categories: 
+  - AWS
+  - Networking
 series: AWS Cloud Practitioner
 ---
 ## VPC - Virtual Private Cloud
