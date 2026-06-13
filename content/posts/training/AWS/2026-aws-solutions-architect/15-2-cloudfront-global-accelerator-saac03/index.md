@@ -82,6 +82,7 @@ You can bypass the TTL by issuing a **CloudFront invalidation**, refreshing spec
 **Cloud Practitioner:** 
 - [Amazon CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}})
 - [AWS Global Infrastructure | Global Accelerator]({{< ref "15-aws-global-infrastructure/#aws-global-accelerator" >}})
+	- [AWS Global Accelerator vs CloudFront]({{< ref "15-aws-global-infrastructure/#aws-global-accelerator-vs-cloudfront" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
