@@ -311,7 +311,3 @@ You can restrict an S3 Access Point to a VPC by making it **VPC‑only**, requir
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
-
-| <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |

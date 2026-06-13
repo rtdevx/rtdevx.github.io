@@ -129,7 +129,3 @@ These file systems are designed to coordinate locks, manage concurrent writes, a
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
-
-| <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |

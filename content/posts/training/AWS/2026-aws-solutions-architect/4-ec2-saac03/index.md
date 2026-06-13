@@ -161,7 +161,3 @@ For a deeper dive, **AWS** has a **solid introductory post here:**
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
-
-| <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
