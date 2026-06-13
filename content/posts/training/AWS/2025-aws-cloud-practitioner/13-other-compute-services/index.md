@@ -13,6 +13,7 @@ tags:
   - EKS
   - Lambda
   - Serverless
+  - kubernetes
 categories:
   - AWS
   - Containers
