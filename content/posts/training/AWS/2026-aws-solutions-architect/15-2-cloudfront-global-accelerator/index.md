@@ -18,7 +18,7 @@ series: AWS Solution Architect
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 ## CloudFront Introduction
 
-**CloudFront Introduction** covered in [Amazon CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series:
+**CloudFront Introduction** was covered in [Amazon CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series:
 
 |                                                                                    |                                                                                          |                                                                                                                                    |
 | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -40,7 +40,7 @@ series: AWS Solution Architect
 
 **CloudFront** lets you **control access** to your distribution by applying **geo‑restriction rules**: 
 
-you can <font color=#C7EB25>allow traffic only from approved countries</font> or <font color=#EB4925>block traffic from specific countries</font>, based on a third‑party Geo‑IP database - commonly used for <font color=#EBAC25>copyright‑driven content restrictions</font>.
+You can <font color=#C7EB25>allow traffic only from approved countries</font> or <font color=#EB4925>block traffic from specific countries</font>, based on a third‑party Geo‑IP database - commonly used for <font color=#EBAC25>copyright‑driven content restrictions</font>.
 ### CloudFront Cache Invalidations
 
 {{< alert "circle-info" >}}
@@ -50,6 +50,14 @@ When your origin content changes, CloudFront won’t fetch the new version until
 You can bypass the TTL by issuing a **CloudFront invalidation**, refreshing specific paths (e.g., `/index.html`, `/images/*`) or even all files (`*`).
 
 {{< /alert >}}
+### Unicast IP vs Anycast IP
+
+- **Unicast IP:** one server holds one IP address
+- **Anycast IP:** all servers hold the same IP address and the client is routed to the nearest one
+
+![](./assets/AWS_CloudFrnt_Unicast_Anyacst.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+
 
 ---
 ## >> Sources <<
