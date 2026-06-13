@@ -6,6 +6,12 @@ summary: Associate-level extension of the `Databases` Section from AWS Cloud Pra
 draft: false
 tags:
   - SAA-C03
+  - database
+  - DisasterRecovery
+  - Backup
+  - HighAvailability
+  - Cache
+  - Serverless
 categories:
   - AWS
 series: AWS Solution Architect

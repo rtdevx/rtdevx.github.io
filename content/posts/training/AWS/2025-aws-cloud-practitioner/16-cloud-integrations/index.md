@@ -6,6 +6,9 @@ summary: Cloud Integrations / decoupling. This section is about multiple applica
 draft: false
 tags:
   - CLF-C02
+  - SQS
+  - SNS
+  - MQ
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -20,12 +23,12 @@ This section is about multiple applications communicating with each other.
 		- **Kinesis:** real-time data streaming model
 	- Those services can scale independently from our application
 
-![](./assets/AWS_Integrations.png)
+![](./assets/AWS_Integrations.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## SQS
 
 ##### <font color=#EBAC25>SQS</font> = Simple Queue Service.
 
-![](./assets/AWS_SQS_Queue.png)
+![](./assets/AWS_SQS_Queue.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _[What is Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)_
 ### SQS - Standard Queue
 
@@ -38,12 +41,12 @@ _[What is Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/S
 - Low latency
 - Consumers share the work to read messages and scale horizontally
 
-![](./assets/AWS_SQS_Queue2.png)
+![](./assets/AWS_SQS_Queue2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### SQS - FIFO Queue
 
 ##### <font color=#EBAC25>FIFO</font> = First in First Out (ordering of messages in the queue)
 
-![](./assets/AWS_SQS_Queue_FIFO.png)
+![](./assets/AWS_SQS_Queue_FIFO.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _Messages are processed in order by the consumer._
 ## Amazon Kinesis
 
@@ -56,14 +59,14 @@ Managed service to collect, process and analyze real-time streaming data at any 
 
 **SNS** is sending one message to multiple receivers.
 
-![](./assets/AWS_SNS1.png)
+![](./assets/AWS_SNS1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 - The "event publishers" only sending message to one SNS topic
 - As many "event publishers" as we want to listen to the SNS topic notifications
 - <font color=#EB4925>Each subscriber to the topic will get all the messages</font>
 - Up to 12,500,000 subscriptions per topic, 100,000 topics limit
 
-![](./assets/AWS_SNS2.png)
+![](./assets/AWS_SNS2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Amazon MQ
 
 SQS and SNS are "cloud-native" services. Traditional applications running from on-premises may use open protocols, such as:

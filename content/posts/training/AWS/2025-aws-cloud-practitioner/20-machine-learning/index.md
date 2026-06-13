@@ -6,6 +6,8 @@ summary: Machine Learning in Amazon AWS...
 draft: false
 tags:
   - CLF-C02
+  - AI
+  - MachineLearning
 categories: AWS
 series: AWS Cloud Practitioner
 ---

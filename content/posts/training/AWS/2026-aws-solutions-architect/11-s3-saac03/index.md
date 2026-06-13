@@ -6,6 +6,8 @@ summary: Associate-level extension of the `S3` Section from AWS Cloud Practition
 draft: false
 tags:
   - SAA-C03
+  - S3
+  - storage
 categories:
   - AWS
 series: AWS Solution Architect

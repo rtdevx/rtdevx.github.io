@@ -6,6 +6,9 @@ summary: Deploying and Managing Infrastructure at scale in AWS...
 draft: false
 tags:
   - CLF-C02
+  - cicd
+  - iac
+  - SSM
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -78,7 +81,7 @@ _More:_ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/infrastru
 It uses all the components mentioned earlier (EC2, ASG, ELB, RDS, etc...)
 ##### <font color=#EBAC25>Beanstalk = Platform as a Service (PaaS)</font>
 
-![](./assets/AWS_3tier_Web_App1.png)
+![](./assets/AWS_3tier_Web_App1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 - Managed service
 	- Instance configuration / OS is handled by  Beanstalk
@@ -143,7 +146,7 @@ Maven, Gradle, npm, yarn, twine, pip, NuGet.
 
 SSM helps managing EC2 and On-Premises systems at scale.
 
-![](./assets/AWS_SSM2.png)
+![](./assets/AWS_SSM2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 - Another <font color=#C7EB25>Hybrid</font> AWS service
 - Get operational insights about the state of the infrastructure
@@ -158,7 +161,7 @@ SSM helps managing EC2 and On-Premises systems at scale.
 	- No port 22 needed
 	- Send session log data to [S3]({{< ref "11-s3" >}}) or [CloudWatch]({{< ref "17-cloud-monitoring/#cloudwatch-metrics" >}})
 
-![](./assets/AWS_SSM1.png)
+![](./assets/AWS_SSM1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### Systems Manager Parameter Store
 
 - <font color=#C7EB25>Secure storage for configuration and secrets</font>

@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
   - Storage
+  - S3
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -312,7 +313,33 @@ _More:_ https://aws.amazon.com/storagegateway/file/s3/
 - <font color=#EBAC25>Tape Gateway</font>
 	- virtual tapes to leading to backup application that can be stored in [S3]({{< ref "11-s3" >}}) or [S3 Glacier]({{< ref "11-s3/#glacier" >}})
 
+![](./assets/AWS_S3_Storage_Gateway2.png)
+
 _More about Storage Gateway types:_ https://aws.amazon.com/storagegateway/
+## AWS Transfer Family
+
+- A fully-managed service for file transfers into and out of Amazon S3 or Amazon EFS using the FTP protocol
+- Supported Protocols
+	- AWS Transfer for FTP (File Transfer Protocol (FTP))
+	- AWS Transfer for FTPS (File Transfer Protocol over SSL (FTPS))
+	- AWS Transfer for SFTP (Secure File Transfer Protocol (SFTP))
+- Managed infrastructure, Scalable, Reliable, Highly Available (multi-AZ)
+- Pay per provisioned endpoint per hour + data transfers in GB
+- Store and manage users’ credentials within the service
+- Integrate with existing authentication systems (Microsoft Active Directory, LDAP, Okta, Amazon Cognito, custom)
+- <font color=#EBAC25>Usage:</font> sharing files, public datasets, CRM, ERP, …
+
+![](./assets/AWS_S3_Transfer_Family.png)
+### AWS DataSync
+
+- Transfer large amounts of data **to and from AWS**    
+- **On‑premises or other clouds → AWS** (NFS, SMB, HDFS, S3 API, etc.) requires a DataSync **agent**    
+- **AWS → AWS** transfers between storage services require **no agent**    
+- Can sync to:    
+    - **Amazon S3** (all storage classes, including Glacier)        
+    - **Amazon EFS**        
+    - **Amazon FSx** (Windows, Lustre, NetApp, OpenZFS, etc.)        
+- Replication tasks can run **hourly, daily, or weekly**
 
 ---
 ## >> Sources <<

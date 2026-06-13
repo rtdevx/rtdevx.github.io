@@ -72,9 +72,9 @@ series: AWS Cloud Practitioner
 
 - Completed product that is run and managed by the service provider
 
-![](./assets/AWS_Cloud_Computing_Types.png)
+![](./assets/AWS_Cloud_Computing_Types.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
-![](./assets/AWS_Cloud_Computing_Types_2.png)
+![](./assets/AWS_Cloud_Computing_Types_2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## AWS Global Infrastructure
 
 - AWS Regions
@@ -82,14 +82,14 @@ series: AWS Cloud Practitioner
 - AWS Data Centers
 - AWS Edge Locations / Points of Presence
 
-![](./assets/AWS_AZ2.png)
+![](./assets/AWS_AZ2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ![](./assets/AWS_AZ1.png)
 
 _More about AWS Global Infrastructure:_ [AWS Global Infrastructure](https://infrastructure.aws)
 ## Shared Responsibility Model
 
-![](./assets/AWS_Shared_Responsibility_Model.png)
+![](./assets/AWS_Shared_Responsibility_Model.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _Shared Responsibility Model:_ [Shared Responsibility Model - Amazon Web Services (AWS)](https://aws.amazon.com/compliance/shared-responsibility-model/)
 
 [Security and Compliance]({{< ref "19-security-and-compliance" >}}) is a [shared responsibility]({{< ref "19-security-and-compliance/#shared-responsibility-model" >}}) between AWS and the customer. This shared model can help relieve the customer’s operational burden as AWS operates, manages and controls the components from the host operating system and virtualization layer down to the physical security of the facilities in which the service operates.

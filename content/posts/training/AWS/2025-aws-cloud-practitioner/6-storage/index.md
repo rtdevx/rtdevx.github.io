@@ -7,6 +7,10 @@ draft: false
 tags:
   - CLF-C02
   - Storage
+  - S3
+  - EBS
+  - EFS
+  - FSx
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -26,11 +30,11 @@ series: AWS Cloud Practitioner
 	- you will get billed for a provisioned capacity
 	- You can increase the capacity of the drive
 
-![](./assets/AWS_EC2_EBS_Volume1.png)
+![](./assets/AWS_EC2_EBS_Volume1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _<font color=#EB4925>EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them</font>_
 ### EBS Delete on Termination
 
-![](./assets/AWS_EC2_EBS_Delete_on_Termination.png)
+![](./assets/AWS_EC2_EBS_Delete_on_Termination.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 - Controls the EBS behavior when [EC2 instance]({{< ref "4-ec2" >}}) terminates
 	- by default the root EBS volume is deleted (attribute enabled)
@@ -78,7 +82,7 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 - Encryption at rest using **KMS**
 - Scales automatically, <font color=#EBAC25>pay-per-use</font>, no capacity planning
 
-![](./assets/AWS_Storage_EFS.png)
+![](./assets/AWS_Storage_EFS.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### Performance & Storage Classes
 
 #### EFS Scale
@@ -139,8 +143,62 @@ EFS Storage tiers and lifecycle management.
 - **FSx for Lustre** - fully managed, high-performance, scalable <font color=#C7EB25>file storage for High Performance Computing (HPC)</font>. 
 	- <font color=#EBAC25>Use cases:</font> Machine Learning, Analytics, Video processing, Financial Modelling
 	- Scales up to 100s GB/s, millions of IOPS, sub-ms latencies
+	- Seamless integration with [S3]({{< ref "tag/s3" >}})
+		- Can “read S3” as a file system (through FSx)
+		- Can write the output of the computations back to S3 (through FSx)
+	- Can be used from on-premises servers (VPN or Direct Connect)
+
 - **FSx for Windows File Server** - fully managed, highly reliable and scalable Windows native shared file system built on Windows File Server. <font color=#C7EB25>Supports SMB and NTFS file systems. Integrated with AD for security. Can be accessed from AWS or from On-Premise.</font>
-- **FSx for NetApp ONTAP** - 
+	- Microsoft Active Directory integration, ACLs, user quotas
+	- <font color=#C7EB25>Can be mounted on Linux EC2 instances</font>
+	- Supports **Microsoft's Distributed File System (DFS) Namespaces** (group files across multiple FS)
+
+- **FSx for NetApp ONTAP** - Managed NetApp ONTAP on AWS. File System compatible with NFS, SMB, iSCSI protocol
+	- Move workloads running on ONTAP or NAS to AWS
+	- Works with:
+		- Linux
+		- Windows
+		- MacOS
+		- VMware Cloud on AWS
+		- Amazon Workspaces & AppStream 2.0
+		- Amazon EC2, ECS and EKS
+	- Storage shrinks or grows automatically
+	- Snapshots, replication, low-cost, compression and data de-duplication
+	- Point-in-time insta
+
+- **FSx for OpenZFS**
+	- Fully managed **OpenZFS** file system on AWS
+	- Supports NFS v3, v4, v4.1, and v4.2
+	- Ideal for migrating existing ZFS workloads to AWS
+	- Works with Linux, Windows, macOS, VMware Cloud on AWS, WorkSpaces, AppStream 2.0, EC2, ECS, and EKS
+	- Delivers up to **1,000,000 IOPS** with **<0.5 ms latency**
+	- Provides snapshots, compression, and low‑cost storage
+	- Supports instant, point‑in‑time restores
+## Hybrid Cloud for Storage
+
+- AWS promotes **hybrid cloud** architectures
+- Part of your environment runs in AWS, part remains on‑premises
+- <font color=#EBAC25>Common reasons:</font> long migration timelines, security or compliance needs, or broader IT strategy
+- Since S3 is a **proprietary** storage system (unlike NFS/EFS), <font color=#EBAC25>exposing S3 data on‑premises requires a bridge</font>
+	- <font color=#EBAC25>Solution:</font> AWS Storage Gateway
+
+![](./assets/AWS_Storage_Cloud_Native.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Storage Comparison
+
+- **S3:** Object Storage
+- **S3 Glacier:** Object Archival
+- **EBS volumes:** Network storage for one EC2 instance at a time
+- **Instance Storage:** Physical storage for your EC2 instance (high IOPS)
+- **EFS:** Network File System for Linux instances, POSIX filesystem
+- **FSx for Windows:** Network File System for Windows servers
+- **FSx for Lustre:** High Performance Computing Linux file system
+- **FSx for NetApp ONTAP:** High OS Compatibility
+- **FSx for OpenZFS:** Managed ZFS file system
+- **Storage Gateway:** S3 & FSx File Gateway, Volume Gateway (cache & stored), Tape Gateway
+- **Transfer Family:** FTP, FTPS, SFTP interface on top of Amazon S3 or Amazon EFS
+- **DataSync:** Schedule data sync from on-premises to AWS, or AWS to AWS
+- **Snowcone / Snowball / Snowmobile:** to move large amount of data to the cloud, physically
+- **Database:** for specific workloads, usually with indexing and querying
 ## Summary
 
 **EBS Volumes**

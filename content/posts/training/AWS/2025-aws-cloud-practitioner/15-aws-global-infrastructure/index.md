@@ -6,6 +6,12 @@ summary: A Global Application is an application deployed in multiple geographies
 draft: false
 tags:
   - CLF-C02
+  - Route53
+  - DNS
+  - CloudFront
+  - S3
+  - Cache
+  - CDN
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -35,7 +41,7 @@ _AWS Global Infrastructure Overview - Regions, Availability Zones, Edge Location
 
 **Route53** is managed **DNS**.
 
-![](./assets/AWS_Route53_1.png)
+![](./assets/AWS_Route53_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _[How Route 53 routes traffic for your domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html#welcome-dns-service-how-route-53-routes-traffic)_
 ### Route53 Routing Policies
 
@@ -90,7 +96,7 @@ _More about Route 53:_ https://docs.aws.amazon.com/route53/
 	- S3 website (must first enable the bucket as a static S3 website)
 	- Any public HTTP backend
 
-![](./assets/AWS_CloudFront1.png)
+![](./assets/AWS_CloudFront1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _[How CloudFront delivers content](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowCloudFrontWorks.html)_
 ### CloudFront vs [S3 Cross Region Replication]({{< ref "11-s3/#s3---replication" >}})
 
@@ -116,7 +122,7 @@ Increase transfer speed by transferring files to an AWS edge location which will
 
 Leverage the AWS internal network to optimize the route to your application (60% improvement).
 
-![](./assets/AWS_Global_Accelerator.png)
+![](./assets/AWS_Global_Accelerator.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 _More about AWS Global Accelerator:_ 
 - https://aws.amazon.com/global-accelerator/
@@ -182,7 +188,7 @@ It is an "<font color=#EBAC25>Extension of AWS Region</font>".
 - AWS Region: N. Virginia (us-east-1)
 	- AWS Local Zones: Boston, Chicago, Dallas, Houston, Miami, ...
 
-![](./assets/AWS_Local_Zones.png)
+![](./assets/AWS_Local_Zones.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _[How AWS Local Zones work](https://docs.aws.amazon.com/local-zones/latest/ug/what-is-aws-local-zones.html)_
 
 ##### <font color=#EBAC25>Compatible with:</font>

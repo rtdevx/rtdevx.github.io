@@ -6,6 +6,8 @@ summary: Associate-level extension of the `Route53` Section from AWS Cloud Pract
 draft: false
 tags:
   - SAA-C03
+  - Route53
+  - DNS
 categories:
   - AWS
 series: AWS Solution Architect

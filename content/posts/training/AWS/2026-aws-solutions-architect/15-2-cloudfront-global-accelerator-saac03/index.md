@@ -6,6 +6,9 @@ summary: Associate-level extension of the `CloudFront & Global Accelerator` Sect
 draft: false
 tags:
   - SAA-C03
+  - Cache
+  - CDN
+  - CloudFront
 categories:
   - AWS
 series: AWS Solution Architect

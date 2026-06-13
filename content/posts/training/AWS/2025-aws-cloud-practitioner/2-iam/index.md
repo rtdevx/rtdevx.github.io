@@ -6,6 +6,10 @@ summary: Identity and Access management...
 draft: false
 tags:
   - CLF-C02
+  - RBAC
+  - iam
+  - security
+  - compliance
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -42,7 +46,7 @@ IAM console > Users
 ![](./assets/AWS_IAM_Create_User_Tags.png)
 ## IAM policies structure
 
-![](./assets/AWS_IAM_Policies_Structure.png)
+![](./assets/AWS_IAM_Policies_Structure.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 **IAM policies structure includes:**
 

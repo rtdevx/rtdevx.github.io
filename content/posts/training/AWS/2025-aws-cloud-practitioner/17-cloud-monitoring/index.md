@@ -6,6 +6,8 @@ summary: CloudWatch, EventBridge, CloudTrail, X-Ray, CodeGuru, Health Dashboard.
 draft: false
 tags:
   - CLF-C02
+  - monitoring
+  - CloudWatch
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -15,7 +17,7 @@ series: AWS Cloud Practitioner
 
 It is possible to create **CloudWatch Dashboards** that consist of different metrics.
 
-![](./assets/AWS_CW_Metrics.png)
+![](./assets/AWS_CW_Metrics.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _CloudWatch console_
 
 _CloudWatch Console:_ https://console.aws.amazon.com/cloudwatch
@@ -74,21 +76,21 @@ to push the logs that are needed.</font>
 - Event Pattern - Event rules to react to a service doing something
 - Trigger Lambda functions, send SQS / SNS messages
 
-![](./assets/AWS_CW_EventBridge1.png)
+![](./assets/AWS_CW_EventBridge1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
-![](./assets/AWS_CW_EventBridge2.png)
+![](./assets/AWS_CW_EventBridge2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 - Default Event Bus - for AWS Services
 - Partner Event Bus - for external entities (i.e. Zendesk) sending events to the cloud
 - Custom Event Bus - custom
 
-![](./assets/AWS_CW_EventBridge3.png)
+![](./assets/AWS_CW_EventBridge3.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ```AWSConsole
 EventBridge > Create rule
 ```
 
-![](./assets/AWS_CW_EventBridge4.png)
+![](./assets/AWS_CW_EventBridge4.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## AWS CloudTrail
 
 ##### <font color=#EB4925>AWS CloudTrail provides governance, compliance and audit your AWS Account and it is ENABLED BY DEFAULT.</font>
@@ -104,7 +106,7 @@ It can get a history of events / API calls made within your AWS account by:
 
 ### <font color=#EB4925>If a resource is deleted in AWS, investigate CloudTrail first!</font>
 
-![](./assets/AWS_CW_CloudTrail1.png)
+![](./assets/AWS_CW_CloudTrail1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ```AWSConsole
 # Check Events History
@@ -122,7 +124,7 @@ CloudTrail > Event history
 - SLA's
 - Identify impacted users
 
-![](./assets/AWS_CW_XRAY1.png)
+![](./assets/AWS_CW_XRAY1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Amazon CodeGuru
 
 ##### ML-powered service for automated code reviews and application performance recommendations.

@@ -6,6 +6,9 @@ summary: Auto Scaling Group contains a collection of EC2 instances that are trea
 draft: false
 tags:
   - CLF-C02
+  - ASG
+  - LoadBalancing
+  - HighAvailability
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -30,7 +33,7 @@ _AWS EC2 Auto Scaling : Step By Step Tutorial_
 - Replace unhealthy instances
 - Cost Saving (only run at optimal capacity)
 
-![](./assets/AWS_ASG1.png)
+![](./assets/AWS_ASG1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Creating an Auto Scaling Group
 
 - Create Launch Template
@@ -59,7 +62,7 @@ _AWS EC2 Auto Scaling : Step By Step Tutorial_
 	- **Predictive Scaling**
 		- Uses Machine Learning to predict the load
 		
-		![](./assets/AWS_ASG_Predictive_Scaling.png)
+		![](./assets/AWS_ASG_Predictive_Scaling.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ---
 ## >> Sources <<

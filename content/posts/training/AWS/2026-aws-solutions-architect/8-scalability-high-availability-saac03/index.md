@@ -6,6 +6,12 @@ summary: Associate-level extension of the `Scalability & High Availability` Sect
 draft: false
 tags:
   - SAA-C03
+  - Scalability
+  - HighAvailability
+  - LoadBalancing
+  - security
+  - TLS
+  - ASG
 categories:
   - AWS
 series: AWS Solution Architect

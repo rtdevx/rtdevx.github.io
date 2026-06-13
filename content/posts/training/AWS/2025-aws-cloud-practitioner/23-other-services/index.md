@@ -6,6 +6,8 @@ summary: Other AWS Services...
 draft: false
 tags:
   - CLF-C02
+  - Backup
+  - DisasterRecovery
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -50,7 +52,7 @@ CLI > Infrastructure Composer
 
 Fully-managed service that can test your web and mobile app against desktop browsers, real mobile devices and tablets.
 
-![](./assets/AWS_Device_Farm.png)
+![](./assets/AWS_Device_Farm.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## AWS Backup
 
 Fully-managed service to centrally manage and automate backups across AWS services.
@@ -58,7 +60,7 @@ Fully-managed service to centrally manage and automate backups across AWS servic
 - On-demand and scheduled backups.
 - Cross-region and cross-account (AWS Organizations) backups
 
-![](./assets/AWS_Backup.png)
+![](./assets/AWS_Backup.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## <font color=#EB4925>Disaster Recovery Strategies</font>
 
 - <font color=#EBAC25>Backup and Restore</font> - cheapest method

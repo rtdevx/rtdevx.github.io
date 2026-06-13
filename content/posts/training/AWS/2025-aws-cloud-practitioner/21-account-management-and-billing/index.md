@@ -6,15 +6,20 @@ summary: Account Management and Billing...
 draft: false
 tags:
   - CLF-C02
+  - iam
+  - security
+  - compliance
+  - Billing
+  - Savings
 categories: AWS
 series: AWS Cloud Practitioner
 ---
 ## AWS Organizations
 
-![](./assets/AWS_Organizations_2.png)
+![](./assets/AWS_Organizations_2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _How AWS Organizations work_
 
-![](./assets/AWS_Organizations_1.png)
+![](./assets/AWS_Organizations_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _Diagram of basic Organization_
 
 _More about Organizations terminology and structure:_ https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html_
@@ -57,7 +62,7 @@ _Best Practices for Organizational Units with AWS Organizations:_ https://aws.am
 	- [EC2 Dedicated Hosts]({{< ref "4-ec2/#ec2-instances-purchasing-options" >}})
 	- License Manager Configurations
 
-![](./assets/AWS_Organizations_ARM.png)
+![](./assets/AWS_Organizations_ARM.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _AWS Resource Access Manager (RAM)_
 ## <font color=#EB4925>AWS Service Catalog</font>
 
@@ -66,7 +71,7 @@ _AWS Resource Access Manager (RAM)_
 
 Includes: Virtual Machines, Databases, Storage options, etc.
 
-![](./assets/AWS_Organizations_Service_Catalog.png)
+![](./assets/AWS_Organizations_Service_Catalog.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 _More about Service Catalog:_ https://docs.aws.amazon.com/servicecatalog/
 
@@ -172,7 +177,7 @@ Similar service: [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}}) (pay 
 - Use Private IP instead of Public IP for good savings and better network performance
 - Use same AZ for maximum savings (at the cost of High Availability)
 
-![](./assets/AWS_Organizations_Billing_Networking.png)
+![](./assets/AWS_Organizations_Billing_Networking.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Savings Plan
 
 - Commit a certain $ amount per hours for 1 or 3 years
@@ -240,7 +245,7 @@ Recommendations can be exported to S3.
 	- Choose optimal Savings Plan (to lover the prices)
 	- <font color=#C7EB25>Forecast usage up to 12 months based on previous usage</font>
 	- Monthly cost by AWS service
-	![](./assets/AWS_Organizations_Cost_Explorer.png)
+	![](./assets/AWS_Organizations_Cost_Explorer.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 #### <font color=#EBAC25>Monitoring against cost plans:</font>
 

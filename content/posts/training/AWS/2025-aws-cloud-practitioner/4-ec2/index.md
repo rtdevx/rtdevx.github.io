@@ -6,6 +6,7 @@ summary: An Amazon EC2 instance is a virtual server in the AWS Cloud...
 draft: false
 tags:
   - CLF-C02
+  - EC2
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -49,12 +50,12 @@ An **Amazon EC2** instance is a virtual server in the [AWS]({{< ref "categories/
 - **Storage Optimized** (I, Dx, H1) - High, sequential read and write access to very large data sets on local storage. Low-latency, random I/O operations per second (IOPS)
 - **HPC Optimized** (Hpc) - High Performance Computing - complex simulations and deep learning workloads
 
-![](./assets/AWS_EC2_Instance_Types.png)
+![](./assets/AWS_EC2_Instance_Types.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Instance type naming conventions
 
 *More info:* [Amazon EC2 Instance type naming conventions](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html)
 
-![](./assets/AWS_EC2_Naming_Conventions.png)
+![](./assets/AWS_EC2_Naming_Conventions.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### Example
 
 *More info:* [Amazon EC2 Instance type naming conventions](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html)
@@ -155,13 +156,13 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 	- May share hardware with other instances in the same account
 	- No control over instance placement
 
-![](./assets/AWS_EC2_dedicated.png)
+![](./assets/AWS_EC2_dedicated.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 _Dedicated Host vs Dedicated Instance:_ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html
 
 - **Capacity Reservations** - reserve capacity in a specific AZ for any duration
 
-![](./assets/AWS_EC2_Purchasing_Options.png)
+![](./assets/AWS_EC2_Purchasing_Options.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ---
 ## >> Sources <<

@@ -6,6 +6,10 @@ summary: Associate-level extension of the `Storage` Section from AWS Cloud Pract
 draft: false
 tags:
   - SAA-C03
+  - storage
+  - S3
+  - EFS
+  - EBS
 categories:
   - AWS
 series: AWS Solution Architect
@@ -21,10 +25,11 @@ series: AWS Solution Architect
 
 For full foundational coverage, refer to the table below from the Cloud Practitioner section:
 
-|                                    |                                                                                                                     |                                                                                                             |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| [Storage]({{< ref "6-storage" >}}) | - [EBS]({{< ref "6-storage/#ebs-volume" >}})<br>- [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}}) | - [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}})<br>- [FSx]({{< ref "6-storage/#amazon-fsx" >}}) |
-| AMI                                | - [AMI]({{< ref "7-ami" >}})                                                                                        |                                                                                                             |
+| Tag: [Storage]({{< ref "tag/storage" >}})                                                 |                                                                                                                     |                                                                                                             |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [Storage]({{< ref "6-storage" >}})                                                        | - [EBS]({{< ref "6-storage/#ebs-volume" >}})<br>- [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}}) | - [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}})<br>- [FSx]({{< ref "6-storage/#amazon-fsx" >}}) |
+| - [S3 - CLF-C02]({{< ref "11-s3" >}})<br>- [S3 - SAA-C03]({{< ref "11-s3-saac03" >}})<br> |                                                                                                                     |                                                                                                             |
+| AMI                                                                                       | - [AMI]({{< ref "7-ami" >}})                                                                                        |                                                                                                             |
 ## EBS Volume Types
 
 **EBS volumes come in six types:**

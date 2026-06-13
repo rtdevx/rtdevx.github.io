@@ -6,6 +6,13 @@ summary: Other Compute Services in AWS cloud...
 draft: false
 tags:
   - CLF-C02
+  - Docker
+  - ECS
+  - ECR
+  - Fargate
+  - EKS
+  - Lambda
+  - Serverless
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -37,7 +44,7 @@ ECS allows launching Docker containers on AWS. It is an orchestrator.
 - AWS takes care of starting / stopping containers
 - Has integrations with the [Application Load Balancer]({{< ref "9-elastic-load-balancing/#3-kinds-of-load-balancers-offered-by-aws" >}})
 
-![](./assets/AWS_ECS_Solution.png)
+![](./assets/AWS_ECS_Solution.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Fargate
 
 - Launch Docker containers on AWS

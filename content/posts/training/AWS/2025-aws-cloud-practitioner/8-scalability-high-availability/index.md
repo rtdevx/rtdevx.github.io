@@ -6,6 +6,10 @@ summary: Scalability means that an application / infrastructure can handle great
 draft: false
 tags:
   - CLF-C02
+  - Scalability
+  - ASG
+  - HighAvailability
+  - LoadBalancing
 categories: AWS
 series: AWS Cloud Practitioner
 ---

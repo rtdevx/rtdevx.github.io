@@ -6,6 +6,10 @@ summary: AWS Architecting & Ecosystem, Well-Architected Framework, Cloud Adoptio
 draft: false
 tags:
   - CLF-C02
+  - security
+  - compliance
+  - Savings
+  - budget
 categories: AWS
 series: AWS Cloud Practitioner
 ---

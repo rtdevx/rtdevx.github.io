@@ -6,6 +6,10 @@ summary: Advanced Identity...
 draft: false
 tags:
   - CLF-C02
+  - iam
+  - RBAC
+  - security
+  - compliance
 categories: AWS
 series: AWS Cloud Practitioner
 ---

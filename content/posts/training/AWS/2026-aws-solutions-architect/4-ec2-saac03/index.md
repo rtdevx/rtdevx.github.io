@@ -6,6 +6,7 @@ summary: Associate-level extension of the `EC2` Section from AWS Cloud Practitio
 draft: false
 tags:
   - SAA-C03
+  - EC2
 categories:
   - AWS
 series: AWS Solution Architect

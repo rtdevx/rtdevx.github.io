@@ -6,6 +6,15 @@ summary: Security and Compliance, Shared Responsibility Model...
 draft: false
 tags:
   - CLF-C02
+  - security
+  - compliance
+  - WAF
+  - ACM
+  - DDoS
+  - Firewall
+  - KMS
+  - HSM
+  - iam
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -48,7 +57,7 @@ series: AWS Cloud Practitioner
 	- IAM user and roles
 	- Enabling encryption
 
-![](./assets/AWS_Shared_Responsibility_Model.jpeg)
+![](./assets/AWS_Shared_Responsibility_Model.jpeg "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _AWS Shared Responsibility Model_
 
 _More about Shared Responsibility Model:_ https://aws.amazon.com/compliance/shared-responsibility-model/
@@ -63,7 +72,7 @@ _More about Shared Responsibility Model:_ https://aws.amazon.com/compliance/shar
 
 Be ready to scale - use [AWS Auto Scaling]({{< ref "10-auto-scaling-groups" >}}).
 
-![](./assets/AWS_Shield.png)
+![](./assets/AWS_Shield.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _Sample Reference Architecture for DDOS Protection in AWS_
 ##### <font color=#C7EB25>DDoS components on above picture:</font>
 
@@ -103,7 +112,7 @@ _More about DDOS protection:_ https://docs.aws.amazon.com/whitepapers/latest/aws
 	- Inbound from the internet
 	- To / From Direct Connect & Site-to-Site VPN
 
-![](./assets/AWS_Network_Firewall.png)
+![](./assets/AWS_Network_Firewall.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _AWS Network Firewall is protecting entire VPC from [Layer 3]({{< ref "osi-model/#3-network-layer" >}}) to [Layer 7]({{< ref "osi-model/#7-application-layer" >}})_
 ##### <font color=#EB4925>AWS Network Firewall offers much better protection than</font> [NACL]({{< ref "18-vpc/#nacl-network-acl" >}}) <font color=#EB4925>that only operates at the subnet level. AWS Network Firewall operates at VPC level.</font>
 
@@ -244,7 +253,7 @@ EventBridge [Cloud Monitoring]({{< ref "17-cloud-monitoring" >}}) can be set up 
 
 GuardDuty has a dedicated finding for Crypto Currency (mining?) attacks.
 
-![](./assets/AWS_GuardDuty.png)
+![](./assets/AWS_GuardDuty.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _Amazon GuardDuty input data example_
 ## Amazon Inspector
 
@@ -307,7 +316,7 @@ Integrated dashboards showing current security and compliance status to quickly 
 
 <font color=#EBAC25>AWS Config service is a dependency and must first be enabled to use Security Hub.</font>
 
-![](./assets/AWS_Security_Hub.png)
+![](./assets/AWS_Security_Hub.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _AWS Security Hub_
 ## Amazon Detective
 

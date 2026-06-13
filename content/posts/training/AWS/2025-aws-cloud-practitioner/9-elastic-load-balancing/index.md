@@ -6,6 +6,10 @@ summary: Elastic Load Balancing automatically distributes your incoming traffic 
 draft: false
 tags:
   - CLF-C02
+  - Scalability
+  - HighAvailability
+  - LoadBalancing
+  - ASG
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -41,7 +45,7 @@ _AWS Elastic Load Balancing Introduction_
 | HTTP Routing features                                                                   | High Performance (millions or requests per second)                          | Route Traffic to Firewalls that you manage on EC2 instances                         |
 | Static DNS (URL)                                                                        | Static IP through Elastic IP                                                | Intrusion Detection                                                                 |
 
-![](./assets/AWS_ALB_NLB_GLB.png)
+![](./assets/AWS_ALB_NLB_GLB.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ### 1. Application Load Balancer 
 

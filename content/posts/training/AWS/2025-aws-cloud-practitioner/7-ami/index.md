@@ -6,6 +6,8 @@ summary: AMI are a customization of an EC2 instance...
 draft: false
 tags:
   - CLF-C02
+  - ami
+  - EC2
 categories: AWS
 series: AWS Cloud Practitioner
 ---

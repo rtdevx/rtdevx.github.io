@@ -6,6 +6,7 @@ summary: AWS oﬀers a growing number of database options (15+) with diverse dat
 draft: false
 tags:
   - CLF-C02
+  - database
 categories: AWS
 series: AWS Cloud Practitioner
 ---
@@ -57,7 +58,7 @@ It allows creating databases in the cloud that are managed by AWS:
 - Not possible to SSH into DB instances (managed service)
 #### Example RDS application architecture
 
-![](./assets/AWS_RDS_Example_Arch1.png)
+![](./assets/AWS_RDS_Example_Arch1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 _Source:_ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
 ### Amazon Aurora
 
@@ -220,7 +221,7 @@ Managed <font color=#EB4925>E</font>xtract, <font color=#EB4925>T</font>ransform
 - Useful to prepare and transform data for analytics
 - Fully <font color=#C7EB25>serverless</font> service
 
-![](./assets/AWS_RDS_Glue1.png)
+![](./assets/AWS_RDS_Glue1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### <font color=#EBAC25>DMS</font>
 
 **DMS** - <font color=#EB4925>D</font>atabase <font color=#EB4925>M</font>igration <font color=#EB4925>S</font>ervice
