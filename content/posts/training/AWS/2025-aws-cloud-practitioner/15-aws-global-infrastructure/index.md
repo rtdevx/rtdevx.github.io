@@ -31,7 +31,7 @@ _AWS Global Infrastructure Overview - Regions, Availability Zones, Edge Location
 ---
 ## Route53
 
-🏅 **Solutions Architect Associate level extension:** [Route 53]({{< ref "15-route53-saac03" >}}).
+🏅 **Solutions Architect Associate level extension:** [Route 53 - SAAC03]({{< ref "15-route53-saac03" >}}).
 
 **Route53** is managed **DNS**.
 
@@ -68,6 +68,8 @@ _More about Registering and managing domains:_ https://docs.aws.amazon.com/Route
 
 _More about Route 53:_ https://docs.aws.amazon.com/route53/
 ## Amazon CloudFront
+
+🏅 **Solutions Architect Associate level extension:** [CloudFront & Global Accelerator]({{< ref "15-2-cloudfront-global-accelerator-saac03" >}}).
 
 - <font color=#C7EB25>Content Delivery Network</font> (CDN)
 - Improves read performance, content cached at the edge
@@ -107,6 +109,8 @@ _[How CloudFront delivers content](https://docs.aws.amazon.com/AmazonCloudFront/
 
 Increase transfer speed by transferring files to an AWS edge location which will forward the data to the S3 bucket in the target region.
 ## AWS Global Accelerator
+
+🏅 **Solutions Architect Associate level extension:** [CloudFront & Global Accelerator]({{< ref "15-2-cloudfront-global-accelerator-saac03" >}}).
 
 **AWS Global Accelerator** is used to improve global application availability and performance using the AWS global network.
 

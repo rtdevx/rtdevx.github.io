@@ -50,14 +50,27 @@ When your origin content changes, CloudFront won’t fetch the new version until
 You can bypass the TTL by issuing a **CloudFront invalidation**, refreshing specific paths (e.g., `/index.html`, `/images/*`) or even all files (`*`).
 
 {{< /alert >}}
-### Unicast IP vs Anycast IP
+## Unicast IP vs Anycast IP
 
 - **Unicast IP:** one server holds one IP address
 - **Anycast IP:** all servers hold the same IP address and the client is routed to the nearest one
 
 ![](./assets/AWS_CloudFrnt_Unicast_Anyacst.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## AWS Global Accelerator
 
+**AWS Global Accelerator** was covered in [AWS Global Infrastructure | Global Accelerator]({{< ref "15-aws-global-infrastructure/#aws-global-accelerator" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 
+- Works with **Elastic IPs**, **EC2 instances**, **ALBs**, and **NLBs** (public or private)    
+- Provides consistent performance with intelligent, low‑latency routing and fast regional failover   
+- Avoids client‑side caching issues because the IPs never change    
+- Uses the AWS global network for optimized delivery    
+- Continuously health‑checks your endpoints for rapid failover (typically under 1 minute)    
+- Strong for disaster recovery scenarios    
+- Security benefits: 
+	- only two static IPs to whitelist
+	- built‑in DDoS protection via AWS Shield
+
+ℹ️ _Read More:_ [AWS Global Accelerator vs CloudFront]({{< ref "15-aws-global-infrastructure/#aws-global-accelerator-vs-cloudfront" >}})
 
 ---
 ## >> Sources <<
@@ -66,7 +79,9 @@ You can bypass the TTL by issuing a **CloudFront invalidation**, refreshing spec
 - [Amazon CloudFront Documentation](https://docs.aws.amazon.com/cloudfront/)
 ## >> References <<
 
-**Cloud Practitioner:** [Amazon CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}})
+**Cloud Practitioner:** 
+- [Amazon CloudFront]({{< ref "15-aws-global-infrastructure/#amazon-cloudfront" >}})
+- [AWS Global Infrastructure | Global Accelerator]({{< ref "15-aws-global-infrastructure/#aws-global-accelerator" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
