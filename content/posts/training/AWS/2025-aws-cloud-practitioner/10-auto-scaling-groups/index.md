@@ -9,6 +9,7 @@ tags:
   - ASG
   - LoadBalancing
   - HighAvailability
+  - Scalability
 categories: AWS
 series: AWS Cloud Practitioner
 ---

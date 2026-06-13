@@ -8,8 +8,7 @@ tags:
   - CLF-C02
   - security
   - compliance
-  - Savings
-  - budget
+  - Costs
 categories: AWS
 series: AWS Cloud Practitioner
 ---

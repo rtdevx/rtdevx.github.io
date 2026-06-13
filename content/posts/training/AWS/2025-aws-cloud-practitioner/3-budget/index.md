@@ -6,9 +6,7 @@ summary: AWS Budget...
 draft: false
 tags:
   - CLF-C02
-  - budget
-  - Billing
-  - Savings
+  - Costs
 categories: AWS
 series: AWS Cloud Practitioner
 ---

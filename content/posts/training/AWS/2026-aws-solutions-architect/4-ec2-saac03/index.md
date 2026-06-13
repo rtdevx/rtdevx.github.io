@@ -7,6 +7,7 @@ draft: false
 tags:
   - SAA-C03
   - EC2
+  - ami
 categories:
   - AWS
 series: AWS Solution Architect

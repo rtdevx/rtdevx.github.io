@@ -8,8 +8,6 @@ tags:
   - SAA-C03
   - storage
   - S3
-  - EFS
-  - EBS
 categories:
   - AWS
 series: AWS Solution Architect

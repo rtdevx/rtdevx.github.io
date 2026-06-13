@@ -7,8 +7,6 @@ draft: false
 tags:
   - CLF-C02
   - VPC
-  - VPN
-  - SecurityGroups
 categories: AWS
 series: AWS Cloud Practitioner
 ---

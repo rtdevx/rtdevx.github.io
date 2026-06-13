@@ -15,6 +15,7 @@ tags:
   - KMS
   - HSM
   - iam
+  - encryption
 categories: AWS
 series: AWS Cloud Practitioner
 ---

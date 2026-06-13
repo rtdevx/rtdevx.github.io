@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
   - EC2
+  - ami
 categories: AWS
 series: AWS Cloud Practitioner
 ---

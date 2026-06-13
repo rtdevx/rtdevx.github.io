@@ -9,8 +9,8 @@ tags:
   - iam
   - security
   - compliance
-  - Billing
-  - Savings
+  - Costs
+  - RBAC
 categories: AWS
 series: AWS Cloud Practitioner
 ---

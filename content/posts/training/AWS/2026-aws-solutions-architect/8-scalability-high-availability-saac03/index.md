@@ -10,7 +10,6 @@ tags:
   - HighAvailability
   - LoadBalancing
   - security
-  - TLS
   - ASG
 categories:
   - AWS

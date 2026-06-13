@@ -8,9 +8,6 @@ tags:
   - CLF-C02
   - Storage
   - S3
-  - EBS
-  - EFS
-  - FSx
 categories: AWS
 series: AWS Cloud Practitioner
 ---
