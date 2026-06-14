@@ -101,7 +101,7 @@ series: AWS Solution Architect
 	- <font color=#EB4925>Amazon S3 cannot be mounted as a file system</font>
 ### ECS - Auto Scaling
 
-#### Fargate Auto Scaling
+#### Fargate Launch Type - Auto Scaling
 
 - Automatically adjusts the number of running ECS tasks    
 - Uses **Application Auto Scaling**    
@@ -116,7 +116,7 @@ series: AWS Solution Architect
     - **Scheduled Scaling** (time‑based, predictable changes)
         
 - Much simpler to configure because there are **no EC2 instances** to manage
-#### EC2 Auto Scaling
+#### EC2 Launch Type - Auto Scaling
 
 - Scaling ECS tasks may require adding more **EC2 instances** underneath    
 - Uses an **Auto Scaling Group (ASG)** to grow or shrink EC2 capacity    
