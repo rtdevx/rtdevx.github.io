@@ -1,8 +1,8 @@
 ---
-title: Other Compute Services (Docker, ECS, EKS, Fargate, Lambda)
+title: Other Compute Services (ECS, EKS, Lambda)
 date: 2025-08-13
-description: Other Compute Services in AWS
-summary: Other Compute Services in AWS cloud...
+description: Other Compute Services in AWS (Docker, ECS, ECR, EKS, Fargate, Lambda, Batch, LightSail).
+summary: Other Compute Services in AWS (Docker, ECS, ECR, EKS, Fargate, Lambda, Batch, LightSail).
 draft: false
 tags:
   - CLF-C02
