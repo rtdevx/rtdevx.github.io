@@ -19,6 +19,7 @@ categories:
   - Containers
 series: AWS Cloud Practitioner
 ---
+🏅 **Solutions Architect Associate level extension:** [Containers on AWS - SAAC03]({{< ref "53-containers-aws" >}}).
 ## Docker
 
 **Docker** is a software development platform to deploy apps.
