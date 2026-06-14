@@ -128,6 +128,13 @@ series: AWS Solution Architect
 <font color=#EBAC25><i>More info:</i></font> 
 - [Amazon Elastic Container Service](https://aws.amazon.com/ecs/)
 - [Amazon Elastic Container Service Documentation](https://docs.aws.amazon.com/ecs/)
+## ECR
+
+- **ECR (Elastic Container Registry):** stores and manages Docker images on AWS    
+- Supports **private and public** repositories (including the Amazon ECR Public Gallery)    
+- Fully integrated with ECS and backed by Amazon S3    
+- Access controlled through **IAM** (permission issues usually point to policy problems)    
+- Offers image vulnerability scanning, versioning, tagging, and lifecycle management
 
 ---
 ## >> Sources <<
