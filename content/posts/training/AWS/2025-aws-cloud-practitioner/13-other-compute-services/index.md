@@ -1,5 +1,5 @@
 ---
-title: Other Compute Services
+title: Other Compute Services (Docker, ECS, EKS, Fargate, Lambda)
 date: 2025-08-13
 description: Other Compute Services in AWS
 summary: Other Compute Services in AWS cloud...
