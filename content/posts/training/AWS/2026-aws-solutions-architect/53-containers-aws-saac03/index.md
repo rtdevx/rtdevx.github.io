@@ -31,7 +31,9 @@ series: AWS Solution Architect
 
 ## Introduction
 
-**Introduction to Containers** was covered in [Other Compute Services (ECS, EKS, Lambda)]({{< ref "13-other-compute-services" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series:
+**Introduction to Containers** was covered in [Other Compute Services (ECS, EKS, Lambda)]({{< ref "13-other-compute-services" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
+
+<center><small><small>⬇️⬇️⬇️</small></small></center>
 
 |                                                            |                                                                               |                                                             |
 | ---------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
