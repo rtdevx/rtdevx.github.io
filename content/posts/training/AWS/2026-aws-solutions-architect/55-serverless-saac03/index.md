@@ -7,7 +7,7 @@ description: "Serverless is a new paradigm in which the developers don’t have 
 summary: "Serverless is a new paradigm in which the developers don’t have to \r
 
   manage servers anymore… They just deploy code..."
-draft: false
+draft: true
 tags:
   - SAA-C03
   - Serverless
