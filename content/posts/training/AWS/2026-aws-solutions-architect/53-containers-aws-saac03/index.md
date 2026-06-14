@@ -35,7 +35,7 @@ series: AWS Solution Architect
 
 <center><small><small>⬇️⬇️⬇️</small></small></center>
 
-|                                                            |                                                                               |                                                             |
+| Tag: [Docker]({{< ref "tags/docker" >}})                   |                                                                               |                                                             |
 | ---------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | [Docker]({{< ref "13-other-compute-services/#docker" >}})  | [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) | [Fargate]({{< ref "13-other-compute-services/#fargate" >}}) |
 | [EKS]({{< ref "13-other-compute-services/#amazon-eks" >}}) | [ECR]({{< ref "13-other-compute-services/#ecr" >}})                           | [Lambda]({{< ref "13-other-compute-services/#lambda" >}})   |
