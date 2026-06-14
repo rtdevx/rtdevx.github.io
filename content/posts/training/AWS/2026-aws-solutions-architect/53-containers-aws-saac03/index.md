@@ -40,6 +40,9 @@ series: AWS Solution Architect
 | [Docker]({{< ref "13-other-compute-services/#docker" >}})  | [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) | [Fargate]({{< ref "13-other-compute-services/#fargate" >}}) |
 | [EKS]({{< ref "13-other-compute-services/#amazon-eks" >}}) | [ECR]({{< ref "13-other-compute-services/#ecr" >}})                           | [Lambda]({{< ref "13-other-compute-services/#lambda" >}})   |
 
+<font color=#EBAC25><i>More info:</i></font> 
+- [Amazon Elastic Container Service](https://aws.amazon.com/ecs/)
+- [Amazon Elastic Container Service Documentation](https://docs.aws.amazon.com/ecs/)
 ### Docker Containers Management on AWS
 
 - **Amazon ECS:** AWS’s native container orchestration platform    
@@ -126,10 +129,6 @@ series: AWS Solution Architect
 - **ECS Capacity Providers** integrate the ASG with ECS    
     - Automatically provisions EC2 instances when tasks need more CPU/RAM        
     - Ensures the cluster has enough capacity for scheduled or scaled‑out tasks
-
-<font color=#EBAC25><i>More info:</i></font> 
-- [Amazon Elastic Container Service](https://aws.amazon.com/ecs/)
-- [Amazon Elastic Container Service Documentation](https://docs.aws.amazon.com/ecs/)
 ## ECR
 
 - **ECR (Elastic Container Registry):** stores and manages Docker images on AWS    
@@ -138,12 +137,90 @@ series: AWS Solution Architect
 - Access controlled through **IAM** (permission issues usually point to policy problems)    
 - Offers image vulnerability scanning, versioning, tagging, and lifecycle management
 
+<font color=#EBAC25><i>More info:</i></font> 
+- [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)
+- [Amazon Elastic Container Registry Documentation](https://docs.aws.amazon.com/ecr/)
+- [Amazon ECR Public Gallery](https://gallery.ecr.aws/)
+## EKS
+
+- **Amazon EKS (Elastic Kubernetes Service):** managed Kubernetes clusters on AWS    
+- Kubernetes is an open‑source system for deploying, scaling, and managing containerized (typically Docker) applications    
+- EKS is an alternative to ECS - same goal, different API and ecosystem    
+- Supports both **EC2 worker nodes** and **Fargate** for serverless pod execution    
+- Ideal when a company already uses Kubernetes on‑prem or in another cloud and wants to run Kubernetes on AWS    
+- Kubernetes is **cloud‑agnostic**, so it works across AWS, Azure, GCP, and on‑prem    
+- For multi‑region setups, deploy **one EKS cluster per region**    
+- Use **CloudWatch Container Insights** for logs and metrics
+
+<font color=#EBAC25><i>More info:</i></font> 
+- [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/)
+- [Amazon Elastic Kubernetes Service Documentation](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
+### EKS - Diagram
+
+![](./assets/AWS_EKS_Diagram.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### EKS - Node Types
+
+- **Managed Node Groups**
+	- Creates and manages Nodes (EC2 instances) for you
+	- Nodes are part of an ASG managed by EKS
+	- Supports On-Demand or Spot Instances
+ 
+- **Self-Managed Nodes**
+	- Nodes created by you and registered to the EKS cluster and managed by an ASG
+	- You can use prebuilt AMI - Amazon EKS Optimized AMI
+	- Supports On-Demand or Spot Instances
+ 
+- **AWS Fargate**
+	- No maintenance required; no nodes managed
+### EKS - Data Volumes
+
+- Define a **StorageClass** in your EKS cluster    
+- Uses a **CSI‑compliant storage driver**
+    
+- Supports:    
+    - **Amazon EBS**        
+    - **Amazon EFS** (including Fargate support)        
+    - **Amazon FSx for Lustre**        
+    - **Amazon FSx for NetApp ONTAP**
+### AWS App Runner
+
+- Fully managed service for deploying web applications and APIs at scale    
+- No infrastructure expertise required    
+- Deploy directly from source code or a container image    
+- Automatically builds, deploys, and runs your application    
+- Provides automatic scaling, high availability, load balancing, and encryption    
+- Supports VPC access    
+- Can connect to databases, caches, and messaging services    
+- Ideal for web apps, APIs, microservices, and fast production rollouts
+
+![](./assets/AWS_EKS_App_Runner.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### AWS App2Container (A2C)
+
+- CLI tool for migrating and modernizing Java and .NET web apps into Docker containers    
+- Supports lift‑and‑shift from on‑prem, VMs, or any cloud into AWS    
+- Speeds up modernization with **no code changes** required, suitable for legacy apps    
+- Generates CloudFormation templates for compute, networking, and related resources    
+- Builds and pushes generated container images to **Amazon ECR**    
+- Deploys to **ECS**, **EKS**, or **App Runner**    
+- Includes support for pre‑built CI/CD pipelines
+
+![](./assets/AWS_EKS_A2C.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
 ---
 ## >> Sources <<
 
 **ECS:**
 - [Amazon Elastic Container Service](https://aws.amazon.com/ecs/)
 - [Amazon Elastic Container Service Documentation](https://docs.aws.amazon.com/ecs/)
+
+**ECR:**
+- [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)
+- [Amazon Elastic Container Registry Documentation](https://docs.aws.amazon.com/ecr/)
+- [Amazon ECR Public Gallery](https://gallery.ecr.aws/)
+
+**EKS:**
+- [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/)
+- [Amazon Elastic Kubernetes Service Documentation](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
 ## >> References <<
 
 **Cloud Practitioner:** 
