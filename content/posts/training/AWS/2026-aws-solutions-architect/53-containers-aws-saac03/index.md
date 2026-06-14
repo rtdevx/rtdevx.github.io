@@ -182,7 +182,7 @@ series: AWS Solution Architect
     - **Amazon EFS** (including Fargate support)        
     - **Amazon FSx for Lustre**        
     - **Amazon FSx for NetApp ONTAP**
-### AWS App Runner
+### AWS App Runner (DISCONTINUED!)
 
 - Fully managed service for deploying web applications and APIs at scale    
 - No infrastructure expertise required    
@@ -192,8 +192,6 @@ series: AWS Solution Architect
 - Supports VPC access    
 - Can connect to databases, caches, and messaging services    
 - Ideal for web apps, APIs, microservices, and fast production rollouts
-
-![](./assets/AWS_EKS_App_Runner.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### AWS App2Container (A2C)
 
 - CLI tool for migrating and modernizing Java and .NET web apps into Docker containers    
