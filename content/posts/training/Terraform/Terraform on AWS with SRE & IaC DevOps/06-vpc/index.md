@@ -223,7 +223,6 @@ _File:_  📄c2-generic-variables.tf
 
 ```shell
 # INFO: Input Variables
-# INFO: https://developer.hashicorp.com/terraform/language/block/variable
 
 # INFO: AWS Region
 variable "aws_region" {
@@ -252,8 +251,6 @@ _File:_  📄c3-local-values.tf
 
 ```shell
 # INFO: Local Values
-# INFO: https://developer.hashicorp.com/terraform/language/block/locals
-# INFO: slice Function used for AZ's: https://developer.hashicorp.com/terraform/language/functions/slice
 
 data "aws_availability_zones" "available" {}
 locals {
@@ -275,7 +272,6 @@ _File:_  📄c4-01-vpc-variables.tf
 
 ```shell
 # INFO: VPC Input Variables required by VPC module
-# INFO: https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
 
 # INFO: VPC Name
 variable "vpc_name" {
@@ -296,7 +292,6 @@ _File:_  📄c4-02-vpc-module.tf
 
 ```shell
 # INFO: Create VPC using Terraform Module
-# INFO: https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
 
 module "vpc" {
   source = "./modules/aws-vpc"
@@ -394,7 +389,7 @@ _File:_  📄terraform.tfvars
 # ! This will overwrite default values from c2-generic-variables.tf
 
 aws_region       = "eu-west-2"
-environment      = "UAT"
+environment      = "DEV"
 business_division = "Training"
 ```
 
