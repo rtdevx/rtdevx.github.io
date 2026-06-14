@@ -3,7 +3,7 @@ title: "Solutions Architect: Containers on AWS"
 date: 2026-04-09
 description: Associate-level extension of the `Other Compute Services` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `Other Compute Services` Section from AWS Cloud Practitioner Series.
-draft: false
+draft: true
 tags:
   - SAA-C03
   - Docker
@@ -13,7 +13,6 @@ tags:
   - Fargate
   - kubernetes
   - Serverless
-  - Lambda
 categories:
   - AWS
 series: AWS Solution Architect
@@ -29,10 +28,10 @@ series: AWS Solution Architect
 
 **Introduction to Containers** was covered in [Other Compute Services (ECS, EKS, Lambda)]({{< ref "13-other-compute-services" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series:
 
-|                                                                                             |                                                                               |                                                             |
-| ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| [Docker]({{< ref "13-other-compute-services/#docker" >}})                                   | [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) | [Fargate]({{< ref "13-other-compute-services/#fargate" >}}) |
-| [EKS]({{< ref "13-other-compute-services/#docker" >}})13-other-compute-services/#amazon-eks | [ECR]({{< ref "13-other-compute-services/#ecr" >}})                           | [Lambda]({{< ref "13-other-compute-services/#lambda" >}})   |
+|                                                            |                                                                               |                                                             |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| [Docker]({{< ref "13-other-compute-services/#docker" >}})  | [ECS]({{< ref "13-other-compute-services/#ecs-elastic-container-service" >}}) | [Fargate]({{< ref "13-other-compute-services/#fargate" >}}) |
+| [EKS]({{< ref "13-other-compute-services/#amazon-eks" >}}) | [ECR]({{< ref "13-other-compute-services/#ecr" >}})                           | [Lambda]({{< ref "13-other-compute-services/#lambda" >}})   |
 
 
 
