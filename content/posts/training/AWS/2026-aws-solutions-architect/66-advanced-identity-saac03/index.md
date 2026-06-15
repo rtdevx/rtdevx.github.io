@@ -3,7 +3,7 @@ title: "Solutions Architect: Advanced Identity"
 date: 2026-04-14
 description: Associate-level extension of the `Identity and Access management` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `Identity and Access management` Section from AWS Cloud Practitioner Series.
-draft: false
+draft: true
 tags:
   - SAA-C03
   - RBAC
