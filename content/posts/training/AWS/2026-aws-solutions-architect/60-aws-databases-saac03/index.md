@@ -35,7 +35,15 @@ series: AWS Solution Architect
   
 {{< alert "circle-info" >}}
 
-A **join** is an operation in SQL that lets you combine data from **multiple tables** based on a related value they share. Joins allow **complex queries** across multiple datasets. They’re essential for **OLTP / RDBMS** workloads where data is normalised.
+A **join** is an operation in SQL that lets you combine data from **multiple tables** based on a related value they share. Joins allow **complex queries** across multiple datasets, They enforce **relationships** between entities (users → orders, products → categories, etc.), they’re essential for **OLTP / RDBMS** workloads where data is normalised.
+
+<font color=#EBAC25>Example</font> join query:
+
+```
+SELECT users.name, orders.amount
+FROM users
+JOIN orders ON users.user_id = orders.user_id;
+```
 
 {{< /alert >}}
     
