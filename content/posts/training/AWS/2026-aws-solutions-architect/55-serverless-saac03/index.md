@@ -295,6 +295,72 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
     - Supports **CSV**, **DynamoDB JSON**, and **ION**        
     - Doesn’t consume write capacity and always creates a **new table**        
     - Any import errors are logged in **CloudWatch Logs**
+## AWS API Gateway
+
+- Combine API Gateway with Lambda for a fully managed, no‑infrastructure setup    
+- Supports **WebSocket APIs**    
+- Manages **API versioning** and **multiple environments** (dev/test/prod)    
+- Handles **authentication, authorization**, API keys, and throttling    
+- Import **Swagger/OpenAPI** definitions to build APIs quickly    
+- Can **transform and validate** requests/responses    
+- Generates SDKs and API specs    
+- Supports **response caching**
+### API Gateway - integrations
+
+- **Lambda integration:**    
+    - Directly invoke a Lambda function        
+    - Easiest way to expose a serverless REST API        
+- **HTTP integration:**    
+    - Forward requests to any HTTP backend (on‑prem, ALB, internal APIs)        
+    - Adds features like throttling, caching, auth, and API keys        
+- **AWS service integration:**    
+    - Call AWS APIs through API Gateway (e.g., start Step Functions, send SQS messages)        
+    - Useful for adding authentication, public access, and rate control
+### API Gateway - Endpoint Types
+
+- **Edge‑Optimized (default):**    
+    - Best for global clients        
+    - Requests go through CloudFront edge locations for lower latency        
+    - The API itself still resides in a single region
+        
+- **Regional:**    
+    - Intended for same‑region clients        
+    - Can pair with your own CloudFront distribution for custom caching and routing
+        
+- **Private:**    
+    - Accessible only from your VPC via an **interface VPC endpoint (ENI)**        
+    - Access controlled using a **resource policy**
+## AWS Step Functions
+
+- Build **serverless, visual workflows** to <font color=#EB4925>orchestrate Lambda functions</font>
+- Supports sequences, parallel steps, branching, timeouts, and robust error handling    
+- Integrates with many AWS and external systems: **EC2, ECS, on‑prem servers, API Gateway, SQS**, and more    
+- Can include **human approval steps** in a workflow    
+- Ideal for order processing, data pipelines, web applications, and general workflow automation
+
+![](./assets/AWS_Step_Functions.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Amazon Cognito
+
+ℹ️ **Amazon Cognito** coverage at [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) level: [Amazon Cognito]({{< ref "22-advanced-identity/#amazon-cognito" >}}).
+
+- Provides identities for users of your web or mobile apps    
+- **User Pools:** user sign‑up/sign‑in, integrates with API Gateway and ALB    
+- **Identity Pools:** issue AWS credentials so users can access AWS services directly; can use a User Pool as the identity provider    
+- Use Cognito instead of IAM for **large numbers of app/mobile users** or **SAML‑based authentication**
+### Cognito User Pools (CUP)
+
+- **Create a serverless database of user for your web & mobile apps**
+- Simple login: Username (or email) / password combination
+- Password reset
+- Email & Phone Number Verification
+- Multi-factor authentication (MFA)
+- **Federated Identities:** users from Facebook, Google, SAML…
+	- Provides identities so users can receive **temporary AWS credentials**
+	- Supports Cognito User Pools and third‑party identity providers
+	- Users can access AWS services directly or via API Gateway
+	- IAM policies for these credentials are defined in Cognito and can be **customised per user**
+
+![](./assets/AWS_Cognito_CUP.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ---
 ## >> Sources <<
