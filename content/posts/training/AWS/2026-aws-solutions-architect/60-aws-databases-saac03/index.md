@@ -1,9 +1,9 @@
 ---
 title: "Solutions Architect: Databases in AWS"
-date: 2026-04-01
+date: 2026-04-11
 description: Associate-level extension of the `Databases` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `Databases` Section from AWS Cloud Practitioner Series.
-draft: false
+draft: true
 tags:
   - SAA-C03
   - database
@@ -29,6 +29,9 @@ series: AWS Solution Architect
     - What **data model** fits: structured, semi‑structured, joins, query patterns        
     - Do you need a strict schema or flexibility? Reporting? Search? RDBMS vs NoSQL        
     - Any **licensing costs** to consider, or opportunities to move to cloud‑native engines like Aurora
+## Database Types
+
+
 
 ---
 ## >> Sources <<
