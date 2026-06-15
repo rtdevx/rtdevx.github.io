@@ -31,7 +31,14 @@ series: AWS Solution Architect
     - Any **licensing costs** to consider, or opportunities to move to cloud‑native engines like Aurora
 ## Database Types
 
-- **RDBMS / OLTP (SQL):** RDS, Aurora — best when you need joins    
+- **RDBMS / OLTP (SQL):** RDS, Aurora - best when you need joins 
+  
+{{< alert "circle-info" >}}
+
+A **join** is an operation in SQL that lets you combine data from **multiple tables** based on a related value they share. Joins allow **complex queries** across multiple datasets. They’re essential for **OLTP / RDBMS** workloads where data is normalised.
+
+{{< /alert >}}
+    
 - **NoSQL:** DynamoDB (JSON‑style), ElastiCache (key/value), Neptune (graph), DocumentDB (MongoDB‑compatible), Keyspaces (Cassandra)    
 - **Object Storage:** S3 for large objects, Glacier for archival    
 - **Data Warehousing / Analytics:** Redshift (OLAP), Athena, EMR    
