@@ -190,8 +190,26 @@ In **Amazon EKS** and **Kubernetes**, <font color=#EBAC25>CloudWatch Insights is
 
 - <font color=#EBAC25>Provides automated dashboards that show potential problems with monitored applications</font>, to help isolate ongoing issues
 - Your applications run on Amazon EC2 Instances with select technologies only (Java, .NET, Microsoft IIS Web Server, databases…)
+## AWS CloudTrail
 
+- Provides **governance, compliance, and audit visibility** for your AWS account, and is **enabled by default**    
+- Records all API activity from the console, SDKs, CLI, and AWS services    
+- Logs can be sent to **CloudWatch Logs** or **S3**, and trails can cover **all regions** or a single region   
+- When something is deleted or changed, **CloudTrail is the first place to investigate**
+### CloudTrail Events
 
+- **Management events** capture operations performed on AWS resources, such as security changes, network configuration, or creating trails. Trails log these by default, and you can separate **Read** (non‑mutating) from **Write** (resource‑changing) actions.
+    
+- **Data events** record high‑volume, resource‑level activity and are **disabled by default**. They include S3 object‑level actions (GetObject, PutObject, DeleteObject) and Lambda **Invoke** operations, with optional separation of Read and Write events.
+#### CloudTrail Insights
+
+- Detects unusual account activity such as misconfigured provisioning, service‑limit spikes, bursts of IAM actions, or gaps in routine operations    
+- Builds a baseline from normal **management events**, then analyses **write events** to spot anomalies    
+- Anomalies appear in the CloudTrail console, are delivered to **S3**, and also generate **EventBridge events** for automation
+### CloudTrail Events Retention
+
+- <font color=#EBAC25>Events are stored for 90 days in CloudTrail</font>
+- <font color=#EB4925>To keep events beyond this period, log them to S3 and use Athena</font>
 
 ---
 ## >> Sources <<
