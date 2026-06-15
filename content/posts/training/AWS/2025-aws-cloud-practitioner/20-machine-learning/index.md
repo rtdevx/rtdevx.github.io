@@ -11,6 +11,7 @@ tags:
 categories: AWS
 series: AWS Cloud Practitioner
 ---
+ℹ️ [Machine Learning]({{< ref "61-machine-learning-saac03" >}}) at [AWS Solutions Architect]({{< ref "series/aws-solution-architect" >}}) series.
 ## Amazon Rekognition
 
 ##### <font color=#EBAC25>Finding objects, people, text, scenes in images and videos</font> using Machine Learning.
