@@ -45,6 +45,10 @@ FROM users
 JOIN orders ON users.user_id = orders.user_id;
 ```
 
+**RDS** and **Aurora** are **relational** databases - they’re designed for this kind of multi‑table querying.
+
+NoSQL systems like DynamoDB don’t support joins, which is why data modelling is very different there.
+
 {{< /alert >}}
     
 - **NoSQL:** DynamoDB (JSON‑style), ElastiCache (key/value), Neptune (graph), DocumentDB (MongoDB‑compatible), Keyspaces (Cassandra)    
