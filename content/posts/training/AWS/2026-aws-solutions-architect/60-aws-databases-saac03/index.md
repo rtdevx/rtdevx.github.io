@@ -123,20 +123,48 @@ series: AWS Solution Architect
     - Trigger notifications on specific graph changes        
     - Keep another data store (S3, OpenSearch, ElastiCache, etc.) in sync        
     - Support **cross‑region** Neptune replication
+## Amazon Keyspaces (for Apache Cassandra)
 
+- Fully managed, serverless, Cassandra‑compatible NoSQL database    
+- Automatically scales up/down with traffic; highly available with **3× replication across AZs**    
+- Uses **CQL** and delivers single‑digit millisecond latency at massive scale    
+- Supports on‑demand or provisioned capacity (with auto‑scaling)    
+- Provides encryption, backups, and **PITR** (Point-In-Time Recovery) **up to 35 days**    
+- Great for IoT data, time‑series workloads, and large‑scale distributed apps
+## Amazon Timestream
 
+- Fully managed, serverless **time‑series database** that auto‑scales with demand    
+- Handles **trillions of events per day**, delivering far lower cost and much faster performance than relational DBs    
+- Supports scheduled queries, multi‑measure records, and **SQL‑compatible** querying    
+- Tiered storage: recent data in memory, historical data in cost‑optimised storage    
+- Built‑in time‑series analytics for near real‑time pattern detection    
+- Encrypted in transit and at rest    
+- Ideal for **IoT**, operational monitoring, and real‑time analytics
 
 ---
 ## >> Sources <<
 
-[AWS Databases](https://aws.amazon.com/products/databases/)
+- [AWS Databases](https://aws.amazon.com/products/databases/)
+	- [Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+	- [Amazon Aurora](https://aws.amazon.com/rds/aurora/)
+	- [Amazon ElastiCache](https://aws.amazon.com/elasticache/)
+	- [DynamoDB](https://docs.aws.amazon.com/dynamodb/)
+	- [Amazon S3]({{< ref "tags/s3" >}})
+		- [S3 - Cloud Practitioner]({{< ref "11-s3" >}})
+		- [S3 - Solutions Architect]({{< ref "11-s3-saac03" >}})
+	- [DocumentDB](https://docs.aws.amazon.com/documentdb/)
+	- [Amazon Neptune](https://docs.aws.amazon.com/neptune/)
+	- [Amazon Keyspaces (for Apache Cassandra)](https://docs.aws.amazon.com/keyspaces/)
+	- [Amazon Timestream](https://docs.aws.amazon.com/timestream/)
 ## >> References <<
 
 **Cloud Practitioner:** 
 - [Databases]({{< ref "12-databases" >}})
+- [S3 - Cloud Practitioner]({{< ref "11-s3" >}})
 
 **Solutions Architect:**
 - [RDS, Aurora, Elasticache]({{< ref "12-rds-aurora-elasicache-saac03" >}})
+- [S3 - Solutions Architect]({{< ref "11-s3-saac03" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}

@@ -294,6 +294,8 @@ An Aurora global database consists of one _primary_ AWS Region where your data i
 - **Cloud Practitioner:** [Databases]({{< ref "12-databases" >}})
 	- **Cloud Practitioner:** [RDS and Aurora]({{< ref "12-databases/#rds-and-aurora" >}})
 	- **Cloud Practitioner:** [Elasticache]({{< ref "12-databases/#amazon-elasticache" >}})
+
+- **Solutions Architect:** [Databases in AWS]({{< ref "60-aws-databases-saac03" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
