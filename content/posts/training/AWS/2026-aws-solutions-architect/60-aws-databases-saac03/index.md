@@ -246,6 +246,14 @@ You can configure **Amazon Redshift** to **automatically copy snapshots** (autom
 	- [Amazon Neptune](https://docs.aws.amazon.com/neptune/)
 	- [Amazon Keyspaces (for Apache Cassandra)](https://docs.aws.amazon.com/keyspaces/)
 	- [Amazon Timestream](https://docs.aws.amazon.com/timestream/)
+
+- [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)
+- [Redshift](https://docs.aws.amazon.com/redshift/)
+- [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html)
+- [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html)
+- [Amazon QuickSight](https://docs.amazonaws.cn/en_us/quicksight/latest/APIReference/Welcome.html)
+- [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
+- [Amazon MSK](https://docs.aws.amazon.com/msk/)
 ## >> References <<
 
 **Cloud Practitioner:** 
