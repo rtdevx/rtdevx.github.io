@@ -3,9 +3,9 @@ title: "Solutions Architect: AWS Monitoring, Audit and \r
 
   Performance"
 date: 2026-04-13
-description: CloudWatch, CloudTrail & AWS Config.
-summary: CloudWatch, CloudTrail & AWS Config.
-draft: true
+description: CloudWatch, EventBridge, CloudTrail & AWS Config.
+summary: CloudWatch, EventBridge, CloudTrail & AWS Config.
+draft: false
 tags:
   - SAA-C03
   - monitoring
@@ -21,7 +21,135 @@ series: AWS Solution Architect
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 
-# CONTENT
+## CloudWatch
+
+{{< lead >}}
+
+Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics**, **logs**, and **events** from your infrastructure and applications. It gives you **real‑time visibility** into **performance and operational health** so you can detect issues and automate responses.
+
+{{< /lead >}}
+### CloudWatch Metrics
+
+- CloudWatch provides **metrics for all AWS services**    
+- A metric is a monitored variable (e.g., **CPUUtilization**, **NetworkIn**)    
+- Metrics live in **namespaces** and can include up to **30 dimensions** (e.g., instance ID, environment)    
+- All metrics have timestamps    
+- Supports **dashboards** for visualisation    
+- You can publish **custom metrics** (e.g., RAM usage)
+### CloudWatch Metric Streams
+
+- Continuously streams CloudWatch metrics to your chosen destination with **low‑latency, near‑real‑time** delivery    
+- Supports Kinesis Data Firehose targets and third‑party tools like **Datadog, Dynatrace, New Relic, Splunk, Sumo Logic**    
+- You can **filter** which metrics are streamed to control volume and cost
+
+![](./assets/AWS_Monitoring_CloudWatch_Metric_Streams.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### CloudWatch Logs
+
+- **Log groups** represent applications; **log streams** represent individual instances, files, or containers    
+- Supports configurable **retention policies** (from 1 day to 10 years, or never expire)    
+- Logs can be sent to:
+	- **S3**
+	- Kinesis Data Streams
+	- Kinesis Firehose
+	- Lambda
+	- OpenSearch
+- Logs are encrypted by default
+- Can setup KMS-based encryption with your own keys
+
+{{< alert "circle-info" >}}
+
+**CloudWatch Logs sources:**
+
+- Logs can come from the SDK, CloudWatch Logs Agent, or the Unified Agent    
+- Elastic Beanstalk collects app logs; ECS collects container logs    
+- Lambda automatically sends function logs    
+- VPC Flow Logs capture network traffic; API Gateway and CloudTrail can emit logs    
+- Route 53 can log DNS queries
+
+{{< /alert >}}
+### CloudWatch Logs Insights
+
+- Lets you **search and analyse** log data stored in CloudWatch Logs using a purpose‑built query language    
+- Automatically extracts fields from AWS services and JSON logs    
+- Supports filtering, field selection, aggregations, sorting, and limiting results    
+- Queries can be saved and added to **CloudWatch Dashboards**    
+- Can query **multiple log groups across accounts**    
+- It’s a **query engine**, not a real‑time streaming system
+
+![](./assets/AWS_Monitoring_CloudWatch_Log_Insigts.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### CloudWatch Logs - S3 Export
+
+- Log data can take up to 12 hours to become available for export CloudWatch Logs Amazon S3
+- The API call is CreateExportTask
+- Not near-real time or real-time… use Logs Subscriptions instead
+### CloudWatch Logs Subscriptions
+
+- Streams **real‑time log events** from CloudWatch Logs for processing and analysis    
+- Can deliver logs to **Kinesis Data Streams**, **Kinesis Firehose**, or **Lambda**    
+- Uses **subscription filters** to control which log events are forwarded
+
+![](./assets/AWS_Monitoring_Logs_Subscriptions.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+**Cross-Account Subscription** - send log events to resources in a different AWS account (KDS, KDF).
+
+![](./assets/AWS_Monitoring_Logs_Subscriptions_Cross_Acc.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### CloudWatch Logs for EC2
+
+- EC2 instances don’t send logs to CloudWatch by default - you must install and configure the **CloudWatch agent**    
+- The agent pushes selected log files and requires the correct **IAM permissions**    
+- The same agent can also be used on **on‑premises** servers
+### CloudWatch Logs Agent & Unified Agent
+
+- For virtual servers (EC2 instances, on-premises servers…)
+- **CloudWatch Logs Agent**
+	- Old version of the agent
+	- Can only send to CloudWatch Logs
+- **CloudWatch Unified Agent**
+	- Collect additional system-level metrics such as RAM, processes, etc…
+	- Collect logs to send to CloudWatch Logs
+	- Centralized configuration using SSM Parameter Store
+#### CloudWatch Unified Agent - Metrics
+
+- Collects detailed Linux/EC2 system metrics: 
+	- CPU (user, system, idle, steal)
+	- disk usage and I/O
+	- RAM stats (free, inactive, used, total, cached)
+	- network connections/traffic (number of TCP and UDP connections, net packets, bytes)
+	- process counts
+	- swap usage    
+- Complements EC2’s built‑in high‑level metrics (CPU, disk, network) with deeper, host‑level visibility
+### CloudWatch Alarms
+
+- Alarms monitor metrics and trigger notifications based on thresholds (max, min, %, sampling, etc.)    
+- Alarm states are **OK**, **INSUFFICIENT_DATA**, and **ALARM**    
+- The **period** defines the evaluation window in seconds; high‑resolution custom metrics support **10s**, **30s**, or 60‑second multiples
+#### CloudWatch Alarm Targets
+
+- Stop, Terminate, Reboot, or Recover an EC2 Instance
+- Trigger Auto Scaling Action
+- Send notification to SNS (from which you can do pretty much anything)
+### CloudWatch Alarms - Composite Alarms
+
+- Standard CloudWatch alarms track a **single metric**, while composite alarms evaluate the **states of multiple alarms**    
+- Support **AND/OR logic**, helping reduce noise by triggering only when complex conditions are met
+
+![](./assets/AWS_Monitoring_Composite_Alarms.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+{{< alert "circle-info" >}}
+
+**To test alarms and notifications, set the alarm state to Alarm using CLI:**
+
+`aws cloudwatch set-alarm-state --alarm-name "myalarm" --state-value ALARM --state-reason "testing purposes"`
+
+{{< /alert >}}
+### CloudWatch Network Synthetic Monitor
+
+- Monitors connectivity between your AWS‑hosted applications and on‑premises environments, detecting issues like **latency, jitter, and packet loss**    
+- Requires no agents and tests **ICMP or TCP** traffic to on‑prem destinations over Direct Connect or Site‑to‑Site VPN    
+- Publishes all results as **CloudWatch metrics**
+
+
+
 
 ---
 ## >> Sources <<
