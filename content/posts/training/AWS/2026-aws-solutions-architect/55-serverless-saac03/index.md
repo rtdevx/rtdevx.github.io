@@ -17,6 +17,7 @@ tags:
   - SNS
   - SQS
   - Fargate
+  - Cache
 categories:
   - AWS
   - Containers
@@ -217,12 +218,91 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 - Supported on **RDS PostgreSQL** and **Aurora MySQL**    
 - The DB instance must have **outbound network access** to reach Lambda (Public, NAT Gateway, or VPC Endpoints)    
 - The DB also needs permission to invoke the function via a **Lambda resource‑based policy** and an **IAM policy**
+## DynamoDB
+
+ℹ️ **DynamoDB** coverage at [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) level: [DynamoDB]({{< ref "12-databases/#dynamodb" >}}).
+
+- DynamoDB stores data in **tables**, each defined by a **primary key** chosen at creation    
+- Tables can contain **unlimited items**, and each item is made of **attributes** that can evolve over time    
+- Maximum item size is **400 KB**    
+- Supports **scalar types** (String, Number, Binary, Boolean, Null), **document types** (List, Map), and **set types** (String/Number/Binary sets)    
+- This flexible data model allows DynamoDB schemas to **change and grow quickly**
+
+![](./assets/AWS_DynamoDB_Table.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### Read/Write Capacity Modes
+
+- Determines how you allocate and pay for table read/write throughput
+    
+- **Provisioned mode (default):**    
+    - You set the number of reads/writes per second        
+    - Requires capacity planning        
+    - Billed by **RCUs** and **WCUs**        
+    - Can enable **auto‑scaling** to adjust capacity automatically        
+- **On‑Demand mode:**    
+    - Scales read/write capacity automatically with traffic        
+    - No planning required        
+    - Pay only for actual usage (higher cost per request)        
+    - Ideal for unpredictable workloads or sudden spikes
+### DynamoDB Accelerator (DAX)
+
+- Fully managed, highly available **in‑memory cache** for DynamoDB    
+- Reduces read load by serving cached results    
+- Provides **microsecond‑level latency** for cached reads    
+- Works with existing DynamoDB APIs, so **no application changes** required    
+- Default cache TTL is **5 minutes**
+### Stream Processing
+
+- A DynamoDB Stream is an **ordered log of item‑level changes** (inserts, updates, deletes)    
+- Common uses include:    
+    - Triggering real‑time actions (e.g., sending a welcome email)        
+    - Real‑time analytics        
+    - Populating or updating derived tables        
+    - Cross‑region replication        
+    - **Invoking Lambda** whenever your table changes
+
+| DynamoDB Streams                                                      | Kinesis Data Streams (newer)                                                                    |
+| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| 24 hours retention                                                    | 1 year retention                                                                                |
+| Limited no. of consumers                                              | High no. of consumers                                                                           |
+| Process using AWS Lambda Triggers, or DynamoDB Stream Kinesis adapter | Process using AWS Lambda, Kinesis Data Analytics, Kineis Data Firehose, AWS Glue Streaming ETL… |
+
+### DynamoDB Global Tables
+
+- Make a DynamoDB table accessible with low latency in multiple-regions
+- Active-Active replication
+- Applications can READ and WRITE to the table in any region
+- Must enable DynamoDB Streams as a pre-requisite
+### DynamoDB - Time To Live (TTL)
+
+- Automatically delete items after an expiry timestamp
+- <font color=#EBAC25>Use cases:</font> reduce stored data by keeping only current items, adhere to regulatory obligations, web session handling…
+### DynamoDB - Backups for disaster recovery
+
+- **PITR** (point-in-time recovery) provides continuous backups for up to **35 days**, allowing restore to any point in that window    
+- Restoring from PITR always creates a **new table**    
+- **On‑demand backups** are full backups kept until you delete them, with no impact on performance    
+- Backups can be managed through **AWS Backup**, including **cross‑region copies**    
+- Restores from on‑demand backups also create a **new table**
+### DynamoDB - Integration with Amazon S3
+
+- **Export to S3:**    
+    - Requires PITR and supports any point in the last 35 days        
+    - No impact on table read capacity        
+    - Useful for analytics, audits, or ETL workflows        
+    - Data exported in **DynamoDB JSON** or **ION** format
+        
+- **Import from S3:**    
+    - Supports **CSV**, **DynamoDB JSON**, and **ION**        
+    - Doesn’t consume write capacity and always creates a **new table**        
+    - Any import errors are logged in **CloudWatch Logs**
 
 ---
 ## >> Sources <<
 
 - [Serverless on AWS](https://aws.amazon.com/serverless/)
 - [Serverless Documentation](https://docs.aws.amazon.com/serverless/)
+
+- [DynamoDB]({{< ref "12-databases/#dynamodb" >}})
 
 **Lambda:**
 
@@ -231,8 +311,6 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 - [Configuring provisioned concurrency for a Lambda function](https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html)
 - [Understanding Lambda function scaling](https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html)
 - [Differences between CloudFront Functions and Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions-choosing.html)
-
-
 ## >> References <<
 
 **TAG:** [Serverless]({{< ref "tags/serverless" >}})
