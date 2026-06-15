@@ -23,6 +23,7 @@ series: AWS Cloud Practitioner
 	- <font color=#EBAC25>IAM Roles for Amazon EC2:</font> provide temporary credentials for EC2 instances to access AWS resources
 ## Amazon Cognito
 
+ℹ️ **Amazon Cognito** coverage at [AWS Solutions Architect]({{< ref "series/aws-solution-architect" >}}) level: [Amazon Cognito]({{< ref "55-serverless-saac03/#amazon-cognito" >}}).
 ##### <font color=#EBAC25>Identity for Web and Mobile application users (potentially millions).</font>
 
 Instead of creating users in IAM, web users can be created using Cognito

@@ -72,6 +72,8 @@ Kubernetes is an open-source system for management, deployment and scaling of co
 - Fargate
 ## Lambda
 
+ℹ️ **Lambda** coverage at [AWS Solutions Architect]({{< ref "series/aws-solution-architect" >}}) level: [AWS Lambda]({{< ref "55-serverless-saac03/#aws-lambda" >}}).
+
 - <font color=#C7EB25>Virtual functions</font> - no servers to manage
 - Limited by time - <font color=#C7EB25>short executions</font>
 - Run <font color=#C7EB25>on-demand</font>

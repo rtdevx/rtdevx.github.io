@@ -116,6 +116,8 @@ _More:_ [Configuring and managing a Multi-AZ deployment for Amazon RDS](https://
 _More:_ https://docs.aws.amazon.com/elasticache/
 ### <font color=#EBAC25>DynamoDB</font>
 
+ℹ️ **DynamoDB** coverage at [AWS Solutions Architect]({{< ref "series/aws-solution-architect" >}}) level: [DynamoDB]({{< ref "55-serverless-saac03/#dynamodb" >}}).
+
 - Fully managed, [Highly Available]({{< ref "8-scalability-high-availability/#high-availability" >}}) with replication across 3AZ
 - <font color=#C7EB25>No-SQL database</font> - not a relational DB
 - <font color=#C7EB25>Scales to massive workloads, distributed, "serverless"</font>

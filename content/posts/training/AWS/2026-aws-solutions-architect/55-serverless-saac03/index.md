@@ -361,6 +361,26 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 	- IAM policies for these credentials are defined in Cognito and can be **customised per user**
 
 ![](./assets/AWS_Cognito_CUP.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Serverless - example architectures
+
+### Mobile application: MyTodoList
+
+![](./assets/AWS_Serverless_architecture1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+- Serverless REST stack: **API Gateway + Lambda + DynamoDB** over HTTPS    
+- Cognito issues **temporary AWS credentials** so app users can directly access restricted S3 (and similarly DynamoDB, Lambda, etc.)    
+- **DAX** accelerates DynamoDB reads with in‑memory caching    
+- API Gateway adds **request‑level caching**    
+- Cognito provides both **authentication** and **authorization**
+### Serverless hosted website: MyBlog.com
+
+![](./assets/AWS_Serverless_architecture2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+- CloudFront delivered static content from S3    
+- The REST API was serverless and public, so no Cognito was required    
+- A **Global DynamoDB table** provided worldwide low‑latency data access (Aurora Global DB was an alternative)    
+- **DynamoDB Streams** triggered a Lambda function    
+- That Lambda used an IAM role allowing it to send emails via **SES**
 
 ---
 ## >> Sources <<
