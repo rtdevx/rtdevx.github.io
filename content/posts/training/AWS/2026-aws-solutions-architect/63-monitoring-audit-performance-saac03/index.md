@@ -210,6 +210,31 @@ In **Amazon EKS** and **Kubernetes**, <font color=#EBAC25>CloudWatch Insights is
 
 - <font color=#EBAC25>Events are stored for 90 days in CloudTrail</font>
 - <font color=#EB4925>To keep events beyond this period, log them to S3 and use Athena</font>
+## AWS Config
+
+**AWS Config** is a service that <font color=#EBAC25>continuously tracks and records the configuration of your AWS resources</font>, then <font color=#EBAC25>evaluates those configurations against rules you define</font>. 
+
+<font color=#C7EB25>It gives you a clear history of how resources have changed over time, helps you detect drift, and supports compliance by showing whether resources meet required policies</font>. 
+
+<font color=#EBAC25>You can use AWS‑managed rules or create custom ones</font>, and every evaluation result is visible through dashboards, timelines, and detailed compliance reports. <font color=#EB4925>AWS Config Rules does not prevent actions from happening (no deny)</font>.
+
+**Use EventBridge to trigger notifications when AWS resources are non compliant:**
+
+![](./assets/AWS_Monitoring_Config_Rules_Notifications.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## CloudWatch vs CloudTrail vs Config
+
+| CloudWatch                                                        | CloudTrail                                            | Config                                      |
+| ----------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------- |
+| Performance monitoring (metrics, CPU, network, etc…) & dashboards | Record API calls made within your Account by everyone | Record configuration changes                |
+| Events & Alerting                                                 | Can define trails for specific resources              | Evaluate resources against compliance rules |
+| Log Aggregation & Analysis                                        | Global Service                                        | Get timeline of changes and compliance      |
+### ELB Example
+
+| CloudWatch                                                        | CloudTrail                                                     | Config                                                                         |
+| ----------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Monitoring Incoming connections metric                            | Track who made any changes to the Load Balancer with API calls | Track security group rules for the Load Balancer                               |
+| Visualize error codes as % over time                              |                                                                | Track configuration changes for the Load Balancer                              |
+| Make a dashboard to get an idea of your load balancer performance |                                                                | Ensure an SSL certificate is always assigned to the Load Balancer (compliance) |
 
 ---
 ## >> Sources <<
