@@ -2,7 +2,7 @@
 title: "Solutions Architect: AWS Monitoring, Audit and \r
 
   Performance"
-date: 2026-04-01
+date: 2026-04-13
 description: CloudWatch, CloudTrail & AWS Config.
 summary: CloudWatch, CloudTrail & AWS Config.
 draft: true
