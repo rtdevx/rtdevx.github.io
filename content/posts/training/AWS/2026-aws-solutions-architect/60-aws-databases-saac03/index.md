@@ -37,6 +37,12 @@ series: AWS Solution Architect
 
 A **join** is an operation in SQL that lets you combine data from **multiple tables** based on a related value they share. Joins allow **complex queries** across multiple datasets, They enforce **relationships** between entities (users → orders, products → categories, etc.), they’re essential for **OLTP / RDBMS** workloads where data is normalised.
 
+**RDS** and **Aurora** are **relational** databases - they’re designed for this kind of multi‑table querying.
+
+NoSQL systems like DynamoDB don’t support joins, which is why data modelling is very different there.
+
+{{< /alert >}}
+
 <font color=#EBAC25>Example</font> join query:
 
 ```
@@ -51,13 +57,6 @@ JOIN orders ON users.user_id = orders.user_id;
 | ---- | ------ |
 | Bob  | 50     |
 
-
-**RDS** and **Aurora** are **relational** databases - they’re designed for this kind of multi‑table querying.
-
-NoSQL systems like DynamoDB don’t support joins, which is why data modelling is very different there.
-
-{{< /alert >}}
-    
 - **NoSQL:** DynamoDB (JSON‑style), ElastiCache (key/value), Neptune (graph), DocumentDB (MongoDB‑compatible), Keyspaces (Cassandra)    
 - **Object Storage:** S3 for large objects, Glacier for archival    
 - **Data Warehousing / Analytics:** Redshift (OLAP), Athena, EMR    
