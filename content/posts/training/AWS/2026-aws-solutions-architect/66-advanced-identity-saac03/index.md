@@ -76,7 +76,7 @@ series: AWS Solution Architect
 
 Use the [Service control policy examples](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples.html) page as a reference - it includes a GitHub repository with ready‑made SCP samples you can adapt.
 
-<font color=#EBAC25><i>More info:</i></font> [Service control policy examples](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples.html)
+<font color=#EBAC25><i>More info:</i></font> 🔥[Service control policy examples](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples.html)
 
 {{< /alert >}}
 ### AWS Organizations - Tag Policies
@@ -146,8 +146,7 @@ Use the [Service control policy examples](https://docs.aws.amazon.com/organizati
 - [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
 - [AWS Organizations and AWS Account Management Documentation](https://docs.aws.amazon.com/organizations/)
 - [AWS Organizations: An overview of concepts and best practices](https://medium.com/@AnwarESS/aws-organizations-an-overview-of-concepts-and-best-practicesapproach-e207213582ec)
-
-- [Service control policy examples](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples.html)
+- 🔥[Service control policy examples](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples.html)
 ## >> References <<
 
 **Cloud Practitioner:** [Identity and Access management]({{< ref "2-iam" >}})
