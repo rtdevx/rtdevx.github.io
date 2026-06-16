@@ -159,6 +159,64 @@ When a principal tries to use the AWS Management Console, the AWS API, or the AW
 ![](./assets/AWS_IAM_Policy_Evaluation_Logic.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 <font color=#EBAC25><i>More info:</i></font> [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
+## IAM Identity Center
+
+- **One login (single sign-on) for all your:**
+	- AWS accounts in AWS Organizations
+	- Business cloud applications (e.g., Salesforce, Box, Microsoft 365, …)
+	- SAML2.0-enabled applications
+	- EC2 Windows Instances
+- **Identity providers:**
+	- Built-in identity store in IAM Identity Center
+	- 3rd party: Active Directory (AD), OneLogin, Okta…
+
+![](./assets/AWS_IAM_Identity_Center_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+![](./assets/AWS_IAM_Identity_Center_2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+{{< alert "circle-info" >}}
+
+**AWS IAM Identity Center** provides centralised, fine‑grained access control across your AWS Organization. You define **permission sets** to **manage multi‑account access**, assign users/groups to SAML 2.0 business apps, and use **ABAC** to grant AWS permissions dynamically based on user attributes (e.g., cost center, title, locale). 
+
+Define access once, then adjust permissions simply by updating user attributes.
+
+{{< /alert >}}
+
+<font color=#EBAC25><i>More info:</i></font> [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/)
+## AWS Directory Services
+
+- **AWS Managed Microsoft AD**
+	- <font color=#EBAC25>Create your own AD in AWS</font>, manage users locally, supports MFA
+	- <font color=#EBAC25>Establish “trust” connections with your on premises AD</font>
+
+![](./assets/AWS_IAM_AD_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+- **AD Connector**
+	- <font color=#EBAC25>Directory Gateway (proxy) to redirect to on premises AD</font>, supports MFA
+	- <font color=#EBAC25>Users are managed on the on-premises AD</font>
+
+![](./assets/AWS_IAM_AD_2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+- **Simple AD**
+	- AD-compatible managed directory on AWS
+	- Cannot be joined with on-premises AD
+## AWS Control Tower
+
+{{< lead >}}
+
+Automates environment setup, applies and manages guardrails, detects and remediates policy violations, and provides a dashboard to monitor overall compliance.
+
+{{< /lead >}}
+
+- Easy way to <font color=#EBAC25>set up and govern a secure and compliant multi-account AWS environment</font> based on best practices
+- <font color=#EBAC25>AWS Control Tower uses AWS Organizations to create accounts</font>
+
+
+
+
+
+
+
 
 ---
 ## >> Sources <<
@@ -169,6 +227,7 @@ When a principal tries to use the AWS Management Console, the AWS API, or the AW
 - 🔥[Service control policy examples](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples.html)
 - 🔥[Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
 - [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
+- [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/)
 ## >> References <<
 
 **Cloud Practitioner:** [Identity and Access management]({{< ref "2-iam" >}})
