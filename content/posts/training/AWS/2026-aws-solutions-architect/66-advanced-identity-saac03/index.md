@@ -210,8 +210,66 @@ Automates environment setup, applies and manages guardrails, detects and remedia
 
 - Easy way to <font color=#EBAC25>set up and govern a secure and compliant multi-account AWS environment</font> based on best practices
 - <font color=#EBAC25>AWS Control Tower uses AWS Organizations to create accounts</font>
+## Summary
+
+                   ┌──────────────────────────────────────────┐
+                   │              AWS Control Tower            │
+                   │------------------------------------------│
+                   │ • Automates landing zone setup           │
+                   │ • Applies guardrails (SCPs + Config)     │
+                   │ • Centralised logging & compliance        │
+                   └──────────────────────────────────────────┘
+                                   │
+                                   │ uses
+                                   ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                           AWS Organizations                              │
+│--------------------------------------------------------------------------│
+│ • Multi-account structure (OUs, accounts)                                │
+│ • Consolidated billing & shared discounts                                │
+│ • Service Control Policies (SCPs) for governance                         │
+│ • Tag policies, backup policies, account automation                      │
+└──────────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   │ provides account structure to
+                                   ▼
+                 ┌──────────────────────────────────────────┐
+                 │          IAM Identity Center              │
+                 │------------------------------------------│
+                 │ • Centralised SSO for all accounts       │
+                 │ • Permission sets for multi-account IAM  │
+                 │ • ABAC using user attributes             │
+                 │ • SSO to business apps (SAML 2.0)        │
+                 └──────────────────────────────────────────┘
 
 
+### AWS Organizations
+
+The foundation for multi‑account AWS environments. It lets you centrally create, group, and manage accounts, apply **SCPs**, enforce tagging standards, and use consolidated billing with shared discounts. It provides the governance layer that everything else builds on.
+### AWS IAM Identity Center
+
+The central place for managing **user identities and access** across all accounts in your AWS Organization. It provides:
+
+- **SSO** into AWS accounts and business applications    
+- **Permission sets** for consistent, multi‑account access    
+- **ABAC** using user attributes for fine‑grained, dynamic permissions    
+
+Identity Center sits _on top of_ Organizations and uses its account structure to assign access cleanly.
+### AWS Control Tower
+
+A higher‑level orchestration service that automates the setup and governance of a secure multi‑account environment. It provides:
+
+- Automated landing zone creation    
+- Prebuilt **guardrails** (SCPs + Config rules)    
+- Continuous compliance monitoring    
+- Centralised logging and baseline security controls    
+
+Control Tower _uses_ Organizations under the hood and integrates with IAM Identity Center for access management.
+### How they work together
+
+- **AWS Organizations** provides the multi‑account structure, OUs, and policy boundaries.    
+- **IAM Identity Center** provides unified identity and access across those accounts.    
+- **AWS Control Tower** automates the creation, governance, and compliance of that entire setup using both Organizations and Identity Center as core building blocks.
 
 
 
