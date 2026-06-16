@@ -464,6 +464,36 @@ In other words:
 - EventBridge can route alerts to **Lambda**, **SNS**, or other targets    
 - Includes dedicated detections for **cryptocurrency mining activity**
 
+![](./assets/AWS_Security_Guard_Duty.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Amazon Inspector
+
+- Provides **automated security assessments** across multiple AWS workloads    
+- **EC2 instances:**    
+    - Uses the **SSM Agent** to perform assessments        
+    - Checks for unintended network exposure        
+    - Evaluates the operating system for known vulnerabilities
+        
+- **Container images in Amazon ECR:**    
+    - Scans images automatically as they are pushed        
+    - Identifies vulnerabilities in packages and dependencies
+        
+- **Lambda functions:**    
+    - Detects software vulnerabilities in function code and bundled libraries        
+    - Performs assessments automatically when functions are deployed
+        
+- Integrates with **AWS Security Hub** for centralized reporting    
+- Can send findings to **Amazon EventBridge** for automated workflows and alerting
+### Amazon Inspector evaluation
+
+- Applies only to **EC2 instances**, **container images in ECR**, and **Lambda functions**    
+- Performs **continuous, on‑demand scanning** of your environment    
+- Detects **package vulnerabilities** across EC2, ECR, and Lambda using a CVE database    
+- Assesses **network reachability** for EC2 instances    
+- Assigns a **risk score** to each finding to help prioritize remediation
+## AWS Macie
+
+- Amazon Macie is a fully managed **data security and privacy service** that uses machine learning and pattern matching to locate and protect sensitive data stored in AWS    
+- It helps detect and alert you to **sensitive information**, including personally identifiable information (PII)
 
 
 ---
