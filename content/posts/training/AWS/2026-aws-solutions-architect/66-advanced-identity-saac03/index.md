@@ -214,7 +214,7 @@ Automates environment setup, applies and manages guardrails, detects and remedia
 
 {{< mermaid >}}
 
-flowchart LR
+flowchart TD
 
     subgraph CT["AWS Control Tower"]
         CT1["Automated landing zone setup"]
