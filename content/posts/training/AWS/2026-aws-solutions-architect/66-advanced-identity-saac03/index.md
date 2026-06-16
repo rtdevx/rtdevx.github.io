@@ -212,6 +212,12 @@ Automates environment setup, applies and manages guardrails, detects and remedia
 - <font color=#EBAC25>AWS Control Tower uses AWS Organizations to create accounts</font>
 ## Summary
 
+{{< lead >}}
+
+Active Directory feeds identities into IAM Identity Center, which then controls access across the AWS Organization and integrates with Control Tower’s landing zone.
+
+{{< /lead >}}
+
 {{< mermaid >}}
 
 flowchart TD
