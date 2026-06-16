@@ -284,8 +284,47 @@ In other words:
   }
 }
 ```
+## AWS Certificate Manager (ACM)
 
+- Simplifies the **provisioning, management, and deployment** of TLS certificates    
+- Enables **HTTPS** by providing in‑flight encryption for websites and APIs    
+- Supports both **public** and **private** TLS certificates    
+- Public certificates issued by ACM are **free of charge**    
+- Handles **automatic certificate renewal** with no manual intervention
 
+- Integrates directly with:    
+    - **Elastic Load Balancers** (CLB, ALB, NLB)        
+    - **CloudFront distributions**        
+    - **API Gateway**        
+- Cannot be used directly on **EC2 instances**, as ACM certificates cannot be exported
+
+![](./assets/AWS_Security_ACM_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### ACM - Requesting Public Certificates
+
+- Start by listing all domain names you want on the certificate, including **FQDNs** (e.g., `corp.example.com`) and **wildcards** (e.g., `*.example.com`)    
+- Choose a validation method: **DNS validation** (preferred for automation) or **email validation** (uses WHOIS contact emails)    
+- DNS validation requires adding a **CNAME record** to your DNS provider (such as Route 53)    
+- Verification typically completes within a few hours    
+- Once issued, the public certificate is automatically enrolled for **renewal**, and ACM renews it about **60 days before expiration**
+### ACM - Importing Public Certificates
+
+- You can generate a certificate outside ACM and **import it** instead of letting ACM create one    
+- <font color=#EB4925>Imported certificates do not auto‑renew</font> - you must upload a new one before it expires    
+- ACM begins sending **daily expiration notifications** starting 45 days before expiry    
+- The notification window is **configurable**    
+- These expiration events appear in **EventBridge**    
+- AWS Config provides a managed rule, **acm-certificate-expiration-check**, which monitors certificates approaching expiration (with a configurable threshold)
+## CloudHSM
+
+- With **KMS**, AWS manages all the encryption software for you    
+- With **CloudHSM**, AWS provides dedicated **hardware security modules (HSMs)** instead    
+- You get **exclusive, single‑tenant hardware** for cryptographic operations    
+- You fully control and manage your own encryption keys - **AWS cannot access them**    
+- The HSMs are **tamper‑resistant** and meet **FIPS 140‑2 Level 3** compliance    
+- Supports both **symmetric and asymmetric** encryption, including SSL/TLS key storage    
+- There is **no free tier** for CloudHSM    
+- Requires installing and using the **CloudHSM client software**    
+- Amazon Redshift can integrate with CloudHSM for database encryption and key management
 
 ---
 ## >> Sources <<
