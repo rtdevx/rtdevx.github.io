@@ -214,7 +214,7 @@ Automates environment setup, applies and manages guardrails, detects and remedia
 
 {{< mermaid >}}
 
-flowchart TB
+flowchart LR
 
     subgraph CT["AWS Control Tower"]
         CT1["Automated landing zone setup"]
@@ -235,9 +235,17 @@ flowchart TB
         ID4["SAML 2.0 app access"]
     end
 
+    subgraph AD["External Identity Provider"]
+        AD1["Active Directory"]
+        AD2["Azure AD / Entra ID"]
+        AD3["Other IdPs (SAML/OIDC)"]
+    end
+
     CT -->|uses| ORG
     ORG -->|provides structure to| IDSC
     CT -->|integrates with| IDSC
+
+    AD -->|sync users & groups| IDSC
 
 {{< /mermaid >}}
 ### AWS Organizations
