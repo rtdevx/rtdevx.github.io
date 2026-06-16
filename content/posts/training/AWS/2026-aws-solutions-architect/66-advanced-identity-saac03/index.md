@@ -210,6 +210,13 @@ Automates environment setup, applies and manages guardrails, detects and remedia
 
 - Easy way to <font color=#EBAC25>set up and govern a secure and compliant multi-account AWS environment</font> based on best practices
 - <font color=#EBAC25>AWS Control Tower uses AWS Organizations to create accounts</font>
+### Guardrails
+
+- Provides ongoing governance for your Control Tower environment (AWS Accounts)
+- **Preventive Guardrail** - using SCPs (e.g., Restrict Regions across all your accounts)
+- **Detective Guardrail** - using AWS Config (e.g., identify untagged resources)
+
+![](./assets/AWS_IAM_Guardrails.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Summary
 
 {{< lead >}}
