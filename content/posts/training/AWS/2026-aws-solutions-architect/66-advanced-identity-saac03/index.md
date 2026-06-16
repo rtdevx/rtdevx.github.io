@@ -139,6 +139,26 @@ Use the [Service control policy examples](https://docs.aws.amazon.com/organizati
 - <font color=#EBAC25>Example:</font> User in account A needs to scan a DynamoDB table in Account A and dump it in an S3 bucket in Account B.
 
 {{< /alert >}}
+### IAM Permission Boundaries
+
+IAM Permission Boundaries are supported for users and roles (not groups). This is an advanced feature to use a managed policy to set the maximum permissions an IAM entity can get.
+
+- Let non‑admins perform delegated tasks (e.g., creating IAM users) within strict limits    
+- Allow developers to self‑manage permissions without being able to escalate to admin    
+- Useful for restricting a **single user** when full‑account controls like SCPs are too broad
+
+<font color=#EBAC25><i>More info:</i></font> 🔥[Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
+### IAM Policy evaluation logic
+
+{{< lead >}}
+
+When a principal tries to use the AWS Management Console, the AWS API, or the AWS CLI, that principal sends a _request_ to AWS. When an AWS service receives the request, AWS completes several steps to determine whether to allow or deny the request.
+
+{{< /lead >}}
+
+![](./assets/AWS_IAM_Policy_Evaluation_Logic.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+<font color=#EBAC25><i>More info:</i></font> [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
 
 ---
 ## >> Sources <<
@@ -147,6 +167,8 @@ Use the [Service control policy examples](https://docs.aws.amazon.com/organizati
 - [AWS Organizations and AWS Account Management Documentation](https://docs.aws.amazon.com/organizations/)
 - [AWS Organizations: An overview of concepts and best practices](https://medium.com/@AnwarESS/aws-organizations-an-overview-of-concepts-and-best-practicesapproach-e207213582ec)
 - 🔥[Service control policy examples](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples.html)
+- 🔥[Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
+- [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
 ## >> References <<
 
 **Cloud Practitioner:** [Identity and Access management]({{< ref "2-iam" >}})
