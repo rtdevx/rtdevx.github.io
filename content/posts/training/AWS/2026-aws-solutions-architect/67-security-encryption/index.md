@@ -3,7 +3,7 @@ title: "Solutions Architect: AWS Security & Encryption"
 date: 2026-04-15
 description: KMS, Encryption SDK, SSM Parameter Store.
 summary: KMS, Encryption SDK, SSM Parameter Store
-draft: true
+draft: false
 tags:
   - SAA-C03
   - security
@@ -181,7 +181,109 @@ In other words:
 - **No cross‑Region KMS API calls** needed during encryption or decryption    
 - **Not global keys** — each Region hosts a **primary or replica**, managed independently    
 - **Each key is still a separate KMS resource**, with its own policy and lifecycle    
-- Ideal for **global client‑side encryption**, **Global DynamoDB tables**, and **Global Aurora**
+- <font color=#EBAC25>Use cases:</font> **global client‑side encryption**, **Global DynamoDB tables**, and **Global Aurora**
+#### Global Databases
+
+##### DynamoDB Global Tables and KMS Multi Region Keys Client-Side encryption
+
+- You can encrypt specific DynamoDB item attributes **client‑side** using the DynamoDB Encryption Client    
+- When used with **Global Tables**, the encrypted attributes replicate automatically to all replica Regions    
+- If each Region has a **replica of the same Multi‑Region KMS key**, clients in those Regions can decrypt locally using low‑latency, in‑Region KMS calls    
+- This avoids cross‑Region KMS traffic and keeps decryption fast and resilient
+
+- **The workflow:**    
+    - Client encrypts an attribute using the **primary Multi‑Region Key**        
+    - Writes the encrypted attribute to DynamoDB        
+    - DynamoDB Global Tables replicate the encrypted value to other Regions        
+- In each Region, clients can decrypt the replicated data **only if they have access to the key**
+
+- Client‑side encryption ensures that sensitive fields (e.g., SSNs) remain protected end‑to‑end, and only authorized clients with the right API key can decrypt them
+##### Global Aurora and KMS Multi-Region Keys Client-Side encryption
+
+- You can encrypt selected fields in your Aurora records **client‑side** using the AWS Encryption SDK    
+- When used with **Aurora Global Database**, those encrypted fields replicate automatically to all secondary Regions    
+- If each Region has a **replica of the same Multi‑Region KMS key**, clients in those Regions can decrypt locally using fast, in‑Region KMS calls    
+- This avoids cross‑Region KMS latency and keeps decryption efficient and resilient    
+- Client‑side encryption ensures that only applications holding the correct API key can decrypt the protected fields    
+- Because encryption happens before data reaches Aurora, even **DB administrators** cannot read those sensitive attributes
+### S3 Replication Encryption Considerations
+
+- **Unencrypted objects and SSE‑S3–encrypted objects replicate automatically** with S3 Replication    
+- **SSE‑C–encrypted objects can be replicated**, but only if the client provides the encryption key during replication
+   
+- **SSE‑KMS objects require an explicit setting** to enable replication    
+- You must **choose the KMS key** that will encrypt replicated objects in the destination bucket    
+- The **destination KMS key policy must allow** the replication role to use it    
+- The replication IAM role needs **kms:Decrypt** on the **source** KMS key and **kms:Encrypt** on the **destination** KMS key
+
+- High‑volume replication may trigger **KMS throttling**, so you may need a Service Quotas increase
+   
+- You can use **multi‑region KMS keys**, but S3 still treats them as **separate keys per Region**, meaning objects are **decrypted and re‑encrypted** during replication rather than using the same key material directly
+### AMI Sharing Process Encrypted via KMS
+
+- The AMI in the source account is encrypted using a **KMS key from the source account**    
+- You must update the AMI’s **launch permissions** to allow the target AWS account to use it    
+- You also need to **share the KMS key(s)** used to encrypt the AMI’s underlying snapshots with the target account or its IAM role    
+- The target account’s IAM role or user must have permissions such as **DescribeKey**, **ReEncrypt\***, **CreateGrant**, and **Decrypt** to work with the shared encrypted snapshots    
+- When launching an EC2 instance from the shared AMI, the target account may optionally choose a **different KMS key in its own account** to re‑encrypt the resulting EBS volumes
+## SSM Parameter Store
+
+- Secure, managed storage for configuration values and sensitive secrets (<font color=#EB4925>encrypted!</font>)
+- Optional **KMS‑backed encryption** for seamless at‑rest protection    
+- Fully serverless, scalable, and easy to use through AWS SDKs    
+- Built‑in **versioning** for parameters and secrets    
+- Access controlled entirely through **IAM policies**    
+- Supports **EventBridge notifications** for parameter changes
+### Standard and advanced parameter tiers
+
+|                                                                 | Standard             | Advanced                               |
+| --------------------------------------------------------------- | -------------------- | -------------------------------------- |
+| Total number of parameters allowed (per AWS account and Region) | 10,000               | 100,000                                |
+| Maximum size of a parameter value                               | 4 KB                 | 8 KB                                   |
+| Parameter policies available                                    | No                   | Yes                                    |
+| Cost                                                            | No additional charge | Charges apply                          |
+| Storage Pricing                                                 | Free                 | $0.05 per advanced parameter per month |
+
+### Parameters Policies (for advanced parameters)
+
+- Allow to assign a TTL to a parameter (expiration date) to force updating or deleting sensitive data such as passwords
+- Can assign multiple policies at a time
+#### Expiration
+
+```JSON
+{
+  "Type": "Expiration",
+  "Version": "1.0",
+  "Attributes": {
+    "Timestamp": "2020-12-02T21:34:33.000Z"
+  }
+}
+```
+#### ExpirationNotification (EventBridge)
+
+```JSON
+{
+  "Type": "ExpirationNotification",
+  "Version": "1.0",
+  "Attributes": {
+    "Before": "15",
+    "Unit": "Days"
+  }
+}
+```
+#### NoChangeNotification (EventBridge notification if unchanged for X time)
+
+```JSON
+{
+  "Type": "NoChangeNotification",
+  "Version": "1.0",
+  "Attributes": {
+    "After": "20",
+    "Unit": "Days"
+  }
+}
+```
+
 
 
 ---
