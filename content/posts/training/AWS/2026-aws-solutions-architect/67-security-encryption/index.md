@@ -325,6 +325,32 @@ In other words:
 - There is **no free tier** for CloudHSM    
 - Requires installing and using the **CloudHSM client software**    
 - Amazon Redshift can integrate with CloudHSM for database encryption and key management
+### CloudHSM - High Availability
+
+- CloudHSM clusters are spread across Multi AZ (HA)
+- Great for availability and durability
+### CloudHSM - Integration with AWS Services
+
+- CloudHSM can integrate with AWS services **through AWS KMS**    
+- You can configure a **KMS Custom Key Store** backed by CloudHSM    
+- Once configured, KMS‑integrated services (such as **EBS, S3, RDS**, and others) can use keys stored in your CloudHSM cluster
+
+![](./assets/AWS_Security_HSM_Integration.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## CloudHSM vs. KMS
+
+| Feature                 | AWS KMS                                                                                   | AWS CloudHSM                                                                 |
+| ----------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Tenancy                 | Multi-Tenant                                                                              |                                                                              |
+| Standard                | FIPS 140-2 Level 3                                                                        | FIPS 140-2 Level 3                                                           |
+| Master Keys             | - AWS Owned CMK<br>- AWS Managed CMK<br>- Customer Managed CMK                            | - Customer Managed CMK                                                       |
+| Key Types               | - Symmetric<br>- Asymmetric<br>- Digital Signing                                          | - Symmetric<br>- Asymmetric<br>- Digital Signing & Hashing                   |
+| Key Accessibility       | Accessible in multiple AWS regions (can’t access keys outside the region it’s created in) | - Deployed and managed in a VPC<br>- Can be shared across VPCs (VPC Peering) |
+| Access & Authentication | AWS IAM                                                                                   | You create users and manage their permissions                                |
+| High Availability       | AWS Managed Service                                                                       | Add multiple HSMs over different AZs                                         |
+| Audit Capability        | - CloudTrail<br>- CloudWatch                                                              | - CloudTrail<br>- CloudWatch<br>- MFA support                                |
+| Free Tier               | Yes                                                                                       | No                                                                           |
+
+
 
 ---
 ## >> Sources <<
