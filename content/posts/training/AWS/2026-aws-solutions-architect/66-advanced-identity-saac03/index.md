@@ -43,7 +43,7 @@ series: AWS Solution Architect
 
 - Strengthen security with **Service Control Policies (SCPs)** applied to OUs or individual accounts to restrict what IAM users and roles can do    
 - SCPs **don’t apply** to the management account, which always retains full admin rights    
-- Like IAM, SCPs require **explicit allows** from the root OU down to the target account—nothing is permitted by default
+- Like IAM, SCPs require **explicit allows** from the root OU down to the target account - nothing is permitted by default
 
 ![](./assets/AWS_IAM_SCP_Hierarchy.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 #### SCP Least Privilege
