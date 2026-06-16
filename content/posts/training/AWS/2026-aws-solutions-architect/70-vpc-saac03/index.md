@@ -3,7 +3,7 @@ title: "Solutions Architect: VPC"
 date: 2026-04-16
 description: Associate-level extension of the `VPC` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `VPC` Section from AWS Cloud Practitioner Series.
-draft: false
+draft: true
 tags:
   - SAA-C03
   - VPC
