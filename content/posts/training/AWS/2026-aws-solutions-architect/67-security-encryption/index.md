@@ -64,15 +64,16 @@ Client‑side encryption means the data is encrypted **before it ever reaches th
 
 #### Types of KMS Keys
 
-- AWS Owned Keys (free): SSE-S3, SSE-SQS, SSE-DDB (default key)
-- AWS Managed Key: free (aws/service-name, example: aws/rds or aws/ebs)
-- Customer managed keys created in KMS: $1 / month
-- Customer managed keys imported: $1 / month • + pay for API call to KMS ($0.03 / 10000 calls)
+- **AWS Owned Keys (free):** SSE-S3, SSE-SQS, SSE-DDB (default key)
+- **AWS Managed Key:** free (aws/service-name, example: aws/rds or aws/ebs)
+- **Customer managed keys created in KMS:** $1 / month
+- **Customer managed keys imported:** $1 / month
+- + pay for API call to KMS ($0.03 / 10000 calls)
 #### Key Rotation
 
-- AWS-managed KMS Key: automatic every 1 year
-- Customer-managed KMS Key: (must be enabled) automatic & on-demand
-- Imported KMS Key: only manual rotation possible using alias
+- **AWS-managed KMS Key:** automatic every 1 year
+- **Customer-managed KMS Key:** (must be enabled) automatic & on-demand
+- **Imported KMS Key:** only manual rotation possible using alias
 ### KMS Key Policies
 
 KMS key policies define who can use or manage a KMS key, similar to how S3 bucket policies control access - but with one crucial difference: **a KMS key cannot be accessed at all unless a key policy explicitly allows it.**
