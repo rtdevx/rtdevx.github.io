@@ -341,7 +341,7 @@ In other words:
 | Feature                 | AWS KMS                                                                                   | AWS CloudHSM                                                                 |
 | ----------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | Tenancy                 | Multi-Tenant                                                                              |                                                                              |
-| Standard                | FIPS 140-2 Level 3                                                                        | FIPS 140-2 Level 3                                                           |
+| Encryption Standard     | FIPS 140-2 Level 3                                                                        | FIPS 140-2 Level 3                                                           |
 | Master Keys             | - AWS Owned CMK<br>- AWS Managed CMK<br>- Customer Managed CMK                            | - Customer Managed CMK                                                       |
 | Key Types               | - Symmetric<br>- Asymmetric<br>- Digital Signing                                          | - Symmetric<br>- Asymmetric<br>- Digital Signing & Hashing                   |
 | Key Accessibility       | Accessible in multiple AWS regions (can’t access keys outside the region it’s created in) | - Deployed and managed in a VPC<br>- Can be shared across VPCs (VPC Peering) |
@@ -349,6 +349,120 @@ In other words:
 | High Availability       | AWS Managed Service                                                                       | Add multiple HSMs over different AZs                                         |
 | Audit Capability        | - CloudTrail<br>- CloudWatch                                                              | - CloudTrail<br>- CloudWatch<br>- MFA support                                |
 | Free Tier               | Yes                                                                                       | No                                                                           |
+
+## AWS WAF
+
+{{< lead >}}
+
+**AWS WAF** (Web Application Firewall) Protects your web applications from common attacks and web exploits.
+
+{{< /lead >}}
+
+- **Can be deployed on:**
+	- **Application Load Balancer**
+	- **API Gateway**
+	- **CloudFront**
+	- **AppSync GraphQL APIs**
+	- **Cognito User Pools**
+
+- Web ACLs let you define rules that inspect and filter web requests    
+- **IP sets** can include up to 10,000 IP addresses; use multiple rules if you need more    
+- You can filter based on **HTTP headers**, **body**, or **URI strings**, and block common attacks like **SQL injection** and **XSS**    
+- Additional match options include **size constraints** and **geo‑matching** (e.g., blocking specific countries)    
+- **Rate‑based rules** track request volume and help mitigate DDoS‑style bursts    
+- Web ACLs are **regional**, except when used with **CloudFront**, where they become global    
+- **Rule groups** provide reusable collections of rules that can be shared across multiple Web ACLs
+## AWS Shield
+
+- A DDoS attack is a **Distributed Denial of Service**, where an attacker overwhelms a system with massive traffic    
+- **AWS Shield Standard** is automatically enabled for all AWS customers at no cost    
+    - Protects against common Layer 3 and Layer 4 attacks such as **SYN floods**, **UDP floods**, and **reflection attacks**        
+- **AWS Shield Advanced** is an optional, paid DDoS protection service (**$3,000/month per organization**)    
+    - Defends against more sophisticated attacks targeting **EC2**, **Elastic Load Balancing**, **CloudFront**, **Global Accelerator**, and **Route 53**        
+    - Provides **24/7 access** to the AWS DDoS Response Team (DRT)        
+    - Includes **cost protection** to avoid unexpected spikes in usage charges caused by DDoS events        
+    - Offers **automatic application‑layer mitigation**, dynamically creating and deploying AWS WAF rules to counter Layer 7 attacks
+## AWS Firewall Manager
+
+- Centralizes management of security rules across **all accounts** in an AWS Organization    
+- Uses **security policies** to define a consistent set of rules applied org‑wide    
+- Supports managing:    
+    - **WAF rules** for ALB, API Gateway, and CloudFront        
+    - **AWS Shield Advanced** protections for ALB, CLB, NLB, Elastic IPs, and CloudFront        
+    - **Security Groups** for EC2, ALB, and ENIs within VPCs        
+    - **AWS Network Firewall** at the VPC level        
+    - **Route 53 Resolver DNS Firewall**        
+- Policies are created **per Region**    
+- Automatically applies rules to **newly created resources**, ensuring continuous compliance across current and future accounts in the Organization
+## WAF vs. Firewall Manager vs. Shield
+
+- AWS WAF, Firewall Manager, and Shield work together to provide **end‑to‑end protection** for web applications    
+- Use **AWS WAF** to define and manage **Web ACL rules** for fine‑grained, application‑layer protection    
+- If you only need resource‑level filtering and rule control, **WAF alone** is sufficient    
+- To manage WAF rules **across multiple accounts**, automate protection for new resources, and simplify organization‑wide enforcement, use **Firewall Manager** with WAF    
+- **Shield Advanced** adds enhanced DDoS protection, including **specialized support from the Shield Response Team (SRT)** and advanced visibility/reporting    
+- Organizations that experience frequent or high‑risk DDoS activity should consider **Shield Advanced**
+## DDoS protection - best practices
+
+### AWS Best Practices for DDoS Resiliency Edge Location Mitigation (BP1, BP3)
+
+- **BP1 – CloudFront**    
+    - Delivers your web content at the edge        
+    - Absorbs and mitigates common DDoS attacks such as **SYN floods** and **UDP reflection**
+        
+- **BP1 – Global Accelerator**    
+    - Provides edge‑based entry points to your application        
+    - Integrates with **AWS Shield** for DDoS protection        
+    - Useful when your backend cannot be fronted by CloudFront
+        
+- **BP3 – Route 53**    
+    - Performs DNS resolution at AWS edge locations
+
+![](./assets/AWS_Security_DDoS_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### AWS Best Practices for DDoS Resiliency Best pratices for DDoS mitigation
+
+- **Infrastructure‑layer defense (BP1, BP3, BP6)** focuses on protecting Amazon EC2 and other backend systems from large traffic volumes    
+- This includes using **Global Accelerator**, **Route 53**, **CloudFront**, and **Elastic Load Balancing** to absorb and distribute traffic before it reaches your instances    
+- **Amazon EC2 with Auto Scaling (BP7)** helps your application scale out rapidly during sudden traffic spikes, whether caused by legitimate flash crowds or DDoS attacks    
+- **Elastic Load Balancing (BP6)** automatically scales with incoming traffic and spreads requests across multiple EC2 instances, improving resilience under heavy load
+
+![](./assets/AWS_Security_DDoS_2.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### AWS Best Practices for DDoS Resiliency Application Layer Defense
+
+- **Detect and filter malicious web requests** using CloudFront and AWS WAF (BP1, BP2)    
+- CloudFront caches static content and serves it from edge locations, reducing load on your backend and absorbing unwanted traffic    
+- AWS WAF, applied on CloudFront or an Application Load Balancer, blocks requests based on signatures and patterns    
+- **Rate‑based rules** in WAF can automatically block IPs that exceed request thresholds    
+- Managed WAF rule sets help block threats using **IP reputation**, bot detection, or by filtering anonymous IP sources    
+- CloudFront can restrict access by **geographic location**    
+- **Shield Advanced** (BP1, BP2, BP6) provides automated application‑layer DDoS mitigation by dynamically creating and deploying WAF rules to counter attacks
+
+![](./assets/AWS_Security_DDoS_3.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### AWS Best Practices for DDoS Resiliency Attack surface reduction
+
+- **Obfuscate backend resources** (BP1, BP4, BP6) by placing CloudFront, API Gateway, or Elastic Load Balancing in front of services like EC2 or Lambda    
+- Use **Security Groups** and **Network ACLs** (BP5) to restrict traffic by IP at the subnet or ENI level   
+- **Elastic IPs** receive DDoS protection when covered by AWS Shield Advanced    
+- **Protect API endpoints** (BP4) by avoiding direct exposure of EC2 or Lambda    
+    - Use API Gateway in **edge‑optimized** or **regional** mode for stronger DDoS control        
+    - Combine **WAF + API Gateway** for rate limiting, header filtering, and API key enforcement
+
+![](./assets/AWS_Security_DDoS_4.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Amazon GuardDuty
+
+- Provides **intelligent threat detection** to help secure your AWS accounts    
+- Uses **machine learning**, anomaly detection, and third‑party threat intelligence    
+- Can be enabled with a single click (includes a **30‑day trial**) and requires no agents or software installation    
+- Analyzes multiple data sources, including:    
+    - **CloudTrail event logs** for unusual API activity or unauthorized changes        
+    - **CloudTrail management events** such as creating subnets or trails        
+    - **CloudTrail S3 data events** like object reads, listings, or deletions        
+    - **VPC Flow Logs** to spot suspicious internal traffic or unexpected IPs        
+    - **DNS logs** to detect compromised EC2 instances exfiltrating data via DNS        
+- Optional coverage includes **EKS audit logs**, **RDS/Aurora**, **EBS**, **Lambda**, and **S3 data events**    
+- Findings can trigger **EventBridge rules** for automated notifications    
+- EventBridge can route alerts to **Lambda**, **SNS**, or other targets    
+- Includes dedicated detections for **cryptocurrency mining activity**
 
 
 
