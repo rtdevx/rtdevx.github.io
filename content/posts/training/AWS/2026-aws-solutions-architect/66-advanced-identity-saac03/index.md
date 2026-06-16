@@ -216,27 +216,27 @@ Automates environment setup, applies and manages guardrails, detects and remedia
 
 flowchart TB
 
-    subgraph CT[AWS Control Tower]
-        CT1[Automates landing zone setup]
-        CT2[Applies guardrails<br/>(SCPs + Config)]
-        CT3[Compliance & logging]
+    subgraph CT["AWS Control Tower"]
+        CT1["Automated landing zone setup"]
+        CT2["Guardrails (SCPs + Config)"]
+        CT3["Compliance & logging"]
     end
 
-    subgraph ORG[AWS Organizations]
-        ORG1[Multi-account structure<br/>(OUs, accounts)]
-        ORG2[Consolidated billing]
-        ORG3[SCPs, Tag Policies, Backup Policies]
+    subgraph ORG["AWS Organizations"]
+        ORG1["Multi-account structure (OUs, accounts)"]
+        ORG2["Consolidated billing"]
+        ORG3["SCPs, Tag Policies, Backup Policies"]
     end
 
-    subgraph IDSC[AWS IAM Identity Center]
-        ID1[Centralised SSO]
-        ID2[Permission Sets<br/>for multi-account access]
-        ID3[ABAC using user attributes]
-        ID4[SAML 2.0 app access]
+    subgraph IDSC["IAM Identity Center"]
+        ID1["Centralised SSO"]
+        ID2["Permission Sets for multi-account access"]
+        ID3["ABAC using user attributes"]
+        ID4["SAML 2.0 app access"]
     end
 
     CT -->|uses| ORG
-    ORG -->|provides account structure to| IDSC
+    ORG -->|provides structure to| IDSC
     CT -->|integrates with| IDSC
 
 {{< /mermaid >}}
