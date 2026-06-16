@@ -212,37 +212,34 @@ Automates environment setup, applies and manages guardrails, detects and remedia
 - <font color=#EBAC25>AWS Control Tower uses AWS Organizations to create accounts</font>
 ## Summary
 
-                   ┌──────────────────────────────────────────┐
-                   │              AWS Control Tower            │
-                   │------------------------------------------│
-                   │ • Automates landing zone setup           │
-                   │ • Applies guardrails (SCPs + Config)     │
-                   │ • Centralised logging & compliance        │
-                   └──────────────────────────────────────────┘
-                                   │
-                                   │ uses
-                                   ▼
-┌──────────────────────────────────────────────────────────────────────────┐
-│                           AWS Organizations                              │
-│--------------------------------------------------------------------------│
-│ • Multi-account structure (OUs, accounts)                                │
-│ • Consolidated billing & shared discounts                                │
-│ • Service Control Policies (SCPs) for governance                         │
-│ • Tag policies, backup policies, account automation                      │
-└──────────────────────────────────────────────────────────────────────────┘
-                                   │
-                                   │ provides account structure to
-                                   ▼
-                 ┌──────────────────────────────────────────┐
-                 │          IAM Identity Center              │
-                 │------------------------------------------│
-                 │ • Centralised SSO for all accounts       │
-                 │ • Permission sets for multi-account IAM  │
-                 │ • ABAC using user attributes             │
-                 │ • SSO to business apps (SAML 2.0)        │
-                 └──────────────────────────────────────────┘
+{{< mermaid >}}
 
+flowchart TB
 
+    subgraph CT[AWS Control Tower]
+        CT1[Automates landing zone setup]
+        CT2[Applies guardrails<br/>(SCPs + Config)]
+        CT3[Compliance & logging]
+    end
+
+    subgraph ORG[AWS Organizations]
+        ORG1[Multi-account structure<br/>(OUs, accounts)]
+        ORG2[Consolidated billing]
+        ORG3[SCPs, Tag Policies, Backup Policies]
+    end
+
+    subgraph IDSC[AWS IAM Identity Center]
+        ID1[Centralised SSO]
+        ID2[Permission Sets<br/>for multi-account access]
+        ID3[ABAC using user attributes]
+        ID4[SAML 2.0 app access]
+    end
+
+    CT -->|uses| ORG
+    ORG -->|provides account structure to| IDSC
+    CT -->|integrates with| IDSC
+
+{{< /mermaid >}}
 ### AWS Organizations
 
 The foundation for multi‑account AWS environments. It lets you centrally create, group, and manage accounts, apply **SCPs**, enforce tagging standards, and use consolidated billing with shared discounts. It provides the governance layer that everything else builds on.
