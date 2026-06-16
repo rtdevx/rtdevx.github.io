@@ -38,6 +38,8 @@ Server‑side encryption at rest means the server encrypts data **after** receiv
 Client‑side encryption means the data is encrypted **before it ever reaches the server**, stays encrypted while stored, and is only decrypted by the receiving client. The server cannot decrypt it, and the approach often uses envelope encryption.
 ## AWS KMS
 
+<font color=#EBAC25><i>More info:</i></font> [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
+
 - Anytime you hear “encryption” for an AWS service, it’s most likely KMS
 - AWS manages encryption keys for us
 - Fully integrated with IAM for authorization
@@ -229,6 +231,8 @@ In other words:
 - When launching an EC2 instance from the shared AMI, the target account may optionally choose a **different KMS key in its own account** to re‑encrypt the resulting EBS volumes
 ## SSM Parameter Store
 
+<font color=#EBAC25><i>More info:</i></font> [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
+
 - Secure, managed storage for configuration values and sensitive secrets (<font color=#EB4925>encrypted!</font>)
 - Optional **KMS‑backed encryption** for seamless at‑rest protection    
 - Fully serverless, scalable, and easy to use through AWS SDKs    
@@ -286,6 +290,8 @@ In other words:
 ```
 ## AWS Certificate Manager (ACM)
 
+<font color=#EBAC25><i>More info:</i></font> [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/)
+
 - Simplifies the **provisioning, management, and deployment** of TLS certificates    
 - Enables **HTTPS** by providing in‑flight encryption for websites and APIs    
 - Supports both **public** and **private** TLS certificates    
@@ -315,6 +321,8 @@ In other words:
 - These expiration events appear in **EventBridge**    
 - AWS Config provides a managed rule, **acm-certificate-expiration-check**, which monitors certificates approaching expiration (with a configurable threshold)
 ## CloudHSM
+
+<font color=#EBAC25><i>More info:</i></font> [AWS CloudHSM Documentation](https://docs.aws.amazon.com/cloudhsm/)
 
 - With **KMS**, AWS manages all the encryption software for you    
 - With **CloudHSM**, AWS provides dedicated **hardware security modules (HSMs)** instead    
@@ -352,6 +360,8 @@ In other words:
 
 ## AWS WAF
 
+<font color=#EBAC25><i>More info:</i></font> [AWS WAF Documentation](https://docs.aws.amazon.com/waf/)
+
 {{< lead >}}
 
 **AWS WAF** (Web Application Firewall) Protects your web applications from common attacks and web exploits.
@@ -374,6 +384,8 @@ In other words:
 - **Rule groups** provide reusable collections of rules that can be shared across multiple Web ACLs
 ## AWS Shield
 
+<font color=#EBAC25><i>More info:</i></font> [AWS Shield Documentation](https://docs.aws.amazon.com/shield/)
+
 - A DDoS attack is a **Distributed Denial of Service**, where an attacker overwhelms a system with massive traffic    
 - **AWS Shield Standard** is automatically enabled for all AWS customers at no cost    
     - Protects against common Layer 3 and Layer 4 attacks such as **SYN floods**, **UDP floods**, and **reflection attacks**        
@@ -383,6 +395,8 @@ In other words:
     - Includes **cost protection** to avoid unexpected spikes in usage charges caused by DDoS events        
     - Offers **automatic application‑layer mitigation**, dynamically creating and deploying AWS WAF rules to counter Layer 7 attacks
 ## AWS Firewall Manager
+
+<font color=#EBAC25><i>More info:</i></font> [AWS Firewall Manager Documentation](https://docs.aws.amazon.com/firewall-manager/)
 
 - Centralizes management of security rules across **all accounts** in an AWS Organization    
 - Uses **security policies** to define a consistent set of rules applied org‑wide    
@@ -450,6 +464,8 @@ In other words:
 ![](./assets/AWS_Security_DDoS_4.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Amazon GuardDuty
 
+<font color=#EBAC25><i>More info:</i></font> [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/)
+
 - Provides **intelligent threat detection** to help secure your AWS accounts    
 - Uses **machine learning**, anomaly detection, and third‑party threat intelligence    
 - Can be enabled with a single click (includes a **30‑day trial**) and requires no agents or software installation    
@@ -466,6 +482,8 @@ In other words:
 
 ![](./assets/AWS_Security_Guard_Duty.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Amazon Inspector
+
+<font color=#EBAC25><i>More info:</i></font> [Amazon Inspector Documentation](https://docs.aws.amazon.com/inspector/)
 
 - Provides **automated security assessments** across multiple AWS workloads    
 - **EC2 instances:**    
@@ -492,14 +510,25 @@ In other words:
 - Assigns a **risk score** to each finding to help prioritize remediation
 ## AWS Macie
 
+<font color=#EBAC25><i>More info:</i></font> [Amazon Macie Documentation](https://docs.aws.amazon.com/macie/)
+
 - Amazon Macie is a fully managed **data security and privacy service** that uses machine learning and pattern matching to locate and protect sensitive data stored in AWS    
 - It helps detect and alert you to **sensitive information**, including personally identifiable information (PII)
-
 
 ---
 ## >> Sources <<
 
-[Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html)
+- [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
+	- [Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html)
+- [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
+- [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/)
+- [AWS CloudHSM Documentation](https://docs.aws.amazon.com/cloudhsm/)
+- [AWS WAF Documentation](https://docs.aws.amazon.com/waf/)
+- [AWS Shield Documentation](https://docs.aws.amazon.com/shield/)
+- [AWS Firewall Manager Documentation](https://docs.aws.amazon.com/firewall-manager/)
+- [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/)
+- [Amazon Inspector Documentation](https://docs.aws.amazon.com/inspector/)
+- [Amazon Macie Documentation](https://docs.aws.amazon.com/macie/)
 ## >> References <<
 
 **Cloud Practitioner:** [Security and Compliance]({{< ref "19-security-and-compliance" >}})
