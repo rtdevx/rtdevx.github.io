@@ -247,7 +247,9 @@ This ensures the NACL always has a final decision path.
 - Every connection between two endpoints requires ports, and while clients connect to a server’s well‑known port, the server replies back using an **ephemeral (temporary) port**.    
 - Different operating systems allocate ephemeral ports from different ranges - for example, **49152-65535** on IANA and Windows 10, and **32768-60999** on many Linux kernels.
 
+![](./assets/AWS_VPC_NACL_Ephemeral.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
+<font color=#EBAC25><i>More info:</i></font> [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
 
 
 
@@ -261,6 +263,7 @@ This ensures the NACL always has a final decision path.
 IP Address Guide (CIDR): [IPAddressGuide](https://www.ipaddressguide.com/cidr)
 
 - [What is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+- [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
 ## >> References <<
 
 **Cloud Practitioner:** [VPC]({{< ref "18-vpc" >}})
