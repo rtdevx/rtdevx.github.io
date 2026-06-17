@@ -102,14 +102,19 @@ The Internet Assigned Numbers Authority (IANA) established certain blocks of IPv
 {{< /alert >}}
 ## Internet Gateway (IGW)
 
+<font color=#EBAC25><i>More info:</i></font> 
+- [Building AWS VPC]({{< ref "06-vpc" >}})
+- [Add internet access to a subnet](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-igw.html)
+- [Enable internet access for a VPC using an internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
+
 - <font color=#EBAC25>An Internet Gateway enables resources in a VPC (such as EC2 instances) to reach the public Internet   </font>
 - It is fully managed, horizontally scalable, and highly available    
 - <font color=#EBAC25>It must be created separately and then attached to a VPC </font>   
 - A VPC can have **only one** Internet Gateway attached, and an Internet Gateway can attach to **only one** VPC    
 - The IGW alone does **not** provide Internet access - <font color=#EB4925>you must also update the route tables to send traffic to it</font>
-
-<font color=#EBAC25><i>More info:</i></font> [Building AWS VPC]({{< ref "06-vpc" >}})
 ## NAT Gateway
+
+<font color=#EBAC25><i>More info:</i></font> [NAT gateways](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)
 
 - Fully managed AWS NAT service with high bandwidth, high availability, and no admin overhead 
 - Billed by the hour plus data processing charges    
@@ -195,6 +200,11 @@ flowchart TB
 {{< /mermaid >}}
 ## Security Groups & NACLs
 
+<font color=#EBAC25><i>More info:</i></font> 
+- [Managing security responsibilities for Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/security.html)
+	- [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)
+	- [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+
 {{< lead >}}
 
 **Security Groups** are **stateful**, meaning return traffic is automatically allowed, and they act as virtual firewalls **at the instance level**. 
@@ -272,6 +282,8 @@ This ensures the NACL always has a final decision path.
 - You can reference a security group in a peered VPC (works cross accounts – same region)
 
 {{< /alert >}}
+
+<font color=#EBAC25><i>More info:</i></font> [What is VPC peering?](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)
 ## VPC Endpoints
 
 {{< lead >}}
@@ -319,6 +331,8 @@ flowchart TB
 - You pay **per hour + data processed**    
 
 Think of them as: **“Private ENIs that act as a doorway to an AWS service.”**
+
+<font color=#EBAC25><i>More info:</i></font> [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html)
 ### Gateway Endpoints
 
 - Only for **S3** and **DynamoDB**    
@@ -327,6 +341,8 @@ Think of them as: **“Private ENIs that act as a doorway to an AWS service.”*
 - No ENIs, no Security Groups    
 
 Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB privately.”**
+
+<font color=#EBAC25><i>More info:</i></font> [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html)
 ### Why VPC Endpoints matter
 
 - **No Internet exposure**    
@@ -362,6 +378,10 @@ Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB pr
 
 ![](./assets/AWS_VPC_Flow_Logs_Architectures.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Site-to-Site VPN
+
+<font color=#EBAC25><i>More info:</i></font> 
+- [AWS Virtual Private Network Documentation](https://docs.aws.amazon.com/vpn/)
+- [Get started with AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html)
 
 - A **Virtual Private Gateway (VGW)** is the AWS‑side VPN concentrator; you create it and attach it to the VPC that will use the Site‑to‑Site VPN, and you can optionally set a custom ASN for routing.    
 - A **Customer Gateway (CGW)** represents your on‑premises side and can be either a physical device or a software‑based VPN appliance.
@@ -456,6 +476,8 @@ flowchart TD
 {{< /alert >}}
 ## Direct Connect (DX)
 
+<font color=#EBAC25><i>More info:</i></font> [What is Direct Connect?](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)
+
 - AWS Direct Connect gives you a **dedicated, private network link** from your on‑premises environment to your VPC.    
 - You establish a physical connection between your data centre and an **AWS Direct Connect location**.    
 - Your VPC still needs a **Virtual Private Gateway** to receive the connection.    
@@ -488,6 +510,8 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 
 ![](./assets/AWS_VPC_DX_Resiliency_VPN_Backup.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## Transit Gateway
+
+<font color=#EBAC25><i>More info:</i></font> [What is AWS Transit Gateway for Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html)
 
 - Transit Gateway enables **large‑scale, transitive connectivity** across thousands of VPCs and on‑prem networks using a **hub‑and‑spoke** architecture.    
 - It’s a **regional** resource but can also be used **across regions** through inter‑region peering.    
@@ -531,6 +555,8 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 - You must **update your route tables** to use it.
 ## AWS Network Firewall
 
+<font color=#EBAC25><i>More info:</i></font> [What is AWS Network Firewall?](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html)
+
 - AWS Network Firewall provides **full VPC‑level protection**, covering traffic from **Layer 3 through Layer 7**.    
 - It can inspect traffic in any direction: **VPC‑to‑VPC**, **outbound to the Internet**, **inbound from the Internet**, and traffic to or from **Direct Connect** or **Site‑to‑Site VPN**.    
 - Internally, it relies on the **AWS Gateway Load Balancer** for scaling and availability.    
@@ -549,11 +575,43 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 ---
 ## >> Sources <<
 
-IP Address Guide (CIDR): [IPAddressGuide](https://www.ipaddressguide.com/cidr)
+**IP Address Guide (CIDR):** [IPAddressGuide](https://www.ipaddressguide.com/cidr)
 
+**VPC:**
 - [What is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 - [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
 - [Flow log record examples](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-records-examples.html)
+
+**IGW:**
+- [Building AWS VPC]({{< ref "06-vpc" >}})
+- [Add internet access to a subnet](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-igw.html)
+- [Enable internet access for a VPC using an internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
+
+**NATGW:**
+- [NAT gateways](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)
+
+**SG & NACL:**
+- [Managing security responsibilities for Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/security.html)
+	- [Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)
+	- [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+
+**VPC Peering:**
+- [What is VPC peering?](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html)
+
+**VPC Endpoints:**
+- [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html)
+- [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html)
+
+**VPN & Direct Connect:**
+- [AWS Virtual Private Network Documentation](https://docs.aws.amazon.com/vpn/)
+- [Get started with AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html)
+- [What is Direct Connect?](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)
+
+**Transit Gateway:**
+- [What is AWS Transit Gateway for Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html)
+
+**AWS Network Firewall:**
+- [What is AWS Network Firewall?](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html)
 ## >> References <<
 
 **Cloud Practitioner:** [VPC]({{< ref "18-vpc" >}})
