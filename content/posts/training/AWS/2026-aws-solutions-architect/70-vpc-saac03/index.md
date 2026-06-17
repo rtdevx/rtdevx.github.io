@@ -513,6 +513,17 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 - You can mirror **all packets** or only specific traffic, and optionally **truncate** packets to reduce volume.    
 - Sources and targets may be in the **same VPC** or in **different VPCs** connected through VPC Peering.    
 - Common use cases include **deep packet inspection**, **threat detection**, and **network troubleshooting**.
+## IPv6
+
+- IPv4 was built to support about **4.3 billion** addresses, and that pool is nearly exhausted.    
+- **IPv6** is the next‑generation protocol designed to provide an almost limitless supply of addresses — roughly **3.4 × 10³⁸** unique IPs.    
+- In AWS, every IPv6 address is **public and Internet‑routable**; there is **no private IPv6 range**.
+### IPv6 in VPC
+
+- You can’t turn off **IPv4** for a VPC or its subnets.    
+- You can enable **IPv6** to run in **dual‑stack mode**, where IPv4 and IPv6 operate together.    
+- EC2 instances will receive a **private IPv4 address** and a **public IPv6 address**.    
+- They can reach the Internet over either protocol through an **Internet Gateway**.
 
 ---
 ## >> Sources <<
