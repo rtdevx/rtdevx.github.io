@@ -248,10 +248,17 @@ This ensures the NACL always has a final decision path.
 - Different operating systems allocate ephemeral ports from different ranges - for example, **49152-65535** on IANA and Windows 10, and **32768-60999** on many Linux kernels.
 
 ![](./assets/AWS_VPC_NACL_Ephemeral.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### Security Group vs. NACLs
+
+| Security Group                                                                 | NACL                                                                                                      |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| Operates at the instance level                                                 | Operates at the subnet level                                                                              |
+| Supports allow rules only                                                      | Supports allow rules and deny rules                                                                       |
+| **Stateful:** return traffic is automatically allowed, regardless of any rules | **Stateless:** return traffic must be explicitly allowed by rules (think of ephemeral ports)              |
+| All rules are evaluated before deciding whether to allow traffic               | Rules are evaluated in order (lowest to highest) when deciding whether to allow traffic, first match wins |
+| Applies to an EC2 instance when specified by someone                           | Automatically applies to all EC2 instances in the subnet that it’s associated with                        |
 
 <font color=#EBAC25><i>More info:</i></font> [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
-
-
 
 
 
