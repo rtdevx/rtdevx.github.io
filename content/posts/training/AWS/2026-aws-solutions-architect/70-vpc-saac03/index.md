@@ -368,7 +368,7 @@ Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB pr
 
 {{< mermaid >}}
 
-flowchart LR
+flowchart TD
 
     %% On‑premises side
     subgraph OnPrem["Corporate Data Center"]
