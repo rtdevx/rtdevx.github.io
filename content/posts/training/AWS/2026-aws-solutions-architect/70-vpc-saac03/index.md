@@ -217,7 +217,27 @@ Network **ACLs** are **stateless**, so both inbound and outbound rules must be e
 - Accepts everything inbound/outbound with the subnets it’s associated with
 - <font color=#EB4925>Do NOT modify the Default NACL, instead create custom NACLs</font>
 
+![](./assets/AWS_VPC_NACL_Default.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
+{{< alert "circle-info" >}}
+
+🙋🏻 _Question:_ Why do NACLs have both ALLOW and DENY rules?
+
+Because **NACLs are stateless**, they must explicitly decide what to do with every packet. That means they need **ALLOW rules** to permit traffic and **DENY rules** to block traffic - nothing is remembered, and nothing is implied.
+
+🙋🏻 _Question:_ What is “Rule #”?
+
+**Rule # is the priority number**.
+
+- Lower number = **higher priority**    
+- NACL evaluates rules **in order**, starting from the lowest number    
+- The **first matching rule wins**, and evaluation stops immediately    
+
+<font color=#EBAC25>Example:</font>
+- Rule #100 ALLOW    
+- Rule #200 DENY Traffic matching both will be **allowed**, because rule 100 is evaluated first.
+
+{{< /alert >}}
 
 ---
 ## >> Sources <<
