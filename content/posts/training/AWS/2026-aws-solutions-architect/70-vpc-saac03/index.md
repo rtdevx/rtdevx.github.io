@@ -401,6 +401,7 @@ flowchart TD
 
 {{< /mermaid >}}
 
+
 {{< alert "circle-info" >}}
 
 **On‑premises side**
@@ -425,7 +426,7 @@ flowchart TD
 
 {{< mermaid >}}
 
-flowchart LR
+flowchart TD
 
     %% AWS side
     subgraph VPC["AWS VPC"]
@@ -469,6 +470,7 @@ flowchart LR
     CGW_A -. CloudHub Routing .- CGW_C
 
 {{< /mermaid >}}
+
 
 {{< alert "circle-info" >}}
 
