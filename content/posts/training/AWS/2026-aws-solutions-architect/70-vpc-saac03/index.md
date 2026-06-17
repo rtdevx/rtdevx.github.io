@@ -333,7 +333,34 @@ Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB pr
 - **No NAT Gateway cost** for S3/DynamoDB traffic    
 - **Lower latency** (stays on AWS backbone)    
 - **Better security posture** (private connectivity, IAM policies, endpoint policies)
+### Lambda in VPC accessing DynamoDB
 
+- DynamoDB is a **public AWS service**, so a Lambda function inside a VPC must either reach it through the **public Internet** (which requires a NAT Gateway in a public subnet plus an Internet Gateway), or
+
+- Use the better, **private and free** option: create a **DynamoDB Gateway VPC Endpoint** and update your route tables so the Lambda function can access DynamoDB entirely through the **AWS private network**.
+## VPC Flow Logs
+
+- VPC Flow Logs record IP traffic flowing **into and out of** your VPC, subnets, or individual ENIs.    
+- They’re useful for monitoring and diagnosing network connectivity issues.    
+- Flow log data can be sent to **S3**, **CloudWatch Logs**, or **Kinesis Data Firehose**.    
+- They also capture traffic from **AWS‑managed network interfaces** such as ELB, RDS, ElastiCache, Redshift, WorkSpaces, NAT Gateways, and Transit Gateways.
+### VPC Flow Logs Syntax
+
+- **srcaddr & dstaddr** - help identify problematic IP protocol
+- **srcport & dstport** - help identity problematic ports bytes end
+- Action - success or failure of the request due to Security Group / NACL
+- Can be used for analytics on usage patterns, or malicious behavior
+- **Query VPC flow logs using Athena on S3 or CloudWatch Logs Insights**
+
+![](./assets/AWS_VPC_Flow_Logs.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+<font color=#EBAC25><i>More info:</i></font> [Flow log record examples](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-records-examples.html)
+### VPC Flow Logs - Troubleshoot SG & NACL issues
+
+![](./assets/AWS_VPC_Flow_Logs_NACL_Issue.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### VPC Flow Logs - Architectures
+
+![](./assets/AWS_VPC_Flow_Logs_Architectures.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ---
 ## >> Sources <<
@@ -342,6 +369,7 @@ IP Address Guide (CIDR): [IPAddressGuide](https://www.ipaddressguide.com/cidr)
 
 - [What is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 - [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+- [Flow log record examples](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-records-examples.html)
 ## >> References <<
 
 **Cloud Practitioner:** [VPC]({{< ref "18-vpc" >}})
