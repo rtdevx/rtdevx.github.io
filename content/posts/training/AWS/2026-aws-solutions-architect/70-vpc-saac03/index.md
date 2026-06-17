@@ -212,38 +212,11 @@ Network **ACLs** are **stateless**, so both inbound and outbound rules must be e
 - AWS recommends spacing rule numbers in increments of 100 for easier management.    
 - Newly created NACLs start with **deny‑all** rules.    
 - NACLs are useful for **blocking specific IP addresses** at the subnet boundary.
+### Default NACL
 
-{{< mermaid >}}
+- Accepts everything inbound/outbound with the subnets it’s associated with
+- <font color=#EB4925>Do NOT modify the Default NACL, instead create custom NACLs</font>
 
-flowchart TB
-
-    subgraph VPC["VPC"]
-        
-        subgraph PublicSubnet["Public Subnet"]
-            NACL_Public["NACL (Public)"]
-            EC2_Public["Public EC2 Instance"]
-            NATGW["NAT Gateway"]
-        end
-
-        subgraph PrivateSubnet["Private Subnet"]
-            NACL_Private["NACL (Private)"]
-            EC2_Private["Private EC2 Instance"]
-        end
-
-    end
-
-    IGW["Internet Gateway"]
-
-    %% Traffic flows
-    IGW -->|Inbound traffic| NACL_Public
-    NACL_Public --> EC2_Public
-
-    EC2_Private -->|Outbound| NATGW
-    NATGW --> IGW
-
-    EC2_Private --> NACL_Private
-
-{{< /mermaid >}}
 
 
 ---
