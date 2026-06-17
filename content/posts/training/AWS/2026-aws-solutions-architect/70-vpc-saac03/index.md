@@ -487,6 +487,20 @@ flowchart TD
 In case Direct Connect fails, you can set up a backup Direct Connect connection (expensive), or a Site-to-Site VPN connection.
 
 ![](./assets/AWS_VPC_DX_Resiliency_VPN_Backup.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Transit Gateway
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| - Transit Gateway enables **large‑scale, transitive connectivity** across thousands of VPCs and on‑prem networks using a **hub‑and‑spoke** architecture.    <br>- It’s a **regional** resource but can also be used **across regions** through inter‑region peering.    <br>- You can **share** a Transit Gateway with other AWS accounts using **Resource Access Manager (RAM)**.    <br>- Transit Gateways themselves can be **peered across regions** for global architectures.    <br>- **Route tables** on the TGW control which VPCs and networks are allowed to communicate.    <br>- It integrates with **Direct Connect Gateway** and **Site‑to‑Site VPN**.    <br>- It uniquely supports **IP multicast**, which no other AWS networking service provides. | ![](./assets/AWS_VPC_Transit_GW.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)") |
+
+
+
+
+
+
+
+
+
 
 ---
 ## >> Sources <<
