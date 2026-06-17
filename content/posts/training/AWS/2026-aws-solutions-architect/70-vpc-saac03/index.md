@@ -3,7 +3,7 @@ title: "Solutions Architect: VPC"
 date: 2026-04-16
 description: Associate-level extension of the `VPC` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `VPC` Section from AWS Cloud Practitioner Series.
-draft: true
+draft: false
 tags:
   - SAA-C03
   - VPC
@@ -81,11 +81,81 @@ The Internet Assigned Numbers Authority (IANA) established certain blocks of IPv
     - 192.168.0.0/16
 
 <font color=#EB4925>Your VPC CIDR should not overlap with any existing networks (e.g., corporate on‑prem) to avoid routing conflicts</font>.
+### VPC - Subnet (IPv4)
 
+- AWS reserves **5 IP addresses** in every subnet (the first four and the last one)    
+- These addresses **cannot** be assigned to EC2 instances    
+- For a subnet like **10.0.0.0/24**, the reserved IPs are:    
+    - **10.0.0.0** — network address        
+    - **10.0.0.1** — AWS VPC router        
+    - **10.0.0.2** — AWS‑provided DNS mapping        
+    - **10.0.0.3** — reserved for future AWS use        
+    - **10.0.0.255** — broadcast address (broadcasting isn’t supported in VPCs, so it’s reserved)
 
+{{< alert "circle-info" >}}
 
+<font color=#EBAC25>Exam Tip</font>, if you need 29 IP addresses for EC2 instances:
 
+- You can’t choose a subnet of size /27 (32 IP addresses, 32 – 5 = 27 < 29)
+- You need to choose a subnet of size /26 (64 IP addresses, 64 – 5 = 59 > 29)
 
+{{< /alert >}}
+## Internet Gateway (IGW)
+
+- <font color=#EBAC25>An Internet Gateway enables resources in a VPC (such as EC2 instances) to reach the public Internet   </font>
+- It is fully managed, horizontally scalable, and highly available    
+- <font color=#EBAC25>It must be created separately and then attached to a VPC </font>   
+- A VPC can have **only one** Internet Gateway attached, and an Internet Gateway can attach to **only one** VPC    
+- The IGW alone does **not** provide Internet access - <font color=#EB4925>you must also update the route tables to send traffic to it</font>
+
+<font color=#EBAC25><i>More info:</i></font> [Building AWS VPC]({{< ref "06-vpc" >}})
+## NAT Gateway
+
+- Fully managed AWS NAT service with high bandwidth, high availability, and no admin overhead 
+- Billed by the hour plus data processing charges    
+- Deployed in a specific Availability Zone and associated with an Elastic IP    
+- Cannot be used by instances in the **same** subnet—only by instances in **other** subnets    
+- Requires an Internet Gateway for outbound traffic (Private Subnet → NAT Gateway → IGW)    
+- Provides **5 Gbps** baseline throughput and automatically scales up to **100 Gbps**    
+- No Security Groups are needed or supported for NAT Gateways
+
+ℹ️ _Note:_ NAT Gateway is resilient within a single Availability Zone. Must create multiple NAT Gateways in multiple AZs for fault tolerance.
+
+{{< mermaid >}}
+
+flowchart TB
+
+    subgraph VPC["VPC"]
+        
+        subgraph AZA["AZ A"]
+            subgraph PubA["Public Subnet A"]
+                NAT_A["NAT Gateway A"]
+            end
+            subgraph PrivA["Private Subnet A"]
+                EC2_A["EC2 Instance A"]
+            end
+        end
+
+        subgraph AZB["AZ B"]
+            subgraph PubB["Public Subnet B"]
+                NAT_B["NAT Gateway B"]
+            end
+            subgraph PrivB["Private Subnet B"]
+                EC2_B["EC2 Instance B"]
+            end
+        end
+
+    end
+
+    IGW["Internet Gateway"]
+
+    EC2_A -->|Outbound traffic| NAT_A
+    EC2_B -->|Outbound traffic| NAT_B
+
+    NAT_A --> IGW
+    NAT_B --> IGW
+
+{{< /mermaid >}}
 
 ---
 ## >> Sources <<
