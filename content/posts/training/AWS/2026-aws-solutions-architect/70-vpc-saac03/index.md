@@ -86,11 +86,11 @@ The Internet Assigned Numbers Authority (IANA) established certain blocks of IPv
 - AWS reserves **5 IP addresses** in every subnet (the first four and the last one)    
 - These addresses **cannot** be assigned to EC2 instances    
 - For a subnet like **10.0.0.0/24**, the reserved IPs are:    
-    - **10.0.0.0** — network address        
-    - **10.0.0.1** — AWS VPC router        
-    - **10.0.0.2** — AWS‑provided DNS mapping        
-    - **10.0.0.3** — reserved for future AWS use        
-    - **10.0.0.255** — broadcast address (broadcasting isn’t supported in VPCs, so it’s reserved)
+    - **10.0.0.0** - network address        
+    - **10.0.0.1** - AWS VPC router        
+    - **10.0.0.2** - AWS‑provided DNS mapping        
+    - **10.0.0.3** - reserved for future AWS use        
+    - **10.0.0.255** - broadcast address (broadcasting isn’t supported in VPCs, so it’s reserved)
 
 {{< alert "circle-info" >}}
 
@@ -279,6 +279,38 @@ This ensures the NACL always has a final decision path.
 VPC Endpoints let your resources in a VPC **privately** access AWS services **without using the Internet**, **without needing an Internet Gateway**, and **without going through a NAT Gateway**. They keep traffic entirely inside the AWS network, improving security and often reducing cost.
 
 {{< /lead >}}
+
+{{< mermaid >}}
+
+flowchart TB
+
+    subgraph VPC["VPC"]
+
+        subgraph PrivateSubnet["Private Subnet"]
+            EC2["EC2 Instance"]
+        end
+
+        subgraph EndpointENI["Interface Endpoint (ENI)"]
+            ENI1["ENI with Private IP"]
+        end
+
+        subgraph GatewayEndpoint["Gateway Endpoint"]
+            GWEP["S3 / DynamoDB Gateway Endpoint"]
+        end
+
+    end
+
+    AWSService["AWS Service (e.g., SSM, Secrets Manager)"]
+    S3["Amazon S3"]
+
+    %% Traffic flows
+    EC2 -->|Private traffic| ENI1
+    ENI1 --> AWSService
+
+    EC2 -->|Route table entry| GWEP
+    GWEP --> S3
+
+{{< /mermaid >}}
 ### Interface Endpoints (most common)
 
 - Powered by **ENIs** (Elastic Network Interfaces) in your subnets    
@@ -295,6 +327,13 @@ Think of them as: **“Private ENIs that act as a doorway to an AWS service.”*
 - No ENIs, no Security Groups    
 
 Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB privately.”**
+### Why VPC Endpoints matter
+
+- **No Internet exposure**    
+- **No NAT Gateway cost** for S3/DynamoDB traffic    
+- **Lower latency** (stays on AWS backbone)    
+- **Better security posture** (private connectivity, IAM policies, endpoint policies)
+
 
 ---
 ## >> Sources <<
