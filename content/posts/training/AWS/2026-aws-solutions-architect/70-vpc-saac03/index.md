@@ -193,6 +193,58 @@ flowchart TB
     RNAT --> IGW
 
 {{< /mermaid >}}
+## Security Groups & NACLs
+
+{{< lead >}}
+
+**Security Groups** are **stateful**, meaning return traffic is automatically allowed, and they act as virtual firewalls **at the instance level**. 
+
+Network **ACLs** are **stateless**, so both inbound and outbound rules must be explicitly defined, and they filter traffic **at the subnet boundary**.
+
+{{< /lead >}}
+### Network Access Control List (NACL)
+
+- A Network ACL acts as a subnet‑level firewall that controls inbound and outbound traffic.    
+- Each subnet is associated with a single NACL, and new subnets inherit the **default NACL** unless changed.    
+- NACL rules are numbered **1–32766**, and the rule with the **lowest number** that matches the traffic determines the outcome.    
+- Example: rule **#100 ALLOW** and rule **#200 DENY** for the same IP means the traffic is allowed because rule 100 takes precedence.    
+- Any traffic that doesn’t match a rule hits the final _“_” deny* entry.    
+- AWS recommends spacing rule numbers in increments of 100 for easier management.    
+- Newly created NACLs start with **deny‑all** rules.    
+- NACLs are useful for **blocking specific IP addresses** at the subnet boundary.
+
+{{< mermaid >}}
+
+flowchart TB
+
+    subgraph VPC["VPC"]
+        
+        subgraph PublicSubnet["Public Subnet"]
+            NACL_Public["NACL (Public)"]
+            EC2_Public["Public EC2 Instance"]
+            NATGW["NAT Gateway"]
+        end
+
+        subgraph PrivateSubnet["Private Subnet"]
+            NACL_Private["NACL (Private)"]
+            EC2_Private["Private EC2 Instance"]
+        end
+
+    end
+
+    IGW["Internet Gateway"]
+
+    %% Traffic flows
+    IGW -->|Inbound traffic| NACL_Public
+    NACL_Public --> EC2_Public
+
+    EC2_Private -->|Outbound| NATGW
+    NATGW --> IGW
+
+    EC2_Private --> NACL_Private
+
+{{< /mermaid >}}
+
 
 ---
 ## >> Sources <<
