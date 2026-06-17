@@ -479,7 +479,14 @@ flowchart TD
 - Traffic sent over AWS Direct Connect is <font color=#EB4925>not encrypted by default</font>, even though it travels over a private link.    
 - <font color=#EB4925>If you need encryption, you can layer a VPN (IPsec) tunnel on top of Direct Connect to create an encrypted private connection</font>.
 - This adds an extra layer of security, but also introduces a bit more setup complexity.
+### Direct Connect - Resiliency
 
+![](./assets/AWS_VPC_DX_Resiliency.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+#### Site-to-Site VPN connection as a backup
+
+In case Direct Connect fails, you can set up a backup Direct Connect connection (expensive), or a Site-to-Site VPN connection.
+
+![](./assets/AWS_VPC_DX_Resiliency_VPN_Backup.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 ---
 ## >> Sources <<
