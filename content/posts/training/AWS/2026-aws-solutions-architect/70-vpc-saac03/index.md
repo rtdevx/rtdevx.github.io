@@ -524,6 +524,27 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 - You can enable **IPv6** to run in **dual‑stack mode**, where IPv4 and IPv6 operate together.    
 - EC2 instances will receive a **private IPv4 address** and a **public IPv6 address**.    
 - They can reach the Internet over either protocol through an **Internet Gateway**.
+### Egress-only Internet Gateway
+
+- An **egress‑only Internet Gateway** is for **IPv6 traffic only** and works like a NAT Gateway but specifically for outbound IPv6.    
+- It lets instances make **outbound IPv6 connections** while blocking **inbound IPv6 traffic** from the Internet.    
+- You must **update your route tables** to use it.
+## AWS Network Firewall
+
+- AWS Network Firewall provides **full VPC‑level protection**, covering traffic from **Layer 3 through Layer 7**.    
+- It can inspect traffic in any direction: **VPC‑to‑VPC**, **outbound to the Internet**, **inbound from the Internet**, and traffic to or from **Direct Connect** or **Site‑to‑Site VPN**.    
+- Internally, it relies on the **AWS Gateway Load Balancer** for scaling and availability.    
+- Rules can be **centrally managed across accounts** using **AWS Firewall Manager**, making it easy to enforce consistent policies across many VPCs.
+
+![](./assets/AWS_VPC_Firewall.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+- Supports **thousands of rules**, including large IP and port lists.    
+- Can filter by **protocol**, such as blocking SMB for outbound traffic.    
+- Offers **stateful domain list rules** to restrict outbound access (e.g., only `*.mycorp.com` or approved software repositories).    
+- Allows **regex‑based pattern matching** for advanced inspection.    
+- Traffic actions include **allow**, **drop**, or **alert**.    
+- Performs **active flow inspection** with intrusion‑prevention capabilities, fully managed by AWS.   
+- Can send detailed logs to **S3**, **CloudWatch Logs**, or **Kinesis Data Firehose**.
 
 ---
 ## >> Sources <<
