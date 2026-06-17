@@ -272,7 +272,29 @@ This ensures the NACL always has a final decision path.
 - You can reference a security group in a peered VPC (works cross accounts – same region)
 
 {{< /alert >}}
+## VPC Endpoints
 
+{{< lead >}}
+
+VPC Endpoints let your resources in a VPC **privately** access AWS services **without using the Internet**, **without needing an Internet Gateway**, and **without going through a NAT Gateway**. They keep traffic entirely inside the AWS network, improving security and often reducing cost.
+
+{{< /lead >}}
+### Interface Endpoints (most common)
+
+- Powered by **ENIs** (Elastic Network Interfaces) in your subnets    
+- Provide **private IPs** to reach AWS services like SSM, Secrets Manager, API Gateway, STS, CloudWatch, etc.    
+- Support **Security Groups**    
+- You pay **per hour + data processed**    
+
+Think of them as: **“Private ENIs that act as a doorway to an AWS service.”**
+### Gateway Endpoints
+
+- Only for **S3** and **DynamoDB**    
+- Added to your **route tables**    
+- **Free** to use    
+- No ENIs, no Security Groups    
+
+Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB privately.”**
 
 ---
 ## >> Sources <<
