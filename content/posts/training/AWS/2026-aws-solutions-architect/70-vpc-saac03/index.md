@@ -361,6 +361,49 @@ Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB pr
 ### VPC Flow Logs - Architectures
 
 ![](./assets/AWS_VPC_Flow_Logs_Architectures.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Site-to-Site VPN
+
+- A **Virtual Private Gateway (VGW)** is the AWS‑side VPN concentrator; you create it and attach it to the VPC that will use the Site‑to‑Site VPN, and you can optionally set a custom ASN for routing.    
+- A **Customer Gateway (CGW)** represents your on‑premises side and can be either a physical device or a software‑based VPN appliance.
+
+{{< mermaid >}}
+
+flowchart LR
+
+    %% On‑premises side
+    subgraph OnPrem["Corporate Data Center"]
+        CGW_Private["Customer Gateway (Private IP)"]
+        Server["On‑Prem Server"]
+        NAT_Device["NAT Device (Public IP)"]
+        CGW_Public["Customer Gateway (Public IP)"]
+    end
+
+    %% AWS side
+    subgraph AWS["AWS VPC"]
+        VGW["Virtual Private Gateway (VGW)"]
+        RT["Route Table (Route Propagation Enabled)"]
+        PrivateSubnet["Private Subnet"]
+        EC2["EC2 Instance"]
+        SG["Security Group (Allow ICMP if pinging)"]
+    end
+
+    %% Connections
+    Server --> CGW_Private
+    CGW_Private --> NAT_Device
+    NAT_Device -->|NAT‑T Public IP| VGW
+
+    CGW_Public -->|Direct Public IP| VGW
+
+    VGW --> RT
+    RT --> PrivateSubnet
+    PrivateSubnet --> EC2
+    EC2 --> SG
+
+{{< /mermaid >}}
+
+- Your on‑premises **Customer Gateway device** must use a **public, Internet‑routable IP address**; if it sits behind a NAT device that supports NAT‑T, then you use the NAT device’s public IP instead.    
+- After creating the VPN, you must **enable route propagation** on the Virtual Private Gateway’s route table so your subnets learn the on‑prem routes automatically.    
+- If you want to **ping EC2 instances from on‑prem**, ensure the EC2 Security Groups allow **ICMP** inbound.
 
 ---
 ## >> Sources <<
