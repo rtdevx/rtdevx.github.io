@@ -284,8 +284,8 @@ VPC Endpoints let your resources in a VPC **privately** access AWS services **wi
 
 flowchart TB
 
+    %% Nodes
     subgraph VPC["VPC"]
-
         subgraph PrivateSubnet["Private Subnet"]
             EC2["EC2 Instance"]
         end
@@ -297,7 +297,6 @@ flowchart TB
         subgraph GatewayEndpoint["Gateway Endpoint"]
             GWEP["S3 / DynamoDB Gateway Endpoint"]
         end
-
     end
 
     AWSService["AWS Service (e.g., SSM, Secrets Manager)"]
@@ -309,6 +308,17 @@ flowchart TB
 
     EC2 -->|Route table entry| GWEP
     GWEP --> S3
+
+    %% Colour coding
+    classDef ec2 fill:#d0e6ff,stroke:#1a73e8,stroke-width:2px;
+    classDef eni fill:#e8ffe8,stroke:#34a853,stroke-width:2px;
+    classDef gw fill:#fff4cc,stroke:#fbbc04,stroke-width:2px;
+    classDef svc fill:#ffe0e0,stroke:#ea4335,stroke-width:2px;
+
+    class EC2 ec2;
+    class ENI1 eni;
+    class GWEP gw;
+    class AWSService,S3 svc;
 
 {{< /mermaid >}}
 ### Interface Endpoints (most common)
