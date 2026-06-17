@@ -156,6 +156,43 @@ flowchart TB
     NAT_B --> IGW
 
 {{< /mermaid >}}
+### Regional NAT Gateway (RNAT)
+
+- Provides a **highly available, VPC‑wide NAT service**    
+- RNAT uses its **own dedicated route tables**    
+- Removes the need to deploy NAT Gateways in every Availability Zone - it is **shared across all AZs**    
+- You **don’t need public subnets** in your VPC to host RNAT    
+- Automatically detects when new AZs become available and **extends coverage** to them
+
+{{< mermaid >}}
+
+flowchart TB
+
+    subgraph VPC["VPC"]
+        
+        subgraph AZA["AZ A"]
+            subgraph PrivA["Private Subnet A"]
+                EC2_A["EC2 Instance A"]
+            end
+        end
+
+        subgraph AZB["AZ B"]
+            subgraph PrivB["Private Subnet B"]
+                EC2_B["EC2 Instance B"]
+            end
+        end
+
+    end
+
+    RNAT["Regional NAT Gateway"]
+    IGW["Internet Gateway"]
+
+    EC2_A -->|0.0.0.0/0| RNAT
+    EC2_B -->|0.0.0.0/0| RNAT
+
+    RNAT --> IGW
+
+{{< /mermaid >}}
 
 ---
 ## >> Sources <<
