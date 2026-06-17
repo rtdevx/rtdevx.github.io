@@ -259,9 +259,19 @@ This ensures the NACL always has a final decision path.
 | Applies to an EC2 instance when specified by someone                           | Automatically applies to all EC2 instances in the subnet that it’s associated with                        |
 
 <font color=#EBAC25><i>More info:</i></font> [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+## VPC Peering
 
+- VPC Peering lets you **privately connect two VPCs** over the AWS internal network so they can communicate as if they were part of the same environment.    
+- The VPCs must have **non‑overlapping CIDR ranges**.    
+- Peering is **not transitive** - every pair of VPCs that needs to talk must have its own peering connection.    
+- You must update the **route tables in each VPC’s subnets** so that EC2 instances can reach each other through the peering link.
 
+{{< alert "circle-info" >}}
 
+- You can create VPC Peering connection between VPCs in different AWS accounts/regions
+- You can reference a security group in a peered VPC (works cross accounts – same region)
+
+{{< /alert >}}
 
 
 ---
