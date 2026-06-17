@@ -401,9 +401,23 @@ flowchart TD
 
 {{< /mermaid >}}
 
-- Your on‑premises **Customer Gateway device** must use a **public, Internet‑routable IP address**; if it sits behind a NAT device that supports NAT‑T, then you use the NAT device’s public IP instead.    
-- After creating the VPN, you must **enable route propagation** on the Virtual Private Gateway’s route table so your subnets learn the on‑prem routes automatically.    
-- If you want to **ping EC2 instances from on‑prem**, ensure the EC2 Security Groups allow **ICMP** inbound.
+{{< alert "circle-info" >}}
+
+**On‑premises side**
+
+- Your Customer Gateway device may have:    
+    - A **private IP** behind a NAT device (using NAT‑T), <font color=#EB4925>OR</font>
+    - A **public IP** directly exposed
+        
+- Either way, AWS must see a **public, routable IP** for the VPN tunnel.
+
+**AWS side**
+
+- A **Virtual Private Gateway (VGW)** terminates the VPN tunnel.    
+- The **route table must have route propagation enabled** so on‑prem routes automatically appear.    
+- If you want to **ping EC2 instances**, the Security Group must allow **ICMP inbound**.
+
+{{< /alert >}}
 
 ---
 ## >> Sources <<
