@@ -233,11 +233,27 @@ Because **NACLs are stateless**, they must explicitly decide what to do with eve
 - NACL evaluates rules **in order**, starting from the lowest number    
 - The **first matching rule wins**, and evaluation stops immediately    
 
-<font color=#EBAC25>Example:</font>
-- Rule #100 ALLOW    
-- Rule #200 DENY Traffic matching both will be **allowed**, because rule 100 is evaluated first.
+🙋🏻 _Question:_ Why does the default NACL show both ALLOW and DENY?
+
+The default NACL includes:
+- **Rule 100 ALLOW all** → permits all traffic    
+- **Rule * DENY all** → catch‑all fallback if nothing else matches    
+
+This ensures the NACL always has a final decision path.
 
 {{< /alert >}}
+### Ephemeral Ports
+
+- Every connection between two endpoints requires ports, and while clients connect to a server’s well‑known port, the server replies back using an **ephemeral (temporary) port**.    
+- Different operating systems allocate ephemeral ports from different ranges - for example, **49152-65535** on IANA and Windows 10, and **32768-60999** on many Linux kernels.
+
+
+
+
+
+
+
+
 
 ---
 ## >> Sources <<
