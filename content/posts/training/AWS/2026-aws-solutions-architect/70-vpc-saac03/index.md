@@ -465,6 +465,21 @@ flowchart TD
     - **Consistent, low‑latency** connectivity for real‑time applications        
     - **Hybrid architectures** spanning on‑prem and cloud        
 - Direct Connect supports both **IPv4 and IPv6** traffic.
+### Direct Connect Gateway
+
+<font color=#EB4925>If you want to setup a Direct Connect to one or more VPC in many different regions (same account), you must use a Direct Connect Gateway</font>.
+
+![](./assets/AWS_VPC_DX_GW.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### Direct Connect - Connection Types
+
+- **Dedicated Connections** provide a physical, customer‑specific Ethernet port at speeds from **1 Gbps up to 400 Gbps**. You request these through AWS, and an AWS Direct Connect Partner completes the provisioning.    
+- **Hosted Connections** are provisioned entirely through AWS Direct Connect Partners and range from **50 Mbps to 25 Gbps**. They offer flexible, on‑demand capacity adjustments, though new connections often take **over a month** to be fully established.
+### Direct Connect - Encryption
+
+- Traffic sent over AWS Direct Connect is <font color=#EB4925>not encrypted by default</font>, even though it travels over a private link.    
+- <font color=#EB4925>If you need encryption, you can layer a VPN (IPsec) tunnel on top of Direct Connect to create an encrypted private connection</font>.
+- This adds an extra layer of security, but also introduces a bit more setup complexity.
+
 
 ---
 ## >> Sources <<
