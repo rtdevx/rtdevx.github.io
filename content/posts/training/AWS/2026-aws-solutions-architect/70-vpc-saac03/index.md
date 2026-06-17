@@ -400,8 +400,7 @@ flowchart TD
     EC2 --> SG
 
 {{< /mermaid >}}
-
-
+<br>
 {{< alert "circle-info" >}}
 
 **On‑premises side**
@@ -470,8 +469,7 @@ flowchart TD
     CGW_A -. CloudHub Routing .- CGW_C
 
 {{< /mermaid >}}
-
-
+<br>
 {{< alert "circle-info" >}}
 
 **AWS side**
