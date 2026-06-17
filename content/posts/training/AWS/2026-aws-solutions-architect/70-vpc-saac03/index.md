@@ -418,6 +418,87 @@ flowchart TD
 - If you want to **ping EC2 instances**, the Security Group must allow **ICMP inbound**.
 
 {{< /alert >}}
+### AWS VPN CloudHub
+
+- AWS VPN CloudHub lets you securely connect multiple remote sites using a **hub‑and‑spoke VPN model**, ideal for low‑cost primary or backup connectivity between locations.    
+- Because it’s still a **VPN over the public Internet**, you set it up by attaching multiple VPN connections to the **same Virtual Private Gateway**, enabling **dynamic routing**, and updating your route tables so all sites can communicate.
+
+{{< mermaid >}}
+
+flowchart LR
+
+    %% AWS side
+    subgraph VPC["AWS VPC"]
+        subgraph AZ1["Availability Zone 1"]
+            Subnet1["Private Subnet 1"]
+            EC2_1["EC2 Instances"]
+        end
+
+        subgraph AZ2["Availability Zone 2"]
+            Subnet2["Private Subnet 2"]
+            EC2_2["EC2 Instances"]
+        end
+
+        VGW["Virtual Private Gateway (Hub)"]
+    end
+
+    %% Customer sites
+    subgraph SiteA["Customer Network A"]
+        CGW_A["Customer Gateway A"]
+        ServersA["Servers"]
+    end
+
+    subgraph SiteB["Customer Network B"]
+        CGW_B["Customer Gateway B"]
+        ServersB["Servers"]
+    end
+
+    subgraph SiteC["Customer Network C"]
+        CGW_C["Customer Gateway C"]
+        ServersC["Servers"]
+    end
+
+    %% Connections
+    VGW ---|VPN Tunnel| CGW_A
+    VGW ---|VPN Tunnel| CGW_B
+    VGW ---|VPN Tunnel| CGW_C
+
+    %% Optional: show inter-site communication
+    CGW_A -. CloudHub Routing .- CGW_B
+    CGW_B -. CloudHub Routing .- CGW_C
+    CGW_A -. CloudHub Routing .- CGW_C
+
+{{< /mermaid >}}
+
+{{< alert "circle-info" >}}
+
+**AWS side**
+
+- A single **Virtual Private Gateway (VGW)** acts as the _hub_.    
+- Multiple Availability Zones and private subnets host EC2 instances.    
+- The VGW is attached to the VPC and handles all VPN tunnels.
+
+**Customer side**
+
+- Each customer site has its own **Customer Gateway (CGW)**.    
+- Each CGW establishes a **separate VPN tunnel** to the VGW.
+
+**CloudHub behaviour**
+
+- Because all tunnels terminate on the **same VGW**, AWS can route traffic **between customer sites**, not just between each site and the VPC.    
+- This creates a **hub‑and‑spoke** topology:    
+    - VGW = hub        
+    - Customer Gateways = spokes        
+- With **BGP dynamic routing**, all sites learn each other’s routes.
+
+**Benefits**
+
+- Simple, low‑cost multi‑site connectivity    
+- No need for complex on‑prem mesh VPNs    
+- Works as primary or backup WAN connectivity    
+- Uses the public Internet but encrypted end‑to‑end
+
+{{< /alert >}}
 
 ---
 ## >> Sources <<
