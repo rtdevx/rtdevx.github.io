@@ -498,11 +498,21 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 - It uniquely supports **IP multicast**, which no other AWS networking service provides.
 
 ![](./assets/AWS_VPC_Transit_GW.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### Transit Gateway - Site-to-Site VPN ECMP
 
+- **Equal‑Cost Multi‑Path (ECMP)** allows a Transit Gateway to send traffic across multiple routes that all have the same cost.    
+- This lets AWS **load‑balance traffic across several VPN tunnels** simultaneously.    
+- A common use case is creating **multiple Site‑to‑Site VPN connections** to AWS so you can **increase total available bandwidth** beyond what a single VPN tunnel can provide.
 
+![](./assets/AWS_VPC_Transit_GW_ECMP.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## VPC - Traffic Mirroring
 
-
-
+- VPC Traffic Mirroring lets you **capture and analyze network traffic** inside your VPC.    
+- You can forward mirrored packets to your own **security or monitoring appliances**.    
+- Traffic can be mirrored **from ENIs** (sources) and sent **to an ENI or a Network Load Balancer** (targets).    
+- You can mirror **all packets** or only specific traffic, and optionally **truncate** packets to reduce volume.    
+- Sources and targets may be in the **same VPC** or in **different VPCs** connected through VPC Peering.    
+- Common use cases include **deep packet inspection**, **threat detection**, and **network troubleshooting**.
 
 ---
 ## >> Sources <<
