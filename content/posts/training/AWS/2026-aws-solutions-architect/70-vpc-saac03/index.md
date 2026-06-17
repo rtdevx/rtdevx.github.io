@@ -423,53 +423,8 @@ flowchart TD
 - AWS VPN CloudHub lets you securely connect multiple remote sites using a **hub‑and‑spoke VPN model**, ideal for low‑cost primary or backup connectivity between locations.    
 - Because it’s still a **VPN over the public Internet**, you set it up by attaching multiple VPN connections to the **same Virtual Private Gateway**, enabling **dynamic routing**, and updating your route tables so all sites can communicate.
 
-{{< mermaid >}}
+![](./assets/AWS_VPC_VPN_CloudHub.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
-flowchart TD
-
-    %% AWS side
-    subgraph VPC["AWS VPC"]
-        subgraph AZ1["Availability Zone 1"]
-            Subnet1["Private Subnet 1"]
-            EC2_1["EC2 Instances"]
-        end
-
-        subgraph AZ2["Availability Zone 2"]
-            Subnet2["Private Subnet 2"]
-            EC2_2["EC2 Instances"]
-        end
-
-        VGW["Virtual Private Gateway (Hub)"]
-    end
-
-    %% Customer sites
-    subgraph SiteA["Customer Network A"]
-        CGW_A["Customer Gateway A"]
-        ServersA["Servers"]
-    end
-
-    subgraph SiteB["Customer Network B"]
-        CGW_B["Customer Gateway B"]
-        ServersB["Servers"]
-    end
-
-    subgraph SiteC["Customer Network C"]
-        CGW_C["Customer Gateway C"]
-        ServersC["Servers"]
-    end
-
-    %% Connections
-    VGW ---|VPN Tunnel| CGW_A
-    VGW ---|VPN Tunnel| CGW_B
-    VGW ---|VPN Tunnel| CGW_C
-
-    %% Optional: show inter-site communication
-    CGW_A -. CloudHub Routing .- CGW_B
-    CGW_B -. CloudHub Routing .- CGW_C
-    CGW_A -. CloudHub Routing .- CGW_C
-
-{{< /mermaid >}}
-<br>
 {{< alert "circle-info" >}}
 
 **AWS side**
@@ -499,6 +454,17 @@ flowchart TD
 - Uses the public Internet but encrypted end‑to‑end
 
 {{< /alert >}}
+## Direct Connect (DX)
+
+- AWS Direct Connect gives you a **dedicated, private network link** from your on‑premises environment to your VPC.    
+- You establish a physical connection between your data centre and an **AWS Direct Connect location**.    
+- Your VPC still needs a **Virtual Private Gateway** to receive the connection.    
+- The same Direct Connect link can reach both **public AWS services** (like S3) and **private VPC resources** (like EC2).    
+- Common use cases include:    
+    - Higher, more predictable **bandwidth** for large data transfers at lower cost        
+    - **Consistent, low‑latency** connectivity for real‑time applications        
+    - **Hybrid architectures** spanning on‑prem and cloud        
+- Direct Connect supports both **IPv4 and IPv6** traffic.
 
 ---
 ## >> Sources <<
