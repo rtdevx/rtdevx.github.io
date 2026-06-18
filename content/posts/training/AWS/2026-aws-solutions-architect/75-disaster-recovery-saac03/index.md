@@ -99,15 +99,29 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 - It protects critical workloads - databases like Oracle, MySQL, SQL Server, enterprise apps like SAP, and even against ransomware - using **continuous block‑level replication**.
 
 ![](./assets/AWS_DR_DRS.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## DMS - Database Migration Service
+
+- AWS Database Migration Service lets you **migrate databases to AWS quickly and securely**, with built‑in resilience and self‑healing.    
+- The **source database stays online** throughout the migration.    
+- Supports both **homogeneous** migrations (e.g., Oracle → Oracle) and **heterogeneous** migrations (e.g., SQL Server → Aurora).    
+- Provides **continuous data replication** using CDC.    
+- Replication tasks run on a **DMS replication instance**, which you deploy on EC2.
+### DMS Sources and Targets
+
+
+> [!NOTE] Title
+> Contents
 
 
 ---
 ## >> Sources <<
 
-[AWS Elastic Disaster Recovery Documentation](https://docs.aws.amazon.com/drs/)
+- [AWS Elastic Disaster Recovery Documentation](https://docs.aws.amazon.com/drs/)
 ## >> References <<
 
 **Cloud Practitioner:** [Disaster Recovery Strategies]({{< ref "23-other-services/#disaster-recovery-strategies" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
+
+[^1]: 
