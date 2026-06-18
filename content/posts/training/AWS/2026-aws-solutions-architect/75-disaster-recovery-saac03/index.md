@@ -101,6 +101,8 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 ![](./assets/AWS_DR_DRS.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## DMS - Database Migration Service
 
+<font color=#EBAC25><i>More info:</i></font>  [What is AWS Database Migration Service?](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html)
+
 - AWS Database Migration Service lets you **migrate databases to AWS quickly and securely**, with built‑in resilience and self‑healing.    
 - The **source database stays online** throughout the migration.    
 - Supports both **homogeneous** migrations (e.g., Oracle → Oracle) and **heterogeneous** migrations (e.g., SQL Server → Aurora).    
@@ -118,12 +120,28 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 |                                                                                                               | Apache Kafka                                                                                    |
 |                                                                                                               | DocumentDB & Amazon Neptune                                                                     |
 |                                                                                                               | Redis & Babelfish                                                                               |
+<font color=#EBAC25><i>More info:</i></font>  [Sources for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.Sources.html)
+### AWS Schema Conversion Tool (SCT)
 
+- AWS SCT converts a database schema from one engine to another.    
+- For OLTP, it can migrate schemas from SQL Server or Oracle to MySQL, PostgreSQL, or Aurora; for OLAP, it can convert Teradata or Oracle schemas to Amazon Redshift.    
+- Use **compute‑heavy instances** to speed up large or complex schema conversions.
+
+ℹ️ _Note:_ You do not need to use SCT if you are migrating the same DB engine.
+### DMS - Continuous Replication
+
+![](./assets/AWS_DR_DMS_Replication.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### AWS DMS - Multi-AZ Deployment
+
+- When Multi‑AZ is enabled, DMS creates and maintains a **synchronously replicated standby** in another Availability Zone.    
+- This setup provides **data redundancy**, avoids **I/O freezes**, and reduces **latency spikes** during failover.
 
 ---
 ## >> Sources <<
 
 - [AWS Elastic Disaster Recovery Documentation](https://docs.aws.amazon.com/drs/)
+- [What is AWS Database Migration Service?](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html)
+	- [Sources for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.Sources.html)
 ## >> References <<
 
 **Cloud Practitioner:** [Disaster Recovery Strategies]({{< ref "23-other-services/#disaster-recovery-strategies" >}})
