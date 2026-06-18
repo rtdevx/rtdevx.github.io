@@ -157,6 +157,43 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 - Backup Vault Lock enforces a **WORM (Write Once, Read Many)** state on all backups stored in a vault.    
 - It adds strong protection against **accidental or malicious deletions** and prevents changes that reduce retention periods.    
 - <font color=#EB4925>Once enabled, even the root user cannot delete the protected backups</font>.
+## Cloud Migration Strategies - the 7Rs
+
+_More info:_ [7 Strategies for Migrating Applications to the Cloud](https://aws.amazon.com/blogs/enterprise-strategy/new-possibilities-seven-strategies-to-accelerate-your-application-migration-to-aws/)
+### AWS Application Discovery Service
+
+- Helps you plan migrations by collecting detailed information about your on‑premises data centre.    
+- Captures server utilisation and dependency mappings, which are essential for migration planning.    
+- **Agentless discovery** (via the Discovery Connector) gathers VM inventory, configuration details, and performance history such as CPU, memory, and disk usage.    
+- **Agent‑based discovery** collects deeper insights, including system configuration, performance metrics, running processes, and network connection details.    
+- All collected data is viewable and trackable in **AWS Migration Hub**.
+### AWS Application Migration Service (MGN)
+
+- AWS MGN is the modern successor to CloudEndure Migration and replaces the old Server Migration Service, offering a streamlined **lift‑and‑shift** path to AWS.    
+- It converts physical, virtual, and cloud‑hosted servers to run natively on AWS, supports a wide range of platforms and databases, and delivers migrations with **minimal downtime** and lower overall cost.
+### VMware Cloud on AWS
+
+- Some organisations run their on‑premises data centres using **VMware Cloud** and want to extend that environment into AWS while keeping the same VMware tooling.    
+- **VMware Cloud on AWS** enables this by letting you migrate vSphere workloads to AWS, run them across private, public, and hybrid VMware environments, and implement a robust disaster recovery strategy.
+## Transferring large amount of data into AWS
+
+- Suppose you need to move **200 TB** of data to AWS over a **100 Mbps** internet link.    
+- **Internet / Site‑to‑Site VPN:**    
+    - Easiest to set up, but extremely slow.        
+    - Transfer time: **~185 days**.
+
+- **1 Gbps Direct Connect:**    
+    - Takes over a month to provision, but much faster once active.        
+    - Transfer time: **~18.5 days**.
+
+- **Snowball:**    
+    - End‑to‑end process typically completes in **about one week**.        
+    - Can be paired with **DMS** for database migrations.
+
+- For **ongoing replication**, use Site‑to‑Site VPN or Direct Connect together with **DMS** or **DataSync**.
+- <font color=#EB4925>It is recommended to use AWS Snowball devices if it would take more than a week to transfer over the network</font>.
+
+_More info:_ [AWS Snowball]({{< ref "11-s3/#aws-snowball" >}})
 
 ---
 ## >> Sources <<
@@ -165,6 +202,9 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 - [What is AWS Database Migration Service?](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html)
 	- [Sources for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.Sources.html)
 - [What is AWS Backup?](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html)
+
+- [7 Strategies for Migrating Applications to the Cloud](https://aws.amazon.com/blogs/enterprise-strategy/new-possibilities-seven-strategies-to-accelerate-your-application-migration-to-aws/)
+- [AWS Snowball]({{< ref "11-s3/#aws-snowball" >}})
 ## >> References <<
 
 **Cloud Practitioner:** [Disaster Recovery Strategies]({{< ref "23-other-services/#disaster-recovery-strategies" >}})
