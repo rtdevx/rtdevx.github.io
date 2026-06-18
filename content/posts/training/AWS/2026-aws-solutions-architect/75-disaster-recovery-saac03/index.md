@@ -108,9 +108,16 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 - Replication tasks run on a **DMS replication instance**, which you deploy on EC2.
 ### DMS Sources and Targets
 
-
-> [!NOTE] Title
-> Contents
+| Sources                                                                                                       | Targets                                                                                         |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| On-Premises and EC2 instances databases: Oracle, MS SQL Server, MySQL, MariaDB, PostgreSQL, MongoDB, SAP, DB2 | On-Premises and EC2 instances databases: Oracle, MS SQL Server, MySQL, MariaDB, PostgreSQL, SAP |
+| Azure: Azure SQL Database                                                                                     | Amazon RDS                                                                                      |
+| Amazon RDS: all including Aurora                                                                              | Redshift, DynamoDB, S3                                                                          |
+| Amazon S3                                                                                                     | OpenSearch Service                                                                              |
+| DocumentDB                                                                                                    | Kinesis Data Streams                                                                            |
+|                                                                                                               | Apache Kafka                                                                                    |
+|                                                                                                               | DocumentDB & Amazon Neptune                                                                     |
+|                                                                                                               | Redis & Babelfish                                                                               |
 
 
 ---
