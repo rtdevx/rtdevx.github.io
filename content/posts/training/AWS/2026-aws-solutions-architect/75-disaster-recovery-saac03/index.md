@@ -135,6 +135,28 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 
 - When Multi‑AZ is enabled, DMS creates and maintains a **synchronously replicated standby** in another Availability Zone.    
 - This setup provides **data redundancy**, avoids **I/O freezes**, and reduces **latency spikes** during failover.
+## 🔥On-Premise strategy with AWS
+
+- You can download the **Amazon Linux 2 AMI** as a VM image for platforms like VMware, KVM, VirtualBox, and Hyper‑V.    
+- **VM Import/Export** lets you migrate on‑premises applications into EC2 and build a DR strategy for your existing VMs, with the option to export them back on‑prem.    
+- **AWS Application Discovery Service** collects server utilization and dependency data to support migration planning, tracked centrally in **AWS Migration Hub**.    
+- **AWS DMS** supports replication from on‑prem to AWS, between AWS environments, and back to on‑prem across many database engines.    
+- **AWS Application Migration Service (MGN)** performs ongoing, incremental replication of live on‑prem servers into AWS.
+## AWS Backup
+
+- AWS Backup is a **fully managed service** that centralises and automates backups across AWS services without custom scripts.    
+- It supports backups for **EC2/EBS**, **S3**, **RDS/Aurora/DynamoDB**, **DocumentDB**, **Neptune**, **EFS**, **FSx (Lustre & Windows)**, and **Storage Gateway** volumes.    
+- It also enables **cross‑region** and **cross‑account** backup capabilities for stronger resilience and compliance.
+- AWS Backup supports **point‑in‑time recovery** for compatible services, along with both **on‑demand** and **scheduled** backups.    
+- You define **Backup Plans** that use tag‑based policies, specify backup frequency (12‑hourly, daily, weekly, monthly, or cron), and set a backup window.    
+- Plans can automatically **transition backups to cold storage** and define **retention periods** ranging from days to years or indefinitely.
+
+<font color=#EBAC25><i>More info:</i></font>  [What is AWS Backup?](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html)
+### AWS Backup Vault Lock
+
+- Backup Vault Lock enforces a **WORM (Write Once, Read Many)** state on all backups stored in a vault.    
+- It adds strong protection against **accidental or malicious deletions** and prevents changes that reduce retention periods.    
+- <font color=#EB4925>Once enabled, even the root user cannot delete the protected backups</font>.
 
 ---
 ## >> Sources <<
@@ -142,11 +164,10 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 - [AWS Elastic Disaster Recovery Documentation](https://docs.aws.amazon.com/drs/)
 - [What is AWS Database Migration Service?](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html)
 	- [Sources for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.Sources.html)
+- [What is AWS Backup?](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html)
 ## >> References <<
 
 **Cloud Practitioner:** [Disaster Recovery Strategies]({{< ref "23-other-services/#disaster-recovery-strategies" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
-
-[^1]: 
