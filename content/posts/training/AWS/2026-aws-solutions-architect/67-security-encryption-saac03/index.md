@@ -14,6 +14,7 @@ tags:
   - SSM
   - encryption
   - SecretsManager
+  - S3
 categories:
   - AWS
 series: AWS Solution Architect
