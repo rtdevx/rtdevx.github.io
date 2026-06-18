@@ -3,9 +3,12 @@ title: "Solutions Architect: Disaster Recovery & Migrations"
 date: 2026-04-17
 description: Associate-level extension of the `Disaster Recovery Strategies` Section from AWS Cloud Practitioner Series.
 summary: Associate-level extension of the `Disaster Recovery Strategies` Section from AWS Cloud Practitioner Series.
-draft: true
+draft: false
 tags:
   - SAA-C03
+  - DisasterRecovery
+  - Backup
+  - HighAvailability
 categories:
   - AWS
 series: AWS Solution Architect
@@ -35,12 +38,67 @@ series: AWS Solution Architect
     - **AWS Region A to Region B**: cloud‑native cross‑region recovery
 
 - Two key metrics define your DR strategy:    
-    - **RPO (Recovery Point Objective)** — how much data you can afford to lose        
-    - **RTO (Recovery Time Objective)** — how quickly systems must be restored
+    - <font color=#EBAC25>RPO (Recovery Point Objective)</font> - how much data you can afford to lose        
+    - <font color=#EBAC25>RTO (Recovery Time Objective)</font> - how quickly systems must be restored
 
 ![](./assets/AWS_DR_RPO_RTO.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Disaster Recovery Strategies
 
+- <font color=#EBAC25>Backup and Restore</font> - cheapest method (<font color=#C7EB25>high RPO</font>)
+- <font color=#EBAC25>Pilot Light</font> - core functions are there (e.g. database) but it's not scaled up
+- <font color=#EBAC25>Warm Standby</font> - full version of the app but at minimum size (databases, webs, api, ...)
+- <font color=#EBAC25>Multi-Site / Hot-Site</font> - full version, full size active-active DR
+### Backup and Restore
 
+A **Backup and Restore** DR strategy stores your data in services like Amazon S3 or AWS Backup and recreates your infrastructure only when a disaster occurs. 
+
+Recovery involves restoring the latest backups and redeploying resources, giving you low cost but higher RTO and RPO compared to other DR models.
+### Pilot Light
+
+- A **minimal, always‑on version** of your application runs in AWS, keeping the critical components active.    
+- It’s similar to Backup & Restore but **recovers faster** because the essential services are already running in the cloud.
+
+![](./assets/AWS_DR_Pilot.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### Warm Standby
+
+- The full application stack runs in AWS but at **reduced capacity**.    
+- If a disaster occurs, you **scale it up** to handle normal production traffic.
+
+![](./assets/AWS_DR_Warm.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### Multi Site / Hot Site
+
+- Provides an extremely low **RTO** (seconds to minutes) but is also the **most expensive** option.    
+- The full production environment runs **simultaneously** on‑premises and in AWS at full scale.
+
+![](./assets/AWS_DR_Hot_Site.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+## Disaster Recovery Best Practices
+
+**Backup**
+- Use EBS snapshots, RDS automated backups/snapshots, and regularly push data to S3, S3 IA, or Glacier with lifecycle policies and cross‑region replication.    
+- For on‑premises backups, use **Snowball** or **Storage Gateway**.    
+
+**High Availability**
+- Use **Route 53** to shift DNS between regions.    
+- Leverage Multi‑AZ features for **RDS**, **ElastiCache**, **EFS**, and **S3**.    
+- Keep a **Site‑to‑Site VPN** as a fallback if Direct Connect fails.    
+
+**Replication**
+- Use **cross‑region RDS replication**, **Aurora Global Databases**, or on‑prem to RDS database replication.    
+- Storage Gateway can also support replication workflows.    
+
+**Automation**
+- Rebuild environments with **CloudFormation** or **Elastic Beanstalk**.    
+- Auto‑recover EC2 instances via **CloudWatch** alarms.    
+- Use **Lambda** for custom automation tasks.    
+
+**Chaos Testing**
+- Inject controlled failures (e.g., Netflix‑style “simian army” or "chaos monkey") to validate resilience.
+## AWS Elastic Disaster Recovery (DRS)
+
+- AWS Elastic Disaster Recovery lets you rapidly restore physical, virtual, or cloud‑based servers into AWS.    
+- It protects critical workloads - databases like Oracle, MySQL, SQL Server, enterprise apps like SAP, and even against ransomware - using **continuous block‑level replication**.
+
+![](./assets/AWS_DR_DRS.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
 
 ---
