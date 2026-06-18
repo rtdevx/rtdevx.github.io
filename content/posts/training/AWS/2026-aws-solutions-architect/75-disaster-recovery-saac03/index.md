@@ -191,7 +191,8 @@ _More info:_ [7 Strategies for Migrating Applications to the Cloud](https://aws.
     - Can be paired with **DMS** for database migrations.
 
 - For **ongoing replication**, use Site‑to‑Site VPN or Direct Connect together with **DMS** or **DataSync**.
-- <font color=#EB4925>It is recommended to use AWS Snowball devices if it would take more than a week to transfer over the network</font>.
+
+<font color=#EB4925>It is recommended to use AWS Snowball devices if it would take more than a week to transfer over the network</font>.
 
 _More info:_ [AWS Snowball]({{< ref "11-s3/#aws-snowball" >}})
 
