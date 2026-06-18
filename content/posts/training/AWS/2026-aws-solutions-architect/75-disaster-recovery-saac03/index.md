@@ -9,6 +9,8 @@ tags:
   - DisasterRecovery
   - Backup
   - HighAvailability
+  - storage
+  - S3
 categories:
   - AWS
 series: AWS Solution Architect
