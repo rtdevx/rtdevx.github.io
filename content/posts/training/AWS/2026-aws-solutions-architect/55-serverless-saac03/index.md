@@ -39,12 +39,16 @@ series: AWS Solution Architect
 - DynamoDB
 - AWS Cognito
 - AWS API Gateway
-- Amazon S3
-- AWS SNS & SQS
+- [Amazon S3]({{< ref "tags/s3" >}})
+- [AWS SNS & SQS]({{< ref "16-cloud-integrations" >}})
 - AWS Kinesis Data Firehose
 - Aurora Serverless
 - Step Functions
 - Fargate
+
+ℹ️ _Note:_ 
+- [AWS SNS & SQS]({{< ref "16-cloud-integrations" >}}) was covered in [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
+- [Amazon S3]({{< ref "tags/s3" >}})
 ## AWS Lambda
 
 - Virtual functions (no servers to manage)
@@ -330,6 +334,59 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 - **Private:**    
     - Accessible only from your VPC via an **interface VPC endpoint (ENI)**        
     - Access controlled using a **resource policy**
+## Amazon Kinesis Data Streams
+
+<font color=#EBAC25><i>More info:</i></font> 
+- [What is Amazon Kinesis Data Streams?](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)
+- [What is Amazon Data Firehose?](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
+
+{{< lead >}}
+
+Amazon Kinesis Data Streams (KDS) is a **fully managed, serverless streaming service** that ingests and stores real‑time data at virtually any scale. It acts as a durable, distributed log that lets multiple applications read and process the same data stream concurrently with low latency.
+
+{{< /lead >}}
+
+![](./assets/AWS_Serverless_KinesisStream.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+### What Kinesis Data Streams does
+
+- **Ingests massive volumes of streaming data** (clickstreams, IoT telemetry, logs, financial events) at gigabytes per second from thousands of producers. 
+- **Buffers and stores records durably** across multiple AZs, with retention from 24 hours up to 365 days.    
+- **Allows multiple consumers** to read the same data independently without deleting it (replayable stream).    
+- **Guarantees ordered records** within each shard (FIFO at shard level).
+### Typical use cases
+
+- Real‑time analytics and dashboards    
+- Application monitoring and anomaly detection    
+- IoT data ingestion    
+- Clickstream analysis    
+- Event‑driven architectures
+### Amazon Data Firehose
+
+**Amazon Kinesis Data Firehose** is a fully managed, serverless service for **loading streaming data directly into AWS destinations** - without needing to build or manage your own ingestion pipelines.
+
+**Core idea**
+
+Firehose is the _easiest_ way to take real‑time data and deliver it to storage, analytics, or observability tools. Unlike Kinesis Data Streams, Firehose **does not require you to manage shards, scaling, or consumers**. It handles everything automatically.
+
+![](./assets/AWS_Serverless_Firehose.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+#### Typical Firehose Use Cases
+
+- Log ingestion (CloudWatch Logs, application logs, VPC Flow Logs)    
+- Clickstream analytics    
+- IoT telemetry delivery    
+- Security and audit data pipelines    
+- ETL pipelines landing raw data into S3 data lakes
+### Kinesis Data Streams vs Amazon Data Firehose
+
+| Kinesis Data Streams         | Amazon Data Firehose                                                          |
+| ---------------------------- | ----------------------------------------------------------------------------- |
+| Streaming data collection    | Load streaming data into S3 / Redshift / OpenSearch / 3rd party / custom HTTP |
+| Producer & Consumer code     | Fully managed                                                                 |
+| Real-time                    | Near real-time                                                                |
+| Provisioned / On-Demand mode | Automatic scaling                                                             |
+| Data storage up to 365 days  | No data storage                                                               |
+| Replay Capability            | Doesn’t support replay capability                                             |
+
 ## AWS Step Functions
 
 - Build **serverless, visual workflows** to <font color=#EB4925>orchestrate Lambda functions</font>
@@ -397,6 +454,10 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 - [Configuring provisioned concurrency for a Lambda function](https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html)
 - [Understanding Lambda function scaling](https://docs.aws.amazon.com/lambda/latest/dg/lambda-concurrency.html)
 - [Differences between CloudFront Functions and Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions-choosing.html)
+
+**Kinesis:**
+- [What is Amazon Kinesis Data Streams?](https://docs.aws.amazon.com/streams/latest/dev/introduction.html)
+- [What is Amazon Data Firehose?](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
 ## >> References <<
 
 **TAG:** [Serverless]({{< ref "tags/serverless" >}})
