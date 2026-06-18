@@ -38,6 +38,9 @@ series: AWS Solution Architect
     - **RPO (Recovery Point Objective)** — how much data you can afford to lose        
     - **RTO (Recovery Time Objective)** — how quickly systems must be restored
 
+![](./assets/AWS_DR_RPO_RTO.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+
 
 
 ---
