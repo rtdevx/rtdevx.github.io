@@ -161,7 +161,7 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 - <font color=#EB4925>Once enabled, even the root user cannot delete the protected backups</font>.
 ## Cloud Migration Strategies - the 7Rs
 
-_More info:_ [7 Strategies for Migrating Applications to the Cloud](https://aws.amazon.com/blogs/enterprise-strategy/new-possibilities-seven-strategies-to-accelerate-your-application-migration-to-aws/)
+<font color=#EBAC25><i>More info:</i></font> [7 Strategies for Migrating Applications to the Cloud](https://aws.amazon.com/blogs/enterprise-strategy/new-possibilities-seven-strategies-to-accelerate-your-application-migration-to-aws/)
 ### AWS Application Discovery Service
 
 - Helps you plan migrations by collecting detailed information about your on‑premises data centre.    
