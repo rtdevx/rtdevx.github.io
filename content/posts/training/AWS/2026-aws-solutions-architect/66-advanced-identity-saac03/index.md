@@ -7,9 +7,9 @@ draft: false
 tags:
   - SAA-C03
   - RBAC
-  - iam
   - security
   - compliance
+  - IAM
 categories:
   - AWS
 series: AWS Solution Architect

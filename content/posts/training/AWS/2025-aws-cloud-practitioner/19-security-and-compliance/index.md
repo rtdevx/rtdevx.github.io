@@ -14,9 +14,9 @@ tags:
   - Firewall
   - KMS
   - HSM
-  - iam
   - encryption
   - SecretsManager
+  - IAM
 categories: AWS
 series: AWS Cloud Practitioner
 ---

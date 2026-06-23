@@ -6,11 +6,11 @@ summary: Account Management and Billing...
 draft: false
 tags:
   - CLF-C02
-  - iam
   - security
   - compliance
   - Costs
   - RBAC
+  - IAM
 categories: AWS
 series: AWS Cloud Practitioner
 ---

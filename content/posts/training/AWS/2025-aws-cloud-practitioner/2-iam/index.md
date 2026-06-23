@@ -7,9 +7,9 @@ draft: false
 tags:
   - CLF-C02
   - RBAC
-  - iam
   - security
   - compliance
+  - IAM
 categories: AWS
 series: AWS Cloud Practitioner
 ---
