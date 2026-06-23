@@ -31,7 +31,7 @@ series: AWS Cloud Practitioner
 	- You can increase the capacity of the drive
 
 ![](./assets/AWS_EC2_EBS_Volume1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
-_<font color=#EB4925>EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them</font>_
+_<font color=#EB4925>EBS Volumes can be attached to only 1 EC2 instance at a time but EC2 instances can have multiple EBS Volumes attached to them</font>_[^1]
 ### EBS Delete on Termination
 
 ![](./assets/AWS_EC2_EBS_Delete_on_Termination.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
@@ -253,3 +253,5 @@ EFS Storage tiers and lifecycle management.
 | <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
+
+[^1]: Only true at Practitioner level. See more: [EBS Multi‑Attach]({{< ref "6-storage-saac03/#ebs-multiattach-io1--io2-family" >}})
