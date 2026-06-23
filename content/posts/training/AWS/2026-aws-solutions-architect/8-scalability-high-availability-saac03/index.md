@@ -104,7 +104,7 @@ Both are two different approaches to the same problem: <font color=#EBAC25>sessi
 - **Sticky sessions** = “Always send the user to the same server because the server is holding their session.”    
 - **Session store** = “Any server can handle the user because the session lives in a shared database.”
 
-<font color=#EB4925>Modern, scalable apps use a</font> [Session Store]({{< ref "12-rds-aurora-elasicache-saac03/#user-session-store" >}}), <font color=#EB4925>not sticky sessions</font>.
+<font color=#EB4925>Modern, scalable apps use a</font> [Session Store]({{< ref "12-rds-aurora-elasicache-saac03/#user-session-store" target="_self" >}}), <font color=#EB4925>not sticky sessions</font>.
 
 {{< /alert >}}
 ### Sticky Sessions - Cookie Names
