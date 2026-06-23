@@ -6,13 +6,17 @@ summary: Learn more about me and why I am starting this blog.
 ---
 ![](../assets/Kentemere2.jpg)
 
-I’m an IT professional with over 15 years of experience building and supporting secure, PCI‑compliant infrastructures across `AWS Cloud` and `on‑prem` environments. My focus is on automation and resilience — using tools like `Terraform`, `Ansible`, and `CI/CD` pipelines to deliver systems that scale reliably and reduce risk.
+I’m an IT professional with over 15 years of experience building and supporting secure, PCI‑compliant infrastructures across `AWS Cloud` and `on‑prem` environments. My focus is on automation and resilience - using tools like `Terraform`, `Ansible`, and `CI/CD` pipelines to deliver systems that scale reliably and reduce risk.
 
 Over the years, I’ve led projects ranging from fraud detection platforms to large‑scale payment systems, always with an emphasis on clarity, collaboration, and sustainable automation. I enjoy mentoring teams, sharing knowledge, and embedding `Agile` practices to help organizations work more transparently and effectively.
+
+<!--
 
 What sets me apart is the combination of deep technical expertise and a drive to make complex systems understandable and maintainable. Whether it’s modularizing Terraform code, automating deployments with `Ansible` or designing `CI/CD workflows`, I aim to create solutions that are not only robust but also auditable and future‑ready.
 
 I’m currently expanding my cloud expertise with the AWS Solutions Architect certification, and I share code samples and infrastructure projects openly on GitHub to demonstrate my approach to automation and DevOps. Scroll down to `Selected code samples` or `CV Download` sections for more details.
+
+-->
 
 <!--
 
@@ -49,7 +53,7 @@ Implementing container orchestration for seamless, reliable application deployme
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **🧭 Agile**                        | `Jira`<br>Agile delivery and Jira project design and automation, SharePoint and Confluence (collaboration and documentation).                                   |
 | **☁️ Cloud Platforms**              | `AWS`  <br>Designing and managing scalable, high-performance cloud environments to support dynamic workloads.                                                   |
-| **🔧 CI/CD Tools**                  | `AWS CodePipeline`, `AWS CodeBuild`, `GitHub Actions`<br>Building and maintaining CI/CD pipelines to automate software development workflows.                   |
+| **🔧 CI/CD Tools**                  | `GitHub Actions`, `AWS CodePipeline`, `AWS CodeBuild`<br>Building and maintaining CI/CD pipelines to automate software development workflows.                   |
 | **📜 Infrastructure as Code (IaC)** | `Ansible`, `Terraform` <br>Automating the provisioning and management of infrastructure, ensuring consistency, reliability, and scalability across deployments. |
 | **🖥️ Systems Administration**      | `Linux`, `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                |
 ## Trainings and Certifications[^Ref1]
@@ -128,6 +132,8 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 | :-------------------------------------: | :-----------------------------------------------: | :-------------------------------------: | :--------------------------------------------: |
 | [CI/CD]({{< ref "categories/ci/cd" >}}) | [Containers]({{< ref "categories/containers" >}}) | [Linux]({{< ref "categories/linux" >}}) | [Network]({{< ref "categories/networking" >}}) |
 -->
+
+<!--
 ## Selected code samples
 
 - **GitHub:** https://github.com/rtdevx/iac-terraform-aws-jvx (contains modular Terraform code, Bash provisioning scripts and CI configs)
@@ -136,6 +142,8 @@ Check [🗂️My Trainings]({{< ref "posts/training" >}}) section for more infor
 {{< alert "github">}}
 Check [my GitHub Repository](https://github.com/rtdevx) for more code samples...
 {{< /alert >}}
+
+-->
 ## Curriculum Vitae 
 
 
