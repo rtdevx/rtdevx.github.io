@@ -152,7 +152,6 @@ It works at the **TCP/UDP** level — it doesn’t understand HTTP, it just forw
 **Easy analogy:**
 
 > **NLB is like a mail sorter that only looks at the address on the envelope, not the contents.**
-
 ### Quick comparison
 
 |Feature|ALB|NLB|
