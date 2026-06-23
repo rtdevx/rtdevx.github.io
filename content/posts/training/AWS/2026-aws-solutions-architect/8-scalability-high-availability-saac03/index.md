@@ -12,6 +12,7 @@ tags:
   - security
   - ASG
   - Capacity
+  - TLS
 categories:
   - AWS
 series: AWS Solution Architect
