@@ -120,7 +120,7 @@ It understands **HTTP and HTTPS**, just like a web browser does.
 - Support WebSockets    
 - Do health checks at the application level (e.g., “does `/health` return 200?”)
 
-**When you use it:**
+**When to use it:**
 
 - Websites    
 - APIs    
@@ -140,9 +140,9 @@ It works at the **TCP/UDP** level — it doesn’t understand HTTP, it just forw
 - Handle **millions of requests per second**    
 - Extremely low latency    
 - Provide **static IPs** or **Elastic IPs**    
-- Forward raw TCP/UDP traffic (e.g., database connections, VoIP, gaming servers)    
+- Forward raw TCP/UDP traffic (e.g., VoIP, gaming servers)    
 
-**When you use it:**
+**When to use it:**
 
 - Non‑HTTP traffic    
 - High‑performance or latency‑sensitive workloads    
@@ -154,16 +154,16 @@ It works at the **TCP/UDP** level — it doesn’t understand HTTP, it just forw
 > **NLB is like a mail sorter that only looks at the address on the envelope, not the contents.**
 ### Quick comparison
 
-|Feature|ALB|NLB|
-|---|---|---|
-|OSI Layer|Layer 7 (Application)|Layer 4 (Transport)|
-|Understands HTTP/HTTPS|✔ Yes|✖ No|
-|Smart routing (path, host, headers)|✔ Yes|✖ No|
-|Performance|High|Extremely high|
-|Latency|Low|Ultra‑low|
-|Static IPs|✖ No|✔ Yes|
-|TCP/UDP support|HTTP/HTTPS only|✔ Yes|
-|SSL termination|✔ Yes|✖ No (passes through)|
+| Feature                                                        | ALB                   | NLB                   |
+| -------------------------------------------------------------- | --------------------- | --------------------- |
+| <font color=#EBAC25>OSI Layer</font>                           | Layer 7 (Application) | Layer 4 (Transport)   |
+| <font color=#EBAC25>Understands HTTP/HTTPS</font>              | ✔ Yes                 | ✖ No                  |
+| <font color=#EBAC25>Smart routing (path, host, headers)</font> | ✔ Yes                 | ✖ No                  |
+| <font color=#EBAC25>Performance</font>                         | High                  | Extremely high        |
+| <font color=#EBAC25>Latency</font>                             | Low                   | Ultra‑low             |
+| <font color=#EBAC25>Static IPs</font>                          | ✖ No                  | ✔ Yes                 |
+| <font color=#EBAC25>TCP/UDP support</font>                     | HTTP/HTTPS only       | ✔ Yes                 |
+| <font color=#EBAC25>SSL termination</font>                     | ✔ Yes                 | ✖ No (passes through) |
 
 - **Use ALB** when you’re dealing with **web traffic** and need smart routing.    
 - **Use NLB** when you need **raw speed**, **static IPs**, or **non‑HTTP protocols**    
