@@ -56,9 +56,7 @@ Implementing container orchestration for seamless, reliable application deployme
 | **🔧 CI/CD Tools**                  | `GitHub Actions`, `AWS CodePipeline`, `AWS CodeBuild`<br>Building and maintaining CI/CD pipelines to automate software development workflows.                   |
 | **📜 Infrastructure as Code (IaC)** | `Ansible`, `Terraform` <br>Automating the provisioning and management of infrastructure, ensuring consistency, reliability, and scalability across deployments. |
 | **🖥️ Systems Administration**      | `Linux`, `Windows`<br>Multi-disciplined - Linux, Windows Server.                                                                                                |
-## Trainings and Certifications[^Ref1]
-
-[^Ref1]:Only those that were documented [this website]({{< ref "categories/devops" >}}).
+## Trainings and Certifications
 
 <!--
 - 🏅 **AWS Certified Cloud Practitioner** ([CLF-C02]({{< ref "tags/clf-c02" >}})) 
