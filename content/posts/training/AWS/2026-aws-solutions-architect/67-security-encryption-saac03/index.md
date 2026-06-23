@@ -16,6 +16,7 @@ tags:
   - SecretsManager
   - S3
   - WAF
+  - TLS
 categories:
   - AWS
 series: AWS Solution Architect
