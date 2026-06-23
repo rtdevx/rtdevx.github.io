@@ -110,6 +110,25 @@ Both are two different approaches to the same problem: <font color=#EBAC25>sessi
 <font color=#EBAC25><i>More info:</i></font> <a href="{{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}" target="_self">Elasticache</a>
 
 {{< /alert >}}
+
+{{< mermaid >}}
+
+sequenceDiagram
+    participant User
+    participant ALB as ALB (Sticky Sessions)
+    participant App1 as App Server A
+    participant App2 as App Server B
+
+    User->>ALB: HTTP Request (no cookie)
+    ALB->>App1: Routes to Server A
+    App1-->>ALB: Response + ALB Cookie
+    ALB-->>User: Set-Cookie: AWSALBAPP
+
+    User->>ALB: Next Request (cookie included)
+    ALB->>App1: Sticky routing to same server
+    App1-->>User: Response
+
+{{< /mermaid >}}
 ### Sticky Sessions - Cookie Names
 
 - **Application‑based cookies**
