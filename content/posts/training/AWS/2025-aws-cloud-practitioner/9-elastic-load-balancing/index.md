@@ -106,6 +106,71 @@ _Mastering AWS Network Load Balancer | ALB vs NLB | Step by Step Tutorial_
 - **EC2 instances**
 - **IP Addresses** - must be private IPs
 
+## ALB vs NLB
+
+### ALB = Smart load balancer (Layer 7)
+
+It understands **HTTP and HTTPS**, just like a web browser does.
+
+**What it can do:**
+
+- Look inside the request (URLs, headers, cookies)    
+- Route traffic based on rules (e.g., _/api_ goes to one service, _/images_ to another)    
+- Terminate SSL/TLS (handle certificates)    
+- Support WebSockets    
+- Do health checks at the application level (e.g., “does `/health` return 200?”)
+
+**When you use it:**
+
+- Websites    
+- APIs    
+- Microservices    
+- Anything using HTTP/HTTPS
+
+**Easy analogy:**
+
+> **ALB is like a receptionist who reads the letter and decides where it should go based on the content.**
+
+### NLB = Fast, simple load balancer (Layer 4)
+
+It works at the **TCP/UDP** level — it doesn’t understand HTTP, it just forwards packets.
+
+**What it can do:**
+
+- Handle **millions of requests per second**    
+- Extremely low latency    
+- Provide **static IPs** or **Elastic IPs**    
+- Forward raw TCP/UDP traffic (e.g., database connections, VoIP, gaming servers)    
+
+**When you use it:**
+
+- Non‑HTTP traffic    
+- High‑performance or latency‑sensitive workloads    
+- When you need fixed IPs    
+- When you want to pass traffic straight through to the application without inspection
+
+**Easy analogy:**
+
+> **NLB is like a mail sorter that only looks at the address on the envelope, not the contents.**
+
+### Quick comparison
+
+|Feature|ALB|NLB|
+|---|---|---|
+|OSI Layer|Layer 7 (Application)|Layer 4 (Transport)|
+|Understands HTTP/HTTPS|✔ Yes|✖ No|
+|Smart routing (path, host, headers)|✔ Yes|✖ No|
+|Performance|High|Extremely high|
+|Latency|Low|Ultra‑low|
+|Static IPs|✖ No|✔ Yes|
+|TCP/UDP support|HTTP/HTTPS only|✔ Yes|
+|SSL termination|✔ Yes|✖ No (passes through)|
+
+- **Use ALB** when you’re dealing with **web traffic** and need smart routing.    
+- **Use NLB** when you need **raw speed**, **static IPs**, or **non‑HTTP protocols**    
+
+> If it’s a website → **ALB** If it’s anything else (TCP/UDP, high‑performance, fixed IP) → **NLB**
+
 ---
 ## >> Sources <<
 
