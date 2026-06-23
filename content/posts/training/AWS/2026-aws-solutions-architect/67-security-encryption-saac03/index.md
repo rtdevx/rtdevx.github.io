@@ -15,6 +15,7 @@ tags:
   - encryption
   - SecretsManager
   - S3
+  - WAF
 categories:
   - AWS
 series: AWS Solution Architect
