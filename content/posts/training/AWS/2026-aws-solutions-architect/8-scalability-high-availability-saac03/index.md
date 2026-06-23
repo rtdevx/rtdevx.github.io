@@ -13,6 +13,7 @@ tags:
   - ASG
   - Capacity
   - TLS
+  - Cache
 categories:
   - AWS
 series: AWS Solution Architect
@@ -105,6 +106,8 @@ Both are two different approaches to the same problem: <font color=#EBAC25>sessi
 - **Session store** = “Any server can handle the user because the session lives in a shared database.”
 
 <font color=#EB4925>Modern, scalable apps use a</font> <a href="{{< ref "12-rds-aurora-elasicache-saac03/#user-session-store" >}}" target="_self">Session Store</a>, <font color=#EB4925>not sticky sessions</font>.
+
+<font color=#EBAC25><i>More info:</i></font> <a href="{{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}" target="_self">Elasticache</a>
 
 {{< /alert >}}
 ### Sticky Sessions - Cookie Names
@@ -202,6 +205,7 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 - **Cloud Practitioner:** [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}})
 - **Cloud Practitioner:** [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
 - **Cloud Practitioner:** [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
+- **Solutions Architect:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
