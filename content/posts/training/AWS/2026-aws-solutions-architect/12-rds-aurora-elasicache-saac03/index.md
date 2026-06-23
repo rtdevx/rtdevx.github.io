@@ -129,7 +129,7 @@ You can switch an RDS instance from Single‑AZ to Multi‑AZ **with zero downti
 ### Aurora Replicas - Auto Scaling
 
 ![](./assets/AWS_DB_Aurora_Autoscaling.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
-### Aurora – Custom Endpoints
+### Aurora - Custom Endpoints
 
 - Define a subset of Aurora Instances as a Custom Endpoint
 - <font color=#EBAC25>Example:</font> Run analytical queries on specific replicas

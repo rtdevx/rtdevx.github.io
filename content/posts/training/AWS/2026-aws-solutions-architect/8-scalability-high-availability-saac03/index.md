@@ -20,6 +20,8 @@ series: AWS Solution Architect
 ---
 ℹ️ `Scalability & High Availability` is already covered at a high level in the [Scalability & High Availability]({{< ref "8-scalability-high-availability" >}}) section of the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. 
 
+ℹ️ `Elastic Load Balancing` is already covered at a high level in the [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}}) section of the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series. 
+
 This section focuses only on the **Associate‑level additions**.
 
 | <font color=#EB4925>AWS Certification Series</font> »                 |                                                                       |
@@ -87,6 +89,24 @@ This section focuses only on the **Associate‑level additions**.
 - For CLB and ALB, stickiness relies on a **cookie** with a configurable expiration    
 - Useful when you need to preserve **session state** on a specific instance    
 - Enabling stickiness can lead to **uneven load distribution** across instances
+
+{{< alert "lightbulb" >}}
+
+🙋🏻 _Question:_ Explain ALB Sticky sessions (cookie based) vs Database support for session state ([User Session Store]({{< ref "12-rds-aurora-elasicache-saac03/#user-session-store" >}}))? 
+
+Both are two different approaches to the same problem: <font color=#EBAC25>session persistence</font>.
+
+|Approach|How it works|Pros|Cons|
+|---|---|---|---|
+|**Sticky sessions**|Keep user on same instance|Simple, no app changes|Breaks scaling, uneven load, fragile|
+|**Session store**|Store session centrally|Scales well, resilient|Requires app changes|
+
+- **Sticky sessions** = “Always send the user to the same server because the server is holding their session.”    
+- **Session store** = “Any server can handle the user because the session lives in a shared database.”
+
+<font color=#EB4925>Modern, scalable apps use a</font> [Session Store]({{< ref "12-rds-aurora-elasicache-saac03/#user-session-store" >}}), <font color=#EB4925>not sticky sessions</font>.
+
+{{< /alert >}}
 ### Sticky Sessions - Cookie Names
 
 - **Application‑based cookies**
