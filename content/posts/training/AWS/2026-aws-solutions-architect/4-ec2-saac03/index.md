@@ -8,6 +8,7 @@ tags:
   - SAA-C03
   - EC2
   - AMI
+  - HPC
 categories:
   - AWS
 series: AWS Solution Architect
@@ -55,12 +56,12 @@ To meet the needs of your workload, you can launch a group of _interdependent_ E
 Depending on the type of workload, you can create a placement group using one of the following placement strategies:
 ### Cluster
 
-Packs instances close together <font color=#EBAC25>inside an Availability Zone</font>. This strategy enables workloads to achieve the low-latency network performance necessary for tightly-coupled node-to-node communication that is typical of high-performance computing (HPC) applications.
+Packs instances close together <font color=#EBAC25>inside an Availability Zone</font>. This strategy enables workloads to achieve the <font color=#C7EB25>low-latency network performance</font> necessary for tightly-coupled node-to-node communication that is typical of <font color=#C7EB25>high-performance computing</font> (HPC) applications.
 
 |               |                                                                                                                                                                                                                                  |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Pros**      | - Extremely high network throughput and very low latency between instances (**up to 10–100 Gbps with Enhanced Networking**)<br>- Ideal for tightly coupled, high‑performance workloads that need fast node‑to‑node communication |
-| **Cons**      | - All instances are in a single AZ, so an AZ outage takes down the entire group <br>- Capacity can be limited — launches may fail if AWS can’t place all instances close enough together                                         |
+| **Cons**      | - <font color=#EB4925>All instances are in a single AZ</font>, so an AZ outage takes down the entire group <br>- Capacity can be limited - launches may fail if AWS can’t place all instances close enough together              |
 | **Use Cases** | - Big Data or distributed compute jobs that must complete quickly    <br>- HPC workloads, analytics engines, or applications requiring ultra‑low latency and high network bandwidth                                              |
 ### Partition
 
@@ -73,7 +74,7 @@ Packs instances close together <font color=#EBAC25>inside an Availability Zone</
 | **Pros**      | - Can span multiple Availability Zones, improving resilience    <br>- Reduces the risk of simultaneous failure across instances    <br>- Instances are isolated on separate racks and physical hardware |
 | **Cons**      | - Limited to **seven partitions per AZ** within a placement group                                                                                                                                       |
 | **Use Cases** | - Applications that need maximum high availability    <br>- Critical workloads where each instance must be isolated from failures in other nodes                                                        |
-### **Spread** 
+### Spread 
 
 <font color=#EBAC25>Strictly places a small group of instances across distinct underlying hardware</font> to reduce correlated failures.
 

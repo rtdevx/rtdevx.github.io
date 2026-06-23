@@ -8,6 +8,7 @@ tags:
   - CLF-C02
   - EC2
   - AMI
+  - HPC
 categories: AWS
 series: AWS Cloud Practitioner
 ---

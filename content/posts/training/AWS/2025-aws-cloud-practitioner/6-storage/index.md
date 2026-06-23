@@ -8,6 +8,7 @@ tags:
   - CLF-C02
   - Storage
   - S3
+  - HPC
 categories: AWS
 series: AWS Cloud Practitioner
 ---
