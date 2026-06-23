@@ -93,7 +93,7 @@ This section focuses only on the **Associate‑level additions**.
 
 {{< alert "lightbulb" >}}
 
-🙋🏻 _Question:_ Explain ALB Sticky sessions (cookie based) vs Database support for session state (<a href="{{< ref "12-rds-aurora-elasicache-saac03/#user-session-store" >}}" target="_self">Session Store</a>)? 
+🙋🏻 _Question:_ ALB Sticky sessions (cookie based) vs Database support for session state (<a href="{{< ref "12-rds-aurora-elasicache-saac03/#user-session-store" >}}" target="_self">Session Store</a>)?
 
 Both are two different approaches to the same problem: <font color=#EBAC25>session persistence</font>.
 
