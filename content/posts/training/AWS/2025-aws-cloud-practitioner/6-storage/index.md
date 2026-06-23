@@ -164,7 +164,7 @@ EFS Storage tiers and lifecycle management.
 		- Amazon EC2, ECS and EKS
 	- Storage shrinks or grows automatically
 	- Snapshots, replication, low-cost, compression and data de-duplication
-	- Point-in-time insta
+	- Point-in-time restores
 
 - **FSx for OpenZFS**
 	- Fully managed **OpenZFS** file system on AWS
