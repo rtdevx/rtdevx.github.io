@@ -42,13 +42,13 @@
 #    icon = "bars"
 #    showName = false 
 
-[[main]]
-  name = "CheatSheets"
-  pageRef = "posts/cheatsheets"
-  weight = 50
-  [main.params]
-    icon = "translate"
-    showName = false
+#[[main]]
+#  name = "CheatSheets"
+#  pageRef = "posts/cheatsheets"
+#  weight = 50
+#  [main.params]
+#    icon = "translate"
+#    showName = false
 
 #[[main]]
 #  name = "My Learning"
