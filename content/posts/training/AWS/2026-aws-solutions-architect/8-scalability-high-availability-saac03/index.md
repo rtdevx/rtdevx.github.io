@@ -143,7 +143,7 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 ### SSL/TLS
 
 - Load balancers use **X.509 SSL/TLS certificates**    
-- Certificates can be managed through **ACM** or uploaded manually    
+- Certificates can be managed through [ACM]({{< ref "tags/acm" >}}) or uploaded manually
 - For an **HTTPS listener**, you must define a **default certificate**, with optional additional certificates for multi‑domain support    
 - Clients can use **SNI (Server Name Indication)** to indicate the hostname they’re connecting to    
 - You can choose a **security policy** to support (or restrict) older SSL/TLS versions for legacy clients
@@ -206,6 +206,7 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 - **Cloud Practitioner:** [Elastic Load Balancing]({{< ref "9-elastic-load-balancing" >}})
 - **Cloud Practitioner:** [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
 - **Solutions Architect:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}})
+- [ACM]({{< ref "tags/acm" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
