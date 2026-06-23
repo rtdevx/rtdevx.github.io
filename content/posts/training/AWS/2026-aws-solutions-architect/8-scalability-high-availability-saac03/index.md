@@ -154,6 +154,44 @@ sequenceDiagram
     App2-->>User: Response
 
 {{< /mermaid >}}
+#### Side‑by‑Side Architecture Diagram
+
+{{< mermaid >}}
+
+flowchart LR
+
+    %% LEFT SIDE — ALB Sticky Sessions
+    subgraph Sticky["ALB Sticky Sessions (Stateful App)"]
+        direction TB
+        U1["User"]
+        ALB1["ALB<br/>(Sticky Sessions Enabled)"]
+        A1["App Server A<br/>(Session in Memory)"]
+        A2["App Server B<br/>(Session in Memory)"]
+
+        U1 --> ALB1
+        ALB1 -->|Cookie routes user to same server| A1
+        ALB1 -.->|Other users| A2
+    end
+
+    %% RIGHT SIDE — ALB + Session Store
+    subgraph Stateless["ALB + Shared Session Store (Stateless App)"]
+        direction TB
+        U2["User"]
+        ALB2["ALB<br/>(No Stickiness)"]
+        B1["App Server A<br/>(Stateless)"]
+        B2["App Server B<br/>(Stateless)"]
+        Store["Session Store<br/>(Redis / DynamoDB)"]
+
+        U2 --> ALB2
+        ALB2 --> B1
+        ALB2 --> B2
+        B1 --> Store
+        B2 --> Store
+    end
+
+    Sticky --- Stateless
+
+{{< /mermaid >}}
 ### Sticky Sessions - Cookie Names
 
 - **Application‑based cookies**
