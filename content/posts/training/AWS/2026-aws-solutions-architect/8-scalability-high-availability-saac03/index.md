@@ -57,7 +57,7 @@ This section focuses only on the **Associate‑level additions**.
 
 - [EC2]({{< ref "tags/ec2" >}})
 - EC2 [Auto Scaling Groups]({{< ref "tags/asg" >}})
-- Amazon [ECS]({{< ref "tags/ecs" >}})
+- [Amazon ECS]({{< ref "tags/ecs" >}})
 - [AWS Certificate Manager (ACM)]({{< ref "tags/acm" >}})
 - [CloudWatch]({{< ref "tags/cloudwatch" >}})
 - [Route 53]({{< ref "tags/route53" >}})
