@@ -8,6 +8,9 @@ tags:
   - SAA-C03
   - storage
   - S3
+  - EC2
+  - HPC
+  - Capacity
 categories:
   - AWS
 series: AWS Solution Architect

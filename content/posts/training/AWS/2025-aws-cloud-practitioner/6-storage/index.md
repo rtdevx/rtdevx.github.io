@@ -10,6 +10,7 @@ tags:
   - S3
   - HPC
   - Capacity
+  - EC2
 categories: AWS
 series: AWS Cloud Practitioner
 ---
