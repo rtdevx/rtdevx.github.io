@@ -26,7 +26,7 @@ series: AWS Solution Architect
 
 For full foundational coverage, refer to the table below from the Cloud Practitioner section:
 
-| Tag: [Storage]({{< ref "tags/storage" >}})                                                |                                                                                                                     |                                                                                                             |
+| Tag: [Storage]({{< ref "tags/storage" >}}), [S3]({{< ref "tags/s3" >}})                   |                                                                                                                     |                                                                                                             |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | [Storage]({{< ref "6-storage" >}})                                                        | - [EBS]({{< ref "6-storage/#ebs-volume" >}})<br>- [EC2 Instance Store]({{< ref "6-storage/#ec2-instance-store" >}}) | - [EFS]({{< ref "6-storage/#efs---elastic-file-system" >}})<br>- [FSx]({{< ref "6-storage/#amazon-fsx" >}}) |
 | - [S3 - CLF-C02]({{< ref "11-s3" >}})<br>- [S3 - SAA-C03]({{< ref "11-s3-saac03" >}})<br> |                                                                                                                     |                                                                                                             |
