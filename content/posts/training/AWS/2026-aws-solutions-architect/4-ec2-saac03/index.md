@@ -9,6 +9,7 @@ tags:
   - EC2
   - AMI
   - HPC
+  - ENI
 categories:
   - AWS
 series: AWS Solution Architect
