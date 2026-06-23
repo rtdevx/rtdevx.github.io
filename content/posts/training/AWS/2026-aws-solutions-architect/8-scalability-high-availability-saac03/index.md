@@ -62,7 +62,7 @@ This section focuses only on the **Associate‑level additions**.
 - [CloudWatch]({{< ref "tags/cloudwatch" >}})
 - [Route 53]({{< ref "tags/route53" >}})
 - [AWS WAF]({{< ref "tags/waf" >}})
-- AWS Global Accelerator
+- [AWS Global Accelerator]({{< ref "15-2-cloudfront-global-accelerator-saac03/#aws-global-accelerator" >}})
 
 {{< alert "circle-info" >}}
 
