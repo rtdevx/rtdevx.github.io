@@ -110,51 +110,7 @@ Both are two different approaches to the same problem: <font color=#EBAC25>sessi
 <font color=#EBAC25><i>More info:</i></font> <a href="{{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}" target="_self">Elasticache</a>
 
 {{< /alert >}}
-#### ALB Sticky Sessions
-
-{{< mermaid >}}
-
-sequenceDiagram
-    participant User
-    participant ALB as ALB (Sticky Sessions)
-    participant App1 as App Server A
-    participant App2 as App Server B
-
-    User->>ALB: HTTP Request (no cookie)
-    ALB->>App1: Routes to Server A
-    App1-->>ALB: Response + ALB Cookie
-    ALB-->>User: Set-Cookie: AWSALBAPP
-
-    User->>ALB: Next Request (cookie included)
-    ALB->>App1: Sticky routing to same server
-    App1-->>User: Response
-
-{{< /mermaid >}}
-#### Session Store
-
-{{< mermaid >}}
-
-sequenceDiagram
-    participant User
-    participant ALB as ALB (No Stickiness)
-    participant App1 as App Server A
-    participant App2 as App Server B
-    participant Store as Session Store (Redis/DynamoDB)
-
-    User->>ALB: HTTP Request
-    ALB->>App1: Routes to any healthy server
-    App1->>Store: Read/Write session data
-    Store-->>App1: Session state
-    App1-->>User: Response
-
-    User->>ALB: Next Request
-    ALB->>App2: Routes to a different server
-    App2->>Store: Read session data
-    Store-->>App2: Session state
-    App2-->>User: Response
-
-{{< /mermaid >}}
-#### Side‑by‑Side Architecture Diagram
+#### ALB Sticky Sessions vs Session Store Diagram
 
 {{< mermaid >}}
 
