@@ -6,6 +6,7 @@ summary: What is Cloud Computing...
 draft: false
 tags:
   - CLF-C02
+  - Capacity
 categories: AWS
 series: AWS Cloud Practitioner
 ---

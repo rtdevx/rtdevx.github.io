@@ -10,6 +10,7 @@ tags:
   - LoadBalancing
   - HighAvailability
   - Scalability
+  - Capacity
 categories: AWS
 series: AWS Cloud Practitioner
 ---

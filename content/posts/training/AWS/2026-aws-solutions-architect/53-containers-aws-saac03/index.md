@@ -17,6 +17,7 @@ tags:
   - Scalability
   - HighAvailability
   - LoadBalancing
+  - Capacity
 categories:
   - AWS
   - Containers

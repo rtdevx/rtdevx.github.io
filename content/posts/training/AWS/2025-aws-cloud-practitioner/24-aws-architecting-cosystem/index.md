@@ -9,6 +9,7 @@ tags:
   - security
   - compliance
   - Costs
+  - Capacity
 categories: AWS
 series: AWS Cloud Practitioner
 ---

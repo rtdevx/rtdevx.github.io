@@ -10,6 +10,7 @@ tags:
   - AMI
   - HPC
   - ENI
+  - Capacity
 categories:
   - AWS
 series: AWS Solution Architect

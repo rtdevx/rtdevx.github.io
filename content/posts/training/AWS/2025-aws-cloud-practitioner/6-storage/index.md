@@ -9,6 +9,7 @@ tags:
   - Storage
   - S3
   - HPC
+  - Capacity
 categories: AWS
 series: AWS Cloud Practitioner
 ---

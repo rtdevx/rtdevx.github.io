@@ -11,6 +11,7 @@ tags:
   - LoadBalancing
   - security
   - ASG
+  - Capacity
 categories:
   - AWS
 series: AWS Solution Architect

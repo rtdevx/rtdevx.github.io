@@ -11,6 +11,7 @@ tags:
   - HighAvailability
   - storage
   - S3
+  - Capacity
 categories:
   - AWS
 series: AWS Solution Architect

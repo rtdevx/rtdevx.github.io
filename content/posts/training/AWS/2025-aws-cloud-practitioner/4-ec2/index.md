@@ -9,6 +9,7 @@ tags:
   - EC2
   - AMI
   - HPC
+  - Capacity
 categories: AWS
 series: AWS Cloud Practitioner
 ---
