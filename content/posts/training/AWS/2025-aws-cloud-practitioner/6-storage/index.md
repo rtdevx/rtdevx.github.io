@@ -62,6 +62,31 @@ When Snapshot Archive is enabled, it is possible to Archive it from a drop-down 
 	- Setup rules to retain deleted snapshots so you can recover them after an accidental deletion
 	- Specify retention (from 1 day to 1 year)
 
+{{< alert "lightbulb" >}}
+🙋🏻 _Question:_ Does EBS Recycle Bin protect EBS Volumes or only EBS Snapshots?
+
+If volume‑level protection is required, the correct approach is:
+
+- **Take snapshots** (manual, scheduled, or via AWS Backup)    
+- Apply **Recycle Bin retention rules** to those snapshots
+
+**Practical takeaway**
+
+If you delete an EBS volume, it’s gone unless you have a **snapshot**. If you delete a snapshot and Recycle Bin is enabled, you can recover it.
+
+🙋🏻 _Question:_ EBS Restore in another region - what needs to be considered when using KMS CMK?
+
+To restore an encrypted EBS snapshot in another region, AWS must re‑encrypt it using a KMS key in the destination region. **Multi‑Region keys** (MRK) simplify this because replicas exist in each region. Single‑Region keys require a separate CMK in the target region and appropriate key‑sharing permissions.
+
+🙋🏻 _Question:_ How does KMS CMK key rotation affect EBS snapshots stored in the Recycle Bin, and what considerations are required to ensure those snapshots remain recoverable?
+
+EBS Recycle Bin keeps snapshots, but KMS CMK key rotation does not re‑encrypt them. As long as the original CMK remains enabled and not deleted, snapshots are fully recoverable. If the CMK is disabled or deleted, Recycle Bin cannot save the snapshot.
+
+- **Automatic annual rotation** of AWS‑managed or customer‑managed CMKs is fully compatible with Recycle Bin.    
+- **Manual deletion** of the CMK breaks your ability to restore snapshots.
+
+{{< /alert >}}
+
 - Fast Snapshot Restore (FSR)
 	- Force full initialization of snapshot to have no latency on the first use (EXPENSIVE!)
 ## EC2 Instance Store
