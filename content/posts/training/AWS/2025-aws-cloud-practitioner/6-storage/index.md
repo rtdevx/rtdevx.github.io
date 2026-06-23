@@ -254,4 +254,4 @@ EFS Storage tiers and lifecycle management.
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
 
-[^1]: Only true at Practitioner level. See more: [EBS Multi‑Attach]({{< ref "6-storage-saac03/#ebs-multiattach-io1--io2-family" >}})
+[^1]: Only true at Practitioner level. <font color=#EBAC25><i>More info:</i></font> [EBS Multi‑Attach]({{< ref "6-storage-saac03/#ebs-multiattach-io1--io2-family" >}})
