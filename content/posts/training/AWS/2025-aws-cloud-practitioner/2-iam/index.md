@@ -147,6 +147,17 @@ IAM > Users > Username > Last Accessed
 | Compliance validation                    | Rotating keys                                            |
 |                                          | Using IAM tools to apply appropriate permissions         |
 |                                          | Analyze access patterns and review permissions           |
+## IAM Section - Summary
+
+- <font color=#EBAC25>Users:</font> mapped to a physical user, has a password for AWS Console
+- <font color=#EBAC25>Groups:</font> contains users only
+- <font color=#EBAC25>Policies:</font> JSON document that outlines permissions for users or groups
+- <font color=#EBAC25>Roles:</font> for EC2 instances or AWS services
+- <font color=#EBAC25>Security:</font> MFA + Password Policy
+- <font color=#EBAC25>AWS CLI:</font> manage your AWS services using the command-line
+- <font color=#EBAC25>AWS SDK:</font> manage your AWS services using a programming language
+- <font color=#EBAC25>Access Keys:</font> access AWS using the CLI or SDK
+- <font color=#EBAC25>Audit:</font> IAM Credential Reports & IAM Access Advisor
 
 ---
 ## >> Sources <<
