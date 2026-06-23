@@ -48,7 +48,7 @@ For full foundational coverage, refer to the table below from the Cloud Practiti
 
 ||[Amazon EBS General Purpose SSD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/general-purpose.html)|   |[Amazon EBS Provisioned IOPS SSD volumes](https://docs.aws.amazon.com/ebs/latest/userguide/provisioned-iops.html)|   |
 |---|:-:|:-:|:-:|:-:|
-|**Volume type**|`gp3` 6|`gp2`|`io2` Block Express|`io1`|
+|**Volume type**|`gp3`|`gp2`|`io2` Block Express|`io1`|
 |**Durability**|99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)|   |99.999% durability (0.001% annual failure rate)|99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)|
 |**Use cases**|- <font color=#EBAC25>Transactional workloads</font><br>    <br>- <font color=#EBAC25>Virtual desktops</font><br>    <br>- <font color=#EBAC25>Medium-sized, single-instance databases</font><br>    <br>- <font color=#EBAC25>Low-latency interactive applications</font><br>    <br>- <font color=#EBAC25>Boot volumes</font><br>    <br>- <font color=#EBAC25>Development and test environments</font>|   |**Workloads that require:**<br><br>- <font color=#EBAC25>Consistent sub-millisecond latency with average latency under 500 microseconds</font><br>    <br>- <font color=#EBAC25>Sustained IOPS performance</font><br>    <br>- <font color=#EBAC25>More than 80,000 IOPS or 2,000 MiB/s of throughput</font>|**Workloads that require:**<br><br>- <font color=#EBAC25>sustained IOPS performance or more than 16,000 IOPS</font><br>    <br>- <font color=#EBAC25>I/O-intensive database workloads</font>|
 |**Volume size**|1 GiB - 64 TiB|1 GiB - 16 TiB|4 GiB - 64 TiB|4 GiB - 16 TiB|
