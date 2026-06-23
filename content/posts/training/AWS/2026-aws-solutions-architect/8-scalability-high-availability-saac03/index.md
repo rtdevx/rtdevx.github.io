@@ -133,9 +133,9 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 
 {{< /lead >}}
 
-{{< alert "circle-info" >}}
+{{< alert "lightbulb" >}}
 
-**Difference between SNI and SAN.**
+🙋🏻 _Question:_ What is the difference between SNI and SAN
 
 **SNI** and **SAN** solve different problems:
 
