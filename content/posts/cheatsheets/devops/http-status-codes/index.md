@@ -6,9 +6,7 @@ summary: HTTP Status Codes.
 draft: false
 tags:
   - HighAvailability
-  - HTTPS
   - monitoring
-  - HA
   - Troubleshooting
 categories:
   - DevOps
