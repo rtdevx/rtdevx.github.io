@@ -2,7 +2,7 @@
 title: "Solutions Architect: AWS Security & Encryption"
 date: 2026-04-15
 description: KMS, Encryption SDK, SSM Parameter Store.
-summary: KMS, Encryption SDK, SSM Parameter Store
+summary: KMS, Encryption SDK, SSM Parameter Store.
 draft: false
 tags:
   - SAA-C03
@@ -17,6 +17,7 @@ tags:
   - S3
   - WAF
   - TLS
+  - DDoS
 categories:
   - AWS
 series: AWS Solution Architect

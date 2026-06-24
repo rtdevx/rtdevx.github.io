@@ -9,6 +9,7 @@ tags:
   - Cache
   - CDN
   - CloudFront
+  - DDoS
 categories:
   - AWS
 series: AWS Solution Architect
