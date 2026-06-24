@@ -82,7 +82,9 @@ This section focuses only on the **Associate‑level additions**.
 - ALB can route to multiple target groups
 - Health checks are at the target group level
 
-<font color=#EBAC25><i>More info:</i></font> [Health checks for Application Load Balancer target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
+<font color=#EBAC25><i>More info:</i></font> 
+- [Health checks for Application Load Balancer target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
+- [HTTP Status Codes]({{< ref "http-status-codes" >}})
 ### Sticky Sessions
 
 - Stickiness ensures a client is consistently routed to the **same backend instance** behind the load balancer    
@@ -245,6 +247,7 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 - **Cloud Practitioner:** [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}})
 - **Solutions Architect:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}})
 - [ACM]({{< ref "tags/acm" >}})
+- [HTTP Status Codes]({{< ref "http-status-codes" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
