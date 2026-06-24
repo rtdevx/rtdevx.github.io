@@ -5,6 +5,11 @@ description: HTTP Status Codes.
 summary: HTTP Status Codes.
 draft: false
 tags:
+  - HighAvailability
+  - HTTPS
+  - monitoring
+  - HA
+  - Troubleshooting
 categories:
   - DevOps
   - Cheatsheets
