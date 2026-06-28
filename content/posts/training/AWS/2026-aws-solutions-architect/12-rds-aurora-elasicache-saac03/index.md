@@ -72,7 +72,7 @@ series: AWS Solution Architect
 
 **RDS Multi‑AZ** provides **synchronous replication** to a standby in another AZ, uses a **single DNS endpoint** for automatic failover, boosts availability during AZ, network, instance, or storage failures, requires **no application changes**, and is designed for **high availability rather than scaling**; additionally, **Read Replicas themselves can be configured as Multi‑AZ** for disaster‑recovery purposes.
 
-You can switch an RDS instance from Single‑AZ to Multi‑AZ **with zero downtime by modifying the database configuration**, no restart required.
+<font color=#C7EB25>You can switch an RDS instance from <b>Single‑AZ to Multi‑AZ with zero downtime</b> by modifying the database configuration, no restart required</font>.
 
 <font color=#EBAC25><i>More info:</i></font> [Amazon RDS multi-AZ](https://aws.amazon.com/rds/features/multi-az/)
 ### RDS Backups
