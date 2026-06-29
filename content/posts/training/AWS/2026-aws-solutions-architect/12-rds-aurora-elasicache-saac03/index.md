@@ -68,6 +68,20 @@ series: AWS Solution Architect
 ℹ️ In AWS you normally pay for data transferred between AZs, but <b><font color=#EB4925>RDS Read Replicas within the same region avoid that cross‑AZ data transfer cost</font></b>.
 
 ![](./assets/AWS_RDS_Replication_Cost.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+#### RDS Read Replica promotion
+
+{{< alert "lightbulb" >}}
+
+🙋🏻 _Question:_ Can RDS Read Replica become the primary and will RDS Proxy detect it automatically??
+
+<font color=#EBAC25>RDS Read Replica can be promoted to a standalone primary</font> but it becomes and independent RDS instance with it's own endpoint. <font color=#EB4925>It is not automatically wired into any failover mechanism</font>, RDS Proxy must be reconfigured to point to the new primary.
+
+- ✔ Can become a standalone primary    
+- ✖ Does not auto‑update RDS Proxy    
+- ✖ Does not auto‑update application endpoints    
+- ✔ Requires manual reconfiguration
+
+{{< /alert >}}
 ### RDS Multi AZ (Disaster Recovery)
 
 **RDS Multi‑AZ** provides **synchronous replication** to a standby in another AZ, uses a **single DNS endpoint** for automatic failover, boosts availability during AZ, network, instance, or storage failures, requires **no application changes**, and is designed for **high availability rather than scaling**; additionally, **Read Replicas themselves can be configured as Multi‑AZ** for disaster‑recovery purposes.
