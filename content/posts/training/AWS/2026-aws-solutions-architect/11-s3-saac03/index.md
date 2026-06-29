@@ -137,7 +137,7 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 	- Server-Side Encryption with <font color=#EBAC25>Amazon S3-Managed Keys</font> (SSE-S3) - <font color=#C7EB25>Enabled by Default</font>
 		- Encrypts S3 objects using keys handled, managed, and owned by AWS
 	- Server-Side Encryption with <font color=#EBAC25>KMS Keys stored in AWS KMS</font> (SSE-KMS)
-		- Leverage AWS Key Management Service (AWS KMS) to manage encryption keys
+		- Leverage AWS Key Management Service ([AWS KMS]({{< ref "tags/kms" >}})) to manage encryption keys
 	- Server-Side Encryption with <font color=#EBAC25>Customer-Provided Keys</font> (SSE-C)
 		- When you want to manage your own encryption keys
 - **Client-Side Encryption**
