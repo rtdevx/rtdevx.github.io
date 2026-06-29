@@ -10,6 +10,8 @@ tags:
   - storage
   - Backup
   - DisasterRecovery
+  - BigData
+  - analytics
 categories:
   - AWS
 series: AWS Solution Architect

@@ -10,6 +10,8 @@ tags:
   - S3
   - Backup
   - DisasterRecovery
+  - BigData
+  - analytics
 categories: AWS
 series: AWS Cloud Practitioner
 ---
