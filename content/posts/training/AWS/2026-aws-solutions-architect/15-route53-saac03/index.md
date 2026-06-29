@@ -192,7 +192,6 @@ The primary and secondary records can route traffic to anything from an Amazon S
 Geoproximity routing <font color=#EB4925>can be "biased"</font> (traffic can be shifted between regions using bias). <font color=#EBAC25>See above picture</font>.
 
 {{< /alert >}}
-<font color=#EB4925>can be "biased"</font>
 
 <font color=#EBAC25><i>More info:</i></font> [Geoproximity Routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geoproximity.html)
 ### IP-based Routing
