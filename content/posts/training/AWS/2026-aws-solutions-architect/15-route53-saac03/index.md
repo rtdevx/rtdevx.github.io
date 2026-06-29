@@ -84,7 +84,7 @@ series: AWS Solution Architect
 ![](./assets/AWS_Route53_Alias_Records_Targets.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### Route 53 - Records TTL
 
-| High TTL – e.g., 24 hr    | Low TTL – e.g., 60 sec.            |
+| High TTL - e.g., 24 hr    | Low TTL - e.g., 60 sec.            |
 | ------------------------- | ---------------------------------- |
 | Less traffic on Route 53  | More traffic on Route 53 ($$)      |
 | Possibly outdated records | Records are outdated for less time |
