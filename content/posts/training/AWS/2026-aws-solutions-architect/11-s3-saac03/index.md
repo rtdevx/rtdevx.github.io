@@ -103,8 +103,7 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 	- s3://my-bucket/my_folder/another_folder/my_file.txt
 - The <font color=#C7EB25>key</font> is composed of <font color=#EBAC25>prefix</font> + <font color=orange>object name</font>
 	- s3://my-bucket/<font color=#EBAC25>my_folder/another_folder/</font><font color=orange>my_file.txt</font>
-- There is no concept of "_directories_" within S3 buckets (although UI will suggest there is)
-	- <font color=#EB4925>Just keys with very long names that contain slashes ("/")</font>
+- There is no concept of "_directories_" within S3 buckets (although UI will suggest there is), <font color=#EB4925>just keys with very long names that contain slashes ("/")</font>
 
 {{< /alert >}}
 

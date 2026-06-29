@@ -57,7 +57,7 @@ _AWS S3 Full Course | From Beginner to Expert | Deploy Real-Time Projects on AWS
 - Not an IP
 - Must start with lowercase letter or number
 - Must NOT start with the prefix "_xn--_"
-- Must NOT start with the suffix "_s3alias_"
+- Must NOT end with the suffix "_s3alias_"
 ## Amazon S3 - Objects
 
 - Objects (files) have a Key
