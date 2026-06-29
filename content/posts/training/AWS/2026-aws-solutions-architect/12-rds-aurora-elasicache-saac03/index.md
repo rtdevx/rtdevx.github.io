@@ -108,21 +108,6 @@ series: AWS Solution Architect
 	- Restore the backup file onto a new RDS instance running MySQL
 
 <font color=#EBAC25><i>More info:</i></font> [RDS Backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html)
-### Amazon RDS Proxy
-
-- Fully managed database proxy for RDS    
-- Pools and shares DB connections to reduce load on database resources    
-- Improves efficiency by lowering CPU/RAM pressure and avoiding excessive open connections    
-- Serverless, autoscaling, and Multi‑AZ for high availability    
-- Cuts RDS/Aurora failover time by up to **66%**    
-- Supports RDS (MySQL, PostgreSQL, MariaDB, SQL Server) and Aurora (MySQL, PostgreSQL)    
-- Works with most applications without code changes    
-- Enforces IAM authentication and stores credentials in Secrets Manager    
-- Never publicly accessible - must be accessed from within a VPC
-
-![](./assets/AWS_DB_RDS_Proxy.png "© Amazon AWS, [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)")
-
-<font color=#EBAC25><i>More info:</i></font> [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)
 ## Aurora
 
 🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})
@@ -232,6 +217,61 @@ An Aurora global database consists of one _primary_ AWS Region where your data i
 - **Security Groups:** Control Network access to your RDS / Aurora DB
 - **No SSH** available except on RDS Custom
 - **Audit Logs can be enabled** and sent to CloudWatch Logs for longer retention
+## Amazon RDS Proxy
+
+- Fully managed database proxy for RDS    
+- Pools and shares DB connections to reduce load on database resources    
+- Improves efficiency by lowering CPU/RAM pressure and avoiding excessive open connections    
+- Serverless, autoscaling, and Multi‑AZ for high availability    
+- Cuts RDS/Aurora failover time by up to **66%**    
+- Supports RDS (MySQL, PostgreSQL, MariaDB, SQL Server) and Aurora (MySQL, PostgreSQL)    
+- Works with most applications without code changes    
+- Enforces IAM authentication and stores credentials in Secrets Manager    
+- Never publicly accessible - must be accessed from within a VPC
+
+![](./assets/AWS_DB_RDS_Proxy.png "© Amazon AWS, [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)")
+
+{{< alert "circle-info" >}}
+
+RDS Proxy it works for **both Aurora and RDS** - but the _failover behaviour_ and _endpoint logic_ differ because the underlying database architectures are completely different.
+
+{{< /alert >}}
+### How RDS Proxy behaves with Aurora
+
+Aurora has:
+
+- a **cluster endpoint** (always points to the writer)    
+- **reader endpoint** (load balances readers)    
+- **automatic failover**    
+- **automatic replica promotion**    
+
+RDS Proxy integrates tightly with this:
+
+- When Aurora promotes a reader → **cluster endpoint updates**    
+- RDS Proxy automatically follows the new writer    
+- No manual changes needed    
+
+**Result:**
+
+> Aurora + RDS Proxy = fully automatic failover.
+### How RDS Proxy behaves with RDS
+
+RDS (non‑Aurora) has:
+
+- **Multi‑AZ failover only**    
+- **No automatic promotion of read replicas**    
+- **Each instance has its own endpoint**    
+
+RDS Proxy integrates only with **Multi‑AZ failover**, not with read replicas.
+
+- If the RDS primary fails → Multi‑AZ standby becomes primary → **same writer endpoint** → RDS Proxy follows automatically    
+- If you **promote a read replica** → it becomes a **separate, standalone DB** → **new endpoint** → RDS Proxy does _not_ follow it    
+
+**Result:**
+
+> RDS + RDS Proxy = <font color=#EBAC25>automatic failover only for Multi‑AZ, not for read replica promotion</font>.
+
+<font color=#EBAC25><i>More info:</i></font> [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)
 ## ElastiCache
 
 🏅 **Cloud Practitioner-level:** [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
