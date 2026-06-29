@@ -12,6 +12,7 @@ tags:
   - DisasterRecovery
   - BigData
   - analytics
+  - hosting
 categories: AWS
 series: AWS Cloud Practitioner
 ---
