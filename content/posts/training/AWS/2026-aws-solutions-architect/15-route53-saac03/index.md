@@ -106,8 +106,11 @@ A hosted zone and the corresponding domain have the same name. There are two typ
 <font color=#EBAC25><i>More info:</i></font> [Working with hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html)
 ## Route 53 - Routing Policies
 
-- <font color=#C7EB25>Simple</font> Routing Policy - <font color=#EB4925>No health checks,</font> just DNS check
-- <font color=#C7EB25>Weighted</font> Routing Policy - <font color=#EB4925>Specify what amount of traffic goes where</font> (i.e. 70% = Server1, 20% = Server2, 10% = Server3. Simple form of Load Balancing)
+- <font color=#C7EB25>Simple</font> Routing Policy - <font color=#EB4925>No health checks</font>, just DNS check
+	- <font color=#EBAC25>
+Multiple values are allowed</font> - if this is the case, random will be chosen by the client
+- <font color=#C7EB25>Weighted</font> Routing Policy - <font color=#EB4925>Specify what amount of traffic goes where</font> (i.e. 70% = Server1, 20% = Server2, 10% = Server3 -<font color=#EBAC25>
+simple form of Load Balancing</font>)
 - <font color=#C7EB25>Latency</font> Routing Policy - <font color=#EB4925>Based on latency</font> - minimizing the latency between user and the server sending the traffic that is geographically (latency-based) closer to the user
 - <font color=#C7EB25>Failover</font> Routing Policy - <font color=#EB4925>Disaster Recovery</font> ([DR]({{< ref "23-other-services/#disaster-recovery-strategies" >}})) - based on Health Checks
 - <font color=#C7EB25>Geolocation</font> Routing Policy - <font color=#EB4925>Routing based specifically on Geolocation</font>
