@@ -13,6 +13,7 @@ tags:
   - BigData
   - analytics
   - hosting
+  - Costs
 categories:
   - AWS
 series: AWS Solution Architect
