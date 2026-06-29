@@ -282,7 +282,7 @@ RDS Proxy integrates only with **Multi‑AZ failover**, not with read replicas.
 
 {{< lead >}}
 
-**Serverless**, **fully managed caching service** delivering microsecond latency with **Valkey-**, **Memcached-**, and **Redis** OSS-compatibility.
+**Serverless**, **fully managed caching service** delivering microsecond latency with **Valkey-**, **Memcached-**, and **Redis**.
 
 <font color=#EBAC25><i>More info:</i></font> [Amazon ElastiCache](https://aws.amazon.com/elasticache/)
 
