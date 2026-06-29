@@ -74,7 +74,7 @@ series: AWS Solution Architect
 
 🙋🏻 _Question:_ Can RDS Read Replica become the primary and will RDS Proxy detect it automatically??
 
-<font color=#EBAC25>RDS Read Replica can be promoted to a standalone primary</font> but it becomes and independent RDS instance with it's own endpoint. <font color=#EB4925>It is not automatically wired into any failover mechanism</font>, RDS Proxy must be reconfigured to point to the new primary.
+<font color=#EBAC25>RDS Read Replica can be promoted to a standalone primary</font> but it becomes and independent RDS instance with it's own endpoint. <font color=#EB4925>It is not automatically wired into any failover mechanism</font> - RDS Proxy must be reconfigured to point to the new primary.
 
 - ✔ Can become a standalone primary    
 - ✖ Does not auto‑update RDS Proxy    
