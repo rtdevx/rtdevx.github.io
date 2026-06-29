@@ -156,7 +156,7 @@ simple form of Load Balancing</font>)
 <font color=#EBAC25><i>More info:</i></font> [Latency-based routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-latency.html)
 ### Failover Routing
 
-**Failover routing** lets you route traffic to a resource when the resource is **healthy** or to a different resource when the first resource is **unhealthy**. 
+**Failover routing** lets you route traffic to a resource when the resource is <font color=#C7EB25>healthy</font> or to a different resource when the first resource is <font color=#EB4925>unhealthy</font>. 
 
 The primary and secondary records can route traffic to anything from an Amazon S3 bucket that is configured as a website to a complex tree of records. 
 
