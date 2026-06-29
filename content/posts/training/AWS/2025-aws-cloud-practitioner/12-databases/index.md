@@ -7,6 +7,7 @@ draft: false
 tags:
   - CLF-C02
   - database
+  - analytics
 categories: AWS
 series: AWS Cloud Practitioner
 ---

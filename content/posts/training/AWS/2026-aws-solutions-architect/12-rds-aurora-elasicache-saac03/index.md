@@ -12,6 +12,7 @@ tags:
   - HighAvailability
   - Cache
   - Serverless
+  - analytics
 categories:
   - AWS
 series: AWS Solution Architect

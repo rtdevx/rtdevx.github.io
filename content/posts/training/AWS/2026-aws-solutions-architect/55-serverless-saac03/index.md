@@ -18,6 +18,7 @@ tags:
   - SQS
   - Fargate
   - Cache
+  - analytics
 categories:
   - AWS
   - Containers

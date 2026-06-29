@@ -11,6 +11,7 @@ tags:
   - HPC
   - Capacity
   - EC2
+  - analytics
 categories: AWS
 series: AWS Cloud Practitioner
 ---

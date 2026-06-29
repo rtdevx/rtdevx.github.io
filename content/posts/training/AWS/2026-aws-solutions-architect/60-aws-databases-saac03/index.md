@@ -7,6 +7,7 @@ draft: false
 tags:
   - SAA-C03
   - database
+  - analytics
 categories:
   - AWS
 series: AWS Solution Architect
