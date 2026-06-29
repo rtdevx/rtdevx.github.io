@@ -8,6 +8,8 @@ tags:
   - CLF-C02
   - Storage
   - S3
+  - Backup
+  - DisasterRecovery
 categories: AWS
 series: AWS Cloud Practitioner
 ---

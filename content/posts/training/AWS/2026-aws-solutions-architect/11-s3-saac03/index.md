@@ -8,6 +8,8 @@ tags:
   - SAA-C03
   - S3
   - storage
+  - Backup
+  - DisasterRecovery
 categories:
   - AWS
 series: AWS Solution Architect
