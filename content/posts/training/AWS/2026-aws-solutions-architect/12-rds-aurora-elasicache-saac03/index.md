@@ -108,6 +108,21 @@ series: AWS Solution Architect
 	- Restore the backup file onto a new RDS instance running MySQL
 
 <font color=#EBAC25><i>More info:</i></font> [RDS Backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html)
+### Amazon RDS Proxy
+
+- Fully managed database proxy for RDS    
+- Pools and shares DB connections to reduce load on database resources    
+- Improves efficiency by lowering CPU/RAM pressure and avoiding excessive open connections    
+- Serverless, autoscaling, and Multi‑AZ for high availability    
+- Cuts RDS/Aurora failover time by up to **66%**    
+- Supports RDS (MySQL, PostgreSQL, MariaDB, SQL Server) and Aurora (MySQL, PostgreSQL)    
+- Works with most applications without code changes    
+- Enforces IAM authentication and stores credentials in Secrets Manager    
+- Never publicly accessible - must be accessed from within a VPC
+
+![](./assets/AWS_DB_RDS_Proxy.png "© Amazon AWS, [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)")
+
+<font color=#EBAC25><i>More info:</i></font> [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)
 ## Aurora
 
 🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})
@@ -209,7 +224,7 @@ An Aurora global database consists of one _primary_ AWS Region where your data i
 ## RDS & Aurora Security
 
 - **At-rest encryption:**
-	- Database master & replicas encryption using AWS KMS – must be defined as launch time
+	- Database master & replicas encryption using [AWS KMS]({{< ref "tags/kms" >}}) - <font color=#EB4925>must be defined at launch time</font>
 	- If the master is not encrypted, the read replicas cannot be encrypted
 	- To encrypt an un-encrypted database, go through a DB snapshot & restore as encrypted
 - **In-flight encryption:** TLS-ready by default, use the AWS TLS root certificates client-side
@@ -217,21 +232,6 @@ An Aurora global database consists of one _primary_ AWS Region where your data i
 - **Security Groups:** Control Network access to your RDS / Aurora DB
 - **No SSH** available except on RDS Custom
 - **Audit Logs can be enabled** and sent to CloudWatch Logs for longer retention
-## Amazon RDS Proxy
-
-- Fully managed database proxy for RDS    
-- Pools and shares DB connections to reduce load on database resources    
-- Improves efficiency by lowering CPU/RAM pressure and avoiding excessive open connections    
-- Serverless, autoscaling, and Multi‑AZ for high availability    
-- Cuts RDS/Aurora failover time by up to **66%**    
-- Supports RDS (MySQL, PostgreSQL, MariaDB, SQL Server) and Aurora (MySQL, PostgreSQL)    
-- Works with most applications without code changes    
-- Enforces IAM authentication and stores credentials in Secrets Manager    
-- Never publicly accessible — must be accessed from within a VPC
-
-![](./assets/AWS_DB_RDS_Proxy.png "© Amazon AWS, [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)")
-
-<font color=#EBAC25><i>More info:</i></font> [Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.html)
 ## ElastiCache
 
 🏅 **Cloud Practitioner-level:** [ElastiCache]({{< ref "12-databases/#amazon-elasticache" >}})
