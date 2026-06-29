@@ -217,13 +217,13 @@ The primary and secondary records can route traffic to anything from an Amazon S
 - Health Check => Automated DNS Failover:
 	1. Health checks that monitor an endpoint (application, server, other AWS resource)
 	2. Health checks that monitor other health checks (Calculated Health Checks)
-	3. Health checks that monitor CloudWatch Alarms (full control !!) – e.g., throttles of DynamoDB, alarms on RDS, custom metrics, … (helpful for private resources)	
+	3. Health checks that monitor CloudWatch Alarms (full control!!) - e.g., throttles of DynamoDB, alarms on RDS, custom metrics, … (helpful for private resources)	
 - Health Checks are integrated with CloudWatch metrics
 ### Monitor an Endpoint
 
 - **About 15 global health checkers will check the endpoint health**
-	- Healthy/Unhealthy Threshold – 3 (default)
-	- Interval – 30 sec (can set to 10 sec – higher cost)
+	- Healthy/Unhealthy Threshold - 3 (default)
+	- Interval - 30 sec (can set to 10 sec - higher cost)
 	- Supported protocol: HTTP, HTTPS and TCP
 	- If > 18% of health checkers report the endpoint is healthy, Route 53 considers it Healthy. Otherwise, it’s Unhealthy
 - Health Checks pass only when the endpoint responds with the 2xx and 3xx status codes
