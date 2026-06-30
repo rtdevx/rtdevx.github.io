@@ -12,7 +12,6 @@ tags:
   - Capacity
   - EC2
   - analytics
-  - Snowball
 categories: AWS
 series: AWS Cloud Practitioner
 ---
