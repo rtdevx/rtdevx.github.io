@@ -183,7 +183,7 @@ This prevents:
 
 3. **It’s a core part of SQS‑based pipelines**
 
-<center><font color=#EB4925><b>Any long‑running job system using SQS must handle visibility timeout correctly.</b></font></center>
+<center>‼️<font color=#EB4925><b>Any long‑running job system using SQS must handle visibility timeout correctly.</b></font>‼️</center>
 
 ## Amazon Kinesis
 
