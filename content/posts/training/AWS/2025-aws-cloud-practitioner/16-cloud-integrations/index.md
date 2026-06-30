@@ -83,7 +83,7 @@ _Messages are processed in order by the consumer._
 
 - Consumers can wait for messages to arrive instead of returning immediately    
 - This is **Long Polling**, which reduces API calls and improves efficiency/latency    
-- Wait time ranges from **1–20 seconds** (20 seconds recommended)    
+- Wait time ranges from **1-20 seconds** (20 seconds recommended)    
 - Preferable to short polling
 ### SQS as a buffer to database writes
 
