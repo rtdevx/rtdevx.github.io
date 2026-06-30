@@ -75,6 +75,36 @@ You can bypass the TTL by issuing a **CloudFront invalidation**, refreshing spec
 	- built‑in DDoS protection via AWS Shield
 
 ℹ️ _Read More:_ [AWS Global Accelerator vs CloudFront]({{< ref "15-aws-global-infrastructure/#aws-global-accelerator-vs-cloudfront" >}})
+## CloudFront vs S3 CRR vs Global Accelerator
+
+|Feature / Purpose|**CloudFront**|**S3 Cross‑Region Replication (CRR)**|**AWS Global Accelerator**|
+|---|---|---|---|
+|**Primary Purpose**|Global content delivery (CDN)|Replicate S3 objects to another region|Global network routing acceleration|
+|**Optimises**|Latency for content delivery|Data durability, compliance, geo‑redundancy|Latency for TCP/UDP applications|
+|**Type of Service**|CDN (caches content at edge locations)|Storage replication feature|Networking acceleration service|
+|**Traffic Direction**|User → Edge → Origin|S3 bucket → S3 bucket|User → AWS edge → Application endpoint|
+|**Use Case**|Speed up static/dynamic content delivery|Keep copies of objects in multiple regions|Improve performance & availability of global apps|
+|**Data Movement**|No replication; caches objects temporarily|Permanent replication of objects|No replication; routes traffic over AWS backbone|
+|**Where Data Lives**|Cached at edge locations (temporary)|Stored in multiple S3 buckets (permanent)|Data stays in your app; only routing changes|
+|**Supports Dynamic Content**|Yes|No|Yes|
+|**Supports Static Content**|Yes|Yes|Yes (via routing)|
+|**Improves Availability**|Yes (edge caching + failover)|Yes (multi‑region copies)|Yes (automatic failover between endpoints)|
+|**Improves Durability**|No|Yes (multi‑region storage)|No|
+|**Security Integration**|WAF, Shield, OAC/OAI|Bucket policies, IAM, KMS|WAF (via CloudFront), Shield Advanced|
+|**Typical Use Cases**|Websites, APIs, media streaming|Compliance, DR, multi‑region apps|Global apps needing low latency (gaming, SaaS, APIs)|
+|**Pricing Model**|Data transfer + requests|Replication + storage + PUT costs|Fixed hourly + data transfer acceleration|
+
+### CloudFront
+
+> “Make content fast for users anywhere in the world by caching it close to them.”
+
+### S3 Cross‑Region Replication
+
+> “Keep permanent copies of S3 objects in another region for compliance, DR, or multi‑region apps.”
+
+### AWS Global Accelerator
+
+> “Speed up global user traffic by routing it over AWS’s private backbone instead of the public internet.”
 
 ---
 ## >> Sources <<

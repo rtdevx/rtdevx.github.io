@@ -12,6 +12,7 @@ tags:
   - S3
   - Cache
   - CDN
+  - DDoS
 categories: AWS
 series: AWS Cloud Practitioner
 ---
