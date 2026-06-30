@@ -15,6 +15,8 @@ tags:
   - hosting
   - Costs
   - compliance
+  - KMS
+  - encryption
 categories:
   - AWS
 series: AWS Solution Architect
@@ -267,7 +269,7 @@ The log format is documented by AWS: [Amazon S3 server access log format - Amazo
 
 - Implements a **WORM (Write Once, Read Many)** model for immutable data    
 - You create a **Vault Lock policy** and then **lock** it so it cannot be changed or deleted    
-- <font color=#EBAC25>Ensures strong compliance and long‑term data retention guarantees</font>
+- <font color=#C7EB25>Ensures strong compliance and long‑term data retention guarantees</font>
 ### Object Lock
 
 - Enforces a **WORM (Write Once, Read Many)** model to prevent object version deletion    
