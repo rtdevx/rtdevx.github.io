@@ -280,7 +280,7 @@ The log format is documented by AWS: [Amazon S3 server access log format - Amazo
     - Can be added or removed with the `s3:PutObjectLegalHold` permission
 ### Access Points
 
-- Access Points simplify security management for S3 Buckets
+- Access Points <font color=#EBAC25>simplify security management for S3 Buckets</font>
 - Each Access Point has:
 	- its own DNS name (Internet Origin or VPC Origin)
 	- an access point policy (similar to bucket policy) – manage security at scale
