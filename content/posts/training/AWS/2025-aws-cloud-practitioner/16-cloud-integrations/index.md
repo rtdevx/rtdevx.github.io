@@ -138,6 +138,7 @@ flowchart TD
         WorkerPoll[Worker polls SQS]
         WorkerDownload[Worker downloads video]
         WorkerProcess[Worker processes video]
+        Visibility[Worker extends visibility timeout during long processing]
     end
 
     User --> S3Upload
@@ -145,6 +146,7 @@ flowchart TD
     SQSMsg --> WorkerPoll
     WorkerPoll --> WorkerDownload
     WorkerDownload --> WorkerProcess
+    WorkerProcess --> Visibility
     WorkerProcess --> S3Output
 
 {{< /mermaid >}}
