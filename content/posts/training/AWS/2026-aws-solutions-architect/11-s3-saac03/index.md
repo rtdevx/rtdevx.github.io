@@ -14,6 +14,7 @@ tags:
   - analytics
   - hosting
   - Costs
+  - compliance
 categories:
   - AWS
 series: AWS Solution Architect
@@ -266,15 +267,15 @@ The log format is documented by AWS: [Amazon S3 server access log format - Amazo
 
 - Implements a **WORM (Write Once, Read Many)** model for immutable data    
 - You create a **Vault Lock policy** and then **lock** it so it cannot be changed or deleted    
-- Ensures strong compliance and long‑term data retention guarantees
+- <font color=#EBAC25>Ensures strong compliance and long‑term data retention guarantees</font>
 ### Object Lock
 
 - Enforces a **WORM (Write Once, Read Many)** model to prevent object version deletion    
-- **Retention modes:**    
+- <font color=#EBAC25>Retention modes:</font>    
     - **Compliance:** No one (not even root) can delete or shorten retention; fully immutable        
     - **Governance:** Most users are blocked, but privileged users can modify retention or delete   
-- **Retention period:** Protects an object for a fixed time; can only be extended    
-- **Legal Hold:**    
+- <font color=#EBAC25>Retention period:</font> Protects an object for a fixed time; can only be extended    
+- <font color=#EBAC25>Legal Hold:</font>
     - Protects an object indefinitely, independent of retention        
     - Can be added or removed with the `s3:PutObjectLegalHold` permission
 ### Access Points
