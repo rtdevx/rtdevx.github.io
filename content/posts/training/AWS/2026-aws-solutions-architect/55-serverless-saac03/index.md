@@ -265,11 +265,11 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
     - Cross‑region replication        
     - **Invoking Lambda** whenever your table changes
 
-| DynamoDB Streams                                                      | Kinesis Data Streams (newer)                                                                    |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| 24 hours retention                                                    | 1 year retention                                                                                |
-| Limited no. of consumers                                              | High no. of consumers                                                                           |
-| Process using AWS Lambda Triggers, or DynamoDB Stream Kinesis adapter | Process using AWS Lambda, Kinesis Data Analytics, Kineis Data Firehose, AWS Glue Streaming ETL… |
+| DynamoDB Streams                                                                                                                         | [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Data Streams (newer)                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 24 hours retention                                                                                                                       | 1 year retention                                                                                                                                                   |
+| Limited no. of consumers                                                                                                                 | High no. of consumers                                                                                                                                              |
+| Process using AWS Lambda Triggers, or DynamoDB Stream [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) adapter | Process using AWS Lambda, [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Data Analytics, Kineis Data Firehose, AWS Glue Streaming ETL… |
 
 ### DynamoDB Global Tables
 
