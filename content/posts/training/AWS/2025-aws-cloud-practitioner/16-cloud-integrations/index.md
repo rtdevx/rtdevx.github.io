@@ -92,6 +92,59 @@ _Messages are processed in order by the consumer._
 
 ![](./assets/AWS_SQS_Decouple_App_Tiers.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
+{{< alert "lightbulb" >}}
+
+🙋🏻 _Question:_ What SQS messages are exactly? For example - when processing video (relatively large file) between Front End -> SQS -> Back End - how SQS would be involved in this? Would it transfer the (large) file for example?
+
+An SQS message is **small metadata**, typically:
+
+- a file name    
+- a file path    
+- an S3 object key    
+- a job ID    
+- a JSON payload describing work to do    
+- a pointer to where the real data lives
+
+<font color=#EBAC25>Maximum SQS message size: 256 KB</font>.
+
+🙋🏻 _Question:_ How SQS fits into a video‑processing pipeline - as an example?
+
+{{< mermaid >}}
+
+flowchart LR
+
+    subgraph FE["Front End / Client"]
+        U["User uploads video"]
+    end
+
+    subgraph S3["Amazon S3"]
+        Upload["Video stored in S3 bucket"]
+    end
+
+    subgraph SQS["Amazon SQS Queue"]
+        Msg["Message containing metadata:\n- bucket\n- object key\n- job type\n- parameters"]
+    end
+
+    subgraph BE["Backend Worker / Processor"]
+        Worker["Worker polls SQS\nDownloads video from S3\nProcesses/transcodes\nUploads output to S3"]
+    end
+
+    subgraph OUT["Output Storage"]
+        Result["Processed video stored in S3"]
+    end
+
+    U -->|Upload video| Upload
+    Upload -->|Send SQS message\n(pointer only)| Msg
+    Msg -->|Worker receives message| Worker
+    Worker -->|Download video| Upload
+    Worker -->|Upload processed video| Result
+
+{{< /mermaid >}}
+
+- **SQS messages are small. They never contain large files.** 
+- **SQS is used to send** _**instructions**_ **or** _**pointers**_ **to where the real data lives (usually S3).**
+
+{{< /alert >}}
 ## Amazon Kinesis
 
 🏅 **Solutions Architect Associate level extension:** [Kinesis - SAAC03]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}).
