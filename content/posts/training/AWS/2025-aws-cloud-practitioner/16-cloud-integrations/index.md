@@ -121,34 +121,31 @@ An SQS message is **small metadata**, typically:
 
 flowchart TD
 
-    subgraph FE[Front End]
-        U[User uploads video]
+    subgraph FrontEnd
+        User[User uploads video]
     end
 
-    subgraph S3[S3 Storage]
-        S3Obj[Video stored in S3]
+    subgraph Storage
+        S3Upload[Video stored in S3]
+        S3Output[Processed video stored in S3]
     end
 
-    subgraph SQ[SQS Queue]
-        Q[SQS message with metadata]
+    subgraph Queue
+        SQSMsg[SQS message with metadata]
     end
 
-    subgraph BE[Backend Worker]
-        W[Worker polls SQS]
-        D[Downloads video from S3]
-        P[Processes/transcodes video]
+    subgraph Backend
+        WorkerPoll[Worker polls SQS]
+        WorkerDownload[Worker downloads video]
+        WorkerProcess[Worker processes video]
     end
 
-    subgraph OUT[Output]
-        O[Processed video stored in S3]
-    end
-
-    U --> S3Obj
-    S3Obj --> Q
-    Q --> W
-    W --> D
-    D --> P
-    P --> O
+    User --> S3Upload
+    S3Upload --> SQSMsg
+    SQSMsg --> WorkerPoll
+    WorkerPoll --> WorkerDownload
+    WorkerDownload --> WorkerProcess
+    WorkerProcess --> S3Output
 
 {{< /mermaid >}}
 ## Amazon Kinesis
