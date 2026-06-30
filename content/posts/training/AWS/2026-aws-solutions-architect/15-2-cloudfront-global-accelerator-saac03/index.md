@@ -34,7 +34,7 @@ series: AWS Solution Architect
 
 {{< alert "circle-info" >}}
 
-**CloudFront** can use **private VPC resources as origins**, letting you serve content from applications in private subnets without exposing them publicly - including private **ALBs**, **NLBs**, or **EC2 instances**.
+**CloudFront** can use **private VPC resources as origins**, <font color=#EB4925>letting you serve content from applications in private subnets without exposing them publicly</font> - including private **ALBs**, **NLBs**, or **EC2 instances**.
 
 {{< /alert >}}
 ### ALB or EC2 as an origin (Public Network)
