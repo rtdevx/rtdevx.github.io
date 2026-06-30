@@ -119,7 +119,7 @@ An SQS message is **small metadata**, typically:
 
 {{< mermaid >}}
 
-flowchart LR
+flowchart TD
 
     subgraph FE[Front End]
         U[User uploads video]
