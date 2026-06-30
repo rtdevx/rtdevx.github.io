@@ -144,8 +144,8 @@ flowchart LR
 
 {{< /mermaid >}}
 
-- **SQS messages are small. They never contain large files.** 
-- **SQS is used to send** _**instructions**_ **or** _**pointers**_ **to where the real data lives (usually S3).**
+- **SQS messages are small** (<font color=#EBAC25>MAX 256 KB</font>). They never contain large files.
+- **SQS is used to send** _**instructions**_ **or** _**pointers**_ **to where the real data lives** (usually S3).
 - **SQS never moves the video.** 
 	- **S3 stores the video.** 
 	- **SQS tells the backend** _**which**_ **video to process and** _**what**_ **to do with it.**
