@@ -113,31 +113,34 @@ An SQS message is **small metadata**, typically:
 
 flowchart LR
 
-    subgraph FE["Front End / Client"]
-        U["User uploads video"]
+    subgraph FE[Front End]
+        U[User uploads video]
     end
 
-    subgraph S3["Amazon S3"]
-        Upload["Video stored in S3 bucket"]
+    subgraph S3[S3 Storage]
+        S3Obj[Video stored in S3]
     end
 
-    subgraph SQS["Amazon SQS Queue"]
-        Msg["Message containing metadata:\n- bucket\n- object key\n- job type\n- parameters"]
+    subgraph SQ[SQS Queue]
+        Q[SQS message with metadata]
     end
 
-    subgraph BE["Backend Worker / Processor"]
-        Worker["Worker polls SQS\nDownloads video from S3\nProcesses/transcodes\nUploads output to S3"]
+    subgraph BE[Backend Worker]
+        W[Worker polls SQS]
+        D[Downloads video from S3]
+        P[Processes/transcodes video]
     end
 
-    subgraph OUT["Output Storage"]
-        Result["Processed video stored in S3"]
+    subgraph OUT[Output]
+        O[Processed video stored in S3]
     end
 
-    U -->|Upload video| Upload
-    Upload -->|Send SQS message\n(pointer only)| Msg
-    Msg -->|Worker receives message| Worker
-    Worker -->|Download video| Upload
-    Worker -->|Upload processed video| Result
+    U --> S3Obj
+    S3Obj --> Q
+    Q --> W
+    W --> D
+    D --> P
+    P --> O
 
 {{< /mermaid >}}
 
