@@ -156,7 +156,8 @@ flowchart TD
 
 {{< lead >}}
 
-<center><font color=#EB4925>IMPORTANT</font></center>
+<center><font color=#EB4925>IMPORTANT!</font></center>
+<center><small>⬇️⬇️⬇️</small></center>
 
 {{< /lead >}}
 
