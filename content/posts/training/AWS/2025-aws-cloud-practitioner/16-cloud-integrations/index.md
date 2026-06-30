@@ -85,6 +85,9 @@ _Messages are processed in order by the consumer._
 - This is **Long Polling**, which reduces API calls and improves efficiency/latency    
 - Wait time ranges from **1-20 seconds** (20 seconds recommended)    
 - Preferable to short polling
+### SQS with ASG
+
+![](./assets/AWS_SQS_with_ASG.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### SQS as a buffer to database writes
 
 ![](./assets/AWS_SQS_DB_Buffer.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
@@ -183,8 +186,9 @@ This prevents:
 
 3. **It’s a core part of SQS‑based pipelines**
 
-<center>‼️<font color=#EB4925><b>Any long‑running job system using SQS must handle visibility timeout correctly.</b></font>‼️</center>
+<center><font color=#EB4925><b>Any long‑running job system using SQS must handle visibility timeout correctly.</b></font></center>
 
+<font color=#EBAC25><i>More info:</i></font> [Visibility Timeout]({{< ref "16-cloud-integrations/#sqs---message-visibility-timeout" >}})
 ## Amazon Kinesis
 
 🏅 **Solutions Architect Associate level extension:** [Kinesis - SAAC03]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}).
