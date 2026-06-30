@@ -9,6 +9,7 @@ tags:
   - SQS
   - SNS
   - MQ
+  - Kinesis
 categories: AWS
 series: AWS Cloud Practitioner
 ---

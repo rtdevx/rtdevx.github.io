@@ -8,6 +8,7 @@ tags:
   - SAA-C03
   - database
   - analytics
+  - Kinesis
 categories:
   - AWS
 series: AWS Solution Architect

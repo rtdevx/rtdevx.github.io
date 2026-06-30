@@ -19,6 +19,7 @@ tags:
   - Fargate
   - Cache
   - analytics
+  - Kinesis
 categories:
   - AWS
   - Containers

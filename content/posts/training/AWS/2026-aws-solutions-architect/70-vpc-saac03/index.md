@@ -7,6 +7,7 @@ draft: false
 tags:
   - SAA-C03
   - VPC
+  - Kinesis
 categories:
   - AWS
   - Networking

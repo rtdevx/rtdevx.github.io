@@ -10,6 +10,7 @@ tags:
   - SAA-C03
   - monitoring
   - CloudWatch
+  - Kinesis
 categories:
   - AWS
 series: AWS Solution Architect
