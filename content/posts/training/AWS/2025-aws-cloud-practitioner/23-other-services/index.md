@@ -76,7 +76,9 @@ Quickly and easily recover physical, virtual and cloud-based servers into AWS.
 ![](./assets/AWS_DRS.png)
 ## AWS DataSync
 
-Move large amount of data from on-premises to AWS.
+Move large amount of data from:
+- On-premises / other cloud to AWS (NFS, SMB, HDFS, S3 API…) - <font color=#EB4925>needs an agent</font>
+- AWS to AWS (different storage services) - <font color=#C7EB25>no agent required</font>
 
 - Can synchronize to: 
 	- Amazon S3 (any storage classes - including Glacier)
@@ -84,6 +86,7 @@ Move large amount of data from on-premises to AWS.
 	- Amazon FSx for Windows
 - Replication tasks can be scheduled hourly, daily, weekly
 - The replication tasks are <font color=#EB4925>incremental</font> after the first full load
+- <font color=#EBAC25>File permissions and metadata are preserved</font> (NFS POSIX, SMB…)
 ## Cloud Migration Strategies - the 7Rs
 
 ![](./assets/AWS_Cloud_Migration_Strategy.png)
