@@ -39,7 +39,7 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 ### CloudWatch Metric Streams
 
 - Continuously streams CloudWatch metrics to your chosen destination with **low‑latency, near‑real‑time** delivery    
-- Supports Kinesis Data Firehose targets and third‑party tools like **Datadog, Dynatrace, New Relic, Splunk, Sumo Logic**    
+- Supports [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Data Firehose targets and third‑party tools like **Datadog, Dynatrace, New Relic, Splunk, Sumo Logic**    
 - You can **filter** which metrics are streamed to control volume and cost
 
 ![](./assets/AWS_Monitoring_CloudWatch_Metric_Streams.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
@@ -49,8 +49,8 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 - Supports configurable **retention policies** (from 1 day to 10 years, or never expire)    
 - Logs can be sent to:
 	- [S3]({{< ref "tags/s3" >}})
-	- Kinesis Data Streams
-	- Kinesis Firehose
+	- [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Data Streams
+	- [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Firehose
 	- [Lambda]({{< ref "tags/lambda" >}})
 	- OpenSearch
 - Logs are encrypted by default
@@ -85,7 +85,7 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 ### CloudWatch Logs Subscriptions
 
 - Streams **real‑time log events** from CloudWatch Logs for processing and analysis    
-- Can deliver logs to **Kinesis Data Streams**, **Kinesis Firehose**, or **Lambda**    
+- Can deliver logs to [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Data Streams, **Kinesis Firehose**, or **Lambda**    
 - Uses **subscription filters** to control which log events are forwarded
 
 ![](./assets/AWS_Monitoring_Logs_Subscriptions.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")

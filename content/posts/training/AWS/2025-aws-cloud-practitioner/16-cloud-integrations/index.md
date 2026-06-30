@@ -93,6 +93,7 @@ _Messages are processed in order by the consumer._
 
 ## Amazon Kinesis
 
+🏅 **Solutions Architect Associate level extension:** [Kinesis - SAAC03]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}).
 ##### <font color=#EBAC25>Kinesis</font> = real-time big data streaming.
 
 Managed service to collect, process and analyze real-time streaming data at any scale.

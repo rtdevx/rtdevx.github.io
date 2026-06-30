@@ -104,8 +104,8 @@ JOIN orders ON users.user_id = orders.user_id;
 - Can act as a key/value store (e.g., session data) with **TTL**    
 - Highly available, Multi‑AZ by default; supports **transactions** and decoupled read/write paths    
 - **DAX** adds microsecond‑latency read caching    
-- Security, auth, and access control handled entirely through **IAM**    
-- **DynamoDB Streams** enable event‑driven processing via Lambda or Kinesis    
+- Security, auth, and access control handled entirely through [IAM]({{< ref "tags/iam" >}})    
+- **DynamoDB Streams** enable event‑driven processing via [Lambda]({{< ref "tags/lambda" >}}) or [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}})    
 - **Global Tables** provide active‑active multi‑region replication    
 - Backups: **PITR** (35 days) and on‑demand snapshots; restores create a new table    
 - **Export to S3** (no RCUs) and **import from S3** (no WCUs)    
@@ -205,7 +205,7 @@ You can configure **Amazon Redshift** to **automatically copy snapshots** (autom
 - Complements other databases (e.g., DynamoDB) by enabling rich search beyond key/index lookups    
 - Available as **managed** or **serverless** clusters    
 - SQL support is optional via a plugin    
-- Ingests data from **Kinesis Firehose**, AWS IoT, and CloudWatch Logs    
+- Ingests data from [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Firehose, AWS IoT, and CloudWatch Logs    
 - Security via **Cognito**, IAM, KMS encryption, and TLS    
 - Includes **OpenSearch Dashboards** for visualisation
 ### Amazon EMR
@@ -234,7 +234,7 @@ You can configure **Amazon Redshift** to **automatically copy snapshots** (autom
 - **Glue Job Bookmarks:** prevent re-processing old data
 - **Glue DataBrew:** clean and normalize data using pre-built transformation
 - **Glue Studio:** new GUI to create, run and monitor ETL jobs in Glue
-- **Glue Streaming ETL** (built on Apache Spark Structured Streaming): compatible with Kinesis Data Streaming, Kafka, MSK (managed Kafka)
+- **Glue Streaming ETL** (built on Apache Spark Structured Streaming): compatible with [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Data Streaming, Kafka, MSK (managed Kafka)
 
 {{< /alert >}}
 #### AWS Lake Formation
