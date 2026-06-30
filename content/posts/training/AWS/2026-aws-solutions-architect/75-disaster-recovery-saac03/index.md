@@ -12,6 +12,7 @@ tags:
   - storage
   - S3
   - Capacity
+  - Snowball
 categories:
   - AWS
 series: AWS Solution Architect

@@ -13,6 +13,7 @@ tags:
   - BigData
   - analytics
   - hosting
+  - Snowball
 categories: AWS
 series: AWS Cloud Practitioner
 ---
