@@ -113,31 +113,17 @@ An SQS message is **small metadata**, typically:
 
 flowchart LR
 
-    subgraph FrontEnd
-        User[User uploads video]
-    end
+    User[User uploads video] --> S3Upload[Video stored in S3]
 
-    subgraph Storage
-        S3Upload[Video stored in S3]
-        S3Output[Processed video stored in S3]
-    end
+    S3Upload --> SQSMsg[SQS message created with metadata]
 
-    subgraph Queue
-        SQSMsg[SQS message with metadata]
-    end
+    SQSMsg --> WorkerPoll[Worker polls SQS]
 
-    subgraph Backend
-        WorkerPoll[Worker polls SQS]
-        WorkerDownload[Worker downloads video]
-        WorkerProcess[Worker processes video]
-    end
+    WorkerPoll --> WorkerDownload[Worker downloads video from S3]
 
-    User --> S3Upload
-    S3Upload --> SQSMsg
-    SQSMsg --> WorkerPoll
-    WorkerPoll --> WorkerDownload
-    WorkerDownload --> WorkerProcess
-    WorkerProcess --> S3Output
+    WorkerDownload --> WorkerProcess[Worker processes or transcodes video]
+
+    WorkerProcess --> S3Output[Processed video stored in S3]
 
 {{< /mermaid >}}
 
