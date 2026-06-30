@@ -10,6 +10,7 @@ tags:
   - ASG
   - HighAvailability
   - LoadBalancing
+  - hosting
 categories: AWS
 series: AWS Cloud Practitioner
 ---
