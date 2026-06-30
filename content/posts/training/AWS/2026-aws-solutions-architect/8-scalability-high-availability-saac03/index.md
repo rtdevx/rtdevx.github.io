@@ -14,6 +14,7 @@ tags:
   - Capacity
   - TLS
   - Cache
+  - hosting
 categories:
   - AWS
 series: AWS Solution Architect
