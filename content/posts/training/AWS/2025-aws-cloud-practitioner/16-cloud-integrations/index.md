@@ -52,7 +52,7 @@ _Messages are processed in order by the consumer._
 
 - Messages are processed in order by the consumer
 - Ordering by Message Group ID (all messages in the same group are ordered) – mandatory parameter
-### SQS – Consuming Messages
+### SQS - Consuming Messages
 
 - Consumers (running on EC2 instances, servers, or AWS Lambda)…
 - Poll SQS for messages (receive up to 10 messages at a time)
@@ -68,7 +68,7 @@ _Messages are processed in order by the consumer._
     - IAM policies govern who can call SQS APIs        
     - SQS access policies (like S3 bucket policies) enable cross‑account access        
     - Useful for allowing services such as SNS or S3 to send messages to a queue
-### SQS – Message Visibility Timeout
+### SQS - Message Visibility Timeout
 
 - Once a consumer reads a message, it becomes invisible to others    
 - Default visibility timeout is **30 seconds** - the window to finish processing    
