@@ -121,33 +121,66 @@ An SQS message is **small metadata**, typically:
 
 flowchart TD
 
+    subgraph FrontEnd
+        User[User uploads video]
+    end
+
+    subgraph Storage
+        S3Upload[Video stored in S3]
+        S3Output[Processed video stored in S3]
+    end
+
     subgraph Queue
-        Msg[SQS message with video metadata]
+        SQSMsg[SQS message with metadata]
     end
 
-    subgraph Workers
-        W1[Worker A polls message]
-        W2[Worker B polls queue]
+    subgraph Backend
+        WorkerPoll[Worker polls SQS]
+        WorkerDownload[Worker downloads video]
+        WorkerProcess[Worker processes video]
+        Visibility[Worker extends visibility timeout during long processing]
     end
 
-    subgraph Processing
-        W1Download[Worker A downloads video]
-        W1Process[Worker A processes video]
-        W1Extend[Worker A extends visibility timeout]
-        W1Complete[Worker A finishes and deletes message]
-    end
-
-    Msg --> W1
-    Msg --> W2
-
-    W1 --> W1Download
-    W1Download --> W1Process
-    W1Process --> W1Extend
-    W1Process --> W1Complete
-
-    W2 -->|Message hidden\ncannot receive| W2
+    User --> S3Upload
+    S3Upload --> SQSMsg
+    SQSMsg --> WorkerPoll
+    WorkerPoll --> WorkerDownload
+    WorkerDownload --> WorkerProcess
+    WorkerProcess --> Visibility
+    WorkerProcess --> S3Output
 
 {{< /mermaid >}}
+
+ℹ️ _Note:_ [Worker extends visibility timeout during long processing]({{< ref "16-cloud-integrations/#sqs---message-visibility-timeout" >}}) was described earlier. Explainer:
+
+1. **Video processing is long‑running**
+
+Transcoding a video can take:
+- minutes    
+- tens of minutes    
+- sometimes hours    
+
+Default SQS visibility timeout is **30 seconds**, which is nowhere near enough.
+
+2. **Workers must extend visibility timeout**
+
+Workers typically call:
+
+```
+ChangeMessageVisibility
+```
+
+to extend the timeout periodically while processing.
+
+This prevents:
+- **another worker** from picking up the same message    
+- **duplicate processing**    
+- **corrupted output**    
+- **race conditions**
+
+3. **It’s a core part of SQS‑based pipelines**
+
+<center><font color=#EB4925><b>Any long‑running job system using SQS must handle visibility timeout correctly.</b></font></center>
 ## Amazon Kinesis
 
 🏅 **Solutions Architect Associate level extension:** [Kinesis - SAAC03]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}).
