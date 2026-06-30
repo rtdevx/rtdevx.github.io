@@ -94,15 +94,15 @@ You can bypass the TTL by issuing a **CloudFront invalidation**, refreshing spec
 |**Typical Use Cases**|Websites, APIs, media streaming|Compliance, DR, multi‑region apps|Global apps needing low latency (gaming, SaaS, APIs)|
 |**Pricing Model**|Data transfer + requests|Replication + storage + PUT costs|Fixed hourly + data transfer acceleration|
 
-### CloudFront
+**CloudFront**
 
 > Make content fast for users anywhere in the world by caching it close to them.
 
-### S3 Cross‑Region Replication
+**S3 Cross‑Region Replication**
 
 > Keep permanent copies of S3 objects in another region for compliance, DR, or multi‑region apps.
 
-### AWS Global Accelerator
+**AWS Global Accelerator**
 
 > Speed up global user traffic by routing it over AWS’s private backbone instead of the public internet.
 
