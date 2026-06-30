@@ -121,33 +121,31 @@ An SQS message is **small metadata**, typically:
 
 flowchart TD
 
-    subgraph FrontEnd
-        User[User uploads video]
-    end
-
-    subgraph Storage
-        S3Upload[Video stored in S3]
-        S3Output[Processed video stored in S3]
-    end
-
     subgraph Queue
-        SQSMsg[SQS message with metadata]
+        Msg[SQS message with video metadata]
     end
 
-    subgraph Backend
-        WorkerPoll[Worker polls SQS]
-        WorkerDownload[Worker downloads video]
-        WorkerProcess[Worker processes video]
-        Visibility[Worker extends visibility timeout during long processing]
+    subgraph Workers
+        W1[Worker A polls message]
+        W2[Worker B polls queue]
     end
 
-    User --> S3Upload
-    S3Upload --> SQSMsg
-    SQSMsg --> WorkerPoll
-    WorkerPoll --> WorkerDownload
-    WorkerDownload --> WorkerProcess
-    WorkerProcess --> Visibility
-    WorkerProcess --> S3Output
+    subgraph Processing
+        W1Download[Worker A downloads video]
+        W1Process[Worker A processes video]
+        W1Extend[Worker A extends visibility timeout]
+        W1Complete[Worker A finishes and deletes message]
+    end
+
+    Msg --> W1
+    Msg --> W2
+
+    W1 --> W1Download
+    W1Download --> W1Process
+    W1Process --> W1Extend
+    W1Process --> W1Complete
+
+    W2 -->|Message hidden\ncannot receive| W2
 
 {{< /mermaid >}}
 ## Amazon Kinesis
