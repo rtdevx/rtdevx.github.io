@@ -151,18 +151,21 @@ flowchart TD
 
 {{< /mermaid >}}
 
-ℹ️ _Note:_ [Worker extends visibility timeout during long processing]({{< ref "16-cloud-integrations/#sqs---message-visibility-timeout" >}}) was described earlier. Explainer:
+{{< lead >}}
+
+<center><font color=#EB4925>IMPORTANT</font></center>
+
+{{< /lead >}}
+
+‼️ _Note:_ [Worker extends visibility timeout during long processing]({{< ref "16-cloud-integrations/#sqs---message-visibility-timeout" >}}) was described earlier. Explainer:
 
 1. **Video processing is long‑running**
 
-Transcoding a video can take:
-- minutes    
-- tens of minutes    
-- sometimes hours    
+Transcoding a video can take minutes / tens of minutes / sometimes hours.
 
 Default SQS visibility timeout is **30 seconds**, which is nowhere near enough.
 
-2. **Workers must extend visibility timeout**
+2. **Workers must extend [visibility timeout]({{< ref "16-cloud-integrations/#sqs---message-visibility-timeout" >}})**
 
 Workers typically call:
 
@@ -181,6 +184,7 @@ This prevents:
 3. **It’s a core part of SQS‑based pipelines**
 
 <center><font color=#EB4925><b>Any long‑running job system using SQS must handle visibility timeout correctly.</b></font></center>
+
 ## Amazon Kinesis
 
 🏅 **Solutions Architect Associate level extension:** [Kinesis - SAAC03]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}).
