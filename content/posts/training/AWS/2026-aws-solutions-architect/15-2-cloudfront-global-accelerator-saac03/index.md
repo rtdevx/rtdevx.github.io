@@ -49,7 +49,7 @@ You can <font color=#C7EB25>allow traffic only from approved countries</font> or
 
 {{< alert "circle-info" >}}
 
-When your origin content changes, CloudFront won’t fetch the new version until the cached object’s **TTL expires**. 
+<font color=#EBAC25>When your origin content changes, CloudFront won’t fetch the new version until the cached object’s TTL expires</font>. 
 
 You can bypass the TTL by issuing a **CloudFront invalidation**, refreshing specific paths (e.g., `/index.html`, `/images/*`) or even all files (`*`).
 
