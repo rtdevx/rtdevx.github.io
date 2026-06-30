@@ -105,27 +105,7 @@ An SQS message is **small metadata**, typically:
 - a JSON payload describing work to do    
 - a pointer to where the real data lives
 
-<font color=#EBAC25>Maximum SQS message size: 256 KB</font>.
-
 🙋🏻 _Question:_ How SQS fits into a video‑processing pipeline - as an example?
-
-{{< mermaid >}}
-
-flowchart LR
-
-    User[User uploads video] --> S3Upload[Video stored in S3]
-
-    S3Upload --> SQSMsg[SQS message created with metadata]
-
-    SQSMsg --> WorkerPoll[Worker polls SQS]
-
-    WorkerPoll --> WorkerDownload[Worker downloads video from S3]
-
-    WorkerDownload --> WorkerProcess[Worker processes or transcodes video]
-
-    WorkerProcess --> S3Output[Processed video stored in S3]
-
-{{< /mermaid >}}
 
 - **SQS messages are small** (<font color=#EBAC25>MAX 256 KB</font>). They never contain large files.
 - **SQS is used to send** _**instructions**_ **or** _**pointers**_ **to where the real data lives** (usually S3).
@@ -134,6 +114,38 @@ flowchart LR
 	- **SQS tells the backend** _**which**_ **video to process and** _**what**_ **to do with it.**
 
 {{< /alert >}}
+
+{{< mermaid >}}
+
+flowchart LR
+
+    subgraph FE["Front End / Client"]
+        U["User uploads video"]
+    end
+
+    subgraph S3["Amazon S3"]
+        Upload["Video stored in S3 bucket"]
+    end
+
+    subgraph SQS["Amazon SQS Queue"]
+        Msg["Message containing metadata:\n- bucket\n- object key\n- job type\n- parameters"]
+    end
+
+    subgraph BE["Backend Worker / Processor"]
+        Worker["Worker polls SQS\nDownloads video from S3\nProcesses/transcodes\nUploads output to S3"]
+    end
+
+    subgraph OUT["Output Storage"]
+        Result["Processed video stored in S3"]
+    end
+
+    U -->|Upload video| Upload
+    Upload -->|Send SQS message\n(pointer only)| Msg
+    Msg -->|Worker receives message| Worker
+    Worker -->|Download video| Upload
+    Worker -->|Upload processed video| Result
+
+{{< /mermaid >}}
 ## Amazon Kinesis
 
 🏅 **Solutions Architect Associate level extension:** [Kinesis - SAAC03]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}).
