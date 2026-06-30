@@ -144,9 +144,9 @@ Rules can be created for certain objects Tags (<font color=#EBAC25>example:</fon
 
 {{< alert "circle-info" >}}
 
-- **SSE‑S3** → AWS owns and manages everything
-- **SSE‑KMS** → AWS KMS manages keys, but you can own them and enforce strict controls
-- **SSE‑C** → You own the keys entirely and provide them with every request
+- **SSE‑S3** → <font color=#EB4925>AWS owns and manages everything</font>
+- **SSE‑KMS** → <font color=#EBAC25>AWS KMS manages keys, but you can own them and enforce strict controls</font>
+- **SSE‑C** → <font color=#C7EB25>You own the keys entirely and provide them with every request</font>
 
 {{< /alert >}}
 
