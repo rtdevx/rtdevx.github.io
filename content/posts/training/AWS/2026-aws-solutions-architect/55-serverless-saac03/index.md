@@ -207,11 +207,11 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 - User Tracking and Analytics
 ### Lambda Deployments
 
-- By default, Lambda runs **outside your VPC** in an AWS‑managed VPC    
-- Because of this, it **cannot directly reach private resources** in your VPC such as RDS, ElastiCache, or internal load balancers
+- By default, <font color=#EBAC25>Lambda runs outside your VPC in an AWS‑managed VPC</font>
+- Because of this, it <font color=#EB4925>cannot directly reach private resources in your VPC</font> such as RDS, ElastiCache, or internal load balancers
 #### Lambda in VPC
 
-- You must define the VPC ID, the Subnets and the Security Groups
+- <font color=#EBAC25>You must define the VPC ID, the Subnets and the Security Groups</font>
 - Lambda will create an ENI (Elastic Network Interface) in your subnets
 
 ![](./assets/AWS_Lambda_in_VPC.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
