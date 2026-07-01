@@ -248,7 +248,7 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 - **Provisioned mode (default):**    
     - You set the number of reads/writes per second        
     - Requires capacity planning        
-    - Billed by **RCUs** and **WCUs**        
+    - Billed by **RCUs** (Read Capacity Unit) and **WCUs** (Write Capacity Unit)
     - Can enable **auto‑scaling** to adjust capacity automatically        
 - **On‑Demand mode:**    
     - Scales read/write capacity automatically with traffic        
@@ -258,9 +258,9 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 ### DynamoDB Accelerator (DAX)
 
 - Fully managed, highly available **in‑memory cache** for DynamoDB    
-- Reduces read load by serving cached results    
+- <font color=#C7EB25>Reduces read load by serving cached results</font>    
 - Provides **microsecond‑level latency** for cached reads    
-- Works with existing DynamoDB APIs, so **no application changes** required    
+- Works with existing DynamoDB APIs, so <font color=#C7EB25>no application changes required</font>    
 - Default cache TTL is **5 minutes**
 ### Stream Processing
 
