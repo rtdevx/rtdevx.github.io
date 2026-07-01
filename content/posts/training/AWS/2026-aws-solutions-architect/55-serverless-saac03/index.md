@@ -48,7 +48,13 @@ series: AWS Solution Architect
 - Step Functions
 - Fargate
 
-ℹ️ _Note:_ 
+{{< lead >}}
+
+<center><font color=#EB4925><b>IMPORTANT</b></font></center>
+<center><small><small>⬇️⬇️⬇️</small></small></center>
+
+{{< /lead >}}
+
 - [AWS SNS & SQS]({{< ref "16-cloud-integrations" >}}) was covered in [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 - [Amazon S3]({{< ref "tags/s3" >}})
 ## AWS Lambda
