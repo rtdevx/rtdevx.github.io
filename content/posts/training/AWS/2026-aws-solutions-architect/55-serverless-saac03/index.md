@@ -311,7 +311,7 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 
 {{< lead >}}
 
-**API Gateway** is used to provide a secure, scalable, managed front door for HTTP, REST, and WebSocket APIs that **connect clients to backend services without exposing those services directly.**
+**API Gateway** is used to provide a secure, scalable, managed front door for **HTTP**, **REST**, and **WebSocket APIs** that <font color=#EBAC25>connect clients to backend services without exposing those services directly</font>, often routing requests to **Lambda** functions that **run backend logic** without any servers.
 
 {{< /lead >}}
 
