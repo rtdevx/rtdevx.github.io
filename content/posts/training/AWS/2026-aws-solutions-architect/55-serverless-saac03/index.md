@@ -380,7 +380,8 @@ Amazon Kinesis Data Streams (KDS) is a **fully managed, serverless streaming ser
 Firehose is the _easiest_ way to take real‑time data and deliver it to storage, analytics, or observability tools. Unlike Kinesis Data Streams, Firehose **does not require you to manage shards, scaling, or consumers**. It handles everything automatically.
 
 ![](./assets/AWS_Serverless_Firehose.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
-#### Typical Firehose Use Cases
+
+<font color=#EBAC25><b>Typical use cases:</b></font>
 
 - Log ingestion (CloudWatch Logs, application logs, VPC Flow Logs)    
 - Clickstream analytics    
