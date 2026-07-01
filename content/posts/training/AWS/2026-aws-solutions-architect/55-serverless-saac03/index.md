@@ -43,7 +43,7 @@ series: AWS Solution Architect
 - AWS API Gateway
 - [Amazon S3]({{< ref "tags/s3" >}})
 - [AWS SNS & SQS]({{< ref "16-cloud-integrations" >}})
-- AWS Kinesis Data Firehose
+- AWS [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Data Firehose
 - Aurora Serverless
 - Step Functions
 - Fargate
