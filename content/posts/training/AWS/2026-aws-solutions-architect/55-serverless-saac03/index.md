@@ -362,7 +362,7 @@ Amazon Kinesis Data Streams (KDS) is a **fully managed, serverless streaming ser
 - **Allows multiple consumers** to read the same data independently without deleting it (<font color=#EBAC25>replayable stream</font>).
 - <font color=#EB4925>Data can’t be deleted from Kinesis</font> (until it expires).
 - **Guarantees ordered records** within each shard (FIFO at shard level).
-- At-rest KMS encryption, in-flight HTTPS encryption
+- At-rest [KMS]({{< ref "tags/kms" >}}) encryption, in-flight HTTPS encryption
 
 <font color=#EBAC25><b>Typical use cases:</b></font>
 

@@ -10,10 +10,13 @@ tags:
   - SNS
   - MQ
   - Kinesis
+  - Serverless
 categories: AWS
 series: AWS Cloud Practitioner
 ---
 This section is about multiple applications communicating with each other.
+
+<center>📡 <font color=#EBAC25><b>Useful TAG: </b></font><a href="{{< ref "tags/serverless" >}}" target="_self">Serverless</a></center>
 
 1. **Synchronous communication** (application to application)
 	- Can be problematic if there are sudden spikes of traffic
