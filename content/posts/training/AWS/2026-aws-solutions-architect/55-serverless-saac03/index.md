@@ -281,8 +281,8 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 ### DynamoDB Global Tables
 
 - Make a DynamoDB table accessible with low latency in multiple-regions
-- Active-Active replication
-- Applications can READ and WRITE to the table in any region
+- <font color=#C7EB25>Active-Active replication</font>
+- <font color=#C7EB25>Applications can READ and WRITE to the table in any region</font>
 - Must enable DynamoDB Streams as a pre-requisite
 ### DynamoDB - Time To Live (TTL)
 
