@@ -37,16 +37,16 @@ series: AWS Solution Architect
 {{< /lead >}}
 ## Serverless services in AWS
 
-- AWS Lambda
-- DynamoDB
-- AWS Cognito
-- AWS API Gateway
+- [AWS Lambda]({{< ref "55-serverless-saac03/#aws-lambda" >}})
+- [DynamoDB]({{< ref "55-serverless-saac03/#dynamodb" >}})
+- [Amazon Cognito]({{< ref "55-serverless-saac03/#amazon-cognito" >}})
+- [AWS API Gateway]({{< ref "55-serverless-saac03/#aws-api-gateway" >}})
 - [Amazon S3]({{< ref "tags/s3" >}})
 - [AWS SNS & SQS]({{< ref "16-cloud-integrations" >}})
 - AWS [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}}) Data Firehose
-- Aurora Serverless
-- Step Functions
-- Fargate
+- [Aurora Serverless]({{< ref "12-rds-aurora-elasicache-saac03/#aurora-serverless" >}})
+- [Step Functions]({{< ref "55-serverless-saac03/#aws-step-functions" >}})
+- [Fargate]({{< ref "tags/fargate" >}})
 
 {{< lead >}}
 
