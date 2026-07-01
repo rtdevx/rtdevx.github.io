@@ -217,11 +217,11 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
 ![](./assets/AWS_Lambda_in_VPC.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 #### Lambda with RDS Proxy
 
-- When Lambda connects directly to a database, high traffic can create **too many open connections**    
+- <font color=#EB4925>When Lambda connects directly to a database, high traffic can create too many open connections</font>
 - **RDS Proxy** solves this by pooling and reusing connections, improving scalability    
 - It also boosts availability by **preserving connections during failovers** and cutting failover time by **up to 66%**    
 - Security improves through **IAM authentication** and credential storage in **Secrets Manager**   
-- Because RDS Proxy is **never publicly accessible**, the Lambda function must run **inside your VPC**
+- <font color=#EB4925>Because RDS Proxy is never publicly accessible, the Lambda function must run inside your VPC</font>
 
 ![](./assets/AWS_Lambda_RDS_Proxy.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 #### Invoking Lambda from RDS & Aurora
