@@ -60,7 +60,7 @@ series: AWS Solution Architect
 ## AWS Lambda
 
 - Virtual functions (no servers to manage)
-- Limited by time (short executions)
+- Limited by time (short executions - <font color=#EBAC25>up to 15 mins</font>)
 - Run on-demand
 - Automated scaling
 
@@ -68,7 +68,7 @@ series: AWS Solution Architect
 - Deep integration across AWS services    
 - Supports multiple programming languages    
 - Built‑in monitoring through CloudWatch    
-- Easy to scale function resources (up to 10 GB RAM)    
+- Easy to scale function resources (<font color=#EBAC25>up to 10 GB RAM</font>)    
 - Increasing RAM also boosts CPU and network performance
 ### Lambda language support
 
@@ -94,19 +94,19 @@ series: AWS Solution Architect
 ### Lambda Limits
 
 - **Execution:**
-	- Memory allocation: 128 MB - 10GB (1 MB increments)
-	- Maximum execution time: 900 seconds (15 minutes)
-	- Environment variables (4 KB)
-	- Disk capacity in the “function container” (in /tmp): 512 MB to 10GB
-	- Concurrency executions: 1000 (can be increased)
+	- <font color=#EBAC25>Memory allocation:</font> 128 MB - 10GB (1 MB increments)
+	- <font color=#EBAC25>Maximum execution time:</font> 900 seconds (15 minutes)
+	- <font color=#EBAC25>Environment variables</font> (4 KB)
+	- <font color=#EBAC25>Disk capacity</font> in the “function container” (in /tmp): 512 MB to 10GB
+	- <font color=#EBAC25>Concurrency executions:</font> 1000 (can be increased)
 - **Deployment:**
-	- Lambda function deployment size (compressed .zip): 50 MB
-	- Size of uncompressed deployment (code + dependencies): 250 MB
+	- <font color=#EBAC25>Lambda function deployment size</font> (compressed .zip): 50 MB
+	- <font color=#EBAC25>Size of uncompressed deployment</font> (code + dependencies): 250 MB
 	- Can use the /tmp directory to load other files at startup
 	- Size of environment variables: 4 KB
 #### Lambda Concurrency and Throttling
 
-- **Concurrency limit:** up to 1000 concurrent executions
+- <font color=#EBAC25>Concurrency limit:</font> up to 1000 concurrent executions
 	- <font color=#EB4925>Can set a “<b>reserved concurrency</b>” at the function level (=limit)</font>
 	- When invocations exceed your concurrency limit, Lambda **throttles** them
 	- **Synchronous calls** return a **429 ThrottleError**
