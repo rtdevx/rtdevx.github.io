@@ -456,6 +456,11 @@ Firehose is the _easiest_ way to take real‑time data and deliver it to storage
 - A **Global DynamoDB table** provided worldwide low‑latency data access (Aurora Global DB was an alternative)    
 - **DynamoDB Streams** triggered a Lambda function    
 - That Lambda used an IAM role allowing it to send emails via **SES**
+## Micro Services Considerations
+
+**Microservices introduce several challenges:** each new service adds repeated setup and operational overhead, it becomes harder to optimise server utilisation across many small workloads, running multiple versions of multiple services at once increases complexity, and clients often need extra logic to integrate with a growing number of separate endpoints.
+
+**Serverless patterns help reduce these issues:** API Gateway and Lambda scale automatically and charge only for actual usage, environments and APIs can be cloned or reproduced easily, and API Gateway can generate client SDKs through its Swagger/OpenAPI integration, simplifying client-side development.
 
 ---
 ## >> Sources <<
