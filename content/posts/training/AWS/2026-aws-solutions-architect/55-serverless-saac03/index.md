@@ -309,6 +309,12 @@ A **DLQ** is a fallback destination (SQS queue or SNS topic) where Lambda sends 
     - Any import errors are logged in **CloudWatch Logs**
 ## AWS API Gateway
 
+{{< lead >}}
+
+**API Gateway** is used to provide a secure, scalable, managed front door for HTTP, REST, and WebSocket APIs that **connect clients to backend services without exposing those services directly.**
+
+{{< /lead >}}
+
 - Combine API Gateway with Lambda for a fully managed, no‑infrastructure setup    
 - Supports **WebSocket APIs**    
 - Manages **API versioning** and **multiple environments** (dev/test/prod)    
