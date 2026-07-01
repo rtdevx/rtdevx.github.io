@@ -357,11 +357,11 @@ Amazon Kinesis Data Streams (KDS) is a **fully managed, serverless streaming ser
 ![](./assets/AWS_Serverless_KinesisStream.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### What Kinesis Data Streams does
 
-- **Ingests massive volumes of streaming data** (clickstreams, IoT telemetry, logs, financial events) at gigabytes per second from thousands of producers. 
-- **Buffers and stores records durably** across multiple AZs, with retention from 24 hours up to 365 days.    
-- **Allows multiple consumers** to read the same data independently without deleting it (replayable stream).    
+- <font color=#EBAC25>Ingests massive volumes of streaming data</font> (clickstreams, IoT telemetry, logs, financial events) at gigabytes per second from thousands of producers. 
+- **Buffers and stores records durably** across multiple AZs, <font color=#EBAC25>with retention from 24 hours up to 365 days</font>.
+- **Allows multiple consumers** to read the same data independently without deleting it (<font color=#EBAC25>replayable stream</font>).
 - **Guarantees ordered records** within each shard (FIFO at shard level).
-### Typical use cases
+### <font color=#EBAC25>Typical use cases</font>
 
 - Real‑time analytics and dashboards    
 - Application monitoring and anomaly detection    
