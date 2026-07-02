@@ -18,6 +18,8 @@ series: AWS Cloud Practitioner
 🏅 **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}).<br>
 🏅 **Solutions Architect Associate level extension:** [DynamoDB]({{< ref "55-serverless-saac03/#dynamodb" >}}).
 
+<center>📡 <font color=#EBAC25><b>Useful TAG: </b></font><a href="{{< ref "tags/database" >}}" target="_self">Database</a></center>
+
 ---
 ## Relational Databases
 
