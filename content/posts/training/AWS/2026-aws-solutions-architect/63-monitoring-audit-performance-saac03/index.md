@@ -11,6 +11,7 @@ tags:
   - monitoring
   - CloudWatch
   - Kinesis
+  - compliance
 categories:
   - AWS
 series: AWS Solution Architect
