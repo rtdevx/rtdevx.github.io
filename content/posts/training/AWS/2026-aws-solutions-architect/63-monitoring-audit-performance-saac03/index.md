@@ -73,9 +73,9 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 - Lets you **search and analyse** log data stored in CloudWatch Logs using a purpose‑built query language    
 - Automatically extracts fields from AWS services and JSON logs    
 - Supports filtering, field selection, aggregations, sorting, and limiting results    
-- Queries can be saved and added to **CloudWatch Dashboards**    
+- Queries can be saved and added to <font color=#C7EB25>CloudWatch Dashboards</font>
 - Can query **multiple log groups across accounts**    
-- It’s a **query engine**, not a real‑time streaming system
+- It’s a **query engine**, <font color=#EBAC25>not a real‑time streaming system</font>
 
 ![](./assets/AWS_Monitoring_CloudWatch_Log_Insigts.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ### CloudWatch Logs - S3 Export
