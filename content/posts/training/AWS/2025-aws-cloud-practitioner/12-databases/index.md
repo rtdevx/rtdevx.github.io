@@ -11,10 +11,10 @@ tags:
 categories: AWS
 series: AWS Cloud Practitioner
 ---
-🏅 **Solutions Architect Associate level extension:** [Databases in AWS]({{< ref "60-aws-databases-saac03" >}}).
-🏅 **Solutions Architect Associate level extension:** [Amazon RDS]({{< ref "12-rds-aurora-elasicache-saac03/#rds" >}}).
-🏅 **Solutions Architect Associate level extension:** [Amazon Aurora]({{< ref "12-rds-aurora-elasicache-saac03/#aurora" >}}).
-🏅 **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}).
+🏅 **Solutions Architect Associate level extension:** [Databases in AWS]({{< ref "60-aws-databases-saac03" >}}).<br>
+🏅 **Solutions Architect Associate level extension:** [Amazon RDS]({{< ref "12-rds-aurora-elasicache-saac03/#rds" >}}).<br>
+🏅 **Solutions Architect Associate level extension:** [Amazon Aurora]({{< ref "12-rds-aurora-elasicache-saac03/#aurora" >}}).<br>
+🏅 **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}).<br>
 🏅 **Solutions Architect Associate level extension:** [DynamoDB]({{< ref "55-serverless-saac03/#dynamodb" >}}).
 ## Relational Databases
 
