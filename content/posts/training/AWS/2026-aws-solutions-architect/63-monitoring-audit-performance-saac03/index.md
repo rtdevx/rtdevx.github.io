@@ -155,6 +155,15 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 - <font color=#EBAC25>Trigger Lambda functions</font>, send SQS/SNS messages
 
 ![](./assets/AWS_Monitoring_EventBridge_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+#### EventBridge Create rule
+
+{{< alert "circle-info" >}}
+
+ EventBridge’s visual builder <font color=#EBAC25>lets you design event‑driven workflows through a drag‑and‑drop interface</font>, so you can connect services and define routing rules without writing code.
+
+{{< /alert >}}
+
+![](./assets/AWS_Monitoring_EventBridge_Create_Rule.png)
 ### <font color=#EBAC25>CloudWatch Insights</font>
 
 - **CloudWatch Container Insights**
