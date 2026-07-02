@@ -15,7 +15,116 @@ series: AWS Solution Architect
 ---
 ---
 
+🔥 **Associate‑level extension** of the [Databases]({{< ref "12-databases" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 
+| <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) | [AWS Solution Architect]({{< ref "series/aws-solution-architect" >}}) |
+
+## Choosing the right Database
+
+- AWS offers many managed databases, so the choice depends on your workload and architecture    
+- <font color=#EB4925>Key questions to guide selection:</font>
+    - Is the workload **read‑heavy, write‑heavy, or mixed**? Does throughput need to scale or vary during the day
+    - How much data will you store, how fast will it grow, and how will it be accessed
+    - What level of **durability** and “source of truth” guarantees do you need
+    - Required **latency** and expected concurrency
+    - What **data model** fits: structured, semi‑structured, joins, query patterns
+    - Do you need a strict schema or flexibility? Reporting? Search? RDBMS vs NoSQL
+    - Any **licensing costs** to consider, or opportunities to move to cloud‑native engines like Aurora
+## Database Types
+
+- **RDBMS / OLTP (SQL):** RDS, Aurora - best when you need joins 
+  
+{{< alert "circle-info" >}}
+
+A **join** is an operation in SQL that lets you combine data from **multiple tables** based on a related value they share. Joins allow **complex queries** across multiple datasets, They enforce **relationships** between entities (users → orders, products → categories, etc.), they’re essential for **OLTP / RDBMS** workloads where data is normalised.
+
+**RDS** and **Aurora** are **relational** databases - they’re designed for this kind of multi‑table querying.
+
+NoSQL systems like DynamoDB don’t support joins, which is why data modelling is very different there.
+
+{{< /alert >}}
+
+<font color=#EBAC25>Example</font> join query:
+
+```
+SELECT users.name, orders.amount
+FROM users
+JOIN orders ON users.user_id = orders.user_id;
+```
+
+<font color=#EBAC25>Result:</font>
+
+| name | amount |
+| ---- | ------ |
+| Bob  | 50     |
+
+- **NoSQL:** DynamoDB (JSON‑style), ElastiCache (key/value), Neptune (graph), DocumentDB (MongoDB‑compatible), Keyspaces (Cassandra)    
+- **Object Storage:** S3 for large objects, Glacier for archival    
+- **Data Warehousing / Analytics:** Redshift (OLAP), Athena, EMR    
+- **Search:** OpenSearch for free‑text and unstructured queries    
+- **Graph:** Neptune for relationship‑focused data    
+- **Ledger:** QLDB for immutable, cryptographically verifiable records    
+- **Time Series:** Timestream for time‑stamped data
+### Amazon RDS - Summary
+
+🏅 **Cloud Practitioner-level:** [Amazon RDS]({{< ref "12-databases/#amazon-rds" >}})<br />
+🏅 **Solutions Architect Associate level extension:** [Amazon RDS]({{< ref "12-rds-aurora-elasicache-saac03/#rds" >}})
+
+- Fully managed relational databases: PostgreSQL, MySQL, MariaDB, Oracle, SQL Server, DB2, plus **RDS Custom** for deeper OS/instance access    
+- You choose instance size and EBS volume type/size, with **storage auto‑scaling**    
+- Supports **Read Replicas** and **Multi‑AZ** for availability and read scaling    
+- Security via **IAM**, Security Groups, **KMS encryption**, and **SSL**    
+- Automated backups with **PITR (up to 35 days)**, plus manual snapshots for long‑term retention 
+- Includes managed maintenance (with downtime)    
+- Supports **IAM authentication** and integrates with **Secrets Manager**    
+- Ideal for relational/OLTP workloads needing SQL queries and transactions
+### Amazon Aurora - Summary
+
+🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})<br />
+🏅 **Solutions Architect Associate level extension:** [Amazon Aurora]({{< ref "12-rds-aurora-elasicache-saac03/#aurora" >}})
+
+- MySQL/PostgreSQL‑compatible engine with **separate compute and distributed storage**    
+- Storage keeps **6 copies across 3 AZs**, auto‑scales, self‑heals; compute scales via multi‑AZ clusters and read replicas    
+- Cluster endpoints for **writer** and **readers**    
+- Shares RDS features for security, monitoring, and maintenance    
+- Supports PITR, snapshots, fast **database cloning**, and S3 import/export    
+- **Aurora Serverless** handles spiky or unpredictable workloads with no capacity planning    
+- **Aurora Global** offers low‑latency global reads with sub‑second replication    
+- **Aurora ML** integrates with SageMaker and Comprehend for in‑database ML inference    
+- Best for RDS‑style workloads needing **higher performance, more automation, and richer features**
+### Amazon ElastiCache - Summary
+
+🏅 **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}})
+
+- Fully managed **Redis/Memcached** service (similar to RDS but for caching)    
+- **In‑memory** store with sub‑millisecond latency    
+- Choose from cache‑optimised instance types    
+- Supports **Redis clustering**, Multi‑AZ, and read replicas (sharding)    
+- Security via IAM, Security Groups, KMS, and Redis Auth    
+- Offers backups, snapshots, and PITR    
+- Includes managed maintenance    
+- Requires app‑level changes to use effectively    
+- Ideal for **key/value workloads**, heavy‑read patterns, DB query caching, and session storage (no SQL)
+
+ℹ️ _Note:_ <font color=#EB4925>Using ElastiCache involves heavy application code changes</font>.
+### DynamoDB - Summary
+
+🏅 **Solutions Architect Associate level extension:** [DynamoDB]({{< ref "55-serverless-saac03/#dynamodb" >}})
+
+- Fully managed, serverless **NoSQL** database with consistent millisecond latency
+- Supports **provisioned** (with auto‑scaling) and **on‑demand** capacity modes    
+- Can act as a key/value store (e.g., session data) with **TTL**    
+- Highly available, Multi‑AZ by default; supports **transactions** and decoupled read/write paths    
+- **DAX** adds microsecond‑latency read caching    
+- Security, auth, and access control handled entirely through [IAM]({{< ref "tags/iam" >}})    
+- **DynamoDB Streams** enable event‑driven processing via [Lambda]({{< ref "tags/lambda" >}}) or [Kinesis]({{< ref "55-serverless-saac03/#amazon-kinesis-data-streams" >}})    
+- **Global Tables** provide active‑active multi‑region replication    
+- Backups: **PITR** (35 days) and on‑demand snapshots; restores create a new table    
+- **Export to S3** (no RCUs) and **import from S3** (no WCUs)    
+- Flexible schema evolution    
+- Ideal for serverless apps, small JSON‑like documents, and distributed low‑latency caching
 ### Amazon S3 - Summary
 
 - S3 is a **key/value object store**, ideal for large objects (less efficient for many tiny files)    
@@ -38,7 +147,7 @@ series: AWS Solution Architect
 ### Amazon Neptune
 
 - Fully managed **graph database** for highly connected datasets    
-- Ideal for <font color=#EBAC25>social‑network‑style relationships</fontt> (users, posts, comments, likes, shares)    
+- Ideal for <font color=#EBAC25>social‑network‑style relationships</font> (users, posts, comments, likes, shares)    
 - Replicated across **3 AZs** with up to **15 read replicas**    
 - Handles billions of relationships with **millisecond‑level** query latency    
 - Optimised for complex graph queries that are hard for relational/NoSQL systems    
