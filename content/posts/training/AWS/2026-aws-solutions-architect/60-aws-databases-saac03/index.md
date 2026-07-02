@@ -14,7 +14,7 @@ categories:
 series: AWS Solution Architect
 ---
 ---
-ℹ️ **Associate‑level extension** of the [Databases]({{< ref "12-databases" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
+🔥 **Associate‑level extension** of the [Databases]({{< ref "12-databases" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 
 | <font color=#EB4925>AWS Certifications Series </font> »               |                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
