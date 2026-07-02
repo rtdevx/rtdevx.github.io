@@ -24,7 +24,7 @@ series: AWS Solution Architect
 ## Choosing the right Database
 
 - AWS offers many managed databases, so the choice depends on your workload and architecture    
-- <font color=#EB4925>Key questions to guide selection:</font>   
+- <font color=#EB4925>Key questions to guide selection:</font>
     - Is the workload **read‑heavy, write‑heavy, or mixed**? Does throughput need to scale or vary during the day
     - How much data will you store, how fast will it grow, and how will it be accessed
     - What level of **durability** and “source of truth” guarantees do you need
@@ -69,7 +69,7 @@ JOIN orders ON users.user_id = orders.user_id;
 - **Time Series:** Timestream for time‑stamped data
 ### Amazon RDS - Summary
 
-🏅 **Cloud Practitioner-level:** [Amazon RDS]({{< ref "12-databases/#amazon-rds" >}})<br>
+🏅 **Cloud Practitioner-level:** [Amazon RDS]({{< ref "12-databases/#amazon-rds" >}})<br />
 🏅 **Solutions Architect Associate level extension:** [Amazon RDS]({{< ref "12-rds-aurora-elasicache-saac03/#rds" >}})
 
 - Fully managed relational databases: PostgreSQL, MySQL, MariaDB, Oracle, SQL Server, DB2, plus **RDS Custom** for deeper OS/instance access    
@@ -82,7 +82,7 @@ JOIN orders ON users.user_id = orders.user_id;
 - Ideal for relational/OLTP workloads needing SQL queries and transactions
 ### Amazon Aurora - Summary
 
-🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})<br>
+🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})<br />
 🏅 **Solutions Architect Associate level extension:** [Amazon Aurora]({{< ref "12-rds-aurora-elasicache-saac03/#aurora" >}})
 
 - MySQL/PostgreSQL‑compatible engine with **separate compute and distributed storage**    
