@@ -23,13 +23,13 @@ series: AWS Solution Architect
 ## Choosing the right Database
 
 - AWS offers many managed databases, so the choice depends on your workload and architecture    
-- Key questions to guide selection:    
-    - Is the workload **read‑heavy, write‑heavy, or mixed**? Does throughput need to scale or vary during the day        
-    - How much data will you store, how fast will it grow, and how will it be accessed        
-    - What level of **durability** and “source of truth” guarantees do you need        
-    - Required **latency** and expected concurrency        
-    - What **data model** fits: structured, semi‑structured, joins, query patterns        
-    - Do you need a strict schema or flexibility? Reporting? Search? RDBMS vs NoSQL        
+- <font color=#EB4925>Key questions to guide selection:</font>   
+    - Is the workload **read‑heavy, write‑heavy, or mixed**? Does throughput need to scale or vary during the day
+    - How much data will you store, how fast will it grow, and how will it be accessed
+    - What level of **durability** and “source of truth” guarantees do you need
+    - Required **latency** and expected concurrency
+    - What **data model** fits: structured, semi‑structured, joins, query patterns
+    - Do you need a strict schema or flexibility? Reporting? Search? RDBMS vs NoSQL
     - Any **licensing costs** to consider, or opportunities to move to cloud‑native engines like Aurora
 ## Database Types
 
@@ -68,6 +68,9 @@ JOIN orders ON users.user_id = orders.user_id;
 - **Time Series:** Timestream for time‑stamped data
 ### Amazon RDS - Summary
 
+🏅 **Cloud Practitioner-level:** [Amazon RDS]({{< ref "12-databases/#amazon-rds" >}})
+🏅 **Solutions Architect Associate level extension:** [Amazon RDS]({{< ref "12-rds-aurora-elasicache-saac03/#rds" >}}).
+
 - Fully managed relational databases: PostgreSQL, MySQL, MariaDB, Oracle, SQL Server, DB2, plus **RDS Custom** for deeper OS/instance access    
 - You choose instance size and EBS volume type/size, with **storage auto‑scaling**    
 - Supports **Read Replicas** and **Multi‑AZ** for availability and read scaling    
@@ -77,6 +80,9 @@ JOIN orders ON users.user_id = orders.user_id;
 - Supports **IAM authentication** and integrates with **Secrets Manager**    
 - Ideal for relational/OLTP workloads needing SQL queries and transactions
 ### Amazon Aurora - Summary
+
+🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})
+🏅 **Solutions Architect Associate level extension:** [Amazon Aurora]({{< ref "12-rds-aurora-elasicache-saac03/#aurora" >}}).
 
 - MySQL/PostgreSQL‑compatible engine with **separate compute and distributed storage**    
 - Storage keeps **6 copies across 3 AZs**, auto‑scales, self‑heals; compute scales via multi‑AZ clusters and read replicas    
@@ -89,6 +95,8 @@ JOIN orders ON users.user_id = orders.user_id;
 - Best for RDS‑style workloads needing **higher performance, more automation, and richer features**
 ### Amazon ElastiCache - Summary
 
+🏅 **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}).
+
 - Fully managed **Redis/Memcached** service (similar to RDS but for caching)    
 - **In‑memory** store with sub‑millisecond latency    
 - Choose from cache‑optimised instance types    
@@ -100,7 +108,9 @@ JOIN orders ON users.user_id = orders.user_id;
 - Ideal for **key/value workloads**, heavy‑read patterns, DB query caching, and session storage (no SQL)
 ### DynamoDB - Summary
 
-- Fully managed, serverless **NoSQL** database with consistent millisecond latency    
+🏅 **Solutions Architect Associate level extension:** [DynamoDB]({{< ref "55-serverless-saac03/#dynamodb" >}}).
+
+- Fully managed, serverless **NoSQL** database with consistent millisecond latency
 - Supports **provisioned** (with auto‑scaling) and **on‑demand** capacity modes    
 - Can act as a key/value store (e.g., session data) with **TTL**    
 - Highly available, Multi‑AZ by default; supports **transactions** and decoupled read/write paths    
