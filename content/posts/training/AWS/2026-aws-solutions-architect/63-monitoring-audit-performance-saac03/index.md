@@ -106,9 +106,9 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 	- Old version of the agent
 	- Can only send to CloudWatch Logs
 - **CloudWatch Unified Agent**
-	- Collect additional system-level metrics such as RAM, processes, etc…
-	- Collect logs to send to CloudWatch Logs
-	- Centralized configuration using SSM Parameter Store
+	- <font color=#EBAC25>Collect additional system-level metrics such as RAM, processes</font>, etc…
+	- <font color=#EBAC25>Collect logs to send to CloudWatch Logs</font>
+	- <font color=#EBAC25>Centralized configuration using SSM Parameter Store</font>
 #### CloudWatch Unified Agent - Metrics
 
 - Collects detailed Linux/EC2 system metrics: 
@@ -121,7 +121,7 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 - Complements EC2’s built‑in high‑level metrics (CPU, disk, network) with deeper, host‑level visibility
 ### CloudWatch Alarms
 
-- Alarms monitor metrics and trigger notifications based on thresholds (max, min, %, sampling, etc.)    
+- <font color=#EBAC25>Alarms monitor metrics and trigger notifications based on thresholds</font> (max, min, %, sampling, etc.)    
 - Alarm states are **OK**, **INSUFFICIENT_DATA**, and **ALARM**    
 - The **period** defines the evaluation window in seconds; high‑resolution custom metrics support **10s**, **30s**, or 60‑second multiples
 #### CloudWatch Alarm Targets
@@ -129,7 +129,7 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 - Stop, Terminate, Reboot, or Recover an EC2 Instance
 - Trigger Auto Scaling Action
 - Send notification to SNS (from which you can do pretty much anything)
-### CloudWatch Alarms - Composite Alarms
+### CloudWatch Alarms - <font color=#EBAC25>Composite Alarms</font>
 
 - Standard CloudWatch alarms track a **single metric**, while composite alarms evaluate the **states of multiple alarms**    
 - Support **AND/OR logic**, helping reduce noise by triggering only when complex conditions are met
@@ -150,12 +150,12 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 - Publishes all results as **CloudWatch metrics**
 ### Amazon EventBridge
 
-- **Schedule:** Cron jobs (scheduled scripts)
-- **Event Pattern:** Event rules to react to a service doing something
-- Trigger Lambda functions, send SQS/SNS messages
+- **Schedule:** <font color=#EBAC25>Cron jobs</font>
+- **Event Pattern:** <font color=#EBAC25>Event rules to react to a service doing something</font>
+- <font color=#EBAC25>Trigger Lambda functions</font>, send SQS/SNS messages
 
 ![](./assets/AWS_Monitoring_EventBridge_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
-### CloudWatch Insights
+### <font color=#EBAC25>CloudWatch Insights</font>
 
 - **CloudWatch Container Insights**
 	- ECS, EKS, Kubernetes on EC2, Fargate, needs agent for Kubernetes
