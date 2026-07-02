@@ -68,8 +68,8 @@ JOIN orders ON users.user_id = orders.user_id;
 - **Time Series:** Timestream for time‑stamped data
 ### Amazon RDS - Summary
 
-🏅 **Cloud Practitioner-level:** [Amazon RDS]({{< ref "12-databases/#amazon-rds" >}})
-🏅 **Solutions Architect Associate level extension:** [Amazon RDS]({{< ref "12-rds-aurora-elasicache-saac03/#rds" >}}).
+🏅 **Cloud Practitioner-level:** [Amazon RDS]({{< ref "12-databases/#amazon-rds" >}})<br>
+🏅 **Solutions Architect Associate level extension:** [Amazon RDS]({{< ref "12-rds-aurora-elasicache-saac03/#rds" >}})
 
 - Fully managed relational databases: PostgreSQL, MySQL, MariaDB, Oracle, SQL Server, DB2, plus **RDS Custom** for deeper OS/instance access    
 - You choose instance size and EBS volume type/size, with **storage auto‑scaling**    
@@ -81,8 +81,8 @@ JOIN orders ON users.user_id = orders.user_id;
 - Ideal for relational/OLTP workloads needing SQL queries and transactions
 ### Amazon Aurora - Summary
 
-🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})
-🏅 **Solutions Architect Associate level extension:** [Amazon Aurora]({{< ref "12-rds-aurora-elasicache-saac03/#aurora" >}}).
+🏅 **Cloud Practitioner-level:** [Amazon Aurora]({{< ref "12-databases/#amazon-aurora" >}})<br>
+🏅 **Solutions Architect Associate level extension:** [Amazon Aurora]({{< ref "12-rds-aurora-elasicache-saac03/#aurora" >}})
 
 - MySQL/PostgreSQL‑compatible engine with **separate compute and distributed storage**    
 - Storage keeps **6 copies across 3 AZs**, auto‑scales, self‑heals; compute scales via multi‑AZ clusters and read replicas    
@@ -95,7 +95,7 @@ JOIN orders ON users.user_id = orders.user_id;
 - Best for RDS‑style workloads needing **higher performance, more automation, and richer features**
 ### Amazon ElastiCache - Summary
 
-🏅 **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}).
+🏅 **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}})
 
 - Fully managed **Redis/Memcached** service (similar to RDS but for caching)    
 - **In‑memory** store with sub‑millisecond latency    
@@ -108,7 +108,7 @@ JOIN orders ON users.user_id = orders.user_id;
 - Ideal for **key/value workloads**, heavy‑read patterns, DB query caching, and session storage (no SQL)
 ### DynamoDB - Summary
 
-🏅 **Solutions Architect Associate level extension:** [DynamoDB]({{< ref "55-serverless-saac03/#dynamodb" >}}).
+🏅 **Solutions Architect Associate level extension:** [DynamoDB]({{< ref "55-serverless-saac03/#dynamodb" >}})
 
 - Fully managed, serverless **NoSQL** database with consistent millisecond latency
 - Supports **provisioned** (with auto‑scaling) and **on‑demand** capacity modes    
