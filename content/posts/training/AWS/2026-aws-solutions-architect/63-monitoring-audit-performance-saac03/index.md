@@ -148,7 +148,7 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 - Monitors connectivity between your AWS‑hosted applications and on‑premises environments, detecting issues like **latency, jitter, and packet loss**    
 - Requires no agents and tests **ICMP or TCP** traffic to on‑prem destinations over Direct Connect or Site‑to‑Site VPN    
 - Publishes all results as **CloudWatch metrics**
-### Amazon EventBridge
+### <font color=#EBAC25>Amazon EventBridge</font>
 
 - **Schedule:** <font color=#EBAC25>Cron jobs</font>
 - **Event Pattern:** <font color=#EBAC25>Event rules to react to a service doing something</font>
@@ -166,7 +166,7 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 	- Find “Top-N” Contributors through CloudWatch Logs
 - **CloudWatch Application Insights**
 	- Automatic dashboard to troubleshoot your application and related AWS services
-#### CloudWatch Container Insights
+#### CloudWatch <font color=#EBAC25>Container Insights</font>
 
 - Collects, aggregates, and summarises **container metrics and logs**    
 - Supports ECS, EKS, Kubernetes on EC2, and **Fargate** for both ECS and EKS    
@@ -176,18 +176,18 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 In **Amazon EKS** and **Kubernetes**, <font color=#EBAC25>CloudWatch Insights is using a containerized version of the CloudWatch Agent to discover containers</font>.
 
 {{< /alert >}}
-#### CloudWatch Lambda Insights
+#### CloudWatch <font color=#EBAC25>Lambda Insights</font>
 
 - Provides monitoring and troubleshooting for Lambda‑based serverless applications    
 - Captures system‑level metrics (CPU time, memory, disk, network) and diagnostic data like cold starts and worker shutdowns    
 - Delivered as a **Lambda Layer**
-#### CloudWatch Contributor Insights
+#### CloudWatch <font color=#EBAC25>Contributor Insights</font>
 
 - Analyses log data to produce time‑series showing **top‑N contributors** and total unique contributors    
 - Helps identify “top talkers” and pinpoint hosts, users, or URLs impacting performance    
 - Works with AWS‑generated logs like **VPC Flow Logs** and **DNS logs**    
 - You can build custom rules or use AWS‑provided sample and built‑in rules to analyse CloudWatch Logs and other AWS service metrics
-#### CloudWatch Application Insights
+#### CloudWatch <font color=#EBAC25>Application Insights</font>
 
 - <font color=#EBAC25>Provides automated dashboards that show potential problems with monitored applications</font>, to help isolate ongoing issues
 - Your applications run on Amazon EC2 Instances with select technologies only (Java, .NET, Microsoft IIS Web Server, databases…)
@@ -200,7 +200,7 @@ In **Amazon EKS** and **Kubernetes**, <font color=#EBAC25>CloudWatch Insights is
 ### CloudTrail Events
 
 - **Management events** capture operations performed on AWS resources, such as security changes, network configuration, or creating trails. Trails log these by default, and you can separate **Read** (non‑mutating) from **Write** (resource‑changing) actions.
-    
+
 - **Data events** record high‑volume, resource‑level activity and are **disabled by default**. They include S3 object‑level actions (GetObject, PutObject, DeleteObject) and Lambda **Invoke** operations, with optional separation of Read and Write events.
 #### CloudTrail Insights
 
