@@ -295,7 +295,8 @@ RDS Proxy integrates only with **Multi‑AZ failover**, not with read replicas.
 - <font color=#EBAC25>Helps reduce load off of databases for read intensive workloads
 - Helps make your application stateless</font>
 - AWS takes care of OS maintenance / patching, optimizations, setup, configuration, monitoring, failure recovery and backups
-- <font color=#EB4925>Using ElastiCache involves heavy application code changes.</font>
+
+ℹ️ _Note:_ <font color=#EB4925>Using ElastiCache involves heavy application code changes</font>.
 ### DB Cache
 
 - Applications queries ElastiCache, if not available, get from RDS and store in ElastiCache

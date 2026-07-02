@@ -106,6 +106,8 @@ JOIN orders ON users.user_id = orders.user_id;
 - Includes managed maintenance    
 - Requires app‑level changes to use effectively    
 - Ideal for **key/value workloads**, heavy‑read patterns, DB query caching, and session storage (no SQL)
+
+ℹ️ _Note:_ <font color=#EB4925>Using ElastiCache involves heavy application code changes</font>.
 ### DynamoDB - Summary
 
 🏅 **Solutions Architect Associate level extension:** [DynamoDB]({{< ref "55-serverless-saac03/#dynamodb" >}})

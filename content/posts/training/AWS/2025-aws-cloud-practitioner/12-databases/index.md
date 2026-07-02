@@ -113,11 +113,13 @@ _More:_ [Configuring and managing a Multi-AZ deployment for Amazon RDS](https://
 
 🏅 **Solutions Architect Associate level extension:** [Elasticache]({{< ref "12-rds-aurora-elasicache-saac03/#elasticache" >}}).
 
-- The same way **RDS** is to get **managed Relational Databases**, **ElastiCache** is to get managed <font color=#EBAC25>Redis</font> or <font color=#EBAC25>Memcached</font>.
+- The same way **RDS** is to get **managed Relational Databases**, **ElastiCache** is to get managed <font color=#EBAC25>Redis</font> or <font color=#EBAC25>Memcached</font>
 - Caches are <font color=#C7EB25>in-memory databases</font> with high performance and low latency
 - Helps <font color=#C7EB25>reducing load</font> from <font color=#C7EB25>databases with read-intensive workloads</font>
 
 - AWS taking care of OS maintenance, patching, optimizations, setup, configuration, monitoring, failure recovery and backups
+
+ℹ️ _Note:_ <font color=#EB4925>Using ElastiCache involves heavy application code changes</font>.
 
 _More:_ https://docs.aws.amazon.com/elasticache/
 ### <font color=#EBAC25>DynamoDB</font>
