@@ -195,6 +195,8 @@ Allows creating dashboards for services used in AWS. Per-session pricing.
 	- Get business insights using data
 - Integrated with RDS, Aurora, Athena, Redshift, S3
 
+![](./assets/AWS_QuickSight.png)
+
 _More:_ https://docs.aws.amazon.com/quicksight/
 ### <font color=#EBAC25>DocumentDB</font>
 
