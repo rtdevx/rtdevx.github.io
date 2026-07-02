@@ -133,7 +133,7 @@ JOIN orders ON users.user_id = orders.user_id;
 - Bulk operations with **S3 Batch**, inventory reports for listing    
 - Performance tools: **multipart upload**, Transfer Acceleration, S3 Select    
 - Event automation via **SNS, SQS, Lambda, EventBridge**    
-- Use cases: static hosting, large object storage, scalable key/value storage
+- <font color=#EBAC25>Use cases:</font> static hosting, large object storage, scalable key/value storage
 ### DocumentDB
 
 - AWS’s managed, MongoDB‑compatible NoSQL database for storing and querying JSON    
@@ -144,7 +144,7 @@ JOIN orders ON users.user_id = orders.user_id;
 ### Amazon Neptune
 
 - Fully managed **graph database** for highly connected datasets    
-- Ideal for social‑network‑style relationships (users, posts, comments, likes, shares)    
+- Ideal for <font color=#EBAC25>social‑network‑style relationships</fontt> (users, posts, comments, likes, shares)    
 - Replicated across **3 AZs** with up to **15 read replicas**    
 - Handles billions of relationships with **millisecond‑level** query latency    
 - Optimised for complex graph queries that are hard for relational/NoSQL systems    
