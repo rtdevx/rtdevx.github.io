@@ -330,7 +330,7 @@ aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 
 {{< lead >}}
 
-**Secrets Manager is a newer service designed specifically for managing application secrets**; it supports <font color=#EBAC25>automatic rotation on a defined schedule</font>, can generate new secret values during rotation using Lambda, integrates directly with Amazon RDS (MySQL, PostgreSQL, Aurora), encrypts all secrets with KMS, and <font color=#EB4925>is primarily used for database credential management though it can store any type of secret</font>.
+**Secrets Manager is a newer service designed specifically for managing application secrets**; it supports <font color=#EBAC25>automatic rotation on a defined schedule</font>, can generate new secret values during rotation using Lambda, integrates directly with **Amazon RDS** (*MySQL, PostgreSQL, Aurora*), encrypts all secrets with KMS, and <font color=#EB4925>is primarily used for database credential management though it can store any type of secret</font>.
 
 {{< /lead >}}
 
