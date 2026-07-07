@@ -74,7 +74,7 @@ Client‑side encryption means the data is encrypted **before it ever reaches th
 - **AWS Managed Key:** free (aws/service-name, example: aws/rds or aws/ebs)
 - **Customer managed keys created in KMS:** $1 / month
 - **Customer managed keys imported:** $1 / month
-- + pay for API call to KMS ($0.03 / 10000 calls)
+- \+ pay for API call to KMS ($0.03 / 10000 calls)
 #### Key Rotation
 
 - **AWS-managed KMS Key:** automatic every 1 year
