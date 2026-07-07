@@ -146,6 +146,8 @@ Use the [Service control policy examples](https://docs.aws.amazon.com/organizati
 - <font color=#EBAC25>Example:</font> User in account A needs to scan a DynamoDB table in Account A and dump it in an S3 bucket in Account B.
 
 {{< /alert >}}
+
+<font color=#EBAC25><i>More info:</i></font> [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
 ### IAM Permission Boundaries
 
 IAM Permission Boundaries are supported for users and roles (not groups). This is an advanced feature to use a managed policy to set the maximum permissions an IAM entity can get.
@@ -311,6 +313,7 @@ Control Tower _uses_ Organizations under the hood and integrates with IAM Identi
 - 🔥[Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
 - [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html)
 - [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/)
+- [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
 ## >> References <<
 
 **Cloud Practitioner:** [Identity and Access management]({{< ref "2-iam" >}})
