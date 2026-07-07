@@ -10,6 +10,7 @@ tags:
   - security
   - compliance
   - IAM
+  - SCP
 categories:
   - AWS
 series: AWS Solution Architect
@@ -47,7 +48,7 @@ series: AWS Solution Architect
 
 ![](./assets/AWS_IAM_SCP_Hierarchy.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
-{{< alert "circle-info" >}}
+{{< alert "skull-crossbones" >}}
 
 <font color=#EB4925>SCP's do not apply to the management account</font> - this is a safety feature preventing Organizations locking out from their accounts.
 

@@ -11,6 +11,7 @@ tags:
   - Costs
   - RBAC
   - IAM
+  - SCP
 categories: AWS
 series: AWS Cloud Practitioner
 ---
