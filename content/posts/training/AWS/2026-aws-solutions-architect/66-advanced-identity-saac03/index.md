@@ -150,11 +150,15 @@ Use the [Service control policy examples](https://docs.aws.amazon.com/organizati
 <font color=#EBAC25><i>More info:</i></font> [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html)
 ### IAM Permission Boundaries
 
-IAM Permission Boundaries are supported for users and roles (not groups). This is an advanced feature to use a managed policy to set the maximum permissions an IAM entity can get.
+IAM Permission Boundaries are supported for users and roles (not groups). <font color=#EBAC25>This is an advanced feature to use a managed policy to set the maximum permissions an IAM entity can get</font>.
+
+{{< alert "lightbulb" >}}
 
 - Let non‑admins perform delegated tasks (e.g., creating IAM users) within strict limits    
 - Allow developers to self‑manage permissions without being able to escalate to admin    
 - Useful for restricting a **single user** when full‑account controls like SCPs are too broad
+
+{{< /alert >}}
 
 <font color=#EBAC25><i>More info:</i></font> 🔥[Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
 ### IAM Policy evaluation logic
