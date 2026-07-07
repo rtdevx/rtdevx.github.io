@@ -267,7 +267,7 @@ AWS advises against using multi‑Region keys outside their specific use cases</
 
 ### Parameters Policies (for advanced parameters)
 
-- Allow to assign a TTL to a parameter (expiration date) to force updating or deleting sensitive data such as passwords
+- <font color=#EBAC25>Allow to assign a TTL to a parameter</font> (expiration date) to force updating or deleting sensitive data such as passwords
 - Can assign multiple policies at a time
 #### Expiration
 
