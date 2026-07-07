@@ -78,11 +78,11 @@ Client‑side encryption means the data is encrypted **before it ever reaches th
 #### Key Rotation
 
 - **AWS-managed KMS Key:** automatic every 1 year
-- **Customer-managed KMS Key:** (must be enabled) automatic & on-demand
+- **Customer-managed KMS Key:** (<font color=#EB4925>must be enabled</font>) automatic & on-demand
 - **Imported KMS Key:** only manual rotation possible using alias
 ### KMS Key Policies
 
-KMS key policies define who can use or manage a KMS key, similar to how S3 bucket policies control access - but with one crucial difference: **a KMS key cannot be accessed at all unless a key policy explicitly allows it.**
+**KMS key policies define who can use or manage a KMS key**, similar to how S3 bucket policies control access - **but with one crucial difference:** <font color=#EB4925>a KMS key cannot be accessed at all unless a key policy explicitly allows it</font>.
 
 {{< alert "circle-info" >}}
 
@@ -90,8 +90,8 @@ For most AWS services (like S3, SNS, SQS), IAM policies alone can grant access. 
 
 With KMS:
 - **The key policy is the ultimate authority.**    
-- If the key policy does not grant permission (directly or via delegation to IAM), **no IAM policy can override that**.    
-- Even an admin with `AdministratorAccess` cannot use or manage a KMS key unless the key policy allows it.    
+- <font color=#EB4925>If the key policy does not grant permission</font> (directly or via delegation to IAM), <font color=#EB4925>no IAM policy can override that</font>.    
+- Even an admin with `AdministratorAccess` cannot use or manage a KMS key unless the key policy allows it.
 
 
 In other words:
