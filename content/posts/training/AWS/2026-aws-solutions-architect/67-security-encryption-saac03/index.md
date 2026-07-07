@@ -191,9 +191,9 @@ In other words:
 - **Each key is still a separate KMS resource**, with its own policy and lifecycle    
 - <font color=#EBAC25>Use cases:</font> **global client‑side encryption**, **Global DynamoDB tables**, and **Global Aurora**
 
-{{< alert "edit" >}}
+{{< alert "skull-crossbones" >}}
 
-📝 _Note:_ <font color=#EB4925>
+<font color=#EB4925>
 AWS advises against using multi‑Region keys outside their specific use cases</font> and generally recommends choosing KMS keys that remain bound to a single region.
 
 {{< /alert >}}
