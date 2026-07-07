@@ -233,7 +233,11 @@ AWS advises against using multi‑Region keys outside their specific use cases</
 
 - High‑volume replication may trigger **KMS throttling**, so you may need a Service Quotas increase
    
-- You can use **multi‑region KMS keys**, but S3 still treats them as **separate keys per Region**, meaning objects are **decrypted and re‑encrypted** during replication rather than using the same key material directly
+{{< alert "circle-info" >}}
+
+<font color=#EB4925>You can use multi‑region KMS keys, but S3 still treats them as separate keys per Region, meaning objects are decrypted and re‑encrypted during replication rather than using the same key material directly</font>.
+
+{{< /alert >}}
 ### AMI Sharing Process Encrypted via KMS
 
 - The AMI in the source account is encrypted using a **KMS key from the source account**    
