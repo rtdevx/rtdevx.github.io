@@ -283,7 +283,7 @@ The central place for managing **user identities and access** across all account
 
 - **SSO** into AWS accounts and business applications    
 - **Permission sets** for consistent, multi‑account access    
-- **ABAC** using user attributes for fine‑grained, dynamic permissions    
+- **ABAC**[^1] using user attributes for fine‑grained, dynamic permissions    
 
 Identity Center sits _on top of_ Organizations and uses its account structure to assign access cleanly.
 ### AWS Control Tower
@@ -324,3 +324,5 @@ Control Tower _uses_ Organizations under the hood and integrates with IAM Identi
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
+
+[^1]: **ABAC** - Attribute Based Access Control.
