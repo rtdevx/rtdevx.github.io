@@ -394,8 +394,8 @@ aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 - Great for availability and durability
 ### CloudHSM - Integration with AWS Services
 
-- CloudHSM can integrate with AWS services **through AWS KMS**    
-- You can configure a **KMS Custom Key Store** backed by CloudHSM    
+- <font color=#EB4925>CloudHSM can integrate with AWS services through AWS KMS</font>    
+- <font color=#EB4925>You can configure a KMS Custom Key Store backed by CloudHSM</font>    
 - Once configured, KMS‑integrated services (such as **EBS, S3, RDS**, and others) can use keys stored in your CloudHSM cluster
 
 ![](./assets/AWS_Security_HSM_Integration.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
