@@ -325,6 +325,16 @@ aws ssm get-parameters-by-path --path /my-app --recursive
 
 aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 ```
+
+## AWS Secrets Manager
+
+{{< lead >}}
+
+**Secrets Manager is a newer service designed specifically for managing application secrets**; it supports <font color=#EBAC25>automatic rotation on a defined schedule</font>, can generate new secret values during rotation using Lambda, integrates directly with Amazon RDS (MySQL, PostgreSQL, Aurora), encrypts all secrets with KMS, and <font color=#EBAC25>is primarily used for database credential management though it can store any type of secret</font>.
+
+{{< /lead >}}
+
+<font color=#EBAC25>Secrets Manager can replicate secrets across multiple AWS Regions, keeping regional read‑replica copies automatically in sync with the primary secret</font>, and allowing you to promote any replica into an independent secret - a pattern useful for multi‑region applications, disaster‑recovery setups, and cross‑region database architectures.
 ## AWS Certificate Manager (ACM)
 
 <font color=#EBAC25><i>More info:</i></font> [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/)
