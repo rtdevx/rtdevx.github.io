@@ -304,6 +304,27 @@ AWS advises against using multi‑Region keys outside their specific use cases</
   }
 }
 ```
+### Retrieving parameters via CLI - examples
+
+**get-parameters**
+
+```SHELL
+aws ssm get-parameters --names /my-app/dev/db-url /my-app/dev/db-password
+```
+
+```SHELL
+aws ssm get-parameters --names /my-app/dev/db-url /my-app/dev/db-password --decryption # KMS permissions are required to decrypt
+```
+
+get-parameters-by-path
+
+```SHELL
+aws ssm get-parameters-by-path --path /my-app/dev
+
+aws ssm get-parameters-by-path --path /my-app --recursive
+
+aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
+```
 ## AWS Certificate Manager (ACM)
 
 <font color=#EBAC25><i>More info:</i></font> [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/)
