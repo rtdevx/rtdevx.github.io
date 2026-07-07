@@ -189,7 +189,7 @@ When a principal tries to use the AWS Management Console, the AWS API, or the AW
 
 {{< alert "circle-info" >}}
 
-**AWS IAM Identity Center** provides centralised, fine‑grained access control across your AWS Organization. You define **permission sets** to **manage multi‑account access**, assign users/groups to SAML 2.0 business apps, and use **ABAC**[^1] to grant AWS permissions dynamically based on user attributes (e.g., cost center, title, locale). 
+**AWS IAM Identity Center** provides centralised, fine‑grained access control across your AWS Organization. You define **permission sets** to **manage multi‑account access**, assign users/groups to SAML 2.0 business apps, and use **ABAC** to grant AWS permissions dynamically based on user attributes (e.g., cost center, title, locale). 
 
 Define access once, then adjust permissions simply by updating user attributes.
 
@@ -324,5 +324,3 @@ Control Tower _uses_ Organizations under the hood and integrates with IAM Identi
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}
-
-[^1]: **ABAC** - Attribute Based Access Control.
