@@ -46,6 +46,12 @@ series: AWS Solution Architect
 - Like IAM, SCPs require **explicit allows** from the root OU down to the target account - nothing is permitted by default
 
 ![](./assets/AWS_IAM_SCP_Hierarchy.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+{{< alert "circle-info" >}}
+
+<font color=#EB4925>SCP's do not apply to the management account</font> - this is a safety feature preventing Organizations locking out from their accounts.
+
+{{< /alert >}}
 #### SCP Least Privilege
 
 {{< lead >}}
