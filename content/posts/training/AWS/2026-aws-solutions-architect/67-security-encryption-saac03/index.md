@@ -340,7 +340,9 @@ aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 
 <font color=#EBAC25>Use cases:</font> multi-region apps, disaster recovery strategies, multi-region DB…
 
-<font color=#EBAC25><i>More info:</i></font> [Replicate AWS Secrets Manager secrets across Regions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/replicate-secrets.html)
+<font color=#EBAC25><i>More info:</i></font> 
+- [Replicate AWS Secrets Manager secrets across Regions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/replicate-secrets.html)
+- [How to replicate secrets in AWS Secrets Manager to multiple Regions](https://aws.amazon.com/blogs/security/how-to-replicate-secrets-aws-secrets-manager-multiple-regions/)
 ## AWS Certificate Manager (ACM)
 
 <font color=#EBAC25><i>More info:</i></font> [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/)
@@ -574,7 +576,8 @@ aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 - [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 	- [Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html)
 - [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
-- [Replicate AWS Secrets Manager secrets across Regions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/replicate-secrets.html)
+- AWS Secrets Replication
+	- [Replicate AWS Secrets Manager secrets across Regions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/replicate-secrets.html)
 	- [How to replicate secrets in AWS Secrets Manager to multiple Regions](https://aws.amazon.com/blogs/security/how-to-replicate-secrets-aws-secrets-manager-multiple-regions/)
 - [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/)
 - [AWS CloudHSM Documentation](https://docs.aws.amazon.com/cloudhsm/)
