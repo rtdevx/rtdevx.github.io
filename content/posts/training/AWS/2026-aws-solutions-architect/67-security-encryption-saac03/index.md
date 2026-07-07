@@ -187,9 +187,16 @@ In other words:
 - **Same key ID, key material, and rotation state** across all Regions    
 - **Encrypt in one Region and decrypt in another** without re‑encrypting    
 - **No cross‑Region KMS API calls** needed during encryption or decryption    
-- **Not global keys** — each Region hosts a **primary or replica**, managed independently    
+- **Not global keys** - each Region hosts a **primary or replica**, managed independently    
 - **Each key is still a separate KMS resource**, with its own policy and lifecycle    
 - <font color=#EBAC25>Use cases:</font> **global client‑side encryption**, **Global DynamoDB tables**, and **Global Aurora**
+
+{{< alert "edit" >}}
+
+📝 _Note:_ <font color=#EB4925>
+AWS advises against using multi‑Region keys outside their specific use cases</font> and generally recommends choosing KMS keys that remain bound to a single region.
+
+{{< /alert >}}
 #### Global Databases
 
 ##### DynamoDB Global Tables and KMS Multi Region Keys Client-Side encryption
