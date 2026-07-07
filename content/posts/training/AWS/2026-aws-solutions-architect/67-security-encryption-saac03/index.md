@@ -58,8 +58,8 @@ Client‑side encryption means the data is encrypted **before it ever reaches th
 
 - **Symmetric (AES-256 keys)**
 	- Single encryption key that is used to Encrypt and Decrypt
-	- AWS services that are integrated with KMS use Symmetric CMKs
-	- You never get access to the KMS Key unencrypted (must call KMS API to use)
+	- <font color=#EBAC25>AWS services that are integrated with KMS use Symmetric CMKs</font>
+	- <font color=#C7EB25>You never get access to the KMS Key unencrypted</font> (must call KMS API to use)
 	 
 - **Asymmetric (RSA & ECC key pairs)**
 	- Public (Encrypt) and Private Key (Decrypt) pair
@@ -92,6 +92,7 @@ With KMS:
 - **The key policy is the ultimate authority.**    
 - If the key policy does not grant permission (directly or via delegation to IAM), **no IAM policy can override that**.    
 - Even an admin with `AdministratorAccess` cannot use or manage a KMS key unless the key policy allows it.    
+
 
 In other words:
 
