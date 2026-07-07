@@ -96,7 +96,7 @@
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><h3 id=retrieving-parameters-via-cli---examples class="relative group">Retrieving parameters via CLI - examples <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style=text-decoration-line:none!important href=#retrieving-parameters-via-cli---examples aria-label=Anchor>#</a></span></h3><p><strong>get-parameters</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-SHELL data-lang=SHELL><span class=line><span class=cl>aws ssm get-parameters --names /my-app/dev/db-url /my-app/dev/db-password
 </span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-SHELL data-lang=SHELL><span class=line><span class=cl>aws ssm get-parameters --names /my-app/dev/db-url /my-app/dev/db-password --decryption <span class=c1># KMS permissions are required to decrypt</span>
-</span></span></code></pre></div><p>get-parameters-by-path</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-SHELL data-lang=SHELL><span class=line><span class=cl>aws ssm get-parameters-by-path --path /my-app/dev
+</span></span></code></pre></div><p><strong>get-parameters-by-path</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-SHELL data-lang=SHELL><span class=line><span class=cl>aws ssm get-parameters-by-path --path /my-app/dev
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>aws ssm get-parameters-by-path --path /my-app --recursive
 </span></span><span class=line><span class=cl>
