@@ -9,6 +9,7 @@ tags:
   - GitHub
   - GitHubActions
   - OpenID
+  - security
 categories:
   - DevOps
   - CI/CD
