@@ -432,6 +432,8 @@ aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 
 📝 _Note:_ <font color=#EB4925>WAF doesn't work with NLB</font>.
 
+![](./assets/AWS_Security_WAF_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
 - Web ACLs let you define rules that inspect and filter web requests    
 - **IP sets** can include up to 10,000 IP addresses; use multiple rules if you need more    
 - You can filter based on **HTTP headers**, **body**, or **URI strings**, and block common attacks like **SQL injection** and **XSS**    
