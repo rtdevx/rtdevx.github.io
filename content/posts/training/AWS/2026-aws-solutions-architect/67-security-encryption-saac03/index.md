@@ -430,12 +430,14 @@ aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 	- **AppSync GraphQL APIs**
 	- **Cognito User Pools**
 
+📝 _Note:_ <font color=#EB4925>WAF doesn't work with NLB</font>.
+
 - Web ACLs let you define rules that inspect and filter web requests    
 - **IP sets** can include up to 10,000 IP addresses; use multiple rules if you need more    
 - You can filter based on **HTTP headers**, **body**, or **URI strings**, and block common attacks like **SQL injection** and **XSS**    
 - Additional match options include **size constraints** and **geo‑matching** (e.g., blocking specific countries)    
 - **Rate‑based rules** track request volume and help mitigate DDoS‑style bursts    
-- Web ACLs are **regional**, except when used with **CloudFront**, where they become global    
+- <font color=#EB4925>Web ACLs are regional, except when used with CloudFront, where they become global</font>
 - **Rule groups** provide reusable collections of rules that can be shared across multiple Web ACLs
 ## AWS Shield
 
