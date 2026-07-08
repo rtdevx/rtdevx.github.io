@@ -477,6 +477,7 @@ aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 - Organizations that experience frequent or high‑risk DDoS activity should consider **Shield Advanced**
 ## DDoS protection - best practices
 
+<font color=#EBAC25><i>More info:</i></font> [AWS Best Practices for DDoS Resiliency](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.html)
 ### AWS Best Practices for DDoS Resiliency Edge Location Mitigation (BP1, BP3)
 
 - **BP1 – CloudFront**    
@@ -585,8 +586,10 @@ aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 	- [How to replicate secrets in AWS Secrets Manager to multiple Regions](https://aws.amazon.com/blogs/security/how-to-replicate-secrets-aws-secrets-manager-multiple-regions/)
 - [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/)
 - [AWS CloudHSM Documentation](https://docs.aws.amazon.com/cloudhsm/)
-- [AWS WAF Documentation](https://docs.aws.amazon.com/waf/)
-- [AWS Shield Documentation](https://docs.aws.amazon.com/shield/)
+- DDoS
+	- [AWS WAF Documentation](https://docs.aws.amazon.com/waf/)
+	- [AWS Shield Documentation](https://docs.aws.amazon.com/shield/)
+		- [AWS Best Practices for DDoS Resiliency](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.html)
 - [AWS Firewall Manager Documentation](https://docs.aws.amazon.com/firewall-manager/)
 - [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/)
 - [Amazon Inspector Documentation](https://docs.aws.amazon.com/inspector/)
