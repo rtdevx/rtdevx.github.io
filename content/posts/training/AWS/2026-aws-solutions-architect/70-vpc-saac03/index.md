@@ -8,6 +8,8 @@ tags:
   - SAA-C03
   - VPC
   - Kinesis
+  - Troubleshooting
+  - security
 categories:
   - AWS
   - Networking
@@ -107,6 +109,12 @@ The Internet Assigned Numbers Authority (IANA) established certain blocks of IPv
 - [Building AWS VPC]({{< ref "06-vpc" >}})
 - [Add internet access to a subnet](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-igw.html)
 - [Enable internet access for a VPC using an internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
+
+{{< lead >}}
+
+An **Internet Gateway** (IGW) in AWS is a component that allows communication between your Virtual Private Cloud (VPC) and the internet, enabling resources within the VPC to connect to the internet and vice versa. It is essential for instances with public IPs to access the internet and for external services to initiate connections to those instances.
+
+{{< /lead >}}
 
 - <font color=#EBAC25>An Internet Gateway enables resources in a VPC (such as EC2 instances) to reach the public Internet   </font>
 - It is fully managed, horizontally scalable, and highly available    
@@ -355,6 +363,23 @@ Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB pr
 - DynamoDB is a **public AWS service**, so a Lambda function inside a VPC must either reach it through the **public Internet** (which requires a NAT Gateway in a public subnet plus an Internet Gateway), or
 
 - Use the better, **private and free** option: create a **DynamoDB Gateway VPC Endpoint** and update your route tables so the Lambda function can access DynamoDB entirely through the **AWS private network**.
+
+{{< alert "lightbulb" >}}
+
+🙋🏻 _Question:_ Isn't Lambda outside of VPC by default and has to be created inside of VPC if required?
+
+**Lambda is** outside your VPC by default, and you only place it inside a VPC when your function needs to reach private resources.
+
+- **Lambda outside VPC** → can reach DynamoDB directly
+- **Lambda inside VPC** → cannot reach DynamoDB unless you fix routing
+
+<font color=#EB4925>Lambda only needs a NAT or VPC Endpoint when you put it inside a VPC</font>.
+
+- **Default Lambda** = outside VPC = Internet access = DynamoDB works automatically
+- **Lambda in VPC** = no Internet = must use NAT or DynamoDB VPC Endpoint
+- **Best practice:** use VPC Endpoints for AWS services instead of NAT
+
+{{< /alert >}}
 ## VPC Flow Logs
 
 - VPC Flow Logs record IP traffic flowing **into and out of** your VPC, subnets, or individual ENIs.    
@@ -551,7 +576,7 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 - They can reach the Internet over either protocol through an **Internet Gateway**.
 ### Egress-only Internet Gateway
 
-- An **egress‑only Internet Gateway** is for **IPv6 traffic only** and works like a NAT Gateway but specifically for outbound IPv6.    
+- An <font color=#EB4925>egress‑only Internet Gateway is for IPv6 traffic only</font> and works like a NAT Gateway but specifically for outbound IPv6.    
 - It lets instances make **outbound IPv6 connections** while blocking **inbound IPv6 traffic** from the Internet.    
 - You must **update your route tables** to use it.
 ## AWS Network Firewall
@@ -561,7 +586,7 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 - AWS Network Firewall provides **full VPC‑level protection**, covering traffic from **Layer 3 through Layer 7**.    
 - It can inspect traffic in any direction: **VPC‑to‑VPC**, **outbound to the Internet**, **inbound from the Internet**, and traffic to or from **Direct Connect** or **Site‑to‑Site VPN**.    
 - Internally, it relies on the **AWS Gateway Load Balancer** for scaling and availability.    
-- Rules can be **centrally managed across accounts** using **AWS Firewall Manager**, making it easy to enforce consistent policies across many VPCs.
+- Rules can be **centrally managed across accounts** using [AWS Firewall Manager]({{< ref "67-security-encryption-saac03/#aws-firewall-manager" >}}), making it easy to enforce consistent policies across many VPCs.
 
 ![](./assets/AWS_VPC_Firewall.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
@@ -616,6 +641,8 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 ## >> References <<
 
 **Cloud Practitioner:** [VPC]({{< ref "18-vpc" >}})
+
+- [AWS Firewall Manager]({{< ref "67-security-encryption-saac03/#aws-firewall-manager" >}})
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_saac03 >}}

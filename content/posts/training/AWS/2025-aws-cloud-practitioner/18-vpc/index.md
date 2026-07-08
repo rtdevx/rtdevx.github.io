@@ -7,7 +7,8 @@ draft: false
 tags:
   - CLF-C02
   - VPC
-categories: 
+  - Troubleshooting
+categories:
   - AWS
   - Networking
 series: AWS Cloud Practitioner
