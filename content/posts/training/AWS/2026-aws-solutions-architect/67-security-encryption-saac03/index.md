@@ -581,12 +581,12 @@ aws ssm get-parameters-by-path --path /my-app --recursive --with-decryption
 - [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 	- [Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html)
 - [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
-- AWS Secrets Replication
+- **AWS Secrets Replication**
 	- [Replicate AWS Secrets Manager secrets across Regions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/replicate-secrets.html)
 	- [How to replicate secrets in AWS Secrets Manager to multiple Regions](https://aws.amazon.com/blogs/security/how-to-replicate-secrets-aws-secrets-manager-multiple-regions/)
 - [AWS Certificate Manager Documentation](https://docs.aws.amazon.com/acm/)
 - [AWS CloudHSM Documentation](https://docs.aws.amazon.com/cloudhsm/)
-- DDoS
+- **DDoS**
 	- [AWS WAF Documentation](https://docs.aws.amazon.com/waf/)
 	- [AWS Shield Documentation](https://docs.aws.amazon.com/shield/)
 		- [AWS Best Practices for DDoS Resiliency](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/aws-best-practices-ddos-resiliency.html)
