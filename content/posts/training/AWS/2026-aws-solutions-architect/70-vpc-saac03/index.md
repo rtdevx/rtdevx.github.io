@@ -112,7 +112,7 @@ The Internet Assigned Numbers Authority (IANA) established certain blocks of IPv
 
 {{< lead >}}
 
-An **Internet Gateway** (IGW) in AWS is a horizontally scaled, redundant **VPC component** that <font color=#EBAC25>allows communication between your Virtual Private Cloud (VPC) and the internet</font>, enabling resources within the VPC to connect to the internet and vice versa. 
+An **Internet Gateway** (IGW) in AWS is a horizontally scaled, redundant **VPC component** that <font color=#EBAC25>allows communication between your Virtual Private Cloud (VPC) and the internet, enabling resources within the VPC to connect to the internet</font> and vice versa. 
 
 <font color=#C7EB25>It is essential for instances with public IPs to access the internet and for external services to initiate connections to those instances</font>.
 
