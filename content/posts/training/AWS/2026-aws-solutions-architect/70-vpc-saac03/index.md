@@ -176,7 +176,7 @@ flowchart TB
 
 - Provides a **highly available, VPC‑wide NAT service**    
 - RNAT uses its **own dedicated route tables**    
-- <font color=#EBAC25>Removes the need to deploy NAT Gateways in every Availability Zone</font> - it is **shared across all AZs**    
+- <font color=#EBAC25>Removes the need to deploy NAT Gateways in every Availability Zone</font> - it is shared across all AZs
 - You **don’t need public subnets** in your VPC to host RNAT    
 - Automatically detects when new AZs become available and **extends coverage** to them
 
@@ -265,7 +265,7 @@ This ensures the NACL always has a final decision path.
 {{< /alert >}}
 ### Ephemeral Ports
 
-- Every connection between two endpoints requires ports, and while clients connect to a server’s well‑known port, the server replies back using an **ephemeral (temporary) port**.    
+- Every connection between two endpoints requires ports, and while <font color=#EB4925>clients connect to a server’s well‑known port, the server replies back using an ephemeral (temporary) port</font>.    
 - Different operating systems allocate ephemeral ports from different ranges - for example, **49152-65535** on IANA and Windows 10, and **32768-60999** on many Linux kernels.
 
 ![](./assets/AWS_VPC_NACL_Ephemeral.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
@@ -284,8 +284,8 @@ This ensures the NACL always has a final decision path.
 
 - VPC Peering lets you **privately connect two VPCs** over the AWS internal network so they can communicate as if they were part of the same environment.    
 - The VPCs must have **non‑overlapping CIDR ranges**.    
-- Peering is **not transitive** - every pair of VPCs that needs to talk must have its own peering connection.    
-- You must update the **route tables in each VPC’s subnets** so that EC2 instances can reach each other through the peering link.
+- Peering is **not transitive** - <font color=#EB4925>every pair of VPCs that needs to talk must have its own peering connection</font>.    
+	- <font color=#EBAC25>You must update the route tables in each VPC’s subnets</font> so that EC2 instances can reach each other through the peering link.
 
 {{< alert "circle-info" >}}
 
@@ -348,18 +348,18 @@ Think of them as: **“Private ENIs that act as a doorway to an AWS service.”*
 
 - Only for **S3** and **DynamoDB**    
 - Added to your **route tables**    
-- **Free** to use    
-- No ENIs, no Security Groups    
+- <font color=#C7EB25>Free to use</font>
+- No ENIs, no Security Groups
 
 Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB privately.”**
 
 <font color=#EBAC25><i>More info:</i></font> [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html)
 ### Why VPC Endpoints matter
 
-- **No Internet exposure**    
-- **No NAT Gateway cost** for S3/DynamoDB traffic    
-- **Lower latency** (stays on AWS backbone)    
-- **Better security posture** (private connectivity, IAM policies, endpoint policies)
+- <font color=#C7EB25>No Internet exposure</font>
+- <font color=#C7EB25>No NAT Gateway cost</font> for S3/DynamoDB traffic    
+- <font color=#C7EB25>Lower latency</font> (stays on AWS backbone)    
+- <font color=#C7EB25>Better security posture</font> (private connectivity, IAM policies, endpoint policies)
 ### Lambda in VPC accessing DynamoDB
 
 - DynamoDB is a **public AWS service**, so a Lambda function inside a VPC must either reach it through the **public Internet** (which requires a NAT Gateway in a public subnet plus an Internet Gateway), or
@@ -411,8 +411,14 @@ Think of them as: **“Route‑table entries that send traffic to S3/DynamoDB pr
 - [AWS Virtual Private Network Documentation](https://docs.aws.amazon.com/vpn/)
 - [Get started with AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html)
 
-- A **Virtual Private Gateway (VGW)** is the AWS‑side VPN concentrator; you create it and attach it to the VPC that will use the Site‑to‑Site VPN, and you can optionally set a custom ASN for routing.    
+{{< lead >}}
+
+A **site-to-site VPN** creates an **encrypted tunnel between an on-premises network and an AWS VPC**, allowing secure communication without exposing resources to the public internet. **It requires a customer gateway on-premises, a virtual private gateway in AWS, and proper route propagation in the VPC route tables**.
+
+{{< /lead >}}
+
 - A **Customer Gateway (CGW)** represents your on‑premises side and can be either a physical device or a software‑based VPN appliance.
+- A **Virtual Private Gateway (VGW)** is the AWS‑side VPN concentrator; you create it and attach it to the VPC that will use the Site‑to‑Site VPN, and you can optionally set a custom ASN for routing.    
 
 {{< mermaid >}}
 
@@ -510,7 +516,7 @@ flowchart TD
 - You establish a physical connection between your data centre and an **AWS Direct Connect location**.    
 - Your VPC still needs a **Virtual Private Gateway** to receive the connection.    
 - The same Direct Connect link can reach both **public AWS services** (like S3) and **private VPC resources** (like EC2).    
-- Common use cases include:    
+- <font color=#EBAC25>Common use cases</font> include:    
     - Higher, more predictable **bandwidth** for large data transfers at lower cost        
     - **Consistent, low‑latency** connectivity for real‑time applications        
     - **Hybrid architectures** spanning on‑prem and cloud        
