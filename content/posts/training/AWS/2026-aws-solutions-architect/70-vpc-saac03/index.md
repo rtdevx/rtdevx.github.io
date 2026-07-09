@@ -176,7 +176,7 @@ flowchart TB
 
 - Provides a **highly available, VPC‑wide NAT service**    
 - RNAT uses its **own dedicated route tables**    
-- Removes the need to deploy NAT Gateways in every Availability Zone - it is **shared across all AZs**    
+- <font color=#EBAC25>Removes the need to deploy NAT Gateways in every Availability Zone</font> - it is **shared across all AZs**    
 - You **don’t need public subnets** in your VPC to host RNAT    
 - Automatically detects when new AZs become available and **extends coverage** to them
 
