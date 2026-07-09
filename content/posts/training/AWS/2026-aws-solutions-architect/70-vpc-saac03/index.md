@@ -130,12 +130,12 @@ An **Internet Gateway** (IGW) in AWS is a horizontally scaled, redundant **VPC c
 - Fully managed AWS NAT service with high bandwidth, high availability, and no admin overhead 
 - Billed by the hour plus data processing charges    
 - Deployed in a specific Availability Zone and associated with an Elastic IP    
-- Cannot be used by instances in the **same** subnet—only by instances in **other** subnets    
+- Cannot be used by instances in the **same** subnet - only by instances in **other** subnets    
 - Requires an Internet Gateway for outbound traffic (Private Subnet → NAT Gateway → IGW)    
 - Provides **5 Gbps** baseline throughput and automatically scales up to **100 Gbps**    
 - No Security Groups are needed or supported for NAT Gateways
 
-ℹ️ _Note:_ NAT Gateway is resilient within a single Availability Zone. Must create multiple NAT Gateways in multiple AZs for fault tolerance.
+ℹ️ _Note:_ <font color=#EBAC25>NAT Gateway is resilient within a single Availability Zone. Must create multiple NAT Gateways in multiple AZs for fault tolerance</font>.
 
 {{< mermaid >}}
 
