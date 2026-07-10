@@ -57,8 +57,9 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
 
 1. Knowledge Hut [Whitepaper Recommendations](https://www.knowledgehut.com/blog/cloud-computing/recommended-aws-whitepapers)    
 2. AWS Well Architected Whitepapers    
-    1. [Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf)        
-    2. [Operational Excellence](https://d1.awsstatic.com/whitepapers/architecture/AWS-Operational-Excellence-Pillar.pdf)        
+    1. [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
+	    1. [AWS Well-Architected Tool](https://docs.aws.amazon.com/wellarchitected/)
+    2. [Operational Excellence](https://d1.awsstatic.com/whitepapers/architecture/AWS-Operational-Excellence-Pillar.pdf)
     3. [Security](https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf) 
     4. [Reliability](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
     5. [Performance](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)        
