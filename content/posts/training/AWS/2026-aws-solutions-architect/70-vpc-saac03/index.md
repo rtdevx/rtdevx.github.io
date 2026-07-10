@@ -575,7 +575,7 @@ In case Direct Connect fails, you can set up a backup Direct Connect connection 
 
 - IPv4 was built to support about **4.3 billion** addresses, and that pool is nearly exhausted.    
 - **IPv6** is the next‑generation protocol designed to provide an almost limitless supply of addresses — roughly **3.4 × 10³⁸** unique IPs.    
-- In AWS, every IPv6 address is **public and Internet‑routable**; there is **no private IPv6 range**.
+- In AWS, every IPv6 address is <font color=#EB4925>public and Internet‑routable</font>; there is <font color=#EB4925>no private IPv6 range</font>.
 ### IPv6 in VPC
 
 - You can’t turn off **IPv4** for a VPC or its subnets.    

@@ -13,6 +13,7 @@ tags:
   - S3
   - Capacity
   - Snowball
+  - Costs
 categories:
   - AWS
 series: AWS Solution Architect
@@ -75,7 +76,7 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 - The full production environment runs **simultaneously** on‑premises and in AWS at full scale.
 
 ![](./assets/AWS_DR_Hot_Site.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
-## Disaster Recovery Best Practices
+## 🔥Disaster Recovery Best Practices
 
 **Backup**
 - Use EBS snapshots, RDS automated backups/snapshots, and regularly push data to S3, S3 IA, or Glacier with lifecycle policies and cross‑region replication.    
@@ -100,7 +101,7 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 ## AWS Elastic Disaster Recovery (DRS)
 
 - AWS Elastic Disaster Recovery lets you rapidly restore physical, virtual, or cloud‑based servers into AWS.    
-- It protects critical workloads - databases like Oracle, MySQL, SQL Server, enterprise apps like SAP, and even against ransomware - using **continuous block‑level replication**.
+- <font color=#EB4925>It protects critical workloads</font> - databases like Oracle, MySQL, SQL Server, enterprise apps like SAP, and <font color=#EB4925>even against ransomware</font> - using **continuous block‑level replication**.
 
 ![](./assets/AWS_DR_DRS.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 ## DMS - Database Migration Service
@@ -198,7 +199,7 @@ Recovery involves restoring the latest backups and redeploying resources, giving
 
 <font color=#EB4925>It is recommended to use AWS Snowball devices if it would take more than a week to transfer over the network</font>.
 
-_More info:_ [AWS Snowball]({{< ref "11-s3/#aws-snowball" >}})
+_More info:_ [AWS Snowball]({{< ref "tags/snowball" >}})
 
 ---
 ## >> Sources <<
