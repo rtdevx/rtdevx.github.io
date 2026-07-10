@@ -53,7 +53,7 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
 3. [Curated list](https://gist.github.com/leonardofed/bbf6459ad154ad5215d354f3825435dc) of AWS resources for the certification    
 4. [AWS in Plain English](https://expeditedsecurity.com/aws-in-plain-english/)    
 5. [Exam Pro](https://www.exampro.co/) included with courses
-## AWS Whitepaper Help
+## 🔥AWS Whitepaper Help
 
 1. Knowledge Hut [Whitepaper Recommendations](https://www.knowledgehut.com/blog/cloud-computing/recommended-aws-whitepapers)    
 2. AWS Well Architected Whitepapers    
@@ -64,6 +64,10 @@ A bunch of **FAQ's**, **Resources** and **general advice on AWS careers and cert
     4. [Reliability](https://d1.awsstatic.com/whitepapers/architecture/AWS-Reliability-Pillar.pdf)
     5. [Performance](https://d1.awsstatic.com/whitepapers/architecture/AWS-Performance-Efficiency-Pillar.pdf)        
     6. [Cost](https://d1.awsstatic.com/whitepapers/architecture/AWS-Cost-Optimization-Pillar.pdf)
+3. 🔥<font color=#EBAC25>Architecture Examples</font>
+	1. [AWS Architecture Center](https://aws.amazon.com/architecture/)
+	2. [AWS Solutions Library](https://aws.amazon.com/solutions/)
+4. [Disaster Recovery](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html)
 ## Communities
 
 1. Linux Academy Slack - [https://linuxacademy-community-slack.herokuapp.com/](https://linuxacademy-community-slack.herokuapp.com/)    
