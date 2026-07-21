@@ -151,6 +151,8 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 - Publishes all results as **CloudWatch metrics**
 ### <font color=#EBAC25>Amazon EventBridge</font>
 
+<font color=#EBAC25><i>More info:</i></font> [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)
+
 - **Schedule:** <font color=#EBAC25>Cron jobs</font>
 - **Event Pattern:** <font color=#EBAC25>Event rules to react to a service doing something</font>
 - <font color=#EBAC25>Trigger Lambda functions</font>, send SQS/SNS messages
@@ -253,6 +255,7 @@ In **Amazon EKS** and **Kubernetes**, <font color=#EBAC25>CloudWatch Insights is
 CloudWatch / CloudWatch Logs / CloudWatch Events (EventBridge): 
 - https://docs.aws.amazon.com/cloudwatch/
 - https://console.aws.amazon.com/cloudwatch
+- [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)
 ## >> References <<
 
 **Cloud Practitioner:** [Cloud Monitoring]({{< ref "17-cloud-monitoring" >}})
