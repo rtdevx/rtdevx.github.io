@@ -184,14 +184,14 @@ This is the **event bus** functionality - far more powerful than cron.
 
 **Examples of AWS EventBridge event sources**
 
-**Compute** - Lambda function invocations failure, EC2 instance state changes (start, stop, terminate), ECS task state changes, EKS cluster events
-**Storage** - S3 object-level events
-**Networking** - VPC flow log delivery failures, API Gateway request events
-**Security** - IAM access key lifecycle events, GuardDuty findings, Security Hub findings, AWS Config compliance changes, CloudTrail events (via EventBridge)
-**Database** - DynamoDB table state changes, RDS instance failover events, Aurora cluster events
-**Messaging** - SNS topic events, SQS queue events, Step Functions execution status changes
-**Management & Monitoring** - CloudWatch Alarms, Auto Scaling lifecycle events, AWS Backup job events, AWS Health Dashboard events
-**SaaS integrations** - Auth0, Zendesk, Shopify, Datadog, Stripe, Many others...
+- **Compute** - Lambda function invocations failure, EC2 instance state changes (start, stop, terminate), ECS task state changes, EKS cluster events
+- **Storage** - S3 object-level events
+- **Networking** - VPC flow log delivery failures, API Gateway request events
+- **Security** - IAM access key lifecycle events, GuardDuty findings, Security Hub findings, AWS Config compliance changes, CloudTrail events (via EventBridge)
+- **Database** - DynamoDB table state changes, RDS instance failover events, Aurora cluster events
+- **Messaging** - SNS topic events, SQS queue events, Step Functions execution status changes
+- **Management & Monitoring** - CloudWatch Alarms, Auto Scaling lifecycle events, AWS Backup job events, AWS Health Dashboard events
+- **SaaS integrations** - Auth0, Zendesk, Shopify, Datadog, Stripe, Many others...
 
 {{< /alert >}}
 #### EventBridge Create rule
