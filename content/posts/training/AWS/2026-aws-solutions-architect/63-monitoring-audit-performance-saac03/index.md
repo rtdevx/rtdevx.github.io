@@ -153,11 +153,47 @@ Amazon **CloudWatch** is AWS’s **monitoring service** that **collects metrics*
 
 <font color=#EBAC25><i>More info:</i></font> [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)
 
-- **Schedule:** <font color=#EBAC25>Cron jobs</font>
+- **Schedule:** <font color=#EBAC25>Cron jobs + Event Bus</font> 
 - **Event Pattern:** <font color=#EBAC25>Event rules to react to a service doing something</font>
 - <font color=#EBAC25>Trigger Lambda functions</font>, send SQS/SNS messages
 
 ![](./assets/AWS_Monitoring_EventBridge_1.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
+
+{{< alert "lightbulb" >}}
+🙋🏻 _Question:_ Give me some example AWS EventBridge Sources. It is said that EventBridge is equivalent to the Cron Jobs but I understand it can also be triggered by an event. Can you clarify?
+
+EventBridge has **two completely different triggering models**:
+
+**1. Scheduled rules (cron/ rate)**
+
+This is the part people compare to cron jobs.
+
+<font color=#EBAC25>Examples:</font>
+- Run a Lambda every hour    
+- Trigger a workflow every day at 02:00    
+- Clean up old data every 15 minutes    
+- Rotate a job weekly    
+
+This is the **cron‑like** functionality.
+
+**2. Event‑driven rules (the real power)**
+
+EventBridge can listen to **events emitted by AWS services, SaaS providers, or your own apps**, and trigger targets when something happens.
+
+This is the **event bus** functionality - far more powerful than cron.
+
+**Examples of AWS EventBridge event sources**
+
+**Compute** - Lambda function invocations failure, EC2 instance state changes (start, stop, terminate), ECS task state changes, EKS cluster events
+**Storage** - S3 object-level events
+**Networking** - VPC flow log delivery failures, API Gateway request events
+**Security** - IAM access key lifecycle events, GuardDuty findings, Security Hub findings, AWS Config compliance changes, CloudTrail events (via EventBridge)
+**Database** - DynamoDB table state changes, RDS instance failover events, Aurora cluster events
+**Messaging** - SNS topic events, SQS queue events, Step Functions execution status changes
+**Management & Monitoring** - CloudWatch Alarms, Auto Scaling lifecycle events, AWS Backup job events, AWS Health Dashboard events
+**SaaS integrations** - Auth0, Zendesk, Shopify, Datadog, Stripe, Many others...
+
+{{< /alert >}}
 #### EventBridge Create rule
 
 {{< alert "circle-info" >}}
