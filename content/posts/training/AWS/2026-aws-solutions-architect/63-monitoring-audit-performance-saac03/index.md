@@ -182,7 +182,7 @@ EventBridge can listen to **events emitted by AWS services, SaaS providers, or y
 
 This is the **event bus** functionality - far more powerful than cron.
 
-**Examples of AWS EventBridge event sources**
+<font color=#EBAC25>Examples of AWS EventBridge event sources:</font>
 
 - **Compute** - Lambda function invocations failure, EC2 instance state changes (start, stop, terminate), ECS task state changes, EKS cluster events
 - **Storage** - S3 object-level events
