@@ -231,6 +231,8 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 ℹ️ For more high-level information about **Auto Scaling Groups**, refer to [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
 ### Scale in termination policies
 
+<font color=#EBAC25><i>More info:</i></font> [Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)
+
 {{< lead >}}
 
 Amazon EC2 **Auto Scaling** uses **termination policies** to decide the order for terminating instances. 
@@ -246,6 +248,31 @@ A scale in event occurs when there is a new value for the desired capacity of an
 - When using dynamic scaling policies and the size of the group decreases as a result of changes in a metric's value    
 - When using scheduled scaling and the size of the group decreases as a result of a scheduled action    
 - When you manually decrease the size of the group
+#### Default EC2 Auto Scaling Termination Policy
+
+When no custom termination policy is assigned, EC2 Auto Scaling terminates instances using the following order:
+
+1. **Select the Availability Zone with the most instances**
+    
+    - Auto Scaling first chooses the AZ that has **more instances than others**, to maintain AZ balance.
+        
+2. **Within that AZ, identify the instance launched from the “least-preferred” configuration** Auto Scaling prefers to terminate an instance that was launched from:
+    
+    - a **launch configuration** (older mechanism), or        
+    - a **different launch template**, or        
+    - the **oldest version** of the current launch template
+        
+3. **If all instances use the same launch template and version, choose based on billing hour**
+    
+    - Auto Scaling terminates the instance **closest to the next billing hour** to minimise cost.
+
+{{< alert "edit" >}}
+
+- **AZ balancing first**    
+- **Oldest or mismatched configuration second**    
+- **Billing-hour optimisation last**
+
+{{< /alert >}}
 #### Availability Zone rebalancing
 
 {{< lead >}}
@@ -271,8 +298,6 @@ If you expand your Auto Scaling group to include additional Availability Zones, 
 **Availability outage**
 
 Availability outages are rare. However, if one Availability Zone becomes unavailable and recovers later, your Auto Scaling group can become unbalanced between Availability Zones. Amazon EC2 Auto Scaling tries to gradually rebalance the group, and rebalancing might terminate instances in other zones.
-
-<font color=#EBAC25><i>More info:</i></font> [Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)
 
 ---
 ## >> Sources <<
