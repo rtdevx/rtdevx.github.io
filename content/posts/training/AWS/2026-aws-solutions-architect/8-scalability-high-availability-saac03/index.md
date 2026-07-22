@@ -229,7 +229,7 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 - During the cooldown period, the ASG will not launch or terminate additional instances (<font color=#EBAC25>to allow for metrics to stabilize</font>)
 
 ℹ️ For more high-level information about **Auto Scaling Groups**, refer to [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
-### Control which Auto Scaling instances terminate during scale in
+### Scale in termination policies
 
 {{< lead >}}
 
