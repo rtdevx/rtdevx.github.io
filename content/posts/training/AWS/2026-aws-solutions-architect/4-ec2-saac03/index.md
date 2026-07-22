@@ -155,23 +155,23 @@ For a deeper dive, **AWS** has a **solid introductory post here:**
 
 {{< /lead >}}
 
-**Multiple instance types**
+- **Multiple instance types**
 
 A fleet can launch multiple instance types, ensuring it isn't dependent on the availability of any single instance type. This increases the overall availability of instances in your fleet.
 
-**Distributing instances across Availability Zones**
+- **Distributing instances across Availability Zones**
 
 A fleet can launch into multiple Availability Zones, enabling you to reduce costs and improve availability. If your fleet includes Spot Instances, the fleet automatically selects Availability Zones based on your preferences regarding price and interruptions.
 
-**Multiple purchasing options**
+- **Multiple purchasing options**
 
 A fleet can launch multiple purchase options (Spot and On-Demand Instances), allowing you to optimize costs through Spot Instance usage. You can also take advantage of Reserved Instance and Savings Plans discounts by using them in conjunction with On-Demand Instances in the fleet.
 
-**Automated replacement of Spot Instances**
+- **Automated replacement of Spot Instances**
 
 If your fleet includes Spot Instances, it can automatically request replacement Spot capacity if your Spot Instances are interrupted. Through [Capacity Rebalancing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-capacity-rebalance.html), a fleet can also monitor and proactively replace your Spot Instances that are at an elevated risk of interruption.
 
-**Reserve On-Demand capacity**
+- **Reserve On-Demand capacity**
 
 A fleet can use an [On-Demand Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-on-demand-capacity-reservations.html) to reserve On-Demand capacity. A fleet can also include [Capacity Blocks for ML](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html), allowing you to reserve GPU instances on a future date to support short duration machine learning (ML) workloads.
 
@@ -190,7 +190,7 @@ A fleet can use an [On-Demand Capacity Reservation](https://docs.aws.amazon.com/
 - [KodeKloud: Elastic Network Interfaces](https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Services-Compute/Elastic-Network-Interfaces)
 - 🔥[Elastic Network Interfaces in the Virtual Private Cloud](https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/)
 
-**Spot Fleet:**
+**EC2 Fleets:**
 
 - [EC2 Fleet and Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Fleets.html)
 ## >> References <<
