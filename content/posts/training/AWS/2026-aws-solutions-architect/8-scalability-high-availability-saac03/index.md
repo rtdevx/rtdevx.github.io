@@ -229,6 +229,50 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 - During the cooldown period, the ASG will not launch or terminate additional instances (<font color=#EBAC25>to allow for metrics to stabilize</font>)
 
 ℹ️ For more high-level information about **Auto Scaling Groups**, refer to [Auto Scaling Groups]({{< ref "10-auto-scaling-groups" >}}) section from the [AWS Cloud Practitioner]({{< ref "series/aws-cloud-practitioner" >}}) series.
+### Control which Auto Scaling instances terminate during scale in
+
+{{< lead >}}
+
+Amazon EC2 **Auto Scaling** uses **termination policies** to decide the order for terminating instances. 
+
+You can use a predefined policy or create a custom policy to meet your specific requirements. By using a **custom policy** or instance scale in protection, you can also prevent your Auto Scaling group from terminating instances that aren't yet ready to terminate.
+
+{{< /lead >}}
+
+A scale in event occurs when there is a new value for the desired capacity of an Auto Scaling group that is lower than the current capacity of the group.
+
+**Scale in events occur in the following scenarios:**
+
+- When using dynamic scaling policies and the size of the group decreases as a result of changes in a metric's value    
+- When using scheduled scaling and the size of the group decreases as a result of a scheduled action    
+- When you manually decrease the size of the group
+#### Availability Zone rebalancing
+
+{{< lead >}}
+
+Amazon EC2 Auto Scaling balances your capacity evenly across the Availability Zones enabled for your Auto Scaling group. **This helps reduce the impact of an Availability Zone outage.** 
+
+If the distribution of capacity across Availability Zones becomes out of balance, Amazon EC2 Auto Scaling rebalances the Auto Scaling group by launching instances in the enabled Availability Zones with the fewest instances and terminating instances elsewhere. 
+
+The termination policy controls which instances are prioritized for termination first.
+
+{{< /lead >}}
+
+There are a number of reasons why the distribution of instances across Availability Zones can become out of balance.
+
+**Removing instances**
+
+If you detach instances from your Auto Scaling group, you put instances on standby, or you explicitly terminate instances and decrement the desired capacity, which prevents replacement instances from launching, the group can become unbalanced. If this occurs, Amazon EC2 Auto Scaling compensates by rebalancing the Availability Zones.
+
+**Using different Availability Zones than originally specified**
+
+If you expand your Auto Scaling group to include additional Availability Zones, or you change which Availability Zones are used, Amazon EC2 Auto Scaling launches instances in the new Availability Zones and terminates instances in other zones to help ensure that your Auto Scaling group spans Availability Zones evenly.
+
+**Availability outage**
+
+Availability outages are rare. However, if one Availability Zone becomes unavailable and recovers later, your Auto Scaling group can become unbalanced between Availability Zones. Amazon EC2 Auto Scaling tries to gradually rebalance the group, and rebalancing might terminate instances in other zones.
+
+<font color=#EBAC25><i>More info:</i></font> [Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)
 
 ---
 ## >> Sources <<
@@ -236,6 +280,7 @@ This helps smooth out uneven workloads and prevents situations where one AZ beco
 **High Availability and Scalability:**
 
 - [High availability and scalability on AWS](https://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/high-availability-and-scalability-on-aws.html)
+- [Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)
 
 **Load Balancing:**
 
