@@ -30,6 +30,15 @@ Instead of creating users in IAM, web users can be created using Cognito
 
 ![](./assets/AWS_Cognito.png)
 _Amazon Cognito for web and mobile applications. <font color=#C7EB25>It can also integrate with Google and Facebook login.</font>_
+### Cognito User Pools / Cognito Identity Pools
+
+User Pools handle user authentication; Identity Pools handle authorization to AWS resources.
+
+- **User Pool authenticates the user** → returns JWT tokens    
+- **Identity Pool exchanges the token** → returns temporary AWS credentials with IAM permissions
+
+User Pools: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools.html
+Identity Pools: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
 ## Directory Services
 
 ##### <font color=#EBAC25>Database of objects:</font> User accounts, Computers, Printers, File Shares, Security Groups...
@@ -73,6 +82,10 @@ _Amazon Cognito for web and mobile applications. <font color=#C7EB25>It can also
 	- One login for multiple AWS accounts and applications
 
 ---
+## >> Sources <<
+
+User Pools: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools.html
+Identity Pools: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
 ## >> References <<
 
 - [Identity and Access management (IAM)]({{< ref "2-iam" >}})
