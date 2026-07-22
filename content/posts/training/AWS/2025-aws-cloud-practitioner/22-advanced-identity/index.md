@@ -37,8 +37,9 @@ User Pools handle user authentication; Identity Pools handle authorization to AW
 - **User Pool authenticates the user** → returns JWT tokens    
 - **Identity Pool exchanges the token** → returns temporary AWS credentials with IAM permissions
 
-User Pools: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools.html<br>
-Identity Pools: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
+<font color=#EBAC25><i>More info:</i></font>
+- User Pools: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools.html
+- Identity Pools: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html
 ## Directory Services
 
 ##### <font color=#EBAC25>Database of objects:</font> User accounts, Computers, Printers, File Shares, Security Groups...
