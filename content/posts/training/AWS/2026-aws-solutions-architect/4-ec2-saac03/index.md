@@ -147,6 +147,35 @@ For a deeper dive, **AWS** has a **solid introductory post here:**
 - **Available for** On-Demand, Reserved and Spot Instances
 
 ‼️An instance <font color=#EB4925>can NOT be hibernated more than 60 days.</font>
+## EC2 Fleet and Spot Fleet
+
+{{< lead >}}
+
+**Fleets** provide the following features and benefits, enabling you to **maximize cost savings** and **optimize availability and performance** when running applications on multiple EC2 instances.
+
+{{< /lead >}}
+
+**Multiple instance types**
+
+A fleet can launch multiple instance types, ensuring it isn't dependent on the availability of any single instance type. This increases the overall availability of instances in your fleet.
+
+**Distributing instances across Availability Zones**
+
+A fleet can launch into multiple Availability Zones, enabling you to reduce costs and improve availability. If your fleet includes Spot Instances, the fleet automatically selects Availability Zones based on your preferences regarding price and interruptions.
+
+**Multiple purchasing options**
+
+A fleet can launch multiple purchase options (Spot and On-Demand Instances), allowing you to optimize costs through Spot Instance usage. You can also take advantage of Reserved Instance and Savings Plans discounts by using them in conjunction with On-Demand Instances in the fleet.
+
+**Automated replacement of Spot Instances**
+
+If your fleet includes Spot Instances, it can automatically request replacement Spot capacity if your Spot Instances are interrupted. Through [Capacity Rebalancing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-capacity-rebalance.html), a fleet can also monitor and proactively replace your Spot Instances that are at an elevated risk of interruption.
+
+**Reserve On-Demand capacity**
+
+A fleet can use an [On-Demand Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-on-demand-capacity-reservations.html) to reserve On-Demand capacity. A fleet can also include [Capacity Blocks for ML](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html), allowing you to reserve GPU instances on a future date to support short duration machine learning (ML) workloads.
+
+<font color=#EBAC25><i>More info:</i></font> [EC2 Fleet and Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Fleets.html)
 
 ---
 ## >> Sources <<
@@ -160,6 +189,10 @@ For a deeper dive, **AWS** has a **solid introductory post here:**
 - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
 - [KodeKloud: Elastic Network Interfaces](https://notes.kodekloud.com/docs/AWS-Solutions-Architect-Associate-Certification/Services-Compute/Elastic-Network-Interfaces)
 - 🔥[Elastic Network Interfaces in the Virtual Private Cloud](https://aws.amazon.com/blogs/aws/new-elastic-network-interfaces-in-the-virtual-private-cloud/)
+
+**Spot Fleet:**
+
+- [EC2 Fleet and Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Fleets.html)
 ## >> References <<
 
 **Cloud Practitioner:** [EC2]({{< ref "4-ec2" >}})
