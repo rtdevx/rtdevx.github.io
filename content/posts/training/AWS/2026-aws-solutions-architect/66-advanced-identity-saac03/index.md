@@ -53,6 +53,14 @@ series: AWS Solution Architect
 <font color=#EB4925>SCP's do not apply to the management account</font> - this is a safety feature preventing Organizations locking out from their accounts.
 
 {{< /alert >}}
+
+<font color=#EBAC25>Important nuance</font>
+
+SCPs <font color=#EB4925>do not grant permissions</font>. They only define the <font color=#C7EB25>maximum allowed permissions</font>.
+
+<font color=#EBAC25>Meaning:</font>
+- If an SCP _denies_ an action → **no one** in the account can do it, including root.    
+- If an SCP _allows_ an action → a user/role still needs IAM permissions to perform it.
 #### SCP Least Privilege
 
 {{< lead >}}
