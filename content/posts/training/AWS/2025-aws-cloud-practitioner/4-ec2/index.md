@@ -161,8 +161,6 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 
 ![](./assets/AWS_EC2_dedicated.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
 
-_Dedicated Host vs Dedicated Instance:_ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html
-
 **Decision between Dedicated Hosts and Dedicated Instances:**
 
 {{< mermaid >}}
@@ -183,6 +181,7 @@ flowchart TD
 
 {{< /mermaid >}}
 
+_Dedicated Host vs Dedicated Instance:_ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html
 
 - **Capacity Reservations** - reserve capacity in a specific AZ for any duration
 
