@@ -163,6 +163,27 @@ ssh -i .\.ssh\id_rsa_aws25 ec2-user@ec2-3-95-191-175.compute-1.amazonaws.com
 
 _Dedicated Host vs Dedicated Instance:_ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html
 
+**Decision between Dedicated Hosts and Dedicated Instances:**
+
+{{< mermaid >}}
+
+flowchart TD
+
+    A([Need hardware isolation?]) -->|No| B([Use default tenancy])
+    A -->|Yes| C([Need BYOL licensing?])
+
+    C -->|Yes| D([Use Dedicated Hosts])
+    C -->|No| E([Running many instances of same family?])
+
+    E -->|No| F([Use Dedicated Instances])
+    E -->|Yes| G([More than 60% host utilization?])
+
+    G -->|Yes| D
+    G -->|No| F
+
+{{< /mermaid >}}
+
+
 - **Capacity Reservations** - reserve capacity in a specific AZ for any duration
 
 ![](./assets/AWS_EC2_Purchasing_Options.png "© Stéphane Maarek, [DataCumulus](https://courses.datacumulus.com/)")
