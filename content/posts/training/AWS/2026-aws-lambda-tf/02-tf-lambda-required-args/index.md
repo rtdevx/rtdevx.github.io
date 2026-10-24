@@ -3,7 +3,7 @@ title: Terraform and Lambda - Required Arguments
 date: 2026-05-02
 description: Terraform and Lambda - Required Arguments.
 summary: Terraform and Lambda - Required Arguments
-draft: false
+draft: true
 tags:
   - Terraform
   - Lambda
