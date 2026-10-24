@@ -11,13 +11,19 @@ categories:
   - DevOps
   - IaC
   - AWS
-series: Terraform and AWS Lambda
+series: Terraform and Lambda
 ---
 {{< lead >}}
-Using Terraform to manage AWS Lambda gives you a clean, repeatable way to define serverless functions as code. 
+Using **Terraform** to manage **AWS Lambda** gives you a clean, repeatable way to define serverless functions as code. 
 
 Instead of configuring everything manually in the AWS console, you describe your Lambda, its permissions, and its dependencies in simple Terraform blocks. This keeps your setup consistent across environments and easy to track in version control.
 {{< /lead >}}
+
+---
+
+![](https://www.youtube.com/watch?v=5rG-YgTHMC8)
+
+---
 ## Minimal Example
 
 A basic Lambda setup usually includes an IAM role and the function itself. Here’s a compact example:
