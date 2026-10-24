@@ -60,3 +60,6 @@ resource "aws_lambda_function" "hello_world" {
 ## >> Sources <<
 
 [Resource: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
+## >> Disclaimer <<
+
+{{< 26_disclaimer_aws_lambda_1 >}}
