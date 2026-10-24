@@ -19,13 +19,22 @@ series: Terraform and Lambda
 <font color=#C7EB25>The first</font> and <font color=#EBAC25>the most fundamental thing</font> <font color=#EB4925>for the Lambda function to run is:</font> **the code**.
 
 {{< /lead >}}
+## Function name
+
+## Handler
+
+## Runtime
+
+## Execution role
+
+## Lambda Code Sources
 
 AWS Lambda supports three code sources when managed through Terraform:
 
 - Local ZIP file (`filename`)
 - ZIP stored in S3 (`s3_bucket` + `s3_key`)
 - Container image stored in ECR (`image_uri`)
-## Basic Function with Node.js
+### Basic Function with Node.js
 
 ```bash
 # Package the Lambda function code
@@ -59,7 +68,7 @@ When using **ECR**, the Lambda **runtime** and **handler** are defined _inside t
 So the “runtime” and “handler” requirement applies only to ZIP‑based Lambdas.
 
 {{< /alert >}}
-## Container Image Function
+### Container Image Function
 
 ```bash
 resource "aws_lambda_function" "example" {
@@ -83,6 +92,7 @@ resource "aws_lambda_function" "example" {
 *More:* [Resource: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
 ## >> Sources <<
 
+- https://aws.amazon.com/lambda/
 - [Resource: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
 ## >> Disclaimer <<
 
