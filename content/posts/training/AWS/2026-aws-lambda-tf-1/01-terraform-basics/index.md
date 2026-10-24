@@ -9,7 +9,9 @@ tags:
 categories:
   - DevOps
   - IaC
-aliases:
-  - /posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/
-#redirectURL: https://robk.uk/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/
+#aliases:
+#  - /posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/
+redirectURL: https://robk.uk/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/
+
+#externalUrl: https://robk.uk/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/
 ---
