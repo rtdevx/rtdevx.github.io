@@ -10,6 +10,6 @@ categories:
   - DevOps
   - IaC
 aliases:
-  - /posts/training/AWS/2026-aws-lambda-tf-1/01-terraform-basics
-redirectURL: https://robk.uk/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/
+  - /posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/
+#redirectURL: https://robk.uk/posts/training/terraform/terraform-on-aws-with-sre--iac-devops/02-terraform-basics/
 ---
