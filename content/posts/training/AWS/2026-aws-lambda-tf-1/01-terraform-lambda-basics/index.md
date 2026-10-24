@@ -21,7 +21,7 @@ Instead of configuring everything manually in the AWS console, you describe your
 
 ---
 
-![](https://www.youtube.com/watch?v=5rG-YgTHMC8)
+{{< youtube 5rG-YgTHMC8 >}}
 
 ---
 ## Minimal Example
