@@ -7,6 +7,7 @@ draft: false
 tags:
   - Terraform
   - Lambda
+  - APIGateway
 categories:
   - DevOps
   - IaC
