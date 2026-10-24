@@ -28,7 +28,7 @@ Instead of configuring everything manually in the AWS console, you describe your
 
 A basic Lambda setup usually includes an IAM role and the function itself. Here’s a compact example:
 
-```
+```bash
 resource "aws_iam_role" "lambda_exec" {
   name = "lambda_basic_execution"
 
