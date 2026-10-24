@@ -6,7 +6,6 @@ summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attribu
 draft: false
 tags:
   - Terraform
-  - cicd
 categories:
   - DevOps
   - IaC
