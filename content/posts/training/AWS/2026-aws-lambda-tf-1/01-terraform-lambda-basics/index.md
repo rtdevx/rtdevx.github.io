@@ -1,8 +1,8 @@
 ---
 title: Terraform and Lambda - Basics
 date: 2026-05-01
-description: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.
-summary: Terraform Basics. Commands, Syntax, Arguments, Attributes, Meta-attributes.
+description: Terraform and Lambda Basics. Commands, Syntax, Arguments.
+summary: Terraform and Lambda Basics. Commands, Syntax, Arguments.
 draft: false
 tags:
   - Terraform
