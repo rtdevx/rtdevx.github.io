@@ -44,18 +44,6 @@ resource "aws_lambda_function" "example" {
   code_sha256   = data.archive_file.example.output_base64sha256
 
   runtime = "nodejs24.x"
-
-  environment {
-    variables = {
-      ENVIRONMENT = "production"
-      LOG_LEVEL   = "info"
-    }
-  }
-
-  tags = {
-    Environment = "production"
-    Application = "example"
-  }
 }
 ```
 
