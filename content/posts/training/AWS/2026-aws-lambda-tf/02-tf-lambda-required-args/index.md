@@ -172,9 +172,34 @@ Under a `Log Group`, there are a multiple `Log Streams`. `Log Streams` contain L
 {{< /alert >}}
 
 {{< lead >}}
-# {{< icon "skull-crossbones" >}}
+# {{< icon "skull-crossbones" >}}{{< icon "skull-crossbones" >}}{{< icon "skull-crossbones" >}}
 
 [CloudWatch]({{< ref "tags/cloudwatch" >}}) <font color=#EB4925>Lifecycle policies should be created</font> when creating Lambda Functions otherwise logs never expire (default) and are not deleted automatically.
+
+{{< /lead >}}
+#### ✨Terraform managed Log Group
+
+1. Create a Log Group resource
+
+```bash
+resource "aws_cloudwatch_log_group" "loggroup" {
+  name              = "${aws_lambda_function.lambda.function_name}"
+  retention_in_days = 14
+
+  tags = {
+    Environment = "production"
+    Application = "serviceA"
+  }
+}
+```
+
+2. Remove the `logs:CreateLogGroup`
+
+{{< lead >}}
+
+# {{< icon "skull-crossbones" >}}{{< icon "skull-crossbones" >}}{{< icon "skull-crossbones" >}}
+
+Remove `logs:CreateLogGroup` permission from the Lambda Function. When both - Lambda and Terraform can create the `LogGroup`, it could create the race condition. By removing the permissions from the Lambda Function, you ensure Terraform will be the one that is managing the resource.
 
 {{< /lead >}}
 ### Environment variables
