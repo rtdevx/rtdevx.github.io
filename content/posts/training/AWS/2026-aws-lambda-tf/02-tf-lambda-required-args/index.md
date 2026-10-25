@@ -94,8 +94,6 @@ role          = aws_iam_role.example.arn
 The <font color=#C7EB25>Execution Role</font> <font color=#EBAC25>defines which AWS resources the Lambda function can access</font>.
 
 {{< /lead >}}
-
-
 ## Lambda Code Sources
 
 AWS Lambda supports three code sources when managed through Terraform:
@@ -159,6 +157,34 @@ resource "aws_lambda_function" "example" {
 ```
 
 *More:* [Terraform Registry: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
+## Optional Settings
+
+### Log group
+
+[Lambda]({{< ref "tags/lambda" >}}) uses [CloudWatch]({{< ref "tags/cloudwatch" >}}) Logs to store its logs. <font color=#EBAC25>This is set up automatically and doesn't need to be configured</font> except of permissions. 
+
+{{< alert "circle-info" >}}
+
+<font color=#EB4925>Lambda Function requires IAM permissions to create a Log Group</font>. Log group name is fixed and can't be changed: `/aws/lambda/{function-name}`.
+
+Under a `Log Group`, there are a multiple `Log Streams`. `Log Streams` contain Log Entries. 
+
+{{< /alert >}}
+
+{{< lead >}}
+# {{< icon "skull-crossbones" >}}
+
+[CloudWatch]({{< ref "tags/cloudwatch" >}}) <font color=#EB4925>Lifecycle policies should be created</font> when creating Lambda Functions otherwise logs never expire (default) and are not deleted automatically.
+
+{{< /lead >}}
+### Environment variables
+
+### Memory
+
+### Timeout
+
+### Reserved concurrency
+
 ## >> Sources <<
 
 - [AWS Lambda](https://aws.amazon.com/lambda/)
