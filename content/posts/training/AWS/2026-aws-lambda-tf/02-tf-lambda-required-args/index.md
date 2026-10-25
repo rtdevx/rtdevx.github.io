@@ -305,6 +305,11 @@ _More:_ [Configure Lambda Event Function timeout - AWS Lambda](https://docs.aws.
 {{< /alert >}}
 ### Reserved concurrency
 
+**Reserved Concurrency** allows you to dedicate a specific number of concurrent executions exclusively to a Lambda function. This guarantees that the function always has capacity available, while also preventing it from consuming more than the configured limit.
+
+For example, if you reserve **50 concurrent executions**, Lambda can run up to 50 instances of that function simultaneously. This helps protect downstream services, such as databases or APIs, from being overwhelmed by sudden traffic spikes.
+
+> **Reserved Concurrency = Guaranteed Capacity + Maximum Concurrency Limit** for a Lambda function.
 ## >> Sources <<
 
 📡 <font color=#EBAC25><b>TAG:</b></font> [Lambda]({{< ref "tags/lambda" >}})
