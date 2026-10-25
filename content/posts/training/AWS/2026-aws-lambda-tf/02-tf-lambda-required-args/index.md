@@ -268,21 +268,17 @@ flowchart TD
 
     Memory["Increase Lambda Memory"]
 
-    Memory --> CPU["More CPU"]
+    Memory --> Rate["Higher Cost Per Millisecond"]
 
-    Memory --> Rate["Higher Cost Per ms"]
+    Memory --> CPU["More CPU Available"]
 
-    CPU --> Faster["Faster Execution"]
+    CPU --> Runtime["Reduced Execution Time"]
 
-    Faster --> Runtime["Shorter Runtime"]
+    Rate --> Total["Total Invocation Cost"]
 
-    Rate --> Evaluation["Runtime Reduction Check"]
+    Runtime --> Total
 
-    Runtime --> Evaluation
-
-    Evaluation --> Lower["Lower Overall Cost"]
-
-    Evaluation --> Higher["Higher Overall Cost"]
+    Total --> Outcome["Cost May Increase Or Decrease"]
 
 {{< /mermaid >}}
 ### Timeout
