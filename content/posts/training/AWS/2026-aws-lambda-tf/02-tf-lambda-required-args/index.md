@@ -288,11 +288,18 @@ flowchart TD
 {{< alert "lightbulb" >}}
 
 [CloudWatch]({{< ref "tags/cloudwatch" >}}) Logs and [CloudWatch]({{< ref "tags/cloudwatch" >}}) Metrics are a good ways to start looking at Lambda execution times.
+#### Potential Timeout causes
+
+- Downstream service
+- More data
+- DoS attack
 
 {{< /alert >}}
 ### Reserved concurrency
 
 ## >> Sources <<
+
+📡 <font color=#EBAC25><b>TAG:</b></font> [Lambda]({{< ref "tags/lambda" >}})
 
 - [AWS Lambda](https://aws.amazon.com/lambda/)
 - [Terraform Registry: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
