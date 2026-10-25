@@ -310,6 +310,8 @@ _More:_ [Configure Lambda Event Function timeout - AWS Lambda](https://docs.aws.
 For example, if you reserve **50 concurrent executions**, Lambda can run up to 50 instances of that function simultaneously. This helps protect downstream services, such as databases or APIs, from being overwhelmed by sudden traffic spikes.
 
 > **Reserved Concurrency = Guaranteed Capacity + Maximum Concurrency Limit** for a Lambda function.
+
+‼️ _Note:_ <font color=#EB4925>AWS has a soft limit of 1000 concurrent executions per region</font>.
 ## >> Sources <<
 
 📡 <font color=#EBAC25><b>TAG:</b></font> [Lambda]({{< ref "tags/lambda" >}})
