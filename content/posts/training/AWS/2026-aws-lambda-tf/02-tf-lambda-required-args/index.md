@@ -276,13 +276,13 @@ flowchart TD
 
     Faster --> Runtime["Shorter Runtime"]
 
-    Rate --> Decision{Runtime Reduction}
+    Rate --> Evaluation["Runtime Reduction Check"]
 
-    Runtime --> Decision
+    Runtime --> Evaluation
 
-    Decision -->|Sufficient| Lower["Lower Overall Cost"]
+    Evaluation --> Lower["Lower Overall Cost"]
 
-    Decision -->|Insufficient| Higher["Higher Overall Cost"]
+    Evaluation --> Higher["Higher Overall Cost"]
 
 {{< /mermaid >}}
 ### Timeout
