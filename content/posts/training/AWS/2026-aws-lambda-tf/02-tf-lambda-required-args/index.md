@@ -284,6 +284,12 @@ flowchart TD
 ### Timeout
 
 **Lambda Timeout** defines the maximum time a function can run before AWS automatically terminates it. The timeout can be configured from **1 second up to a maximum of 15 minutes (900 seconds)**.
+
+{{< alert "lightbulb" >}}
+
+[CloudWatch]({{< ref "tags/cloudwatch" >}}) Logs and [CloudWatch]({{< ref "tags/cloudwatch" >}}) Metrics are a good ways to start looking at Lambda execution times.
+
+{{< /alert >}}
 ### Reserved concurrency
 
 ## >> Sources <<
