@@ -56,7 +56,9 @@ _More:_ [Terraform Registry: random_id](https://registry.terraform.io/providers/
 
 The runtime is the software environment in which the function runs.
 
-`runtime = "nodejs12.x"`
+```bash
+runtime = "nodejs12.x"
+```
 ### nodejs runtimes
 
 | Name       | Identifier   | Operating system  | Deprecation date | Block function create | Block function update |
@@ -78,8 +80,20 @@ The runtime is the software environment in which the function runs.
 
 {{< /alert >}}
 
-‼️_More:_ [AWS Lambda Function Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html)
+‼️ _More:_ [AWS Lambda Function Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html)
 ## Execution role
+
+`role` (<font color=#EB4925>Required</font>) ARN of the function's execution role. <font color=#EBAC25>The role provides the function's identity and access to AWS services and resources</font>.
+
+```bash
+role          = aws_iam_role.example.arn
+```
+
+{{< lead >}}
+
+The <font color=#C7EB25>Execution Role</font> <font color=#EBAC25>defines which AWS resources the Lambda function can access</font>.
+
+{{< /lead >}}
 
 
 ## Lambda Code Sources
