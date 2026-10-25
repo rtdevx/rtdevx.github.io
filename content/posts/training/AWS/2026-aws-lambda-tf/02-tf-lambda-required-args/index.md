@@ -177,7 +177,7 @@ Under a `Log Group`, there are a multiple `Log Streams`. `Log Streams` contain L
 # {{< icon "skull-crossbones" >}}{{< icon "skull-crossbones" >}}{{< icon "skull-crossbones" >}}
 {{< /center >}}
 
-[CloudWatch]({{< ref "tags/cloudwatch" >}}) <font color=#EB4925>Lifecycle policies should be created</font> when creating Lambda Functions otherwise logs never expire (default) and are not deleted automatically.
+<a href="{{< ref "tags/cloudwatch" >}}" target="_self">CloudWatch</a> <font color=#EB4925>Lifecycle policies should be created</font> when creating Lambda Functions otherwise logs never expire (default) and are not deleted automatically.
 
 {{< /lead >}}
 #### ✨Terraform managed Log Group
