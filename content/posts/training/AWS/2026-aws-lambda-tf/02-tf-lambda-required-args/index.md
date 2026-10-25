@@ -264,24 +264,25 @@ resource "aws_lambda_function" "example" {
 
 {{< mermaid >}}
 
-flowchart TD 
+flowchart TD
 
-	Memory["Increase Lambda Memory"] 
-	Memory --> CPU["More CPU"] 
-	Memory --> Rate["Higher Cost Per Millisecond"] 
-	CPU --> Faster["Faster Execution"] 
-	Faster --> Runtime["Shorter Runtime"] 
-	Runtime --> Decision{"Runtime Reduced Enough?"} 
-	Rate --> Decision Decision -->|Yes| 
-	Lower["Lower Overall Cost"] Decision -->|No| 
-	Higher["Higher Overall Cost"] 
-	
-	style Memory fill:#FF9900,color:#fff 
-	style CPU fill:#527FFF,color:#fff 
-	style Faster fill:#2E7D32,color:#fff 
-	style Runtime fill:#2E7D32,color:#fff 
-	style Lower fill:#1565C0,color:#fff 
-	style Higher fill:#D32F2F,color:#fff
+    Memory["Increase Lambda Memory"]
+
+    Memory --> CPU["More CPU"]
+
+    Memory --> Rate["Higher Cost Per ms"]
+
+    CPU --> Faster["Faster Execution"]
+
+    Faster --> Runtime["Shorter Runtime"]
+
+    Rate --> Decision{Runtime Reduction}
+
+    Runtime --> Decision
+
+    Decision -->|Sufficient| Lower["Lower Overall Cost"]
+
+    Decision -->|Insufficient| Higher["Higher Overall Cost"]
 
 {{< /mermaid >}}
 ### Timeout
