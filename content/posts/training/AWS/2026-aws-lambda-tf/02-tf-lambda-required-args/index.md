@@ -266,23 +266,16 @@ resource "aws_lambda_function" "example" {
 
 flowchart TD 
 
-	A[Increase Lambda Memory] --> B[More CPU Allocated] 
-	B --> C[Faster Processing] 
-	C --> D[Shorter Execution Time] 
-	D --> E[Fewer GB-Seconds Billed] 
-	E --> F[Potentially Lower Cost] 
+	Memory["Increase Lambda Memory"] --> CPU["More CPU"] 
+	CPU --> Faster["Faster Execution"] 
+	Faster --> Runtime["Shorter Runtime"] 
+	Runtime --> Cost["Potentially Lower Cost"] 
 	
-	A -. Higher cost per ms .-> G[Increased Resource Rate] 
-	G --> H{Runtime reduction large enough?} 
-	D --> H H -->|Yes| F H -->|No| I[Potentially Higher Cost] 
-	
-	style A fill:#FF9900,color:#fff 
-	style B fill:#527FFF,color:#fff 
-	style C fill:#2E7D32,color:#fff 
-	style D fill:#2E7D32,color:#fff 
-	style E fill:#1565C0,color:#fff 
-	style F fill:#1565C0,color:#fff 
-	style I fill:#D32F2F,color:#fff
+	style Memory fill:#FF9900,color:#fff 
+	style CPU fill:#527FFF,color:#fff 
+	style Faster fill:#2E7D32,color:#fff 
+	style Runtime fill:#2E7D32,color:#fff 
+	style Cost fill:#1565C0,color:#fff
 
 {{< /mermaid >}}
 ### Timeout
