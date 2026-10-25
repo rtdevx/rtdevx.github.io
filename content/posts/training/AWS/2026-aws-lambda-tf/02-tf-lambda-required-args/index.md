@@ -222,7 +222,7 @@ resource "aws_s3_bucket" "bucket" {
   bucket = "example-bucket"
 }
 
-{{ < /highlight > }}
+{{< /highlight >}}
 
 {{< highlight bash "linenos=table,hl_lines=11-13 " >}}
 # Lambda function
