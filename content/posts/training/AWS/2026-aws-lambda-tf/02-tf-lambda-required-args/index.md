@@ -216,6 +216,7 @@ When both - Lambda and Terraform can create the `LogGroup`, <font color=#EB4925>
 
 Parameters can be passed to the Lambda Function via Environment Variables.
 
+
 {{< highlight bash "linenos=table,hl_lines=2 " >}}
 
 resource "aws_s3_bucket" "bucket" {
@@ -247,6 +248,9 @@ resource "aws_lambda_function" "example" {
 ℹ️ _Note:_ Can be used to reference `AWS Resources`, Passwords in `AWS Secrets Manager` , etc.
 ### Memory
 
+`memory_size` - (Optional) Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 32,768 MB (32 GB), in 1 MB increments. Defaults to 128.
+
+[CloudWatch]({{< ref "tags/cloudwatch" >}}) Logs can be used to find out how much memory our [Lambda]({{< ref "tags/lambda" >}}) Function is using.
 ### Timeout
 
 ### Reserved concurrency
