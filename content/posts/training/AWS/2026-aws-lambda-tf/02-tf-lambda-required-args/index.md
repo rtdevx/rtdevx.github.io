@@ -218,7 +218,7 @@ Parameters can be passed to the Lambda Function via Environment Variables.
 
 
 {{< highlight bash "linenos=table,hl_lines=2 " >}}
-
+# S3 Bucket
 resource "aws_s3_bucket" "bucket" {
   bucket = "example-bucket"
 }
