@@ -8,6 +8,7 @@ tags:
   - Terraform
   - Lambda
   - APIGateway
+  - CloudWatch
 categories:
   - DevOps
   - IaC
@@ -206,11 +207,59 @@ resource "aws_cloudwatch_log_group" "loggroup" {
 
 Remove `logs:CreateLogGroup` permission from the Lambda Function. 
 
-When both - Lambda and Terraform can create the `LogGroup`, it could create the race condition. By removing the permissions from the Lambda Function, you ensure Terraform will be the one that is managing the resource.
+When both - Lambda and Terraform can create the `LogGroup`, <font color=#EB4925>it could create the race condition</font>. <font color=#EBAC25>By removing the permissions from the Lambda Function, you ensure Terraform will be the one that is managing the resource</font>.
 
 {{< /lead >}}
 ### Environment variables
 
+(Optional) Configuration block for environment variables.
+
+Parameters can be passed to the Lambda Function via Environment Variables.
+
+```bash
+resource "aws_s3_bucket" "bucket" {
+  bucket = "example-bucket"
+}
+```
+
+{{< highlight bash "linenos=table,hl_lines=13 " >}}
+# Lambda function
+resource "aws_lambda_function" "example" {
+  filename      = data.archive_file.example.output_path
+  function_name = "example_lambda_function"
+  role          = aws_iam_role.example.arn
+  handler       = "index.handler"
+  code_sha256   = data.archive_file.example.output_base64sha256
+
+  runtime = "nodejs24.x"
+
+  environment {
+    variables = {
+      BUCKET = "aws_s3_bucket.bucket"
+    }
+  }
+}
+
+{{< /highlight >}}
+
+```bash
+# Lambda function
+resource "aws_lambda_function" "example" {
+  filename      = data.archive_file.example.output_path
+  function_name = "example_lambda_function"
+  role          = aws_iam_role.example.arn
+  handler       = "index.handler"
+  code_sha256   = data.archive_file.example.output_base64sha256
+
+  runtime = "nodejs24.x"
+
+  environment {
+    variables = {
+      BUCKET = "aws_s3_bucket.bucket"
+    }
+  }
+}
+```
 ### Memory
 
 ### Timeout
