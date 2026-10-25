@@ -1,10 +1,10 @@
 +++
 draft = false
 title = 'Manage AWS Lambda with Terraform'
-summary = 'Learnings from **Tamás Sallai**’s "Manage AWS Lambda functions with Terraform" and **Devops Duo** "Mastering Production DevOps Projects: AWS Lambda, Terraform" courses on _Udemy_.'
+summary = 'A practical guide to AWS Lambda configuration, performance, and operational considerations.'
 +++
   
-Over the years, [AWS Lambda]({{< ref "tags/lambda" >}}) added support for ever finer control of how the functions work. That resulted in more than 2 dozen configuration options and that makes it hard to see what is important and what is just for a specific use-case. And even for seemingly straightforward ones there are usually not-so-obvious consequences (...)
+{{< ref "tags/lambda" >}} now offers extensive configuration flexibility, but with that comes complexity. Understanding which settings are important, and their less obvious consequences, can be challenging.
 
 _More:_ https://aws.amazon.com/lambda/
 
