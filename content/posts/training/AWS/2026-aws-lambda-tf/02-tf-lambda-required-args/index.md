@@ -244,6 +244,7 @@ resource "aws_lambda_function" "example" {
 
 {{< /highlight >}}
 
+ℹ️ _Note:_ Can be used to reference `AWS Resources`, Passwords in `AWS Secrets Manager` , etc.
 ### Memory
 
 ### Timeout
