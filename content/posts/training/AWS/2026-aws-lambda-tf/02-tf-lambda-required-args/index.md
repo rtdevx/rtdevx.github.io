@@ -283,6 +283,7 @@ flowchart TD
 {{< /mermaid >}}
 ### Timeout
 
+**Lambda Timeout** defines the maximum time a function can run before AWS automatically terminates it. The timeout can be configured from **1 second up to a maximum of 15 minutes (900 seconds)**.
 ### Reserved concurrency
 
 ## >> Sources <<
