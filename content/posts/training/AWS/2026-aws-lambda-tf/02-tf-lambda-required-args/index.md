@@ -82,7 +82,7 @@ runtime = "nodejs12.x"
 {{< /alert >}}
 
 ‼️ _More:_ [AWS Lambda Function Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html)
-## Execution role
+## ✨Execution role
 
 `role` (<font color=#EB4925>Required</font>) ARN of the function's execution role. <font color=#EBAC25>The role provides the function's identity and access to AWS services and resources</font>.
 
@@ -216,13 +216,15 @@ When both - Lambda and Terraform can create the `LogGroup`, <font color=#EB4925>
 
 Parameters can be passed to the Lambda Function via Environment Variables.
 
-```bash
+{{< highlight bash "linenos=table,hl_lines=2 " >}}
+
 resource "aws_s3_bucket" "bucket" {
   bucket = "example-bucket"
 }
-```
 
-{{< highlight bash "linenos=table,hl_lines=13 " >}}
+{{ < /highlight > }}
+
+{{< highlight bash "linenos=table,hl_lines=11-13 " >}}
 # Lambda function
 resource "aws_lambda_function" "example" {
   filename      = data.archive_file.example.output_path
@@ -242,24 +244,6 @@ resource "aws_lambda_function" "example" {
 
 {{< /highlight >}}
 
-```bash
-# Lambda function
-resource "aws_lambda_function" "example" {
-  filename      = data.archive_file.example.output_path
-  function_name = "example_lambda_function"
-  role          = aws_iam_role.example.arn
-  handler       = "index.handler"
-  code_sha256   = data.archive_file.example.output_base64sha256
-
-  runtime = "nodejs24.x"
-
-  environment {
-    variables = {
-      BUCKET = "aws_s3_bucket.bucket"
-    }
-  }
-}
-```
 ### Memory
 
 ### Timeout
