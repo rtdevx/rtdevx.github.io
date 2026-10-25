@@ -59,7 +59,7 @@ resource "aws_lambda_function" "hello_world" {
 }
 ```
 
-*More:* [Resource: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
+*More:* [Terraform Registry: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
 ## API Gateway
 
 {{< alert "circle-info" >}}
@@ -113,8 +113,8 @@ resource "aws_apigatewayv2_stage" "default_stage" {
 Once applied, Terraform gives you a public endpoint. When someone hits that URL, API Gateway forwards the request to your Lambda and returns the response.
 ## >> Sources <<
 
-- https://aws.amazon.com/lambda/
-- [Resource: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
+- [AWS Lambda](https://aws.amazon.com/lambda/)
+- [Terraform Registry: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_lambda_1 >}}
