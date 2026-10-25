@@ -268,7 +268,7 @@ flowchart TD
 
     Memory["Increase Lambda Memory"]
 
-    Memory --> Rate["Higher Cost Per Millisecond"]
+    Memory --> Rate["Higher Cost Per Millisecond (billed duration is rounded to nearest 100ms)"]
 
     Memory --> CPU["More CPU Available"]
 
