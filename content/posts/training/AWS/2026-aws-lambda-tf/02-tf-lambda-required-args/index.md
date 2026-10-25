@@ -26,9 +26,9 @@ series: Terraform and Lambda
 
 {{< alert "circle-info" >}}
 
-Because Lambda Function Name must be regionally unique, therefore using fixed Lambda Function name within a Terraform module will not work.
+Because [Lambda Function]({{< ref "tags/lambda" >}}) Name must be regionally unique, therefore using fixed Lambda Function name within a [Terraform]({{< ref "tags/terraform" >}}) module will not work.
 
-For Terraform modules, use `random_id` resource (see below).
+‼️For Terraform modules, use `random_id` resource (see below).
 
 {{< /alert >}}
 
