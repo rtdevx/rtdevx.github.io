@@ -246,11 +246,45 @@ resource "aws_lambda_function" "example" {
 {{< /highlight >}}
 
 ℹ️ _Note:_ Can be used to reference `AWS Resources`, Passwords in `AWS Secrets Manager` , etc.
-### Memory
+### 🔥Memory
 
 `memory_size` - (Optional) Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 32,768 MB (32 GB), in 1 MB increments. Defaults to 128.
 
-[CloudWatch]({{< ref "tags/cloudwatch" >}}) Logs can be used to find out how much memory our [Lambda]({{< ref "tags/lambda" >}}) Function is using.
+[CloudWatch]({{< ref "tags/cloudwatch" >}}) Logs can be used to find out how much memory our [Lambda Function]({{< ref "tags/lambda" >}}) is using.
+
+{{< alert "lightbulb" >}}
+
+‼️ _Note:_ In <a href="{{< ref "tags/lambda" >}}" target="_self">AWS Lambda</a>, allocated memory directly affects allocated CPU.
+
+<a href="{{< ref "tags/lambda" >}}" target="_self">Lambda Function</a> is billed for the duration - for that reason sometimes increasing the memory could make it cheaper.
+
+>More RAM => More CPU power => Shorter running time
+
+{{< /alert >}}
+
+{{< mermaid >}}
+
+flowchart TD 
+
+	A[Increase Lambda Memory] --> B[More CPU Allocated] 
+	B --> C[Faster Processing] 
+	C --> D[Shorter Execution Time] 
+	D --> E[Fewer GB-Seconds Billed] 
+	E --> F[Potentially Lower Cost] 
+	
+	A -. Higher cost per ms .-> G[Increased Resource Rate] 
+	G --> H{Runtime reduction large enough?} 
+	D --> H H -->|Yes| F H -->|No| I[Potentially Higher Cost] 
+	
+	style A fill:#FF9900,color:#fff 
+	style B fill:#527FFF,color:#fff 
+	style C fill:#2E7D32,color:#fff 
+	style D fill:#2E7D32,color:#fff 
+	style E fill:#1565C0,color:#fff 
+	style F fill:#1565C0,color:#fff 
+	style I fill:#D32F2F,color:#fff
+
+{{< /mermaid >}}
 ### Timeout
 
 ### Reserved concurrency
