@@ -288,11 +288,19 @@ flowchart TD
 {{< alert "lightbulb" >}}
 
 [CloudWatch]({{< ref "tags/cloudwatch" >}}) Logs and [CloudWatch]({{< ref "tags/cloudwatch" >}}) Metrics are a good ways to start looking at Lambda execution times.
+
+{{< /alert >}}
 #### Potential Timeout causes
 
 - Downstream service
 - More data
 - DoS attack
+
+{{< alert "lightbulb" >}}
+
+While AWS Lambda supports execution times of up to **15 minutes**, upstream and downstream services may impose stricter limits. For example, **API Gateway** can timeout long-running synchronous requests after approximately **29 seconds**, and **SQS** uses a default **30-second Visibility Timeout**. These limits should be considered when designing serverless workflows.
+
+_More:_ [Configure Lambda Event Function timeout - AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/configuration-timeout.html)
 
 {{< /alert >}}
 ### Reserved concurrency
@@ -305,6 +313,7 @@ flowchart TD
 - [Terraform Registry: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
 - [Terraform Registry: random_id](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/id)
 - [AWS Lambda Function Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html)
+- [Configure Lambda Event Function timeout - AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/configuration-timeout.html)
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_lambda_1 >}}
