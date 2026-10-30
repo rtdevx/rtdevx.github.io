@@ -8,6 +8,7 @@ tags:
   - Terraform
   - Lambda
   - APIGateway
+  - Serverless
 categories:
   - DevOps
   - IaC

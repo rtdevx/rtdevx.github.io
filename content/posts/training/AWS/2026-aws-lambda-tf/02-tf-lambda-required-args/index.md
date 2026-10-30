@@ -9,6 +9,7 @@ tags:
   - Lambda
   - APIGateway
   - CloudWatch
+  - Serverless
 categories:
   - DevOps
   - IaC
