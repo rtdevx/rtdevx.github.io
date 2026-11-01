@@ -91,7 +91,7 @@ Functions can be invoked <font color=#C7EB25>synchronously</font> or <font color
 
 {{< alert "circle-info" >}}
 
-<center><a href="{{< ref "tags/lambda" >}}" target="_self">Lambda</a></center> scales horizontally by running multiple instances of a function in parallel - up to the concurrency limit.
+<a href="{{< ref "tags/lambda" >}}" target="_self">Lambda</a> scales horizontally by running multiple instances of a function in parallel - up to the concurrency limit.
 
 {{< /alert >}}
 
@@ -150,9 +150,7 @@ flowchart TD
     IGW --> Internet
 
 {{< /mermaid >}}
-### SQS
-### SNS
-### Event Bridge
+
 ## API Gateway
 
 {{< alert "circle-info" >}}
