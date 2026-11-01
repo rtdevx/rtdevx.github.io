@@ -91,7 +91,7 @@ Functions can be invoked <font color=#C7EB25>synchronously</font> or <font color
 
 {{< alert "circle-info" >}}
 
-[Lambda]({{< ref "tags/lambda" >}}) scales horizontally by running multiple instances of a function in parallel - up to the concurrency limit.
+<center><a href="{{< ref "tags/lambda" >}}" target="_self">Lambda</a></center> scales horizontally by running multiple instances of a function in parallel - up to the concurrency limit.
 
 {{< /alert >}}
 
@@ -103,7 +103,7 @@ Functions can be invoked <font color=#C7EB25>synchronously</font> or <font color
 
 {{< mermaid >}}
 
-flowchart LR
+flowchart TD
 
     Lambda["AWS Lambda<br/>(Outside VPC by Default)"]
 
@@ -150,7 +150,9 @@ flowchart LR
     IGW --> Internet
 
 {{< /mermaid >}}
-
+### SQS
+### SNS
+### Event Bridge
 ## API Gateway
 
 {{< alert "circle-info" >}}
