@@ -9,6 +9,7 @@ tags:
   - Lambda
   - APIGateway
   - Serverless
+  - HighAvailability
 categories:
   - DevOps
   - IaC
@@ -26,6 +27,7 @@ Instead of configuring everything manually in the AWS console, you describe your
 ---
 
 {{< youtube 5rG-YgTHMC8 >}}
+*Code:* https://github.com/nealdct/serverless-for-beginners
 
 ---
 ### Lambda and Terraform
@@ -61,6 +63,94 @@ resource "aws_lambda_function" "hello_world" {
 ```
 
 *More:* [Terraform Registry: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
+### Serverless Services
+
+- No instances to manage.
+- No need to provision hardware.
+- No management of Operating Systems or Software.
+- Capacity provisioning and patching is handled automatically.
+- Provides automatic scaling and [High Availability]({{< ref "tags/highavailability" >}}).
+- Can be very cheap.
+### AWS Lambda
+
+- **Languages** - Lambda natively supports Java, Go, PowerShell, Node.js, C#, Python, and Ruby.
+- **Execution Role** ([IAM]({{< ref "tags/iam" >}}) Role) - this role grants the function permissions to access AWS services and resources.
+- [Monitoring]({{< ref "tags/monitoring" >}}) and **Logging** - integrated with [CloudWatch]({{< ref "tags/cloudwatch" >}}).
+- **Memory and Timeout** - memory and maximum execution timeout can be specified for each function.
+
+{{< alert "edit" >}}
+📝 _Note:_  the maximum execution time is 15 minutes.
+{{< /alert >}}
+
+[Lambda]({{< ref "tags/lambda" >}}) functions run in response to events from various AWS Services or direct invocation from the AWS SDKs or API.
+
+Functions can be invoked <font color=#C7EB25>synchronously</font> or <font color=#EBAC25>asynchronously</font>:
+
+- with <font color=#C7EB25>synchronous</font> invocation, applications wait for the function to process the event and return a response.
+- with <font color=#EBAC25>asynchronous</font> invocation, Lambda queues the event for processing and returns a response immediately.
+
+{{< alert "circle-info" >}}
+
+[Lambda]({{< ref "tags/lambda" >}}) scales horizontally by running multiple instances of a function in parallel - up to the concurrency limit.
+
+{{< /alert >}}
+
+{{< lead >}}
+
+<font color=#EB4925>Lambda functions are Regional and do not have VPC access by default</font>. They can be connected to VPC.
+
+{{< /lead >}}
+
+{{< mermaid >}}
+
+flowchart LR
+
+    Lambda["AWS Lambda<br/>(Outside VPC by Default)"]
+
+    subgraph VPC["Amazon VPC"]
+
+        subgraph AZA["AZ A"]
+
+            ENI1["ENI"]
+
+            EC2A["EC2 Instance"]
+
+        end
+
+        subgraph AZB["AZ B"]
+
+            ENI2["ENI"]
+
+            EC2B["EC2 Instance"]
+
+        end
+
+        NAT["NAT Gateway"]
+
+        IGW["Internet Gateway"]
+
+    end
+
+    Internet["Internet"]
+
+    Lambda -.->|"VPC Configuration"| ENI1
+
+    Lambda -.->|"VPC Configuration"| ENI2
+
+    ENI1 --> EC2A
+
+    ENI2 --> EC2B
+
+    ENI1 --> NAT
+
+    ENI2 --> NAT
+
+    NAT --> IGW
+
+    IGW --> Internet
+
+{{< /mermaid >}}
+
 ## API Gateway
 
 {{< alert "circle-info" >}}
@@ -116,6 +206,8 @@ Once applied, Terraform gives you a public endpoint. When someone hits that URL,
 
 - [AWS Lambda](https://aws.amazon.com/lambda/)
 - [Terraform Registry: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
+
+- Code for the AWS Lambda YouTube Video: https://github.com/nealdct/serverless-for-beginners
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_lambda_1 >}}
