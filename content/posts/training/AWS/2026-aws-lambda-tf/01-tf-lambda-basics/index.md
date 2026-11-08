@@ -150,7 +150,40 @@ flowchart TD
     IGW --> Internet
 
 {{< /mermaid >}}
+#### Creating a Lambda Function
 
+{{< alert "circle-info" >}}
+
+In our basic <ins><i>Example</i></ins> below, a manual test event invokes the first `Lambda` function, which sends a message to an `Amazon SQS` queue. The queue is then polled by a second `Lambda` function through an event source mapping, and the function stores the processed data in a `DynamoDB` table.
+
+{{< /alert >}}
+
+{{< mermaid >}}
+
+flowchart LR
+
+    Test["Manual Test Event"]
+
+    Producer["Lambda Function"]
+
+    SQS["Amazon SQS Queue"]
+
+    Consumer["Lambda Function"]
+
+    DDB["Amazon DynamoDB Table"]
+
+    Test -->|Invoke| Producer
+
+    Producer -->|SendMessage| SQS
+
+    SQS -->|Poll & Invoke| Consumer
+
+    Consumer -->|PutItem| DDB
+
+{{< /mermaid >}}
+### SQS
+### SNS
+### Event Bridge
 ## API Gateway
 
 {{< alert "circle-info" >}}
