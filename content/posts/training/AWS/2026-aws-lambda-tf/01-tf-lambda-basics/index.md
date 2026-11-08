@@ -180,7 +180,7 @@ flowchart TD
 
 📝 _Proceed with exercise 1:_ https://github.com/nealdct/serverless-for-beginners/blob/main/serverless-app/serverless-app-instructions.md
 
-Above solution uses a simple event-driven architecture to process product orders.
+Above <ins><i>Example:</i></ins> uses a simple event-driven architecture to process product orders.
 
 1. **Create a Lambda function** (`SubmitOrderFunction`) that receives orders and sends them to an SQS queue. Grant the function permissions to interact with SQS.    
 2. **Create an SQS queue** (`ProductOrdersQueue`) and configure the Lambda function to send messages to it.    
