@@ -152,17 +152,11 @@ flowchart TD
 {{< /mermaid >}}
 #### Creating a Lambda Function
 
-{{< alert "circle-info" >}}
-
 In our basic <ins><i>Example</i></ins> below, a manual test event invokes the first `Lambda` function, which sends a message to an `Amazon SQS` queue. The queue is then polled by a second `Lambda` function through an event source mapping, and the function stores the processed data in a `DynamoDB` table.
-
-{{< /alert >}}
-
-
 
 {{< mermaid >}}
 
-flowchart LR
+flowchart TD
 
     Test["Manual Test Event"]
 
