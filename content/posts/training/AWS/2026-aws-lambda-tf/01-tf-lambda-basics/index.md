@@ -177,6 +177,8 @@ flowchart TD
     Consumer -->|PutItem| DDB
 
 {{< /mermaid >}}
+
+Proceed with exercise 1: https://github.com/nealdct/serverless-for-beginners/blob/main/serverless-app/serverless-app-instructions.md
 ### SQS
 ### SNS
 ### Event Bridge
@@ -237,6 +239,8 @@ Once applied, Terraform gives you a public endpoint. When someone hits that URL,
 - [Terraform Registry: aws_lambda_function](https://registry.terraform.io/providers/-/aws/latest/docs/resources/lambda_function)
 
 - Code for the AWS Lambda YouTube Video: https://github.com/nealdct/serverless-for-beginners
+
+- Exercise 1: https://github.com/nealdct/serverless-for-beginners/blob/main/serverless-app/serverless-app-instructions.md
 ## >> Disclaimer <<
 
 {{< 26_disclaimer_aws_lambda_1 >}}
