@@ -150,7 +150,7 @@ flowchart TD
     IGW --> Internet
 
 {{< /mermaid >}}
-#### Creating a Lambda Function
+### Creating a Lambda Function
 
 In our basic <ins><i>Example</i></ins> below, a manual test event invokes the first `Lambda` function, which sends a message to an `Amazon SQS` queue. The queue is then polled by a second `Lambda` function through an event source mapping, and the function stores the processed data in a `DynamoDB` table.
 
@@ -178,7 +178,18 @@ flowchart TD
 
 {{< /mermaid >}}
 
-Proceed with exercise 1: https://github.com/nealdct/serverless-for-beginners/blob/main/serverless-app/serverless-app-instructions.md
+📝 _Proceed with exercise 1:_ https://github.com/nealdct/serverless-for-beginners/blob/main/serverless-app/serverless-app-instructions.md
+
+Above solution uses a simple event-driven architecture to process product orders.
+
+1. **Create a Lambda function** (`SubmitOrderFunction`) that receives orders and sends them to an SQS queue. Grant the function permissions to interact with SQS.    
+2. **Create an SQS queue** (`ProductOrdersQueue`) and configure the Lambda function to send messages to it.    
+3. **Test the solution** by invoking the Lambda function and verifying that messages arrive in the queue.    
+4. **Create a second Lambda function** (`ProcessOrderFunction`) that reads messages from the queue and stores order data in DynamoDB. Grant permissions for both SQS and DynamoDB.    
+5. **Create a DynamoDB table** (`ProductOrders`) to persist processed orders.    
+6. **Connect SQS to the processing Lambda** using an event source mapping so new queue messages automatically trigger processing.    
+7. **Validate the end-to-end flow** by submitting orders and confirming they appear in DynamoDB. 
+8. **Invoke the application from the AWS CLI** to test the complete workflow programmatically.
 ### SQS
 ### SNS
 ### Event Bridge
